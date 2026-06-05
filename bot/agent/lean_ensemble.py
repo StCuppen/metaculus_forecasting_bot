@@ -26,7 +26,7 @@ from .prompts import (
     LEAN_NUMERIC_APPEND_PROMPT,
 )
 from .retrieval import multi_provider_search
-from .utils import ExaClient, call_openrouter_llm, clean_indents, get_token_usage, reset_token_usage
+from .utils import ExaClient, SonarClient, call_openrouter_llm, clean_indents, get_token_usage, reset_token_usage
 from .forecast_records import write_forecast_record
 
 logger = logging.getLogger(__name__)
@@ -1425,12 +1425,34 @@ async def run_lean_ensemble_forecast(
 
     docs: list[Any] = []
     exa_key = os.getenv("EXA_API_KEY")
+    search_provider: str | None = None
     if exa_key:
         exa_client = ExaClient(api_key=exa_key)
         docs, _ = await multi_provider_search(
             queries=search_queries,
             exa_client=exa_client,
             use_sonar=False,
+        )
+        search_provider = "exa"
+    elif os.getenv("OPENROUTER_API_KEY"):
+        # No dedicated search key: fall back to Perplexity Sonar via OpenRouter
+        # (web-grounded answers + citations) so runs still receive real evidence.
+        # Sonar evidence is provisional; a dedicated search key is the upgrade path.
+        sonar_client = SonarClient()
+        docs, _ = await multi_provider_search(
+            queries=search_queries,
+            sonar_client=sonar_client,
+            use_sonar=True,
+        )
+        search_provider = "sonar_openrouter"
+        logger.warning(
+            "No EXA_API_KEY set; using Perplexity Sonar via OpenRouter for search "
+            "(provisional evidence quality). Set EXA_API_KEY/SERPER/BRAVE for richer retrieval."
+        )
+    else:
+        logger.warning(
+            "NO SEARCH PROVIDER AVAILABLE (no EXA_API_KEY and no OPENROUTER_API_KEY): "
+            "forecast will run EVIDENCE-STARVED and the publish gate will likely abstain."
         )
 
     # LLM evidence extraction and scoring
@@ -1677,6 +1699,7 @@ async def run_lean_ensemble_forecast(
                 "text_log_path": text_log_path,
                 "planned_queries": planned_queries,
                 "executed_queries": search_queries,
+                "search_provider": search_provider,
                 "individual_results": settled,
                 "feature_flags": feature_flags or {},
                 "token_usage": get_token_usage(),
@@ -2057,6 +2080,7 @@ async def run_lean_ensemble_forecast(
             "planner_text": planner_text,
             "planned_queries": planned_queries,
             "executed_queries": search_queries,
+            "search_provider": search_provider,
             "top_evidence": top_evidence_rows,
             "evidence_bundle_text": evidence_bundle_text,
             "individual_results": settled,
