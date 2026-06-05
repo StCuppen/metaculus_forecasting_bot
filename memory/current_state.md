@@ -41,6 +41,13 @@ assume an ID string exists. Tracked in the workflow-review backlog.
 - Rolling forecast cap: **25 predictions per 7-day window** (`league.toml`, as of 2026-02-12).
 - 7-day league `dry_run_default = true` (as of 2026-02-12).
 
+## Cost-control defaults (env-tunable; set 2026-06-06)
+- Per-run completion tokens (defaults in roster): Kimi **12000**, GPT-5 Mini **10000**,
+  Gemini **10000**. Global cap via `FORECAST_RUN_MAX_TOKENS` (0 = use per-model default).
+- `FORECAST_MAX_SEARCH_QUERIES` default **6** (was 10) — fewer queries = fewer Sonar/Exa calls.
+- `FORECAST_MAX_EVIDENCE_DOCS` default **8** (was 12) — caps per-doc extraction LLM calls.
+- Sonar per-query `max_tokens` = 600. Lower all of these further before large batch runs.
+
 ## Active CI workflows (`.github/workflows/`)
 - `run_tournament.yaml` — tournament forecasts; commits `forecast_records/` back (cron disabled;
   triggered manually / via external cron-job.org). As of 2026-06-06.

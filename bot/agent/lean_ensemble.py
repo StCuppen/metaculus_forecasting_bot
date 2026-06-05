@@ -57,13 +57,15 @@ class LeanRunOutput:
 
 
 def _default_forecast_model_families() -> list[dict[str, Any]]:
-    return [
+    # Per-run completion-token defaults are kept modest for cost control and can be
+    # capped globally via FORECAST_RUN_MAX_TOKENS (0 = use the per-model default below).
+    families = [
         {
             "model": "moonshotai/kimi-k2.5",
             "runs": 2,
             "label": "Kimi K2.5",
             "reasoning_effort": None,
-            "max_tokens": 24000,
+            "max_tokens": 12000,
             "temperature": 0.35,
         },
         {
@@ -71,7 +73,7 @@ def _default_forecast_model_families() -> list[dict[str, Any]]:
             "runs": 2,
             "label": "GPT-5 Mini",
             "reasoning_effort": "medium",
-            "max_tokens": 20000,
+            "max_tokens": 10000,
             "temperature": 0.35,
         },
         {
@@ -79,10 +81,15 @@ def _default_forecast_model_families() -> list[dict[str, Any]]:
             "runs": 1,
             "label": "Gemini 2.5 Flash",
             "reasoning_effort": "medium",
-            "max_tokens": 20000,
+            "max_tokens": 10000,
             "temperature": 0.35,
         },
     ]
+    cap = int(os.getenv("FORECAST_RUN_MAX_TOKENS", "0"))
+    if cap > 0:
+        for fam in families:
+            fam["max_tokens"] = min(int(fam["max_tokens"]), cap)
+    return families
 
 
 def _expand_model_roster(raw_models: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -1412,7 +1419,7 @@ async def run_lean_ensemble_forecast(
             continue
         seen.add(q_key)
         search_queries.append(q_clean)
-    max_queries = int(os.getenv("FORECAST_MAX_SEARCH_QUERIES", "10"))
+    max_queries = int(os.getenv("FORECAST_MAX_SEARCH_QUERIES", "6"))
     search_queries = search_queries[:max_queries]
 
     # Primary source targeting: add site-scoped queries for canonical domains
@@ -1460,7 +1467,7 @@ async def run_lean_ensemble_forecast(
         docs=docs,
         question_title=question_title,
         resolution_criteria=resolution_criteria,
-        max_docs=12,
+        max_docs=int(os.getenv("FORECAST_MAX_EVIDENCE_DOCS", "8")),
     )
     for ev in enriched_evidence:
         ev.is_primary_source = _is_primary_source_url(ev.url, primary_domains)
