@@ -32,6 +32,12 @@ Model-ID gotchas (as of 2026-02-12, re-verify): `google/gemini-3-flash-preview` 
 (e.g. a DeepSeek "flash"-class model). Verify actual current OpenRouter IDs before swapping — do not
 assume an ID string exists. Tracked in the workflow-review backlog.
 
+## Improvement backlog
+See `docs/forecast_workflow_review_2026-06-06.md` for the full review + prioritized backlog. Top items
+(as of 2026-06-06): **P0** AskNews retrieval client (winning bots' provider; keys already templated,
+no client yet) + roster refresh; **P1** outside-view/inside-view prompt split, hybrid LLM judge;
+**P2** outcome-driven Platt calibration from `forecast_records/`.
+
 ## Search provider
 - Local default (no dedicated search key): **Perplexity Sonar via OpenRouter** fallback, wired into
   `lean_ensemble.py` 2026-06-06. Provisional quality — a dedicated key is the upgrade path.
