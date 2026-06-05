@@ -98,14 +98,62 @@ def _brier(record: dict[str, Any], question: dict[str, Any]) -> dict[str, Any] |
             "per_option": per_option,
         }
 
+    if q_type in {"numeric", "date", "discrete"}:
+        # Numeric questions are not Brier-scorable; report interval coverage + median error
+        # against the stored 10/25/50/75/90 percentiles. Keys are strings in the JSON record.
+        raw_pcts = record.get("final_numeric_percentiles")
+        actual = _to_float(resolution)
+        if not isinstance(raw_pcts, dict) or actual is None:
+            return None
+        pcts: dict[int, float] = {}
+        for k, v in raw_pcts.items():
+            ik, fv = _to_int(k), _to_float(v)
+            if ik is not None and fv is not None:
+                pcts[ik] = fv
+        if not {10, 50, 90}.issubset(pcts):
+            return None
+        return {
+            "type": "numeric",
+            "resolution_value": actual,
+            "median_p50": pcts[50],
+            "abs_error_p50": abs(actual - pcts[50]),
+            "within_50pct_interval": pcts[25] <= actual <= pcts[75] if {25, 75}.issubset(pcts) else None,
+            "within_80pct_interval": pcts[10] <= actual <= pcts[90],
+        }
+
     return None
 
 
-def enrich_file(path: Path, sleep_seconds: float) -> bool:
+def _to_float(value: Any) -> float | None:
+    try:
+        return float(str(value).replace(",", "").strip())
+    except (TypeError, ValueError):
+        return None
+
+
+def _to_int(value: Any) -> int | None:
+    try:
+        return int(str(value).strip())
+    except (TypeError, ValueError):
+        return None
+
+
+def _already_resolved(record: dict[str, Any]) -> bool:
+    """True if a prior enrich pass already captured a terminal resolution for this record."""
+    outcome = record.get("outcome") if isinstance(record.get("outcome"), dict) else {}
+    return bool(outcome.get("resolved")) and outcome.get("resolution") not in (None, "")
+
+
+def enrich_file(path: Path, sleep_seconds: float, force: bool = False) -> str:
+    """Returns a status: 'updated' | 'skipped_no_metaculus_post' | 'skipped_already_resolved'."""
     record = json.loads(path.read_text(encoding="utf-8"))
     post_id = _post_id(record)
     if not post_id:
-        return False
+        return "skipped_no_metaculus_post"
+
+    # Idempotency: terminally-resolved records don't change, so don't re-hit the API for them.
+    if not force and _already_resolved(record):
+        return "skipped_already_resolved"
 
     post = _fetch_post(post_id)
     question = post.get("question") or {}
@@ -136,32 +184,51 @@ def enrich_file(path: Path, sleep_seconds: float) -> bool:
         },
     }
 
+    # Top-level queryable signals for the scoreboard.
+    record["resolved"] = bool(post.get("resolved")) and question.get("resolution") not in (None, "")
+    scored = record["outcome"]["computed_brier"]
+    if isinstance(scored, dict):
+        if scored.get("type") == "binary":
+            record["brier"] = scored.get("brier")
+        elif scored.get("type") == "multiple_choice":
+            record["brier"] = scored.get("brier_normalized_by_2")
+        else:
+            record["brier"] = None  # numeric/date: see outcome.computed_brier for coverage metrics
+    else:
+        record["brier"] = None
+
     path.write_text(json.dumps(record, indent=2, ensure_ascii=False, sort_keys=True), encoding="utf-8")
     if sleep_seconds > 0:
         time.sleep(sleep_seconds)
-    return True
+    return "updated"
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Enrich forecast_records JSON files with Metaculus outcomes and scores.")
     parser.add_argument("--records-dir", default="forecast_records")
     parser.add_argument("--sleep-seconds", type=float, default=1.0)
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="Re-fetch and re-score even records already terminally resolved.",
+    )
     args = parser.parse_args()
 
     records_dir = Path(args.records_dir)
-    updated = 0
-    skipped = 0
-    failed = 0
+    counts = {
+        "updated": 0,
+        "skipped_no_metaculus_post": 0,
+        "skipped_already_resolved": 0,
+        "failed": 0,
+    }
     for path in sorted(records_dir.glob("*.json")):
         try:
-            if enrich_file(path, sleep_seconds=args.sleep_seconds):
-                updated += 1
-            else:
-                skipped += 1
+            status = enrich_file(path, sleep_seconds=args.sleep_seconds, force=args.force)
+            counts[status] = counts.get(status, 0) + 1
         except Exception as exc:
-            failed += 1
+            counts["failed"] += 1
             print(f"failed {path}: {exc}")
-    print({"updated": updated, "skipped_no_metaculus_post": skipped, "failed": failed})
+    print(counts)
 
 
 if __name__ == "__main__":
