@@ -1,0 +1,69 @@
+﻿{
+    "record_id":  "tournament_41595_21927817303",
+    "category":  "tournament_workflow_post_attempt",
+    "posted_to_metaculus":  true,
+    "source_note":  "Tournament workflow revalidation post attempt; artifact expired but run log available.",
+    "event":  {
+                  "event_time_utc":  "2026-02-11T23:56:24Z",
+                  "github_run_id":  "21927817303",
+                  "post_id":  41595,
+                  "url":  "https://www.metaculus.com/questions/41595",
+                  "event_prediction":  {
+
+                                       },
+                  "event_brier":  null
+              },
+    "current_metaculus":  {
+                              "title":  "Will the North Atlantic sea surface temperature reach a daily record high before May 2026?",
+                              "post_status":  "resolved",
+                              "resolved":  true,
+                              "nr_forecasters":  144,
+                              "forecasts_count":  3153,
+                              "actual_close_time":  "2026-04-01T01:00:00Z",
+                              "scheduled_close_time":  "2026-04-01T01:00:00Z",
+                              "actual_resolve_time":  "2026-05-04T10:26:00Z",
+                              "scheduled_resolve_time":  "2026-05-01T01:00:00Z",
+                              "question_id":  41341,
+                              "question_type":  "binary",
+                              "options":  {
+
+                                          },
+                              "resolution":  "no",
+                              "my_latest_forecast":  {
+                                                         "question_id":  41341,
+                                                         "author_id":  270023,
+                                                         "start_time":  1771426944.462784,
+                                                         "end_time":  null,
+                                                         "forecast_values":  [
+                                                                                 0.566244939724783,
+                                                                                 0.43375506027521704
+                                                                             ],
+                                                         "interval_lower_bounds":  null,
+                                                         "centers":  null,
+                                                         "interval_upper_bounds":  null,
+                                                         "distribution_input":  null
+                                                     },
+                              "my_latest_forecast_time_utc":  "2026-02-18T15:02:24.0000000Z",
+                              "my_forecast_history_count":  10,
+                              "metaculus_score_data":  {
+                                                           "baseline_score":  22.006516182397014,
+                                                           "peer_score":  -12.720013576541646,
+                                                           "coverage":  0.8868157620877116,
+                                                           "relative_legacy_score":  -0.5114075681306437,
+                                                           "weighted_coverage":  0.8868157620877116,
+                                                           "spot_peer_score":  -5.635605143124084,
+                                                           "spot_baseline_score":  0
+                                                       },
+                              "account_latest_brier":  {
+                                                           "type":  "binary",
+                                                           "p_yes":  0.43375506027521704,
+                                                           "y":  0,
+                                                           "brier":  0.18814345231435717
+                                                       }
+                          },
+    "token_output":  {
+                         "availability":  "workflow_log_excerpt_available",
+                         "source":  "GitHub Actions run 21927817303 log",
+                         "content":  "run\tRun bot (tournament)\t2026-02-11T23:54:57.9271584Z 2026-02-11 23:54:57,926 - __main__ - INFO - Found 8 OPEN questions (4 supported binary). Proceeding to forecast...\nrun\tRun bot (tournament)\t2026-02-11T23:54:57.9272953Z 2026-02-11 23:54:57,927 - __main__ - INFO - Processing question 1/1 | url=https://www.metaculus.com/questions/41595\nrun\tRun bot (tournament)\t2026-02-11T23:54:57.9276176Z 2026-02-11 23:54:57,927 - __main__ - INFO - TemplateForecaster.summarize_research for: https://www.metaculus.com/questions/41595\nrun\tRun bot (tournament)\t2026-02-11T23:56:24.5676470Z 2026-02-11 23:56:24,567 - forecasting_tools.forecast_helpers.metaculus_api - INFO - Posted comment on post 41595\nrun\tRun bot (tournament)\t2026-02-11T23:56:24.5681974Z 2026-02-11 23:56:24,567 - root - INFO - Run Stats: total_reports=1 | success=1 | errors=0 | post_attempts=1 | skipped_already_forecasted=0 | skipped_publish_disabled=0\nrun\tRun bot (tournament)\t2026-02-11T23:56:24.5703907Z 2026-02-11 23:56:24,570 - root - INFO - Submission Attempt: posting forecast | url=https://www.metaculus.com/questions/41595\nrun\tSummarize results\t2026-02-11T23:56:25.0344235Z \u001b[36;1mskipped_prev_runstats=$(grep -E \"Run Stats:.*skipped_already_forecasted=[0-9]+\" bot.log | sed -nE \u0027s/.*skipped_already_forecasted=([0-9]+).*/\\1/p\u0027 | tail -n1 || true)\u001b[0m"
+                     }
+}

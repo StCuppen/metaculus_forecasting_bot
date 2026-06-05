@@ -1,0 +1,166 @@
+﻿{
+    "record_id":  "tournament_43105_24148023397",
+    "category":  "tournament_workflow_post_attempt",
+    "posted_to_metaculus":  true,
+    "source_note":  "Retained bot-log artifact and forecast_reports.json.",
+    "event":  {
+                  "event_time_utc":  "2026-04-08T17:04:05Z",
+                  "github_run_id":  "24148023397",
+                  "post_id":  43105,
+                  "url":  "https://www.metaculus.com/questions/43105",
+                  "event_prediction":  {
+                                           "option_probabilities":  {
+                                                                        "Hang Seng Index":  0.23140883910036378,
+                                                                        "CAC 40":  0.1260293844755033,
+                                                                        "DAX 40":  0.1260293844755033,
+                                                                        "FTSE 100":  0.09505214230838735,
+                                                                        "Nikkei 225":  0.24696843749842393,
+                                                                        "S\u0026P 500":  0.17451181214181827
+                                                                    }
+                                       },
+                  "event_brier":  {
+                                      "type":  "multiple_choice",
+                                      "resolution":  "Nikkei 225",
+                                      "brier_sum":  0.691862678774327,
+                                      "brier_normalized_by_2":  0.34593133938716347,
+                                      "per_option":  [
+                                                         {
+                                                             "option":  "Hang Seng Index",
+                                                             "p":  0.23140883910036378,
+                                                             "outcome":  0,
+                                                             "squared_error":  0.053550050813778054
+                                                         },
+                                                         {
+                                                             "option":  "CAC 40",
+                                                             "p":  0.1260293844755033,
+                                                             "outcome":  0,
+                                                             "squared_error":  0.01588340575127423
+                                                         },
+                                                         {
+                                                             "option":  "DAX 40",
+                                                             "p":  0.1260293844755033,
+                                                             "outcome":  0,
+                                                             "squared_error":  0.01588340575127423
+                                                         },
+                                                         {
+                                                             "option":  "FTSE 100",
+                                                             "p":  0.09505214230838735,
+                                                             "outcome":  0,
+                                                             "squared_error":  0.00903490975741392
+                                                         },
+                                                         {
+                                                             "option":  "Nikkei 225",
+                                                             "p":  0.24696843749842393,
+                                                             "outcome":  1,
+                                                             "squared_error":  0.56705653412356516
+                                                         },
+                                                         {
+                                                             "option":  "S\u0026P 500",
+                                                             "p":  0.17451181214181827,
+                                                             "outcome":  0,
+                                                             "squared_error":  0.030454372577021271
+                                                         }
+                                                     ]
+                                  }
+              },
+    "current_metaculus":  {
+                              "title":  "Which of these market indexes will perform the best during April 2026?",
+                              "post_status":  "resolved",
+                              "resolved":  true,
+                              "nr_forecasters":  87,
+                              "forecasts_count":  1218,
+                              "actual_close_time":  "2026-04-29T17:00:00Z",
+                              "scheduled_close_time":  "2026-04-29T17:00:00Z",
+                              "actual_resolve_time":  "2026-05-04T10:26:00Z",
+                              "scheduled_resolve_time":  "2026-05-01T01:00:00Z",
+                              "question_id":  43109,
+                              "question_type":  "multiple_choice",
+                              "options":  [
+                                              "S\u0026P 500",
+                                              "Nikkei 225",
+                                              "FTSE 100",
+                                              "Hang Seng Index",
+                                              "CAC 40",
+                                              "DAX 40"
+                                          ],
+                              "resolution":  "Nikkei 225",
+                              "my_latest_forecast":  {
+                                                         "question_id":  43109,
+                                                         "author_id":  270023,
+                                                         "start_time":  1775667845.103068,
+                                                         "end_time":  null,
+                                                         "forecast_values":  [
+                                                                                 0.17451181214181827,
+                                                                                 0.24696843749842393,
+                                                                                 0.09505214230838735,
+                                                                                 0.23140883910036378,
+                                                                                 0.1260293844755033,
+                                                                                 0.1260293844755033
+                                                                             ],
+                                                         "interval_lower_bounds":  null,
+                                                         "centers":  null,
+                                                         "interval_upper_bounds":  null,
+                                                         "distribution_input":  null
+                                                     },
+                              "my_latest_forecast_time_utc":  "2026-04-08T17:04:05.0000000Z",
+                              "my_forecast_history_count":  1,
+                              "metaculus_score_data":  {
+                                                           "baseline_score":  21.945557807176236,
+                                                           "peer_score":  -24.91458232170314,
+                                                           "coverage":  0.9998585591484941,
+                                                           "relative_legacy_score":  -0.7672304510216967,
+                                                           "weighted_coverage":  0.9998585591484941,
+                                                           "spot_peer_score":  16.09546842697089,
+                                                           "spot_baseline_score":  21.948522781974745
+                                                       },
+                              "account_latest_brier":  {
+                                                           "type":  "multiple_choice",
+                                                           "resolution":  "Nikkei 225",
+                                                           "brier_sum":  0.69186267877432683,
+                                                           "brier_normalized_by_2":  0.34593133938716342,
+                                                           "per_option":  [
+                                                                              {
+                                                                                  "option":  "S\u0026P 500",
+                                                                                  "p":  0.17451181214181827,
+                                                                                  "outcome":  0,
+                                                                                  "squared_error":  0.030454372577021271
+                                                                              },
+                                                                              {
+                                                                                  "option":  "Nikkei 225",
+                                                                                  "p":  0.24696843749842393,
+                                                                                  "outcome":  1,
+                                                                                  "squared_error":  0.56705653412356516
+                                                                              },
+                                                                              {
+                                                                                  "option":  "FTSE 100",
+                                                                                  "p":  0.095052142308387363,
+                                                                                  "outcome":  0,
+                                                                                  "squared_error":  0.0090349097574139222
+                                                                              },
+                                                                              {
+                                                                                  "option":  "Hang Seng Index",
+                                                                                  "p":  0.23140883910036375,
+                                                                                  "outcome":  0,
+                                                                                  "squared_error":  0.05355005081377804
+                                                                              },
+                                                                              {
+                                                                                  "option":  "CAC 40",
+                                                                                  "p":  0.1260293844755033,
+                                                                                  "outcome":  0,
+                                                                                  "squared_error":  0.01588340575127423
+                                                                              },
+                                                                              {
+                                                                                  "option":  "DAX 40",
+                                                                                  "p":  0.1260293844755033,
+                                                                                  "outcome":  0,
+                                                                                  "squared_error":  0.01588340575127423
+                                                                              }
+                                                                          ]
+                                                       }
+                          },
+    "token_output":  {
+                         "availability":  "forecast_report_repr_available",
+                         "source":  "C:\\Users\\steve\\AppData\\Local\\Temp\\metaculus-audit-artifacts-20260605\\24148023397\\forecastingoutput\\forecast_reports.json",
+                         "content":  "MultipleChoiceReport(question=MultipleChoiceQuestion(question_text=\u0027Which of these market indexes will perform the best during April 2026?\u0027, id_of_post=43105, page_url=\u0027https://www.metaculus.com/questions/43105\u0027, id_of_question=43109, state=\u003cQuestionState.OPEN: \u0027open\u0027\u003e, num_forecasters=0, num_predictions=0, resolution_criteria=\u0027This question will resolve as the market index which increases the most or decreases the least percent during April 2026.\u0027, fine_print=\u0027Specifically, this question will resolve based upon the difference between the opening price on April 1, 2026, and the closing price on April 30, 2026.\\n\\nThe primary source for this question will be [Yahoo Finance](https://finance.yahoo.com/markets/world-indices/). If Yahoo Finance is unavailable or found to be inaccurate, another source may be used.\u0027, background_info=\u0027[Market indexes](https://en.wikipedia.org/wiki/Stock_market_index) are benchmarks which track the combined value of selected stocks. Often seeing index-based funds, they generally represent the economic performance of a specific industry or of a national market.\\n\\nThe following major national market indexes are included in this question:\\n\\n* S\\\\\u0026P 500 (United States)\\n* Nikkei 225 (Japan)\\n* FTSE 100 (United Kingdom)\\n* Hang Seng Index (Hong Kong/China)\\n* CAC 40 (France)\\n* DAX 40 (Germany)\\n\\nDuring March 2026, all listed indexes saw a decline, with the S\\\\\u0026P 500 seeing the smallest decline of -4.34% while the Nikkei 225 saw a dramatic decline of -11.92%.\u0027, unit_of_measure=\u0027\u0027, close_time=datetime.datetime(2026, 4, 29, 17, 0), actual_resolution_time=None, scheduled_resolution_time=datetime.datetime(2026, 5, 1, 1, 0), published_time=datetime.datetime(2026, 4, 7, 21, 56, 53), open_time=datetime.datetime(2026, 4, 8, 17, 0), date_accessed=datetime.datetime(2026, 4, 8, 17, 1, 33, 558984), already_forecasted=False, tournament_slugs=[\u0027metaculus-cup-spring-2026\u0027], includes_bots_in_aggregates=False, cp_reveal_time=datetime.datetime(2026, 4, 12, 17, 0), api_json={\u0027id\u0027: 43105, \u0027title\u0027: \u0027Which of these market indexes will perform the best during April 2026?\u0027, \u0027short_title\u0027: \u0027Which market index will do best during April 2026?\u0027, \u0027url_title\u0027: \u0027Which market index will do best during April 2026?\u0027, \u0027slug\u0027: \u0027which-market-index-will-do-best-during-april-2026\u0027, \u0027author_id\u0027: 168191, \u0027author_username\u0027: \u0027ADQ\u0027, \u0027coauthors\u0027: [], \u0027created_at\u0027: \u00272026-04-06T09:06:57.795293Z\u0027, \u0027published_at\u0027: \u00272026-04-07T21:56:53Z\u0027, \u0027edited_at\u0027: \u00272026-04-08T02:12:24.227710Z\u0027, \u0027curation_status\u0027: \u0027approved\u0027, \u0027curation_status_updated_at\u0027: \u00272026-04-07T21:58:43.520228Z\u0027, \u0027comment_count\u0027: 1, \u0027status\u0027: \u0027open\u0027, \u0027resolved\u0027: False, \u0027actual_close_time\u0027: None, \u0027scheduled_close_time\u0027: \u00272026-04-29T17:00:00Z\u0027, \u0027scheduled_resolve_time\u0027: \u00272026-05-01T01:00:00Z\u0027, \u0027actual_resolve_time\u0027: None, \u0027open_time\u0027: \u00272026-04-08T17:00:00Z\u0027, \u0027nr_forecasters\u0027: 0, \u0027html_metadata_json\u0027: None, \u0027projects\u0027: {\u0027tournament\u0027: [{\u0027id\u0027: 32921, \u0027type\u0027: \u0027tournament\u0027, \u0027name\u0027: \u0027Metaculus Cup Spring 2026\u0027, \u0027slug\u0027: \u0027metaculus-cup-spring-2026\u0027, \u0027header_image\u0027: \u0027https://cdn.metaculus.com/cup-cover.jpg\u0027, \u0027prize_pool\u0027: \u00275000.00\u0027, \u0027start_date\u0027: \u00272026-01-07T17:00:00Z\u0027, \u0027close_date\u0027: \u00272026-05-01T00:00:00Z\u0027, \u0027forecasting_end_date\u0027: \u00272026-05-01T00:00:00Z\u0027, \u0027html_metadata_json\u0027: {\u0027image_url\u0027: \u0027https://cdn.metaculus.com/user_uploaded/image_8.png\u0027}, \u0027is_ongoing\u0027: True, \u0027user_permission\u0027: None, \u0027order\u0027: 2, \u0027created_at\u0027: \u00272025-12-29T12:43:16.555925Z\u0027, \u0027edited_at\u0027: \u00272026-04-08T17:01:27.163918Z\u0027, \u0027score_type\u0027: \u0027peer_tournament\u0027, \u0027default_permission\u0027: \u0027forecaster\u0027, \u0027visibility\u0027: \u0027normal\u0027, \u0027show_on_homepage\u0027: True, \u0027is_current_content_translated\u0027: False, \u0027bot_leaderboard_status\u0027: \u0027exclude_and_show\u0027, \u0027description_preview\u0027: \u0027\u003cp\u003eWelcome to the Metaculus Cup! Forecasting novices and veterans are invited to make predictions on new topical questions each week while c\u0027}], \u0027default_project\u0027: {\u0027id\u0027: 32921, \u0027type\u0027: \u0027tournament\u0027, \u0027name\u0027: \u0027Metaculus Cup Spring 2026\u0027, \u0027slug\u0027: \u0027metaculus-cup-spring-2026\u0027, \u0027header_image\u0027: \u0027https://cdn.metaculus.com/cup-cover.jpg\u0027, \u0027prize_pool\u0027: \u00275000.00\u0027, \u0027start_date\u0027: \u00272026-01-07T17:00:00Z\u0027, \u0027close_date\u0027: \u00272026-05-01T00:00:00Z\u0027, \u0027forecasting_end_date\u0027: \u00272026-05-01T00:00:00Z\u0027, \u0027html_metadata_json\u0027: {\u0027image_url\u0027: \u0027https://cdn.metaculus.com/user_uploaded/image_8.png\u0027}, \u0027is_ongoing\u0027: True, \u0027user_permission\u0027: None, \u0027order\u0027: 2, \u0027created_at\u0027: \u00272025-12-29T12:43:16.555925Z\u0027, \u0027edited_at\u0027: \u00272026-04-08T17:01:27.163918Z\u0027, \u0027score_type\u0027: \u0027peer_tournament\u0027, \u0027default_permission\u0027: \u0027forecaster\u0027, \u0027visibility\u0027: \u0027normal\u0027, \u0027show_on_homepage\u0027: True, \u0027is_current_content_translated\u0027: False, \u0027bot_leaderboard_status\u0027: \u0027exclude_and_show\u0027, \u0027description_preview\u0027: \u0027\u003cp\u003eWelcome to the Metaculus Cup! Forecasting novices and veterans are invited to make predictions on new topical questions each week while c\u0027}, \u0027category\u0027: [{\u0027id\u0027: 3698, \u0027name\u0027: \u0027Economy \u0026 Business\u0027, \u0027slug\u0027: \u0027economy-business\u0027, \u0027emoji\u0027: \u0027ðŸ’¼\u0027, \u0027description\u0027: \u0027Economy \u0026 Business\u0027, \u0027type\u0027: \u0027category\u0027}]}, \u0027question\u0027: {\u0027id\u0027: 43109, \u0027title\u0027: \u0027Which of these market indexes will perform the best during April 2026?\u0027, \u0027created_at\u0027: \u00272026-04-06T09:06:57.795744Z\u0027, \u0027open_time\u0027: \u00272026-04-08T17:00:00Z\u0027, \u0027cp_reveal_time\u0027: \u00272026-04-12T17:00:00Z\u0027, \u0027spot_scoring_time\u0027: \u00272026-04-12T17:00:00Z\u0027, \u0027scheduled_resolve_time\u0027: \u00272026-05-01T01:00:00Z\u0027, \u0027actual_resolve_time\u0027: None, \u0027resolution_set_time\u0027: None, \u0027scheduled_close_time\u0027: \u00272026-04-29T17:00:00Z\u0027, \u0027actual_close_time\u0027: \u00272026-04-29T17:00:00Z\u0027, \u0027type\u0027: \u0027multiple_choice\u0027, \u0027options\u0027: [\u0027S\u0026P 500\u0027, \u0027Nikkei 225\u0027, \u0027FTSE 100\u0027, \u0027Hang Seng Index\u0027, \u0027CAC 40\u0027, \u0027DAX 40\u0027], \u0027all_options_ever\u0027: None, \u0027options_history\u0027: None, \u0027options_order\u0027: None, \u0027group_variable\u0027: \u0027index\u0027, \u0027status\u0027: \u0027open\u0027, \u0027possibilities\u0027: None, \u0027resolution\u0027: None, \u0027include_bots_in_aggregates\u0027: False, \u0027question_weight\u0027: 1, \u0027default_score_type\u0027: \u0027peer\u0027, \u0027default_aggregation_method\u0027: \u0027recency_weighted\u0027, \u0027label\u0027: \u0027\u0027, \u0027unit\u0027: \u0027\u0027, \u0027open_upper_bound\u0027: False, \u0027open_lower_bound\u0027: False, \u0027inbound_outcome_count\u0027: None, \u0027scaling\u0027: {\u0027range_min\u0027: None, \u0027range_max\u0027: None, \u0027nominal_min\u0027: None, \u0027nominal_max\u0027: None, \u0027zero_point\u0027: None, \u0027open_upper_bound\u0027: False, \u0027open_lower_bound\u0027: False, \u0027inbound_outcome_count\u0027: None, \u0027continuous_range\u0027: None}, \u0027group_rank\u0027: None, \u0027coherence_links\u0027: None, \u0027coherence_link_aggregations\u0027: None, \u0027description\u0027: \u0027[Market indexes](https://en.wikipedia.org/wiki/Stock_market_index) are benchmarks which track the combined value of selected stocks. Often seeing index-based funds, they generally represent the economic performance of a specific industry or of a national market.\\n\\nThe following major national market indexes are included in this question:\\n\\n* S\\\\\u0026P 500 (United States)\\n* Nikkei 225 (Japan)\\n* FTSE 100 (United Kingdom)\\n* Hang Seng Index (Hong Kong/China)\\n* CAC 40 (France)\\n* DAX 40 (Germany)\\n\\nDuring March 2026, all listed indexes saw a decline, with the S\\\\\u0026P 500 seeing the smallest decline of -4.34% while the Nikkei 225 saw a dramatic decline of -11.92%.\u0027, \u0027resolution_criteria\u0027: \u0027This question will resolve as the market index which increases the most or decreases the least percent during April 2026.\u0027, \u0027fine_print\u0027: \u0027Specifically, this question will resolve based upon the difference between the opening price on April 1, 2026, and the closing price on April 30, 2026.\\n\\nThe primary source for this question will be [Yahoo Finance](https://finance.yahoo.com/markets/world-indices/). If Yahoo Finance is unavailable or found to be inaccurate, another source may be used.\u0027, \u0027short_title\u0027: \u0027Which market index will do best during April 2026?\u0027, \u0027post_id\u0027: 43105, \u0027aggregations\u0027: {\u0027recency_weighted\u0027: {\u0027history\u0027: None, \u0027latest\u0027: None, \u0027score_data\u0027: None, \u0027movement\u0027: None}}, \u0027average_coverage\u0027: None, \u0027my_forecasts\u0027: {\u0027history\u0027: [], \u0027latest\u0027: None, \u0027score_data\u0027: {}}}, \u0027user_permission\u0027: \u0027forecaster\u0027, \u0027vote\u0027: {\u0027score\u0027: 0, \u0027user_vote\u0027: None}, \u0027forecasts_count\u0027: 0, \u0027key_factors\u0027: [], \u0027is_current_content_translated\u0027: False}, options=[\u0027S\u0026P 500\u0027, \u0027Nikkei 225\u0027, \u0027FTSE 100\u0027, \u0027Hang Seng Index\u0027, \u0027CAC 40\u0027, \u0027DAX 40\u0027]), explanation=\u0027# RESEARCH\\n## Report 1 Research\\nResearch handled by individual agents in ensemble.\\n\\n\\n\\n# FORECASTS\\n\\n## R1: Forecaster 1 Reasoning\\nFallback multiple-choice distribution generated by TemplateForecaster.\\n\u0027, other_notes=None, price_estimate=0.0, minutes_taken=2.522582991917928, errors=[], prediction=PredictedOptionList(predicted_options=[PredictedOption(option_name=\u0027S\u0026P 500\u0027, probability=0.17451181214181827), PredictedOption(option_name=\u0027Nikkei 225\u0027, probability=0.24696843749842393), PredictedOption(option_name=\u0027FTSE 100\u0027, probability=0.09505214230838735), PredictedOption(option_name=\u0027Hang Seng Index\u0027, probability=0.23140883910036378), PredictedOption(option_name=\u0027CAC 40\u0027, probability=0.1260293844755033), PredictedOption(option_name=\u0027DAX 40\u0027, probability=0.1260293844755033)]))"
+                     }
+}

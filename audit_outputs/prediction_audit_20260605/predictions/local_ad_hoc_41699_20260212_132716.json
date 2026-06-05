@@ -1,0 +1,45 @@
+﻿{
+    "record_id":  "local_ad_hoc_41699_20260212_132716",
+    "category":  "local_ad_hoc_generated_unposted",
+    "posted_to_metaculus":  false,
+    "source_note":  "Local memory: generated test forecast on Q41699, final 55.7%, gate action publish. API now shows no my forecast history.",
+    "event":  {
+                  "event_time_utc":  "2026-02-12T13:27:16Z",
+                  "github_run_id":  null,
+                  "post_id":  41699,
+                  "url":  "https://www.metaculus.com/questions/41699",
+                  "event_prediction":  {
+                                           "p_yes":  0.557
+                                       },
+                  "event_brier":  null
+              },
+    "current_metaculus":  {
+                              "title":  "Will U.S. consumer sentiment in March 2026 be higher than in February 2026?",
+                              "post_status":  "resolved",
+                              "resolved":  true,
+                              "nr_forecasters":  761,
+                              "forecasts_count":  2972,
+                              "actual_close_time":  "2026-03-08T16:00:00Z",
+                              "scheduled_close_time":  "2026-03-08T16:00:00Z",
+                              "actual_resolve_time":  "2026-03-14T16:43:00Z",
+                              "scheduled_resolve_time":  "2026-03-10T00:00:00Z",
+                              "question_id":  41440,
+                              "question_type":  "binary",
+                              "options":  {
+
+                                          },
+                              "resolution":  null,
+                              "my_latest_forecast":  null,
+                              "my_latest_forecast_time_utc":  null,
+                              "my_forecast_history_count":  0,
+                              "metaculus_score_data":  {
+
+                                                       },
+                              "account_latest_brier":  null
+                          },
+    "token_output":  {
+                         "availability":  "not_available_in_snapshot",
+                         "source":  "local memory notes only",
+                         "content":  "Local memory: generated test forecast on Q41699, final 55.7%, gate action publish. API now shows no my forecast history."
+                     }
+}

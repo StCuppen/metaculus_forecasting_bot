@@ -1,0 +1,151 @@
+﻿{
+    "record_id":  "tournament_42665_23553553590",
+    "category":  "tournament_workflow_post_attempt",
+    "posted_to_metaculus":  true,
+    "source_note":  "Retained bot-log artifact and forecast_reports.json.",
+    "event":  {
+                  "event_time_utc":  "2026-03-25T17:09:13Z",
+                  "github_run_id":  "23553553590",
+                  "post_id":  42665,
+                  "url":  "https://www.metaculus.com/questions/42665",
+                  "event_prediction":  {
+                                           "option_probabilities":  {
+                                                                        "2":  0.04311602872692933,
+                                                                        "3":  0.00851774550837617,
+                                                                        "1":  0.057936140606839631,
+                                                                        "0":  0.017141800291727894,
+                                                                        "No Decision":  0.87328828486612708
+                                                                    }
+                                       },
+                  "event_brier":  {
+                                      "type":  "multiple_choice",
+                                      "resolution":  "3",
+                                      "brier_sum":  1.7511789190950535,
+                                      "brier_normalized_by_2":  0.87558945954752676,
+                                      "per_option":  [
+                                                         {
+                                                             "option":  "2",
+                                                             "p":  0.04311602872692933,
+                                                             "outcome":  0,
+                                                             "squared_error":  0.0018589919331813952
+                                                         },
+                                                         {
+                                                             "option":  "3",
+                                                             "p":  0.00851774550837617,
+                                                             "outcome":  1,
+                                                             "squared_error":  0.98303706097179322
+                                                         },
+                                                         {
+                                                             "option":  "1",
+                                                             "p":  0.057936140606839631,
+                                                             "outcome":  0,
+                                                             "squared_error":  0.0033565963884154919
+                                                         },
+                                                         {
+                                                             "option":  "0",
+                                                             "p":  0.017141800291727894,
+                                                             "outcome":  0,
+                                                             "squared_error":  0.00029384131724148252
+                                                         },
+                                                         {
+                                                             "option":  "No Decision",
+                                                             "p":  0.87328828486612708,
+                                                             "outcome":  0,
+                                                             "squared_error":  0.76263242848442192
+                                                         }
+                                                     ]
+                                  }
+              },
+    "current_metaculus":  {
+                              "title":  "How many charges will the ICC confirm against Rodrigo Duterte before May 2026?",
+                              "post_status":  "resolved",
+                              "resolved":  true,
+                              "nr_forecasters":  104,
+                              "forecasts_count":  1543,
+                              "actual_close_time":  "2026-04-23T08:00:00Z",
+                              "scheduled_close_time":  "2026-04-28T01:00:00Z",
+                              "actual_resolve_time":  "2026-04-23T08:00:00Z",
+                              "scheduled_resolve_time":  "2026-04-29T01:00:00Z",
+                              "question_id":  42610,
+                              "question_type":  "multiple_choice",
+                              "options":  [
+                                              "0",
+                                              "1",
+                                              "2",
+                                              "3",
+                                              "No Decision"
+                                          ],
+                              "resolution":  "3",
+                              "my_latest_forecast":  {
+                                                         "question_id":  42610,
+                                                         "author_id":  270023,
+                                                         "start_time":  1774458184.999997,
+                                                         "end_time":  null,
+                                                         "forecast_values":  [
+                                                                                 0.017141800291727894,
+                                                                                 0.05793614060683963,
+                                                                                 0.04311602872692933,
+                                                                                 0.00851774550837617,
+                                                                                 0.8732882848661271
+                                                                             ],
+                                                         "interval_lower_bounds":  null,
+                                                         "centers":  null,
+                                                         "interval_upper_bounds":  null,
+                                                         "distribution_input":  null
+                                                     },
+                              "my_latest_forecast_time_utc":  "2026-03-25T17:03:05.0000000Z",
+                              "my_forecast_history_count":  1,
+                              "metaculus_score_data":  {
+                                                           "baseline_score":  -168.39136884023452,
+                                                           "peer_score":  -315.9063807535447,
+                                                           "coverage":  0.8580506588975592,
+                                                           "relative_legacy_score":  -5.833624447509868,
+                                                           "weighted_coverage":  0.9991856289927905,
+                                                           "spot_peer_score":  -343.3622506316255,
+                                                           "spot_baseline_score":  -196.10359915296414
+                                                       },
+                              "account_latest_brier":  {
+                                                           "type":  "multiple_choice",
+                                                           "resolution":  "3",
+                                                           "brier_sum":  1.7511789190950535,
+                                                           "brier_normalized_by_2":  0.87558945954752676,
+                                                           "per_option":  [
+                                                                              {
+                                                                                  "option":  "0",
+                                                                                  "p":  0.017141800291727894,
+                                                                                  "outcome":  0,
+                                                                                  "squared_error":  0.00029384131724148252
+                                                                              },
+                                                                              {
+                                                                                  "option":  "1",
+                                                                                  "p":  0.057936140606839631,
+                                                                                  "outcome":  0,
+                                                                                  "squared_error":  0.0033565963884154919
+                                                                              },
+                                                                              {
+                                                                                  "option":  "2",
+                                                                                  "p":  0.04311602872692933,
+                                                                                  "outcome":  0,
+                                                                                  "squared_error":  0.0018589919331813952
+                                                                              },
+                                                                              {
+                                                                                  "option":  "3",
+                                                                                  "p":  0.00851774550837617,
+                                                                                  "outcome":  1,
+                                                                                  "squared_error":  0.98303706097179322
+                                                                              },
+                                                                              {
+                                                                                  "option":  "No Decision",
+                                                                                  "p":  0.87328828486612708,
+                                                                                  "outcome":  0,
+                                                                                  "squared_error":  0.76263242848442192
+                                                                              }
+                                                                          ]
+                                                       }
+                          },
+    "token_output":  {
+                         "availability":  "forecast_report_repr_available",
+                         "source":  "C:\\Users\\steve\\AppData\\Local\\Temp\\metaculus-audit-artifacts-20260605\\23553553590\\forecastingoutput\\forecast_reports.json",
+                         "content":  "MultipleChoiceReport(question=MultipleChoiceQuestion(question_text=\u0027How many charges will the ICC confirm against Rodrigo Duterte before May 2026?\u0027, id_of_post=42665, page_url=\u0027https://www.metaculus.com/questions/42665\u0027, id_of_question=42610, state=\u003cQuestionState.OPEN: \u0027open\u0027\u003e, num_forecasters=0, num_predictions=0, resolution_criteria=\u0027This question will resolve as the number of charges confirmed for trial by the International Criminal Court against Rodrigo Duterte in the Pre-Trial Chamberâ€™s confirmation of charges decision.\u0027, fine_print=\u0027If the ICC does not issue a confirmation of charges decision against Rodrigo Duterte before May 2026, this question will resolve as No Decision.\u0027, background_info=\"On March 7, 2025, the International Criminal Court issued an arrest warrant for former Filipino President [Rodrigo Duterte](https://en.wikipedia.org/wiki/Rodrigo_Duterte). On March 11, Duterte was [arrested](https://en.wikipedia.org/wiki/Arrest_of_Rodrigo_Duterte) by the Philippine National Police and Interpol, which transferred him to the Hague to face trial for the charges.\\n\\nThe ICC has charged Duterte with [three separate counts](https://www.aljazeera.com/news/2026/2/23/icc-to-hold-hearings-on-charges-against-ex-philippine-president-duterte) of crimes against humanity, with each count pertaining to a different set of victims whose murder Duterte allegedly ordered during the [Philippine drug war](https://en.wikipedia.org/wiki/Philippine_drug_war).\\n\\nIn order for the case to proceed to trial, the ICC must first [confirm the charges](https://www.icc-cpi.int/philippines/duterte), that is, the Pre-Trial Chamber must determine that there are substantial grounds to believe the accused committed the crimes charged. Duterte\u0027s [confirmation of charges hearing](https://www.icc-cpi.int/news/icc-concludes-confirmation-charges-hearing-duterte-case) concluded on February 27, 2026, and the ICC has a maximum of 60 days from then to make a decision, with the possibility of extension in the case of exceptional circumstances.\", unit_of_measure=\u0027\u0027, close_time=datetime.datetime(2026, 4, 28, 1, 0), actual_resolution_time=None, scheduled_resolution_time=datetime.datetime(2026, 4, 29, 1, 0), published_time=datetime.datetime(2026, 3, 23, 14, 15, 57), open_time=datetime.datetime(2026, 3, 25, 17, 0), date_accessed=datetime.datetime(2026, 3, 25, 17, 1, 7, 553342), already_forecasted=False, tournament_slugs=[\u0027metaculus-cup-spring-2026\u0027], includes_bots_in_aggregates=False, cp_reveal_time=datetime.datetime(2026, 3, 30, 16, 0), api_json={\u0027id\u0027: 42665, \u0027title\u0027: \u0027How many charges will the ICC confirm against Rodrigo Duterte before May 2026?\u0027, \u0027short_title\u0027: \u0027ICC charges confirmed against Duterte?\u0027, \u0027url_title\u0027: \u0027ICC charges confirmed against Duterte?\u0027, \u0027slug\u0027: \u0027icc-charges-confirmed-against-duterte\u0027, \u0027author_id\u0027: 168191, \u0027author_username\u0027: \u0027ADQ\u0027, \u0027coauthors\u0027: [], \u0027created_at\u0027: \u00272026-03-14T10:43:08.336634Z\u0027, \u0027published_at\u0027: \u00272026-03-23T14:15:57Z\u0027, \u0027edited_at\u0027: \u00272026-03-23T14:16:16.781459Z\u0027, \u0027curation_status\u0027: \u0027approved\u0027, \u0027curation_status_updated_at\u0027: \u00272026-03-23T14:16:16.758008Z\u0027, \u0027comment_count\u0027: 0, \u0027status\u0027: \u0027open\u0027, \u0027resolved\u0027: False, \u0027actual_close_time\u0027: None, \u0027scheduled_close_time\u0027: \u00272026-04-28T01:00:00Z\u0027, \u0027scheduled_resolve_time\u0027: \u00272026-04-29T01:00:00Z\u0027, \u0027actual_resolve_time\u0027: None, \u0027open_time\u0027: \u00272026-03-25T17:00:00Z\u0027, \u0027nr_forecasters\u0027: 0, \u0027html_metadata_json\u0027: None, \u0027projects\u0027: {\u0027tournament\u0027: [{\u0027id\u0027: 32921, \u0027type\u0027: \u0027tournament\u0027, \u0027name\u0027: \u0027Metaculus Cup Spring 2026\u0027, \u0027slug\u0027: \u0027metaculus-cup-spring-2026\u0027, \u0027header_image\u0027: \u0027https://cdn.metaculus.com/cup-cover.jpg\u0027, \u0027prize_pool\u0027: \u00275000.00\u0027, \u0027start_date\u0027: \u00272026-01-07T17:00:00Z\u0027, \u0027close_date\u0027: \u00272026-05-01T00:00:00Z\u0027, \u0027forecasting_end_date\u0027: \u00272026-05-01T00:00:00Z\u0027, \u0027html_metadata_json\u0027: {\u0027image_url\u0027: \u0027https://cdn.metaculus.com/user_uploaded/image_8.png\u0027}, \u0027is_ongoing\u0027: True, \u0027user_permission\u0027: None, \u0027order\u0027: 2, \u0027created_at\u0027: \u00272025-12-29T12:43:16.555925Z\u0027, \u0027edited_at\u0027: \u00272026-03-25T16:59:56.657193Z\u0027, \u0027score_type\u0027: \u0027peer_tournament\u0027, \u0027default_permission\u0027: \u0027forecaster\u0027, \u0027visibility\u0027: \u0027normal\u0027, \u0027show_on_homepage\u0027: True, \u0027is_current_content_translated\u0027: False, \u0027bot_leaderboard_status\u0027: \u0027exclude_and_show\u0027, \u0027description_preview\u0027: \u0027\u003cp\u003eWelcome to the Metaculus Cup! Forecasting novices and veterans are invited to make predictions on new topical questions each week while c\u0027}], \u0027default_project\u0027: {\u0027id\u0027: 32921, \u0027type\u0027: \u0027tournament\u0027, \u0027name\u0027: \u0027Metaculus Cup Spring 2026\u0027, \u0027slug\u0027: \u0027metaculus-cup-spring-2026\u0027, \u0027header_image\u0027: \u0027https://cdn.metaculus.com/cup-cover.jpg\u0027, \u0027prize_pool\u0027: \u00275000.00\u0027, \u0027start_date\u0027: \u00272026-01-07T17:00:00Z\u0027, \u0027close_date\u0027: \u00272026-05-01T00:00:00Z\u0027, \u0027forecasting_end_date\u0027: \u00272026-05-01T00:00:00Z\u0027, \u0027html_metadata_json\u0027: {\u0027image_url\u0027: \u0027https://cdn.metaculus.com/user_uploaded/image_8.png\u0027}, \u0027is_ongoing\u0027: True, \u0027user_permission\u0027: None, \u0027order\u0027: 2, \u0027created_at\u0027: \u00272025-12-29T12:43:16.555925Z\u0027, \u0027edited_at\u0027: \u00272026-03-25T16:59:56.657193Z\u0027, \u0027score_type\u0027: \u0027peer_tournament\u0027, \u0027default_permission\u0027: \u0027forecaster\u0027, \u0027visibility\u0027: \u0027normal\u0027, \u0027show_on_homepage\u0027: True, \u0027is_current_content_translated\u0027: False, \u0027bot_leaderboard_status\u0027: \u0027exclude_and_show\u0027, \u0027description_preview\u0027: \u0027\u003cp\u003eWelcome to the Metaculus Cup! Forecasting novices and veterans are invited to make predictions on new topical questions each week while c\u0027}, \u0027category\u0027: [{\u0027id\u0027: 3688, \u0027name\u0027: \u0027Law\u0027, \u0027slug\u0027: \u0027law\u0027, \u0027emoji\u0027: \u0027âš–ï¸\u0027, \u0027description\u0027: \u0027Law\u0027, \u0027type\u0027: \u0027category\u0027}]}, \u0027question\u0027: {\u0027id\u0027: 42610, \u0027title\u0027: \u0027How many charges will the ICC confirm against Rodrigo Duterte before May 2026?\u0027, \u0027created_at\u0027: \u00272026-03-14T10:43:08.337086Z\u0027, \u0027open_time\u0027: \u00272026-03-25T17:00:00Z\u0027, \u0027cp_reveal_time\u0027: \u00272026-03-30T16:00:00Z\u0027, \u0027spot_scoring_time\u0027: \u00272026-03-30T16:00:00Z\u0027, \u0027scheduled_resolve_time\u0027: \u00272026-04-29T01:00:00Z\u0027, \u0027actual_resolve_time\u0027: None, \u0027resolution_set_time\u0027: None, \u0027scheduled_close_time\u0027: \u00272026-04-28T01:00:00Z\u0027, \u0027actual_close_time\u0027: \u00272026-04-28T01:00:00Z\u0027, \u0027type\u0027: \u0027multiple_choice\u0027, \u0027options\u0027: [\u00270\u0027, \u00271\u0027, \u00272\u0027, \u00273\u0027, \u0027No Decision\u0027], \u0027all_options_ever\u0027: None, \u0027options_history\u0027: None, \u0027options_order\u0027: None, \u0027group_variable\u0027: \u0027\u0027, \u0027status\u0027: \u0027open\u0027, \u0027possibilities\u0027: None, \u0027resolution\u0027: None, \u0027include_bots_in_aggregates\u0027: False, \u0027question_weight\u0027: 1, \u0027default_score_type\u0027: \u0027peer\u0027, \u0027default_aggregation_method\u0027: \u0027recency_weighted\u0027, \u0027label\u0027: \u0027\u0027, \u0027unit\u0027: \u0027\u0027, \u0027open_upper_bound\u0027: False, \u0027open_lower_bound\u0027: False, \u0027inbound_outcome_count\u0027: None, \u0027scaling\u0027: {\u0027range_min\u0027: None, \u0027range_max\u0027: None, \u0027nominal_min\u0027: None, \u0027nominal_max\u0027: None, \u0027zero_point\u0027: None, \u0027open_upper_bound\u0027: False, \u0027open_lower_bound\u0027: False, \u0027inbound_outcome_count\u0027: None, \u0027continuous_range\u0027: None}, \u0027group_rank\u0027: None, \u0027coherence_links\u0027: None, \u0027coherence_link_aggregations\u0027: None, \u0027description\u0027: \"On March 7, 2025, the International Criminal Court issued an arrest warrant for former Filipino President [Rodrigo Duterte](https://en.wikipedia.org/wiki/Rodrigo_Duterte). On March 11, Duterte was [arrested](https://en.wikipedia.org/wiki/Arrest_of_Rodrigo_Duterte) by the Philippine National Police and Interpol, which transferred him to the Hague to face trial for the charges.\\n\\nThe ICC has charged Duterte with [three separate counts](https://www.aljazeera.com/news/2026/2/23/icc-to-hold-hearings-on-charges-against-ex-philippine-president-duterte) of crimes against humanity, with each count pertaining to a different set of victims whose murder Duterte allegedly ordered during the [Philippine drug war](https://en.wikipedia.org/wiki/Philippine_drug_war).\\n\\nIn order for the case to proceed to trial, the ICC must first [confirm the charges](https://www.icc-cpi.int/philippines/duterte), that is, the Pre-Trial Chamber must determine that there are substantial grounds to believe the accused committed the crimes charged. Duterte\u0027s [confirmation of charges hearing](https://www.icc-cpi.int/news/icc-concludes-confirmation-charges-hearing-duterte-case) concluded on February 27, 2026, and the ICC has a maximum of 60 days from then to make a decision, with the possibility of extension in the case of exceptional circumstances.\", \u0027resolution_criteria\u0027: \u0027This question will resolve as the number of charges confirmed for trial by the International Criminal Court against Rodrigo Duterte in the Pre-Trial Chamberâ€™s confirmation of charges decision.\u0027, \u0027fine_print\u0027: \u0027If the ICC does not issue a confirmation of charges decision against Rodrigo Duterte before May 2026, this question will resolve as No Decision.\u0027, \u0027short_title\u0027: \u0027ICC charges confirmed against Duterte?\u0027, \u0027post_id\u0027: 42665, \u0027aggregations\u0027: {\u0027recency_weighted\u0027: {\u0027history\u0027: None, \u0027latest\u0027: None, \u0027score_data\u0027: None, \u0027movement\u0027: None}}, \u0027average_coverage\u0027: None, \u0027my_forecasts\u0027: {\u0027history\u0027: [], \u0027latest\u0027: None, \u0027score_data\u0027: {}}}, \u0027user_permission\u0027: \u0027forecaster\u0027, \u0027vote\u0027: {\u0027score\u0027: 0, \u0027user_vote\u0027: None}, \u0027forecasts_count\u0027: 0, \u0027key_factors\u0027: [], \u0027is_current_content_translated\u0027: False}, options=[\u00270\u0027, \u00271\u0027, \u00272\u0027, \u00273\u0027, \u0027No Decision\u0027]), explanation=\u0027# RESEARCH\\n## Report 1 Research\\nResearch handled by individual agents in ensemble.\\n\\n\\n\\n# FORECASTS\\n\\n## R1: Forecaster 1 Reasoning\\nFallback multiple-choice distribution generated by TemplateForecaster.\\n\u0027, other_notes=None, price_estimate=0.0, minutes_taken=1.9550428152084351, errors=[], prediction=PredictedOptionList(predicted_options=[PredictedOption(option_name=\u00270\u0027, probability=0.017141800291727894), PredictedOption(option_name=\u00271\u0027, probability=0.05793614060683963), PredictedOption(option_name=\u00272\u0027, probability=0.04311602872692933), PredictedOption(option_name=\u00273\u0027, probability=0.00851774550837617), PredictedOption(option_name=\u0027No Decision\u0027, probability=0.8732882848661271)]))"
+                     }
+}

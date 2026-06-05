@@ -1,0 +1,22 @@
+﻿{
+    "record_id":  "local_ad_hoc_retail_sales_20260211_214128",
+    "category":  "local_ad_hoc_freeform_or_unlinked",
+    "posted_to_metaculus":  false,
+    "source_note":  "Local MEMORY.md: output log forecast_20260211_214128... Final prediction 34.2%; no Metaculus post ID in repo notes.",
+    "event":  {
+                  "event_time_utc":  "2026-02-11T21:41:28Z",
+                  "github_run_id":  null,
+                  "post_id":  null,
+                  "url":  null,
+                  "event_prediction":  {
+                                           "p_yes":  0.342
+                                       },
+                  "event_brier":  null
+              },
+    "current_metaculus":  null,
+    "token_output":  {
+                         "availability":  "not_available_in_snapshot",
+                         "source":  "local memory notes only",
+                         "content":  "Local MEMORY.md: output log forecast_20260211_214128... Final prediction 34.2%; no Metaculus post ID in repo notes."
+                     }
+}

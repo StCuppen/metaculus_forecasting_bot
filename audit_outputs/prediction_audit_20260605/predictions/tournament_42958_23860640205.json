@@ -1,0 +1,136 @@
+﻿{
+    "record_id":  "tournament_42958_23860640205",
+    "category":  "tournament_workflow_post_attempt",
+    "posted_to_metaculus":  true,
+    "source_note":  "Retained bot-log artifact and forecast_reports.json.",
+    "event":  {
+                  "event_time_utc":  "2026-04-01T17:13:21Z",
+                  "github_run_id":  "23860640205",
+                  "post_id":  42958,
+                  "url":  "https://www.metaculus.com/questions/42958",
+                  "event_prediction":  {
+                                           "option_probabilities":  {
+                                                                        "Blue Bloc":  0.26952189835723539,
+                                                                        "Red Bloc":  0.64941185261635548,
+                                                                        "No Formation before May":  0.0043196402561748448,
+                                                                        "Cross Bloc":  0.0767466087702345
+                                                                    }
+                                       },
+                  "event_brier":  {
+                                      "type":  "multiple_choice",
+                                      "resolution":  "No Formation before May",
+                                      "brier_sum":  1.4916472287500195,
+                                      "brier_normalized_by_2":  0.74582361437500977,
+                                      "per_option":  [
+                                                         {
+                                                             "option":  "Blue Bloc",
+                                                             "p":  0.26952189835723539,
+                                                             "outcome":  0,
+                                                             "squared_error":  0.072642053694087924
+                                                         },
+                                                         {
+                                                             "option":  "Red Bloc",
+                                                             "p":  0.64941185261635548,
+                                                             "outcome":  0,
+                                                             "squared_error":  0.421735754318607
+                                                         },
+                                                         {
+                                                             "option":  "No Formation before May",
+                                                             "p":  0.0043196402561748448,
+                                                             "outcome":  1,
+                                                             "squared_error":  0.99137937877959315
+                                                         },
+                                                         {
+                                                             "option":  "Cross Bloc",
+                                                             "p":  0.0767466087702345,
+                                                             "outcome":  0,
+                                                             "squared_error":  0.0058900419577314345
+                                                         }
+                                                     ]
+                                  }
+              },
+    "current_metaculus":  {
+                              "title":  "Which Bloc will form the 2026 Danish Government?",
+                              "post_status":  "resolved",
+                              "resolved":  true,
+                              "nr_forecasters":  90,
+                              "forecasts_count":  1357,
+                              "actual_close_time":  "2026-04-25T17:00:00Z",
+                              "scheduled_close_time":  "2026-04-25T17:00:00Z",
+                              "actual_resolve_time":  "2026-05-04T10:26:00Z",
+                              "scheduled_resolve_time":  "2026-05-01T01:00:00Z",
+                              "question_id":  42894,
+                              "question_type":  "multiple_choice",
+                              "options":  [
+                                              "Blue Bloc",
+                                              "Red Bloc",
+                                              "Cross Bloc",
+                                              "No Formation before May"
+                                          ],
+                              "resolution":  "No Formation before May",
+                              "my_latest_forecast":  {
+                                                         "question_id":  42894,
+                                                         "author_id":  270023,
+                                                         "start_time":  1775063600.777944,
+                                                         "end_time":  null,
+                                                         "forecast_values":  [
+                                                                                 0.2695218983572354,
+                                                                                 0.6494118526163555,
+                                                                                 0.0767466087702345,
+                                                                                 0.004319640256174845
+                                                                             ],
+                                                         "interval_lower_bounds":  null,
+                                                         "centers":  null,
+                                                         "interval_upper_bounds":  null,
+                                                         "distribution_input":  null
+                                                     },
+                              "my_latest_forecast_time_utc":  "2026-04-01T17:13:21.0000000Z",
+                              "my_forecast_history_count":  1,
+                              "metaculus_score_data":  {
+                                                           "baseline_score":  -292.6306047628725,
+                                                           "peer_score":  -425.3247954233546,
+                                                           "coverage":  0.9990619599676611,
+                                                           "relative_legacy_score":  -6.3408821866452225,
+                                                           "weighted_coverage":  0.9990619599676611,
+                                                           "spot_peer_score":  -404.7266052688014,
+                                                           "spot_baseline_score":  -292.7436558155581
+                                                       },
+                              "account_latest_brier":  {
+                                                           "type":  "multiple_choice",
+                                                           "resolution":  "No Formation before May",
+                                                           "brier_sum":  1.4916472287500195,
+                                                           "brier_normalized_by_2":  0.74582361437500977,
+                                                           "per_option":  [
+                                                                              {
+                                                                                  "option":  "Blue Bloc",
+                                                                                  "p":  0.26952189835723539,
+                                                                                  "outcome":  0,
+                                                                                  "squared_error":  0.072642053694087924
+                                                                              },
+                                                                              {
+                                                                                  "option":  "Red Bloc",
+                                                                                  "p":  0.64941185261635548,
+                                                                                  "outcome":  0,
+                                                                                  "squared_error":  0.421735754318607
+                                                                              },
+                                                                              {
+                                                                                  "option":  "Cross Bloc",
+                                                                                  "p":  0.0767466087702345,
+                                                                                  "outcome":  0,
+                                                                                  "squared_error":  0.0058900419577314345
+                                                                              },
+                                                                              {
+                                                                                  "option":  "No Formation before May",
+                                                                                  "p":  0.0043196402561748448,
+                                                                                  "outcome":  1,
+                                                                                  "squared_error":  0.99137937877959315
+                                                                              }
+                                                                          ]
+                                                       }
+                          },
+    "token_output":  {
+                         "availability":  "forecast_report_repr_available",
+                         "source":  "C:\\Users\\steve\\AppData\\Local\\Temp\\metaculus-audit-artifacts-20260605\\23860640205\\forecastingoutput\\forecast_reports.json",
+                         "content":  "MultipleChoiceReport(question=MultipleChoiceQuestion(question_text=\u0027Which Bloc will form the 2026 Danish Government?\u0027, id_of_post=42958, page_url=\u0027https://www.metaculus.com/questions/42958\u0027, id_of_question=42894, state=\u003cQuestionState.OPEN: \u0027open\u0027\u003e, num_forecasters=0, num_predictions=0, resolution_criteria=\u0027This question will resolve as the Bloc makeup of the Danish Government following the 2026 election based on the following criteria:\\n\\n* Red Bloc, if all government parties other than the Moderates belong to the red bloc.\\n* Blue Bloc, if all government parties other than the Moderates belong to the blue bloc.\\n* Cross Bloc, if government parties belong to both blocs.\\n\\nIf no government is formed before May 2026, this question will resolve as No Formation before May.\u0027, fine_print=\u0027Transitional/caretaker governments will not qualify for this question.\\n\\nIf a new election is called before a government is formed, this question will immediately resolve as No Formation before May.\u0027, background_info=\u0027Danish political parties are typically divided into a left-wing red bloc, and a right-wing blue bloc. Although informal, all parliamentary parties other than the bloc-spanning [Moderates](https://en.wikipedia.org/wiki/Moderates_\\\\(Denmark\\\\)) are considered to belong to one of the two blocs.\\n\\nFrom 1979 to 2022 all governments consisted of parties exclusively from one bloc, however following the [2022 election](https://en.wikipedia.org/wiki/2022_Danish_general_election), the [Social Democrats](https://en.wikipedia.org/wiki/Social_Democrats_\\\\(Denmark\\\\)) led by Mette Frederiksen formed a cross-bloc coalition with their traditional rival [Venstre](https://en.wikipedia.org/wiki/Venstre_\\\\(Denmark\\\\)).\u0026#x20;\\n\\nThe [2026 Danish general election](https://en.wikipedia.org/wiki/2026_Danish_general_election) was held on 24 March 2026 and resulted in a highly fragmented parliament. Both the Social Democrats and Venstre faced their worst result in over 100 years, while both further left and further right parties gained significant support.\\n\\nFollowing the election, neither the red bloc or blue bloc achieved a majority, handing the balance of power to the Moderates. [Government formation](https://www.euronews.com/my-europe/2026/03/25/danish-king-tasks-outgoing-pm-mette-frederiksen-with-leading-talks-for-next-government) is expected to be difficult as Venstre has ruled out participating in another cross-bloc coalition, while the Moderates oppose a solely red-bloc government.\u0027, unit_of_measure=\u0027\u0027, close_time=datetime.datetime(2026, 4, 25, 17, 0), actual_resolution_time=None, scheduled_resolution_time=datetime.datetime(2026, 5, 1, 1, 0), published_time=datetime.datetime(2026, 3, 31, 16, 20, 14), open_time=datetime.datetime(2026, 4, 1, 17, 0), date_accessed=datetime.datetime(2026, 4, 1, 17, 1, 17, 57411), already_forecasted=False, tournament_slugs=[\u0027metaculus-cup-spring-2026\u0027], includes_bots_in_aggregates=False, cp_reveal_time=datetime.datetime(2026, 4, 3, 17, 0), api_json={\u0027id\u0027: 42958, \u0027title\u0027: \u0027Which Bloc will form the 2026 Danish Government?\u0027, \u0027short_title\u0027: \u0027Which Bloc forms 2026 Danish Government?\u0027, \u0027url_title\u0027: \u0027Which Bloc forms 2026 Danish Government?\u0027, \u0027slug\u0027: \u0027which-bloc-forms-2026-danish-government\u0027, \u0027author_id\u0027: 168191, \u0027author_username\u0027: \u0027ADQ\u0027, \u0027coauthors\u0027: [], \u0027created_at\u0027: \u00272026-03-28T16:36:37.061503Z\u0027, \u0027published_at\u0027: \u00272026-03-31T16:20:14Z\u0027, \u0027edited_at\u0027: \u00272026-03-31T16:22:24.617581Z\u0027, \u0027curation_status\u0027: \u0027approved\u0027, \u0027curation_status_updated_at\u0027: \u00272026-03-31T16:21:15.777364Z\u0027, \u0027comment_count\u0027: 0, \u0027status\u0027: \u0027open\u0027, \u0027resolved\u0027: False, \u0027actual_close_time\u0027: None, \u0027scheduled_close_time\u0027: \u00272026-04-25T17:00:00Z\u0027, \u0027scheduled_resolve_time\u0027: \u00272026-05-01T01:00:00Z\u0027, \u0027actual_resolve_time\u0027: None, \u0027open_time\u0027: \u00272026-04-01T17:00:00Z\u0027, \u0027nr_forecasters\u0027: 0, \u0027html_metadata_json\u0027: None, \u0027projects\u0027: {\u0027leaderboard_tag\u0027: [{\u0027id\u0027: 32925, \u0027name\u0027: \u00272026 Leaderboard\u0027, \u0027slug\u0027: \u00272026_leaderboard\u0027, \u0027type\u0027: \u0027leaderboard_tag\u0027}], \u0027tournament\u0027: [{\u0027id\u0027: 32921, \u0027type\u0027: \u0027tournament\u0027, \u0027name\u0027: \u0027Metaculus Cup Spring 2026\u0027, \u0027slug\u0027: \u0027metaculus-cup-spring-2026\u0027, \u0027header_image\u0027: \u0027https://cdn.metaculus.com/cup-cover.jpg\u0027, \u0027prize_pool\u0027: \u00275000.00\u0027, \u0027start_date\u0027: \u00272026-01-07T17:00:00Z\u0027, \u0027close_date\u0027: \u00272026-05-01T00:00:00Z\u0027, \u0027forecasting_end_date\u0027: \u00272026-05-01T00:00:00Z\u0027, \u0027html_metadata_json\u0027: {\u0027image_url\u0027: \u0027https://cdn.metaculus.com/user_uploaded/image_8.png\u0027}, \u0027is_ongoing\u0027: True, \u0027user_permission\u0027: None, \u0027order\u0027: 2, \u0027created_at\u0027: \u00272025-12-29T12:43:16.555925Z\u0027, \u0027edited_at\u0027: \u00272026-04-01T17:00:10.564023Z\u0027, \u0027score_type\u0027: \u0027peer_tournament\u0027, \u0027default_permission\u0027: \u0027forecaster\u0027, \u0027visibility\u0027: \u0027normal\u0027, \u0027show_on_homepage\u0027: True, \u0027is_current_content_translated\u0027: False, \u0027bot_leaderboard_status\u0027: \u0027exclude_and_show\u0027, \u0027description_preview\u0027: \u0027\u003cp\u003eWelcome to the Metaculus Cup! Forecasting novices and veterans are invited to make predictions on new topical questions each week while c\u0027}], \u0027default_project\u0027: {\u0027id\u0027: 32921, \u0027type\u0027: \u0027tournament\u0027, \u0027name\u0027: \u0027Metaculus Cup Spring 2026\u0027, \u0027slug\u0027: \u0027metaculus-cup-spring-2026\u0027, \u0027header_image\u0027: \u0027https://cdn.metaculus.com/cup-cover.jpg\u0027, \u0027prize_pool\u0027: \u00275000.00\u0027, \u0027start_date\u0027: \u00272026-01-07T17:00:00Z\u0027, \u0027close_date\u0027: \u00272026-05-01T00:00:00Z\u0027, \u0027forecasting_end_date\u0027: \u00272026-05-01T00:00:00Z\u0027, \u0027html_metadata_json\u0027: {\u0027image_url\u0027: \u0027https://cdn.metaculus.com/user_uploaded/image_8.png\u0027}, \u0027is_ongoing\u0027: True, \u0027user_permission\u0027: None, \u0027order\u0027: 2, \u0027created_at\u0027: \u00272025-12-29T12:43:16.555925Z\u0027, \u0027edited_at\u0027: \u00272026-04-01T17:00:10.564023Z\u0027, \u0027score_type\u0027: \u0027peer_tournament\u0027, \u0027default_permission\u0027: \u0027forecaster\u0027, \u0027visibility\u0027: \u0027normal\u0027, \u0027show_on_homepage\u0027: True, \u0027is_current_content_translated\u0027: False, \u0027bot_leaderboard_status\u0027: \u0027exclude_and_show\u0027, \u0027description_preview\u0027: \u0027\u003cp\u003eWelcome to the Metaculus Cup! Forecasting novices and veterans are invited to make predictions on new topical questions each week while c\u0027}, \u0027category\u0027: [{\u0027id\u0027: 3689, \u0027name\u0027: \u0027Politics\u0027, \u0027slug\u0027: \u0027politics\u0027, \u0027emoji\u0027: \u0027ðŸ›ï¸\u0027, \u0027description\u0027: \u0027Politics\u0027, \u0027type\u0027: \u0027category\u0027}]}, \u0027question\u0027: {\u0027id\u0027: 42894, \u0027title\u0027: \u0027Which Bloc will form the 2026 Danish Government?\u0027, \u0027created_at\u0027: \u00272026-03-28T16:36:37.061877Z\u0027, \u0027open_time\u0027: \u00272026-04-01T17:00:00Z\u0027, \u0027cp_reveal_time\u0027: \u00272026-04-03T17:00:00Z\u0027, \u0027spot_scoring_time\u0027: \u00272026-04-03T17:00:00Z\u0027, \u0027scheduled_resolve_time\u0027: \u00272026-05-01T01:00:00Z\u0027, \u0027actual_resolve_time\u0027: None, \u0027resolution_set_time\u0027: None, \u0027scheduled_close_time\u0027: \u00272026-04-25T17:00:00Z\u0027, \u0027actual_close_time\u0027: \u00272026-04-25T17:00:00Z\u0027, \u0027type\u0027: \u0027multiple_choice\u0027, \u0027options\u0027: [\u0027Blue Bloc\u0027, \u0027Red Bloc\u0027, \u0027Cross Bloc\u0027, \u0027No Formation before May\u0027], \u0027all_options_ever\u0027: None, \u0027options_history\u0027: None, \u0027options_order\u0027: None, \u0027group_variable\u0027: \u0027\u0027, \u0027status\u0027: \u0027open\u0027, \u0027possibilities\u0027: None, \u0027resolution\u0027: None, \u0027include_bots_in_aggregates\u0027: False, \u0027question_weight\u0027: 1, \u0027default_score_type\u0027: \u0027peer\u0027, \u0027default_aggregation_method\u0027: \u0027recency_weighted\u0027, \u0027label\u0027: \u0027\u0027, \u0027unit\u0027: \u0027\u0027, \u0027open_upper_bound\u0027: False, \u0027open_lower_bound\u0027: False, \u0027inbound_outcome_count\u0027: None, \u0027scaling\u0027: {\u0027range_min\u0027: None, \u0027range_max\u0027: None, \u0027nominal_min\u0027: None, \u0027nominal_max\u0027: None, \u0027zero_point\u0027: None, \u0027open_upper_bound\u0027: False, \u0027open_lower_bound\u0027: False, \u0027inbound_outcome_count\u0027: None, \u0027continuous_range\u0027: None}, \u0027group_rank\u0027: None, \u0027coherence_links\u0027: None, \u0027coherence_link_aggregations\u0027: None, \u0027description\u0027: \u0027Danish political parties are typically divided into a left-wing red bloc, and a right-wing blue bloc. Although informal, all parliamentary parties other than the bloc-spanning [Moderates](https://en.wikipedia.org/wiki/Moderates_\\\\(Denmark\\\\)) are considered to belong to one of the two blocs.\\n\\nFrom 1979 to 2022 all governments consisted of parties exclusively from one bloc, however following the [2022 election](https://en.wikipedia.org/wiki/2022_Danish_general_election), the [Social Democrats](https://en.wikipedia.org/wiki/Social_Democrats_\\\\(Denmark\\\\)) led by Mette Frederiksen formed a cross-bloc coalition with their traditional rival [Venstre](https://en.wikipedia.org/wiki/Venstre_\\\\(Denmark\\\\)).\u0026#x20;\\n\\nThe [2026 Danish general election](https://en.wikipedia.org/wiki/2026_Danish_general_election) was held on 24 March 2026 and resulted in a highly fragmented parliament. Both the Social Democrats and Venstre faced their worst result in over 100 years, while both further left and further right parties gained significant support.\\n\\nFollowing the election, neither the red bloc or blue bloc achieved a majority, handing the balance of power to the Moderates. [Government formation](https://www.euronews.com/my-europe/2026/03/25/danish-king-tasks-outgoing-pm-mette-frederiksen-with-leading-talks-for-next-government) is expected to be difficult as Venstre has ruled out participating in another cross-bloc coalition, while the Moderates oppose a solely red-bloc government.\u0027, \u0027resolution_criteria\u0027: \u0027This question will resolve as the Bloc makeup of the Danish Government following the 2026 election based on the following criteria:\\n\\n* Red Bloc, if all government parties other than the Moderates belong to the red bloc.\\n* Blue Bloc, if all government parties other than the Moderates belong to the blue bloc.\\n* Cross Bloc, if government parties belong to both blocs.\\n\\nIf no government is formed before May 2026, this question will resolve as No Formation before May.\u0027, \u0027fine_print\u0027: \u0027Transitional/caretaker governments will not qualify for this question.\\n\\nIf a new election is called before a government is formed, this question will immediately resolve as No Formation before May.\u0027, \u0027short_title\u0027: \u0027Which Bloc forms 2026 Danish Government?\u0027, \u0027post_id\u0027: 42958, \u0027aggregations\u0027: {\u0027recency_weighted\u0027: {\u0027history\u0027: None, \u0027latest\u0027: None, \u0027score_data\u0027: None, \u0027movement\u0027: None}}, \u0027average_coverage\u0027: None, \u0027my_forecasts\u0027: {\u0027history\u0027: [], \u0027latest\u0027: None, \u0027score_data\u0027: {}}}, \u0027user_permission\u0027: \u0027forecaster\u0027, \u0027vote\u0027: {\u0027score\u0027: 0, \u0027user_vote\u0027: None}, \u0027forecasts_count\u0027: 0, \u0027key_factors\u0027: [], \u0027is_current_content_translated\u0027: False}, options=[\u0027Blue Bloc\u0027, \u0027Red Bloc\u0027, \u0027Cross Bloc\u0027, \u0027No Formation before May\u0027]), explanation=\u0027# RESEARCH\\n## Report 1 Research\\nResearch handled by individual agents in ensemble.\\n\\n\\n\\n# FORECASTS\\n\\n## R1: Forecaster 1 Reasoning\\nFallback multiple-choice distribution generated by TemplateForecaster.\\n\u0027, other_notes=None, price_estimate=0.0, minutes_taken=6.546801507472992, errors=[], prediction=PredictedOptionList(predicted_options=[PredictedOption(option_name=\u0027Blue Bloc\u0027, probability=0.2695218983572354), PredictedOption(option_name=\u0027Red Bloc\u0027, probability=0.6494118526163555), PredictedOption(option_name=\u0027Cross Bloc\u0027, probability=0.0767466087702345), PredictedOption(option_name=\u0027No Formation before May\u0027, probability=0.004319640256174845)]))"
+                     }
+}

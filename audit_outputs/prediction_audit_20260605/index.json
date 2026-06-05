@@ -1,0 +1,777 @@
+﻿{
+    "generated_at_utc":  "2026-06-05T17:48:43.5768084Z",
+    "output_root":  "C:\\Users\\steve\\Downloads\\metaculus_forecasting_bot-github\\metaculus_forecasting_bot-github\\audit_outputs\\prediction_audit_20260605",
+    "total_prediction_records":  22,
+    "posted_prediction_records":  16,
+    "unique_metaculus_posts_with_verified_or_current_user_forecast":  14,
+    "category_counts":  [
+                            {
+                                "category":  "custom_url_workflow_ad_hoc_posted",
+                                "prediction_records":  1,
+                                "posted_records":  1,
+                                "unique_post_ids":  1
+                            },
+                            {
+                                "category":  "feedback_loop_league_artifact",
+                                "prediction_records":  1,
+                                "posted_records":  0,
+                                "unique_post_ids":  0
+                            },
+                            {
+                                "category":  "local_ad_hoc_freeform_or_unlinked",
+                                "prediction_records":  2,
+                                "posted_records":  0,
+                                "unique_post_ids":  0
+                            },
+                            {
+                                "category":  "local_ad_hoc_posted_metaculus",
+                                "prediction_records":  1,
+                                "posted_records":  1,
+                                "unique_post_ids":  1
+                            },
+                            {
+                                "category":  "tournament_workflow_post_attempt",
+                                "prediction_records":  14,
+                                "posted_records":  14,
+                                "unique_post_ids":  12
+                            },
+                            {
+                                "category":  "local_ad_hoc_generated_unposted",
+                                "prediction_records":  3,
+                                "posted_records":  0,
+                                "unique_post_ids":  2
+                            }
+                        ],
+    "notes":  [
+                  "prediction_records are event/artifact references, so repeat post attempts for the same Metaculus post are counted separately.",
+                  "unique_metaculus_posts_with_verified_or_current_user_forecast deduplicates posted records by Metaculus post id.",
+                  "Metaculus score_data is account/question-level data exposed by the API; it may summarize forecast history, not necessarily only the single event_prediction.",
+                  "Brier values are computed locally from the event prediction when available and from the current account latest forecast when available.",
+                  "Multiple-choice brier_sum is sum_i (p_i - outcome_i)^2; brier_normalized_by_2 is also included for comparison."
+              ],
+    "predictions":  [
+                        {
+                            "record_id":  "custom_url_31326_20251229",
+                            "category":  "custom_url_workflow_ad_hoc_posted",
+                            "posted":  true,
+                            "post_id":  31326,
+                            "url":  "https://www.metaculus.com/questions/31326",
+                            "title":  "Will OpenAI top the Chatbot Arena Leaderboard on December 31, 2025?",
+                            "event_time_utc":  "2025-12-29T14:24:01Z",
+                            "event_brier":  {
+                                                "type":  "binary",
+                                                "p_yes":  0.048,
+                                                "y":  0,
+                                                "brier":  0.002304
+                                            },
+                            "latest_brier":  {
+                                                 "type":  "binary",
+                                                 "p_yes":  0.12,
+                                                 "y":  0,
+                                                 "brier":  0.0144
+                                             },
+                            "peer_score":  -1.1441017189325327,
+                            "baseline_score":  2.3260238701279468,
+                            "spot_peer_score":  null,
+                            "coverage":  0.12343798644440829,
+                            "resolved":  true,
+                            "resolution":  "no",
+                            "file":  "C:\\Users\\steve\\Downloads\\metaculus_forecasting_bot-github\\metaculus_forecasting_bot-github\\audit_outputs\\prediction_audit_20260605\\predictions\\custom_url_31326_20251229.json"
+                        },
+                        {
+                            "record_id":  "feedback_loop_manifold_gu5zc9ZPcc_20260211",
+                            "category":  "feedback_loop_league_artifact",
+                            "posted":  false,
+                            "post_id":  null,
+                            "url":  null,
+                            "title":  null,
+                            "event_time_utc":  "2026-02-11T20:23:57Z",
+                            "event_brier":  null,
+                            "latest_brier":  null,
+                            "peer_score":  null,
+                            "baseline_score":  null,
+                            "spot_peer_score":  null,
+                            "coverage":  null,
+                            "resolved":  null,
+                            "resolution":  null,
+                            "file":  "C:\\Users\\steve\\Downloads\\metaculus_forecasting_bot-github\\metaculus_forecasting_bot-github\\audit_outputs\\prediction_audit_20260605\\predictions\\feedback_loop_manifold_gu5zc9ZPcc_20260211.json"
+                        },
+                        {
+                            "record_id":  "local_ad_hoc_retail_sales_20260211_213552",
+                            "category":  "local_ad_hoc_freeform_or_unlinked",
+                            "posted":  false,
+                            "post_id":  null,
+                            "url":  null,
+                            "title":  null,
+                            "event_time_utc":  "2026-02-11T21:35:52Z",
+                            "event_brier":  null,
+                            "latest_brier":  null,
+                            "peer_score":  null,
+                            "baseline_score":  null,
+                            "spot_peer_score":  null,
+                            "coverage":  null,
+                            "resolved":  null,
+                            "resolution":  null,
+                            "file":  "C:\\Users\\steve\\Downloads\\metaculus_forecasting_bot-github\\metaculus_forecasting_bot-github\\audit_outputs\\prediction_audit_20260605\\predictions\\local_ad_hoc_retail_sales_20260211_213552.json"
+                        },
+                        {
+                            "record_id":  "local_ad_hoc_retail_sales_20260211_214128",
+                            "category":  "local_ad_hoc_freeform_or_unlinked",
+                            "posted":  false,
+                            "post_id":  null,
+                            "url":  null,
+                            "title":  null,
+                            "event_time_utc":  "2026-02-11T21:41:28Z",
+                            "event_brier":  null,
+                            "latest_brier":  null,
+                            "peer_score":  null,
+                            "baseline_score":  null,
+                            "spot_peer_score":  null,
+                            "coverage":  null,
+                            "resolved":  null,
+                            "resolution":  null,
+                            "file":  "C:\\Users\\steve\\Downloads\\metaculus_forecasting_bot-github\\metaculus_forecasting_bot-github\\audit_outputs\\prediction_audit_20260605\\predictions\\local_ad_hoc_retail_sales_20260211_214128.json"
+                        },
+                        {
+                            "record_id":  "local_ad_hoc_41501_20260211",
+                            "category":  "local_ad_hoc_posted_metaculus",
+                            "posted":  true,
+                            "post_id":  41501,
+                            "url":  "https://www.metaculus.com/questions/41501",
+                            "title":  "Will Japan receive more foreign visitors from China than from any other country during January 2026?",
+                            "event_time_utc":  "2026-02-11T22:56:12Z",
+                            "event_brier":  {
+                                                "type":  "binary",
+                                                "p_yes":  0.02,
+                                                "y":  0,
+                                                "brier":  0.0004
+                                            },
+                            "latest_brier":  {
+                                                 "type":  "binary",
+                                                 "p_yes":  0.02,
+                                                 "y":  0,
+                                                 "brier":  0.0004
+                                             },
+                            "peer_score":  6.174574592405079,
+                            "baseline_score":  17.278990400442314,
+                            "spot_peer_score":  null,
+                            "coverage":  0.17747012659587277,
+                            "resolved":  true,
+                            "resolution":  "no",
+                            "file":  "C:\\Users\\steve\\Downloads\\metaculus_forecasting_bot-github\\metaculus_forecasting_bot-github\\audit_outputs\\prediction_audit_20260605\\predictions\\local_ad_hoc_41501_20260211.json"
+                        },
+                        {
+                            "record_id":  "tournament_41595_21927552614",
+                            "category":  "tournament_workflow_post_attempt",
+                            "posted":  true,
+                            "post_id":  41595,
+                            "url":  "https://www.metaculus.com/questions/41595",
+                            "title":  "Will the North Atlantic sea surface temperature reach a daily record high before May 2026?",
+                            "event_time_utc":  "2026-02-11T23:46:41Z",
+                            "event_brier":  null,
+                            "latest_brier":  {
+                                                 "type":  "binary",
+                                                 "p_yes":  0.43375506027521704,
+                                                 "y":  0,
+                                                 "brier":  0.18814345231435717
+                                             },
+                            "peer_score":  -12.720013576541646,
+                            "baseline_score":  22.006516182397014,
+                            "spot_peer_score":  -5.635605143124084,
+                            "coverage":  0.8868157620877116,
+                            "resolved":  true,
+                            "resolution":  "no",
+                            "file":  "C:\\Users\\steve\\Downloads\\metaculus_forecasting_bot-github\\metaculus_forecasting_bot-github\\audit_outputs\\prediction_audit_20260605\\predictions\\tournament_41595_21927552614.json"
+                        },
+                        {
+                            "record_id":  "tournament_41595_21927817303",
+                            "category":  "tournament_workflow_post_attempt",
+                            "posted":  true,
+                            "post_id":  41595,
+                            "url":  "https://www.metaculus.com/questions/41595",
+                            "title":  "Will the North Atlantic sea surface temperature reach a daily record high before May 2026?",
+                            "event_time_utc":  "2026-02-11T23:56:24Z",
+                            "event_brier":  null,
+                            "latest_brier":  {
+                                                 "type":  "binary",
+                                                 "p_yes":  0.43375506027521704,
+                                                 "y":  0,
+                                                 "brier":  0.18814345231435717
+                                             },
+                            "peer_score":  -12.720013576541646,
+                            "baseline_score":  22.006516182397014,
+                            "spot_peer_score":  -5.635605143124084,
+                            "coverage":  0.8868157620877116,
+                            "resolved":  true,
+                            "resolution":  "no",
+                            "file":  "C:\\Users\\steve\\Downloads\\metaculus_forecasting_bot-github\\metaculus_forecasting_bot-github\\audit_outputs\\prediction_audit_20260605\\predictions\\tournament_41595_21927817303.json"
+                        },
+                        {
+                            "record_id":  "tournament_41595_21943618785",
+                            "category":  "tournament_workflow_post_attempt",
+                            "posted":  true,
+                            "post_id":  41595,
+                            "url":  "https://www.metaculus.com/questions/41595",
+                            "title":  "Will the North Atlantic sea surface temperature reach a daily record high before May 2026?",
+                            "event_time_utc":  "2026-02-12T10:55:13Z",
+                            "event_brier":  null,
+                            "latest_brier":  {
+                                                 "type":  "binary",
+                                                 "p_yes":  0.43375506027521704,
+                                                 "y":  0,
+                                                 "brier":  0.18814345231435717
+                                             },
+                            "peer_score":  -12.720013576541646,
+                            "baseline_score":  22.006516182397014,
+                            "spot_peer_score":  -5.635605143124084,
+                            "coverage":  0.8868157620877116,
+                            "resolved":  true,
+                            "resolution":  "no",
+                            "file":  "C:\\Users\\steve\\Downloads\\metaculus_forecasting_bot-github\\metaculus_forecasting_bot-github\\audit_outputs\\prediction_audit_20260605\\predictions\\tournament_41595_21943618785.json"
+                        },
+                        {
+                            "record_id":  "local_ad_hoc_41699_20260212_132716",
+                            "category":  "local_ad_hoc_generated_unposted",
+                            "posted":  false,
+                            "post_id":  41699,
+                            "url":  "https://www.metaculus.com/questions/41699",
+                            "title":  "Will U.S. consumer sentiment in March 2026 be higher than in February 2026?",
+                            "event_time_utc":  "2026-02-12T13:27:16Z",
+                            "event_brier":  null,
+                            "latest_brier":  null,
+                            "peer_score":  null,
+                            "baseline_score":  null,
+                            "spot_peer_score":  null,
+                            "coverage":  null,
+                            "resolved":  true,
+                            "resolution":  null,
+                            "file":  "C:\\Users\\steve\\Downloads\\metaculus_forecasting_bot-github\\metaculus_forecasting_bot-github\\audit_outputs\\prediction_audit_20260605\\predictions\\local_ad_hoc_41699_20260212_132716.json"
+                        },
+                        {
+                            "record_id":  "local_ad_hoc_41699_20260212_170935",
+                            "category":  "local_ad_hoc_generated_unposted",
+                            "posted":  false,
+                            "post_id":  41699,
+                            "url":  "https://www.metaculus.com/questions/41699",
+                            "title":  "Will U.S. consumer sentiment in March 2026 be higher than in February 2026?",
+                            "event_time_utc":  "2026-02-12T17:09:35Z",
+                            "event_brier":  null,
+                            "latest_brier":  null,
+                            "peer_score":  null,
+                            "baseline_score":  null,
+                            "spot_peer_score":  null,
+                            "coverage":  null,
+                            "resolved":  true,
+                            "resolution":  null,
+                            "file":  "C:\\Users\\steve\\Downloads\\metaculus_forecasting_bot-github\\metaculus_forecasting_bot-github\\audit_outputs\\prediction_audit_20260605\\predictions\\local_ad_hoc_41699_20260212_170935.json"
+                        },
+                        {
+                            "record_id":  "local_ad_hoc_41336_20260212_172715",
+                            "category":  "local_ad_hoc_generated_unposted",
+                            "posted":  false,
+                            "post_id":  41336,
+                            "url":  "https://www.metaculus.com/questions/41336",
+                            "title":  "Will OpenAI API token prices fall before March 14, 2026?",
+                            "event_time_utc":  "2026-02-12T17:27:15Z",
+                            "event_brier":  null,
+                            "latest_brier":  null,
+                            "peer_score":  null,
+                            "baseline_score":  null,
+                            "spot_peer_score":  null,
+                            "coverage":  null,
+                            "resolved":  true,
+                            "resolution":  null,
+                            "file":  "C:\\Users\\steve\\Downloads\\metaculus_forecasting_bot-github\\metaculus_forecasting_bot-github\\audit_outputs\\prediction_audit_20260605\\predictions\\local_ad_hoc_41336_20260212_172715.json"
+                        },
+                        {
+                            "record_id":  "tournament_42540_22964515054",
+                            "category":  "tournament_workflow_post_attempt",
+                            "posted":  true,
+                            "post_id":  42540,
+                            "url":  "https://www.metaculus.com/questions/42540",
+                            "title":  "Will a 1kt meteor strike take place during March or April 2026?",
+                            "event_time_utc":  "2026-03-11T17:01:03Z",
+                            "event_brier":  {
+                                                "type":  "binary",
+                                                "p_yes":  0.5,
+                                                "y":  0,
+                                                "brier":  0.25
+                                            },
+                            "latest_brier":  {
+                                                 "type":  "binary",
+                                                 "p_yes":  0.5,
+                                                 "y":  0,
+                                                 "brier":  0.25
+                                             },
+                            "peer_score":  -29.511393397654086,
+                            "baseline_score":  0,
+                            "spot_peer_score":  -23.061337128323416,
+                            "coverage":  0.9999545302568472,
+                            "resolved":  true,
+                            "resolution":  "no",
+                            "file":  "C:\\Users\\steve\\Downloads\\metaculus_forecasting_bot-github\\metaculus_forecasting_bot-github\\audit_outputs\\prediction_audit_20260605\\predictions\\tournament_42540_22964515054.json"
+                        },
+                        {
+                            "record_id":  "tournament_42542_23256870317",
+                            "category":  "tournament_workflow_post_attempt",
+                            "posted":  true,
+                            "post_id":  42542,
+                            "url":  "https://www.metaculus.com/questions/42542",
+                            "title":  "Will the U.S. conduct a ground invasion of Iran before May 2026?",
+                            "event_time_utc":  "2026-03-18T17:01:25Z",
+                            "event_brier":  {
+                                                "type":  "binary",
+                                                "p_yes":  0.5,
+                                                "y":  0,
+                                                "brier":  0.25
+                                            },
+                            "latest_brier":  {
+                                                 "type":  "binary",
+                                                 "p_yes":  0.5,
+                                                 "y":  0,
+                                                 "brier":  0.25
+                                             },
+                            "peer_score":  -0.2993699303942195,
+                            "baseline_score":  0,
+                            "spot_peer_score":  -7.757370226039116,
+                            "coverage":  0.8735084683338864,
+                            "resolved":  true,
+                            "resolution":  "no",
+                            "file":  "C:\\Users\\steve\\Downloads\\metaculus_forecasting_bot-github\\metaculus_forecasting_bot-github\\audit_outputs\\prediction_audit_20260605\\predictions\\tournament_42542_23256870317.json"
+                        },
+                        {
+                            "record_id":  "tournament_42729_23256870317",
+                            "category":  "tournament_workflow_post_attempt",
+                            "posted":  true,
+                            "post_id":  42729,
+                            "url":  "https://www.metaculus.com/questions/42729",
+                            "title":  "Will shipping traffic through the Strait of Hormuz return to normal before April 27, 2026?",
+                            "event_time_utc":  "2026-03-18T17:01:25Z",
+                            "event_brier":  {
+                                                "type":  "binary",
+                                                "p_yes":  0.5,
+                                                "y":  0,
+                                                "brier":  0.25
+                                            },
+                            "latest_brier":  {
+                                                 "type":  "binary",
+                                                 "p_yes":  0.5,
+                                                 "y":  0,
+                                                 "brier":  0.25
+                                             },
+                            "peer_score":  -40.583833058781536,
+                            "baseline_score":  0,
+                            "spot_peer_score":  -32.75259510485718,
+                            "coverage":  0.999898016350973,
+                            "resolved":  true,
+                            "resolution":  "no",
+                            "file":  "C:\\Users\\steve\\Downloads\\metaculus_forecasting_bot-github\\metaculus_forecasting_bot-github\\audit_outputs\\prediction_audit_20260605\\predictions\\tournament_42729_23256870317.json"
+                        },
+                        {
+                            "record_id":  "tournament_42665_23553553590",
+                            "category":  "tournament_workflow_post_attempt",
+                            "posted":  true,
+                            "post_id":  42665,
+                            "url":  "https://www.metaculus.com/questions/42665",
+                            "title":  "How many charges will the ICC confirm against Rodrigo Duterte before May 2026?",
+                            "event_time_utc":  "2026-03-25T17:09:13Z",
+                            "event_brier":  {
+                                                "type":  "multiple_choice",
+                                                "resolution":  "3",
+                                                "brier_sum":  1.7511789190950535,
+                                                "brier_normalized_by_2":  0.87558945954752676,
+                                                "per_option":  [
+                                                                   {
+                                                                       "option":  "2",
+                                                                       "p":  0.04311602872692933,
+                                                                       "outcome":  0,
+                                                                       "squared_error":  0.0018589919331813952
+                                                                   },
+                                                                   {
+                                                                       "option":  "3",
+                                                                       "p":  0.00851774550837617,
+                                                                       "outcome":  1,
+                                                                       "squared_error":  0.98303706097179322
+                                                                   },
+                                                                   {
+                                                                       "option":  "1",
+                                                                       "p":  0.057936140606839631,
+                                                                       "outcome":  0,
+                                                                       "squared_error":  0.0033565963884154919
+                                                                   },
+                                                                   {
+                                                                       "option":  "0",
+                                                                       "p":  0.017141800291727894,
+                                                                       "outcome":  0,
+                                                                       "squared_error":  0.00029384131724148252
+                                                                   },
+                                                                   {
+                                                                       "option":  "No Decision",
+                                                                       "p":  0.87328828486612708,
+                                                                       "outcome":  0,
+                                                                       "squared_error":  0.76263242848442192
+                                                                   }
+                                                               ]
+                                            },
+                            "latest_brier":  {
+                                                 "type":  "multiple_choice",
+                                                 "resolution":  "3",
+                                                 "brier_sum":  1.7511789190950535,
+                                                 "brier_normalized_by_2":  0.87558945954752676,
+                                                 "per_option":  [
+                                                                    {
+                                                                        "option":  "0",
+                                                                        "p":  0.017141800291727894,
+                                                                        "outcome":  0,
+                                                                        "squared_error":  0.00029384131724148252
+                                                                    },
+                                                                    {
+                                                                        "option":  "1",
+                                                                        "p":  0.057936140606839631,
+                                                                        "outcome":  0,
+                                                                        "squared_error":  0.0033565963884154919
+                                                                    },
+                                                                    {
+                                                                        "option":  "2",
+                                                                        "p":  0.04311602872692933,
+                                                                        "outcome":  0,
+                                                                        "squared_error":  0.0018589919331813952
+                                                                    },
+                                                                    {
+                                                                        "option":  "3",
+                                                                        "p":  0.00851774550837617,
+                                                                        "outcome":  1,
+                                                                        "squared_error":  0.98303706097179322
+                                                                    },
+                                                                    {
+                                                                        "option":  "No Decision",
+                                                                        "p":  0.87328828486612708,
+                                                                        "outcome":  0,
+                                                                        "squared_error":  0.76263242848442192
+                                                                    }
+                                                                ]
+                                             },
+                            "peer_score":  -315.9063807535447,
+                            "baseline_score":  -168.39136884023452,
+                            "spot_peer_score":  -343.3622506316255,
+                            "coverage":  0.8580506588975592,
+                            "resolved":  true,
+                            "resolution":  "3",
+                            "file":  "C:\\Users\\steve\\Downloads\\metaculus_forecasting_bot-github\\metaculus_forecasting_bot-github\\audit_outputs\\prediction_audit_20260605\\predictions\\tournament_42665_23553553590.json"
+                        },
+                        {
+                            "record_id":  "tournament_42837_23553553590",
+                            "category":  "tournament_workflow_post_attempt",
+                            "posted":  true,
+                            "post_id":  42837,
+                            "url":  "https://www.metaculus.com/questions/42837",
+                            "title":  "What will be the status of the Arctic Metagaz before May 2026?",
+                            "event_time_utc":  "2026-03-25T17:09:13Z",
+                            "event_brier":  null,
+                            "latest_brier":  null,
+                            "peer_score":  null,
+                            "baseline_score":  null,
+                            "spot_peer_score":  null,
+                            "coverage":  null,
+                            "resolved":  true,
+                            "resolution":  "annulled",
+                            "file":  "C:\\Users\\steve\\Downloads\\metaculus_forecasting_bot-github\\metaculus_forecasting_bot-github\\audit_outputs\\prediction_audit_20260605\\predictions\\tournament_42837_23553553590.json"
+                        },
+                        {
+                            "record_id":  "tournament_42958_23860640205",
+                            "category":  "tournament_workflow_post_attempt",
+                            "posted":  true,
+                            "post_id":  42958,
+                            "url":  "https://www.metaculus.com/questions/42958",
+                            "title":  "Which Bloc will form the 2026 Danish Government?",
+                            "event_time_utc":  "2026-04-01T17:13:21Z",
+                            "event_brier":  {
+                                                "type":  "multiple_choice",
+                                                "resolution":  "No Formation before May",
+                                                "brier_sum":  1.4916472287500195,
+                                                "brier_normalized_by_2":  0.74582361437500977,
+                                                "per_option":  [
+                                                                   {
+                                                                       "option":  "Blue Bloc",
+                                                                       "p":  0.26952189835723539,
+                                                                       "outcome":  0,
+                                                                       "squared_error":  0.072642053694087924
+                                                                   },
+                                                                   {
+                                                                       "option":  "Red Bloc",
+                                                                       "p":  0.64941185261635548,
+                                                                       "outcome":  0,
+                                                                       "squared_error":  0.421735754318607
+                                                                   },
+                                                                   {
+                                                                       "option":  "No Formation before May",
+                                                                       "p":  0.0043196402561748448,
+                                                                       "outcome":  1,
+                                                                       "squared_error":  0.99137937877959315
+                                                                   },
+                                                                   {
+                                                                       "option":  "Cross Bloc",
+                                                                       "p":  0.0767466087702345,
+                                                                       "outcome":  0,
+                                                                       "squared_error":  0.0058900419577314345
+                                                                   }
+                                                               ]
+                                            },
+                            "latest_brier":  {
+                                                 "type":  "multiple_choice",
+                                                 "resolution":  "No Formation before May",
+                                                 "brier_sum":  1.4916472287500195,
+                                                 "brier_normalized_by_2":  0.74582361437500977,
+                                                 "per_option":  [
+                                                                    {
+                                                                        "option":  "Blue Bloc",
+                                                                        "p":  0.26952189835723539,
+                                                                        "outcome":  0,
+                                                                        "squared_error":  0.072642053694087924
+                                                                    },
+                                                                    {
+                                                                        "option":  "Red Bloc",
+                                                                        "p":  0.64941185261635548,
+                                                                        "outcome":  0,
+                                                                        "squared_error":  0.421735754318607
+                                                                    },
+                                                                    {
+                                                                        "option":  "Cross Bloc",
+                                                                        "p":  0.0767466087702345,
+                                                                        "outcome":  0,
+                                                                        "squared_error":  0.0058900419577314345
+                                                                    },
+                                                                    {
+                                                                        "option":  "No Formation before May",
+                                                                        "p":  0.0043196402561748448,
+                                                                        "outcome":  1,
+                                                                        "squared_error":  0.99137937877959315
+                                                                    }
+                                                                ]
+                                             },
+                            "peer_score":  -425.3247954233546,
+                            "baseline_score":  -292.6306047628725,
+                            "spot_peer_score":  -404.7266052688014,
+                            "coverage":  0.9990619599676611,
+                            "resolved":  true,
+                            "resolution":  "No Formation before May",
+                            "file":  "C:\\Users\\steve\\Downloads\\metaculus_forecasting_bot-github\\metaculus_forecasting_bot-github\\audit_outputs\\prediction_audit_20260605\\predictions\\tournament_42958_23860640205.json"
+                        },
+                        {
+                            "record_id":  "tournament_42959_23860640205",
+                            "category":  "tournament_workflow_post_attempt",
+                            "posted":  true,
+                            "post_id":  42959,
+                            "url":  "https://www.metaculus.com/questions/42959",
+                            "title":  "Will the United States Department of Justice indict the Federal Reserve before May 2026?",
+                            "event_time_utc":  "2026-04-01T17:13:21Z",
+                            "event_brier":  {
+                                                "type":  "binary",
+                                                "p_yes":  0.11657787155227427,
+                                                "y":  0,
+                                                "brier":  0.013590400135658558
+                                            },
+                            "latest_brier":  {
+                                                 "type":  "binary",
+                                                 "p_yes":  0.11657787155227428,
+                                                 "y":  0,
+                                                 "brier":  0.013590400135658562
+                                             },
+                            "peer_score":  -2.9135050744216215,
+                            "baseline_score":  82.10143065697696,
+                            "spot_peer_score":  2.6182560445195615,
+                            "coverage":  0.9990482683993758,
+                            "resolved":  true,
+                            "resolution":  "no",
+                            "file":  "C:\\Users\\steve\\Downloads\\metaculus_forecasting_bot-github\\metaculus_forecasting_bot-github\\audit_outputs\\prediction_audit_20260605\\predictions\\tournament_42959_23860640205.json"
+                        },
+                        {
+                            "record_id":  "tournament_43020_23860640205",
+                            "category":  "tournament_workflow_post_attempt",
+                            "posted":  true,
+                            "post_id":  43020,
+                            "url":  "https://www.metaculus.com/questions/43020",
+                            "title":  "Will global tensions push New York yellow globes over $10 per sack in April 2026?",
+                            "event_time_utc":  "2026-04-01T17:13:21Z",
+                            "event_brier":  {
+                                                "type":  "binary",
+                                                "p_yes":  0.45002655824327475,
+                                                "y":  0,
+                                                "brier":  0.20252390312428756
+                                            },
+                            "latest_brier":  {
+                                                 "type":  "binary",
+                                                 "p_yes":  0.4500265582432747,
+                                                 "y":  0,
+                                                 "brier":  0.2025239031242875
+                                             },
+                            "peer_score":  -3.6547358660835307,
+                            "baseline_score":  13.74163528087519,
+                            "spot_peer_score":  34.29572048240456,
+                            "coverage":  0.998950799505418,
+                            "resolved":  true,
+                            "resolution":  "no",
+                            "file":  "C:\\Users\\steve\\Downloads\\metaculus_forecasting_bot-github\\metaculus_forecasting_bot-github\\audit_outputs\\prediction_audit_20260605\\predictions\\tournament_43020_23860640205.json"
+                        },
+                        {
+                            "record_id":  "tournament_43097_24003051897",
+                            "category":  "tournament_workflow_post_attempt",
+                            "posted":  true,
+                            "post_id":  43097,
+                            "url":  "https://www.metaculus.com/questions/43097",
+                            "title":  "[Short fuse] Will a Kenyan win the 2026 Boston marathon?",
+                            "event_time_utc":  "2026-04-05T14:05:32Z",
+                            "event_brier":  {
+                                                "type":  "binary",
+                                                "p_yes":  0.569075357038999,
+                                                "y":  1,
+                                                "brier":  0.18569604791106617
+                                            },
+                            "latest_brier":  {
+                                                 "type":  "binary",
+                                                 "p_yes":  0.569075357038999,
+                                                 "y":  1,
+                                                 "brier":  0.18569604791106617
+                                             },
+                            "peer_score":  -14.858865718042576,
+                            "baseline_score":  18.66508445770905,
+                            "spot_peer_score":  -16.0222510621803,
+                            "coverage":  0.9992160453311891,
+                            "resolved":  true,
+                            "resolution":  "yes",
+                            "file":  "C:\\Users\\steve\\Downloads\\metaculus_forecasting_bot-github\\metaculus_forecasting_bot-github\\audit_outputs\\prediction_audit_20260605\\predictions\\tournament_43097_24003051897.json"
+                        },
+                        {
+                            "record_id":  "tournament_43105_24148023397",
+                            "category":  "tournament_workflow_post_attempt",
+                            "posted":  true,
+                            "post_id":  43105,
+                            "url":  "https://www.metaculus.com/questions/43105",
+                            "title":  "Which of these market indexes will perform the best during April 2026?",
+                            "event_time_utc":  "2026-04-08T17:04:05Z",
+                            "event_brier":  {
+                                                "type":  "multiple_choice",
+                                                "resolution":  "Nikkei 225",
+                                                "brier_sum":  0.691862678774327,
+                                                "brier_normalized_by_2":  0.34593133938716347,
+                                                "per_option":  [
+                                                                   {
+                                                                       "option":  "Hang Seng Index",
+                                                                       "p":  0.23140883910036378,
+                                                                       "outcome":  0,
+                                                                       "squared_error":  0.053550050813778054
+                                                                   },
+                                                                   {
+                                                                       "option":  "CAC 40",
+                                                                       "p":  0.1260293844755033,
+                                                                       "outcome":  0,
+                                                                       "squared_error":  0.01588340575127423
+                                                                   },
+                                                                   {
+                                                                       "option":  "DAX 40",
+                                                                       "p":  0.1260293844755033,
+                                                                       "outcome":  0,
+                                                                       "squared_error":  0.01588340575127423
+                                                                   },
+                                                                   {
+                                                                       "option":  "FTSE 100",
+                                                                       "p":  0.09505214230838735,
+                                                                       "outcome":  0,
+                                                                       "squared_error":  0.00903490975741392
+                                                                   },
+                                                                   {
+                                                                       "option":  "Nikkei 225",
+                                                                       "p":  0.24696843749842393,
+                                                                       "outcome":  1,
+                                                                       "squared_error":  0.56705653412356516
+                                                                   },
+                                                                   {
+                                                                       "option":  "S\u0026P 500",
+                                                                       "p":  0.17451181214181827,
+                                                                       "outcome":  0,
+                                                                       "squared_error":  0.030454372577021271
+                                                                   }
+                                                               ]
+                                            },
+                            "latest_brier":  {
+                                                 "type":  "multiple_choice",
+                                                 "resolution":  "Nikkei 225",
+                                                 "brier_sum":  0.69186267877432683,
+                                                 "brier_normalized_by_2":  0.34593133938716342,
+                                                 "per_option":  [
+                                                                    {
+                                                                        "option":  "S\u0026P 500",
+                                                                        "p":  0.17451181214181827,
+                                                                        "outcome":  0,
+                                                                        "squared_error":  0.030454372577021271
+                                                                    },
+                                                                    {
+                                                                        "option":  "Nikkei 225",
+                                                                        "p":  0.24696843749842393,
+                                                                        "outcome":  1,
+                                                                        "squared_error":  0.56705653412356516
+                                                                    },
+                                                                    {
+                                                                        "option":  "FTSE 100",
+                                                                        "p":  0.095052142308387363,
+                                                                        "outcome":  0,
+                                                                        "squared_error":  0.0090349097574139222
+                                                                    },
+                                                                    {
+                                                                        "option":  "Hang Seng Index",
+                                                                        "p":  0.23140883910036375,
+                                                                        "outcome":  0,
+                                                                        "squared_error":  0.05355005081377804
+                                                                    },
+                                                                    {
+                                                                        "option":  "CAC 40",
+                                                                        "p":  0.1260293844755033,
+                                                                        "outcome":  0,
+                                                                        "squared_error":  0.01588340575127423
+                                                                    },
+                                                                    {
+                                                                        "option":  "DAX 40",
+                                                                        "p":  0.1260293844755033,
+                                                                        "outcome":  0,
+                                                                        "squared_error":  0.01588340575127423
+                                                                    }
+                                                                ]
+                                             },
+                            "peer_score":  -24.91458232170314,
+                            "baseline_score":  21.945557807176236,
+                            "spot_peer_score":  16.09546842697089,
+                            "coverage":  0.9998585591484941,
+                            "resolved":  true,
+                            "resolution":  "Nikkei 225",
+                            "file":  "C:\\Users\\steve\\Downloads\\metaculus_forecasting_bot-github\\metaculus_forecasting_bot-github\\audit_outputs\\prediction_audit_20260605\\predictions\\tournament_43105_24148023397.json"
+                        },
+                        {
+                            "record_id":  "tournament_43099_24154371966",
+                            "category":  "tournament_workflow_post_attempt",
+                            "posted":  true,
+                            "post_id":  43099,
+                            "url":  "https://www.metaculus.com/questions/43099",
+                            "title":  "Will another U.S. cabinet member leave office before May 2026?",
+                            "event_time_utc":  "2026-04-08T19:33:27Z",
+                            "event_brier":  {
+                                                "type":  "binary",
+                                                "p_yes":  0.27169684015264073,
+                                                "y":  1,
+                                                "brier":  0.53042549264364813
+                                            },
+                            "latest_brier":  {
+                                                 "type":  "binary",
+                                                 "p_yes":  0.27169684015264073,
+                                                 "y":  1,
+                                                 "brier":  0.53042549264364813
+                                             },
+                            "peer_score":  0.9245328801199871,
+                            "baseline_score":  -47.81700366887878,
+                            "spot_peer_score":  -16.63909616522071,
+                            "coverage":  0.5431722838809202,
+                            "resolved":  true,
+                            "resolution":  "yes",
+                            "file":  "C:\\Users\\steve\\Downloads\\metaculus_forecasting_bot-github\\metaculus_forecasting_bot-github\\audit_outputs\\prediction_audit_20260605\\predictions\\tournament_43099_24154371966.json"
+                        }
+                    ]
+}

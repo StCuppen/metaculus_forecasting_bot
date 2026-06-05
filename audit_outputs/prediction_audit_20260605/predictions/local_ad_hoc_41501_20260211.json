@@ -1,0 +1,72 @@
+﻿{
+    "record_id":  "local_ad_hoc_41501_20260211",
+    "category":  "local_ad_hoc_posted_metaculus",
+    "posted_to_metaculus":  true,
+    "source_note":  "Local memory: forecast_20260211_225612... final posted prediction 2%; Forecast posted successfully to Metaculus question_id=41230.",
+    "event":  {
+                  "event_time_utc":  "2026-02-11T22:56:12Z",
+                  "github_run_id":  null,
+                  "post_id":  41501,
+                  "url":  "https://www.metaculus.com/questions/41501",
+                  "event_prediction":  {
+                                           "p_yes":  0.02
+                                       },
+                  "event_brier":  {
+                                      "type":  "binary",
+                                      "p_yes":  0.02,
+                                      "y":  0,
+                                      "brier":  0.0004
+                                  }
+              },
+    "current_metaculus":  {
+                              "title":  "Will Japan receive more foreign visitors from China than from any other country during January 2026?",
+                              "post_status":  "resolved",
+                              "resolved":  true,
+                              "nr_forecasters":  876,
+                              "forecasts_count":  2910,
+                              "actual_close_time":  "2026-02-17T00:00:00Z",
+                              "scheduled_close_time":  "2026-02-17T00:00:00Z",
+                              "actual_resolve_time":  "2026-02-21T13:59:00Z",
+                              "scheduled_resolve_time":  "2026-02-18T00:00:00Z",
+                              "question_id":  41230,
+                              "question_type":  "binary",
+                              "options":  {
+
+                                          },
+                              "resolution":  "no",
+                              "my_latest_forecast":  {
+                                                         "question_id":  41230,
+                                                         "author_id":  270023,
+                                                         "start_time":  1770850743.625912,
+                                                         "end_time":  null,
+                                                         "forecast_values":  [
+                                                                                 0.98,
+                                                                                 0.02
+                                                                             ],
+                                                         "interval_lower_bounds":  null,
+                                                         "centers":  null,
+                                                         "interval_upper_bounds":  null,
+                                                         "distribution_input":  null
+                                                     },
+                              "my_latest_forecast_time_utc":  "2026-02-11T22:59:04.0000000Z",
+                              "my_forecast_history_count":  1,
+                              "metaculus_score_data":  {
+                                                           "baseline_score":  17.278990400442314,
+                                                           "peer_score":  6.174574592405079,
+                                                           "coverage":  0.17747012659587277,
+                                                           "relative_legacy_score":  -0.004431115917395158,
+                                                           "weighted_coverage":  0.17747012659587277
+                                                       },
+                              "account_latest_brier":  {
+                                                           "type":  "binary",
+                                                           "p_yes":  0.02,
+                                                           "y":  0,
+                                                           "brier":  0.0004
+                                                       }
+                          },
+    "token_output":  {
+                         "availability":  "not_available_in_snapshot",
+                         "source":  "local memory notes only",
+                         "content":  "Local memory: forecast_20260211_225612... final posted prediction 2%; Forecast posted successfully to Metaculus question_id=41230."
+                     }
+}

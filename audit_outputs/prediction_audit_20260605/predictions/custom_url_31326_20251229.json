@@ -1,0 +1,72 @@
+﻿{
+    "record_id":  "custom_url_31326_20251229",
+    "category":  "custom_url_workflow_ad_hoc_posted",
+    "posted_to_metaculus":  true,
+    "source_note":  "Custom URL workflow log: FINAL ENSEMBLE PREDICTION 4.8%; Submission Attempt logged.",
+    "event":  {
+                  "event_time_utc":  "2025-12-29T14:24:01Z",
+                  "github_run_id":  "20575026147",
+                  "post_id":  31326,
+                  "url":  "https://www.metaculus.com/questions/31326",
+                  "event_prediction":  {
+                                           "p_yes":  0.048
+                                       },
+                  "event_brier":  {
+                                      "type":  "binary",
+                                      "p_yes":  0.048,
+                                      "y":  0,
+                                      "brier":  0.002304
+                                  }
+              },
+    "current_metaculus":  {
+                              "title":  "Will OpenAI top the Chatbot Arena Leaderboard on December 31, 2025?",
+                              "post_status":  "resolved",
+                              "resolved":  true,
+                              "nr_forecasters":  1350,
+                              "forecasts_count":  2837,
+                              "actual_close_time":  "2025-12-30T15:26:00Z",
+                              "scheduled_close_time":  "2025-12-30T15:26:00Z",
+                              "actual_resolve_time":  "2026-01-04T02:59:00Z",
+                              "scheduled_resolve_time":  "2025-12-31T15:27:00Z",
+                              "question_id":  30960,
+                              "question_type":  "binary",
+                              "options":  {
+
+                                          },
+                              "resolution":  "no",
+                              "my_latest_forecast":  {
+                                                         "question_id":  30960,
+                                                         "author_id":  270023,
+                                                         "start_time":  1767023659.024931,
+                                                         "end_time":  null,
+                                                         "forecast_values":  [
+                                                                                 0.88,
+                                                                                 0.12000000000000001
+                                                                             ],
+                                                         "interval_lower_bounds":  null,
+                                                         "centers":  null,
+                                                         "interval_upper_bounds":  null,
+                                                         "distribution_input":  null
+                                                     },
+                              "my_latest_forecast_time_utc":  "2025-12-29T15:54:19.0000000Z",
+                              "my_forecast_history_count":  68,
+                              "metaculus_score_data":  {
+                                                           "baseline_score":  2.3260238701279468,
+                                                           "peer_score":  -1.1441017189325327,
+                                                           "coverage":  0.12343798644440829,
+                                                           "relative_legacy_score":  -0.07632754323938065,
+                                                           "weighted_coverage":  0.12343798644440829
+                                                       },
+                              "account_latest_brier":  {
+                                                           "type":  "binary",
+                                                           "p_yes":  0.12,
+                                                           "y":  0,
+                                                           "brier":  0.0144
+                                                       }
+                          },
+    "token_output":  {
+                         "availability":  "workflow_log_excerpt_available",
+                         "source":  "GitHub Actions run 20575026147 log",
+                         "content":  "forecast\tUNKNOWN STEP\t2025-12-29T14:20:17.0160931Z \u001b[36;1mecho \"Running forecast on URLs: https://www.metaculus.com/questions/31326/openai-liderara-chatbot-arena-a-finales-de-2025/\"\u001b[0m\nforecast\tUNKNOWN STEP\t2025-12-29T14:20:17.0162427Z \u001b[36;1m  --urls \"https://www.metaculus.com/questions/31326/openai-liderara-chatbot-arena-a-finales-de-2025/\" \\\u001b[0m\nforecast\tUNKNOWN STEP\t2025-12-29T14:20:17.0657683Z Running forecast on URLs: https://www.metaculus.com/questions/31326/openai-liderara-chatbot-arena-a-finales-de-2025/\nforecast\tUNKNOWN STEP\t2025-12-29T14:20:21.2323223Z 2025-12-29 14:20:21,231 - forecasting_tools.forecast_helpers.metaculus_api - INFO - Retrieving question details for question 31326\nforecast\tUNKNOWN STEP\t2025-12-29T14:20:21.4859268Z 2025-12-29 14:20:21,485 - forecasting_tools.forecast_helpers.metaculus_api - INFO - Retrieved question details for question 31326\nforecast\tUNKNOWN STEP\t2025-12-29T14:20:21.4866115Z 2025-12-29 14:20:21,486 - __main__ - INFO - TemplateForecaster.summarize_research for: https://www.metaculus.com/questions/31326\nforecast\tUNKNOWN STEP\t2025-12-29T14:21:13.9276375Z 2025-12-29 14:21:13,926 - bot.agent.retrieval - INFO -   - OpenAI tops Chatbot Arena at end-2025? - Metaculus (https://www.metaculus.com/questions/31326/openai-liderara-chatbot-arena-a-finales-de-2025/)\nforecast\tUNKNOWN STEP\t2025-12-29T14:24:01.5038754Z 2025-12-29 14:24:01,503 - forecasting_tools.forecast_helpers.metaculus_api - INFO - Posted comment on post 31326\nforecast\tUNKNOWN STEP\t2025-12-29T14:24:01.5174209Z 2025-12-29 14:24:01,517 - root - INFO - Submission Attempt: posting forecast | url=https://www.metaculus.com/questions/31326\nforecast\tUNKNOWN STEP\t2025-12-29T14:24:01.9444745Z \u001b[36;1m  echo \"**URLs:** https://www.metaculus.com/questions/31326/openai-liderara-chatbot-arena-a-finales-de-2025/\"\u001b[0m"
+                     }
+}

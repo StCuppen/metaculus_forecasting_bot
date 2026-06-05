@@ -1,0 +1,468 @@
+{
+  "as_of_utc": "2026-06-05T21:28:49Z",
+  "counts": {
+    "metaculus": 4,
+    "polymarket": 10,
+    "selected": 10
+  },
+  "days": 7,
+  "generated_at_utc": "2026-06-05T21:28:53Z",
+  "include_intraday": false,
+  "metaculus_candidates": [
+    {
+      "community_latest": null,
+      "forecasts_count": 533,
+      "id": 43259,
+      "nr_forecasters": 123,
+      "projects": [
+        "2026 Leaderboard",
+        "Bot benchmarking question list",
+        "Geopolitics",
+        "Metaculus Community",
+        "Nuclear Technology & Risks"
+      ],
+      "question_id": 43266,
+      "scheduled_close_time": "2026-06-06T00:00:00Z",
+      "scheduled_resolve_time": "2026-06-07T00:00:00Z",
+      "source": "metaculus",
+      "title": "Will the United States and Iran hold another face-to-face diplomatic meeting before June 6, 2026?",
+      "type": "binary",
+      "url": "https://www.metaculus.com/questions/43259/another-usiran-face-to-face-meeting-by-june-6/"
+    },
+    {
+      "community_latest": null,
+      "forecasts_count": 988,
+      "id": 43444,
+      "nr_forecasters": 103,
+      "projects": [
+        "Metaculus Cup Summer 2026",
+        "Sports & Entertainment"
+      ],
+      "question_id": 43439,
+      "scheduled_close_time": "2026-06-06T22:59:00Z",
+      "scheduled_resolve_time": "2026-06-08T11:00:00Z",
+      "source": "metaculus",
+      "title": "Which theatrical production will win Best Play at the 2026 Tony Awards?",
+      "type": "multiple_choice",
+      "url": "https://www.metaculus.com/questions/43444/best-play-at-2026-tony-awards/"
+    },
+    {
+      "community_latest": null,
+      "forecasts_count": 94,
+      "id": 43704,
+      "nr_forecasters": 5,
+      "projects": [
+        "Economy & Business",
+        "Metaculus Learning Academy",
+        "Social Sciences"
+      ],
+      "question_id": 43733,
+      "scheduled_close_time": "2026-06-11T23:00:00Z",
+      "scheduled_resolve_time": "2026-06-12T18:00:00Z",
+      "source": "metaculus",
+      "title": "Will the June 2026 University of Michigan Consumer Sentiment number be greater than it was for May 2026?",
+      "type": "binary",
+      "url": "https://www.metaculus.com/questions/43704/will-the-june-2026-u-of-mi-consumer-sentiment-be-than-it-was-for-may-2026/"
+    },
+    {
+      "community_latest": null,
+      "forecasts_count": 99,
+      "id": 43784,
+      "nr_forecasters": 95,
+      "projects": [
+        "Economy & Business",
+        "MiniBench"
+      ],
+      "question_id": 43814,
+      "scheduled_close_time": "2026-06-05T23:30:37Z",
+      "scheduled_resolve_time": "2026-06-12T21:00:00Z",
+      "source": "metaculus",
+      "title": "Will the Nasdaq-100 Index (NDX) close at or above 31,000 on June 12, 2026?",
+      "type": "binary",
+      "url": "https://www.metaculus.com/questions/43784/will-the-nasdaq-100-index-ndx-close-at-or-above-31000/"
+    }
+  ],
+  "min_hours": 24.0,
+  "polymarket_candidates": [
+    {
+      "accepting_orders": true,
+      "description": "In the upcoming PLL game scheduled for May 30 at 5:30PM ET:\nIf Utah Archers wins, the market will resolve to \"Utah Archers\".\nIf Maryland Whipsnakes wins, the market will resolve to \"Maryland Whipsnakes\".\nIf the game is postponed, this market will remain open until the game has been completed.\nIf the game is canceled entirely or ends in a tie, with no make-up game, this market will resolve 50-50.\nThe primary resolution source for this market is the official statistics of the event as recognized by the governing body or event organizers. However, if the governing body or event organizers have not published final match statistics within 24 hours after the event's conclusion, a consensus of credible reporting may be used instead.",
+      "end_time": "2026-06-06T21:30:00Z",
+      "id": "2261461",
+      "liquidity": 52.877,
+      "outcome_prices": [
+        "0.2555",
+        "0.7445"
+      ],
+      "outcomes": [
+        "Utah Archers",
+        "Maryland Whipsnakes"
+      ],
+      "question": "Utah Archers vs. Maryland Whipsnakes",
+      "source": "polymarket",
+      "url": "https://polymarket.com/event/pll-arc-whp-2026-05-30?tid=2261461",
+      "volume": 160.0
+    },
+    {
+      "accepting_orders": true,
+      "description": "This market refers to the LoL Grand final match between FURIA Esports and LOS in the CBLOL Playoffs, initially scheduled for June 6 at 12:00PM ET.\n\nThis market will resolve to \"FURIA Esports\" if FURIA Esports win the match against LOS.\n\nThis market will resolve to \"LOS\" if LOS win the match against FURIA Esports.\n\nIf the match is canceled (not played at all), ends in a tie, or is delayed beyond 7 days from the scheduled date without a winner determined, this market will resolve to 50-50. \n\nIf the match begins but is not completed, and one team wins due to the opponent's forfeiture, disqualification, or walkover, this market will resolve to the team who wins. \n\nIf the match ends in a forfeit, disqualification, or walkover (team withdraws before the start and the other wins automatically), this market will resolve to 50-50. \n\nThe resolution source for this market will be official information from https://gol.gg/esports/home. However, if https://gol.gg/esports/home has not published final results within 2 hours after the event\u2019s conclusion, a consensus of credible reporting may be used instead including video evidence.\n\nIn cases where a team\u2019s listed name includes minor discrepancies from the resolution source, this market will resolve based on the underlying real-world match rather than exact name matching. Recognizable abbreviations, alternate or erroneous spellings, sponsor tags, affiliate or academy designations, regional identifiers, and minor formatting differences will be treated as referring to the same team, provided the intended team can be clearly and uniquely identified within the relevant competition. If a listed team name has no reasonable connection to any participating team, or if it matches or could reasonably refer to another team in the same competition such that the intended team cannot be unambiguously determined, this market will resolve 50-50.",
+      "end_time": "2026-06-06T22:00:00Z",
+      "id": "2405750",
+      "liquidity": 22196.1616,
+      "outcome_prices": [
+        "0.655",
+        "0.345"
+      ],
+      "outcomes": [
+        "FURIA Esports",
+        "LOS"
+      ],
+      "question": "LoL: FURIA Esports vs LOS (BO5) - CBLOL Playoffs",
+      "source": "polymarket",
+      "url": "https://polymarket.com/event/lol-fur-los-2026-06-06?tid=2405750",
+      "volume": 882.586179
+    },
+    {
+      "accepting_orders": true,
+      "description": "In the upcoming game, scheduled for June 6, 2026\nIf Egypt wins, this market will resolve to \"Yes\".\nOtherwise, this market will resolve to \"No\".\nIf the game is postponed, this market will remain open until the game has been completed.\nIf the game is canceled entirely, with no make-up game, this market will resolve \"No\".\nThis market refers only to the outcome within the first 90 minutes of regular play plus stoppage time.\n\nThe primary resolution source for this market is the official statistics of the event as recognized by the governing body or event organizers. However, if the governing body or event organizers have not published final match statistics within 2 hours after the event's conclusion, a consensus of credible reporting may be used instead. All markets will settle based on the official final result as recognized by the governing body or event organizers. Revisions to officially declared final scores made after market resolution will not be accounted for in determining the outcome.",
+      "end_time": "2026-06-06T22:00:00Z",
+      "id": "2435869",
+      "liquidity": 13785.0527,
+      "outcome_prices": [
+        "0.105",
+        "0.895"
+      ],
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "question": "Will Egypt win on 2026-06-06?",
+      "source": "polymarket",
+      "url": "https://polymarket.com/event/fif-bra-egy-2026-06-06?tid=2435869",
+      "volume": 755.6220069999999
+    },
+    {
+      "accepting_orders": true,
+      "description": "In the upcoming game, scheduled for June 6, 2026\nIf Brazil wins, this market will resolve to \"Yes\".\nOtherwise, this market will resolve to \"No\".\nIf the game is postponed, this market will remain open until the game has been completed.\nIf the game is canceled entirely, with no make-up game, this market will resolve \"No\".\nThis market refers only to the outcome within the first 90 minutes of regular play plus stoppage time.\n\nThe primary resolution source for this market is the official statistics of the event as recognized by the governing body or event organizers. However, if the governing body or event organizers have not published final match statistics within 2 hours after the event's conclusion, a consensus of credible reporting may be used instead. All markets will settle based on the official final result as recognized by the governing body or event organizers. Revisions to officially declared final scores made after market resolution will not be accounted for in determining the outcome.",
+      "end_time": "2026-06-06T22:00:00Z",
+      "id": "2435867",
+      "liquidity": 12977.094,
+      "outcome_prices": [
+        "0.715",
+        "0.285"
+      ],
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "question": "Will Brazil win on 2026-06-06?",
+      "source": "polymarket",
+      "url": "https://polymarket.com/event/fif-bra-egy-2026-06-06?tid=2435867",
+      "volume": 1939.0516440000001
+    },
+    {
+      "accepting_orders": true,
+      "description": "In the upcoming WNBA game, scheduled for June 6 at 6:00PM ET:\nIf the Washington Mystics win, the market will resolve to \"Washington Mystics\".\nIf the Atlanta Dream win, the market will resolve to \"Atlanta Dream\".\nIf the game is postponed, this market will remain open until the game has been completed.\nIf the game is canceled entirely, with no make-up game, this market will resolve 50-50.",
+      "end_time": "2026-06-06T22:00:00Z",
+      "id": "2343717",
+      "liquidity": 12478.9537,
+      "outcome_prices": [
+        "0.22",
+        "0.78"
+      ],
+      "outcomes": [
+        "Washington Mystics",
+        "Atlanta Dream"
+      ],
+      "question": "Washington Mystics vs. Atlanta Dream",
+      "source": "polymarket",
+      "url": "https://polymarket.com/event/wnba-wsh-atl-2026-06-06?tid=2343717",
+      "volume": 438.427008
+    },
+    {
+      "accepting_orders": true,
+      "description": "In the upcoming game, scheduled for June 6, 2026\nIf the game ends in a draw, this market will resolve to \"Yes\".\nOtherwise, this market will resolve to \"No\".\nIf the game is postponed, this market will remain open until the game has been completed.\nIf the game is canceled entirely, with no make-up game, this market will resolve to \"Yes\".\nThis market refers only to the outcome within the first 90 minutes of regular play plus stoppage time.\n\nThe primary resolution source for this market is the official statistics of the event as recognized by the governing body or event organizers. However, if the governing body or event organizers have not published final match statistics within 2 hours after the event's conclusion, a consensus of credible reporting may be used instead. All markets will settle based on the official final result as recognized by the governing body or event organizers. Revisions to officially declared final scores made after market resolution will not be accounted for in determining the outcome.",
+      "end_time": "2026-06-06T22:00:00Z",
+      "id": "2435868",
+      "liquidity": 12177.3451,
+      "outcome_prices": [
+        "0.185",
+        "0.815"
+      ],
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "question": "Will Brazil vs. Egypt end in a draw?",
+      "source": "polymarket",
+      "url": "https://polymarket.com/event/fif-bra-egy-2026-06-06?tid=2435868",
+      "volume": 164.23975900000002
+    },
+    {
+      "accepting_orders": true,
+      "description": "In the upcoming FIFA International Friendlies game, scheduled for June 6 at 6:00 PM ET:\n\nThis market will resolve to \"Brazil\" if Brazil win the game by 2 or more goals.\n\nOtherwise, this market will resolve to \"Egypt\".\n\nIf the game is postponed, this market will remain open until the game has been completed. If the game is canceled entirely, with no make-up game, this market will resolve 50\u201350.\n\nThis market will resolve according to the official final score published on fifa.com. This market refers only to the outcome within the first 90 minutes of regular play plus stoppage time.\n\nThe primary resolution source for this market is the official statistics of the event as recognized by the governing body or event organizers. However, if the governing body or event organizers have not published final match statistics within 2 hours after the event's conclusion, a consensus of credible reporting may be used instead. All markets will settle based on the official final result as recognized by the governing body or event organizers. Revisions to officially declared final scores made after market resolution will not be accounted for in determining the outcome.",
+      "end_time": "2026-06-06T22:00:00Z",
+      "id": "2438093",
+      "liquidity": 6775.7069,
+      "outcome_prices": [
+        "0.455",
+        "0.545"
+      ],
+      "outcomes": [
+        "Brazil",
+        "Egypt"
+      ],
+      "question": "Spread: Brazil (-1.5)",
+      "source": "polymarket",
+      "url": "https://polymarket.com/event/fif-bra-egy-2026-06-06-more-markets?tid=2438093",
+      "volume": 76.0
+    },
+    {
+      "accepting_orders": true,
+      "description": "In the upcoming FIFA International Friendlies game between Brazil and Egypt, scheduled for June 6 at 6:00 PM ET:\n\nThis market will resolve to \"Yes\" if both Brazil and Egypt each score at least one goal during the game.\n\nThis market will resolve to \"No\" if either team fails to score (i.e., if one or both teams finish with zero goals).\n\nIf the game is postponed, this market will remain open until the game has been completed. If the game is canceled entirely, with no make-up game, this market will resolve 50\u201350.\n\nIf the game is started but not completed, this market will resolve according to the official final score published on fifa.com. This market refers only to the outcome within the first 90 minutes of regular play plus stoppage time.\n\nThe primary resolution source for this market is the official statistics of the event as recognized by the governing body or event organizers. However, if the governing body or event organizers have not published final match statistics within 2 hours after the event's conclusion, a consensus of credible reporting may be used instead. All markets will settle based on the official final result as recognized by the governing body or event organizers. Revisions to officially declared final scores made after market resolution will not be accounted for in determining the outcome.",
+      "end_time": "2026-06-06T22:00:00Z",
+      "id": "2438103",
+      "liquidity": 6736.6993,
+      "outcome_prices": [
+        "0.49",
+        "0.51"
+      ],
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "question": "Brazil vs. Egypt: Both Teams to Score",
+      "source": "polymarket",
+      "url": "https://polymarket.com/event/fif-bra-egy-2026-06-06-more-markets?tid=2438103",
+      "volume": 31.448977
+    },
+    {
+      "accepting_orders": true,
+      "description": "In the upcoming FIFA International Friendlies game between Brazil and Egypt, scheduled for June 6 at 6:00 PM ET:\n\nThis market will resolve to \"Over\" if Brazil and Egypt combine to score 1 or more goals in this game.\n\nIf the combined total is less than 1, this market will resolve to \"Under\".\n\nIf the game is postponed, this market will remain open until the game has been completed. If the game is canceled entirely, with no make-up game, this market will resolve 50\u201350.\n\nIf the game is started but not completed, this market will resolve according to the official final score published on fifa.com. This market refers only to the outcome within the first 90 minutes of regular play plus stoppage time.\n\nThe primary resolution source for this market is the official statistics of the event as recognized by the governing body or event organizers. However, if the governing body or event organizers have not published final match statistics within 2 hours after the event's conclusion, a consensus of credible reporting may be used instead. All markets will settle based on the official final result as recognized by the governing body or event organizers. Revisions to officially declared final scores made after market resolution will not be accounted for in determining the outcome.",
+      "end_time": "2026-06-06T22:00:00Z",
+      "id": "2438097",
+      "liquidity": 6137.30953,
+      "outcome_prices": [
+        "0.963",
+        "0.037"
+      ],
+      "outcomes": [
+        "Over",
+        "Under"
+      ],
+      "question": "Brazil vs. Egypt: O/U 0.5",
+      "source": "polymarket",
+      "url": "https://polymarket.com/event/fif-bra-egy-2026-06-06-more-markets?tid=2438097",
+      "volume": 122.720927
+    },
+    {
+      "accepting_orders": true,
+      "description": "In the upcoming FIFA International Friendlies game between Brazil and Egypt, scheduled for June 6 at 6:00 PM ET:\n\nThis market will resolve to \"Over\" if Brazil and Egypt combine to score 2 or more goals in this game.\n\nIf the combined total is less than 2, this market will resolve to \"Under\".\n\nIf the game is postponed, this market will remain open until the game has been completed. If the game is canceled entirely, with no make-up game, this market will resolve 50\u201350.\n\nIf the game is started but not completed, this market will resolve according to the official final score published on fifa.com. This market refers only to the outcome within the first 90 minutes of regular play plus stoppage time.\n\nThe primary resolution source for this market is the official statistics of the event as recognized by the governing body or event organizers. However, if the governing body or event organizers have not published final match statistics within 2 hours after the event's conclusion, a consensus of credible reporting may be used instead. All markets will settle based on the official final result as recognized by the governing body or event organizers. Revisions to officially declared final scores made after market resolution will not be accounted for in determining the outcome.",
+      "end_time": "2026-06-06T22:00:00Z",
+      "id": "2438098",
+      "liquidity": 4880.2517,
+      "outcome_prices": [
+        "0.805",
+        "0.195"
+      ],
+      "outcomes": [
+        "Over",
+        "Under"
+      ],
+      "question": "Brazil vs. Egypt: O/U 1.5",
+      "source": "polymarket",
+      "url": "https://polymarket.com/event/fif-bra-egy-2026-06-06-more-markets?tid=2438098",
+      "volume": 22.409633999999997
+    }
+  ],
+  "selected": [
+    {
+      "community_latest": null,
+      "forecasts_count": 533,
+      "id": 43259,
+      "nr_forecasters": 123,
+      "projects": [
+        "2026 Leaderboard",
+        "Bot benchmarking question list",
+        "Geopolitics",
+        "Metaculus Community",
+        "Nuclear Technology & Risks"
+      ],
+      "question_id": 43266,
+      "scheduled_close_time": "2026-06-06T00:00:00Z",
+      "scheduled_resolve_time": "2026-06-07T00:00:00Z",
+      "source": "metaculus",
+      "title": "Will the United States and Iran hold another face-to-face diplomatic meeting before June 6, 2026?",
+      "type": "binary",
+      "url": "https://www.metaculus.com/questions/43259/another-usiran-face-to-face-meeting-by-june-6/"
+    },
+    {
+      "community_latest": null,
+      "forecasts_count": 988,
+      "id": 43444,
+      "nr_forecasters": 103,
+      "projects": [
+        "Metaculus Cup Summer 2026",
+        "Sports & Entertainment"
+      ],
+      "question_id": 43439,
+      "scheduled_close_time": "2026-06-06T22:59:00Z",
+      "scheduled_resolve_time": "2026-06-08T11:00:00Z",
+      "source": "metaculus",
+      "title": "Which theatrical production will win Best Play at the 2026 Tony Awards?",
+      "type": "multiple_choice",
+      "url": "https://www.metaculus.com/questions/43444/best-play-at-2026-tony-awards/"
+    },
+    {
+      "community_latest": null,
+      "forecasts_count": 94,
+      "id": 43704,
+      "nr_forecasters": 5,
+      "projects": [
+        "Economy & Business",
+        "Metaculus Learning Academy",
+        "Social Sciences"
+      ],
+      "question_id": 43733,
+      "scheduled_close_time": "2026-06-11T23:00:00Z",
+      "scheduled_resolve_time": "2026-06-12T18:00:00Z",
+      "source": "metaculus",
+      "title": "Will the June 2026 University of Michigan Consumer Sentiment number be greater than it was for May 2026?",
+      "type": "binary",
+      "url": "https://www.metaculus.com/questions/43704/will-the-june-2026-u-of-mi-consumer-sentiment-be-than-it-was-for-may-2026/"
+    },
+    {
+      "community_latest": null,
+      "forecasts_count": 99,
+      "id": 43784,
+      "nr_forecasters": 95,
+      "projects": [
+        "Economy & Business",
+        "MiniBench"
+      ],
+      "question_id": 43814,
+      "scheduled_close_time": "2026-06-05T23:30:37Z",
+      "scheduled_resolve_time": "2026-06-12T21:00:00Z",
+      "source": "metaculus",
+      "title": "Will the Nasdaq-100 Index (NDX) close at or above 31,000 on June 12, 2026?",
+      "type": "binary",
+      "url": "https://www.metaculus.com/questions/43784/will-the-nasdaq-100-index-ndx-close-at-or-above-31000/"
+    },
+    {
+      "accepting_orders": true,
+      "description": "In the upcoming PLL game scheduled for May 30 at 5:30PM ET:\nIf Utah Archers wins, the market will resolve to \"Utah Archers\".\nIf Maryland Whipsnakes wins, the market will resolve to \"Maryland Whipsnakes\".\nIf the game is postponed, this market will remain open until the game has been completed.\nIf the game is canceled entirely or ends in a tie, with no make-up game, this market will resolve 50-50.\nThe primary resolution source for this market is the official statistics of the event as recognized by the governing body or event organizers. However, if the governing body or event organizers have not published final match statistics within 24 hours after the event's conclusion, a consensus of credible reporting may be used instead.",
+      "end_time": "2026-06-06T21:30:00Z",
+      "id": "2261461",
+      "liquidity": 52.877,
+      "outcome_prices": [
+        "0.2555",
+        "0.7445"
+      ],
+      "outcomes": [
+        "Utah Archers",
+        "Maryland Whipsnakes"
+      ],
+      "question": "Utah Archers vs. Maryland Whipsnakes",
+      "source": "polymarket",
+      "url": "https://polymarket.com/event/pll-arc-whp-2026-05-30?tid=2261461",
+      "volume": 160.0
+    },
+    {
+      "accepting_orders": true,
+      "description": "This market refers to the LoL Grand final match between FURIA Esports and LOS in the CBLOL Playoffs, initially scheduled for June 6 at 12:00PM ET.\n\nThis market will resolve to \"FURIA Esports\" if FURIA Esports win the match against LOS.\n\nThis market will resolve to \"LOS\" if LOS win the match against FURIA Esports.\n\nIf the match is canceled (not played at all), ends in a tie, or is delayed beyond 7 days from the scheduled date without a winner determined, this market will resolve to 50-50. \n\nIf the match begins but is not completed, and one team wins due to the opponent's forfeiture, disqualification, or walkover, this market will resolve to the team who wins. \n\nIf the match ends in a forfeit, disqualification, or walkover (team withdraws before the start and the other wins automatically), this market will resolve to 50-50. \n\nThe resolution source for this market will be official information from https://gol.gg/esports/home. However, if https://gol.gg/esports/home has not published final results within 2 hours after the event\u2019s conclusion, a consensus of credible reporting may be used instead including video evidence.\n\nIn cases where a team\u2019s listed name includes minor discrepancies from the resolution source, this market will resolve based on the underlying real-world match rather than exact name matching. Recognizable abbreviations, alternate or erroneous spellings, sponsor tags, affiliate or academy designations, regional identifiers, and minor formatting differences will be treated as referring to the same team, provided the intended team can be clearly and uniquely identified within the relevant competition. If a listed team name has no reasonable connection to any participating team, or if it matches or could reasonably refer to another team in the same competition such that the intended team cannot be unambiguously determined, this market will resolve 50-50.",
+      "end_time": "2026-06-06T22:00:00Z",
+      "id": "2405750",
+      "liquidity": 22196.1616,
+      "outcome_prices": [
+        "0.655",
+        "0.345"
+      ],
+      "outcomes": [
+        "FURIA Esports",
+        "LOS"
+      ],
+      "question": "LoL: FURIA Esports vs LOS (BO5) - CBLOL Playoffs",
+      "source": "polymarket",
+      "url": "https://polymarket.com/event/lol-fur-los-2026-06-06?tid=2405750",
+      "volume": 882.586179
+    },
+    {
+      "accepting_orders": true,
+      "description": "In the upcoming game, scheduled for June 6, 2026\nIf Egypt wins, this market will resolve to \"Yes\".\nOtherwise, this market will resolve to \"No\".\nIf the game is postponed, this market will remain open until the game has been completed.\nIf the game is canceled entirely, with no make-up game, this market will resolve \"No\".\nThis market refers only to the outcome within the first 90 minutes of regular play plus stoppage time.\n\nThe primary resolution source for this market is the official statistics of the event as recognized by the governing body or event organizers. However, if the governing body or event organizers have not published final match statistics within 2 hours after the event's conclusion, a consensus of credible reporting may be used instead. All markets will settle based on the official final result as recognized by the governing body or event organizers. Revisions to officially declared final scores made after market resolution will not be accounted for in determining the outcome.",
+      "end_time": "2026-06-06T22:00:00Z",
+      "id": "2435869",
+      "liquidity": 13785.0527,
+      "outcome_prices": [
+        "0.105",
+        "0.895"
+      ],
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "question": "Will Egypt win on 2026-06-06?",
+      "source": "polymarket",
+      "url": "https://polymarket.com/event/fif-bra-egy-2026-06-06?tid=2435869",
+      "volume": 755.6220069999999
+    },
+    {
+      "accepting_orders": true,
+      "description": "In the upcoming game, scheduled for June 6, 2026\nIf Brazil wins, this market will resolve to \"Yes\".\nOtherwise, this market will resolve to \"No\".\nIf the game is postponed, this market will remain open until the game has been completed.\nIf the game is canceled entirely, with no make-up game, this market will resolve \"No\".\nThis market refers only to the outcome within the first 90 minutes of regular play plus stoppage time.\n\nThe primary resolution source for this market is the official statistics of the event as recognized by the governing body or event organizers. However, if the governing body or event organizers have not published final match statistics within 2 hours after the event's conclusion, a consensus of credible reporting may be used instead. All markets will settle based on the official final result as recognized by the governing body or event organizers. Revisions to officially declared final scores made after market resolution will not be accounted for in determining the outcome.",
+      "end_time": "2026-06-06T22:00:00Z",
+      "id": "2435867",
+      "liquidity": 12977.094,
+      "outcome_prices": [
+        "0.715",
+        "0.285"
+      ],
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "question": "Will Brazil win on 2026-06-06?",
+      "source": "polymarket",
+      "url": "https://polymarket.com/event/fif-bra-egy-2026-06-06?tid=2435867",
+      "volume": 1939.0516440000001
+    },
+    {
+      "accepting_orders": true,
+      "description": "In the upcoming WNBA game, scheduled for June 6 at 6:00PM ET:\nIf the Washington Mystics win, the market will resolve to \"Washington Mystics\".\nIf the Atlanta Dream win, the market will resolve to \"Atlanta Dream\".\nIf the game is postponed, this market will remain open until the game has been completed.\nIf the game is canceled entirely, with no make-up game, this market will resolve 50-50.",
+      "end_time": "2026-06-06T22:00:00Z",
+      "id": "2343717",
+      "liquidity": 12478.9537,
+      "outcome_prices": [
+        "0.22",
+        "0.78"
+      ],
+      "outcomes": [
+        "Washington Mystics",
+        "Atlanta Dream"
+      ],
+      "question": "Washington Mystics vs. Atlanta Dream",
+      "source": "polymarket",
+      "url": "https://polymarket.com/event/wnba-wsh-atl-2026-06-06?tid=2343717",
+      "volume": 438.427008
+    },
+    {
+      "accepting_orders": true,
+      "description": "In the upcoming game, scheduled for June 6, 2026\nIf the game ends in a draw, this market will resolve to \"Yes\".\nOtherwise, this market will resolve to \"No\".\nIf the game is postponed, this market will remain open until the game has been completed.\nIf the game is canceled entirely, with no make-up game, this market will resolve to \"Yes\".\nThis market refers only to the outcome within the first 90 minutes of regular play plus stoppage time.\n\nThe primary resolution source for this market is the official statistics of the event as recognized by the governing body or event organizers. However, if the governing body or event organizers have not published final match statistics within 2 hours after the event's conclusion, a consensus of credible reporting may be used instead. All markets will settle based on the official final result as recognized by the governing body or event organizers. Revisions to officially declared final scores made after market resolution will not be accounted for in determining the outcome.",
+      "end_time": "2026-06-06T22:00:00Z",
+      "id": "2435868",
+      "liquidity": 12177.3451,
+      "outcome_prices": [
+        "0.185",
+        "0.815"
+      ],
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "question": "Will Brazil vs. Egypt end in a draw?",
+      "source": "polymarket",
+      "url": "https://polymarket.com/event/fif-bra-egy-2026-06-06?tid=2435868",
+      "volume": 164.23975900000002
+    }
+  ],
+  "window_end_utc": "2026-06-12T21:28:49Z",
+  "window_start_utc": "2026-06-06T21:28:49Z"
+}

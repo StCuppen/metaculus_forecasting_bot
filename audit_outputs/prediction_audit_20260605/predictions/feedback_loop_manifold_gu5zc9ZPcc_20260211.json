@@ -1,0 +1,23 @@
+﻿{
+    "record_id":  "feedback_loop_manifold_gu5zc9ZPcc_20260211",
+    "category":  "feedback_loop_league_artifact",
+    "posted_to_metaculus":  false,
+    "source_note":  "Local MEMORY.md: verified live artifact predictions/feedback_loop/20260211T202357.022577+0000_manifold_gu5zc9ZPcc_1d1235ee.md, but artifact file is not present in this snapshot.",
+    "event":  {
+                  "event_time_utc":  "2026-02-11T20:23:57Z",
+                  "github_run_id":  null,
+                  "local_run_id":  "1d1235ee",
+                  "post_id":  null,
+                  "url":  null,
+                  "event_prediction":  {
+
+                                       },
+                  "event_brier":  null
+              },
+    "current_metaculus":  null,
+    "token_output":  {
+                         "availability":  "not_available_in_snapshot",
+                         "source":  "local memory notes only",
+                         "content":  "Verified live feedback-loop Manifold artifact existed in a prior workspace, but predictions/feedback_loop is absent in this local snapshot."
+                     }
+}

@@ -1,0 +1,48 @@
+name: Enrich Forecast Records
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 6 * * *"
+
+concurrency:
+  group: enrich-forecast-records
+  cancel-in-progress: false
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      METACULUS_TOKEN: ${{ secrets.METACULUS_TOKEN }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install runtime dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests python-dotenv
+
+      - name: Enrich records
+        run: python scripts/enrich_forecast_records.py --records-dir forecast_records
+
+      - name: Commit enriched records
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add forecast_records/
+          if git diff --cached --quiet; then
+            echo "No enriched forecast record changes to commit."
+            exit 0
+          fi
+          git commit -m "Enrich forecast records with outcomes ${GITHUB_RUN_ID}"
+          git push
