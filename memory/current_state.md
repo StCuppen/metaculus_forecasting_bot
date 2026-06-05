@@ -13,24 +13,23 @@
   (as of 2026-06-06). (Historic note: it used to hardcode `metaculus-cup-spring-2026`.)
 
 ## Model roster (in code: `bot/agent/lean_ensemble.py::_default_forecast_model_families`)
-As of 2026-06-06 the default ensemble is:
+Set 2026-06-06 (user-chosen, IDs verified live against the OpenRouter catalog). 5 distinct families,
+1 run each, for ensemble diversity. Prices are per 1M tokens (in/out) as of 2026-06-06.
 
-| Slot | Model ID | Runs | Notes |
-|------|----------|------|-------|
-| Primary researcher | `moonshotai/kimi-k2.5` | 2 | Paid only (`:free` → 404). |
-| Budget / third voice | `openai/gpt-5-mini` | 2 | May 400 on some OpenRouter accounts — verify access. |
-| Primary reasoner | `google/gemini-2.5-flash` | 1 | Also the default for utility calls below. |
+| Label | Model ID | Runs | max_tokens | Price in/out |
+|-------|----------|------|-----------|--------------|
+| DeepSeek V4 Pro | `deepseek/deepseek-v4-pro` | 1 | 10000 | $0.43 / $0.87 |
+| GPT-5.4 Mini | `openai/gpt-5.4-mini` | 1 | 9000 | $0.75 / $4.50 |
+| Kimi K2.6 | `moonshotai/kimi-k2.6` | 1 | 10000 | $0.68 / $3.42 |
+| Gemini 3 Flash | `google/gemini-3-flash-preview` | 1 | 9000 | $0.50 / $3.00 |
+| Claude Haiku 4.5 | `anthropic/claude-haiku-4.5` | 1 | 9000 | $1.00 / $5.00 |
 
-Utility-call models (env-overridable), all default `google/gemini-2.5-flash` as of 2026-06-06:
+Utility-call models (env-overridable), all still default `google/gemini-2.5-flash` as of 2026-06-06:
 `EVIDENCE_EXTRACTION_MODEL`, `SEARCH_PLANNER_MODEL`, `RED_TEAM_MODEL`, `CLAIM_AUDIT_MODEL`,
-`SIGNPOST_MODEL`.
+`SIGNPOST_MODEL`. (Cheaper option for cost: `google/gemini-2.5-flash-lite` @ $0.10/$0.40.)
 
-Model-ID gotchas (as of 2026-02-12, re-verify): `google/gemini-3-flash-preview` valid on OpenRouter;
-`moonshotai/kimi-k2.5:free` returns 404 (use paid).
-
-**Pending refresh (requested 2026-06-06):** move to frontier *light* models including cheaper ones
-(e.g. a DeepSeek "flash"-class model). Verify actual current OpenRouter IDs before swapping — do not
-assume an ID string exists. Tracked in the workflow-review backlog.
+Model-ID gotchas (as of 2026-06-06): `moonshotai/kimi-k2.6:free` exists but `:free` Kimi variants have
+historically 404'd — use the paid slug above.
 
 ## Improvement backlog
 See `docs/forecast_workflow_review_2026-06-06.md` for the full review + prioritized backlog. Top items
