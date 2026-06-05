@@ -1,19 +1,7 @@
 ﻿# Conventions
 
-## Model Roster (as of 2026-02-12)
-
-| Slot | Model ID | Notes |
-|------|----------|-------|
-| Primary researcher | `moonshotai/kimi-k2.5` | Best efficiency + independent thinking. 2-3 iterations typical. Paid only (`:free` returns 404). |
-| Primary reasoner | `google/gemini-2.5-flash` | Thorough, fast, good for planner/search/audit utility calls. |
-| Budget / third voice | `openai/gpt-5-mini` | Fast and usable as a second opinion; avoid over-weighting shallow outputs. |
-
-Default lean roster in code: 2x Kimi K2.5, 2x GPT-5 Mini, 1x Gemini 2.5 Flash.
-
-## Model ID Gotchas
-- `google/gemini-3-flash-preview` is valid on OpenRouter.
-- `openai/gpt-5-mini` may return 400 on some OpenRouter accounts; verify account access.
-- `moonshotai/kimi-k2.5:free` returns 404; use paid variant only.
+> Model roster, model-ID gotchas, and other version-pinned facts are **volatile** and live in
+> `current_state.md` (dated). This file holds only durable *rules* that don't expire.
 
 ## Lean Pipeline Rules
 - Keep legacy staged/ReAct mode available as fallback, but default path is lean ensemble.
@@ -40,6 +28,14 @@ Default lean roster in code: 2x Kimi K2.5, 2x GPT-5 Mini, 1x Gemini 2.5 Flash.
 - `update_online` should evaluate signposts and trigger re-forecasting when they fire.
 
 ## Config
-- `league.toml`: `dry_run_default=true` by default; explicitly set false for live runs.
+- `league.toml` controls the 7-day league; explicitly set `dry_run` false for live runs.
 - Tournament runtime: keep `folder_to_save_reports_to=None` to avoid package-name saver errors.
-- Rolling forecast cap: 25 predictions per 7-day window.
+- A rolling forecast cap applies per 7-day window — current value in `current_state.md`.
+
+## Cost Controls
+- Per-run completion caps and search/evidence limits are env-tunable to keep API spend reasonable
+  (`FORECAST_RUN_MAX_TOKENS`, `FORECAST_MAX_SEARCH_QUERIES`, `FORECAST_MAX_EVIDENCE_DOCS`); current
+  defaults in `current_state.md`. Lower these before large batch runs.
+
+---
+_Last reviewed: 2026-06-06. Volatile facts (roster, model IDs, caps, cost defaults) → `current_state.md`._

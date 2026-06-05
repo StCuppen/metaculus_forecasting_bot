@@ -56,3 +56,6 @@
 ## Date Awareness
 - Always anchor relative terms ("next month", "today") to explicit dates in logs or summaries.
 - For short-horizon questions, evidence staleness penalties matter more; prioritize freshest direct sources.
+
+---
+_Last reviewed: 2026-06-06. Lessons are durable/undated; anything version- or date-specific → `current_state.md`._

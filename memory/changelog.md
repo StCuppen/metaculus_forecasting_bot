@@ -4,6 +4,23 @@ Rolling log of recent sessions. Keep only the last ~5 sessions. Durable lessons 
 
 ---
 
+## 2026-06-06 - Memory versioning + Sonar fallback + git + feedback hardening (Claude Opus)
+
+- **Git activated**: local checkout is now a git repo (`main`), initial snapshot committed so
+  `forecast_records/` can be committed and enriched by CI on resolution. No GitHub remote yet (open item).
+- **Memory restructure (durable vs volatile)**: added `current_state.md` for dated/volatile facts
+  (season, roster, keys, search provider, caps, cost defaults); stripped the stale "Spring 2026"
+  target and moved the roster/model-ID tables out of the topical files; added per-file
+  `Last reviewed` stamps and a staleness rule in `README.md`.
+- **Search resilience**: lean ensemble now falls back to **Perplexity Sonar via OpenRouter** when no
+  `EXA_API_KEY` is set (provisional quality), with a loud warning and `search_provider` recorded.
+  Unblocks forecasting on an OpenRouter-only setup. CI Exa behavior unchanged. (41 tests still pass.)
+- **Feedback/storage hardening**: enrichment made idempotent + numeric Brier + top-level `resolved`/
+  `brier`; added read-only `scripts/forecast_scoreboard.py`.
+- **Cost controls**: per-run token + search/evidence limits made env-tunable.
+- **Parked**: the 10-question near-term forecast batch — pending model selection (frontier light
+  models) and explicit user go-ahead. Workflow-review doc in progress.
+
 ## 2026-02-12 - Memory Sync + New Test Forecast (Codex GPT-5)
 
 - Updated memory source-of-truth docs to reflect current lean architecture:
@@ -53,11 +70,3 @@ Rolling log of recent sessions. Keep only the last ~5 sessions. Durable lessons 
 - Local smoke test confirmed tournament path completes with `post_attempts=1`.
 - Fixed workflow summary guard: now parses `skipped_already_forecasted` to avoid false failure on skip-only runs.
 - Pushed fix, re-ran workflow successfully (run `21927817303`): 8 OPEN, 4 binary, 1 posted, 0 errors.
-## 2026-02-11 â€” Inspectability Modules + Test Forecast (Codex GPT-5)
-
-- Added feature-flagged modules: spec lock, evidence ledger, numeric provenance, market snapshot, outlier cross-exam.
-- Locked default ensemble roster: Kimi K2.5, Gemini 2.5 Flash, GPT-5 Mini.
-- Posted test forecast to Metaculus question 41501 (China visitors): Kimi 3%, Gemini 1%, GPT-5 Mini 20% â†’ Judge 2%.
-- Added ablation runner scaffold (`scripts/run_forecast_ablation.py`).
-
-

@@ -4,7 +4,8 @@
 
 ### Tournament Pipeline
 - Entry point: `bot/main_forecast_pipeline.py`
-- Target: Metaculus Cup Spring 2026 (`metaculus-cup-spring-2026`)
+- Target season/tournament is **volatile** → see `current_state.md` (set via `tournament_id` input /
+  `TOURNAMENT_ID` env, not hardcoded).
 - Triggered by: `.github/workflows/run_tournament.yaml` (scheduled + manual dispatch)
 - CLI modes: `--mode tournament`, `--mode urls`, `--mode test_questions`
 - Key CLI flags: `--force-repost`, `--max-open-questions`, `--question-types`
@@ -43,6 +44,17 @@
 - `src/jobs/forecast_open.py` applies projection before persistence and logs before/after probabilities.
 - `src/core/updater.py` + `src/jobs/update_online.py` run signpost checks and can trigger re-forecasting when signposts fire.
 
+## Records & Feedback Loop
+- Every ensemble run writes a durable rich JSON record (`forecast-record/v1`) to `forecast_records/`
+  via `bot/agent/forecast_records.py` — visible model output, token usage, evidence, gate decision,
+  `search_provider`, and (when available) the Metaculus URL for later outcome lookup.
+- `scripts/enrich_forecast_records.py` fetches the Metaculus resolution + computes Brier (binary/MC/
+  numeric) and writes it back into each record. Idempotent: terminally resolved records are skipped.
+- `.github/workflows/enrich_forecast_records.yaml` runs this daily and commits enriched records back,
+  so outcomes are fetched automatically once questions resolve.
+- `scripts/forecast_scoreboard.py` is a read-only summary (counts, resolved vs pending, mean Brier by
+  type). LLM-based post-resolution analysis is a deliberate future extension, not yet implemented.
+
 ## Key Files
 | File | Purpose |
 |------|---------|
@@ -57,6 +69,12 @@
 | `league.toml` | League configuration |
 | `.github/workflows/run_tournament.yaml` | Tournament CI workflow |
 | `scripts/run_forecast_ablation.py` | Ablation runner scaffold |
+| `scripts/enrich_forecast_records.py` | Fetch Metaculus outcomes + Brier into `forecast_records/` |
+| `scripts/forecast_scoreboard.py` | Read-only calibration summary over `forecast_records/` |
+| `bot/agent/forecast_records.py` | Durable per-forecast JSON record writer (`forecast-record/v1`) |
 | `tests/test_evidence_pipeline.py` | Regression coverage for primary-source detection, LLM evidence extraction/scoring, and signpost anchoring |
 | `tests/test_publish_gate.py` | Regression coverage for evidence floors, forced abstain, and neutral n=1 agreement behavior |
 | `tests/test_aggregation.py` | Regression coverage for evidence-weighted extremization (`effective_k`) calibration math |
+
+---
+_Last reviewed: 2026-06-06. Volatile facts (season, roster, keys, CI) live in `current_state.md`._
