@@ -159,9 +159,31 @@ def render_record_markdown(record: dict[str, Any]) -> str:
         L.append("")
 
     # Outcome / benchmark
+    platform = _platform_for(record)
+    outcome_source = str(out.get("source") or "").strip()
+    is_polymarket = platform == "polymarket" or outcome_source.startswith("polymarket")
+    is_metaculus = platform == "metaculus" or outcome_source.startswith("metaculus")
     L.append("## Outcome / benchmark")
     L.append(f"- Resolved: {'yes' if record.get('resolved') else 'no (pending)'}"
              + (f" — resolution: **{out.get('resolution')}**" if out.get('resolution') else ""))
+    if outcome_source:
+        L.append(f"- Outcome source: `{outcome_source}`")
+    if is_polymarket:
+        if out.get("event_slug"):
+            L.append(f"- Polymarket event: `{out.get('event_slug')}`")
+        if out.get("market_slug"):
+            L.append(f"- Polymarket market: `{out.get('market_slug')}`")
+        status_bits = []
+        if out.get("event_active") is not None:
+            status_bits.append(f"active={out.get('event_active')}")
+        if out.get("event_closed") is not None:
+            status_bits.append(f"closed={out.get('event_closed')}")
+        if out.get("terminal_market_count") is not None:
+            status_bits.append(f"terminal_markets={out.get('terminal_market_count')}")
+        if out.get("endDate"):
+            status_bits.append(f"end={out.get('endDate')}")
+        if status_bits:
+            L.append(f"- Polymarket status: {', '.join(status_bits)}")
     if record.get("brier") is not None:
         crowd_b = (record.get("crowd_brier") or {}).get("brier") if isinstance(record.get("crowd_brier"), dict) else None
         line = f"- Our Brier: {record.get('brier')}"
@@ -175,7 +197,7 @@ def render_record_markdown(record: dict[str, Any]) -> str:
     if isinstance(cp_res, dict) and cp_res.get("centers") is not None:
         L.append(f"- Community prediction (revealed): centers={cp_res.get('centers')} "
                  f"(n={cp_res.get('forecaster_count')})")
-    if cp is None and not (isinstance(cp_res, dict) and cp_res.get("centers") is not None):
+    if is_metaculus and cp is None and not (isinstance(cp_res, dict) and cp_res.get("centers") is not None):
         L.append("- Community prediction: not available (hidden for this question while open)")
     L.append("")
 
