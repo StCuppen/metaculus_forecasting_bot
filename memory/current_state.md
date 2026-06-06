@@ -61,7 +61,8 @@ placeholders like `1234567890`/`your_*` are ignored via `_real_key()`):
 - Per-run completion tokens (roster defaults): per `current roster` table; global cap via
   `FORECAST_RUN_MAX_TOKENS` (0 = use per-model default).
 - `FORECAST_MAX_SEARCH_QUERIES` default **8**; `FORECAST_LINKUP_QUERIES` default **8**;
-  `FORECAST_MAX_EVIDENCE_DOCS` default **16** (bumped for richer evidence, "double searches").
+  `FORECAST_MAX_EVIDENCE_DOCS` default **10** (was 16; dialed back for ~30% cost cut).
+- Measured cost ≈ **$0.40/forecast** at depth 16 (~$0.28 at 10). Linkup ~$0.05/forecast.
 - `FORECAST_EXTREMIZE_K` default **1.0** (no extremization until validated on resolved corpus).
 - `FORECAST_SHRINK_TO_CROWD` default **0** — low-confidence forecasts shrink toward 0.5, not the
   crowd, so skill-vs-crowd stays measurable. Set 1 to anchor to the community prior.
@@ -69,11 +70,16 @@ placeholders like `1234567890`/`your_*` are ignored via `_real_key()`):
   primary source was found (not blind 2x search).
 - Sonar per-query `max_tokens` = 600. Lower these before large batch runs if cost matters.
 
-## Record schema additions (2026-06-06, forecast-record/v1)
-Records now also carry: `run_config` (pipeline_version, as_of_utc, models, aggregation, search caps),
-`crowd_benchmark` (community prediction captured at forecast, flags for whether it was used),
-`outside_view_probability` + `base_rate_texts` (explicit recorded outside view), and `search_provider`.
-Pipeline version constant: `LEAN_PIPELINE_VERSION` in `lean_ensemble.py` — bump on behavior changes.
+## Record schema + layout (2026-06-06, forecast-record/v1)
+- Records live in `forecast_records/<platform>/` with name
+  `<date>_<platform>_<runtype>_<question>_<digest>.json`; each has a **companion `.md`** (human-readable
+  view) written at forecast time. Re-render with `scripts/render_record_markdown.py` (e.g. after enrich).
+- Records carry: `run_config` (pipeline_version, as_of_utc, models, aggregation, search caps),
+  `crowd_benchmark`, `outside_view_probability` + `base_rate_texts` (binary only), `search_provider`,
+  `platform`, `run_type`. `LEAN_PIPELINE_VERSION` in `lean_ensemble.py` — bump on behavior changes.
+- **Community prediction is hidden while open on bot-benchmark Qs.** Enrich captures
+  `outcome.community_prediction_at_resolution` + top-level `crowd_brier` once revealed at resolution,
+  enabling the skill-vs-crowd head-to-head post-hoc.
 
 ## Active CI workflows (`.github/workflows/`)
 - `run_tournament.yaml` — tournament forecasts; commits `forecast_records/` back (cron disabled;
