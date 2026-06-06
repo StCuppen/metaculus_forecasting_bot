@@ -1648,6 +1648,19 @@ def extract_probability_from_forecast(forecast_text: str) -> float:
         prob = float(match.group(1))
         return prob / 100 if prob > 1 else prob
 
+    # Plain "Probability: X%" line (the lean prompt's final-answer format). Take the LAST
+    # occurrence so earlier figures (BASE_RATE, OUTSIDE_VIEW, case-fatality rates, base rates)
+    # cannot hijack the parse. This must run before the generic first-percentage fallback below.
+    plain = re.findall(
+        r'Probability\s*[:=]\s*\*?\*?\[?\s*([0-9]+(?:\.[0-9]+)?)\s*(%?)',
+        forecast_text,
+        re.IGNORECASE,
+    )
+    if plain:
+        val, pct = plain[-1]
+        prob = float(val)
+        return prob / 100 if (pct == "%" or prob > 1) else prob
+
     # Try percentage with "probability" nearby (e.g., "35% probability", "probability is 35%")
     match = re.search(r'(?:probability[:\s]+|probability\s+is\s+)?([0-9.]+)\s*%\s*(?:probability)?', forecast_text, re.IGNORECASE)
     if match:
