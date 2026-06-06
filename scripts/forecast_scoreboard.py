@@ -21,7 +21,7 @@ from typing import Any
 
 def _load(records_dir: Path) -> list[dict[str, Any]]:
     records: list[dict[str, Any]] = []
-    for path in sorted(records_dir.glob("*.json")):
+    for path in sorted(records_dir.rglob("*.json")):
         try:
             data = json.loads(path.read_text(encoding="utf-8"))
         except Exception as exc:  # corrupt/partial file shouldn't kill the report

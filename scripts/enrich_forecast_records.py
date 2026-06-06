@@ -221,7 +221,7 @@ def main() -> None:
         "skipped_already_resolved": 0,
         "failed": 0,
     }
-    for path in sorted(records_dir.glob("*.json")):
+    for path in sorted(records_dir.rglob("*.json")):
         try:
             status = enrich_file(path, sleep_seconds=args.sleep_seconds, force=args.force)
             counts[status] = counts.get(status, 0) + 1

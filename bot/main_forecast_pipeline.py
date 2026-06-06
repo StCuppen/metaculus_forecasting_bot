@@ -642,6 +642,12 @@ def main():
     args = parser.parse_args()
     run_mode = args.mode
 
+    # Tag forecast records with the run type for inspectable filenames/subfolders.
+    os.environ.setdefault(
+        "FORECAST_RUN_TYPE",
+        {"tournament": "tournament", "urls": "oneoff", "test_questions": "test"}.get(run_mode, "oneoff"),
+    )
+
     # Initialize bot
     template_bot = TemplateForecaster(
         research_reports_per_question=1,

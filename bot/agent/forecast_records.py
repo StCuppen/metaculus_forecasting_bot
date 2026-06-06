@@ -46,21 +46,53 @@ def jsonable(value: Any) -> Any:
     return repr(value)
 
 
-def write_forecast_record(record: dict[str, Any], record_dir: str | None = None) -> str:
-    """Persist a durable rich JSON forecast record inside the repository."""
-    root = Path(record_dir or os.getenv("FORECAST_RECORD_DIR") or DEFAULT_RECORD_DIR)
-    root.mkdir(parents=True, exist_ok=True)
+def _platform_for(record: dict[str, Any]) -> str:
+    """Infer the platform from the record (URL or question text)."""
+    explicit = str(record.get("platform") or "").strip().lower()
+    if explicit in {"metaculus", "polymarket"}:
+        return explicit
+    blob = " ".join(
+        str(record.get(k) or "")
+        for k in ("question_url", "url", "question", "question_title")
+    ).lower()
+    if "metaculus" in blob:
+        return "metaculus"
+    if "polymarket" in blob:
+        return "polymarket"
+    return "other"
 
+
+def write_forecast_record(record: dict[str, Any], record_dir: str | None = None) -> str:
+    """Persist a durable rich JSON forecast record inside the repository.
+
+    Records are organized for easy human inspection: one subfolder per platform, and a
+    descriptive filename of the form `<date>_<platform>_<runtype>_<question>_<digest>.json`.
+    """
+    root = Path(record_dir or os.getenv("FORECAST_RECORD_DIR") or DEFAULT_RECORD_DIR)
+
+    platform = _platform_for(record)
+    run_type = safe_slug(str(record.get("run_type") or os.getenv("FORECAST_RUN_TYPE") or "oneoff"), 24)
     question = str(record.get("question_title") or record.get("question") or "forecast")
+
     timestamp = str(record.get("generated_at_utc") or utc_now_iso())
+    try:
+        date_str = datetime.fromisoformat(timestamp.replace("Z", "+00:00")).strftime("%Y%m%d-%H%M%S")
+    except ValueError:
+        date_str = timestamp.replace(":", "").replace("-", "")[:15]
+
     digest_input = json.dumps(jsonable(record), sort_keys=True, ensure_ascii=False)
-    digest = hashlib.sha256(digest_input.encode("utf-8")).hexdigest()[:12]
-    filename = f"{timestamp.replace(':', '').replace('-', '')}_{safe_slug(question)}_{digest}.json"
-    path = root / filename
+    digest = hashlib.sha256(digest_input.encode("utf-8")).hexdigest()[:8]
+
+    subdir = root / platform
+    subdir.mkdir(parents=True, exist_ok=True)
+    filename = f"{date_str}_{platform}_{run_type}_{safe_slug(question, 60)}_{digest}.json"
+    path = subdir / filename
 
     enriched = dict(record)
     enriched.setdefault("schema_version", "forecast-record/v1")
     enriched.setdefault("written_at_utc", utc_now_iso())
+    enriched["platform"] = platform
+    enriched["run_type"] = run_type
     enriched["record_file"] = str(path)
 
     path.write_text(
