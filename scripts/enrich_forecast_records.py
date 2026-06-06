@@ -138,6 +138,33 @@ def _to_int(value: Any) -> int | None:
         return None
 
 
+def _community_prediction(question: dict[str, Any]) -> dict[str, Any] | None:
+    """Community prediction (hidden while open on bot-benchmark Qs; revealed at resolution)."""
+    agg = (question.get("aggregations") or {}).get("recency_weighted") or {}
+    latest = agg.get("latest") or {}
+    centers = latest.get("centers")
+    if centers is None:
+        centers = question.get("community_prediction")
+    if centers is None:
+        return None
+    return {"centers": centers, "forecaster_count": latest.get("forecaster_count")}
+
+
+def _crowd_brier(question: dict[str, Any], community: dict[str, Any] | None) -> dict[str, Any] | None:
+    """Crowd's own Brier on a resolved binary question, for the head-to-head vs our forecast."""
+    if not community or question.get("type") != "binary":
+        return None
+    res = str(question.get("resolution") or "").lower()
+    if res not in {"yes", "no", "true", "false", "1", "0"}:
+        return None
+    centers = community.get("centers")
+    p = _to_float(centers[0]) if isinstance(centers, list) and centers else None
+    if p is None:
+        return None
+    y = 1.0 if res in {"yes", "true", "1"} else 0.0
+    return {"type": "binary", "p_yes": p, "y": y, "brier": (p - y) ** 2}
+
+
 def _already_resolved(record: dict[str, Any]) -> bool:
     """True if a prior enrich pass already captured a terminal resolution for this record."""
     outcome = record.get("outcome") if isinstance(record.get("outcome"), dict) else {}
@@ -176,6 +203,7 @@ def enrich_file(path: Path, sleep_seconds: float, force: bool = False) -> str:
         "options": question.get("options"),
         "metaculus_score_data": score_data,
         "my_latest_forecast": latest,
+        "community_prediction_at_resolution": _community_prediction(question),
         "computed_brier": _brier(record, question),
         "raw_post_subset": {
             "nr_forecasters": post.get("nr_forecasters"),
@@ -186,6 +214,8 @@ def enrich_file(path: Path, sleep_seconds: float, force: bool = False) -> str:
 
     # Top-level queryable signals for the scoreboard.
     record["resolved"] = bool(post.get("resolved")) and question.get("resolution") not in (None, "")
+    # Head-to-head: the crowd's own Brier (available once a hidden-CP question resolves).
+    record["crowd_brier"] = _crowd_brier(question, record["outcome"]["community_prediction_at_resolution"])
     scored = record["outcome"]["computed_brier"]
     if isinstance(scored, dict):
         if scored.get("type") == "binary":

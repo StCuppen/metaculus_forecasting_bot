@@ -64,7 +64,7 @@ def _run_config_snapshot(
             "provider": search_provider,
             "max_search_queries": int(os.getenv("FORECAST_MAX_SEARCH_QUERIES", "8")),
             "linkup_queries": int(os.getenv("FORECAST_LINKUP_QUERIES", "8")),
-            "max_evidence_docs": int(os.getenv("FORECAST_MAX_EVIDENCE_DOCS", "16")),
+            "max_evidence_docs": int(os.getenv("FORECAST_MAX_EVIDENCE_DOCS", "10")),
         },
         "run_max_tokens_cap": int(os.getenv("FORECAST_RUN_MAX_TOKENS", "0")),
         "shrink_to_crowd": os.getenv("FORECAST_SHRINK_TO_CROWD", "0") == "1",
@@ -1629,7 +1629,7 @@ async def run_lean_ensemble_forecast(
         docs=docs,
         question_title=question_title,
         resolution_criteria=resolution_criteria,
-        max_docs=int(os.getenv("FORECAST_MAX_EVIDENCE_DOCS", "16")),
+        max_docs=int(os.getenv("FORECAST_MAX_EVIDENCE_DOCS", "10")),
     )
     for ev in enriched_evidence:
         ev.is_primary_source = _is_primary_source_url(ev.url, primary_domains)
