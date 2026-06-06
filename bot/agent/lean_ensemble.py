@@ -261,11 +261,13 @@ async def _extract_and_score_single(
 ) -> EnrichedEvidence | None:
     """Extract relevant content from a single doc via cheap LLM call."""
     url = str(getattr(doc, "url", "") or "").strip()
-    if not url.startswith("http"):
-        return None
     raw_text = str(getattr(doc, "text", "") or getattr(doc, "snippet", "") or "")
     title = str(getattr(doc, "title", "") or "Untitled")
     text_for_extraction = re.sub(r"\s+", " ", raw_text).strip()[:3000]
+    # Keep docs that either have a real fetchable URL or already carry usable inline text
+    # (e.g. Sonar synthesis docs whose pseudo-URL is `sonar://...`). Drop empty stubs.
+    if not url.startswith("http") and len(text_for_extraction) < 50:
+        return None
     if len(text_for_extraction) < 50:
         return None
 
@@ -1467,6 +1469,30 @@ async def run_lean_ensemble_forecast(
             sonar_client=sonar_client,
             use_sonar=True,
         )
+        # Sonar inside multi_provider_search is basket-gated and frequently does not fire,
+        # leaving zero evidence. As the SOLE provider we query Sonar directly on the top
+        # queries so each yields a synthesis doc and we reliably clear the evidence floor.
+        import types as _types
+
+        sonar_n = int(os.getenv("FORECAST_SONAR_DIRECT_QUERIES", "5"))
+        direct = await asyncio.gather(
+            *[sonar_client.answer_with_citations(q, max_tokens=600) for q in search_queries[:sonar_n]],
+            return_exceptions=True,
+        )
+        for idx, (q, ans) in enumerate(zip(search_queries[:sonar_n], direct)):
+            if isinstance(ans, Exception) or not isinstance(ans, dict):
+                continue
+            answer_text = (ans.get("answer") or "").strip()
+            if len(answer_text) < 50:
+                continue
+            docs.append(
+                _types.SimpleNamespace(
+                    url=f"sonar://direct/{idx}",
+                    title=f"Sonar synthesis: {q[:70]}",
+                    text=answer_text,
+                    snippet=None,
+                )
+            )
         search_provider = "sonar_openrouter"
         logger.warning(
             "No EXA_API_KEY set; using Perplexity Sonar via OpenRouter for search "
