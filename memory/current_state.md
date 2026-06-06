@@ -57,12 +57,23 @@ placeholders like `1234567890`/`your_*` are ignored via `_real_key()`):
 - Rolling forecast cap: **25 predictions per 7-day window** (`league.toml`, as of 2026-02-12).
 - 7-day league `dry_run_default = true` (as of 2026-02-12).
 
-## Cost-control defaults (env-tunable; set 2026-06-06)
-- Per-run completion tokens (defaults in roster): Kimi **12000**, GPT-5 Mini **10000**,
-  Gemini **10000**. Global cap via `FORECAST_RUN_MAX_TOKENS` (0 = use per-model default).
-- `FORECAST_MAX_SEARCH_QUERIES` default **6** (was 10) — fewer queries = fewer Sonar/Exa calls.
-- `FORECAST_MAX_EVIDENCE_DOCS` default **8** (was 12) — caps per-doc extraction LLM calls.
-- Sonar per-query `max_tokens` = 600. Lower all of these further before large batch runs.
+## Cost-control + experiment defaults (env-tunable; updated 2026-06-06)
+- Per-run completion tokens (roster defaults): per `current roster` table; global cap via
+  `FORECAST_RUN_MAX_TOKENS` (0 = use per-model default).
+- `FORECAST_MAX_SEARCH_QUERIES` default **8**; `FORECAST_LINKUP_QUERIES` default **8**;
+  `FORECAST_MAX_EVIDENCE_DOCS` default **16** (bumped for richer evidence, "double searches").
+- `FORECAST_EXTREMIZE_K` default **1.0** (no extremization until validated on resolved corpus).
+- `FORECAST_SHRINK_TO_CROWD` default **0** — low-confidence forecasts shrink toward 0.5, not the
+  crowd, so skill-vs-crowd stays measurable. Set 1 to anchor to the community prior.
+- `FORECAST_SECOND_PASS` default **1** — conditional extra Linkup round only when no resolution/
+  primary source was found (not blind 2x search).
+- Sonar per-query `max_tokens` = 600. Lower these before large batch runs if cost matters.
+
+## Record schema additions (2026-06-06, forecast-record/v1)
+Records now also carry: `run_config` (pipeline_version, as_of_utc, models, aggregation, search caps),
+`crowd_benchmark` (community prediction captured at forecast, flags for whether it was used),
+`outside_view_probability` + `base_rate_texts` (explicit recorded outside view), and `search_provider`.
+Pipeline version constant: `LEAN_PIPELINE_VERSION` in `lean_ensemble.py` — bump on behavior changes.
 
 ## Active CI workflows (`.github/workflows/`)
 - `run_tournament.yaml` — tournament forecasts; commits `forecast_records/` back (cron disabled;

@@ -35,6 +35,13 @@ Rolling log of recent sessions. Keep only the last ~5 sessions. Durable lessons 
   New `LinkupClient`; lean search block combines providers with a `_real_key()` placeholder guard.
   Re-verified US/Iran: `serper+linkup`, 8 evidence items, 2 primary sources, mean_rel ~0.8 (was 0
   primary on Sonar-only). Keys live in `.env` (Linkup stored as `LINKEUP_API_KEY` typo; code reads both).
+- **Pre-full-run informativeness pass** (from `llm_forecasting_methods_report.md`): neutralized
+  extremization (k=1.0); record `crowd_benchmark` + decoupled low-conf shrink from crowd
+  (`FORECAST_SHRINK_TO_CROWD`); stamped `run_config` provenance (version/as_of/models/aggregation/
+  search); forced + recorded explicit outside view (`BASE_RATE`/`OUTSIDE_VIEW` → `outside_view_probability`
+  + `base_rate_texts`); near-term finder min-hours floor 6→24; conditional second Linkup pass
+  (`FORECAST_SECOND_PASS`). Search depth doubled (queries 8, linkup 8, evidence 16). Verified: 12
+  evidence items, all new record fields populate; 41 tests pass.
 
 ## 2026-02-12 - Memory Sync + New Test Forecast (Codex GPT-5)
 
