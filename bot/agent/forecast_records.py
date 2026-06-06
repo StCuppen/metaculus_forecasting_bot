@@ -69,6 +69,18 @@ def _fmt_pct(p: Any) -> str:
         return "n/a"
 
 
+def _append_text_block(lines: list[str], title: str, value: Any, max_chars: int = 4000) -> None:
+    text = str(value or "").strip()
+    if not text:
+        return
+    lines.append(f"### {title}")
+    lines.append("")
+    if len(text) > max_chars:
+        text = text[:max_chars].rstrip() + "\n\n[truncated]"
+    lines.append(text)
+    lines.append("")
+
+
 def render_record_markdown(record: dict[str, Any]) -> str:
     """Render a human-readable Markdown view of a forecast record."""
     g = record.get("gate_report") or {}
@@ -88,6 +100,14 @@ def render_record_markdown(record: dict[str, Any]) -> str:
     if rc:
         L.append(f"- **Pipeline:** {rc.get('pipeline_version','?')} · models: {', '.join(rc.get('models') or [])}")
     L.append("")
+
+    # Source question details
+    if any(record.get(k) for k in ("background_info", "resolution_criteria", "fine_print", "canonical_spec")):
+        L.append("## Question details")
+        _append_text_block(L, "Background / context", record.get("background_info"))
+        _append_text_block(L, "Resolution criteria", record.get("resolution_criteria"))
+        _append_text_block(L, "Fine print", record.get("fine_print"))
+        _append_text_block(L, "Canonical spec", record.get("canonical_spec"))
 
     # Final forecast
     L.append("## Final forecast")
