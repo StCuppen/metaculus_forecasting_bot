@@ -1,0 +1,703 @@
+{
+  "aggregated_forecast": {
+    "confidence_class": "medium",
+    "dispersion": 0.17767948671695336,
+    "n_runs": 5,
+    "n_trimmed": 2,
+    "p_calibrated": 0.38670032450742814,
+    "p_raw": 0.39333333333333337
+  },
+  "claim_audit": {
+    "assumption": 0,
+    "assumptions_note": "",
+    "evidence_backed": 1,
+    "hinge_claims": [
+      {
+        "claim": "The provided reasoning \"Probability: 45%\" does not contain any explicit factual assertions that could be false and materially change the forecast. It is a direct statement of the forecast's probability, not a set of underlying claims supporting that probabilit",
+        "status": "evidence_backed",
+        "type": "hinge"
+      }
+    ],
+    "items": [
+      {
+        "claim": "The provided reasoning \"Probability: 45%\" does not contain any explicit factual assertions that could be false and materially change the forecast. It is a direct statement of the forecast's probability, not a set of underlying claims supporting that probabilit",
+        "status": "evidence_backed",
+        "type": "hinge"
+      }
+    ],
+    "total_claims": 1
+  },
+  "community_prior": null,
+  "evidence_bundle_text": "[1] markets_news | sonar://markets_news | retrieved=2026-06-06 | primary=False | relevance=1.00 | datapoint=True\n- Vanuatu is the slight favorite over Fiji in available pre-match odds and prediction models.\n- Polymarket’s trader consensus shows Vanuatu at 45% implied probability, Fiji at 30%, and the draw at 26%.\n- One odds page lists Vanuatu at 2.09, draw at 3.80, and Fiji at 2.96.\n- FOX Sports lists Vanuatu at +105, Fiji at +230, and draw at +280.\n- FOX Sports indicates a 62% win likelihood for Vanuatu and 38% for Fiji.\n- FootballPredictions.ai recommends 1X (Vanuatu or draw) and a 1–0 correct score.\n- FootballPredictions.ai leans to No for both teams to score.\n- TrustNBET favors a Vanuatu win, plus ov\n\n[2] direct | sonar://direct/0 | retrieved=2026-06-06 | primary=False | relevance=1.00 | datapoint=True\n- The match between Vanuatu and Fiji on 2026-06-06 has not started yet.\n- There is no final score available for the match yet.\n- Kickoff for the 2026-06-06 Vanuatu vs Fiji friendly was scheduled for that date.\n\n[3] direct | sonar://direct/2 | retrieved=2026-06-06 | primary=False | relevance=1.00 | datapoint=True\n- Vanuatu defeated Fiji 2-0 on 2025-11-17 in the MSG Prime Minister’s Cup.\n- Vanuatu defeated Solomon Islands 2-1 on 2025-11-20 in the MSG Prime Minister’s Cup semi-final.\n- Papua New Guinea drew with Vanuatu 2-2 on 2025-11-23, with Vanuatu winning 5-4 on penalties.\n- Vanuatu lost to Papua New Guinea 1-2 on 2024-12-21 in the MSG Prime Minister’s Cup.\n- Vanuatu defeated Solomon Islands 3-1 on 2024-12-15 in the MSG Prime Minister’s Cup.\n- Fiji drew with Vanuatu 1-1 on 2024-12-12 in the MSG Prime Minister’s Cup.\n- Vanuatu lost to Solomon Islands 1-4 on 2024-12-09 in the MSG Prime Minister’s Cup.\n\n\n[4] direct | sonar://direct/3 | retrieved=2026-06-06 | primary=False | relevance=1.00 | datapoint=True\n- Fiji lost 2-0 to Vanuatu on 2025-11-17 in a friendly match.\n- Fiji lost 2-0 to Papua New Guinea on 2025-11-20 in the MSG Prime Minister’s Cup semi-final.\n- Fiji lost 3-0 to Thailand on 2025-09-04 in the King’s Cup.\n- Fiji won 3-1 against Solomon Islands on 2024-12-21 in a friendly.\n- Fiji drew 1-1 with New Caledonia on 2024-11-16 in FIFA World Cup qualifying.\n- Fiji drew 3-3 with Papua New Guinea on 2024-11-14 in FIFA World Cup qualifying.\n- Fiji won 1-0 against Solomon Islands on 2024-10-10 in FIFA World Cup qualifying.\n- Fiji drew 1-1 with Hong Kong on 2024-09-07 in a friendly.\n\n[5] direct | sonar://direct/4 | retrieved=2026-06-06 | primary=False | relevance=1.00 | datapoint=True\n- Fiji and Vanuatu have played 13 matches since 2007.\n- Vanuatu has won 6 of the 13 matches.\n- Fiji has won 4 of the 13 matches.\n- There have been 3 draws in the 13 matches.\n- Vanuatu scored 17 total goals in those 13 matches.\n- Fiji scored 20 total goals in those 13 matches.\n- Over the last 5 meetings, Vanuatu won 4.\n- Over the last 5 meetings, Fiji won 1.\n- Over the last 5 meetings, there were 0 draws.\n- Another head-to-head source lists 16 total meetings.\n- In the alternative dataset, Vanuatu won 8 of the 16 meetings.\n- In the alternative dataset, Fiji won 5 of the 16 meetings.\n- In the alt\n\n[6] direct | sonar://direct/1 | retrieved=2026-06-06 | primary=False | relevance=0.80 | datapoint=True\n- The match between Vanuatu and Fiji is an international friendly scheduled for 2026-06-06.\n- The match is not started yet or has no data available on some trackers.\n- There are no confirmed live goals or incidents to report from the provided sources.\n- The current status of the match is \"Not started / no live event data yet.\"\n- The competition is \"International Friendly Games / Friendlies.\"\n- The venue is VFF Freshwater Stadium, Port Vila, Vanuatu.\n- Kickoff times shown by sources vary: 04:00 UTC, 04:30 UTC, and 10:00 UTC.",
+  "executed_queries": [
+    "Vanuatu vs Fiji football match score 2026-06-06",
+    "Vanuatu vs Fiji football match live updates 2026-06-06",
+    "Vanuatu national football team recent results",
+    "Fiji national football team recent results",
+    "Vanuatu vs Fiji head to head football statistics",
+    "Vanuatu vs Fiji football match prediction odds",
+    "site:polymarket.com Will Vanuatu win their match against Fiji on 2026-06-06?\n\nContext: This is a Pol"
+  ],
+  "feature_flags": {},
+  "final_mc_probabilities": null,
+  "final_numeric_percentiles": null,
+  "final_probability": 0.38670032450742814,
+  "full_log": "# Forecast Report -- 20260606_081942\n\n| Field | Value |\n|-------|-------|\n| Question | Will Vanuatu win their match against Fiji on 2026-06-06?\n\nContext: This is a Polymarket prediction market on an international football (soccer)\nmatch between Vanuatu and Fiji scheduled for 2026-06-06. The market resolves YES if\nVanuatu wins the match in regulation, and NO otherwise (a draw or a Fiji win resolves NO).\n\nToday's date: 2026-06-06. Resolution: after the match concludes on 2026-06-06. |\n| Type | binary |\n| Date | 2026-06-06 |\n| Final Prediction | 38.7% |\n| Informativeness | weak_view (signal=0.113) |\n| Confidence | medium |\n| Gate Action | publish (score=0.652) |\n\n**Canonical Spec:**\n- One-line: Will Vanuatu win their football match against Fiji in regulation time on 2026-06-06?\n- YES: Vanuatu wins the match in regulation time\n- NO: The match is a draw or Fiji wins in regulation time\n- Window: The match concludes on 2026-06-06\n- Threshold: None\n- Metric: football match outcome\n\n---\n\n## Search Process\n\n**Strategy Output:**\n```\nSEARCH(\"Vanuatu vs Fiji football match score 2026-06-06\")\nSEARCH(\"Vanuatu vs Fiji football match live updates 2026-06-06\")\nSEARCH(\"Vanuatu national football team recent results\")\nSEARCH(\"Fiji national football team recent results\")\nSEARCH(\"Vanuatu vs Fiji head to head football statistics\")\nSEARCH(\"Vanuatu vs Fiji football match prediction odds\")\nSEARCH(\"OFC Nations Cup 2026 schedule\")\nSEARCH(\"Polymarket Vanuatu vs Fiji football market\")\n```\n\n**Planned Queries (8):**\n- Vanuatu vs Fiji football match score 2026-06-06\n- Vanuatu vs Fiji football match live updates 2026-06-06\n- Vanuatu national football team recent results\n- Fiji national football team recent results\n- Vanuatu vs Fiji head to head football statistics\n- Vanuatu vs Fiji football match prediction odds\n- OFC Nations Cup 2026 schedule\n- Polymarket Vanuatu vs Fiji football market\n\n**Executed Queries (7):**\n- Vanuatu vs Fiji football match score 2026-06-06\n- Vanuatu vs Fiji football match live updates 2026-06-06\n- Vanuatu national football team recent results\n- Fiji national football team recent results\n- Vanuatu vs Fiji head to head football statistics\n- Vanuatu vs Fiji football match prediction odds\n- site:polymarket.com Will Vanuatu win their match against Fiji on 2026-06-06?\n\nContext: This is a Pol\n\n---\n\n## Evidence Summary\n\nItems: 6 | Distinct sources: 2 | Primary: 0 | Mean relevance: 0.967 | Freshness: 0.0 days\n\n| # | Source | Primary | Relevance | Bearing | Snippet |\n|---|--------|---------|-----------|---------|---------|\n| E1 | markets_news | No | 1.00 | High-directness status signal | - Vanuatu is the slight favorite over Fiji in available pre-match odds and predi... |\n| E2 | direct | No | 1.00 | High-directness status signal | - The match between Vanuatu and Fiji on 2026-06-06 has not started yet.\n- There ... |\n| E3 | direct | No | 1.00 | High-directness status signal | - Vanuatu defeated Fiji 2-0 on 2025-11-17 in the MSG Prime Minister’s Cup.\n- Van... |\n| E4 | direct | No | 1.00 | High-directness status signal | - Fiji lost 2-0 to Vanuatu on 2025-11-17 in a friendly match.\n- Fiji lost 2-0 to... |\n| E5 | direct | No | 1.00 | High-directness status signal | - Fiji and Vanuatu have played 13 matches since 2007.\n- Vanuatu has won 6 of the... |\n| E6 | direct | No | 0.80 | High-directness status signal | - The match between Vanuatu and Fiji is an international friendly scheduled for ... |\n\n---\n\n## Model Runs\n\nParsing failure rate: 0.0%\n\n| Model | Probability | Tokens | Warnings |\n|-------|-------------|--------|----------|\n| DeepSeek V4 Pro | 45.0% | 3,764 | 1 |\n| GPT-5.4 Mini | 46.0% | 2,458 | 0 |\n| Kimi K2.6 | 45.0% | 7,111 | 0 |\n| Gemini 3 Flash | 28.0% | 2,395 | 0 |\n| Claude Haiku 4.5 | 5.0% | 2,913 | 0 |\n\n---\n\n### DeepSeek V4 Pro (45.0%)\n\n<details><summary>Full reasoning (16 chars)</summary>\n\nProbability: 45%\n\n</details>\n\n---\n\n### GPT-5.4 Mini (46.0%)\n\n<details><summary>Full reasoning (1,601 chars)</summary>\n\n(a) **Time remaining / deadline:** The match is scheduled for **2026-06-06** and resolves **after the match concludes today**. So the deadline is the final whistle on 2026-06-06.\n\n(b) **Status quo outcome:** If nothing changes, the market resolves **NO** by default unless Vanuatu actually wins in regulation. A draw also counts as **NO**.\n\n(c) **Path to YES:** Vanuatu scores more goals than Fiji in regulation time today, e.g. **1-0**, **2-0**, etc.\n\n(d) **Path to NO:** Fiji wins in regulation, or the match ends level after 90 minutes.\n\n(e) **Base rate:** I don’t have a general base rate for this exact matchup, but for international friendlies between comparable teams, draws are common and the favorite often wins only a minority-to-plurality of the time. Since this is a slight-favorite spot, the yes probability should be in the **mid-40s**, not near certainty.\n\n(f) **Strongest evidence:**\n- **Toward YES:** Pre-match odds/trader consensus consistently make **Vanuatu the slight favorite**; recent head-to-head also favors Vanuatu, including a **2-0 win over Fiji on 2025-11-17**.\n- **Toward NO:** Vanuatu is only a **slight** favorite, and the market’s own implied probabilities still leave **NO** outcomes (draw or Fiji win) as the majority combined outcome. Since a draw loses here, that matters a lot.\n\n(g) **Easy-to-misread criterion:** The market is **not** “Will Vanuatu avoid losing?” It is specifically **will Vanuatu win in regulation time**. So a **draw is NO**, and any extra-time/penalty outcome would not help unless Vanuatu had already won in regulation.\n\n**Probability: 46%**\n\n</details>\n\n---\n\n### Kimi K2.6 (45.0%)\n\n<details><summary>Full reasoning (2,355 chars)</summary>\n\n(a) **Time until resolution:** The match is scheduled to kick off on 2026-06-06 (sources list kickoff between roughly 04:00 and 10:00 UTC), so resolution is likely within a few hours of now—after the match concludes later today. The exact deadline is the end of regulation time on 2026-06-06.\n\n(b) **Status quo outcome:** The match has not started. If current expectations hold, Vanuatu is the slight favorite in the betting markets (~45% implied probability) but the majority probability mass (~55%) rests on a draw or a Fiji win. Therefore, the status quo expectation is tilted toward NO.\n\n(c) **YES scenario:** Vanuatu leverages home-field advantage at VFF Freshwater Stadium, presses high against a Fiji side that has lost its last three matches, scores an early goal from a set-piece, adds a second on the counter in the second half, and sees out the game 2-0 or 2-1 in regulation.\n\n(d) **NO scenario:** Fiji organizes defensively, absorbs early pressure, and either holds Vanuatu to a scoreless or low-scoring draw (e.g., 0-0 or 1-1) or capitalizes on a defensive lapse to score the decisive goal and win 1-0 in regulation.\n\n(e) **Base rate:** In 13 recorded meetings since 2007, Vanuatu has won 6 (~46%), Fiji has won 4 (~31%), and there have been 3 draws (~23%). In international football generally, a home team of comparable strength wins roughly 45–50% of the time. The base rate for a Vanuatu win in this specific fixture is therefore approximately 45–50%.\n\n(f) **Single strongest evidence:**  \n- **Toward YES:** Vanuatu has won 4 of the last 5 head-to-head meetings, including a decisive 2-0 victory in November 2025, and it enjoys home advantage in Port Vila today.  \n- **Toward NO:** The consensus of available prediction markets and bookmakers prices a Vanuatu win at only ~45%, implying a ~55% chance of a draw or Fiji win; additionally, historically these sides are closely matched (Fiji has actually outscored Vanuatu 20–17 across the series).\n\n(g) **Misread risk:** The resolution criteria specify that only a Vanuatu victory in regulation counts as YES. A draw resolves NO, and extra time/penalties are irrelevant. The narrow window (conclusion on 2026-06-06) also means there is no “eventually” clause—if the match were postponed, it might not resolve, but the evidence indicates it is proceeding as scheduled today.\n\nProbability: 47%\n\n</details>\n\n---\n\n### Gemini 3 Flash (28.0%)\n\n<details><summary>Full reasoning (2,605 chars)</summary>\n\nThe match between Vanuatu and Fiji is scheduled for today, June 6, 2026, at the VFF Freshwater Stadium in Port Vila, Vanuatu.\n\n**(a) How much time remains until resolution?**\nThe match is scheduled for today. Depending on the specific kickoff time (sources suggest between 04:00 and 10:00 UTC), the match is either currently in progress or will conclude within the next few hours. Resolution occurs once the match ends.\n\n**(b) What is the status quo outcome?**\nThe match has not yet concluded. Until a result is finalized, the current state is \"not yet won by Vanuatu,\" which effectively leans toward NO until the final whistle confirms a Vanuatu victory.\n\n**(c) Concrete scenario for YES:**\nVanuatu utilizes their home-field advantage at Freshwater Stadium and continues their recent dominant form against Fiji (having won 4 of the last 5 meetings), securing a victory (e.g., 1–0 or 2–1) within the 90 minutes of regulation time.\n\n**(d) Concrete scenario for NO:**\nFiji manages to secure a draw (0–0 or 1–1) or wins the match outright. Given that international friendlies between these two nations are often closely contested, a draw is a statistically significant possibility (approx. 26–28% implied probability).\n\n**(e) What is the base rate for events like this?**\nIn international football, the \"Home Win\" rate typically hovers around 45%. In the specific head-to-head history, Vanuatu has won approximately 46–50% of their matches against Fiji.\n\n**(f) Strongest evidence for YES/NO:**\n- **Strongest for YES:** Recent head-to-head dominance (Vanuatu won 4 of the last 5) and home-field advantage. Betting markets and models (FOX Sports) favor Vanuatu with win probabilities ranging from 45% to 62%.\n- **Strongest for NO:** The \"NO\" outcome covers two out of three possible match results (Draw or Fiji Win). Fiji has historically scored more goals in the total head-to-head series (20 vs 17), suggesting they are capable of offensive output that could force a draw.\n\n**(g) Resolution criteria nuances:**\nThe market resolves YES **only** if Vanuatu wins in regulation time. A draw or a Fiji win results in NO. This \"Draw No Bet\" style favor for the NO side is crucial, as it aggregates two of the three possible outcomes.\n\n**Conclusion:**\nVanuatu is the favorite, playing at home with a strong recent record against Fiji. However, in football forecasting, the \"Draw\" outcome is a frequent spoiler for \"Win\" bets. While models lean toward Vanuatu (up to 62%), the market consensus on Polymarket (45%) and the inclusion of the draw in the NO outcome suggest a more tempered probability.\n\nProbability: 48%\n\n</details>\n\n---\n\n### Claude Haiku 4.5 (5.0%)\n\n<details><summary>Full reasoning (3,896 chars)</summary>\n\n# Forecasting Analysis: Vanuatu vs Fiji on 2026-06-06\n\n## (a) Time Remaining Until Resolution\nToday is 2026-06-06, the match date itself. Kickoff times vary by source (04:00, 04:30, or 10:00 UTC), but the match has not yet started. Resolution occurs after the match concludes on 2026-06-06. **Time remaining: Hours (match is imminent or in progress).**\n\n## (b) Status Quo Outcome\nThe match is scheduled but not yet played. The status quo is that the match will occur as scheduled and resolve based on the final result in regulation time.\n\n## (c) Concrete YES Scenario\nVanuatu plays well at home (VFF Freshwater Stadium, Port Vila), capitalizes on recent form and head-to-head advantage, and wins in regulation time (e.g., 2-0 or 1-0).\n\n## (d) Concrete NO Scenario\nFiji either wins in regulation time or the match ends in a draw. Given recent form, this could occur if Fiji performs better than expected or Vanuatu fails to convert chances.\n\n## (e) Base Rate\nFor international football friendlies between teams of similar caliber:\n- Home team advantage typically adds 3-5% to win probability\n- Favorites in betting markets (Vanuatu at ~45% implied) typically hit their market probability or slightly underperform\n- Draw rates in international friendlies are typically 20-30%\n\n## (f) Strongest Evidence\n\n**Toward YES:**\n- **Recent head-to-head dominance**: Vanuatu won 4 of the last 5 meetings vs. Fiji (80% recent win rate)\n- **Most recent result**: Vanuatu defeated Fiji 2-0 on 2025-11-17\n- **Home advantage**: Match is in Port Vila, Vanuatu\n- **Market consensus**: Vanuatu is the favorite across multiple odds sources (45% implied on Polymarket, 62% per FOX Sports)\n- **Historical record**: Vanuatu leads 6-4 in wins (or 8-5 in alternative dataset) across all meetings\n\n**Toward NO:**\n- **Market probability of NO is 55%**: The combined probability of a draw (26%) or Fiji win (30%) is substantial\n- **Friendly match volatility**: Friendlies can be unpredictable; Vanuatu has also lost to Solomon Islands 1-4 and Papua New Guinea 1-2 in recent tournaments\n- **Fiji's occasional strong performances**: Fiji beat Solomon Islands 3-1 and has drawn with stronger teams (Papua New Guinea 3-3, New Caledonia 1-1)\n\n## (g) Resolution Criteria Considerations\nThe criteria is clear: **YES only if Vanuatu wins in regulation time**. Draws and Fiji wins both resolve NO. This is a binary outcome with no ambiguity around extra time or penalties (regulation time only). The window is the single day 2026-06-06, so there's no temporal ambiguity.\n\n---\n\n## Final Reasoning\n\nThe evidence strongly favors Vanuatu:\n1. **Recent form**: 4 wins in last 5 meetings, including a 2-0 victory 6 months ago\n2. **Home advantage**: Playing in Port Vila\n3. **Market consensus**: Multiple sources favor Vanuatu, with FOX Sports suggesting 62% win likelihood\n4. **Historical edge**: Vanuatu leads the all-time head-to-head record\n\nHowever, the market itself prices Vanuatu at only 45% on Polymarket (implying 55% for NO), suggestin\n\n... [896 chars truncated]\n\n</details>\n\n---\n\n## Aggregation\n\n| Metric | Value |\n|--------|-------|\n| Raw trimmed mean | 0.3933 (39.3%) |\n| Calibrated (extremized) | 0.3867 (38.7%) |\n| Final probability | 0.3867 (38.7%) |\n| Dispersion | 0.1777 |\n| N runs | 5 (trimmed: 2) |\n\n---\n\n## Gate Decision\n\n| Component | Score |\n|-----------|-------|\n| Spec confidence | 0.900 |\n| Temporal relevance | 1.000 |\n| Evidence sufficiency | 0.500 |\n| Model agreement | 0.112 |\n| **Weighted gate score** | **0.652** |\n\n**Action:** publish\n\n**Reasons:**\n- HARD FLOOR: 0 primary sources detected. Evidence sufficiency capped at 0.5.\n- Model disagreement is high.\n- Gate action: publish.\n\n\n---\n\n## Red Team\n\nStatus: adjusted\n\n<details><summary>Critique</summary>\n\nHere's an adversarial review of the forecast:\n\n**1. TIMELINE CONFUSION**\n*   The forecast correctly identifies the match date as 2026-06-06 and \"Today's date\" as 2026-06-06. This implies the forecast is being made on the day of the match, which is appropriate.\n*   The resolution window is also correctly identified as after the match concludes on 2026-06-06.\n*   No obvious timeline confusion.\n\n**2. BASE RATE NEGLECT**\n*   The reasoning summary provides a probability of 45%, while the DRAFT PROBABILITY is 32.3%. This discrepancy is a red flag.\n*   The prompt doesn't provide any historical data or context about Vanuatu vs. Fiji matches, or their general performance against similar-ranked teams. Without this, it's impossible to assess if the 32.3% (or 45%) is reasonable against a base rate.\n*   However, the *internal inconsistency* between the \"Reasoning Summary\" probability (45%) and the \"Draft Probability\" (32.3%) suggests a potential issue. If the reasoning *concludes* 45%, but the draft is 32.3%, there's a disconnect. This could indicate that the reasoning itself might be neglecting some base rate information that led to the lower draft probability, or vice-versa.\n*   **Adversarial point**: The forecast provides no base rate for Vanuatu's historical win rate against Fiji or similar-ranked teams, nor does it provide any context for the relative strengths of these teams in international football. Without this, the 32.3% (or 45%) is unanchored. The discrepancy between the draft and reasoning probability further highlights a potential issue in how the probability was derived, possibly overlooking foundational data.\n\n**3. SINGLE-SOURCE FRAGILITY**\n*   The forecast provides no sources at all. It's just a probability and a brief reasoning summary.\n*   This is a severe case of single-source fragility, as there are *no* sources to evaluate. The entire forecast relies on the unstated methodology and data used to arrive at the 32.3% (or 45%).\n*   **Adversarial point**: The forecast is entirely opaque regarding its data sources. It's impossible to verify the information or assess its reliability. This makes the forecast extremely fragile, as any underlying assumption or data point could be incorrect without any external validation.\n\n**4. RESOLUTION MISREAD**\n*   The question is \"Will Vanuatu win their match against Fiji on 2026-06-06?\"\n*   The resolution criteria clearly state: \"YES: Vanuatu wins the match in regulation time\" and \"NO: The match is a draw or Fiji wins in regulation time.\"\n*   This aligns perfectly with the question. The forecast correctly understands that a draw or a Fiji win resolves NO.\n*   No resolution misread.\n\n**5. MISSING PATHWAYS**\n*   The forecast is a single probability. It doesn't detail any pathways or scenarios.\n*   **Adversarial point**: The forecast provides a single probability without any breakdown of factors that could influence the outcome. For example, it doesn't consider:\n    *   Team form leading up to the match.\n    *   Player injuries or suspensions.\n    *   Home advantage (if applicable).\n    *   Recent head-to-head results.\n    *   Weather conditions on the day.\n    *   Motivation (e.g., tournament implications).\n    *   The specific tactical approaches of each team.\n*   Without considering these pathways, the 32.3% (or 45%) is a black box. A more robust forecast would consider these variables and how they might shift the probability.\n\n---\n\n**Verdict:**\n\nThe most glaring issues are the lack of transparency regarding sources (Single-Source Fragility), the internal inconsistency in probabilities (Base Rate Neglect/Methodology Flaw), and the complete absence of supporting analysis (Missing Pathways). The forecast is essentially a number pulled from thin air, making it impossible to properly evaluate.\n\nGiven the significant discrepancy between the \"DRAFT PROBABILITY\" (32.3%) and the \"REASONING SUMMARY\" (45%), there's a fundamental flaw in how the probability was derived or presented. If the reasoning *concludes* 45%, but the draft is 32.3%, the draft is likely too low *if the reasoning is sound*. However, without the reasoning itself, it's impossible to know which number is more justified. This internal inconsistency alone warrants an adjustment or at least a call for clarification.\n\nLet's assume the \"Reasoning Summary\" of 45% is what the forecaster *intended* to convey as their final assessment, and the 32.3% is an earlier, unadjusted draft. The discrepancy of 12.7 percentage points is substantial.\n\nADJUSTMENT: increase by 12.7pp (to align with the stated reasoning summary)\nCONFIDENCE IN ADJUSTMENT: medium (The adjustment brings the draft in line with the stated reasoning, but the reasoning itself is still opaque and suffers from other failure modes.)\n\n</details>\n\n---\n\n## Claim Audit\n\nTotal claims: 1 | Evidence-backed: 1 | Assumptions: 0\n\n**Hinge Claims:**\n- [evidence] The provided reasoning \"Probability: 45%\" does not contain any explicit factual assertions that could be false and materially change the forecast. It is a direct statement of the forecast's probability, not a set of underlying claims supporting that probabilit\n\n\n---\n\n## Signposts\n\n| Event | Direction | Magnitude |\n|-------|-----------|----------|\n| Vanuatu's starting lineup is announced, and their star striker (e.g., Kensi Tangis or Azariah Soromon) is unexpectedly absent due to injury or illness. | down | -15pp |\n| Fiji's starting lineup is announced, and their key defender or midfielder (e.g., Tevita Waranaivalu or Nabil Begg) is unexpectedly absent due to injury or illness. | up | +12pp |\n| Vanuatu scores the first goal of the match within the first 15 minutes. | up | +20pp |\n| Fiji scores the first goal of the match within the first 15 minutes. | down | -25pp |\n| A Fiji player receives a red card in the first half. | up | +30pp |\n\n---\n\n## Final Summary\n\n**Prediction:** 38.7%\n**Confidence class:** medium\n**Informativeness:** weak_view\n**Gate action:** publish\n",
+  "full_reasoning": "# Ensemble Forecast (38.7%)\n\n---\n\n## Search Strategy Output\n\n---\n\nSEARCH(\"Vanuatu vs Fiji football match score 2026-06-06\")\nSEARCH(\"Vanuatu vs Fiji football match live updates 2026-06-06\")\nSEARCH(\"Vanuatu national football team recent results\")\nSEARCH(\"Fiji national football team recent results\")\nSEARCH(\"Vanuatu vs Fiji head to head football statistics\")\nSEARCH(\"Vanuatu vs Fiji football match prediction odds\")\nSEARCH(\"OFC Nations Cup 2026 schedule\")\nSEARCH(\"Polymarket Vanuatu vs Fiji football market\")\n\n---\n\n## Planned Queries\n\n---\n\n- Vanuatu vs Fiji football match score 2026-06-06\n- Vanuatu vs Fiji football match live updates 2026-06-06\n- Vanuatu national football team recent results\n- Fiji national football team recent results\n- Vanuatu vs Fiji head to head football statistics\n- Vanuatu vs Fiji football match prediction odds\n- OFC Nations Cup 2026 schedule\n- Polymarket Vanuatu vs Fiji football market\n\n---\n\n## Executed Queries\n\n---\n\n- Vanuatu vs Fiji football match score 2026-06-06\n- Vanuatu vs Fiji football match live updates 2026-06-06\n- Vanuatu national football team recent results\n- Fiji national football team recent results\n- Vanuatu vs Fiji head to head football statistics\n- Vanuatu vs Fiji football match prediction odds\n- site:polymarket.com Will Vanuatu win their match against Fiji on 2026-06-06?\n\nContext: This is a Pol\n\n---\n\n## Evidence Bundle\n\n---\n\n[1] markets_news | sonar://markets_news | retrieved=2026-06-06 | primary=False | relevance=1.00 | datapoint=True\n- Vanuatu is the slight favorite over Fiji in available pre-match odds and prediction models.\n- Polymarket’s trader consensus shows Vanuatu at 45% implied probability, Fiji at 30%, and the draw at 26%.\n- One odds page lists Vanuatu at 2.09, draw at 3.80, and Fiji at 2.96.\n- FOX Sports lists Vanuatu at +105, Fiji at +230, and draw at +280.\n- FOX Sports indicates a 62% win likelihood for Vanuatu and 38% for Fiji.\n- FootballPredictions.ai recommends 1X (Vanuatu or draw) and a 1–0 correct score.\n- FootballPredictions.ai leans to No for both teams to score.\n- TrustNBET favors a Vanuatu win, plus ov\n\n[2] direct | sonar://direct/0 | retrieved=2026-06-06 | primary=False | relevance=1.00 | datapoint=True\n- The match between Vanuatu and Fiji on 2026-06-06 has not started yet.\n- There is no final score available for the match yet.\n- Kickoff for the 2026-06-06 Vanuatu vs Fiji friendly was scheduled for that date.\n\n[3] direct | sonar://direct/2 | retrieved=2026-06-06 | primary=False | relevance=1.00 | datapoint=True\n- Vanuatu defeated Fiji 2-0 on 2025-11-17 in the MSG Prime Minister’s Cup.\n- Vanuatu defeated Solomon Islands 2-1 on 2025-11-20 in the MSG Prime Minister’s Cup semi-final.\n- Papua New Guinea drew with Vanuatu 2-2 on 2025-11-23, with Vanuatu winning 5-4 on penalties.\n- Vanuatu lost to Papua New Guinea 1-2 on 2024-12-21 in the MSG Prime Minister’s Cup.\n- Vanuatu defeated Solomon Islands 3-1 on 2024-12-15 in the MSG Prime Minister’s Cup.\n- Fiji drew with Vanuatu 1-1 on 2024-12-12 in the MSG Prime Minister’s Cup.\n- Vanuatu lost to Solomon Islands 1-4 on 2024-12-09 in the MSG Prime Minister’s Cup.\n\n\n[4] direct | sonar://direct/3 | retrieved=2026-06-06 | primary=False | relevance=1.00 | datapoint=True\n- Fiji lost 2-0 to Vanuatu on 2025-11-17 in a friendly match.\n- Fiji lost 2-0 to Papua New Guinea on 2025-11-20 in the MSG Prime Minister’s Cup semi-final.\n- Fiji lost 3-0 to Thailand on 2025-09-04 in the King’s Cup.\n- Fiji won 3-1 against Solomon Islands on 2024-12-21 in a friendly.\n- Fiji drew 1-1 with New Caledonia on 2024-11-16 in FIFA World Cup qualifying.\n- Fiji drew 3-3 with Papua New Guinea on 2024-11-14 in FIFA World Cup qualifying.\n- Fiji won 1-0 against Solomon Islands on 2024-10-10 in FIFA World Cup qualifying.\n- Fiji drew 1-1 with Hong Kong on 2024-09-07 in a friendly.\n\n[5] direct | sonar://direct/4 | retrieved=2026-06-06 | primary=False | relevance=1.00 | datapoint=True\n- Fiji and Vanuatu have played 13 matches since 2007.\n- Vanuatu has won 6 of the 13 matches.\n- Fiji has won 4 of the 13 matches.\n- There have been 3 draws in the 13 matches.\n- Vanuatu scored 17 total goals in those 13 matches.\n- Fiji scored 20 total goals in those 13 matches.\n- Over the last 5 meetings, Vanuatu won 4.\n- Over the last 5 meetings, Fiji won 1.\n- Over the last 5 meetings, there were 0 draws.\n- Another head-to-head source lists 16 total meetings.\n- In the alternative dataset, Vanuatu won 8 of the 16 meetings.\n- In the alternative dataset, Fiji won 5 of the 16 meetings.\n- In the alt\n\n[6] direct | sonar://direct/1 | retrieved=2026-06-06 | primary=False | relevance=0.80 | datapoint=True\n- The match between Vanuatu and Fiji is an international friendly scheduled for 2026-06-06.\n- The match is not started yet or has no data available on some trackers.\n- There are no confirmed live goals or incidents to report from the provided sources.\n- The current status of the match is \"Not started / no live event data yet.\"\n- The competition is \"International Friendly Games / Friendlies.\"\n- The venue is VFF Freshwater Stadium, Port Vila, Vanuatu.\n- Kickoff times shown by sources vary: 04:00 UTC, 04:30 UTC, and 10:00 UTC.\n\n---\n\n## Top Evidence\n\n---\n\n- E1 | markets_news | 2026-06-06 | primary=False | relevance=1.0 | bearing=High-directness status signal | snippet_hash=f040344f71ea51c3 | - Vanuatu is the slight favorite over Fiji in available pre-match odds and prediction models.\n- Polymarket’s trader consensus shows Vanuatu \n- E2 | direct | 2026-06-06 | primary=False | relevance=1.0 | bearing=High-directness status signal | snippet_hash=57f6d32d69e477f4 | - The match between Vanuatu and Fiji on 2026-06-06 has not started yet.\n- There is no final score available for the match yet.\n- Kickoff for\n- E3 | direct | 2026-06-06 | primary=False | relevance=1.0 | bearing=High-directness status signal | snippet_hash=428dc3b211f9ef75 | - Vanuatu defeated Fiji 2-0 on 2025-11-17 in the MSG Prime Minister’s Cup.\n- Vanuatu defeated Solomon Islands 2-1 on 2025-11-20 in the MSG P\n- E4 | direct | 2026-06-06 | primary=False | relevance=1.0 | bearing=High-directness status signal | snippet_hash=fd8b8e72bb778194 | - Fiji lost 2-0 to Vanuatu on 2025-11-17 in a friendly match.\n- Fiji lost 2-0 to Papua New Guinea on 2025-11-20 in the MSG Prime Minister’s \n- E5 | direct | 2026-06-06 | primary=False | relevance=1.0 | bearing=High-directness status signal | snippet_hash=edf4fc346de9484b | - Fiji and Vanuatu have played 13 matches since 2007.\n- Vanuatu has won 6 of the 13 matches.\n- Fiji has won 4 of the 13 matches.\n- There hav\n- E6 | direct | 2026-06-06 | primary=False | relevance=0.8 | bearing=High-directness status signal | snippet_hash=f3dd7777e52395f2 | - The match between Vanuatu and Fiji is an international friendly scheduled for 2026-06-06.\n- The match is not started yet or has no data av\n\n---\n\n## Aggregate\n\n---\n\n- p_raw=0.3933\n- p_calibrated=0.3867\n- dispersion=0.1777\n- confidence=medium\n- gate_action=publish\n- gate_components: spec=0.900, temporal=1.000, evidence=0.500, agreement=0.112\n- parsing_failure_rate=0.000\n\n\n---\n\n## Red-Team Critique\n\n---\n\nHere's an adversarial review of the forecast:\n\n**1. TIMELINE CONFUSION**\n*   The forecast correctly identifies the match date as 2026-06-06 and \"Today's date\" as 2026-06-06. This implies the forecast is being made on the day of the match, which is appropriate.\n*   The resolution window is also correctly identified as after the match concludes on 2026-06-06.\n*   No obvious timeline confusion.\n\n**2. BASE RATE NEGLECT**\n*   The reasoning summary provides a probability of 45%, while the DRAFT PROBABILITY is 32.3%. This discrepancy is a red flag.\n*   The prompt doesn't provide any historical data or context about Vanuatu vs. Fiji matches, or their general performance against similar-ranked teams. Without this, it's impossible to assess if the 32.3% (or 45%) is reasonable against a base rate.\n*   However, the *internal inconsistency* between the \"Reasoning Summary\" probability (45%) and the \"Draft Probability\" (32.3%) suggests a potential issue. If the reasoning *concludes* 45%, but the draft is 32.3%, there's a disconnect. This could indicate that the reasoning itself might be neglecting some base rate information that led to the lower draft probability, or vice-versa.\n*   **Adversarial point**: The forecast provides no base rate for Vanuatu's historical win rate against Fiji or similar-ranked teams, nor does it provide any context for the relative strengths of these teams in international football. Without this, the 32.3% (or 45%) is unanchored. The discrepancy between the draft and reasoning probability further highlights a potential issue in how the probability was derived, possibly overlooking foundational data.\n\n**3. SINGLE-SOURCE FRAGILITY**\n*   The forecast provides no sources at all. It's just a probability and a brief reasoning summary.\n*   This is a severe case of single-source fragility, as there are *no* sources to evaluate. The entire forecast relies on the unstated methodology and data used to arrive at the 32.3% (or 45%).\n*   **Adversarial point**: The forecast is entirely opaque regarding its data sources. It's impossible to verify the information or assess its reliability. This makes the forecast extremely fragile, as any underlying assumption or data point could be incorrect without any external validation.\n\n**4. RESOLUTION MISREAD**\n*   The question is \"Will Vanuatu win their match against Fiji on 2026-06-06?\"\n*   The resolution criteria clearly state: \"YES: Vanuatu wins the match in regulation time\" and \"NO: The match is a draw or Fiji wins in regulation time.\"\n*   This aligns perfectly with the question. The forecast correctly understands that a draw or a Fiji win resolves NO.\n*   No resolution misread.\n\n**5. MISSING PATHWAYS**\n*   The forecast is a single probability. It doesn't detail any pathways or scenarios.\n*   **Adversarial point**: The forecast provides a single probability without any breakdown of factors that could influence the outcome. For example, it doesn't consider:\n    *   Team form leading up to the match.\n    *   Player injuries or suspensions.\n    *   Home advantage (if applicable).\n    *   Recent head-to-head results.\n    *   Weather conditions on the day.\n    *   Motivation (e.g., tournament implications).\n    *   The specific tactical approaches of each team.\n*   Without considering these pathways, the 32.3% (or 45%) is a black box. A more robust forecast would consider these variables and how they might shift the probability.\n\n---\n\n**Verdict:**\n\nThe most glaring issues are the lack of transparency regarding sources (Single-Source Fragility), the internal inconsistency in probabilities (Base Rate Neglect/Methodology Flaw), and the complete absence of supporting analysis (Missing Pathways). The forecast is essentially a number pulled from thin air, making it impossible to properly evaluate.\n\nGiven the significant discrepancy between the \"DRAFT PROBABILITY\" (32.3%) and the \"REASONING SUMMARY\" (45%), there's a fundamental flaw in how the probability was derived or presented. If the reasoning *concludes* 45%, but the draft is 32.3%, the draft is likely too low *if the reasoning is sound*. However, without the reasoning itself, it's impossible to know which number is more justified. This internal inconsistency alone warrants an adjustment or at least a call for clarification.\n\nLet's assume the \"Reasoning Summary\" of 45% is what the forecaster *intended* to convey as their final assessment, and the 32.3% is an earlier, unadjusted draft. The discrepancy of 12.7 percentage points is substantial.\n\nADJUSTMENT: increase by 12.7pp (to align with the stated reasoning summary)\nCONFIDENCE IN ADJUSTMENT: medium (The adjustment brings the draft in line with the stated reasoning, but the reasoning itself is still opaque and suffers from other failure modes.)\n\n---\n\n## Claim Audit\n\n---\n\n{'total_claims': 1, 'evidence_backed': 1, 'assumption': 0, 'hinge_claims': [{'claim': 'The provided reasoning \"Probability: 45%\" does not contain any explicit factual assertions that could be false and materially change the forecast. It is a direct statement of the forecast\\'s probability, not a set of underlying claims supporting that probabilit', 'status': 'evidence_backed', 'type': 'hinge'}], 'assumptions_note': '', 'items': [{'claim': 'The provided reasoning \"Probability: 45%\" does not contain any explicit factual assertions that could be false and materially change the forecast. It is a direct statement of the forecast\\'s probability, not a set of underlying claims supporting that probabilit', 'status': 'evidence_backed', 'type': 'hinge'}]}\n\n---\n\n## Signposts\n\n---\n\n{'raw': \"SIGNPOST: Vanuatu's starting lineup is announced, and their star striker (e.g., Kensi Tangis or Azariah Soromon) is unexpectedly absent due to injury or illness.\\nDIRECTION: down\\nMAGNITUDE: -15pp\\n\\nSIGNPOST: Fiji's starting lineup is announced, and their key defender or midfielder (e.g., Tevita Waranaivalu or Nabil Begg) is unexpectedly absent due to injury or illness.\\nDIRECTION: up\\nMAGNITUDE: +12pp\\n\\nSIGNPOST: Vanuatu scores the first goal of the match within the first 15 minutes.\\nDIRECTION: up\\nMAGNITUDE: +20pp\\n\\nSIGNPOST: Fiji scores the first goal of the match within the first 15 minutes.\\nDIRECTION: down\\nMAGNITUDE: -25pp\\n\\nSIGNPOST: A Fiji player receives a red card in the first half.\\nDIRECTION: up\\nMAGNITUDE: +30pp\", 'signposts': [{'event': \"Vanuatu's starting lineup is announced, and their star striker (e.g., Kensi Tangis or Azariah Soromon) is unexpectedly absent due to injury or illness.\", 'direction': 'down', 'magnitude': '-15pp'}, {'event': \"Fiji's starting lineup is announced, and their key defender or midfielder (e.g., Tevita Waranaivalu or Nabil Begg) is unexpectedly absent due to injury or illness.\", 'direction': 'up', 'magnitude': '+12pp'}, {'event': 'Vanuatu scores the first goal of the match within the first 15 minutes.', 'direction': 'up', 'magnitude': '+20pp'}, {'event': 'Fiji scores the first goal of the match within the first 15 minutes.', 'direction': 'down', 'magnitude': '-25pp'}, {'event': 'A Fiji player receives a red card in the first half.', 'direction': 'up', 'magnitude': '+30pp'}]}\n\n---\n\n## DeepSeek V4 Pro (45.0%)\n\nProbability: 45%\n\n---\n\n## GPT-5.4 Mini (46.0%)\n\n(a) **Time remaining / deadline:** The match is scheduled for **2026-06-06** and resolves **after the match concludes today**. So the deadline is the final whistle on 2026-06-06.\n\n(b) **Status quo outcome:** If nothing changes, the market resolves **NO** by default unless Vanuatu actually wins in regulation. A draw also counts as **NO**.\n\n(c) **Path to YES:** Vanuatu scores more goals than Fiji in regulation time today, e.g. **1-0**, **2-0**, etc.\n\n(d) **Path to NO:** Fiji wins in regulation, or the match ends level after 90 minutes.\n\n(e) **Base rate:** I don’t have a general base rate for this exact matchup, but for international friendlies between comparable teams, draws are common and the favorite often wins only a minority-to-plurality of the time. Since this is a slight-favorite spot, the yes probability should be in the **mid-40s**, not near certainty.\n\n(f) **Strongest evidence:**\n- **Toward YES:** Pre-match odds/trader consensus consistently make **Vanuatu the slight favorite**; recent head-to-head also favors Vanuatu, including a **2-0 win over Fiji on 2025-11-17**.\n- **Toward NO:** Vanuatu is only a **slight** favorite, and the market’s own implied probabilities still leave **NO** outcomes (draw or Fiji win) as the majority combined outcome. Since a draw loses here, that matters a lot.\n\n(g) **Easy-to-misread criterion:** The market is **not** “Will Vanuatu avoid losing?” It is specifically **will Vanuatu win in regulation time**. So a **draw is NO**, and any extra-time/penalty outcome would not help unless Vanuatu had already won in regulation.\n\n**Probability: 46%**\n\n---\n\n## Kimi K2.6 (45.0%)\n\n(a) **Time until resolution:** The match is scheduled to kick off on 2026-06-06 (sources list kickoff between roughly 04:00 and 10:00 UTC), so resolution is likely within a few hours of now—after the match concludes later today. The exact deadline is the end of regulation time on 2026-06-06.\n\n(b) **Status quo outcome:** The match has not started. If current expectations hold, Vanuatu is the slight favorite in the betting markets (~45% implied probability) but the majority probability mass (~55%) rests on a draw or a Fiji win. Therefore, the status quo expectation is tilted toward NO.\n\n(c) **YES scenario:** Vanuatu leverages home-field advantage at VFF Freshwater Stadium, presses high against a Fiji side that has lost its last three matches, scores an early goal from a set-piece, adds a second on the counter in the second half, and sees out the game 2-0 or 2-1 in regulation.\n\n(d) **NO scenario:** Fiji organizes defensively, absorbs early pressure, and either holds Vanuatu to a scoreless or low-scoring draw (e.g., 0-0 or 1-1) or capitalizes on a defensive lapse to score the decisive goal and win 1-0 in regulation.\n\n(e) **Base rate:** In 13 recorded meetings since 2007, Vanuatu has won 6 (~46%), Fiji has won 4 (~31%), and there have been 3 draws (~23%). In international football generally, a home team of comparable strength wins roughly 45–50% of the time. The base rate for a Vanuatu win in this specific fixture is therefore approximately 45–50%.\n\n(f) **Single strongest evidence:**  \n- **Toward YES:** Vanuatu has won 4 of the last 5 head-to-head meetings, including a decisive 2-0 victory in November 2025, and it enjoys home advantage in Port Vila today.  \n- **Toward NO:** The consensus of available prediction markets and bookmakers prices a Vanuatu win at only ~45%, implying a ~55% chance of a draw or Fiji win; additionally, historically these sides are closely matched (Fiji has actually outscored Vanuatu 20–17 across the series).\n\n(g) **Misread risk:** The resolution criteria specify that only a Vanuatu victory in regulation counts as YES. A draw resolves NO, and extra time/penalties are irrelevant. The narrow window (conclusion on 2026-06-06) also means there is no “eventually” clause—if the match were postponed, it might not resolve, but the evidence indicates it is proceeding as scheduled today.\n\nProbability: 47%\n\n---\n\n## Gemini 3 Flash (28.0%)\n\nThe match between Vanuatu and Fiji is scheduled for today, June 6, 2026, at the VFF Freshwater Stadium in Port Vila, Vanuatu.\n\n**(a) How much time remains until resolution?**\nThe match is scheduled for today. Depending on the specific kickoff time (sources suggest between 04:00 and 10:00 UTC), the match is either currently in progress or will conclude within the next few hours. Resolution occurs once the match ends.\n\n**(b) What is the status quo outcome?**\nThe match has not yet concluded. Until a result is finalized, the current state is \"not yet won by Vanuatu,\" which effectively leans toward NO until the final whistle confirms a Vanuatu victory.\n\n**(c) Concrete scenario for YES:**\nVanuatu utilizes their home-field advantage at Freshwater Stadium and continues their recent dominant form against Fiji (having won 4 of the last 5 meetings), securing a victory (e.g., 1–0 or 2–1) within the 90 minutes of regulation time.\n\n**(d) Concrete scenario for NO:**\nFiji manages to secure a draw (0–0 or 1–1) or wins the match outright. Given that international friendlies between these two nations are often closely contested, a draw is a statistically significant possibility (approx. 26–28% implied probability).\n\n**(e) What is the base rate for events like this?**\nIn international football, the \"Home Win\" rate typically hovers around 45%. In the specific head-to-head history, Vanuatu has won approximately 46–50% of their matches against Fiji.\n\n**(f) Strongest evidence for YES/NO:**\n- **Strongest for YES:** Recent head-to-head dominance (Vanuatu won 4 of the last 5) and home-field advantage. Betting markets and models (FOX Sports) favor Vanuatu with win probabilities ranging from 45% to 62%.\n- **Strongest for NO:** The \"NO\" outcome covers two out of three possible match results (Draw or Fiji Win). Fiji has historically scored more goals in the total head-to-head series (20 vs 17), suggesting they are capable of offensive output that could force a draw.\n\n**(g) Resolution criteria nuances:**\nThe market resolves YES **only** if Vanuatu wins in regulation time. A draw or a Fiji win results in NO. This \"Draw No Bet\" style favor for the NO side is crucial, as it aggregates two of the three possible outcomes.\n\n**Conclusion:**\nVanuatu is the favorite, playing at home with a strong recent record against Fiji. However, in football forecasting, the \"Draw\" outcome is a frequent spoiler for \"Win\" bets. While models lean toward Vanuatu (up to 62%), the market consensus on Polymarket (45%) and the inclusion of the draw in the NO outcome suggest a more tempered probability.\n\nProbability: 48%\n\n---\n\n## Claude Haiku 4.5 (5.0%)\n\n# Forecasting Analysis: Vanuatu vs Fiji on 2026-06-06\n\n## (a) Time Remaining Until Resolution\nToday is 2026-06-06, the match date itself. Kickoff times vary by source (04:00, 04:30, or 10:00 UTC), but the match has not yet started. Resolution occurs after the match concludes on 2026-06-06. **Time remaining: Hours (match is imminent or in progress).**\n\n## (b) Status Quo Outcome\nThe match is scheduled but not yet played. The status quo is that the match will occur as scheduled and resolve based on the final result in regulation time.\n\n## (c) Concrete YES Scenario\nVanuatu plays well at home (VFF Freshwater Stadium, Port Vila), capitalizes on recent form and head-to-head advantage, and wins in regulation time (e.g., 2-0 or 1-0).\n\n## (d) Concrete NO Scenario\nFiji either wins in regulation time or the match ends in a draw. Given recent form, this could occur if Fiji performs better than expected or Vanuatu fails to convert chances.\n\n## (e) Base Rate\nFor international football friendlies between teams of similar caliber:\n- Home team advantage typically adds 3-5% to win probability\n- Favorites in betting markets (Vanuatu at ~45% implied) typically hit their market probability or slightly underperform\n- Draw rates in international friendlies are typically 20-30%\n\n## (f) Strongest Evidence\n\n**Toward YES:**\n- **Recent head-to-head dominance**: Vanuatu won 4 of the last 5 meetings vs. Fiji (80% recent win rate)\n- **Most recent result**: Vanuatu defeated Fiji 2-0 on 2025-11-17\n- **Home advantage**: Match is in Port Vila, Vanuatu\n- **Market consensus**: Vanuatu is the favorite across multiple odds sources (45% implied on Polymarket, 62% per FOX Sports)\n- **Historical record**: Vanuatu leads 6-4 in wins (or 8-5 in alternative dataset) across all meetings\n\n**Toward NO:**\n- **Market probability of NO is 55%**: The combined probability of a draw (26%) or Fiji win (30%) is substantial\n- **Friendly match volatility**: Friendlies can be unpredictable; Vanuatu has also lost to Solomon Islands 1-4 and Papua New Guinea 1-2 in recent tournaments\n- **Fiji's occasional strong performances**: Fiji beat Solomon Islands 3-1 and has drawn with stronger teams (Papua New Guinea 3-3, New Caledonia 1-1)\n\n## (g) Resolution Criteria Considerations\nThe criteria is clear: **YES only if Vanuatu wins in regulation time**. Draws and Fiji wins both resolve NO. This is a binary outcome with no ambiguity around extra time or penalties (regulation time only). The window is the single day 2026-06-06, so there's no temporal ambiguity.\n\n---\n\n## Final Reasoning\n\nThe evidence strongly favors Vanuatu:\n1. **Recent form**: 4 wins in last 5 meetings, including a 2-0 victory 6 months ago\n2. **Home advantage**: Playing in Port Vila\n3. **Market consensus**: Multiple sources favor Vanuatu, with FOX Sports suggesting 62% win likelihood\n4. **Historical edge**: Vanuatu leads the all-time head-to-head record\n\nHowever, the market itself prices Vanuatu at only 45% on Polymarket (implying 55% for NO), suggesting meaningful uncertainty. Friendlies are inherently volatile, and Fiji has shown capability to compete.\n\nThe strongest single piece of evidence is Vanuatu's recent dominance (4 of last 5 wins) combined with home advantage. The strongest counter-evidence is that the market still assigns substantial probability to non-Vanuatu outcomes (55%).\n\nGiven:\n- Polymarket's 45% implied probability for Vanuatu\n- FOX Sports' 62% win likelihood for Vanuatu\n- Recent head-to-head dominance (80% in last 5)\n- Home advantage\n- But acknowledging market uncertainty and friendly match volatility\n\nI weight the recent form and home advantage heavily while respecting the market's pricing of uncertainty.\n\n**Probability: 52%**\n\nThis reflects Vanuatu as a slight favorite based on recent form and home advantage, while acknowledging the substantial probability of a draw or Fiji upset that the market has priced in.",
+  "gate_report": {
+    "action": "publish",
+    "confidence_class": "medium",
+    "distinct_sources": 2,
+    "evidence_count": 6,
+    "evidence_sufficiency": 0.5,
+    "freshness_days": 0.0010846763773148147,
+    "gate_score": 0.6523168977059247,
+    "mean_relevance": 0.9666666666666667,
+    "model_agreement": 0.11160256641523325,
+    "primary_sources": 0,
+    "publishable": true,
+    "reasons": [
+      "HARD FLOOR: 0 primary sources detected. Evidence sufficiency capped at 0.5.",
+      "Model disagreement is high.",
+      "Gate action: publish."
+    ],
+    "spec_confidence": 0.9,
+    "temporal_relevance": 0.9999879480762602
+  },
+  "generated_at_utc": "2026-06-06T08:21:42.175446+00:00",
+  "individual_results": [
+    {
+      "config": {
+        "label": "DeepSeek V4 Pro",
+        "max_tokens": 10000,
+        "name": "deepseek/deepseek-v4-pro"
+      },
+      "forecast_run": {
+        "model": "deepseek/deepseek-v4-pro",
+        "probability": 0.45,
+        "reasoning": "Probability: 45%",
+        "token_usage": 3764
+      },
+      "result": {
+        "diagnostics": {
+          "mode": "lean_forecast_prompt",
+          "numeric_unit_expected": "",
+          "parse_success": true,
+          "parsed_mc_probabilities": null,
+          "parsed_numeric_percentiles": null,
+          "question_type": "binary",
+          "spec_reason": "The model answer provides a probability, but the canonical spec requires a YES/NO answer based on the outcome of the match. It does not ask for a probability.",
+          "spec_status": "MAJOR_DRIFT",
+          "usage_label": "forecast_run:20260606_081942:deepseek_v4_pro:1"
+        },
+        "explanation": "Probability: 45%",
+        "probability": 0.45,
+        "risk_flags": [
+          "SPEC_MAJORDRIFT"
+        ],
+        "search_count": 7,
+        "sources": [
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- Vanuatu is the slight favorite over Fiji in available pre-match odds and prediction models.\n- Polymarket’s trader consensus shows Vanuatu at 45% implied probability, Fiji at 30%, and the draw at 26%.\n- One odds page lists Vanuatu at 2.09, draw at 3.80, and F",
+            "title": "Sonar synthesis for markets_news",
+            "url": "sonar://markets_news"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The match between Vanuatu and Fiji on 2026-06-06 has not started yet.\n- There is no final score available for the match yet.\n- Kickoff for the 2026-06-06 Vanuatu vs Fiji friendly was scheduled for that date.",
+            "title": "Sonar synthesis: Vanuatu vs Fiji football match score 2026-06-06",
+            "url": "sonar://direct/0"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- Vanuatu defeated Fiji 2-0 on 2025-11-17 in the MSG Prime Minister’s Cup.\n- Vanuatu defeated Solomon Islands 2-1 on 2025-11-20 in the MSG Prime Minister’s Cup semi-final.\n- Papua New Guinea drew with Vanuatu 2-2 on 2025-11-23, with Vanuatu winning 5-4 on pena",
+            "title": "Sonar synthesis: Vanuatu national football team recent results",
+            "url": "sonar://direct/2"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- Fiji lost 2-0 to Vanuatu on 2025-11-17 in a friendly match.\n- Fiji lost 2-0 to Papua New Guinea on 2025-11-20 in the MSG Prime Minister’s Cup semi-final.\n- Fiji lost 3-0 to Thailand on 2025-09-04 in the King’s Cup.\n- Fiji won 3-1 against Solomon Islands on 2",
+            "title": "Sonar synthesis: Fiji national football team recent results",
+            "url": "sonar://direct/3"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- Fiji and Vanuatu have played 13 matches since 2007.\n- Vanuatu has won 6 of the 13 matches.\n- Fiji has won 4 of the 13 matches.\n- There have been 3 draws in the 13 matches.\n- Vanuatu scored 17 total goals in those 13 matches.\n- Fiji scored 20 total goals in t",
+            "title": "Sonar synthesis: Vanuatu vs Fiji head to head football statistics",
+            "url": "sonar://direct/4"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The match between Vanuatu and Fiji is an international friendly scheduled for 2026-06-06.\n- The match is not started yet or has no data available on some trackers.\n- There are no confirmed live goals or incidents to report from the provided sources.\n- The cu",
+            "title": "Sonar synthesis: Vanuatu vs Fiji football match live updates 2026-06-06",
+            "url": "sonar://direct/1"
+          }
+        ],
+        "token_usage": {
+          "completion": 2164,
+          "prompt": 1600,
+          "total": 3764
+        },
+        "warnings": [
+          "Spec consistency MAJOR_DRIFT: The model answer provides a probability, but the canonical spec requires a YES/NO answer based on the outcome of the match. It does not ask for a probability."
+        ]
+      }
+    },
+    {
+      "config": {
+        "label": "GPT-5.4 Mini",
+        "max_tokens": 9000,
+        "name": "openai/gpt-5.4-mini"
+      },
+      "forecast_run": {
+        "model": "openai/gpt-5.4-mini",
+        "probability": 0.46,
+        "reasoning": "(a) **Time remaining / deadline:** The match is scheduled for **2026-06-06** and resolves **after the match concludes today**. So the deadline is the final whistle on 2026-06-06.\n\n(b) **Status quo outcome:** If nothing changes, the market resolves **NO** by default unless Vanuatu actually wins in regulation. A draw also counts as **NO**.\n\n(c) **Path to YES:** Vanuatu scores more goals than Fiji in regulation time today, e.g. **1-0**, **2-0**, etc.\n\n(d) **Path to NO:** Fiji wins in regulation, or the match ends level after 90 minutes.\n\n(e) **Base rate:** I don’t have a general base rate for this exact matchup, but for international friendlies between comparable teams, draws are common and the favorite often wins only a minority-to-plurality of the time. Since this is a slight-favorite spot, the yes probability should be in the **mid-40s**, not near certainty.\n\n(f) **Strongest evidence:**\n- **Toward YES:** Pre-match odds/trader consensus consistently make **Vanuatu the slight favorite**; recent head-to-head also favors Vanuatu, including a **2-0 win over Fiji on 2025-11-17**.\n- **Toward NO:** Vanuatu is only a **slight** favorite, and the market’s own implied probabilities still leave **NO** outcomes (draw or Fiji win) as the majority combined outcome. Since a draw loses here, that matters a lot.\n\n(g) **Easy-to-misread criterion:** The market is **not** “Will Vanuatu avoid losing?” It is specifically **will Vanuatu win in regulation time**. So a **draw is NO**, and any extra-time/penalty outcome would not help unless Vanuatu had already won in regulation.\n\n**Probability: 46%**",
+        "token_usage": 2458
+      },
+      "result": {
+        "diagnostics": {
+          "mode": "lean_forecast_prompt",
+          "numeric_unit_expected": "",
+          "parse_success": true,
+          "parsed_mc_probabilities": null,
+          "parsed_numeric_percentiles": null,
+          "question_type": "binary",
+          "spec_reason": "The model answer accurately addresses all aspects of the canonical spec without significant deviation.",
+          "spec_status": "OK",
+          "usage_label": "forecast_run:20260606_081942:gpt-5.4_mini:1"
+        },
+        "explanation": "(a) **Time remaining / deadline:** The match is scheduled for **2026-06-06** and resolves **after the match concludes today**. So the deadline is the final whistle on 2026-06-06.\n\n(b) **Status quo outcome:** If nothing changes, the market resolves **NO** by default unless Vanuatu actually wins in regulation. A draw also counts as **NO**.\n\n(c) **Path to YES:** Vanuatu scores more goals than Fiji in regulation time today, e.g. **1-0**, **2-0**, etc.\n\n(d) **Path to NO:** Fiji wins in regulation, or the match ends level after 90 minutes.\n\n(e) **Base rate:** I don’t have a general base rate for this exact matchup, but for international friendlies between comparable teams, draws are common and the favorite often wins only a minority-to-plurality of the time. Since this is a slight-favorite spot, the yes probability should be in the **mid-40s**, not near certainty.\n\n(f) **Strongest evidence:**\n- **Toward YES:** Pre-match odds/trader consensus consistently make **Vanuatu the slight favorite**; recent head-to-head also favors Vanuatu, including a **2-0 win over Fiji on 2025-11-17**.\n- **Toward NO:** Vanuatu is only a **slight** favorite, and the market’s own implied probabilities still leave **NO** outcomes (draw or Fiji win) as the majority combined outcome. Since a draw loses here, that matters a lot.\n\n(g) **Easy-to-misread criterion:** The market is **not** “Will Vanuatu avoid losing?” It is specifically **will Vanuatu win in regulation time**. So a **draw is NO**, and any extra-time/penalty outcome would not help unless Vanuatu had already won in regulation.\n\n**Probability: 46%**",
+        "probability": 0.46,
+        "risk_flags": [],
+        "search_count": 7,
+        "sources": [
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- Vanuatu is the slight favorite over Fiji in available pre-match odds and prediction models.\n- Polymarket’s trader consensus shows Vanuatu at 45% implied probability, Fiji at 30%, and the draw at 26%.\n- One odds page lists Vanuatu at 2.09, draw at 3.80, and F",
+            "title": "Sonar synthesis for markets_news",
+            "url": "sonar://markets_news"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The match between Vanuatu and Fiji on 2026-06-06 has not started yet.\n- There is no final score available for the match yet.\n- Kickoff for the 2026-06-06 Vanuatu vs Fiji friendly was scheduled for that date.",
+            "title": "Sonar synthesis: Vanuatu vs Fiji football match score 2026-06-06",
+            "url": "sonar://direct/0"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- Vanuatu defeated Fiji 2-0 on 2025-11-17 in the MSG Prime Minister’s Cup.\n- Vanuatu defeated Solomon Islands 2-1 on 2025-11-20 in the MSG Prime Minister’s Cup semi-final.\n- Papua New Guinea drew with Vanuatu 2-2 on 2025-11-23, with Vanuatu winning 5-4 on pena",
+            "title": "Sonar synthesis: Vanuatu national football team recent results",
+            "url": "sonar://direct/2"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- Fiji lost 2-0 to Vanuatu on 2025-11-17 in a friendly match.\n- Fiji lost 2-0 to Papua New Guinea on 2025-11-20 in the MSG Prime Minister’s Cup semi-final.\n- Fiji lost 3-0 to Thailand on 2025-09-04 in the King’s Cup.\n- Fiji won 3-1 against Solomon Islands on 2",
+            "title": "Sonar synthesis: Fiji national football team recent results",
+            "url": "sonar://direct/3"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- Fiji and Vanuatu have played 13 matches since 2007.\n- Vanuatu has won 6 of the 13 matches.\n- Fiji has won 4 of the 13 matches.\n- There have been 3 draws in the 13 matches.\n- Vanuatu scored 17 total goals in those 13 matches.\n- Fiji scored 20 total goals in t",
+            "title": "Sonar synthesis: Vanuatu vs Fiji head to head football statistics",
+            "url": "sonar://direct/4"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The match between Vanuatu and Fiji is an international friendly scheduled for 2026-06-06.\n- The match is not started yet or has no data available on some trackers.\n- There are no confirmed live goals or incidents to report from the provided sources.\n- The cu",
+            "title": "Sonar synthesis: Vanuatu vs Fiji football match live updates 2026-06-06",
+            "url": "sonar://direct/1"
+          }
+        ],
+        "token_usage": {
+          "completion": 915,
+          "prompt": 1543,
+          "total": 2458
+        },
+        "warnings": []
+      }
+    },
+    {
+      "config": {
+        "label": "Kimi K2.6",
+        "max_tokens": 10000,
+        "name": "moonshotai/kimi-k2.6"
+      },
+      "forecast_run": {
+        "model": "moonshotai/kimi-k2.6",
+        "probability": 0.45,
+        "reasoning": "(a) **Time until resolution:** The match is scheduled to kick off on 2026-06-06 (sources list kickoff between roughly 04:00 and 10:00 UTC), so resolution is likely within a few hours of now—after the match concludes later today. The exact deadline is the end of regulation time on 2026-06-06.\n\n(b) **Status quo outcome:** The match has not started. If current expectations hold, Vanuatu is the slight favorite in the betting markets (~45% implied probability) but the majority probability mass (~55%) rests on a draw or a Fiji win. Therefore, the status quo expectation is tilted toward NO.\n\n(c) **YES scenario:** Vanuatu leverages home-field advantage at VFF Freshwater Stadium, presses high against a Fiji side that has lost its last three matches, scores an early goal from a set-piece, adds a second on the counter in the second half, and sees out the game 2-0 or 2-1 in regulation.\n\n(d) **NO scenario:** Fiji organizes defensively, absorbs early pressure, and either holds Vanuatu to a scoreless or low-scoring draw (e.g., 0-0 or 1-1) or capitalizes on a defensive lapse to score the decisive goal and win 1-0 in regulation.\n\n(e) **Base rate:** In 13 recorded meetings since 2007, Vanuatu has won 6 (~46%), Fiji has won 4 (~31%), and there have been 3 draws (~23%). In international football generally, a home team of comparable strength wins roughly 45–50% of the time. The base rate for a Vanuatu win in this specific fixture is therefore approximately 45–50%.\n\n(f) **Single strongest evidence:**  \n- **Toward YES:** Vanuatu has won 4 of the last 5 head-to-head meetings, including a decisive 2-0 victory in November 2025, and it enjoys home advantage in Port Vila today.  \n- **Toward NO:** The consensus of available prediction markets and bookmakers prices a Vanuatu win at only ~45%, implying a ~55% chance of a draw or Fiji win; additionally, historically these sides are closely matched (Fiji has actually outscored Vanuatu 20–17 across the series).\n\n(g) **Misread risk:** The resolution criteria specify that only a Vanuatu victory in regulation counts as YES. A draw resolves NO, and extra time/penalties are irrelevant. The narrow window (conclusion on 2026-06-06) also means there is no “eventually” clause—if the match were postponed, it might not resolve, but the evidence indicates it is proceeding as scheduled today.\n\nProbability: 47%",
+        "token_usage": 7111
+      },
+      "result": {
+        "diagnostics": {
+          "mode": "lean_forecast_prompt",
+          "numeric_unit_expected": "",
+          "parse_success": true,
+          "parsed_mc_probabilities": null,
+          "parsed_numeric_percentiles": null,
+          "question_type": "binary",
+          "spec_reason": "The model answer accurately addresses all aspects of the canonical spec, including the YES/NO conditions, window, and metric. The explanation of misread risk is particularly good at clarifying the nuances of the resolution criteria.",
+          "spec_status": "OK",
+          "usage_label": "forecast_run:20260606_081942:kimi_k2.6:1"
+        },
+        "explanation": "(a) **Time until resolution:** The match is scheduled to kick off on 2026-06-06 (sources list kickoff between roughly 04:00 and 10:00 UTC), so resolution is likely within a few hours of now—after the match concludes later today. The exact deadline is the end of regulation time on 2026-06-06.\n\n(b) **Status quo outcome:** The match has not started. If current expectations hold, Vanuatu is the slight favorite in the betting markets (~45% implied probability) but the majority probability mass (~55%) rests on a draw or a Fiji win. Therefore, the status quo expectation is tilted toward NO.\n\n(c) **YES scenario:** Vanuatu leverages home-field advantage at VFF Freshwater Stadium, presses high against a Fiji side that has lost its last three matches, scores an early goal from a set-piece, adds a second on the counter in the second half, and sees out the game 2-0 or 2-1 in regulation.\n\n(d) **NO scenario:** Fiji organizes defensively, absorbs early pressure, and either holds Vanuatu to a scoreless or low-scoring draw (e.g., 0-0 or 1-1) or capitalizes on a defensive lapse to score the decisive goal and win 1-0 in regulation.\n\n(e) **Base rate:** In 13 recorded meetings since 2007, Vanuatu has won 6 (~46%), Fiji has won 4 (~31%), and there have been 3 draws (~23%). In international football generally, a home team of comparable strength wins roughly 45–50% of the time. The base rate for a Vanuatu win in this specific fixture is therefore approximately 45–50%.\n\n(f) **Single strongest evidence:**  \n- **Toward YES:** Vanuatu has won 4 of the last 5 head-to-head meetings, including a decisive 2-0 victory in November 2025, and it enjoys home advantage in Port Vila today.  \n- **Toward NO:** The consensus of available prediction markets and bookmakers prices a Vanuatu win at only ~45%, implying a ~55% chance of a draw or Fiji win; additionally, historically these sides are closely matched (Fiji has actually outscored Vanuatu 20–17 across the series).\n\n(g) **Misread risk:** The resolution criteria specify that only a Vanuatu victory in regulation counts as YES. A draw resolves NO, and extra time/penalties are irrelevant. The narrow window (conclusion on 2026-06-06) also means there is no “eventually” clause—if the match were postponed, it might not resolve, but the evidence indicates it is proceeding as scheduled today.\n\nProbability: 47%",
+        "probability": 0.45,
+        "risk_flags": [],
+        "search_count": 7,
+        "sources": [
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- Vanuatu is the slight favorite over Fiji in available pre-match odds and prediction models.\n- Polymarket’s trader consensus shows Vanuatu at 45% implied probability, Fiji at 30%, and the draw at 26%.\n- One odds page lists Vanuatu at 2.09, draw at 3.80, and F",
+            "title": "Sonar synthesis for markets_news",
+            "url": "sonar://markets_news"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The match between Vanuatu and Fiji on 2026-06-06 has not started yet.\n- There is no final score available for the match yet.\n- Kickoff for the 2026-06-06 Vanuatu vs Fiji friendly was scheduled for that date.",
+            "title": "Sonar synthesis: Vanuatu vs Fiji football match score 2026-06-06",
+            "url": "sonar://direct/0"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- Vanuatu defeated Fiji 2-0 on 2025-11-17 in the MSG Prime Minister’s Cup.\n- Vanuatu defeated Solomon Islands 2-1 on 2025-11-20 in the MSG Prime Minister’s Cup semi-final.\n- Papua New Guinea drew with Vanuatu 2-2 on 2025-11-23, with Vanuatu winning 5-4 on pena",
+            "title": "Sonar synthesis: Vanuatu national football team recent results",
+            "url": "sonar://direct/2"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- Fiji lost 2-0 to Vanuatu on 2025-11-17 in a friendly match.\n- Fiji lost 2-0 to Papua New Guinea on 2025-11-20 in the MSG Prime Minister’s Cup semi-final.\n- Fiji lost 3-0 to Thailand on 2025-09-04 in the King’s Cup.\n- Fiji won 3-1 against Solomon Islands on 2",
+            "title": "Sonar synthesis: Fiji national football team recent results",
+            "url": "sonar://direct/3"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- Fiji and Vanuatu have played 13 matches since 2007.\n- Vanuatu has won 6 of the 13 matches.\n- Fiji has won 4 of the 13 matches.\n- There have been 3 draws in the 13 matches.\n- Vanuatu scored 17 total goals in those 13 matches.\n- Fiji scored 20 total goals in t",
+            "title": "Sonar synthesis: Vanuatu vs Fiji head to head football statistics",
+            "url": "sonar://direct/4"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The match between Vanuatu and Fiji is an international friendly scheduled for 2026-06-06.\n- The match is not started yet or has no data available on some trackers.\n- There are no confirmed live goals or incidents to report from the provided sources.\n- The cu",
+            "title": "Sonar synthesis: Vanuatu vs Fiji football match live updates 2026-06-06",
+            "url": "sonar://direct/1"
+          }
+        ],
+        "token_usage": {
+          "completion": 5524,
+          "prompt": 1587,
+          "total": 7111
+        },
+        "warnings": []
+      }
+    },
+    {
+      "config": {
+        "label": "Gemini 3 Flash",
+        "max_tokens": 9000,
+        "name": "google/gemini-3-flash-preview"
+      },
+      "forecast_run": {
+        "model": "google/gemini-3-flash-preview",
+        "probability": 0.28,
+        "reasoning": "The match between Vanuatu and Fiji is scheduled for today, June 6, 2026, at the VFF Freshwater Stadium in Port Vila, Vanuatu.\n\n**(a) How much time remains until resolution?**\nThe match is scheduled for today. Depending on the specific kickoff time (sources suggest between 04:00 and 10:00 UTC), the match is either currently in progress or will conclude within the next few hours. Resolution occurs once the match ends.\n\n**(b) What is the status quo outcome?**\nThe match has not yet concluded. Until a result is finalized, the current state is \"not yet won by Vanuatu,\" which effectively leans toward NO until the final whistle confirms a Vanuatu victory.\n\n**(c) Concrete scenario for YES:**\nVanuatu utilizes their home-field advantage at Freshwater Stadium and continues their recent dominant form against Fiji (having won 4 of the last 5 meetings), securing a victory (e.g., 1–0 or 2–1) within the 90 minutes of regulation time.\n\n**(d) Concrete scenario for NO:**\nFiji manages to secure a draw (0–0 or 1–1) or wins the match outright. Given that international friendlies between these two nations are often closely contested, a draw is a statistically significant possibility (approx. 26–28% implied probability).\n\n**(e) What is the base rate for events like this?**\nIn international football, the \"Home Win\" rate typically hovers around 45%. In the specific head-to-head history, Vanuatu has won approximately 46–50% of their matches against Fiji.\n\n**(f) Strongest evidence for YES/NO:**\n- **Strongest for YES:** Recent head-to-head dominance (Vanuatu won 4 of the last 5) and home-field advantage. Betting markets and models (FOX Sports) favor Vanuatu with win probabilities ranging from 45% to 62%.\n- **Strongest for NO:** The \"NO\" outcome covers two out of three possible match results (Draw or Fiji Win). Fiji has historically scored more goals in the total head-to-head series (20 vs 17), suggesting they are capable of offensive output that could force a draw.\n\n**(g) Resolution criteria nuances:**\nThe market resolves YES **only** if Vanuatu wins in regulation time. A draw or a Fiji win results in NO. This \"Draw No Bet\" style favor for the NO side is crucial, as it aggregates two of the three possible outcomes.\n\n**Conclusion:**\nVanuatu is the favorite, playing at home with a strong recent record against Fiji. However, in football forecasting, the \"Draw\" outcome is a frequent spoiler for \"Win\" bets. While models lean toward Vanuatu (up to 62%), the market consensus on Polymarket (45%) and the inclusion of the draw in the NO outcome suggest a more tempered probability.\n\nProbability: 48%",
+        "token_usage": 2395
+      },
+      "result": {
+        "diagnostics": {
+          "mode": "lean_forecast_prompt",
+          "numeric_unit_expected": "",
+          "parse_success": true,
+          "parsed_mc_probabilities": null,
+          "parsed_numeric_percentiles": null,
+          "question_type": "binary",
+          "spec_reason": "The model answer accurately addresses all parts of the canonical spec and provides a well-reasoned analysis.",
+          "spec_status": "OK",
+          "usage_label": "forecast_run:20260606_081942:gemini_3_flash:1"
+        },
+        "explanation": "The match between Vanuatu and Fiji is scheduled for today, June 6, 2026, at the VFF Freshwater Stadium in Port Vila, Vanuatu.\n\n**(a) How much time remains until resolution?**\nThe match is scheduled for today. Depending on the specific kickoff time (sources suggest between 04:00 and 10:00 UTC), the match is either currently in progress or will conclude within the next few hours. Resolution occurs once the match ends.\n\n**(b) What is the status quo outcome?**\nThe match has not yet concluded. Until a result is finalized, the current state is \"not yet won by Vanuatu,\" which effectively leans toward NO until the final whistle confirms a Vanuatu victory.\n\n**(c) Concrete scenario for YES:**\nVanuatu utilizes their home-field advantage at Freshwater Stadium and continues their recent dominant form against Fiji (having won 4 of the last 5 meetings), securing a victory (e.g., 1–0 or 2–1) within the 90 minutes of regulation time.\n\n**(d) Concrete scenario for NO:**\nFiji manages to secure a draw (0–0 or 1–1) or wins the match outright. Given that international friendlies between these two nations are often closely contested, a draw is a statistically significant possibility (approx. 26–28% implied probability).\n\n**(e) What is the base rate for events like this?**\nIn international football, the \"Home Win\" rate typically hovers around 45%. In the specific head-to-head history, Vanuatu has won approximately 46–50% of their matches against Fiji.\n\n**(f) Strongest evidence for YES/NO:**\n- **Strongest for YES:** Recent head-to-head dominance (Vanuatu won 4 of the last 5) and home-field advantage. Betting markets and models (FOX Sports) favor Vanuatu with win probabilities ranging from 45% to 62%.\n- **Strongest for NO:** The \"NO\" outcome covers two out of three possible match results (Draw or Fiji Win). Fiji has historically scored more goals in the total head-to-head series (20 vs 17), suggesting they are capable of offensive output that could force a draw.\n\n**(g) Resolution criteria nuances:**\nThe market resolves YES **only** if Vanuatu wins in regulation time. A draw or a Fiji win results in NO. This \"Draw No Bet\" style favor for the NO side is crucial, as it aggregates two of the three possible outcomes.\n\n**Conclusion:**\nVanuatu is the favorite, playing at home with a strong recent record against Fiji. However, in football forecasting, the \"Draw\" outcome is a frequent spoiler for \"Win\" bets. While models lean toward Vanuatu (up to 62%), the market consensus on Polymarket (45%) and the inclusion of the draw in the NO outcome suggest a more tempered probability.\n\nProbability: 48%",
+        "probability": 0.28,
+        "risk_flags": [],
+        "search_count": 7,
+        "sources": [
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- Vanuatu is the slight favorite over Fiji in available pre-match odds and prediction models.\n- Polymarket’s trader consensus shows Vanuatu at 45% implied probability, Fiji at 30%, and the draw at 26%.\n- One odds page lists Vanuatu at 2.09, draw at 3.80, and F",
+            "title": "Sonar synthesis for markets_news",
+            "url": "sonar://markets_news"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The match between Vanuatu and Fiji on 2026-06-06 has not started yet.\n- There is no final score available for the match yet.\n- Kickoff for the 2026-06-06 Vanuatu vs Fiji friendly was scheduled for that date.",
+            "title": "Sonar synthesis: Vanuatu vs Fiji football match score 2026-06-06",
+            "url": "sonar://direct/0"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- Vanuatu defeated Fiji 2-0 on 2025-11-17 in the MSG Prime Minister’s Cup.\n- Vanuatu defeated Solomon Islands 2-1 on 2025-11-20 in the MSG Prime Minister’s Cup semi-final.\n- Papua New Guinea drew with Vanuatu 2-2 on 2025-11-23, with Vanuatu winning 5-4 on pena",
+            "title": "Sonar synthesis: Vanuatu national football team recent results",
+            "url": "sonar://direct/2"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- Fiji lost 2-0 to Vanuatu on 2025-11-17 in a friendly match.\n- Fiji lost 2-0 to Papua New Guinea on 2025-11-20 in the MSG Prime Minister’s Cup semi-final.\n- Fiji lost 3-0 to Thailand on 2025-09-04 in the King’s Cup.\n- Fiji won 3-1 against Solomon Islands on 2",
+            "title": "Sonar synthesis: Fiji national football team recent results",
+            "url": "sonar://direct/3"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- Fiji and Vanuatu have played 13 matches since 2007.\n- Vanuatu has won 6 of the 13 matches.\n- Fiji has won 4 of the 13 matches.\n- There have been 3 draws in the 13 matches.\n- Vanuatu scored 17 total goals in those 13 matches.\n- Fiji scored 20 total goals in t",
+            "title": "Sonar synthesis: Vanuatu vs Fiji head to head football statistics",
+            "url": "sonar://direct/4"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The match between Vanuatu and Fiji is an international friendly scheduled for 2026-06-06.\n- The match is not started yet or has no data available on some trackers.\n- There are no confirmed live goals or incidents to report from the provided sources.\n- The cu",
+            "title": "Sonar synthesis: Vanuatu vs Fiji football match live updates 2026-06-06",
+            "url": "sonar://direct/1"
+          }
+        ],
+        "token_usage": {
+          "completion": 630,
+          "prompt": 1765,
+          "total": 2395
+        },
+        "warnings": []
+      }
+    },
+    {
+      "config": {
+        "label": "Claude Haiku 4.5",
+        "max_tokens": 9000,
+        "name": "anthropic/claude-haiku-4.5"
+      },
+      "forecast_run": {
+        "model": "anthropic/claude-haiku-4.5",
+        "probability": 0.05,
+        "reasoning": "# Forecasting Analysis: Vanuatu vs Fiji on 2026-06-06\n\n## (a) Time Remaining Until Resolution\nToday is 2026-06-06, the match date itself. Kickoff times vary by source (04:00, 04:30, or 10:00 UTC), but the match has not yet started. Resolution occurs after the match concludes on 2026-06-06. **Time remaining: Hours (match is imminent or in progress).**\n\n## (b) Status Quo Outcome\nThe match is scheduled but not yet played. The status quo is that the match will occur as scheduled and resolve based on the final result in regulation time.\n\n## (c) Concrete YES Scenario\nVanuatu plays well at home (VFF Freshwater Stadium, Port Vila), capitalizes on recent form and head-to-head advantage, and wins in regulation time (e.g., 2-0 or 1-0).\n\n## (d) Concrete NO Scenario\nFiji either wins in regulation time or the match ends in a draw. Given recent form, this could occur if Fiji performs better than expected or Vanuatu fails to convert chances.\n\n## (e) Base Rate\nFor international football friendlies between teams of similar caliber:\n- Home team advantage typically adds 3-5% to win probability\n- Favorites in betting markets (Vanuatu at ~45% implied) typically hit their market probability or slightly underperform\n- Draw rates in international friendlies are typically 20-30%\n\n## (f) Strongest Evidence\n\n**Toward YES:**\n- **Recent head-to-head dominance**: Vanuatu won 4 of the last 5 meetings vs. Fiji (80% recent win rate)\n- **Most recent result**: Vanuatu defeated Fiji 2-0 on 2025-11-17\n- **Home advantage**: Match is in Port Vila, Vanuatu\n- **Market consensus**: Vanuatu is the favorite across multiple odds sources (45% implied on Polymarket, 62% per FOX Sports)\n- **Historical record**: Vanuatu leads 6-4 in wins (or 8-5 in alternative dataset) across all meetings\n\n**Toward NO:**\n- **Market probability of NO is 55%**: The combined probability of a draw (26%) or Fiji win (30%) is substantial\n- **Friendly match volatility**: Friendlies can be unpredictable; Vanuatu has also lost to Solomon Islands 1-4 and Papua New Guinea 1-2 in recent tournaments\n- **Fiji's occasional strong performances**: Fiji beat Solomon Islands 3-1 and has drawn with stronger teams (Papua New Guinea 3-3, New Caledonia 1-1)\n\n## (g) Resolution Criteria Considerations\nThe criteria is clear: **YES only if Vanuatu wins in regulation time**. Draws and Fiji wins both resolve NO. This is a binary outcome with no ambiguity around extra time or penalties (regulation time only). The window is the single day 2026-06-06, so there's no temporal ambiguity.\n\n---\n\n## Final Reasoning\n\nThe evidence strongly favors Vanuatu:\n1. **Recent form**: 4 wins in last 5 meetings, including a 2-0 victory 6 months ago\n2. **Home advantage**: Playing in Port Vila\n3. **Market consensus**: Multiple sources favor Vanuatu, with FOX Sports suggesting 62% win likelihood\n4. **Historical edge**: Vanuatu leads the all-time head-to-head record\n\nHowever, the market itself prices Vanuatu at only 45% on Polymarket (implying 55% for NO), suggesting meaningful uncertainty. Friendlies are inherently volatile, and Fiji has shown capability to compete.\n\nThe strongest single piece of evidence is Vanuatu's recent dominance (4 of last 5 wins) combined with home advantage. The strongest counter-evidence is that the market still assigns substantial probability to non-Vanuatu outcomes (55%).\n\nGiven:\n- Polymarket's 45% implied probability for Vanuatu\n- FOX Sports' 62% win likelihood for Vanuatu\n- Recent head-to-head dominance (80% in last 5)\n- Home advantage\n- But acknowledging market uncertainty and friendly match volatility\n\nI weight the recent form and home advantage heavily while respecting the market's pricing of uncertainty.\n\n**Probability: 52%**\n\nThis reflects Vanuatu as a slight favorite based on recent form and home advantage, while acknowledging the substantial probability of a draw or Fiji upset that the market has priced in.",
+        "token_usage": 2913
+      },
+      "result": {
+        "diagnostics": {
+          "mode": "lean_forecast_prompt",
+          "numeric_unit_expected": "",
+          "parse_success": true,
+          "parsed_mc_probabilities": null,
+          "parsed_numeric_percentiles": null,
+          "question_type": "binary",
+          "spec_reason": "The model answer aligns perfectly with the canonical spec. It addresses all aspects of the question, including the YES/NO conditions, window, and threshold, and provides a clear, well-reasoned analysis.",
+          "spec_status": "OK",
+          "usage_label": "forecast_run:20260606_081942:claude_haiku_4.5:1"
+        },
+        "explanation": "# Forecasting Analysis: Vanuatu vs Fiji on 2026-06-06\n\n## (a) Time Remaining Until Resolution\nToday is 2026-06-06, the match date itself. Kickoff times vary by source (04:00, 04:30, or 10:00 UTC), but the match has not yet started. Resolution occurs after the match concludes on 2026-06-06. **Time remaining: Hours (match is imminent or in progress).**\n\n## (b) Status Quo Outcome\nThe match is scheduled but not yet played. The status quo is that the match will occur as scheduled and resolve based on the final result in regulation time.\n\n## (c) Concrete YES Scenario\nVanuatu plays well at home (VFF Freshwater Stadium, Port Vila), capitalizes on recent form and head-to-head advantage, and wins in regulation time (e.g., 2-0 or 1-0).\n\n## (d) Concrete NO Scenario\nFiji either wins in regulation time or the match ends in a draw. Given recent form, this could occur if Fiji performs better than expected or Vanuatu fails to convert chances.\n\n## (e) Base Rate\nFor international football friendlies between teams of similar caliber:\n- Home team advantage typically adds 3-5% to win probability\n- Favorites in betting markets (Vanuatu at ~45% implied) typically hit their market probability or slightly underperform\n- Draw rates in international friendlies are typically 20-30%\n\n## (f) Strongest Evidence\n\n**Toward YES:**\n- **Recent head-to-head dominance**: Vanuatu won 4 of the last 5 meetings vs. Fiji (80% recent win rate)\n- **Most recent result**: Vanuatu defeated Fiji 2-0 on 2025-11-17\n- **Home advantage**: Match is in Port Vila, Vanuatu\n- **Market consensus**: Vanuatu is the favorite across multiple odds sources (45% implied on Polymarket, 62% per FOX Sports)\n- **Historical record**: Vanuatu leads 6-4 in wins (or 8-5 in alternative dataset) across all meetings\n\n**Toward NO:**\n- **Market probability of NO is 55%**: The combined probability of a draw (26%) or Fiji win (30%) is substantial\n- **Friendly match volatility**: Friendlies can be unpredictable; Vanuatu has also lost to Solomon Islands 1-4 and Papua New Guinea 1-2 in recent tournaments\n- **Fiji's occasional strong performances**: Fiji beat Solomon Islands 3-1 and has drawn with stronger teams (Papua New Guinea 3-3, New Caledonia 1-1)\n\n## (g) Resolution Criteria Considerations\nThe criteria is clear: **YES only if Vanuatu wins in regulation time**. Draws and Fiji wins both resolve NO. This is a binary outcome with no ambiguity around extra time or penalties (regulation time only). The window is the single day 2026-06-06, so there's no temporal ambiguity.\n\n---\n\n## Final Reasoning\n\nThe evidence strongly favors Vanuatu:\n1. **Recent form**: 4 wins in last 5 meetings, including a 2-0 victory 6 months ago\n2. **Home advantage**: Playing in Port Vila\n3. **Market consensus**: Multiple sources favor Vanuatu, with FOX Sports suggesting 62% win likelihood\n4. **Historical edge**: Vanuatu leads the all-time head-to-head record\n\nHowever, the market itself prices Vanuatu at only 45% on Polymarket (implying 55% for NO), suggesting meaningful uncertainty. Friendlies are inherently volatile, and Fiji has shown capability to compete.\n\nThe strongest single piece of evidence is Vanuatu's recent dominance (4 of last 5 wins) combined with home advantage. The strongest counter-evidence is that the market still assigns substantial probability to non-Vanuatu outcomes (55%).\n\nGiven:\n- Polymarket's 45% implied probability for Vanuatu\n- FOX Sports' 62% win likelihood for Vanuatu\n- Recent head-to-head dominance (80% in last 5)\n- Home advantage\n- But acknowledging market uncertainty and friendly match volatility\n\nI weight the recent form and home advantage heavily while respecting the market's pricing of uncertainty.\n\n**Probability: 52%**\n\nThis reflects Vanuatu as a slight favorite based on recent form and home advantage, while acknowledging the substantial probability of a draw or Fiji upset that the market has priced in.",
+        "probability": 0.05,
+        "risk_flags": [],
+        "search_count": 7,
+        "sources": [
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- Vanuatu is the slight favorite over Fiji in available pre-match odds and prediction models.\n- Polymarket’s trader consensus shows Vanuatu at 45% implied probability, Fiji at 30%, and the draw at 26%.\n- One odds page lists Vanuatu at 2.09, draw at 3.80, and F",
+            "title": "Sonar synthesis for markets_news",
+            "url": "sonar://markets_news"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The match between Vanuatu and Fiji on 2026-06-06 has not started yet.\n- There is no final score available for the match yet.\n- Kickoff for the 2026-06-06 Vanuatu vs Fiji friendly was scheduled for that date.",
+            "title": "Sonar synthesis: Vanuatu vs Fiji football match score 2026-06-06",
+            "url": "sonar://direct/0"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- Vanuatu defeated Fiji 2-0 on 2025-11-17 in the MSG Prime Minister’s Cup.\n- Vanuatu defeated Solomon Islands 2-1 on 2025-11-20 in the MSG Prime Minister’s Cup semi-final.\n- Papua New Guinea drew with Vanuatu 2-2 on 2025-11-23, with Vanuatu winning 5-4 on pena",
+            "title": "Sonar synthesis: Vanuatu national football team recent results",
+            "url": "sonar://direct/2"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- Fiji lost 2-0 to Vanuatu on 2025-11-17 in a friendly match.\n- Fiji lost 2-0 to Papua New Guinea on 2025-11-20 in the MSG Prime Minister’s Cup semi-final.\n- Fiji lost 3-0 to Thailand on 2025-09-04 in the King’s Cup.\n- Fiji won 3-1 against Solomon Islands on 2",
+            "title": "Sonar synthesis: Fiji national football team recent results",
+            "url": "sonar://direct/3"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- Fiji and Vanuatu have played 13 matches since 2007.\n- Vanuatu has won 6 of the 13 matches.\n- Fiji has won 4 of the 13 matches.\n- There have been 3 draws in the 13 matches.\n- Vanuatu scored 17 total goals in those 13 matches.\n- Fiji scored 20 total goals in t",
+            "title": "Sonar synthesis: Vanuatu vs Fiji head to head football statistics",
+            "url": "sonar://direct/4"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The match between Vanuatu and Fiji is an international friendly scheduled for 2026-06-06.\n- The match is not started yet or has no data available on some trackers.\n- There are no confirmed live goals or incidents to report from the provided sources.\n- The cu",
+            "title": "Sonar synthesis: Vanuatu vs Fiji football match live updates 2026-06-06",
+            "url": "sonar://direct/1"
+          }
+        ],
+        "token_usage": {
+          "completion": 1073,
+          "prompt": 1840,
+          "total": 2913
+        },
+        "warnings": []
+      }
+    }
+  ],
+  "informativeness": "weak_view",
+  "metaculus_post_error": null,
+  "mode": "lean_ensemble",
+  "numeric_bounds": {
+    "lower_bound": null,
+    "unit": "",
+    "upper_bound": null
+  },
+  "options": [],
+  "parsing_failure_rate": 0.0,
+  "planned_queries": [
+    "Vanuatu vs Fiji football match score 2026-06-06",
+    "Vanuatu vs Fiji football match live updates 2026-06-06",
+    "Vanuatu national football team recent results",
+    "Fiji national football team recent results",
+    "Vanuatu vs Fiji head to head football statistics",
+    "Vanuatu vs Fiji football match prediction odds",
+    "OFC Nations Cup 2026 schedule",
+    "Polymarket Vanuatu vs Fiji football market"
+  ],
+  "planner_text": "SEARCH(\"Vanuatu vs Fiji football match score 2026-06-06\")\nSEARCH(\"Vanuatu vs Fiji football match live updates 2026-06-06\")\nSEARCH(\"Vanuatu national football team recent results\")\nSEARCH(\"Fiji national football team recent results\")\nSEARCH(\"Vanuatu vs Fiji head to head football statistics\")\nSEARCH(\"Vanuatu vs Fiji football match prediction odds\")\nSEARCH(\"OFC Nations Cup 2026 schedule\")\nSEARCH(\"Polymarket Vanuatu vs Fiji football market\")",
+  "posted_to_metaculus_by_ensemble": false,
+  "publish_action": "publish",
+  "publish_to_metaculus_requested": false,
+  "question": "Will Vanuatu win their match against Fiji on 2026-06-06?\n\nContext: This is a Polymarket prediction market on an international football (soccer)\nmatch between Vanuatu and Fiji scheduled for 2026-06-06. The market resolves YES if\nVanuatu wins the match in regulation, and NO otherwise (a draw or a Fiji win resolves NO).\n\nToday's date: 2026-06-06. Resolution: after the match concludes on 2026-06-06.",
+  "question_title": "Will Vanuatu win their match against Fiji on 2026-06-06?\n\nContext: This is a Polymarket prediction market on an international football (soccer)\nmatch between Vanuatu and Fiji scheduled for 2026-06-06. The market resolves YES if\nVanuatu wins the match in regulation, and NO otherwise (a draw or a Fiji win resolves NO).\n\nToday's date: 2026-06-06. Resolution: after the match concludes on 2026-06-06.",
+  "question_type": "binary",
+  "question_url": null,
+  "record_file": "forecast_records\\20260606T082142.175446+0000_Will_Vanuatu_win_their_match_against_Fiji_on_2026-06-06_Context_This_is_a_Polyma_35983e2c5b65.json",
+  "red_team_artifact": "Here's an adversarial review of the forecast:\n\n**1. TIMELINE CONFUSION**\n*   The forecast correctly identifies the match date as 2026-06-06 and \"Today's date\" as 2026-06-06. This implies the forecast is being made on the day of the match, which is appropriate.\n*   The resolution window is also correctly identified as after the match concludes on 2026-06-06.\n*   No obvious timeline confusion.\n\n**2. BASE RATE NEGLECT**\n*   The reasoning summary provides a probability of 45%, while the DRAFT PROBABILITY is 32.3%. This discrepancy is a red flag.\n*   The prompt doesn't provide any historical data or context about Vanuatu vs. Fiji matches, or their general performance against similar-ranked teams. Without this, it's impossible to assess if the 32.3% (or 45%) is reasonable against a base rate.\n*   However, the *internal inconsistency* between the \"Reasoning Summary\" probability (45%) and the \"Draft Probability\" (32.3%) suggests a potential issue. If the reasoning *concludes* 45%, but the draft is 32.3%, there's a disconnect. This could indicate that the reasoning itself might be neglecting some base rate information that led to the lower draft probability, or vice-versa.\n*   **Adversarial point**: The forecast provides no base rate for Vanuatu's historical win rate against Fiji or similar-ranked teams, nor does it provide any context for the relative strengths of these teams in international football. Without this, the 32.3% (or 45%) is unanchored. The discrepancy between the draft and reasoning probability further highlights a potential issue in how the probability was derived, possibly overlooking foundational data.\n\n**3. SINGLE-SOURCE FRAGILITY**\n*   The forecast provides no sources at all. It's just a probability and a brief reasoning summary.\n*   This is a severe case of single-source fragility, as there are *no* sources to evaluate. The entire forecast relies on the unstated methodology and data used to arrive at the 32.3% (or 45%).\n*   **Adversarial point**: The forecast is entirely opaque regarding its data sources. It's impossible to verify the information or assess its reliability. This makes the forecast extremely fragile, as any underlying assumption or data point could be incorrect without any external validation.\n\n**4. RESOLUTION MISREAD**\n*   The question is \"Will Vanuatu win their match against Fiji on 2026-06-06?\"\n*   The resolution criteria clearly state: \"YES: Vanuatu wins the match in regulation time\" and \"NO: The match is a draw or Fiji wins in regulation time.\"\n*   This aligns perfectly with the question. The forecast correctly understands that a draw or a Fiji win resolves NO.\n*   No resolution misread.\n\n**5. MISSING PATHWAYS**\n*   The forecast is a single probability. It doesn't detail any pathways or scenarios.\n*   **Adversarial point**: The forecast provides a single probability without any breakdown of factors that could influence the outcome. For example, it doesn't consider:\n    *   Team form leading up to the match.\n    *   Player injuries or suspensions.\n    *   Home advantage (if applicable).\n    *   Recent head-to-head results.\n    *   Weather conditions on the day.\n    *   Motivation (e.g., tournament implications).\n    *   The specific tactical approaches of each team.\n*   Without considering these pathways, the 32.3% (or 45%) is a black box. A more robust forecast would consider these variables and how they might shift the probability.\n\n---\n\n**Verdict:**\n\nThe most glaring issues are the lack of transparency regarding sources (Single-Source Fragility), the internal inconsistency in probabilities (Base Rate Neglect/Methodology Flaw), and the complete absence of supporting analysis (Missing Pathways). The forecast is essentially a number pulled from thin air, making it impossible to properly evaluate.\n\nGiven the significant discrepancy between the \"DRAFT PROBABILITY\" (32.3%) and the \"REASONING SUMMARY\" (45%), there's a fundamental flaw in how the probability was derived or presented. If the reasoning *concludes* 45%, but the draft is 32.3%, the draft is likely too low *if the reasoning is sound*. However, without the reasoning itself, it's impossible to know which number is more justified. This internal inconsistency alone warrants an adjustment or at least a call for clarification.\n\nLet's assume the \"Reasoning Summary\" of 45% is what the forecaster *intended* to convey as their final assessment, and the 32.3% is an earlier, unadjusted draft. The discrepancy of 12.7 percentage points is substantial.\n\nADJUSTMENT: increase by 12.7pp (to align with the stated reasoning summary)\nCONFIDENCE IN ADJUSTMENT: medium (The adjustment brings the draft in line with the stated reasoning, but the reasoning itself is still opaque and suffers from other failure modes.)",
+  "schema_version": "forecast-record/v1",
+  "search_provider": "sonar_openrouter",
+  "signal_strength": 0.11329967549257186,
+  "signpost_report": {
+    "raw": "SIGNPOST: Vanuatu's starting lineup is announced, and their star striker (e.g., Kensi Tangis or Azariah Soromon) is unexpectedly absent due to injury or illness.\nDIRECTION: down\nMAGNITUDE: -15pp\n\nSIGNPOST: Fiji's starting lineup is announced, and their key defender or midfielder (e.g., Tevita Waranaivalu or Nabil Begg) is unexpectedly absent due to injury or illness.\nDIRECTION: up\nMAGNITUDE: +12pp\n\nSIGNPOST: Vanuatu scores the first goal of the match within the first 15 minutes.\nDIRECTION: up\nMAGNITUDE: +20pp\n\nSIGNPOST: Fiji scores the first goal of the match within the first 15 minutes.\nDIRECTION: down\nMAGNITUDE: -25pp\n\nSIGNPOST: A Fiji player receives a red card in the first half.\nDIRECTION: up\nMAGNITUDE: +30pp",
+    "signposts": [
+      {
+        "direction": "down",
+        "event": "Vanuatu's starting lineup is announced, and their star striker (e.g., Kensi Tangis or Azariah Soromon) is unexpectedly absent due to injury or illness.",
+        "magnitude": "-15pp"
+      },
+      {
+        "direction": "up",
+        "event": "Fiji's starting lineup is announced, and their key defender or midfielder (e.g., Tevita Waranaivalu or Nabil Begg) is unexpectedly absent due to injury or illness.",
+        "magnitude": "+12pp"
+      },
+      {
+        "direction": "up",
+        "event": "Vanuatu scores the first goal of the match within the first 15 minutes.",
+        "magnitude": "+20pp"
+      },
+      {
+        "direction": "down",
+        "event": "Fiji scores the first goal of the match within the first 15 minutes.",
+        "magnitude": "-25pp"
+      },
+      {
+        "direction": "up",
+        "event": "A Fiji player receives a red card in the first half.",
+        "magnitude": "+30pp"
+      }
+    ]
+  },
+  "signposts": [
+    {
+      "direction": "down",
+      "event": "Vanuatu's starting lineup is announced, and their star striker (e.g., Kensi Tangis or Azariah Soromon) is unexpectedly absent due to injury or illness.",
+      "magnitude": "-15pp"
+    },
+    {
+      "direction": "up",
+      "event": "Fiji's starting lineup is announced, and their key defender or midfielder (e.g., Tevita Waranaivalu or Nabil Begg) is unexpectedly absent due to injury or illness.",
+      "magnitude": "+12pp"
+    },
+    {
+      "direction": "up",
+      "event": "Vanuatu scores the first goal of the match within the first 15 minutes.",
+      "magnitude": "+20pp"
+    },
+    {
+      "direction": "down",
+      "event": "Fiji scores the first goal of the match within the first 15 minutes.",
+      "magnitude": "-25pp"
+    },
+    {
+      "direction": "up",
+      "event": "A Fiji player receives a red card in the first half.",
+      "magnitude": "+30pp"
+    }
+  ],
+  "summary_text": "Question Type: binary\nFinal Prediction: 38.7%\nInformativeness: weak_view (|p-0.5|=0.113)\nRaw Trimmed Mean: 39.3%\nCalibrated Probability: 38.7%\nDispersion: 0.178\nConfidence Class: medium\nPublish Gate: publish (score=0.65)\nParsing Failure Rate: 0.0%\nSearch Queries: planned=8 executed=7\nGate Components: spec=0.90, temporal=1.00, evidence=0.50, agreement=0.11\nGate Metrics: evidence_count=6, distinct_sources=2, primary_sources=0, mean_relevance=0.97, freshness_days=0.0\nRed Team: ran | adjusted\nIndividual Runs:\n- DeepSeek V4 Pro: 45.0% (tokens=3,764, warnings=1)\n- GPT-5.4 Mini: 46.0% (tokens=2,458, warnings=0)\n- Kimi K2.6: 45.0% (tokens=7,111, warnings=0)\n- Gemini 3 Flash: 28.0% (tokens=2,395, warnings=0)\n- Claude Haiku 4.5: 5.0% (tokens=2,913, warnings=0)\nSignposts:\n- Vanuatu's starting lineup is announced, and their star striker (e.g., Kensi Tangis or Azariah Soromon) is unexpectedly absent due to injury or illness. | direction=down | magnitude=-15pp\n- Fiji's starting lineup is announced, and their key defender or midfielder (e.g., Tevita Waranaivalu or Nabil Begg) is unexpectedly absent due to injury or illness. | direction=up | magnitude=+12pp\n- Vanuatu scores the first goal of the match within the first 15 minutes. | direction=up | magnitude=+20pp\n- Fiji scores the first goal of the match within the first 15 minutes. | direction=down | magnitude=-25pp\n- A Fiji player receives a red card in the first half. | direction=up | magnitude=+30pp",
+  "text_log_path": "forecasts/forecast_20260606_081942_Will_Vanuatu_win_their_match_against_Fiji_on_2026-.txt",
+  "timestamp": "20260606_081942",
+  "token_usage": {
+    "claim_audit_hinges": {
+      "completion": 237,
+      "prompt": 286,
+      "total": 523
+    },
+    "evidence_extraction": {
+      "completion": 1989,
+      "prompt": 4286,
+      "total": 6275
+    },
+    "forecast_run:20260606_081942:claude_haiku_4.5:1": {
+      "completion": 1073,
+      "prompt": 1840,
+      "total": 2913
+    },
+    "forecast_run:20260606_081942:deepseek_v4_pro:1": {
+      "completion": 2164,
+      "prompt": 1600,
+      "total": 3764
+    },
+    "forecast_run:20260606_081942:gemini_3_flash:1": {
+      "completion": 630,
+      "prompt": 1765,
+      "total": 2395
+    },
+    "forecast_run:20260606_081942:gpt-5.4_mini:1": {
+      "completion": 915,
+      "prompt": 1543,
+      "total": 2458
+    },
+    "forecast_run:20260606_081942:kimi_k2.6:1": {
+      "completion": 5524,
+      "prompt": 1587,
+      "total": 7111
+    },
+    "red_team_critique": {
+      "completion": 1359,
+      "prompt": 365,
+      "total": 1724
+    },
+    "search_strategy": {
+      "completion": 122,
+      "prompt": 338,
+      "total": 460
+    },
+    "signpost_extract": {
+      "completion": 387,
+      "prompt": 317,
+      "total": 704
+    },
+    "sonar": {
+      "completion": 1740,
+      "prompt": 71,
+      "total": 1811
+    },
+    "spec_check": {
+      "completion": 264,
+      "prompt": 3360,
+      "total": 3624
+    },
+    "spec_extract": {
+      "completion": 137,
+      "prompt": 237,
+      "total": 374
+    }
+  },
+  "top_evidence": [
+    {
+      "bearing": "High-directness status signal",
+      "evidence_id": "E1",
+      "primary": false,
+      "relevance": 1.0,
+      "retrieved_at": "2026-06-06",
+      "snippet": "- Vanuatu is the slight favorite over Fiji in available pre-match odds and prediction models.\n- Polymarket’s trader consensus shows Vanuatu ",
+      "snippet_hash": "f040344f71ea51c3",
+      "source": "markets_news",
+      "url": "sonar://markets_news"
+    },
+    {
+      "bearing": "High-directness status signal",
+      "evidence_id": "E2",
+      "primary": false,
+      "relevance": 1.0,
+      "retrieved_at": "2026-06-06",
+      "snippet": "- The match between Vanuatu and Fiji on 2026-06-06 has not started yet.\n- There is no final score available for the match yet.\n- Kickoff for",
+      "snippet_hash": "57f6d32d69e477f4",
+      "source": "direct",
+      "url": "sonar://direct/0"
+    },
+    {
+      "bearing": "High-directness status signal",
+      "evidence_id": "E3",
+      "primary": false,
+      "relevance": 1.0,
+      "retrieved_at": "2026-06-06",
+      "snippet": "- Vanuatu defeated Fiji 2-0 on 2025-11-17 in the MSG Prime Minister’s Cup.\n- Vanuatu defeated Solomon Islands 2-1 on 2025-11-20 in the MSG P",
+      "snippet_hash": "428dc3b211f9ef75",
+      "source": "direct",
+      "url": "sonar://direct/2"
+    },
+    {
+      "bearing": "High-directness status signal",
+      "evidence_id": "E4",
+      "primary": false,
+      "relevance": 1.0,
+      "retrieved_at": "2026-06-06",
+      "snippet": "- Fiji lost 2-0 to Vanuatu on 2025-11-17 in a friendly match.\n- Fiji lost 2-0 to Papua New Guinea on 2025-11-20 in the MSG Prime Minister’s ",
+      "snippet_hash": "fd8b8e72bb778194",
+      "source": "direct",
+      "url": "sonar://direct/3"
+    },
+    {
+      "bearing": "High-directness status signal",
+      "evidence_id": "E5",
+      "primary": false,
+      "relevance": 1.0,
+      "retrieved_at": "2026-06-06",
+      "snippet": "- Fiji and Vanuatu have played 13 matches since 2007.\n- Vanuatu has won 6 of the 13 matches.\n- Fiji has won 4 of the 13 matches.\n- There hav",
+      "snippet_hash": "edf4fc346de9484b",
+      "source": "direct",
+      "url": "sonar://direct/4"
+    },
+    {
+      "bearing": "High-directness status signal",
+      "evidence_id": "E6",
+      "primary": false,
+      "relevance": 0.8,
+      "retrieved_at": "2026-06-06",
+      "snippet": "- The match between Vanuatu and Fiji is an international friendly scheduled for 2026-06-06.\n- The match is not started yet or has no data av",
+      "snippet_hash": "f3dd7777e52395f2",
+      "source": "direct",
+      "url": "sonar://direct/1"
+    }
+  ],
+  "written_at_utc": "2026-06-06T08:21:42.179960+00:00"
+}
