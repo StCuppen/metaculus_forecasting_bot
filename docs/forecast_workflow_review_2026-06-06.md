@@ -55,10 +55,17 @@ JSON record. Coherence projection enforces cross-question constraints.
    we do one planning pass. Cheap to allow 1 conditional follow-up round when evidence is thin/stale,
    gated by token budget (cost-control knobs now exist).
 
+## Update 2026-06-06 (search resolved)
+The search-quality gap below has been addressed without AskNews: **Linkup** (SimpleQA factuality
+leader) is now the primary retrieval client, combined with **Serper** (free Google breadth) and
+**Sonar** fallback, with a real-key guard. Verified: 8 evidence items + 2 primary sources on a live
+question (vs 0 primary on Sonar-only). The P0 "AskNews client" item below is therefore superseded;
+**Exa** stays an optional add for semantic base-rate discovery only. Remaining backlog items (P1/P2)
+stand.
+
 ## Prioritized backlog (pick from this; don't do blindly)
-- **P0 — AskNews retrieval client** behind the existing key envs, wired as primary search when present
-  (Exa/Sonar fall back). Highest expected accuracy-per-effort. New `bot/agent/` client + one branch in
-  the search block.
+- **P0 — AskNews retrieval client** — ~~build~~ **superseded 2026-06-06** by Linkup + Serper + Sonar
+  (user opted not to use AskNews). Keep Exa as an optional semantic/base-rate add.
 - **P0 — Roster refresh** to frontier light models incl. a cheap DeepSeek-class model (verify live
   OpenRouter IDs first; see proposal below).
 - **P1 — Outside-view/inside-view split** in the binary prompt (two short passes or one prompt with

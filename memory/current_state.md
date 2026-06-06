@@ -37,10 +37,21 @@ See `docs/forecast_workflow_review_2026-06-06.md` for the full review + prioriti
 no client yet) + roster refresh; **P1** outside-view/inside-view prompt split, hybrid LLM judge;
 **P2** outcome-driven Platt calibration from `forecast_records/`.
 
-## Search provider
-- Local default (no dedicated search key): **Perplexity Sonar via OpenRouter** fallback, wired into
-  `lean_ensemble.py` 2026-06-06. Provisional quality — a dedicated key is the upgrade path.
-- CI (`run_tournament.yaml`) has `EXA_API_KEY` (+ Serper/Brave/Tavily) secrets → uses **Exa** primary.
+## Search providers (set 2026-06-06)
+Lean search combines providers by capability, each active only with a **real** key (template
+placeholders like `1234567890`/`your_*` are ignored via `_real_key()`):
+- **Linkup** (primary) — factual + fresh full-text; SimpleQA factuality leader. `LinkupClient` in
+  `utils.py`. Returns diverse kinds (Wikipedia/background, Polymarket/market, .gov/authoritative).
+  Queries capped by `FORECAST_LINKUP_QUERIES` (default 4); depth via `LINKUP_DEPTH` (default standard).
+- **Serper** (free Google breadth + news + `site:` queries) — secondary, via `multi_provider_search`.
+- **Sonar** (free via OpenRouter) — fallback/top-up only when evidence is still thin (<3 docs).
+- **Exa** — OPTIONAL, only if a real `EXA_API_KEY` is set; covers semantic base-rate/reference-class
+  discovery. Decision 2026-06-06: not needed yet; add only if base-rate retrieval feels weak.
+- **`.env` key-name note:** the Linkup key is currently stored as `LINKEUP_API_KEY` (typo); code reads
+  both `LINKUP_API_KEY` and `LINKEUP_API_KEY`. `EXA_API_KEY`/`BRAVE_API_KEY`/`TAVILY_API_KEY` in `.env`
+  are still template placeholders (inactive).
+- Live verification (US/Iran question, 2026-06-06): `search_provider=serper+linkup`, 8 evidence items,
+  2 primary sources, mean relevance ~0.8, action publish.
 
 ## Caps / counts
 - Rolling forecast cap: **25 predictions per 7-day window** (`league.toml`, as of 2026-02-12).

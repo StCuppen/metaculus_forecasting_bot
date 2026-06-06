@@ -28,8 +28,13 @@ Rolling log of recent sessions. Keep only the last ~5 sessions. Durable lessons 
   never fires. Fixed both; sole-provider runs now query Sonar directly on top queries. Smoke forecast
   went from forced-abstain (1 synthetic item) to `publish` with 6 evidence items @ mean_rel 0.95.
 - **Smoke-test status**: 1 question (US/Iran, id 43259) forecast end-to-end on Sonar-only; enrich +
-  scoreboard verified. Full 10-question batch still pending user go-ahead (Sonar provisional; only
-  4 Metaculus questions resolve within 7 days — supply constraint to resolve with user).
+  scoreboard verified. Full 10-question batch still pending user go-ahead (only 4 Metaculus questions
+  resolve within 7 days — supply constraint to resolve with user).
+- **Search providers chosen + wired (user decision)**: minimal set = **Linkup** (primary, factuality
+  leader) + **Serper** (free Google breadth) + **Sonar** fallback; **Exa optional**, not needed yet.
+  New `LinkupClient`; lean search block combines providers with a `_real_key()` placeholder guard.
+  Re-verified US/Iran: `serper+linkup`, 8 evidence items, 2 primary sources, mean_rel ~0.8 (was 0
+  primary on Sonar-only). Keys live in `.env` (Linkup stored as `LINKEUP_API_KEY` typo; code reads both).
 
 ## 2026-02-12 - Memory Sync + New Test Forecast (Codex GPT-5)
 
