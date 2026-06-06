@@ -44,6 +44,49 @@ def _real_key(*names: str) -> str | None:
     return None
 
 
+# Bump when the pipeline's behavior changes so resolved records stay attributable to a config.
+LEAN_PIPELINE_VERSION = "lean-ensemble/v2-2026.06"
+
+
+def _run_config_snapshot(
+    search_provider: str | None,
+    model_names: list[str],
+    extremize_k: float,
+    trim_fraction: float,
+) -> dict[str, Any]:
+    """Provenance/version stamp so every record is attributable and comparable across changes."""
+    return {
+        "pipeline_version": LEAN_PIPELINE_VERSION,
+        "as_of_utc": datetime.now(timezone.utc).isoformat(),
+        "models": model_names,
+        "aggregation": {"extremize_k": extremize_k, "trim_fraction": trim_fraction},
+        "search": {
+            "provider": search_provider,
+            "max_search_queries": int(os.getenv("FORECAST_MAX_SEARCH_QUERIES", "8")),
+            "linkup_queries": int(os.getenv("FORECAST_LINKUP_QUERIES", "8")),
+            "max_evidence_docs": int(os.getenv("FORECAST_MAX_EVIDENCE_DOCS", "16")),
+        },
+        "run_max_tokens_cap": int(os.getenv("FORECAST_RUN_MAX_TOKENS", "0")),
+        "shrink_to_crowd": os.getenv("FORECAST_SHRINK_TO_CROWD", "0") == "1",
+    }
+
+
+def _parse_outside_view(text: str) -> tuple[str | None, float | None]:
+    """Extract the explicit BASE_RATE line and OUTSIDE_VIEW probability from a binary run."""
+    base_rate_text: str | None = None
+    outside_view: float | None = None
+    br = re.search(r"BASE_RATE:\s*(.+)", text, re.IGNORECASE)
+    if br:
+        base_rate_text = br.group(1).strip()[:300]
+    ov = re.search(r"OUTSIDE_VIEW:\s*([0-9]+(?:\.[0-9]+)?)\s*%", text, re.IGNORECASE)
+    if ov:
+        try:
+            outside_view = max(0.01, min(0.99, float(ov.group(1)) / 100.0))
+        except ValueError:
+            outside_view = None
+    return base_rate_text, outside_view
+
+
 @dataclass
 class LeanRunOutput:
     probability: float
@@ -1449,7 +1492,7 @@ async def run_lean_ensemble_forecast(
             continue
         seen.add(q_key)
         search_queries.append(q_clean)
-    max_queries = int(os.getenv("FORECAST_MAX_SEARCH_QUERIES", "6"))
+    max_queries = int(os.getenv("FORECAST_MAX_SEARCH_QUERIES", "8"))
     search_queries = search_queries[:max_queries]
 
     # Primary source targeting: add site-scoped queries for canonical domains
@@ -1495,7 +1538,7 @@ async def run_lean_ensemble_forecast(
     if linkup_key:
         try:
             linkup_client = LinkupClient(api_key=linkup_key)
-            linkup_n = int(os.getenv("FORECAST_LINKUP_QUERIES", "4"))
+            linkup_n = int(os.getenv("FORECAST_LINKUP_QUERIES", "8"))
             linkup_hits = await linkup_client.search_multiple(search_queries[:linkup_n])
             for hit in linkup_hits:
                 text = (hit.get("content") or "").strip()
@@ -1547,12 +1590,46 @@ async def run_lean_ensemble_forecast(
             "evidence may be weak. Set LINKUP_API_KEY/EXA_API_KEY for stronger retrieval."
         )
 
+    # Conditional second pass: if nothing gathered looks like a resolution/primary source, do one
+    # targeted Linkup round on the resolution query + primary-source domains. Matches the report's
+    # "follow-up only when the evidence packet lacks a clean resolution source" (not blind 2x search).
+    if (
+        os.getenv("FORECAST_SECOND_PASS", "1") == "1"
+        and linkup_key
+        and primary_domains
+        and not any(
+            _is_primary_source_url(str(getattr(d, "url", "") or ""), primary_domains) for d in docs
+        )
+    ):
+        try:
+            followup_queries = [forced_resolution_query] + [
+                f"site:{dom} {question_title[:80]}" for dom in primary_domains[:2]
+            ]
+            followup_hits = await LinkupClient(api_key=linkup_key).search_multiple(followup_queries)
+            added = 0
+            for hit in followup_hits:
+                text = (hit.get("content") or "").strip()
+                if len(text) < 50:
+                    continue
+                docs.append(_types.SimpleNamespace(
+                    url=hit.get("url") or "https://linkup.so",
+                    title=hit.get("title") or "Linkup follow-up",
+                    text=text, snippet=None,
+                ))
+                added += 1
+            if added:
+                providers_used.append("linkup_2nd")
+                search_provider = "+".join(providers_used)
+                logger.info(f"Second-pass Linkup added {added} resolution-targeted docs.")
+        except Exception as exc:
+            logger.warning(f"Second-pass Linkup search failed: {exc}")
+
     # LLM evidence extraction and scoring
     enriched_evidence = await _extract_and_score_evidence(
         docs=docs,
         question_title=question_title,
         resolution_criteria=resolution_criteria,
-        max_docs=int(os.getenv("FORECAST_MAX_EVIDENCE_DOCS", "8")),
+        max_docs=int(os.getenv("FORECAST_MAX_EVIDENCE_DOCS", "16")),
     )
     for ev in enriched_evidence:
         ev.is_primary_source = _is_primary_source_url(ev.url, primary_domains)
@@ -1602,6 +1679,15 @@ async def run_lean_ensemble_forecast(
         evidence_bundle=evidence_bundle_text,
         today=today_str,
     )
+    if q_type == "binary":
+        # Force an explicit, recorded outside-view (base rate) separate from the inside-view number.
+        prompt = prompt + "\n\n" + (
+            "Before your final 'Probability:' line, also output these two lines exactly:\n"
+            "BASE_RATE: <one sentence naming a concrete reference class and its historical rate, "
+            "or 'none found'>\n"
+            "OUTSIDE_VIEW: <your outside-view-only probability as a percentage, e.g. 30%, based on "
+            "the base rate BEFORE adjusting for case-specific news>"
+        )
     if q_type == "multiple_choice":
         if not mc_options:
             mc_options = ["Option A", "Option B"]
@@ -1642,9 +1728,12 @@ async def run_lean_ensemble_forecast(
             probability = 0.5
             mc_probs: dict[str, float] | None = None
             numeric_pct: dict[int, float] | None = None
+            base_rate_text: str | None = None
+            outside_view_probability: float | None = None
             parse_success = True
             if q_type == "binary":
                 probability = max(0.01, min(0.99, extract_probability_fn(response)))
+                base_rate_text, outside_view_probability = _parse_outside_view(response)
             elif q_type == "multiple_choice":
                 mc_probs = _extract_mc_probabilities(response, mc_options)
                 if mc_probs is None:
@@ -1711,6 +1800,8 @@ async def run_lean_ensemble_forecast(
                     "spec_reason": spec_reason,
                     "question_type": q_type,
                     "parse_success": parse_success,
+                    "base_rate_text": base_rate_text,
+                    "outside_view_probability": outside_view_probability,
                     "parsed_mc_probabilities": mc_probs,
                     "parsed_numeric_percentiles": numeric_pct,
                     "numeric_unit_expected": numeric_unit,
@@ -1756,6 +1847,21 @@ async def run_lean_ensemble_forecast(
     settled = await asyncio.gather(*[_run_one(cfg) for cfg in expanded_models])
     successful_runs = [row["forecast_run"] for row in settled if row.get("forecast_run") is not None]
 
+    # Aggregate the explicit outside-view (base-rate) signal recorded per binary run, for the record.
+    model_names = [str(cfg.get("name")) for cfg in expanded_models]
+    _run_diags = [(row.get("result").diagnostics or {}) for row in settled]
+    _ov_vals = [d.get("outside_view_probability") for d in _run_diags
+                if isinstance(d.get("outside_view_probability"), (int, float))]
+    outside_view_probability = (sum(_ov_vals) / len(_ov_vals)) if _ov_vals else None
+    base_rate_texts = [d.get("base_rate_text") for d in _run_diags if d.get("base_rate_text")]
+    crowd_benchmark = {
+        "metaculus_community_prediction": community_prior,
+        "captured_at_forecast_utc": datetime.now(timezone.utc).isoformat(),
+        "used_by_forecasters": False,
+        "used_by_gate_shrink": os.getenv("FORECAST_SHRINK_TO_CROWD", "0") == "1",
+        "note": "Benchmark only; the forecast is independent of the crowd unless used_by_gate_shrink.",
+    }
+
     if not successful_runs:
         fallback_prob = float(community_prior) if community_prior is not None else 0.5
         summary_text = (
@@ -1792,6 +1898,14 @@ async def run_lean_ensemble_forecast(
                 "planned_queries": planned_queries,
                 "executed_queries": search_queries,
                 "search_provider": search_provider,
+                "run_config": _run_config_snapshot(
+                    search_provider, model_names,
+                    float(os.getenv("FORECAST_EXTREMIZE_K", "1.0")),
+                    float(os.getenv("FORECAST_TRIM_FRACTION", "0.2")),
+                ),
+                "crowd_benchmark": crowd_benchmark,
+                "outside_view_probability": outside_view_probability,
+                "base_rate_texts": base_rate_texts,
                 "individual_results": settled,
                 "feature_flags": feature_flags or {},
                 "token_usage": get_token_usage(),
@@ -1819,7 +1933,9 @@ async def run_lean_ensemble_forecast(
     )
     parsing_failure_rate = parse_failures / max(len(settled), 1)
     trim_fraction = float(os.getenv("FORECAST_TRIM_FRACTION", "0.2"))
-    extremize_k = float(os.getenv("FORECAST_EXTREMIZE_K", "1.73"))
+    # Default 1.0 (no extremization): extremizing correlated LLM ensembles is unvalidated and
+    # confounds the first empirical run. Learn the right k from the resolved corpus, then set it.
+    extremize_k = float(os.getenv("FORECAST_EXTREMIZE_K", "1.0"))
 
     aggregated = aggregate_forecasts(
         runs=successful_runs,
@@ -1862,11 +1978,15 @@ async def run_lean_ensemble_forecast(
         question_deadline=question_deadline,
     )
     final_probability = aggregated_for_gate.p_calibrated
+    # By default shrink low-confidence forecasts toward 0.5 (neutral), NOT toward the crowd, so the
+    # forecast stays independent of the community prediction and we can measure skill vs the crowd
+    # cleanly. Set FORECAST_SHRINK_TO_CROWD=1 to anchor to the community prior instead.
+    shrink_to_crowd = os.getenv("FORECAST_SHRINK_TO_CROWD", "0") == "1"
     if gate_report.action in {"publish_low_confidence", "abstain"}:
         final_probability = shrink_probability(
             p=final_probability,
             gate_score=gate_report.gate_score,
-            base_rate=community_prior,
+            base_rate=community_prior if shrink_to_crowd else None,
         )
 
     final_mc_probabilities: dict[str, float] | None = None
@@ -2173,6 +2293,10 @@ async def run_lean_ensemble_forecast(
             "planned_queries": planned_queries,
             "executed_queries": search_queries,
             "search_provider": search_provider,
+            "run_config": _run_config_snapshot(search_provider, model_names, extremize_k, trim_fraction),
+            "crowd_benchmark": crowd_benchmark,
+            "outside_view_probability": outside_view_probability,
+            "base_rate_texts": base_rate_texts,
             "top_evidence": top_evidence_rows,
             "evidence_bundle_text": evidence_bundle_text,
             "individual_results": settled,

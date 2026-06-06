@@ -208,7 +208,9 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--days", type=int, default=7)
     parser.add_argument("--limit", type=int, default=10)
-    parser.add_argument("--min-hours", type=float, default=6.0)
+    # Floor of 24h excludes near-determined questions (<1 day to close), whose outcomes carry
+    # little forecasting signal and would inflate Brier scores in the empirical test.
+    parser.add_argument("--min-hours", type=float, default=24.0)
     parser.add_argument("--include-intraday", action="store_true")
     parser.add_argument("--output-dir", default="forecast_candidates")
     parser.add_argument("--as-of", help="UTC ISO datetime override, e.g. 2026-06-05T00:00:00Z")
