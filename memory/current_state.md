@@ -81,6 +81,21 @@ placeholders like `1234567890`/`your_*` are ignored via `_real_key()`):
   `outcome.community_prediction_at_resolution` + top-level `crowd_brier` once revealed at resolution,
   enabling the skill-vs-crowd head-to-head post-hoc.
 
+## Forecast output + aggregation (2026-06-06)
+- **Structured JSON final answers** are now the primary parse path: each run ends with one JSON object
+  — binary `{probability, outside_view, base_rate}`, MC `{probabilities:{option:p}}`, numeric
+  `{percentiles:{10..90}}`. Parsed by `_extract_last_json` (top-level brace-balanced, last object,
+  fence-tolerant) + `_as_prob`/`_mc_from_json`/`_numeric_from_json`. The old free-text regex parsers
+  are kept only as fallback. (Fixed a bug where the regex grabbed the first % in the text — a base
+  rate / case-fatality rate — instead of the model's final probability.)
+- **Aggregation:** `trimmed_mean` no longer force-trims small ensembles. The old `max(1,...)` floor
+  always dropped the highest+lowest at n>=4, discarding the informative tail of a 5-model ensemble;
+  now plain mean for n<8, trimming only at n>=8. Extremization still off (`FORECAST_EXTREMIZE_K=1.0`).
+- **Known open forecasting issue (not a bug):** on the Ebola question our ensemble (~4%) sits below
+  market/external models (~10-15%), driven mainly by a **resolution-interpretation split** (does a
+  medevac-to-US confirmation count as "first confirmed in US"?) + tail-scenario weighting. Surfacing
+  the resolution crux is the next quality lever.
+
 ## Active CI workflows (`.github/workflows/`)
 - `run_tournament.yaml` — tournament forecasts; commits `forecast_records/` back (cron disabled;
   triggered manually / via external cron-job.org). As of 2026-06-06.
