@@ -83,6 +83,7 @@ def _append_text_block(lines: list[str], title: str, value: Any, max_chars: int 
 
 def render_record_markdown(record: dict[str, Any]) -> str:
     """Render a human-readable Markdown view of a forecast record."""
+    record = jsonable(record)
     g = record.get("gate_report") or {}
     agg = record.get("aggregated_forecast") or {}
     out = record.get("outcome") or {}
@@ -131,6 +132,31 @@ def render_record_markdown(record: dict[str, Any]) -> str:
     if record.get("outside_view_probability") is not None:
         L.append(f"- Outside-view (base rate) probability: {_fmt_pct(record.get('outside_view_probability'))}")
     L.append("")
+
+    rows = [row for row in (record.get("individual_results") or []) if isinstance(row, dict)]
+    if rows:
+        L.append("## Model forecasts")
+        L.append("")
+        L.append("| Model | Forecast | Outside view | Tokens | Base rate / short rationale |")
+        L.append("|---|---:|---:|---:|---|")
+        for row in rows:
+            cfg = row.get("config") or {}
+            res = row.get("result") or {}
+            diag = (res.get("diagnostics") or {}) if isinstance(res, dict) else {}
+            label = cfg.get("label") or cfg.get("name") or "model"
+            p = res.get("probability") if isinstance(res, dict) else None
+            ov = diag.get("outside_view_probability")
+            usage = res.get("token_usage") if isinstance(res, dict) else {}
+            tokens = usage.get("total") if isinstance(usage, dict) else None
+            base = str(diag.get("base_rate_text") or "").strip()
+            explanation = str(res.get("explanation") or "").strip() if isinstance(res, dict) else ""
+            rationale = base or explanation.split("\n\n", 1)[0]
+            rationale = rationale.replace("\n", " ").replace("|", "\\|")[:220]
+            L.append(
+                f"| {label} | {_fmt_pct(p)} | {_fmt_pct(ov) if ov is not None else 'n/a'} | "
+                f"{tokens if tokens is not None else 'n/a'} | {rationale} |"
+            )
+        L.append("")
 
     # Outcome / benchmark
     L.append("## Outcome / benchmark")
@@ -224,7 +250,7 @@ def render_record_markdown(record: dict[str, Any]) -> str:
 
     # Audits
     if record.get("red_team_artifact"):
-        L.append("## Red-team critique")
+        L.append("## LLM audit / red-team critique")
         L.append(str(record["red_team_artifact"]).strip())
         L.append("")
     if record.get("summary_text"):
