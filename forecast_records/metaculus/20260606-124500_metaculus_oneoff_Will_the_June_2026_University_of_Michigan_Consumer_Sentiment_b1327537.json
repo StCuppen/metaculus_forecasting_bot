@@ -1,0 +1,1217 @@
+{
+  "aggregated_forecast": {
+    "confidence_class": "low",
+    "dispersion": 0.20516042503367946,
+    "n_runs": 5,
+    "n_trimmed": 2,
+    "p_calibrated": 0.44999999999999996,
+    "p_raw": 0.45
+  },
+  "base_rate_texts": [
+    "** At extreme sentiment troughs (e.g., 2008, 2022), the index has sometimes rebounded the next month but not always; no clear single base rate exists given the rarity of sub-45 readings.",
+    "none found",
+    "None found for the exact reference class of record-low readings during an ongoing geopolitical oil supply shock; unconditional month-over-month increases in the University of Michigan Consumer Sentiment Index occur roughly 50% of the time historically.",
+    "In the history of the UMCSENT index, month-over-month increases occur approximately 50-55% of the time, but this drops significantly during active energy price shocks.",
+    "Month-over-month improvement in the University of Michigan Consumer Sentiment Index after three consecutive declines to a record low: approximately 30-35% (based on the pattern of mean reversion being slower than immediate reversal, especially amid ongoing crises)."
+  ],
+  "brier": null,
+  "claim_audit": {
+    "assumption": 1,
+    "assumptions_note": "",
+    "evidence_backed": 11,
+    "hinge_claims": [
+      {
+        "claim": "The May 2026 University of Michigan Consumer Sentiment number was 44.8.",
+        "status": "evidence_backed",
+        "type": "hinge"
+      },
+      {
+        "claim": "44.8 was a record low for the University of Michigan Consumer Sentiment Index.",
+        "status": "evidence_backed",
+        "type": "hinge"
+      },
+      {
+        "claim": "The May 2026 sentiment drop was driven by high gasoline prices and geopolitical disruption.",
+        "status": "evidence_backed",
+        "type": "hinge"
+      },
+      {
+        "claim": "Gasoline prices and geopolitical disruption may still be present in June 2026.",
+        "status": "evidence_backed",
+        "type": "hinge"
+      },
+      {
+        "claim": "Easing gasoline prices and calming geopolitical supply shocks would reduce consumer pressure.",
+        "status": "evidence_backed",
+        "type": "hinge"
+      }
+    ],
+    "items": [
+      {
+        "claim": "(b) **Status quo outcome:** If nothing materially changes between now and the June survey window, sentiment probably stays in the **mid-40s**, with a meaningful chance of remaining **at or below 44.8** because May was a record low and the main negative driver—",
+        "status": "evidence_backed",
+        "type": "numeric"
+      },
+      {
+        "claim": "That would be enough for June sentiment to tick up even modestly above **44.8**.",
+        "status": "evidence_backed",
+        "type": "numeric"
+      },
+      {
+        "claim": "June sentiment then matches or undercuts May’s **44.8**.",
+        "status": "evidence_backed",
+        "type": "numeric"
+      },
+      {
+        "claim": "(f) **Strongest evidence for YES / NO:** - **Toward YES:** June only needs to beat a very low bar: **44.8**, which was a record low.",
+        "status": "evidence_backed",
+        "type": "numeric"
+      },
+      {
+        "claim": "(g) **Possible misread / narrowing:** The question is **not** whether June beats the **preliminary May reading of 48.2**.",
+        "status": "evidence_backed",
+        "type": "numeric"
+      },
+      {
+        "claim": "It only needs to be **greater than the final May reading of 44.8**.",
+        "status": "evidence_backed",
+        "type": "numeric"
+      },
+      {
+        "claim": "BASE_RATE: none found OUTSIDE_VIEW: 50% Probability: 56%",
+        "status": "assumption",
+        "type": "numeric"
+      },
+      {
+        "claim": "The May 2026 University of Michigan Consumer Sentiment number was 44.8.",
+        "status": "evidence_backed",
+        "type": "hinge"
+      },
+      {
+        "claim": "44.8 was a record low for the University of Michigan Consumer Sentiment Index.",
+        "status": "evidence_backed",
+        "type": "hinge"
+      },
+      {
+        "claim": "The May 2026 sentiment drop was driven by high gasoline prices and geopolitical disruption.",
+        "status": "evidence_backed",
+        "type": "hinge"
+      },
+      {
+        "claim": "Gasoline prices and geopolitical disruption may still be present in June 2026.",
+        "status": "evidence_backed",
+        "type": "hinge"
+      },
+      {
+        "claim": "Easing gasoline prices and calming geopolitical supply shocks would reduce consumer pressure.",
+        "status": "evidence_backed",
+        "type": "hinge"
+      }
+    ],
+    "total_claims": 12
+  },
+  "community_prior": null,
+  "crowd_benchmark": {
+    "captured_at_forecast_utc": "2026-06-06T12:44:47.692494+00:00",
+    "metaculus_community_prediction": null,
+    "note": "Benchmark only; the forecast is independent of the crowd unless used_by_gate_shrink.",
+    "used_by_forecasters": false,
+    "used_by_gate_shrink": false
+  },
+  "evidence_bundle_text": "[1] tradingeconomics.com | https://tradingeconomics.com/united-states/consumer-confidence | retrieved=2026-06-06 | primary=False | relevance=1.00 | datapoint=True\n- The University of Michigan’s Consumer Sentiment Index decreased to 44.80 points in May 2026.\n- The May 2026 Consumer Sentiment Index was revised down from a preliminary 48.2.\n- The May 2026 Consumer Sentiment Index marked the third straight monthly decline.\n- The May 2026 Consumer Sentiment Index is a record low.\n- Strait of Hormuz supply disruptions continued to push gasoline prices higher in May 2026.\n- Independents and Republicans saw sentiment fall to the lowest levels of the current administration in May 2026.\n- Democrats’ sentiment showed little change in May 2026.\n- Consumers grew inc\n\n[2] www.advisorperspectives.com | https://www.advisorperspectives.com/dshort/updates/2026/05/22/consumer-sentiment-sinks-to-record-low-as-cost-of-living-concerns-intensify | retrieved=2026-06-06 | primary=False | relevance=1.00 | datapoint=True\n- The final May reading for the University of Michigan Consumer Sentiment Index came in at 44.8.\n- The May 2026 reading marks a 5-point drop from April 2026.\n- The May 2026 reading fell well below the month's preliminary estimate of 48.2.\n- Consumer sentiment sank for a third straight month to another record low amid intense cost of living concerns and stubbornly high prices.\n- Sentiment is now just below the previous historical trough seen in June 2022.\n- Year-ahead inflation expectations inched up from 4.7% last month (April 2026) to 4.8% this month (May 2026).\n- The current inflation expect\n\n[3] cryptobriefing.com | https://cryptobriefing.com/michigan-consumer-sentiment-all-time-low/ | retrieved=2026-06-06 | primary=False | relevance=1.00 | datapoint=True\n- The University of Michigan’s Consumer Sentiment Index plunged to 44.8 in its final May 2026 reading.\n- The final May figure was revised sharply downward from a preliminary reading of 48.2.\n- April’s final reading of 49.8 had set a prior low just weeks earlier.\n- The current economic conditions gauge fell to 45.8.\n- The expectations component dropped to 44.1.\n- One-third of respondents cited gasoline prices as their chief concern affecting sentiment.\n- Roughly 30% mentioned tariffs as a contributing factor to their economic worries.\n- Joanne Hsu, director of the survey, said consumers feel “b\n\n[4] www.fxblue.com | https://www.fxblue.com/calendar/item/608ffc81-99e8-4b1c-b673-633100761034/6f365940-a166-4c71-96a7-0d89437438af | retrieved=2026-06-06 | primary=False | relevance=1.00 | datapoint=True\n- The Michigan Consumer Sentiment Index is released monthly by the University of Michigan.\n- The survey publishes a preliminary, mid-month reading and a final print at the end of the month.\n- The final print for May 2026 (released May 22, 2026) was 44.8.\n- The preliminary reading for May 2026 (released May 08, 2026) was 48.2.\n\n[5] tradingeconomics.com | https://tradingeconomics.com/united-states/consumer-confidence | retrieved=2026-06-06 | primary=False | relevance=1.00 | datapoint=True\n- The University of Michigan’s Consumer Sentiment Index plunged to a record low of 44.8 in May 2026, revised down from a preliminary 48.2.\n- The University of Michigan’s Consumer Sentiment Index dropped to a record low of 48.2 in early May 2026, missing market expectations of 49.5 and falling below April’s 49.8.\n- Consumer Confidence in the United States decreased to 44.80 points in May from 49.80 points in April of 2026.\n- The decline in May 2026 marked the third straight monthly decline.\n- Strait of Hormuz supply disruptions continued to push gasoline prices higher, contributing to the senti\n\n[6] www.cattlerange.com | https://www.cattlerange.com/articles/2025/12/university-of-michigan-consumer-sentiment-survey-near-record-low/ | retrieved=2026-06-06 | primary=False | relevance=0.80 | datapoint=True\n- Consumer sentiment declined to a level of 52.9 in December [2025], near a record low, despite continued spending and a stable economy.\n\n[7] thecreditbalance.com | https://thecreditbalance.com/macro_updates/michigan-consumer-sentiment-index/ | retrieved=2026-06-06 | primary=False | relevance=0.80 | datapoint=True\n- On 6th Feb 2026, the Index of Consumer Sentiment was 57.3 (Expectations 56.4).\n- On 9th Jan 2026, the Index of Consumer Sentiment was 60.5 (Expectations 53.5).\n- On 16th May 2025, the Index of Consumer Sentiment was 55.5 (Expectations 55.0).\n\n[8] www.sca.isr.umich.edu | https://www.sca.isr.umich.edu/ | retrieved=2026-06-06 | primary=True | relevance=0.60 | datapoint=True\n- Consumers are worried that inflation will increase and spread beyond fuel prices, even in the long run.\n- Year-ahead inflation expectations increased from 4.7% last month to 4.8% this month.\n- The current year-ahead inflation expectation reading substantially exceeds the 3.4% reading seen in February 2026 prior to the start of the Iran conflict.\n- The current year-ahead inflation expectation reading substantially exceeds all 2024 readings.\n- Sentiment of Democrats was little changed from last month.\n\n[9] fred.stlouisfed.org | https://fred.stlouisfed.org/series/UMCSENT | retrieved=2026-06-06 | primary=False | relevance=0.60 | datapoint=False\n- The document provides an index of the results of the University of Michigan's monthly Survey of Consumers.\n- This index is used to estimate future spending and saving.\n- The data series is named UMCSENT.\n- Historical data prior to January 1978 is available under UMCSENT1.\n- The data is copyrighted and requires citation.\n- The data is monthly and not seasonally adjusted.\n- The data pertains to the United States of America.\n\n[10] www.fxstreet.com | https://www.fxstreet.com/economic-calendar/event/608ffc81-99e8-4b1c-b673-633100761034 | retrieved=2026-06-06 | primary=False | relevance=0.60 | datapoint=False\n- The Michigan Consumer Sentiment Index is released monthly by the University of Michigan.\n- The index is a survey gauging sentiment among consumers.\n\n[11] www.stonex.com | https://www.stonex.com/en/financial-glossary/us-gdp-growth/ | retrieved=2026-06-06 | primary=False | relevance=0.60 | datapoint=True\n- The Michigan Consumer Sentiment Index (MCSI) is a monthly survey published by the University of Michigan.\n- The MCSI measures US consumer attitudes towards personal finances, business conditions, and economic activity.\n- The MCSI was created in 1946 by Dr. George Katona at the University of Michigan.\n- The index transitioned from phone interviews to web surveys to capture younger consumers' sentiment.\n- The University of Michigan evolved the index's methodology in 2024.\n- From April to July 2024, data collection shifted from 600 phone interviews per month to a target sample size of 900-1000 \n\n[12] morningconsult.com | https://morningconsult.com/articles/why-michigan-is-wrong-consumer-sentiment-declined-in-january | retrieved=2026-06-06 | primary=False | relevance=0.60 | datapoint=True\n- The University of Michigan data wrongly represents the state of U.S. consumer sentiment.\n- The University of Michigan ICS released on January 23rd claims that US Consumer Sentiment reached a five-month high.\n- From December 16 to January 19, Michigan conducted only 900 to 1,000 interviews and took an additional 4 days to report the data publicly.\n- UMich's transition to online surveys breaks its time series, challenging interpretation.\n- Consumer Sentiment Falls As Gas Prices Spike — But Expectations Remain Anchored (March 2026).",
+  "executed_queries": [
+    "University of Michigan Consumer Sentiment June 2026 forecast",
+    "University of Michigan Consumer Sentiment May 2026 actual",
+    "University of Michigan Consumer Sentiment historical data 2020-2026",
+    "factors influencing consumer sentiment June 2026",
+    "economic indicators affecting consumer confidence June 2026",
+    "expert predictions US economy June 2026",
+    "inflation outlook June 2026 impact on consumer sentiment",
+    "interest rate expectations June 2026 consumer sentiment"
+  ],
+  "feature_flags": {},
+  "final_mc_probabilities": null,
+  "final_numeric_percentiles": null,
+  "final_probability": 0.44999999999999996,
+  "full_log": "# Forecast Report -- 20260606_124027\n\n| Field | Value |\n|-------|-------|\n| Question | Will the June 2026 University of Michigan Consumer Sentiment number be greater than it was for May 2026? |\n| Type | binary |\n| Date | 2026-06-06 |\n| Final Prediction | 45.0% |\n| Informativeness | weak_view (signal=0.050) |\n| Confidence | low |\n| Gate Action | publish (score=0.742) |\n\n**Canonical Spec:**\n- One-line: Will the University of Michigan Consumer Sentiment number for June 2026 be greater than 44.8?\n- YES: The University of Michigan's reported Index of Consumer Sentiment for June 2026 is greater than 44.8.\n- NO: The University of Michigan's reported Index of Consumer Sentiment for June 2026 is less than or equal to 44.8.\n- Window: June 2026 (preliminary results are sufficient)\n- Threshold: 44.8\n- Metric: University of Michigan Index of Consumer Sentiment\n\n---\n\n## Search Process\n\n**Strategy Output:**\n```\nSEARCH(\"University of Michigan Consumer Sentiment June 2026 forecast\")\nSEARCH(\"University of Michigan Consumer Sentiment May 2026 actual\")\nSEARCH(\"University of Michigan Consumer Sentiment historical data 2020-2026\")\nSEARCH(\"factors influencing consumer sentiment June 2026\")\nSEARCH(\"economic indicators affecting consumer confidence June 2026\")\nSEARCH(\"expert predictions US economy June 2026\")\nSEARCH(\"inflation outlook June 2026 impact on consumer sentiment\")\nSEARCH(\"interest rate expectations June 2026 consumer sentiment\")\nSEARCH(\"University of Michigan Consumer Sentiment methodology\")\nSEARCH(\"consumer spending trends June 2026\")\n```\n\n**Planned Queries (10):**\n- University of Michigan Consumer Sentiment June 2026 forecast\n- University of Michigan Consumer Sentiment May 2026 actual\n- University of Michigan Consumer Sentiment historical data 2020-2026\n- factors influencing consumer sentiment June 2026\n- economic indicators affecting consumer confidence June 2026\n- expert predictions US economy June 2026\n- inflation outlook June 2026 impact on consumer sentiment\n- interest rate expectations June 2026 consumer sentiment\n- University of Michigan Consumer Sentiment methodology\n- consumer spending trends June 2026\n\n**Executed Queries (8):**\n- University of Michigan Consumer Sentiment June 2026 forecast\n- University of Michigan Consumer Sentiment May 2026 actual\n- University of Michigan Consumer Sentiment historical data 2020-2026\n- factors influencing consumer sentiment June 2026\n- economic indicators affecting consumer confidence June 2026\n- expert predictions US economy June 2026\n- inflation outlook June 2026 impact on consumer sentiment\n- interest rate expectations June 2026 consumer sentiment\n\n---\n\n## Evidence Summary\n\nItems: 12 | Distinct sources: 11 | Primary: 1 | Mean relevance: 0.800 | Freshness: 0.0 days\n\n| # | Source | Primary | Relevance | Bearing | Snippet |\n|---|--------|---------|-----------|---------|---------|\n| E1 | tradingeconomics.com | No | 1.00 | High-directness status signal | - The University of Michigan’s Consumer Sentiment Index decreased to 44.80 point... |\n| E2 | www.advisorperspectives.com | No | 1.00 | High-directness status signal | - The final May reading for the University of Michigan Consumer Sentiment Index ... |\n| E3 | cryptobriefing.com | No | 1.00 | High-directness status signal | - The University of Michigan’s Consumer Sentiment Index plunged to 44.8 in its f... |\n| E4 | www.fxblue.com | No | 1.00 | High-directness status signal | - The Michigan Consumer Sentiment Index is released monthly by the University of... |\n| E5 | tradingeconomics.com | No | 1.00 | High-directness status signal | - The University of Michigan’s Consumer Sentiment Index plunged to a record low ... |\n| E6 | www.cattlerange.com | No | 0.80 | High-directness status signal | - Consumer sentiment declined to a level of 52.9 in December [2025], near a reco... |\n| E7 | thecreditbalance.com | No | 0.80 | High-directness status signal | - On 6th Feb 2026, the Index of Consumer Sentiment was 57.3 (Expectations 56.4).... |\n| E8 | www.sca.isr.umich.edu | Yes | 0.60 | Direct resolution source/mechanics | - Consumers are worried that inflation will increase and spread beyond fuel pric... |\n\n---\n\n## Model Runs\n\nParsing failure rate: 0.0%\n\n| Model | Probability | Tokens | Warnings |\n|-------|-------------|--------|----------|\n| DeepSeek V4 Pro | 35.0% | 3,642 | 0 |\n| GPT-5.4 Mini | 50.0% | 5,501 | 0 |\n| Kimi K2.6 | 50.0% | 12,353 | 0 |\n| Gemini 3 Flash | 55.0% | 3,802 | 0 |\n| Claude Haiku 4.5 | 4.8% | 4,796 | 0 |\n\n---\n\n### DeepSeek V4 Pro (35.0%)\n\n<details><summary>Full reasoning (3,899 chars)</summary>\n\n(a) **How much time remains until resolution? What is the exact deadline?**  \nThe June 2026 preliminary reading is typically released around the second Friday of the month, which would be June 12, 2026. That is only about 6 days from today (June 6, 2026). The final reading would come at the end of June, but the resolution criteria say preliminary results are sufficient. So the effective deadline is roughly June 12, 2026.\n\n(b) **What is the status quo outcome - what happens if nothing changes between now and the deadline?**  \nThe status quo is the May 2026 final reading of 44.8, which is an all-time low. The question asks if June will be *greater* than 44.8. If nothing changes—meaning sentiment stays at this rock-bottom level—the June number would be ≤44.8, and the question resolves **No**. The status quo therefore leans No.\n\n(c) **Briefly describe a concrete scenario that leads to YES.**  \nA ceasefire or de-escalation in the Iran conflict is announced, easing Strait of Hormuz supply fears. Gas prices stabilize or drop slightly in early June. The preliminary June sentiment reading ticks up to, say, 45.5, as consumers feel a small sense of relief. The question resolves Yes.\n\n(d) **Briefly describe a concrete scenario that leads to NO.**  \nThe conflict continues or escalates, gas prices rise further through early June, and inflation expectations keep climbing. The preliminary June reading comes in at 44.8 or lower (e.g., 44.0), extending the record low. The question resolves No.\n\n(e) **What is the base rate for events like this? If unknown, state that explicitly.**  \nThe base rate is the historical frequency of month-over-month increases in the Michigan Consumer Sentiment Index when the index is at or near an all-time low. In the past 50+ years, sentiment has rarely been this low (only comparable to the June 2022 trough of 50.0 and the 2008-2009 financial crisis lows around 55-57). At extreme lows, the index sometimes bounces the next month, but not always—especially when the driving factor (gas prices, geopolitical shock) is still active. A precise base rate is hard to pin down given how rare this territory is, but historically, rebounds from record lows are not automatic.\n\n(f) **What is the single strongest piece of evidence pushing toward YES? Toward NO?**  \n- **Toward YES:** The preliminary May reading was 48.2 before being revised sharply down to 44.8. This suggests the final number can be volatile and that the preliminary June reading might initially come in higher, even if later revised down. Also, sentiment is so low that any marginal good news could cause a mechanical bounce.  \n- **Toward NO:** The background article and data make clear the decline is driven by a concrete, worsening catalyst—rising gas prices from the Iran-related Strait of Hormuz disruption. There is no sign of that catalyst abating by early June, and inflation expectations are still rising. The trend is strongly downward (three straight monthly declines), and the final Ma\n\n... [899 chars truncated]\n\n</details>\n\n---\n\n### GPT-5.4 Mini (50.0%)\n\n<details><summary>Full reasoning (2,090 chars)</summary>\n\n(a) **Time remaining / deadline:**  \nThe June 2026 reading should resolve when the University of Michigan posts the **June 2026 consumer sentiment figure** on its survey site. Since the survey releases a **preliminary mid-month print** and a **final end-of-month print**, the first likely resolution point is the **preliminary June release in mid-June 2026**; if that were unavailable, the **final late-June release** would control.\n\n(b) **Status quo outcome:**  \nIf nothing materially changes between now and the June survey window, sentiment probably stays in the **mid-40s**, with a meaningful chance of remaining **at or below 44.8** because May was a record low and the main negative driver—higher gasoline prices tied to Middle East disruptions—was still active.\n\n(c) **Concrete YES scenario:**  \nGasoline prices ease, the Iran/Hormuz-related supply shock calms, and consumers feel slightly less pressure on everyday costs. That would be enough for June sentiment to tick up even modestly above **44.8**.\n\n(d) **Concrete NO scenario:**  \nGas prices stay elevated or rise further, inflation worries persist, and consumers remain pessimistic about personal finances and the broader economy. June sentiment then matches or undercuts May’s **44.8**.\n\n(e) **Base rate:**  \nI don’t have a reliable exact historical base rate for “June UMich sentiment > May UMich sentiment,” so I’m not asserting a precise historical frequency here.\n\n(f) **Strongest evidence for YES / NO:**  \n- **Toward YES:** June only needs to beat a very low bar: **44.8**, which was a record low. Extreme lows often see some rebound.  \n- **Toward NO:** The May drop was driven by a continuing, concrete shock—**high gasoline prices and geopolitical disruption**—which may still be present in June.\n\n(g) **Possible misread / narrowing:**  \nThe question is **not** whether June beats the **preliminary May reading of 48.2**. It only needs to be **greater than the final May reading of 44.8**. Also, **preliminary June data is enough** to resolve the question.\n\nBASE_RATE: none found  \nOUTSIDE_VIEW: 50%\n\nProbability: 56%\n\n</details>\n\n---\n\n### Kimi K2.6 (50.0%)\n\n<details><summary>Full reasoning (3,029 chars)</summary>\n\n(a) Time remaining: Today is June 6, 2026. The University of Michigan’s preliminary June reading—which is explicitly sufficient to resolve the question—is typically released on the second Friday of the month, so roughly **6 days** remain until the preliminary data is posted (around June 12, 2026). The final print would follow near month-end (June 26), but is not required.\n\n(b) Status quo outcome: If nothing changes, the Iran conflict and Hormuz supply disruptions continue, gasoline prices keep rising, and consumers remain fixated on cost-of-living concerns. Under that status quo, sentiment stays at or below the May final of **44.8**, producing a **No** resolution (the index must be **strictly greater than** 44.8).\n\n(c) YES scenario: A sudden ceasefire or reopening of the Strait of Hormuz is announced during the first week of June, crude and gasoline prices drop sharply, and the early-June survey captures a relief-driven rebound. The preliminary June reading prints at **46.0 or higher**.\n\n(d) NO scenario: Hormuz shipping constraints persist through early June, the national average gas price rises further, and the early-June survey respondents continue to cite fuel costs and tariffs. The preliminary June reading falls to **42–44**, or ticks only slightly upward but remains at or below **44.8**.\n\n(e) Base rate: **None found** for the precise reference class of “record-low readings during an ongoing geopolitical oil-supply shock.” Unconditional month-over-month increases in the University of Michigan Consumer Sentiment Index occur roughly 50% of the time historically, but the frequency is lower when the prior three months have all declined and an acute exogenous shock is still unfolding.\n\n(f) Strongest evidence:\n- **Toward YES:** Sentiment indices often exhibit short-term mean reversion after extreme capitulation moves; the May final plunged 5 full points from April and was revised down 3.4 points from the preliminary, suggesting a potential “selling climax” that could produce a technical bounce.\n- **Toward NO:** The underlying driver (Hormuz disruptions and the resulting gasoline-price spike) is **active and unresolved as of June 6**, with nearly 40% of respondents already citing gas prices in May; absent a visible positive catalyst, pessimistic momentum should dominate the early-June survey.\n\n(g) Resolution nuance: The threshold is **strictly greater than 44.8**; a print of exactly 44.8 resolves **No**, which is narrower than a naive “higher than May” reading might suggest. Additionally, because **preliminary results are sufficient**, the question can resolve as soon as the mid-June preliminary is posted—forecasters should not assume they are waiting for the final month-end number.\n\nBASE_RATE: None found for the exact reference class of record-low readings during an ongoing geopolitical oil supply shock; unconditional month-over-month increases in the University of Michigan Consumer Sentiment Index occur roughly 50% of the time historically.\nOUTSID\n\n... [29 chars truncated]\n\n</details>\n\n---\n\n### Gemini 3 Flash (55.0%)\n\n<details><summary>Full reasoning (2,668 chars)</summary>\n\nThe question asks whether the University of Michigan Consumer Sentiment Index for June 2026 will be greater than 44.8 (the final reading for May 2026).\n\n(a) **Time remaining:** Today is June 6, 2026. The preliminary June reading is typically released around the second Friday of the month (likely June 12, 2026), and the final reading at the end of the month. Resolution occurs once the June data is published.\n(b) **Status quo:** The index is at an all-time low of 44.8 after three consecutive months of decline. The primary driver is a military conflict in Iran and supply disruptions in the Strait of Hormuz, which have spiked gasoline prices.\n(c) **Scenario for YES:** A stabilization or slight retreat in gasoline prices, or a \"dead cat bounce\" from record-low sentiment levels, pushes the index to 45.0 or higher. Even a minor relief in geopolitical tensions or consumers becoming \"numb\" to the news could cause a slight uptick.\n(d) **Scenario for NO:** Continued military escalation in the Middle East leads to further oil supply shocks, pushing gas prices even higher. If the Strait of Hormuz remains restricted, the \"cost of living concerns\" cited in May will intensify, driving the index to a new record low (e.g., 42.0).\n(e) **Base rate:** Historically, the index rarely stays at record lows for many consecutive months without some mean reversion, but during periods of active geopolitical/energy shocks (like 1979-1980 or 2008), it can trend downward for 4-6 months.\n(f) **Strongest evidence:** For **YES**, the index is at its historical floor; statistically, a bounce is likely after a 5-point drop. For **NO**, the fundamental cause (the Iran conflict and Strait of Hormuz disruption) is active and worsening, as evidenced by the May preliminary-to-final downward revision (48.2 to 44.8).\n(g) **Resolution criteria:** The threshold is exactly 44.8. Preliminary results are sufficient. This means if the mid-June preliminary number is 44.9, the question resolves YES immediately, even if the final number drops later.\n\nThe current situation is dominated by a specific, ongoing supply-side shock. In May, sentiment started at 48.2 and crashed to 44.8 as the month progressed, suggesting the negative momentum was accelerating into June. Unless there is news of a ceasefire or a reopening of shipping lanes, the inflationary pressure on gasoline—the most visible price for consumers—will likely keep sentiment suppressed or drive it lower.\n\nBASE_RATE: In the history of the UMCSENT index, month-over-month increases occur approximately 50-55% of the time, but this drops significantly during active energy price shocks.\nOUTSIDE_VIEW: 52%\n\nProbability: 38%\n\n</details>\n\n---\n\n### Claude Haiku 4.5 (4.8%)\n\n<details><summary>Full reasoning (6,669 chars)</summary>\n\n# Analysis\n\n## (a) Time Remaining Until Resolution\n\n**Today's date:** June 6, 2026\n**Resolution deadline:** June 30, 2026 (end of June when final June 2026 data is released)\n**Time remaining:** ~24 days\n\nThe University of Michigan releases preliminary readings mid-month and final readings at month-end. The June 2026 preliminary reading would typically be released around June 12, 2026, with the final reading around June 26, 2026.\n\n## (b) Status Quo Outcome\n\nIf nothing changes, sentiment would likely remain depressed. The underlying drivers (Strait of Hormuz disruptions, elevated gas prices, tariff concerns, elevated inflation expectations at 4.8%) persist. The trend has been three consecutive months of decline (March→April→May). Without a significant shock improvement, the status quo would be a June reading at or below May's 44.8.\n\n## (c) YES Scenario (June > 44.8)\n\n- **Geopolitical de-escalation:** U.S. military campaign in Iran winds down or ceases, reducing supply disruptions in the Strait of Hormuz\n- **Gas price collapse:** Oil prices fall sharply (e.g., from supply restoration or demand destruction), bringing gasoline prices down meaningfully\n- **Inflation expectations reset lower:** Consumers' year-ahead inflation expectations drop from 4.8% back toward 3.4% (pre-conflict level)\n- **Tariff relief:** Announced rollback or pause of tariffs that ~30% of respondents cited as a concern\n- **Positive economic news:** Strong employment data, wage growth, or other positive indicators that shift sentiment\n\n## (d) NO Scenario (June ≤ 44.8)\n\n- **Continued geopolitical tension:** Iran conflict persists, supply disruptions continue\n- **Sticky high gas prices:** Oil prices remain elevated or rise further\n- **Inflation expectations remain elevated:** Consumers maintain or increase their 4.8% year-ahead inflation expectations\n- **Tariff concerns persist:** No relief on tariff front\n- **Momentum of decline:** The three-month downtrend continues into June as a fourth consecutive decline\n\n## (e) Base Rate\n\n**Reference class:** Month-to-month changes in the University of Michigan Consumer Sentiment Index\n\nExamining the data provided:\n- April 2026: 49.8\n- May 2026: 44.8 (down 5.0 points, -10%)\n- March 2026: ~49.8 (implied from \"April's final reading of 49.8 had set a prior low\")\n- February 2026: 57.3\n- January 2026: 60.5\n\nThe index has shown three consecutive monthly declines. Historically, the index does experience month-to-month volatility, but reversals after three consecutive declines are not uncommon. However, given the severity of the current shock (record low, geopolitical crisis ongoing), the base rate for immediate reversal is modest.\n\n**Estimated base rate:** In normal conditions, roughly 45-50% of months see increases from the prior month. However, after three consecutive declines to a record low amid an ongoing crisis, the base rate for reversal in the very next month is lower, perhaps 30-40%.\n\n## (f) Strongest Evidence\n\n**Toward YES:**\n- The prelimin\n\n... [3669 chars truncated]\n\n</details>\n\n---\n\n## Aggregation\n\n| Metric | Value |\n|--------|-------|\n| Raw trimmed mean | 0.4500 (45.0%) |\n| Calibrated (extremized) | 0.4500 (45.0%) |\n| Final probability | 0.4500 (45.0%) |\n| Dispersion | 0.2052 |\n| N runs | 5 (trimmed: 2) |\n\n---\n\n## Gate Decision\n\n| Component | Score |\n|-----------|-------|\n| Spec confidence | 0.900 |\n| Temporal relevance | 1.000 |\n| Evidence sufficiency | 0.875 |\n| Model agreement | 0.000 |\n| **Weighted gate score** | **0.742** |\n\n**Action:** publish\n\n**Reasons:**\n- Model disagreement is high.\n- Gate action: publish.\n\n\n---\n\n## Red Team\n\nStatus: no change\n\n<details><summary>Critique</summary>\n\nHere's an adversarial review of the forecast:\n\n**1. TIMELINE CONFUSION**\n*   **Critique:** The reasoning states, \"The June 2026 reading should resolve when the University of Michigan posts the June 2026 consumer sentiment figure... the first likely resolution point is the preliminary June release in mid-June 2026; if that were unavailable, the final late-June release would control.\" This is correct for the *June 2026* number. However, the resolution criteria explicitly states \"greater than 44.8 for June 2026.\" The 44.8 is identified in the reasoning as the *final May reading*. The question asks if June 2026 will be greater than *it was for May 2026*. The resolution criteria *replaces* \"it was for May 2026\" with the specific number 44.8. This is a potential point of confusion or misinterpretation. While the forecaster correctly identifies 44.8 as the final May reading, the phrasing of the resolution criteria could lead someone to think 44.8 is a *target* rather than the *May 2026 value*. This isn't a timeline confusion *per se*, but a clarity issue related to the reference point.\n*   **Verdict:** Minor clarity issue, but the forecaster seems to understand it. No significant timeline confusion.\n\n**2. BASE RATE NEGLECT**\n*   **Critique:** The forecaster explicitly states, \"I don’t have a reliable exact historical base rate for 'June UMich sentiment > May UMich sentiment,' so I’m not asserting a precise historical frequency here.\" This is a direct acknowledgment of the lack of a specific base rate for the *directional change* between consecutive months. However, the forecaster *does* provide an \"OUTSIDE_VIEW: 50%,\" which is a reasonable default for a binary outcome when no specific directional bias is known. The forecaster also notes that \"Extreme lows often see some rebound,\" which is a form of base rate thinking (regression to the mean) applied to the *level* of the sentiment, rather than the month-over-month change.\n*   **Verdict:** Acknowledged and partially addressed. Not a strong case of neglect, as the 50% outside view acts as a proxy.\n\n**3. SINGLE-SOURCE FRAGILITY**\n*   **Critique:** The resolution criteria relies solely on \"the University of Michigan's reported Index of Consumer Sentiment, expected to be located [here](http://www.sca.isr.umich.edu/).\" This is inherently a single-source question. If the University of Michigan stopped publishing the index, or if the website became permanently unavailable, the question would be unresolvable.\n*   **Verdict:** This is a clear case of single-source fragility. While the source is highly reputable and unlikely to disappear, the forecast *is* entirely dependent on it. This is an inherent characteristic of the question design, not necessarily a flaw in the *forecasting process* itself, but it's a risk factor for resolution.\n\n**4. RESOLUTION MISREAD**\n*   **Critique:** The forecaster explicitly addresses potential misreads: \"The question is **not** whether June beats the **preliminary May reading of 48.2**. It only needs to be **greater than the final May reading of 44.8**. Also, **preliminary June data is enough** to resolve the question.\" This demonstrates a clear understanding of the resolution criteria and potential pitfalls. The criteria itself is very specific (\"greater than 44.8 for June 2026. Less than or equal to that amount resolves the question as No.\").\n*   **Verdict:** No resolution misread. The forecaster has clearly understood and articulated the criteria.\n\n**5. MISSING PATHWAYS**\n*   **Critique:**\n    *   **YES scenario:** \"Gasoline prices ease, the Iran/Hormuz-related supply shock calms, and consumers feel slightly less pressure on everyday costs.\" This is a plausible pathway.\n    *   **NO scenario:** \"Gas prices stay elevated or rise further, inflation worries persist, and consumers remain pessimistic about personal finances and the broader economy.\" This is also a plausible pathway.\n    *   **Missing:** The reasoning heavily focuses on gasoline prices and geopolitical events. While these are significant, other factors can influence consumer sentiment. For example:\n        *   **Stock market performance:** A significant rally or crash could impact sentiment, especially among wealthier consumers.\n        *   **Interest rate changes/Fed policy:** Expectations or actual changes in interest rates could affect borrowing costs and economic outlook.\n        *   **Employment data:** Unexpectedly strong or weak jobs reports could shift sentiment.\n        *   **Political events/election cycle:** Major domestic political developments could influence consumer confidence.\n        *   **Other inflation components:** While gas is highlighted, food prices, housing costs, etc., also play a role.\n        *   **Consumer debt levels:** Rising debt or defaults could dampen sentiment.\n        *   **Psychological factors/media narrative:** Sometimes sentiment shifts due to a general mood or media focus, even without a direct economic trigger.\n    *   The forecast acknowledges that \"May was a record low,\" and \"Extreme lows often see some rebound.\" This is a strong argument for YES, but the *mechanisms* for that rebound beyond just gas prices easing are not fully explored.\n*   **Verdict:** There are several plausible economic and psychological pathways that\n\n</details>\n\n---\n\n## Claim Audit\n\nTotal claims: 12 | Evidence-backed: 11 | Assumptions: 1\n\n**Hinge Claims:**\n- [evidence] The May 2026 University of Michigan Consumer Sentiment number was 44.8.\n- [evidence] 44.8 was a record low for the University of Michigan Consumer Sentiment Index.\n- [evidence] The May 2026 sentiment drop was driven by high gasoline prices and geopolitical disruption.\n- [evidence] Gasoline prices and geopolitical disruption may still be present in June 2026.\n- [evidence] Easing gasoline prices and calming geopolitical supply shocks would reduce consumer pressure.\n\n\n---\n\n## Signposts\n\n| Event | Direction | Magnitude |\n|-------|-----------|----------|\n| A significant de-escalation of geopolitical tensions in the Middle East (e.g., a lasting ceasefire in a major conflict, a diplomatic resolution to a regional dispute) leading to a sustained drop in crude oil prices. | up | +19pp |\n| US national average gasoline prices fall by more than $0.50 per gallon between May and mid-June 2026, as reported by AAA or EIA. | up | +15pp |\n| The US Consumer Price Index (CPI) report for May 2026 (released in June 2026) shows a month-over-month decline in core inflation (excluding food and energy) for the first time in over a year. | up | +15pp |\n| A major new conflict or significant escalation of existing conflicts in the Middle East, directly impacting oil production or shipping lanes, causing crude oil prices to surge by over 15% in a short period. | down | -20pp |\n| US national average gasoline prices rise by more than $0.50 per gallon between May and mid-June 2026, as reported by AAA or EIA. | down | -15pp |\n\n---\n\n## Final Summary\n\n**Prediction:** 45.0%\n**Confidence class:** low\n**Informativeness:** weak_view\n**Gate action:** publish\n",
+  "full_reasoning": "# Ensemble Forecast (45.0%)\n\n---\n\n## Search Strategy Output\n\n---\n\nSEARCH(\"University of Michigan Consumer Sentiment June 2026 forecast\")\nSEARCH(\"University of Michigan Consumer Sentiment May 2026 actual\")\nSEARCH(\"University of Michigan Consumer Sentiment historical data 2020-2026\")\nSEARCH(\"factors influencing consumer sentiment June 2026\")\nSEARCH(\"economic indicators affecting consumer confidence June 2026\")\nSEARCH(\"expert predictions US economy June 2026\")\nSEARCH(\"inflation outlook June 2026 impact on consumer sentiment\")\nSEARCH(\"interest rate expectations June 2026 consumer sentiment\")\nSEARCH(\"University of Michigan Consumer Sentiment methodology\")\nSEARCH(\"consumer spending trends June 2026\")\n\n---\n\n## Planned Queries\n\n---\n\n- University of Michigan Consumer Sentiment June 2026 forecast\n- University of Michigan Consumer Sentiment May 2026 actual\n- University of Michigan Consumer Sentiment historical data 2020-2026\n- factors influencing consumer sentiment June 2026\n- economic indicators affecting consumer confidence June 2026\n- expert predictions US economy June 2026\n- inflation outlook June 2026 impact on consumer sentiment\n- interest rate expectations June 2026 consumer sentiment\n- University of Michigan Consumer Sentiment methodology\n- consumer spending trends June 2026\n\n---\n\n## Executed Queries\n\n---\n\n- University of Michigan Consumer Sentiment June 2026 forecast\n- University of Michigan Consumer Sentiment May 2026 actual\n- University of Michigan Consumer Sentiment historical data 2020-2026\n- factors influencing consumer sentiment June 2026\n- economic indicators affecting consumer confidence June 2026\n- expert predictions US economy June 2026\n- inflation outlook June 2026 impact on consumer sentiment\n- interest rate expectations June 2026 consumer sentiment\n\n---\n\n## Evidence Bundle\n\n---\n\n[1] tradingeconomics.com | https://tradingeconomics.com/united-states/consumer-confidence | retrieved=2026-06-06 | primary=False | relevance=1.00 | datapoint=True\n- The University of Michigan’s Consumer Sentiment Index decreased to 44.80 points in May 2026.\n- The May 2026 Consumer Sentiment Index was revised down from a preliminary 48.2.\n- The May 2026 Consumer Sentiment Index marked the third straight monthly decline.\n- The May 2026 Consumer Sentiment Index is a record low.\n- Strait of Hormuz supply disruptions continued to push gasoline prices higher in May 2026.\n- Independents and Republicans saw sentiment fall to the lowest levels of the current administration in May 2026.\n- Democrats’ sentiment showed little change in May 2026.\n- Consumers grew inc\n\n[2] www.advisorperspectives.com | https://www.advisorperspectives.com/dshort/updates/2026/05/22/consumer-sentiment-sinks-to-record-low-as-cost-of-living-concerns-intensify | retrieved=2026-06-06 | primary=False | relevance=1.00 | datapoint=True\n- The final May reading for the University of Michigan Consumer Sentiment Index came in at 44.8.\n- The May 2026 reading marks a 5-point drop from April 2026.\n- The May 2026 reading fell well below the month's preliminary estimate of 48.2.\n- Consumer sentiment sank for a third straight month to another record low amid intense cost of living concerns and stubbornly high prices.\n- Sentiment is now just below the previous historical trough seen in June 2022.\n- Year-ahead inflation expectations inched up from 4.7% last month (April 2026) to 4.8% this month (May 2026).\n- The current inflation expect\n\n[3] cryptobriefing.com | https://cryptobriefing.com/michigan-consumer-sentiment-all-time-low/ | retrieved=2026-06-06 | primary=False | relevance=1.00 | datapoint=True\n- The University of Michigan’s Consumer Sentiment Index plunged to 44.8 in its final May 2026 reading.\n- The final May figure was revised sharply downward from a preliminary reading of 48.2.\n- April’s final reading of 49.8 had set a prior low just weeks earlier.\n- The current economic conditions gauge fell to 45.8.\n- The expectations component dropped to 44.1.\n- One-third of respondents cited gasoline prices as their chief concern affecting sentiment.\n- Roughly 30% mentioned tariffs as a contributing factor to their economic worries.\n- Joanne Hsu, director of the survey, said consumers feel “b\n\n[4] www.fxblue.com | https://www.fxblue.com/calendar/item/608ffc81-99e8-4b1c-b673-633100761034/6f365940-a166-4c71-96a7-0d89437438af | retrieved=2026-06-06 | primary=False | relevance=1.00 | datapoint=True\n- The Michigan Consumer Sentiment Index is released monthly by the University of Michigan.\n- The survey publishes a preliminary, mid-month reading and a final print at the end of the month.\n- The final print for May 2026 (released May 22, 2026) was 44.8.\n- The preliminary reading for May 2026 (released May 08, 2026) was 48.2.\n\n[5] tradingeconomics.com | https://tradingeconomics.com/united-states/consumer-confidence | retrieved=2026-06-06 | primary=False | relevance=1.00 | datapoint=True\n- The University of Michigan’s Consumer Sentiment Index plunged to a record low of 44.8 in May 2026, revised down from a preliminary 48.2.\n- The University of Michigan’s Consumer Sentiment Index dropped to a record low of 48.2 in early May 2026, missing market expectations of 49.5 and falling below April’s 49.8.\n- Consumer Confidence in the United States decreased to 44.80 points in May from 49.80 points in April of 2026.\n- The decline in May 2026 marked the third straight monthly decline.\n- Strait of Hormuz supply disruptions continued to push gasoline prices higher, contributing to the senti\n\n[6] www.cattlerange.com | https://www.cattlerange.com/articles/2025/12/university-of-michigan-consumer-sentiment-survey-near-record-low/ | retrieved=2026-06-06 | primary=False | relevance=0.80 | datapoint=True\n- Consumer sentiment declined to a level of 52.9 in December [2025], near a record low, despite continued spending and a stable economy.\n\n[7] thecreditbalance.com | https://thecreditbalance.com/macro_updates/michigan-consumer-sentiment-index/ | retrieved=2026-06-06 | primary=False | relevance=0.80 | datapoint=True\n- On 6th Feb 2026, the Index of Consumer Sentiment was 57.3 (Expectations 56.4).\n- On 9th Jan 2026, the Index of Consumer Sentiment was 60.5 (Expectations 53.5).\n- On 16th May 2025, the Index of Consumer Sentiment was 55.5 (Expectations 55.0).\n\n[8] www.sca.isr.umich.edu | https://www.sca.isr.umich.edu/ | retrieved=2026-06-06 | primary=True | relevance=0.60 | datapoint=True\n- Consumers are worried that inflation will increase and spread beyond fuel prices, even in the long run.\n- Year-ahead inflation expectations increased from 4.7% last month to 4.8% this month.\n- The current year-ahead inflation expectation reading substantially exceeds the 3.4% reading seen in February 2026 prior to the start of the Iran conflict.\n- The current year-ahead inflation expectation reading substantially exceeds all 2024 readings.\n- Sentiment of Democrats was little changed from last month.\n\n[9] fred.stlouisfed.org | https://fred.stlouisfed.org/series/UMCSENT | retrieved=2026-06-06 | primary=False | relevance=0.60 | datapoint=False\n- The document provides an index of the results of the University of Michigan's monthly Survey of Consumers.\n- This index is used to estimate future spending and saving.\n- The data series is named UMCSENT.\n- Historical data prior to January 1978 is available under UMCSENT1.\n- The data is copyrighted and requires citation.\n- The data is monthly and not seasonally adjusted.\n- The data pertains to the United States of America.\n\n[10] www.fxstreet.com | https://www.fxstreet.com/economic-calendar/event/608ffc81-99e8-4b1c-b673-633100761034 | retrieved=2026-06-06 | primary=False | relevance=0.60 | datapoint=False\n- The Michigan Consumer Sentiment Index is released monthly by the University of Michigan.\n- The index is a survey gauging sentiment among consumers.\n\n[11] www.stonex.com | https://www.stonex.com/en/financial-glossary/us-gdp-growth/ | retrieved=2026-06-06 | primary=False | relevance=0.60 | datapoint=True\n- The Michigan Consumer Sentiment Index (MCSI) is a monthly survey published by the University of Michigan.\n- The MCSI measures US consumer attitudes towards personal finances, business conditions, and economic activity.\n- The MCSI was created in 1946 by Dr. George Katona at the University of Michigan.\n- The index transitioned from phone interviews to web surveys to capture younger consumers' sentiment.\n- The University of Michigan evolved the index's methodology in 2024.\n- From April to July 2024, data collection shifted from 600 phone interviews per month to a target sample size of 900-1000 \n\n[12] morningconsult.com | https://morningconsult.com/articles/why-michigan-is-wrong-consumer-sentiment-declined-in-january | retrieved=2026-06-06 | primary=False | relevance=0.60 | datapoint=True\n- The University of Michigan data wrongly represents the state of U.S. consumer sentiment.\n- The University of Michigan ICS released on January 23rd claims that US Consumer Sentiment reached a five-month high.\n- From December 16 to January 19, Michigan conducted only 900 to 1,000 interviews and took an additional 4 days to report the data publicly.\n- UMich's transition to online surveys breaks its time series, challenging interpretation.\n- Consumer Sentiment Falls As Gas Prices Spike — But Expectations Remain Anchored (March 2026).\n\n---\n\n## Top Evidence\n\n---\n\n- E1 | tradingeconomics.com | 2026-06-06 | primary=False | relevance=1.0 | bearing=High-directness status signal | snippet_hash=157ed29178c7aa4e | - The University of Michigan’s Consumer Sentiment Index decreased to 44.80 points in May 2026.\n- The May 2026 Consumer Sentiment Index was r\n- E2 | www.advisorperspectives.com | 2026-06-06 | primary=False | relevance=1.0 | bearing=High-directness status signal | snippet_hash=a42ac0e8cd276818 | - The final May reading for the University of Michigan Consumer Sentiment Index came in at 44.8.\n- The May 2026 reading marks a 5-point drop\n- E3 | cryptobriefing.com | 2026-06-06 | primary=False | relevance=1.0 | bearing=High-directness status signal | snippet_hash=bc8b9f399f3d24ae | - The University of Michigan’s Consumer Sentiment Index plunged to 44.8 in its final May 2026 reading.\n- The final May figure was revised sh\n- E4 | www.fxblue.com | 2026-06-06 | primary=False | relevance=1.0 | bearing=High-directness status signal | snippet_hash=166d06ba1e5de827 | - The Michigan Consumer Sentiment Index is released monthly by the University of Michigan.\n- The survey publishes a preliminary, mid-month r\n- E5 | tradingeconomics.com | 2026-06-06 | primary=False | relevance=1.0 | bearing=High-directness status signal | snippet_hash=2c73d0c896d2b7db | - The University of Michigan’s Consumer Sentiment Index plunged to a record low of 44.8 in May 2026, revised down from a preliminary 48.2.\n-\n- E6 | www.cattlerange.com | 2026-06-06 | primary=False | relevance=0.8 | bearing=High-directness status signal | snippet_hash=acff690e52573812 | - Consumer sentiment declined to a level of 52.9 in December [2025], near a record low, despite continued spending and a stable economy.\n- E7 | thecreditbalance.com | 2026-06-06 | primary=False | relevance=0.8 | bearing=High-directness status signal | snippet_hash=d42aaa6258163f12 | - On 6th Feb 2026, the Index of Consumer Sentiment was 57.3 (Expectations 56.4).\n- On 9th Jan 2026, the Index of Consumer Sentiment was 60.5\n- E8 | www.sca.isr.umich.edu | 2026-06-06 | primary=True | relevance=0.6 | bearing=Direct resolution source/mechanics | snippet_hash=9dbbd23b464c32d6 | - Consumers are worried that inflation will increase and spread beyond fuel prices, even in the long run.\n- Year-ahead inflation expectation\n\n---\n\n## Aggregate\n\n---\n\n- p_raw=0.4500\n- p_calibrated=0.4500\n- dispersion=0.2052\n- confidence=low\n- gate_action=publish\n- gate_components: spec=0.900, temporal=1.000, evidence=0.875, agreement=0.000\n- parsing_failure_rate=0.000\n\n\n---\n\n## Red-Team Critique\n\n---\n\nHere's an adversarial review of the forecast:\n\n**1. TIMELINE CONFUSION**\n*   **Critique:** The reasoning states, \"The June 2026 reading should resolve when the University of Michigan posts the June 2026 consumer sentiment figure... the first likely resolution point is the preliminary June release in mid-June 2026; if that were unavailable, the final late-June release would control.\" This is correct for the *June 2026* number. However, the resolution criteria explicitly states \"greater than 44.8 for June 2026.\" The 44.8 is identified in the reasoning as the *final May reading*. The question asks if June 2026 will be greater than *it was for May 2026*. The resolution criteria *replaces* \"it was for May 2026\" with the specific number 44.8. This is a potential point of confusion or misinterpretation. While the forecaster correctly identifies 44.8 as the final May reading, the phrasing of the resolution criteria could lead someone to think 44.8 is a *target* rather than the *May 2026 value*. This isn't a timeline confusion *per se*, but a clarity issue related to the reference point.\n*   **Verdict:** Minor clarity issue, but the forecaster seems to understand it. No significant timeline confusion.\n\n**2. BASE RATE NEGLECT**\n*   **Critique:** The forecaster explicitly states, \"I don’t have a reliable exact historical base rate for 'June UMich sentiment > May UMich sentiment,' so I’m not asserting a precise historical frequency here.\" This is a direct acknowledgment of the lack of a specific base rate for the *directional change* between consecutive months. However, the forecaster *does* provide an \"OUTSIDE_VIEW: 50%,\" which is a reasonable default for a binary outcome when no specific directional bias is known. The forecaster also notes that \"Extreme lows often see some rebound,\" which is a form of base rate thinking (regression to the mean) applied to the *level* of the sentiment, rather than the month-over-month change.\n*   **Verdict:** Acknowledged and partially addressed. Not a strong case of neglect, as the 50% outside view acts as a proxy.\n\n**3. SINGLE-SOURCE FRAGILITY**\n*   **Critique:** The resolution criteria relies solely on \"the University of Michigan's reported Index of Consumer Sentiment, expected to be located [here](http://www.sca.isr.umich.edu/).\" This is inherently a single-source question. If the University of Michigan stopped publishing the index, or if the website became permanently unavailable, the question would be unresolvable.\n*   **Verdict:** This is a clear case of single-source fragility. While the source is highly reputable and unlikely to disappear, the forecast *is* entirely dependent on it. This is an inherent characteristic of the question design, not necessarily a flaw in the *forecasting process* itself, but it's a risk factor for resolution.\n\n**4. RESOLUTION MISREAD**\n*   **Critique:** The forecaster explicitly addresses potential misreads: \"The question is **not** whether June beats the **preliminary May reading of 48.2**. It only needs to be **greater than the final May reading of 44.8**. Also, **preliminary June data is enough** to resolve the question.\" This demonstrates a clear understanding of the resolution criteria and potential pitfalls. The criteria itself is very specific (\"greater than 44.8 for June 2026. Less than or equal to that amount resolves the question as No.\").\n*   **Verdict:** No resolution misread. The forecaster has clearly understood and articulated the criteria.\n\n**5. MISSING PATHWAYS**\n*   **Critique:**\n    *   **YES scenario:** \"Gasoline prices ease, the Iran/Hormuz-related supply shock calms, and consumers feel slightly less pressure on everyday costs.\" This is a plausible pathway.\n    *   **NO scenario:** \"Gas prices stay elevated or rise further, inflation worries persist, and consumers remain pessimistic about personal finances and the broader economy.\" This is also a plausible pathway.\n    *   **Missing:** The reasoning heavily focuses on gasoline prices and geopolitical events. While these are significant, other factors can influence consumer sentiment. For example:\n        *   **Stock market performance:** A significant rally or crash could impact sentiment, especially among wealthier consumers.\n        *   **Interest rate changes/Fed policy:** Expectations or actual changes in interest rates could affect borrowing costs and economic outlook.\n        *   **Employment data:** Unexpectedly strong or weak jobs reports could shift sentiment.\n        *   **Political events/election cycle:** Major domestic political developments could influence consumer confidence.\n        *   **Other inflation components:** While gas is highlighted, food prices, housing costs, etc., also play a role.\n        *   **Consumer debt levels:** Rising debt or defaults could dampen sentiment.\n        *   **Psychological factors/media narrative:** Sometimes sentiment shifts due to a general mood or media focus, even without a direct economic trigger.\n    *   The forecast acknowledges that \"May was a record low,\" and \"Extreme lows often see some rebound.\" This is a strong argument for YES, but the *mechanisms* for that rebound beyond just gas prices easing are not fully explored.\n*   **Verdict:** There are several plausible economic and psychological pathways that\n\n---\n\n## Claim Audit\n\n---\n\n{'total_claims': 12, 'evidence_backed': 11, 'assumption': 1, 'hinge_claims': [{'claim': 'The May 2026 University of Michigan Consumer Sentiment number was 44.8.', 'status': 'evidence_backed', 'type': 'hinge'}, {'claim': '44.8 was a record low for the University of Michigan Consumer Sentiment Index.', 'status': 'evidence_backed', 'type': 'hinge'}, {'claim': 'The May 2026 sentiment drop was driven by high gasoline prices and geopolitical disruption.', 'status': 'evidence_backed', 'type': 'hinge'}, {'claim': 'Gasoline prices and geopolitical disruption may still be present in June 2026.', 'status': 'evidence_backed', 'type': 'hinge'}, {'claim': 'Easing gasoline prices and calming geopolitical supply shocks would reduce consumer pressure.', 'status': 'evidence_backed', 'type': 'hinge'}], 'assumptions_note': '', 'items': [{'claim': '(b) **Status quo outcome:** If nothing materially changes between now and the June survey window, sentiment probably stays in the **mid-40s**, with a meaningful chance of remaining **at or below 44.8** because May was a record low and the main negative driver—', 'status': 'evidence_backed', 'type': 'numeric'}, {'claim': 'That would be enough for June sentiment to tick up even modestly above **44.8**.', 'status': 'evidence_backed', 'type': 'numeric'}, {'claim': 'June sentiment then matches or undercuts May’s **44.8**.', 'status': 'evidence_backed', 'type': 'numeric'}, {'claim': '(f) **Strongest evidence for YES / NO:** - **Toward YES:** June only needs to beat a very low bar: **44.8**, which was a record low.', 'status': 'evidence_backed', 'type': 'numeric'}, {'claim': '(g) **Possible misread / narrowing:** The question is **not** whether June beats the **preliminary May reading of 48.2**.', 'status': 'evidence_backed', 'type': 'numeric'}, {'claim': 'It only needs to be **greater than the final May reading of 44.8**.', 'status': 'evidence_backed', 'type': 'numeric'}, {'claim': 'BASE_RATE: none found OUTSIDE_VIEW: 50% Probability: 56%', 'status': 'assumption', 'type': 'numeric'}, {'claim': 'The May 2026 University of Michigan Consumer Sentiment number was 44.8.', 'status': 'evidence_backed', 'type': 'hinge'}, {'claim': '44.8 was a record low for the University of Michigan Consumer Sentiment Index.', 'status': 'evidence_backed', 'type': 'hinge'}, {'claim': 'The May 2026 sentiment drop was driven by high gasoline prices and geopolitical disruption.', 'status': 'evidence_backed', 'type': 'hinge'}, {'claim': 'Gasoline prices and geopolitical disruption may still be present in June 2026.', 'status': 'evidence_backed', 'type': 'hinge'}, {'claim': 'Easing gasoline prices and calming geopolitical supply shocks would reduce consumer pressure.', 'status': 'evidence_backed', 'type': 'hinge'}]}\n\n---\n\n## Signposts\n\n---\n\n{'raw': 'SIGNPOST: A significant de-escalation of geopolitical tensions in the Middle East (e.g., a lasting ceasefire in a major conflict, a diplomatic resolution to a regional dispute) leading to a sustained drop in crude oil prices.\\nDIRECTION: up\\nMAGNITUDE: +20pp\\n\\nSIGNPOST: US national average gasoline prices fall by more than $0.50 per gallon between May and mid-June 2026, as reported by AAA or EIA.\\nDIRECTION: up\\nMAGNITUDE: +15pp\\n\\nSIGNPOST: The US Consumer Price Index (CPI) report for May 2026 (released in June 2026) shows a month-over-month decline in core inflation (excluding food and energy) for the first time in over a year.\\nDIRECTION: up\\nMAGNITUDE: +15pp\\n\\nSIGNPOST: A major new conflict or significant escalation of existing conflicts in the Middle East, directly impacting oil production or shipping lanes, causing crude oil prices to surge by over 15% in a short period.\\nDIRECTION: down\\nMAGNITUDE: -20pp\\n\\nSIGNPOST: US national average gasoline prices rise by more than $0.50 per gallon between May and mid-June 2026, as reported by AAA or EIA.\\nDIRECTION: down\\nMAGNITUDE: -15pp', 'signposts': [{'event': 'A significant de-escalation of geopolitical tensions in the Middle East (e.g., a lasting ceasefire in a major conflict, a diplomatic resolution to a regional dispute) leading to a sustained drop in crude oil prices.', 'direction': 'up', 'magnitude': '+20pp'}, {'event': 'US national average gasoline prices fall by more than $0.50 per gallon between May and mid-June 2026, as reported by AAA or EIA.', 'direction': 'up', 'magnitude': '+15pp'}, {'event': 'The US Consumer Price Index (CPI) report for May 2026 (released in June 2026) shows a month-over-month decline in core inflation (excluding food and energy) for the first time in over a year.', 'direction': 'up', 'magnitude': '+15pp'}, {'event': 'A major new conflict or significant escalation of existing conflicts in the Middle East, directly impacting oil production or shipping lanes, causing crude oil prices to surge by over 15% in a short period.', 'direction': 'down', 'magnitude': '-20pp'}, {'event': 'US national average gasoline prices rise by more than $0.50 per gallon between May and mid-June 2026, as reported by AAA or EIA.', 'direction': 'down', 'magnitude': '-15pp'}]}\n\n---\n\n## DeepSeek V4 Pro (35.0%)\n\n(a) **How much time remains until resolution? What is the exact deadline?**  \nThe June 2026 preliminary reading is typically released around the second Friday of the month, which would be June 12, 2026. That is only about 6 days from today (June 6, 2026). The final reading would come at the end of June, but the resolution criteria say preliminary results are sufficient. So the effective deadline is roughly June 12, 2026.\n\n(b) **What is the status quo outcome - what happens if nothing changes between now and the deadline?**  \nThe status quo is the May 2026 final reading of 44.8, which is an all-time low. The question asks if June will be *greater* than 44.8. If nothing changes—meaning sentiment stays at this rock-bottom level—the June number would be ≤44.8, and the question resolves **No**. The status quo therefore leans No.\n\n(c) **Briefly describe a concrete scenario that leads to YES.**  \nA ceasefire or de-escalation in the Iran conflict is announced, easing Strait of Hormuz supply fears. Gas prices stabilize or drop slightly in early June. The preliminary June sentiment reading ticks up to, say, 45.5, as consumers feel a small sense of relief. The question resolves Yes.\n\n(d) **Briefly describe a concrete scenario that leads to NO.**  \nThe conflict continues or escalates, gas prices rise further through early June, and inflation expectations keep climbing. The preliminary June reading comes in at 44.8 or lower (e.g., 44.0), extending the record low. The question resolves No.\n\n(e) **What is the base rate for events like this? If unknown, state that explicitly.**  \nThe base rate is the historical frequency of month-over-month increases in the Michigan Consumer Sentiment Index when the index is at or near an all-time low. In the past 50+ years, sentiment has rarely been this low (only comparable to the June 2022 trough of 50.0 and the 2008-2009 financial crisis lows around 55-57). At extreme lows, the index sometimes bounces the next month, but not always—especially when the driving factor (gas prices, geopolitical shock) is still active. A precise base rate is hard to pin down given how rare this territory is, but historically, rebounds from record lows are not automatic.\n\n(f) **What is the single strongest piece of evidence pushing toward YES? Toward NO?**  \n- **Toward YES:** The preliminary May reading was 48.2 before being revised sharply down to 44.8. This suggests the final number can be volatile and that the preliminary June reading might initially come in higher, even if later revised down. Also, sentiment is so low that any marginal good news could cause a mechanical bounce.  \n- **Toward NO:** The background article and data make clear the decline is driven by a concrete, worsening catalyst—rising gas prices from the Iran-related Strait of Hormuz disruption. There is no sign of that catalyst abating by early June, and inflation expectations are still rising. The trend is strongly downward (three straight monthly declines), and the final May number was revised *down*, not up, showing deteriorating conditions through the month.\n\n(g) **Is there anything in the resolution criteria that is easy to misread or that narrows/broadens the question from what you'd naively expect?**  \nThe resolution criteria explicitly say *preliminary results are sufficient* and will use whatever number is posted in the specified PDF labeled June 2026. This means we don't have to wait for the final June number; the preliminary mid-month release will resolve it. This is important because preliminary numbers can differ from final numbers, and the question could resolve before we know the full month's story.\n\n**BASE_RATE:** At extreme sentiment troughs (e.g., 2008, 2022), the index has sometimes rebounded the next month but not always; no clear single base rate exists given the rarity of sub-45 readings.  \n**OUTSIDE_VIEW:** 35%  \n\n**Probability: 28%**\n\n---\n\n## GPT-5.4 Mini (50.0%)\n\n(a) **Time remaining / deadline:**  \nThe June 2026 reading should resolve when the University of Michigan posts the **June 2026 consumer sentiment figure** on its survey site. Since the survey releases a **preliminary mid-month print** and a **final end-of-month print**, the first likely resolution point is the **preliminary June release in mid-June 2026**; if that were unavailable, the **final late-June release** would control.\n\n(b) **Status quo outcome:**  \nIf nothing materially changes between now and the June survey window, sentiment probably stays in the **mid-40s**, with a meaningful chance of remaining **at or below 44.8** because May was a record low and the main negative driver—higher gasoline prices tied to Middle East disruptions—was still active.\n\n(c) **Concrete YES scenario:**  \nGasoline prices ease, the Iran/Hormuz-related supply shock calms, and consumers feel slightly less pressure on everyday costs. That would be enough for June sentiment to tick up even modestly above **44.8**.\n\n(d) **Concrete NO scenario:**  \nGas prices stay elevated or rise further, inflation worries persist, and consumers remain pessimistic about personal finances and the broader economy. June sentiment then matches or undercuts May’s **44.8**.\n\n(e) **Base rate:**  \nI don’t have a reliable exact historical base rate for “June UMich sentiment > May UMich sentiment,” so I’m not asserting a precise historical frequency here.\n\n(f) **Strongest evidence for YES / NO:**  \n- **Toward YES:** June only needs to beat a very low bar: **44.8**, which was a record low. Extreme lows often see some rebound.  \n- **Toward NO:** The May drop was driven by a continuing, concrete shock—**high gasoline prices and geopolitical disruption**—which may still be present in June.\n\n(g) **Possible misread / narrowing:**  \nThe question is **not** whether June beats the **preliminary May reading of 48.2**. It only needs to be **greater than the final May reading of 44.8**. Also, **preliminary June data is enough** to resolve the question.\n\nBASE_RATE: none found  \nOUTSIDE_VIEW: 50%\n\nProbability: 56%\n\n---\n\n## Kimi K2.6 (50.0%)\n\n(a) Time remaining: Today is June 6, 2026. The University of Michigan’s preliminary June reading—which is explicitly sufficient to resolve the question—is typically released on the second Friday of the month, so roughly **6 days** remain until the preliminary data is posted (around June 12, 2026). The final print would follow near month-end (June 26), but is not required.\n\n(b) Status quo outcome: If nothing changes, the Iran conflict and Hormuz supply disruptions continue, gasoline prices keep rising, and consumers remain fixated on cost-of-living concerns. Under that status quo, sentiment stays at or below the May final of **44.8**, producing a **No** resolution (the index must be **strictly greater than** 44.8).\n\n(c) YES scenario: A sudden ceasefire or reopening of the Strait of Hormuz is announced during the first week of June, crude and gasoline prices drop sharply, and the early-June survey captures a relief-driven rebound. The preliminary June reading prints at **46.0 or higher**.\n\n(d) NO scenario: Hormuz shipping constraints persist through early June, the national average gas price rises further, and the early-June survey respondents continue to cite fuel costs and tariffs. The preliminary June reading falls to **42–44**, or ticks only slightly upward but remains at or below **44.8**.\n\n(e) Base rate: **None found** for the precise reference class of “record-low readings during an ongoing geopolitical oil-supply shock.” Unconditional month-over-month increases in the University of Michigan Consumer Sentiment Index occur roughly 50% of the time historically, but the frequency is lower when the prior three months have all declined and an acute exogenous shock is still unfolding.\n\n(f) Strongest evidence:\n- **Toward YES:** Sentiment indices often exhibit short-term mean reversion after extreme capitulation moves; the May final plunged 5 full points from April and was revised down 3.4 points from the preliminary, suggesting a potential “selling climax” that could produce a technical bounce.\n- **Toward NO:** The underlying driver (Hormuz disruptions and the resulting gasoline-price spike) is **active and unresolved as of June 6**, with nearly 40% of respondents already citing gas prices in May; absent a visible positive catalyst, pessimistic momentum should dominate the early-June survey.\n\n(g) Resolution nuance: The threshold is **strictly greater than 44.8**; a print of exactly 44.8 resolves **No**, which is narrower than a naive “higher than May” reading might suggest. Additionally, because **preliminary results are sufficient**, the question can resolve as soon as the mid-June preliminary is posted—forecasters should not assume they are waiting for the final month-end number.\n\nBASE_RATE: None found for the exact reference class of record-low readings during an ongoing geopolitical oil supply shock; unconditional month-over-month increases in the University of Michigan Consumer Sentiment Index occur roughly 50% of the time historically.\nOUTSIDE_VIEW: 40%\n\nProbability: 25%\n\n---\n\n## Gemini 3 Flash (55.0%)\n\nThe question asks whether the University of Michigan Consumer Sentiment Index for June 2026 will be greater than 44.8 (the final reading for May 2026).\n\n(a) **Time remaining:** Today is June 6, 2026. The preliminary June reading is typically released around the second Friday of the month (likely June 12, 2026), and the final reading at the end of the month. Resolution occurs once the June data is published.\n(b) **Status quo:** The index is at an all-time low of 44.8 after three consecutive months of decline. The primary driver is a military conflict in Iran and supply disruptions in the Strait of Hormuz, which have spiked gasoline prices.\n(c) **Scenario for YES:** A stabilization or slight retreat in gasoline prices, or a \"dead cat bounce\" from record-low sentiment levels, pushes the index to 45.0 or higher. Even a minor relief in geopolitical tensions or consumers becoming \"numb\" to the news could cause a slight uptick.\n(d) **Scenario for NO:** Continued military escalation in the Middle East leads to further oil supply shocks, pushing gas prices even higher. If the Strait of Hormuz remains restricted, the \"cost of living concerns\" cited in May will intensify, driving the index to a new record low (e.g., 42.0).\n(e) **Base rate:** Historically, the index rarely stays at record lows for many consecutive months without some mean reversion, but during periods of active geopolitical/energy shocks (like 1979-1980 or 2008), it can trend downward for 4-6 months.\n(f) **Strongest evidence:** For **YES**, the index is at its historical floor; statistically, a bounce is likely after a 5-point drop. For **NO**, the fundamental cause (the Iran conflict and Strait of Hormuz disruption) is active and worsening, as evidenced by the May preliminary-to-final downward revision (48.2 to 44.8).\n(g) **Resolution criteria:** The threshold is exactly 44.8. Preliminary results are sufficient. This means if the mid-June preliminary number is 44.9, the question resolves YES immediately, even if the final number drops later.\n\nThe current situation is dominated by a specific, ongoing supply-side shock. In May, sentiment started at 48.2 and crashed to 44.8 as the month progressed, suggesting the negative momentum was accelerating into June. Unless there is news of a ceasefire or a reopening of shipping lanes, the inflationary pressure on gasoline—the most visible price for consumers—will likely keep sentiment suppressed or drive it lower.\n\nBASE_RATE: In the history of the UMCSENT index, month-over-month increases occur approximately 50-55% of the time, but this drops significantly during active energy price shocks.\nOUTSIDE_VIEW: 52%\n\nProbability: 38%\n\n---\n\n## Claude Haiku 4.5 (4.8%)\n\n# Analysis\n\n## (a) Time Remaining Until Resolution\n\n**Today's date:** June 6, 2026\n**Resolution deadline:** June 30, 2026 (end of June when final June 2026 data is released)\n**Time remaining:** ~24 days\n\nThe University of Michigan releases preliminary readings mid-month and final readings at month-end. The June 2026 preliminary reading would typically be released around June 12, 2026, with the final reading around June 26, 2026.\n\n## (b) Status Quo Outcome\n\nIf nothing changes, sentiment would likely remain depressed. The underlying drivers (Strait of Hormuz disruptions, elevated gas prices, tariff concerns, elevated inflation expectations at 4.8%) persist. The trend has been three consecutive months of decline (March→April→May). Without a significant shock improvement, the status quo would be a June reading at or below May's 44.8.\n\n## (c) YES Scenario (June > 44.8)\n\n- **Geopolitical de-escalation:** U.S. military campaign in Iran winds down or ceases, reducing supply disruptions in the Strait of Hormuz\n- **Gas price collapse:** Oil prices fall sharply (e.g., from supply restoration or demand destruction), bringing gasoline prices down meaningfully\n- **Inflation expectations reset lower:** Consumers' year-ahead inflation expectations drop from 4.8% back toward 3.4% (pre-conflict level)\n- **Tariff relief:** Announced rollback or pause of tariffs that ~30% of respondents cited as a concern\n- **Positive economic news:** Strong employment data, wage growth, or other positive indicators that shift sentiment\n\n## (d) NO Scenario (June ≤ 44.8)\n\n- **Continued geopolitical tension:** Iran conflict persists, supply disruptions continue\n- **Sticky high gas prices:** Oil prices remain elevated or rise further\n- **Inflation expectations remain elevated:** Consumers maintain or increase their 4.8% year-ahead inflation expectations\n- **Tariff concerns persist:** No relief on tariff front\n- **Momentum of decline:** The three-month downtrend continues into June as a fourth consecutive decline\n\n## (e) Base Rate\n\n**Reference class:** Month-to-month changes in the University of Michigan Consumer Sentiment Index\n\nExamining the data provided:\n- April 2026: 49.8\n- May 2026: 44.8 (down 5.0 points, -10%)\n- March 2026: ~49.8 (implied from \"April's final reading of 49.8 had set a prior low\")\n- February 2026: 57.3\n- January 2026: 60.5\n\nThe index has shown three consecutive monthly declines. Historically, the index does experience month-to-month volatility, but reversals after three consecutive declines are not uncommon. However, given the severity of the current shock (record low, geopolitical crisis ongoing), the base rate for immediate reversal is modest.\n\n**Estimated base rate:** In normal conditions, roughly 45-50% of months see increases from the prior month. However, after three consecutive declines to a record low amid an ongoing crisis, the base rate for reversal in the very next month is lower, perhaps 30-40%.\n\n## (f) Strongest Evidence\n\n**Toward YES:**\n- The preliminary May reading (48.2) was revised down sharply to 44.8, suggesting the worst may have been captured and some mean reversion could occur\n- Historical precedent: After the June 2022 low (~45), there was recovery in subsequent months\n- Geopolitical situations can resolve quickly; if Iran tensions ease even slightly, gas prices could fall rapidly\n\n**Toward NO:**\n- Three consecutive months of decline with a record low suggests a strong, persistent headwind\n- The underlying drivers (Strait of Hormuz disruptions, inflation expectations at 4.8%) remain in place as of the research cutoff (June 6)\n- Director Joanne Hsu's commentary suggests consumers feel \"besieged\" by multiple pressures (gas, tariffs, inflation)\n- Only 24 days remain; major geopolitical/economic shifts are possible but not highly probable in such a short window\n- The May reading was already a downward revision, suggesting the survey captured deterioration; June would need a reversal catalyst\n\n## (g) Resolution Criteria Nuance\n\nThe resolution threshold is **44.8** (May's final reading). The question asks if June > 44.8, meaning June must be **strictly greater than** 44.8 to resolve YES. A reading of exactly 44.8 or lower resolves NO.\n\nThis is a tight threshold—only a modest improvement (e.g., 45.0 or higher) is needed for YES. However, the phrasing \"greater than it was for May 2026\" makes clear this is a month-over-month comparison, not an absolute threshold.\n\n---\n\n# Reasoning\n\n**Key considerations:**\n\n1. **Momentum and trend:** Three consecutive declines to a record low is a strong downtrend. Reversals after such patterns are possible but not the default expectation.\n\n2. **Underlying drivers persist:** As of June 6, the Strait of Hormuz disruptions, elevated gas prices, and inflation expectations remain elevated. No major resolution of these issues has been reported.\n\n3. **Time window:** Only 24 days remain. While geopolitical situations can shift quickly, the probability of a major positive shock (de-escalation, gas price collapse) in this window is moderate at best.\n\n4. **Historical analogy:** The June 2022 low (~45) was followed by recovery, but that took several months. Immediate reversal (one month later) is less common.\n\n5. **Mean reversion tendency:** After extreme lows, some reversion is typical, but not guaranteed, especially when the underlying shock persists.\n\n6. **Threshold:** The bar is 44.8 (May's final). Even a small improvement (e.g., 45.0) would resolve YES. This is a modest hurdle.\n\n**Probability assessment:**\n\n- **Base rate (outside view):** ~35% for month-over-month improvement after three consecutive declines to a record low amid an ongoing crisis\n- **Case-specific adjustments:**\n  - Slight upward adjustment (+5%) for the possibility of rapid geopolitical de-escalation or gas price relief\n  - Slight downward adjustment (-5%) for the persistence of underlying drivers and the short time window\n  - Net adjustment: ~0%\n\n**Final estimate:** 35-40% probability\n\nGiven the strong downtrend, persistent headwinds, and short time window, but acknowledging the modest threshold and possibility of rapid shifts in geopolitical/commodity markets, I estimate the probability at the lower end of this range.\n\n---\n\nBASE_RATE: Month-over-month improvement in the University of Michigan Consumer Sentiment Index after three consecutive declines to a record low: approximately 30-35% (based on the pattern of mean reversion being slower than immediate reversal, especially amid ongoing crises).\n\nOUTSIDE_VIEW: 33% (assuming the current downtrend and underlying drivers persist without major new positive shocks in the next 24 days).\n\n**Probability: 36%**",
+  "gate_report": {
+    "action": "publish",
+    "confidence_class": "low",
+    "distinct_sources": 11,
+    "evidence_count": 12,
+    "evidence_sufficiency": 0.875,
+    "freshness_days": 0.0016784316087962963,
+    "gate_score": 0.7424944052415123,
+    "mean_relevance": 0.7999999999999999,
+    "model_agreement": 0.0,
+    "primary_sources": 1,
+    "publishable": true,
+    "reasons": [
+      "Model disagreement is high.",
+      "Gate action: publish."
+    ],
+    "spec_confidence": 0.9,
+    "temporal_relevance": 0.9999813508050411
+  },
+  "generated_at_utc": "2026-06-06T12:45:00.568663+00:00",
+  "individual_results": [
+    {
+      "config": {
+        "label": "DeepSeek V4 Pro",
+        "max_tokens": 10000,
+        "name": "deepseek/deepseek-v4-pro"
+      },
+      "forecast_run": {
+        "model": "deepseek/deepseek-v4-pro",
+        "probability": 0.35,
+        "reasoning": "(a) **How much time remains until resolution? What is the exact deadline?**  \nThe June 2026 preliminary reading is typically released around the second Friday of the month, which would be June 12, 2026. That is only about 6 days from today (June 6, 2026). The final reading would come at the end of June, but the resolution criteria say preliminary results are sufficient. So the effective deadline is roughly June 12, 2026.\n\n(b) **What is the status quo outcome - what happens if nothing changes between now and the deadline?**  \nThe status quo is the May 2026 final reading of 44.8, which is an all-time low. The question asks if June will be *greater* than 44.8. If nothing changes—meaning sentiment stays at this rock-bottom level—the June number would be ≤44.8, and the question resolves **No**. The status quo therefore leans No.\n\n(c) **Briefly describe a concrete scenario that leads to YES.**  \nA ceasefire or de-escalation in the Iran conflict is announced, easing Strait of Hormuz supply fears. Gas prices stabilize or drop slightly in early June. The preliminary June sentiment reading ticks up to, say, 45.5, as consumers feel a small sense of relief. The question resolves Yes.\n\n(d) **Briefly describe a concrete scenario that leads to NO.**  \nThe conflict continues or escalates, gas prices rise further through early June, and inflation expectations keep climbing. The preliminary June reading comes in at 44.8 or lower (e.g., 44.0), extending the record low. The question resolves No.\n\n(e) **What is the base rate for events like this? If unknown, state that explicitly.**  \nThe base rate is the historical frequency of month-over-month increases in the Michigan Consumer Sentiment Index when the index is at or near an all-time low. In the past 50+ years, sentiment has rarely been this low (only comparable to the June 2022 trough of 50.0 and the 2008-2009 financial crisis lows around 55-57). At extreme lows, the index sometimes bounces the next month, but not always—especially when the driving factor (gas prices, geopolitical shock) is still active. A precise base rate is hard to pin down given how rare this territory is, but historically, rebounds from record lows are not automatic.\n\n(f) **What is the single strongest piece of evidence pushing toward YES? Toward NO?**  \n- **Toward YES:** The preliminary May reading was 48.2 before being revised sharply down to 44.8. This suggests the final number can be volatile and that the preliminary June reading might initially come in higher, even if later revised down. Also, sentiment is so low that any marginal good news could cause a mechanical bounce.  \n- **Toward NO:** The background article and data make clear the decline is driven by a concrete, worsening catalyst—rising gas prices from the Iran-related Strait of Hormuz disruption. There is no sign of that catalyst abating by early June, and inflation expectations are still rising. The trend is strongly downward (three straight monthly declines), and the final May number was revised *down*, not up, showing deteriorating conditions through the month.\n\n(g) **Is there anything in the resolution criteria that is easy to misread or that narrows/broadens the question from what you'd naively expect?**  \nThe resolution criteria explicitly say *preliminary results are sufficient* and will use whatever number is posted in the specified PDF labeled June 2026. This means we don't have to wait for the final June number; the preliminary mid-month release will resolve it. This is important because preliminary numbers can differ from final numbers, and the question could resolve before we know the full month's story.\n\n**BASE_RATE:** At extreme sentiment troughs (e.g., 2008, 2022), the index has sometimes rebounded the next month but not always; no clear single base rate exists given the rarity of sub-45 readings.  \n**OUTSIDE_VIEW:** 35%  \n\n**Probability: 28%**",
+        "token_usage": 3642
+      },
+      "result": {
+        "diagnostics": {
+          "base_rate_text": "** At extreme sentiment troughs (e.g., 2008, 2022), the index has sometimes rebounded the next month but not always; no clear single base rate exists given the rarity of sub-45 readings.",
+          "mode": "lean_forecast_prompt",
+          "numeric_unit_expected": "",
+          "outside_view_probability": null,
+          "parse_success": true,
+          "parsed_mc_probabilities": null,
+          "parsed_numeric_percentiles": null,
+          "question_type": "binary",
+          "spec_reason": "The model answer aligns perfectly with the canonical spec, addressing all requested points accurately and comprehensively.",
+          "spec_status": "OK",
+          "usage_label": "forecast_run:20260606_124027:deepseek_v4_pro:1"
+        },
+        "explanation": "(a) **How much time remains until resolution? What is the exact deadline?**  \nThe June 2026 preliminary reading is typically released around the second Friday of the month, which would be June 12, 2026. That is only about 6 days from today (June 6, 2026). The final reading would come at the end of June, but the resolution criteria say preliminary results are sufficient. So the effective deadline is roughly June 12, 2026.\n\n(b) **What is the status quo outcome - what happens if nothing changes between now and the deadline?**  \nThe status quo is the May 2026 final reading of 44.8, which is an all-time low. The question asks if June will be *greater* than 44.8. If nothing changes—meaning sentiment stays at this rock-bottom level—the June number would be ≤44.8, and the question resolves **No**. The status quo therefore leans No.\n\n(c) **Briefly describe a concrete scenario that leads to YES.**  \nA ceasefire or de-escalation in the Iran conflict is announced, easing Strait of Hormuz supply fears. Gas prices stabilize or drop slightly in early June. The preliminary June sentiment reading ticks up to, say, 45.5, as consumers feel a small sense of relief. The question resolves Yes.\n\n(d) **Briefly describe a concrete scenario that leads to NO.**  \nThe conflict continues or escalates, gas prices rise further through early June, and inflation expectations keep climbing. The preliminary June reading comes in at 44.8 or lower (e.g., 44.0), extending the record low. The question resolves No.\n\n(e) **What is the base rate for events like this? If unknown, state that explicitly.**  \nThe base rate is the historical frequency of month-over-month increases in the Michigan Consumer Sentiment Index when the index is at or near an all-time low. In the past 50+ years, sentiment has rarely been this low (only comparable to the June 2022 trough of 50.0 and the 2008-2009 financial crisis lows around 55-57). At extreme lows, the index sometimes bounces the next month, but not always—especially when the driving factor (gas prices, geopolitical shock) is still active. A precise base rate is hard to pin down given how rare this territory is, but historically, rebounds from record lows are not automatic.\n\n(f) **What is the single strongest piece of evidence pushing toward YES? Toward NO?**  \n- **Toward YES:** The preliminary May reading was 48.2 before being revised sharply down to 44.8. This suggests the final number can be volatile and that the preliminary June reading might initially come in higher, even if later revised down. Also, sentiment is so low that any marginal good news could cause a mechanical bounce.  \n- **Toward NO:** The background article and data make clear the decline is driven by a concrete, worsening catalyst—rising gas prices from the Iran-related Strait of Hormuz disruption. There is no sign of that catalyst abating by early June, and inflation expectations are still rising. The trend is strongly downward (three straight monthly declines), and the final May number was revised *down*, not up, showing deteriorating conditions through the month.\n\n(g) **Is there anything in the resolution criteria that is easy to misread or that narrows/broadens the question from what you'd naively expect?**  \nThe resolution criteria explicitly say *preliminary results are sufficient* and will use whatever number is posted in the specified PDF labeled June 2026. This means we don't have to wait for the final June number; the preliminary mid-month release will resolve it. This is important because preliminary numbers can differ from final numbers, and the question could resolve before we know the full month's story.\n\n**BASE_RATE:** At extreme sentiment troughs (e.g., 2008, 2022), the index has sometimes rebounded the next month but not always; no clear single base rate exists given the rarity of sub-45 readings.  \n**OUTSIDE_VIEW:** 35%  \n\n**Probability: 28%**",
+        "probability": 0.35,
+        "risk_flags": [],
+        "search_count": 8,
+        "sources": [
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The University of Michigan’s Consumer Sentiment Index decreased to 44.80 points in May 2026.\n- The May 2026 Consumer Sentiment Index was revised down from a preliminary 48.2.\n- The May 2026 Consumer Sentiment Index marked the third straight monthly decline.\n",
+            "title": "United States Michigan Consumer Sentiment",
+            "url": "https://tradingeconomics.com/united-states/consumer-confidence"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The final May reading for the University of Michigan Consumer Sentiment Index came in at 44.8.\n- The May 2026 reading marks a 5-point drop from April 2026.\n- The May 2026 reading fell well below the month's preliminary estimate of 48.2.\n- Consumer sentiment ",
+            "title": "Consumer Sentiment Sinks to Record Low as Cost of Living Concerns Intensify - dshort - Advisor Perspectives",
+            "url": "https://www.advisorperspectives.com/dshort/updates/2026/05/22/consumer-sentiment-sinks-to-record-low-as-cost-of-living-concerns-intensify"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The University of Michigan’s Consumer Sentiment Index plunged to 44.8 in its final May 2026 reading.\n- The final May figure was revised sharply downward from a preliminary reading of 48.2.\n- April’s final reading of 49.8 had set a prior low just weeks earlie",
+            "title": "Michigan consumer sentiment index drops to all-time low of 44.8",
+            "url": "https://cryptobriefing.com/michigan-consumer-sentiment-all-time-low/"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The Michigan Consumer Sentiment Index is released monthly by the University of Michigan.\n- The survey publishes a preliminary, mid-month reading and a final print at the end of the month.\n- The final print for May 2026 (released May 22, 2026) was 44.8.\n- The",
+            "title": "FX Blue",
+            "url": "https://www.fxblue.com/calendar/item/608ffc81-99e8-4b1c-b673-633100761034/6f365940-a166-4c71-96a7-0d89437438af"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The University of Michigan’s Consumer Sentiment Index plunged to a record low of 44.8 in May 2026, revised down from a preliminary 48.2.\n- The University of Michigan’s Consumer Sentiment Index dropped to a record low of 48.2 in early May 2026, missing market",
+            "title": "United States Michigan Consumer Sentiment",
+            "url": "https://tradingeconomics.com/united-states/consumer-confidence"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- Consumer sentiment declined to a level of 52.9 in December [2025], near a record low, despite continued spending and a stable economy.",
+            "title": "University of Michigan Consumer Sentiment Survey near Record Low Cattle Range",
+            "url": "https://www.cattlerange.com/articles/2025/12/university-of-michigan-consumer-sentiment-survey-near-record-low/"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- On 6th Feb 2026, the Index of Consumer Sentiment was 57.3 (Expectations 56.4).\n- On 9th Jan 2026, the Index of Consumer Sentiment was 60.5 (Expectations 53.5).\n- On 16th May 2025, the Index of Consumer Sentiment was 55.5 (Expectations 55.0).",
+            "title": "Michigan Consumer Sentiment Index &#8211; The Credit Balance",
+            "url": "https://thecreditbalance.com/macro_updates/michigan-consumer-sentiment-index/"
+          },
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- Consumers are worried that inflation will increase and spread beyond fuel prices, even in the long run.\n- Year-ahead inflation expectations increased from 4.7% last month to 4.8% this month.\n- The current year-ahead inflation expectation reading substantiall",
+            "title": "Surveys of Consumers",
+            "url": "https://www.sca.isr.umich.edu/"
+          },
+          {
+            "date": "",
+            "quality": "Low",
+            "snippet": "- The document provides an index of the results of the University of Michigan's monthly Survey of Consumers.\n- This index is used to estimate future spending and saving.\n- The data series is named UMCSENT.\n- Historical data prior to January 1978 is available u",
+            "title": "University of Michigan: Consumer Sentiment (UMCSENT) | FRED | St. Louis Fed",
+            "url": "https://fred.stlouisfed.org/series/UMCSENT"
+          },
+          {
+            "date": "",
+            "quality": "Low",
+            "snippet": "- The Michigan Consumer Sentiment Index is released monthly by the University of Michigan.\n- The index is a survey gauging sentiment among consumers.",
+            "title": "Michigan Consumer Sentiment Index - United States - 2026 Calendar Forecast",
+            "url": "https://www.fxstreet.com/economic-calendar/event/608ffc81-99e8-4b1c-b673-633100761034"
+          },
+          {
+            "date": "",
+            "quality": "Low",
+            "snippet": "- The Michigan Consumer Sentiment Index (MCSI) is a monthly survey published by the University of Michigan.\n- The MCSI measures US consumer attitudes towards personal finances, business conditions, and economic activity.\n- The MCSI was created in 1946 by Dr. G",
+            "title": "Understanding the Michigan Consumer Sentiment Index | StoneX",
+            "url": "https://www.stonex.com/en/financial-glossary/us-gdp-growth/"
+          },
+          {
+            "date": "",
+            "quality": "Low",
+            "snippet": "- The University of Michigan data wrongly represents the state of U.S. consumer sentiment.\n- The University of Michigan ICS released on January 23rd claims that US Consumer Sentiment reached a five-month high.\n- From December 16 to January 19, Michigan conduct",
+            "title": "Why Michigan is Wrong, Consumer Sentiment Declined in January",
+            "url": "https://morningconsult.com/articles/why-michigan-is-wrong-consumer-sentiment-declined-in-january"
+          }
+        ],
+        "token_usage": {
+          "completion": 865,
+          "prompt": 2777,
+          "total": 3642
+        },
+        "warnings": []
+      }
+    },
+    {
+      "config": {
+        "label": "GPT-5.4 Mini",
+        "max_tokens": 9000,
+        "name": "openai/gpt-5.4-mini"
+      },
+      "forecast_run": {
+        "model": "openai/gpt-5.4-mini",
+        "probability": 0.5,
+        "reasoning": "(a) **Time remaining / deadline:**  \nThe June 2026 reading should resolve when the University of Michigan posts the **June 2026 consumer sentiment figure** on its survey site. Since the survey releases a **preliminary mid-month print** and a **final end-of-month print**, the first likely resolution point is the **preliminary June release in mid-June 2026**; if that were unavailable, the **final late-June release** would control.\n\n(b) **Status quo outcome:**  \nIf nothing materially changes between now and the June survey window, sentiment probably stays in the **mid-40s**, with a meaningful chance of remaining **at or below 44.8** because May was a record low and the main negative driver—higher gasoline prices tied to Middle East disruptions—was still active.\n\n(c) **Concrete YES scenario:**  \nGasoline prices ease, the Iran/Hormuz-related supply shock calms, and consumers feel slightly less pressure on everyday costs. That would be enough for June sentiment to tick up even modestly above **44.8**.\n\n(d) **Concrete NO scenario:**  \nGas prices stay elevated or rise further, inflation worries persist, and consumers remain pessimistic about personal finances and the broader economy. June sentiment then matches or undercuts May’s **44.8**.\n\n(e) **Base rate:**  \nI don’t have a reliable exact historical base rate for “June UMich sentiment > May UMich sentiment,” so I’m not asserting a precise historical frequency here.\n\n(f) **Strongest evidence for YES / NO:**  \n- **Toward YES:** June only needs to beat a very low bar: **44.8**, which was a record low. Extreme lows often see some rebound.  \n- **Toward NO:** The May drop was driven by a continuing, concrete shock—**high gasoline prices and geopolitical disruption**—which may still be present in June.\n\n(g) **Possible misread / narrowing:**  \nThe question is **not** whether June beats the **preliminary May reading of 48.2**. It only needs to be **greater than the final May reading of 44.8**. Also, **preliminary June data is enough** to resolve the question.\n\nBASE_RATE: none found  \nOUTSIDE_VIEW: 50%\n\nProbability: 56%",
+        "token_usage": 5501
+      },
+      "result": {
+        "diagnostics": {
+          "base_rate_text": "none found",
+          "mode": "lean_forecast_prompt",
+          "numeric_unit_expected": "",
+          "outside_view_probability": 0.5,
+          "parse_success": true,
+          "parsed_mc_probabilities": null,
+          "parsed_numeric_percentiles": null,
+          "question_type": "binary",
+          "spec_reason": "The model answer accurately reflects all aspects of the canonical spec, including the threshold, metric, and resolution window. It also correctly identifies the YES/NO conditions.",
+          "spec_status": "OK",
+          "usage_label": "forecast_run:20260606_124027:gpt-5.4_mini:1"
+        },
+        "explanation": "(a) **Time remaining / deadline:**  \nThe June 2026 reading should resolve when the University of Michigan posts the **June 2026 consumer sentiment figure** on its survey site. Since the survey releases a **preliminary mid-month print** and a **final end-of-month print**, the first likely resolution point is the **preliminary June release in mid-June 2026**; if that were unavailable, the **final late-June release** would control.\n\n(b) **Status quo outcome:**  \nIf nothing materially changes between now and the June survey window, sentiment probably stays in the **mid-40s**, with a meaningful chance of remaining **at or below 44.8** because May was a record low and the main negative driver—higher gasoline prices tied to Middle East disruptions—was still active.\n\n(c) **Concrete YES scenario:**  \nGasoline prices ease, the Iran/Hormuz-related supply shock calms, and consumers feel slightly less pressure on everyday costs. That would be enough for June sentiment to tick up even modestly above **44.8**.\n\n(d) **Concrete NO scenario:**  \nGas prices stay elevated or rise further, inflation worries persist, and consumers remain pessimistic about personal finances and the broader economy. June sentiment then matches or undercuts May’s **44.8**.\n\n(e) **Base rate:**  \nI don’t have a reliable exact historical base rate for “June UMich sentiment > May UMich sentiment,” so I’m not asserting a precise historical frequency here.\n\n(f) **Strongest evidence for YES / NO:**  \n- **Toward YES:** June only needs to beat a very low bar: **44.8**, which was a record low. Extreme lows often see some rebound.  \n- **Toward NO:** The May drop was driven by a continuing, concrete shock—**high gasoline prices and geopolitical disruption**—which may still be present in June.\n\n(g) **Possible misread / narrowing:**  \nThe question is **not** whether June beats the **preliminary May reading of 48.2**. It only needs to be **greater than the final May reading of 44.8**. Also, **preliminary June data is enough** to resolve the question.\n\nBASE_RATE: none found  \nOUTSIDE_VIEW: 50%\n\nProbability: 56%",
+        "probability": 0.5,
+        "risk_flags": [],
+        "search_count": 8,
+        "sources": [
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The University of Michigan’s Consumer Sentiment Index decreased to 44.80 points in May 2026.\n- The May 2026 Consumer Sentiment Index was revised down from a preliminary 48.2.\n- The May 2026 Consumer Sentiment Index marked the third straight monthly decline.\n",
+            "title": "United States Michigan Consumer Sentiment",
+            "url": "https://tradingeconomics.com/united-states/consumer-confidence"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The final May reading for the University of Michigan Consumer Sentiment Index came in at 44.8.\n- The May 2026 reading marks a 5-point drop from April 2026.\n- The May 2026 reading fell well below the month's preliminary estimate of 48.2.\n- Consumer sentiment ",
+            "title": "Consumer Sentiment Sinks to Record Low as Cost of Living Concerns Intensify - dshort - Advisor Perspectives",
+            "url": "https://www.advisorperspectives.com/dshort/updates/2026/05/22/consumer-sentiment-sinks-to-record-low-as-cost-of-living-concerns-intensify"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The University of Michigan’s Consumer Sentiment Index plunged to 44.8 in its final May 2026 reading.\n- The final May figure was revised sharply downward from a preliminary reading of 48.2.\n- April’s final reading of 49.8 had set a prior low just weeks earlie",
+            "title": "Michigan consumer sentiment index drops to all-time low of 44.8",
+            "url": "https://cryptobriefing.com/michigan-consumer-sentiment-all-time-low/"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The Michigan Consumer Sentiment Index is released monthly by the University of Michigan.\n- The survey publishes a preliminary, mid-month reading and a final print at the end of the month.\n- The final print for May 2026 (released May 22, 2026) was 44.8.\n- The",
+            "title": "FX Blue",
+            "url": "https://www.fxblue.com/calendar/item/608ffc81-99e8-4b1c-b673-633100761034/6f365940-a166-4c71-96a7-0d89437438af"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The University of Michigan’s Consumer Sentiment Index plunged to a record low of 44.8 in May 2026, revised down from a preliminary 48.2.\n- The University of Michigan’s Consumer Sentiment Index dropped to a record low of 48.2 in early May 2026, missing market",
+            "title": "United States Michigan Consumer Sentiment",
+            "url": "https://tradingeconomics.com/united-states/consumer-confidence"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- Consumer sentiment declined to a level of 52.9 in December [2025], near a record low, despite continued spending and a stable economy.",
+            "title": "University of Michigan Consumer Sentiment Survey near Record Low Cattle Range",
+            "url": "https://www.cattlerange.com/articles/2025/12/university-of-michigan-consumer-sentiment-survey-near-record-low/"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- On 6th Feb 2026, the Index of Consumer Sentiment was 57.3 (Expectations 56.4).\n- On 9th Jan 2026, the Index of Consumer Sentiment was 60.5 (Expectations 53.5).\n- On 16th May 2025, the Index of Consumer Sentiment was 55.5 (Expectations 55.0).",
+            "title": "Michigan Consumer Sentiment Index &#8211; The Credit Balance",
+            "url": "https://thecreditbalance.com/macro_updates/michigan-consumer-sentiment-index/"
+          },
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- Consumers are worried that inflation will increase and spread beyond fuel prices, even in the long run.\n- Year-ahead inflation expectations increased from 4.7% last month to 4.8% this month.\n- The current year-ahead inflation expectation reading substantiall",
+            "title": "Surveys of Consumers",
+            "url": "https://www.sca.isr.umich.edu/"
+          },
+          {
+            "date": "",
+            "quality": "Low",
+            "snippet": "- The document provides an index of the results of the University of Michigan's monthly Survey of Consumers.\n- This index is used to estimate future spending and saving.\n- The data series is named UMCSENT.\n- Historical data prior to January 1978 is available u",
+            "title": "University of Michigan: Consumer Sentiment (UMCSENT) | FRED | St. Louis Fed",
+            "url": "https://fred.stlouisfed.org/series/UMCSENT"
+          },
+          {
+            "date": "",
+            "quality": "Low",
+            "snippet": "- The Michigan Consumer Sentiment Index is released monthly by the University of Michigan.\n- The index is a survey gauging sentiment among consumers.",
+            "title": "Michigan Consumer Sentiment Index - United States - 2026 Calendar Forecast",
+            "url": "https://www.fxstreet.com/economic-calendar/event/608ffc81-99e8-4b1c-b673-633100761034"
+          },
+          {
+            "date": "",
+            "quality": "Low",
+            "snippet": "- The Michigan Consumer Sentiment Index (MCSI) is a monthly survey published by the University of Michigan.\n- The MCSI measures US consumer attitudes towards personal finances, business conditions, and economic activity.\n- The MCSI was created in 1946 by Dr. G",
+            "title": "Understanding the Michigan Consumer Sentiment Index | StoneX",
+            "url": "https://www.stonex.com/en/financial-glossary/us-gdp-growth/"
+          },
+          {
+            "date": "",
+            "quality": "Low",
+            "snippet": "- The University of Michigan data wrongly represents the state of U.S. consumer sentiment.\n- The University of Michigan ICS released on January 23rd claims that US Consumer Sentiment reached a five-month high.\n- From December 16 to January 19, Michigan conduct",
+            "title": "Why Michigan is Wrong, Consumer Sentiment Declined in January",
+            "url": "https://morningconsult.com/articles/why-michigan-is-wrong-consumer-sentiment-declined-in-january"
+          }
+        ],
+        "token_usage": {
+          "completion": 2768,
+          "prompt": 2733,
+          "total": 5501
+        },
+        "warnings": []
+      }
+    },
+    {
+      "config": {
+        "label": "Kimi K2.6",
+        "max_tokens": 10000,
+        "name": "moonshotai/kimi-k2.6"
+      },
+      "forecast_run": {
+        "model": "moonshotai/kimi-k2.6",
+        "probability": 0.5,
+        "reasoning": "(a) Time remaining: Today is June 6, 2026. The University of Michigan’s preliminary June reading—which is explicitly sufficient to resolve the question—is typically released on the second Friday of the month, so roughly **6 days** remain until the preliminary data is posted (around June 12, 2026). The final print would follow near month-end (June 26), but is not required.\n\n(b) Status quo outcome: If nothing changes, the Iran conflict and Hormuz supply disruptions continue, gasoline prices keep rising, and consumers remain fixated on cost-of-living concerns. Under that status quo, sentiment stays at or below the May final of **44.8**, producing a **No** resolution (the index must be **strictly greater than** 44.8).\n\n(c) YES scenario: A sudden ceasefire or reopening of the Strait of Hormuz is announced during the first week of June, crude and gasoline prices drop sharply, and the early-June survey captures a relief-driven rebound. The preliminary June reading prints at **46.0 or higher**.\n\n(d) NO scenario: Hormuz shipping constraints persist through early June, the national average gas price rises further, and the early-June survey respondents continue to cite fuel costs and tariffs. The preliminary June reading falls to **42–44**, or ticks only slightly upward but remains at or below **44.8**.\n\n(e) Base rate: **None found** for the precise reference class of “record-low readings during an ongoing geopolitical oil-supply shock.” Unconditional month-over-month increases in the University of Michigan Consumer Sentiment Index occur roughly 50% of the time historically, but the frequency is lower when the prior three months have all declined and an acute exogenous shock is still unfolding.\n\n(f) Strongest evidence:\n- **Toward YES:** Sentiment indices often exhibit short-term mean reversion after extreme capitulation moves; the May final plunged 5 full points from April and was revised down 3.4 points from the preliminary, suggesting a potential “selling climax” that could produce a technical bounce.\n- **Toward NO:** The underlying driver (Hormuz disruptions and the resulting gasoline-price spike) is **active and unresolved as of June 6**, with nearly 40% of respondents already citing gas prices in May; absent a visible positive catalyst, pessimistic momentum should dominate the early-June survey.\n\n(g) Resolution nuance: The threshold is **strictly greater than 44.8**; a print of exactly 44.8 resolves **No**, which is narrower than a naive “higher than May” reading might suggest. Additionally, because **preliminary results are sufficient**, the question can resolve as soon as the mid-June preliminary is posted—forecasters should not assume they are waiting for the final month-end number.\n\nBASE_RATE: None found for the exact reference class of record-low readings during an ongoing geopolitical oil supply shock; unconditional month-over-month increases in the University of Michigan Consumer Sentiment Index occur roughly 50% of the time historically.\nOUTSIDE_VIEW: 40%\n\nProbability: 25%",
+        "token_usage": 12353
+      },
+      "result": {
+        "diagnostics": {
+          "base_rate_text": "None found for the exact reference class of record-low readings during an ongoing geopolitical oil supply shock; unconditional month-over-month increases in the University of Michigan Consumer Sentiment Index occur roughly 50% of the time historically.",
+          "mode": "lean_forecast_prompt",
+          "numeric_unit_expected": "",
+          "outside_view_probability": 0.4,
+          "parse_success": true,
+          "parsed_mc_probabilities": null,
+          "parsed_numeric_percentiles": null,
+          "question_type": "binary",
+          "spec_reason": "The model answer aligns well with the canonical spec, covering all required elements and providing relevant details for each.",
+          "spec_status": "OK",
+          "usage_label": "forecast_run:20260606_124027:kimi_k2.6:1"
+        },
+        "explanation": "(a) Time remaining: Today is June 6, 2026. The University of Michigan’s preliminary June reading—which is explicitly sufficient to resolve the question—is typically released on the second Friday of the month, so roughly **6 days** remain until the preliminary data is posted (around June 12, 2026). The final print would follow near month-end (June 26), but is not required.\n\n(b) Status quo outcome: If nothing changes, the Iran conflict and Hormuz supply disruptions continue, gasoline prices keep rising, and consumers remain fixated on cost-of-living concerns. Under that status quo, sentiment stays at or below the May final of **44.8**, producing a **No** resolution (the index must be **strictly greater than** 44.8).\n\n(c) YES scenario: A sudden ceasefire or reopening of the Strait of Hormuz is announced during the first week of June, crude and gasoline prices drop sharply, and the early-June survey captures a relief-driven rebound. The preliminary June reading prints at **46.0 or higher**.\n\n(d) NO scenario: Hormuz shipping constraints persist through early June, the national average gas price rises further, and the early-June survey respondents continue to cite fuel costs and tariffs. The preliminary June reading falls to **42–44**, or ticks only slightly upward but remains at or below **44.8**.\n\n(e) Base rate: **None found** for the precise reference class of “record-low readings during an ongoing geopolitical oil-supply shock.” Unconditional month-over-month increases in the University of Michigan Consumer Sentiment Index occur roughly 50% of the time historically, but the frequency is lower when the prior three months have all declined and an acute exogenous shock is still unfolding.\n\n(f) Strongest evidence:\n- **Toward YES:** Sentiment indices often exhibit short-term mean reversion after extreme capitulation moves; the May final plunged 5 full points from April and was revised down 3.4 points from the preliminary, suggesting a potential “selling climax” that could produce a technical bounce.\n- **Toward NO:** The underlying driver (Hormuz disruptions and the resulting gasoline-price spike) is **active and unresolved as of June 6**, with nearly 40% of respondents already citing gas prices in May; absent a visible positive catalyst, pessimistic momentum should dominate the early-June survey.\n\n(g) Resolution nuance: The threshold is **strictly greater than 44.8**; a print of exactly 44.8 resolves **No**, which is narrower than a naive “higher than May” reading might suggest. Additionally, because **preliminary results are sufficient**, the question can resolve as soon as the mid-June preliminary is posted—forecasters should not assume they are waiting for the final month-end number.\n\nBASE_RATE: None found for the exact reference class of record-low readings during an ongoing geopolitical oil supply shock; unconditional month-over-month increases in the University of Michigan Consumer Sentiment Index occur roughly 50% of the time historically.\nOUTSIDE_VIEW: 40%\n\nProbability: 25%",
+        "probability": 0.5,
+        "risk_flags": [],
+        "search_count": 8,
+        "sources": [
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The University of Michigan’s Consumer Sentiment Index decreased to 44.80 points in May 2026.\n- The May 2026 Consumer Sentiment Index was revised down from a preliminary 48.2.\n- The May 2026 Consumer Sentiment Index marked the third straight monthly decline.\n",
+            "title": "United States Michigan Consumer Sentiment",
+            "url": "https://tradingeconomics.com/united-states/consumer-confidence"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The final May reading for the University of Michigan Consumer Sentiment Index came in at 44.8.\n- The May 2026 reading marks a 5-point drop from April 2026.\n- The May 2026 reading fell well below the month's preliminary estimate of 48.2.\n- Consumer sentiment ",
+            "title": "Consumer Sentiment Sinks to Record Low as Cost of Living Concerns Intensify - dshort - Advisor Perspectives",
+            "url": "https://www.advisorperspectives.com/dshort/updates/2026/05/22/consumer-sentiment-sinks-to-record-low-as-cost-of-living-concerns-intensify"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The University of Michigan’s Consumer Sentiment Index plunged to 44.8 in its final May 2026 reading.\n- The final May figure was revised sharply downward from a preliminary reading of 48.2.\n- April’s final reading of 49.8 had set a prior low just weeks earlie",
+            "title": "Michigan consumer sentiment index drops to all-time low of 44.8",
+            "url": "https://cryptobriefing.com/michigan-consumer-sentiment-all-time-low/"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The Michigan Consumer Sentiment Index is released monthly by the University of Michigan.\n- The survey publishes a preliminary, mid-month reading and a final print at the end of the month.\n- The final print for May 2026 (released May 22, 2026) was 44.8.\n- The",
+            "title": "FX Blue",
+            "url": "https://www.fxblue.com/calendar/item/608ffc81-99e8-4b1c-b673-633100761034/6f365940-a166-4c71-96a7-0d89437438af"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The University of Michigan’s Consumer Sentiment Index plunged to a record low of 44.8 in May 2026, revised down from a preliminary 48.2.\n- The University of Michigan’s Consumer Sentiment Index dropped to a record low of 48.2 in early May 2026, missing market",
+            "title": "United States Michigan Consumer Sentiment",
+            "url": "https://tradingeconomics.com/united-states/consumer-confidence"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- Consumer sentiment declined to a level of 52.9 in December [2025], near a record low, despite continued spending and a stable economy.",
+            "title": "University of Michigan Consumer Sentiment Survey near Record Low Cattle Range",
+            "url": "https://www.cattlerange.com/articles/2025/12/university-of-michigan-consumer-sentiment-survey-near-record-low/"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- On 6th Feb 2026, the Index of Consumer Sentiment was 57.3 (Expectations 56.4).\n- On 9th Jan 2026, the Index of Consumer Sentiment was 60.5 (Expectations 53.5).\n- On 16th May 2025, the Index of Consumer Sentiment was 55.5 (Expectations 55.0).",
+            "title": "Michigan Consumer Sentiment Index &#8211; The Credit Balance",
+            "url": "https://thecreditbalance.com/macro_updates/michigan-consumer-sentiment-index/"
+          },
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- Consumers are worried that inflation will increase and spread beyond fuel prices, even in the long run.\n- Year-ahead inflation expectations increased from 4.7% last month to 4.8% this month.\n- The current year-ahead inflation expectation reading substantiall",
+            "title": "Surveys of Consumers",
+            "url": "https://www.sca.isr.umich.edu/"
+          },
+          {
+            "date": "",
+            "quality": "Low",
+            "snippet": "- The document provides an index of the results of the University of Michigan's monthly Survey of Consumers.\n- This index is used to estimate future spending and saving.\n- The data series is named UMCSENT.\n- Historical data prior to January 1978 is available u",
+            "title": "University of Michigan: Consumer Sentiment (UMCSENT) | FRED | St. Louis Fed",
+            "url": "https://fred.stlouisfed.org/series/UMCSENT"
+          },
+          {
+            "date": "",
+            "quality": "Low",
+            "snippet": "- The Michigan Consumer Sentiment Index is released monthly by the University of Michigan.\n- The index is a survey gauging sentiment among consumers.",
+            "title": "Michigan Consumer Sentiment Index - United States - 2026 Calendar Forecast",
+            "url": "https://www.fxstreet.com/economic-calendar/event/608ffc81-99e8-4b1c-b673-633100761034"
+          },
+          {
+            "date": "",
+            "quality": "Low",
+            "snippet": "- The Michigan Consumer Sentiment Index (MCSI) is a monthly survey published by the University of Michigan.\n- The MCSI measures US consumer attitudes towards personal finances, business conditions, and economic activity.\n- The MCSI was created in 1946 by Dr. G",
+            "title": "Understanding the Michigan Consumer Sentiment Index | StoneX",
+            "url": "https://www.stonex.com/en/financial-glossary/us-gdp-growth/"
+          },
+          {
+            "date": "",
+            "quality": "Low",
+            "snippet": "- The University of Michigan data wrongly represents the state of U.S. consumer sentiment.\n- The University of Michigan ICS released on January 23rd claims that US Consumer Sentiment reached a five-month high.\n- From December 16 to January 19, Michigan conduct",
+            "title": "Why Michigan is Wrong, Consumer Sentiment Declined in January",
+            "url": "https://morningconsult.com/articles/why-michigan-is-wrong-consumer-sentiment-declined-in-january"
+          }
+        ],
+        "token_usage": {
+          "completion": 9618,
+          "prompt": 2735,
+          "total": 12353
+        },
+        "warnings": []
+      }
+    },
+    {
+      "config": {
+        "label": "Gemini 3 Flash",
+        "max_tokens": 9000,
+        "name": "google/gemini-3-flash-preview"
+      },
+      "forecast_run": {
+        "model": "google/gemini-3-flash-preview",
+        "probability": 0.55,
+        "reasoning": "The question asks whether the University of Michigan Consumer Sentiment Index for June 2026 will be greater than 44.8 (the final reading for May 2026).\n\n(a) **Time remaining:** Today is June 6, 2026. The preliminary June reading is typically released around the second Friday of the month (likely June 12, 2026), and the final reading at the end of the month. Resolution occurs once the June data is published.\n(b) **Status quo:** The index is at an all-time low of 44.8 after three consecutive months of decline. The primary driver is a military conflict in Iran and supply disruptions in the Strait of Hormuz, which have spiked gasoline prices.\n(c) **Scenario for YES:** A stabilization or slight retreat in gasoline prices, or a \"dead cat bounce\" from record-low sentiment levels, pushes the index to 45.0 or higher. Even a minor relief in geopolitical tensions or consumers becoming \"numb\" to the news could cause a slight uptick.\n(d) **Scenario for NO:** Continued military escalation in the Middle East leads to further oil supply shocks, pushing gas prices even higher. If the Strait of Hormuz remains restricted, the \"cost of living concerns\" cited in May will intensify, driving the index to a new record low (e.g., 42.0).\n(e) **Base rate:** Historically, the index rarely stays at record lows for many consecutive months without some mean reversion, but during periods of active geopolitical/energy shocks (like 1979-1980 or 2008), it can trend downward for 4-6 months.\n(f) **Strongest evidence:** For **YES**, the index is at its historical floor; statistically, a bounce is likely after a 5-point drop. For **NO**, the fundamental cause (the Iran conflict and Strait of Hormuz disruption) is active and worsening, as evidenced by the May preliminary-to-final downward revision (48.2 to 44.8).\n(g) **Resolution criteria:** The threshold is exactly 44.8. Preliminary results are sufficient. This means if the mid-June preliminary number is 44.9, the question resolves YES immediately, even if the final number drops later.\n\nThe current situation is dominated by a specific, ongoing supply-side shock. In May, sentiment started at 48.2 and crashed to 44.8 as the month progressed, suggesting the negative momentum was accelerating into June. Unless there is news of a ceasefire or a reopening of shipping lanes, the inflationary pressure on gasoline—the most visible price for consumers—will likely keep sentiment suppressed or drive it lower.\n\nBASE_RATE: In the history of the UMCSENT index, month-over-month increases occur approximately 50-55% of the time, but this drops significantly during active energy price shocks.\nOUTSIDE_VIEW: 52%\n\nProbability: 38%",
+        "token_usage": 3802
+      },
+      "result": {
+        "diagnostics": {
+          "base_rate_text": "In the history of the UMCSENT index, month-over-month increases occur approximately 50-55% of the time, but this drops significantly during active energy price shocks.",
+          "mode": "lean_forecast_prompt",
+          "numeric_unit_expected": "",
+          "outside_view_probability": 0.52,
+          "parse_success": true,
+          "parsed_mc_probabilities": null,
+          "parsed_numeric_percentiles": null,
+          "question_type": "binary",
+          "spec_reason": "The model answer accurately reflects all aspects of the canonical spec, including the one-line question, YES/NO conditions, window, threshold, and metric.",
+          "spec_status": "OK",
+          "usage_label": "forecast_run:20260606_124027:gemini_3_flash:1"
+        },
+        "explanation": "The question asks whether the University of Michigan Consumer Sentiment Index for June 2026 will be greater than 44.8 (the final reading for May 2026).\n\n(a) **Time remaining:** Today is June 6, 2026. The preliminary June reading is typically released around the second Friday of the month (likely June 12, 2026), and the final reading at the end of the month. Resolution occurs once the June data is published.\n(b) **Status quo:** The index is at an all-time low of 44.8 after three consecutive months of decline. The primary driver is a military conflict in Iran and supply disruptions in the Strait of Hormuz, which have spiked gasoline prices.\n(c) **Scenario for YES:** A stabilization or slight retreat in gasoline prices, or a \"dead cat bounce\" from record-low sentiment levels, pushes the index to 45.0 or higher. Even a minor relief in geopolitical tensions or consumers becoming \"numb\" to the news could cause a slight uptick.\n(d) **Scenario for NO:** Continued military escalation in the Middle East leads to further oil supply shocks, pushing gas prices even higher. If the Strait of Hormuz remains restricted, the \"cost of living concerns\" cited in May will intensify, driving the index to a new record low (e.g., 42.0).\n(e) **Base rate:** Historically, the index rarely stays at record lows for many consecutive months without some mean reversion, but during periods of active geopolitical/energy shocks (like 1979-1980 or 2008), it can trend downward for 4-6 months.\n(f) **Strongest evidence:** For **YES**, the index is at its historical floor; statistically, a bounce is likely after a 5-point drop. For **NO**, the fundamental cause (the Iran conflict and Strait of Hormuz disruption) is active and worsening, as evidenced by the May preliminary-to-final downward revision (48.2 to 44.8).\n(g) **Resolution criteria:** The threshold is exactly 44.8. Preliminary results are sufficient. This means if the mid-June preliminary number is 44.9, the question resolves YES immediately, even if the final number drops later.\n\nThe current situation is dominated by a specific, ongoing supply-side shock. In May, sentiment started at 48.2 and crashed to 44.8 as the month progressed, suggesting the negative momentum was accelerating into June. Unless there is news of a ceasefire or a reopening of shipping lanes, the inflationary pressure on gasoline—the most visible price for consumers—will likely keep sentiment suppressed or drive it lower.\n\nBASE_RATE: In the history of the UMCSENT index, month-over-month increases occur approximately 50-55% of the time, but this drops significantly during active energy price shocks.\nOUTSIDE_VIEW: 52%\n\nProbability: 38%",
+        "probability": 0.55,
+        "risk_flags": [],
+        "search_count": 8,
+        "sources": [
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The University of Michigan’s Consumer Sentiment Index decreased to 44.80 points in May 2026.\n- The May 2026 Consumer Sentiment Index was revised down from a preliminary 48.2.\n- The May 2026 Consumer Sentiment Index marked the third straight monthly decline.\n",
+            "title": "United States Michigan Consumer Sentiment",
+            "url": "https://tradingeconomics.com/united-states/consumer-confidence"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The final May reading for the University of Michigan Consumer Sentiment Index came in at 44.8.\n- The May 2026 reading marks a 5-point drop from April 2026.\n- The May 2026 reading fell well below the month's preliminary estimate of 48.2.\n- Consumer sentiment ",
+            "title": "Consumer Sentiment Sinks to Record Low as Cost of Living Concerns Intensify - dshort - Advisor Perspectives",
+            "url": "https://www.advisorperspectives.com/dshort/updates/2026/05/22/consumer-sentiment-sinks-to-record-low-as-cost-of-living-concerns-intensify"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The University of Michigan’s Consumer Sentiment Index plunged to 44.8 in its final May 2026 reading.\n- The final May figure was revised sharply downward from a preliminary reading of 48.2.\n- April’s final reading of 49.8 had set a prior low just weeks earlie",
+            "title": "Michigan consumer sentiment index drops to all-time low of 44.8",
+            "url": "https://cryptobriefing.com/michigan-consumer-sentiment-all-time-low/"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The Michigan Consumer Sentiment Index is released monthly by the University of Michigan.\n- The survey publishes a preliminary, mid-month reading and a final print at the end of the month.\n- The final print for May 2026 (released May 22, 2026) was 44.8.\n- The",
+            "title": "FX Blue",
+            "url": "https://www.fxblue.com/calendar/item/608ffc81-99e8-4b1c-b673-633100761034/6f365940-a166-4c71-96a7-0d89437438af"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The University of Michigan’s Consumer Sentiment Index plunged to a record low of 44.8 in May 2026, revised down from a preliminary 48.2.\n- The University of Michigan’s Consumer Sentiment Index dropped to a record low of 48.2 in early May 2026, missing market",
+            "title": "United States Michigan Consumer Sentiment",
+            "url": "https://tradingeconomics.com/united-states/consumer-confidence"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- Consumer sentiment declined to a level of 52.9 in December [2025], near a record low, despite continued spending and a stable economy.",
+            "title": "University of Michigan Consumer Sentiment Survey near Record Low Cattle Range",
+            "url": "https://www.cattlerange.com/articles/2025/12/university-of-michigan-consumer-sentiment-survey-near-record-low/"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- On 6th Feb 2026, the Index of Consumer Sentiment was 57.3 (Expectations 56.4).\n- On 9th Jan 2026, the Index of Consumer Sentiment was 60.5 (Expectations 53.5).\n- On 16th May 2025, the Index of Consumer Sentiment was 55.5 (Expectations 55.0).",
+            "title": "Michigan Consumer Sentiment Index &#8211; The Credit Balance",
+            "url": "https://thecreditbalance.com/macro_updates/michigan-consumer-sentiment-index/"
+          },
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- Consumers are worried that inflation will increase and spread beyond fuel prices, even in the long run.\n- Year-ahead inflation expectations increased from 4.7% last month to 4.8% this month.\n- The current year-ahead inflation expectation reading substantiall",
+            "title": "Surveys of Consumers",
+            "url": "https://www.sca.isr.umich.edu/"
+          },
+          {
+            "date": "",
+            "quality": "Low",
+            "snippet": "- The document provides an index of the results of the University of Michigan's monthly Survey of Consumers.\n- This index is used to estimate future spending and saving.\n- The data series is named UMCSENT.\n- Historical data prior to January 1978 is available u",
+            "title": "University of Michigan: Consumer Sentiment (UMCSENT) | FRED | St. Louis Fed",
+            "url": "https://fred.stlouisfed.org/series/UMCSENT"
+          },
+          {
+            "date": "",
+            "quality": "Low",
+            "snippet": "- The Michigan Consumer Sentiment Index is released monthly by the University of Michigan.\n- The index is a survey gauging sentiment among consumers.",
+            "title": "Michigan Consumer Sentiment Index - United States - 2026 Calendar Forecast",
+            "url": "https://www.fxstreet.com/economic-calendar/event/608ffc81-99e8-4b1c-b673-633100761034"
+          },
+          {
+            "date": "",
+            "quality": "Low",
+            "snippet": "- The Michigan Consumer Sentiment Index (MCSI) is a monthly survey published by the University of Michigan.\n- The MCSI measures US consumer attitudes towards personal finances, business conditions, and economic activity.\n- The MCSI was created in 1946 by Dr. G",
+            "title": "Understanding the Michigan Consumer Sentiment Index | StoneX",
+            "url": "https://www.stonex.com/en/financial-glossary/us-gdp-growth/"
+          },
+          {
+            "date": "",
+            "quality": "Low",
+            "snippet": "- The University of Michigan data wrongly represents the state of U.S. consumer sentiment.\n- The University of Michigan ICS released on January 23rd claims that US Consumer Sentiment reached a five-month high.\n- From December 16 to January 19, Michigan conduct",
+            "title": "Why Michigan is Wrong, Consumer Sentiment Declined in January",
+            "url": "https://morningconsult.com/articles/why-michigan-is-wrong-consumer-sentiment-declined-in-january"
+          }
+        ],
+        "token_usage": {
+          "completion": 645,
+          "prompt": 3157,
+          "total": 3802
+        },
+        "warnings": []
+      }
+    },
+    {
+      "config": {
+        "label": "Claude Haiku 4.5",
+        "max_tokens": 9000,
+        "name": "anthropic/claude-haiku-4.5"
+      },
+      "forecast_run": {
+        "model": "anthropic/claude-haiku-4.5",
+        "probability": 0.048,
+        "reasoning": "# Analysis\n\n## (a) Time Remaining Until Resolution\n\n**Today's date:** June 6, 2026\n**Resolution deadline:** June 30, 2026 (end of June when final June 2026 data is released)\n**Time remaining:** ~24 days\n\nThe University of Michigan releases preliminary readings mid-month and final readings at month-end. The June 2026 preliminary reading would typically be released around June 12, 2026, with the final reading around June 26, 2026.\n\n## (b) Status Quo Outcome\n\nIf nothing changes, sentiment would likely remain depressed. The underlying drivers (Strait of Hormuz disruptions, elevated gas prices, tariff concerns, elevated inflation expectations at 4.8%) persist. The trend has been three consecutive months of decline (March→April→May). Without a significant shock improvement, the status quo would be a June reading at or below May's 44.8.\n\n## (c) YES Scenario (June > 44.8)\n\n- **Geopolitical de-escalation:** U.S. military campaign in Iran winds down or ceases, reducing supply disruptions in the Strait of Hormuz\n- **Gas price collapse:** Oil prices fall sharply (e.g., from supply restoration or demand destruction), bringing gasoline prices down meaningfully\n- **Inflation expectations reset lower:** Consumers' year-ahead inflation expectations drop from 4.8% back toward 3.4% (pre-conflict level)\n- **Tariff relief:** Announced rollback or pause of tariffs that ~30% of respondents cited as a concern\n- **Positive economic news:** Strong employment data, wage growth, or other positive indicators that shift sentiment\n\n## (d) NO Scenario (June ≤ 44.8)\n\n- **Continued geopolitical tension:** Iran conflict persists, supply disruptions continue\n- **Sticky high gas prices:** Oil prices remain elevated or rise further\n- **Inflation expectations remain elevated:** Consumers maintain or increase their 4.8% year-ahead inflation expectations\n- **Tariff concerns persist:** No relief on tariff front\n- **Momentum of decline:** The three-month downtrend continues into June as a fourth consecutive decline\n\n## (e) Base Rate\n\n**Reference class:** Month-to-month changes in the University of Michigan Consumer Sentiment Index\n\nExamining the data provided:\n- April 2026: 49.8\n- May 2026: 44.8 (down 5.0 points, -10%)\n- March 2026: ~49.8 (implied from \"April's final reading of 49.8 had set a prior low\")\n- February 2026: 57.3\n- January 2026: 60.5\n\nThe index has shown three consecutive monthly declines. Historically, the index does experience month-to-month volatility, but reversals after three consecutive declines are not uncommon. However, given the severity of the current shock (record low, geopolitical crisis ongoing), the base rate for immediate reversal is modest.\n\n**Estimated base rate:** In normal conditions, roughly 45-50% of months see increases from the prior month. However, after three consecutive declines to a record low amid an ongoing crisis, the base rate for reversal in the very next month is lower, perhaps 30-40%.\n\n## (f) Strongest Evidence\n\n**Toward YES:**\n- The preliminary May reading (48.2) was revised down sharply to 44.8, suggesting the worst may have been captured and some mean reversion could occur\n- Historical precedent: After the June 2022 low (~45), there was recovery in subsequent months\n- Geopolitical situations can resolve quickly; if Iran tensions ease even slightly, gas prices could fall rapidly\n\n**Toward NO:**\n- Three consecutive months of decline with a record low suggests a strong, persistent headwind\n- The underlying drivers (Strait of Hormuz disruptions, inflation expectations at 4.8%) remain in place as of the research cutoff (June 6)\n- Director Joanne Hsu's commentary suggests consumers feel \"besieged\" by multiple pressures (gas, tariffs, inflation)\n- Only 24 days remain; major geopolitical/economic shifts are possible but not highly probable in such a short window\n- The May reading was already a downward revision, suggesting the survey captured deterioration; June would need a reversal catalyst\n\n## (g) Resolution Criteria Nuance\n\nThe resolution threshold is **44.8** (May's final reading). The question asks if June > 44.8, meaning June must be **strictly greater than** 44.8 to resolve YES. A reading of exactly 44.8 or lower resolves NO.\n\nThis is a tight threshold—only a modest improvement (e.g., 45.0 or higher) is needed for YES. However, the phrasing \"greater than it was for May 2026\" makes clear this is a month-over-month comparison, not an absolute threshold.\n\n---\n\n# Reasoning\n\n**Key considerations:**\n\n1. **Momentum and trend:** Three consecutive declines to a record low is a strong downtrend. Reversals after such patterns are possible but not the default expectation.\n\n2. **Underlying drivers persist:** As of June 6, the Strait of Hormuz disruptions, elevated gas prices, and inflation expectations remain elevated. No major resolution of these issues has been reported.\n\n3. **Time window:** Only 24 days remain. While geopolitical situations can shift quickly, the probability of a major positive shock (de-escalation, gas price collapse) in this window is moderate at best.\n\n4. **Historical analogy:** The June 2022 low (~45) was followed by recovery, but that took several months. Immediate reversal (one month later) is less common.\n\n5. **Mean reversion tendency:** After extreme lows, some reversion is typical, but not guaranteed, especially when the underlying shock persists.\n\n6. **Threshold:** The bar is 44.8 (May's final). Even a small improvement (e.g., 45.0) would resolve YES. This is a modest hurdle.\n\n**Probability assessment:**\n\n- **Base rate (outside view):** ~35% for month-over-month improvement after three consecutive declines to a record low amid an ongoing crisis\n- **Case-specific adjustments:**\n  - Slight upward adjustment (+5%) for the possibility of rapid geopolitical de-escalation or gas price relief\n  - Slight downward adjustment (-5%) for the persistence of underlying drivers and the short time window\n  - Net adjustment: ~0%\n\n**Final estimate:** 35-40% probability\n\nGiven the strong downtrend, persistent headwinds, and short time window, but acknowledging the modest threshold and possibility of rapid shifts in geopolitical/commodity markets, I estimate the probability at the lower end of this range.\n\n---\n\nBASE_RATE: Month-over-month improvement in the University of Michigan Consumer Sentiment Index after three consecutive declines to a record low: approximately 30-35% (based on the pattern of mean reversion being slower than immediate reversal, especially amid ongoing crises).\n\nOUTSIDE_VIEW: 33% (assuming the current downtrend and underlying drivers persist without major new positive shocks in the next 24 days).\n\n**Probability: 36%**",
+        "token_usage": 4796
+      },
+      "result": {
+        "diagnostics": {
+          "base_rate_text": "Month-over-month improvement in the University of Michigan Consumer Sentiment Index after three consecutive declines to a record low: approximately 30-35% (based on the pattern of mean reversion being slower than immediate reversal, especially amid ongoing crises).",
+          "mode": "lean_forecast_prompt",
+          "numeric_unit_expected": "",
+          "outside_view_probability": 0.33,
+          "parse_success": true,
+          "parsed_mc_probabilities": null,
+          "parsed_numeric_percentiles": null,
+          "question_type": "binary",
+          "spec_reason": "The model answer directly addresses the canonical spec's question, threshold, and metric. It provides clear YES/NO scenarios, a base rate analysis, strongest evidence for both outcomes, and a nuanced discussion of the resolution criteria. The final probability is presented clearly.",
+          "spec_status": "OK",
+          "usage_label": "forecast_run:20260606_124027:claude_haiku_4.5:1"
+        },
+        "explanation": "# Analysis\n\n## (a) Time Remaining Until Resolution\n\n**Today's date:** June 6, 2026\n**Resolution deadline:** June 30, 2026 (end of June when final June 2026 data is released)\n**Time remaining:** ~24 days\n\nThe University of Michigan releases preliminary readings mid-month and final readings at month-end. The June 2026 preliminary reading would typically be released around June 12, 2026, with the final reading around June 26, 2026.\n\n## (b) Status Quo Outcome\n\nIf nothing changes, sentiment would likely remain depressed. The underlying drivers (Strait of Hormuz disruptions, elevated gas prices, tariff concerns, elevated inflation expectations at 4.8%) persist. The trend has been three consecutive months of decline (March→April→May). Without a significant shock improvement, the status quo would be a June reading at or below May's 44.8.\n\n## (c) YES Scenario (June > 44.8)\n\n- **Geopolitical de-escalation:** U.S. military campaign in Iran winds down or ceases, reducing supply disruptions in the Strait of Hormuz\n- **Gas price collapse:** Oil prices fall sharply (e.g., from supply restoration or demand destruction), bringing gasoline prices down meaningfully\n- **Inflation expectations reset lower:** Consumers' year-ahead inflation expectations drop from 4.8% back toward 3.4% (pre-conflict level)\n- **Tariff relief:** Announced rollback or pause of tariffs that ~30% of respondents cited as a concern\n- **Positive economic news:** Strong employment data, wage growth, or other positive indicators that shift sentiment\n\n## (d) NO Scenario (June ≤ 44.8)\n\n- **Continued geopolitical tension:** Iran conflict persists, supply disruptions continue\n- **Sticky high gas prices:** Oil prices remain elevated or rise further\n- **Inflation expectations remain elevated:** Consumers maintain or increase their 4.8% year-ahead inflation expectations\n- **Tariff concerns persist:** No relief on tariff front\n- **Momentum of decline:** The three-month downtrend continues into June as a fourth consecutive decline\n\n## (e) Base Rate\n\n**Reference class:** Month-to-month changes in the University of Michigan Consumer Sentiment Index\n\nExamining the data provided:\n- April 2026: 49.8\n- May 2026: 44.8 (down 5.0 points, -10%)\n- March 2026: ~49.8 (implied from \"April's final reading of 49.8 had set a prior low\")\n- February 2026: 57.3\n- January 2026: 60.5\n\nThe index has shown three consecutive monthly declines. Historically, the index does experience month-to-month volatility, but reversals after three consecutive declines are not uncommon. However, given the severity of the current shock (record low, geopolitical crisis ongoing), the base rate for immediate reversal is modest.\n\n**Estimated base rate:** In normal conditions, roughly 45-50% of months see increases from the prior month. However, after three consecutive declines to a record low amid an ongoing crisis, the base rate for reversal in the very next month is lower, perhaps 30-40%.\n\n## (f) Strongest Evidence\n\n**Toward YES:**\n- The preliminary May reading (48.2) was revised down sharply to 44.8, suggesting the worst may have been captured and some mean reversion could occur\n- Historical precedent: After the June 2022 low (~45), there was recovery in subsequent months\n- Geopolitical situations can resolve quickly; if Iran tensions ease even slightly, gas prices could fall rapidly\n\n**Toward NO:**\n- Three consecutive months of decline with a record low suggests a strong, persistent headwind\n- The underlying drivers (Strait of Hormuz disruptions, inflation expectations at 4.8%) remain in place as of the research cutoff (June 6)\n- Director Joanne Hsu's commentary suggests consumers feel \"besieged\" by multiple pressures (gas, tariffs, inflation)\n- Only 24 days remain; major geopolitical/economic shifts are possible but not highly probable in such a short window\n- The May reading was already a downward revision, suggesting the survey captured deterioration; June would need a reversal catalyst\n\n## (g) Resolution Criteria Nuance\n\nThe resolution threshold is **44.8** (May's final reading). The question asks if June > 44.8, meaning June must be **strictly greater than** 44.8 to resolve YES. A reading of exactly 44.8 or lower resolves NO.\n\nThis is a tight threshold—only a modest improvement (e.g., 45.0 or higher) is needed for YES. However, the phrasing \"greater than it was for May 2026\" makes clear this is a month-over-month comparison, not an absolute threshold.\n\n---\n\n# Reasoning\n\n**Key considerations:**\n\n1. **Momentum and trend:** Three consecutive declines to a record low is a strong downtrend. Reversals after such patterns are possible but not the default expectation.\n\n2. **Underlying drivers persist:** As of June 6, the Strait of Hormuz disruptions, elevated gas prices, and inflation expectations remain elevated. No major resolution of these issues has been reported.\n\n3. **Time window:** Only 24 days remain. While geopolitical situations can shift quickly, the probability of a major positive shock (de-escalation, gas price collapse) in this window is moderate at best.\n\n4. **Historical analogy:** The June 2022 low (~45) was followed by recovery, but that took several months. Immediate reversal (one month later) is less common.\n\n5. **Mean reversion tendency:** After extreme lows, some reversion is typical, but not guaranteed, especially when the underlying shock persists.\n\n6. **Threshold:** The bar is 44.8 (May's final). Even a small improvement (e.g., 45.0) would resolve YES. This is a modest hurdle.\n\n**Probability assessment:**\n\n- **Base rate (outside view):** ~35% for month-over-month improvement after three consecutive declines to a record low amid an ongoing crisis\n- **Case-specific adjustments:**\n  - Slight upward adjustment (+5%) for the possibility of rapid geopolitical de-escalation or gas price relief\n  - Slight downward adjustment (-5%) for the persistence of underlying drivers and the short time window\n  - Net adjustment: ~0%\n\n**Final estimate:** 35-40% probability\n\nGiven the strong downtrend, persistent headwinds, and short time window, but acknowledging the modest threshold and possibility of rapid shifts in geopolitical/commodity markets, I estimate the probability at the lower end of this range.\n\n---\n\nBASE_RATE: Month-over-month improvement in the University of Michigan Consumer Sentiment Index after three consecutive declines to a record low: approximately 30-35% (based on the pattern of mean reversion being slower than immediate reversal, especially amid ongoing crises).\n\nOUTSIDE_VIEW: 33% (assuming the current downtrend and underlying drivers persist without major new positive shocks in the next 24 days).\n\n**Probability: 36%**",
+        "probability": 0.048,
+        "risk_flags": [],
+        "search_count": 8,
+        "sources": [
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The University of Michigan’s Consumer Sentiment Index decreased to 44.80 points in May 2026.\n- The May 2026 Consumer Sentiment Index was revised down from a preliminary 48.2.\n- The May 2026 Consumer Sentiment Index marked the third straight monthly decline.\n",
+            "title": "United States Michigan Consumer Sentiment",
+            "url": "https://tradingeconomics.com/united-states/consumer-confidence"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The final May reading for the University of Michigan Consumer Sentiment Index came in at 44.8.\n- The May 2026 reading marks a 5-point drop from April 2026.\n- The May 2026 reading fell well below the month's preliminary estimate of 48.2.\n- Consumer sentiment ",
+            "title": "Consumer Sentiment Sinks to Record Low as Cost of Living Concerns Intensify - dshort - Advisor Perspectives",
+            "url": "https://www.advisorperspectives.com/dshort/updates/2026/05/22/consumer-sentiment-sinks-to-record-low-as-cost-of-living-concerns-intensify"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The University of Michigan’s Consumer Sentiment Index plunged to 44.8 in its final May 2026 reading.\n- The final May figure was revised sharply downward from a preliminary reading of 48.2.\n- April’s final reading of 49.8 had set a prior low just weeks earlie",
+            "title": "Michigan consumer sentiment index drops to all-time low of 44.8",
+            "url": "https://cryptobriefing.com/michigan-consumer-sentiment-all-time-low/"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The Michigan Consumer Sentiment Index is released monthly by the University of Michigan.\n- The survey publishes a preliminary, mid-month reading and a final print at the end of the month.\n- The final print for May 2026 (released May 22, 2026) was 44.8.\n- The",
+            "title": "FX Blue",
+            "url": "https://www.fxblue.com/calendar/item/608ffc81-99e8-4b1c-b673-633100761034/6f365940-a166-4c71-96a7-0d89437438af"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The University of Michigan’s Consumer Sentiment Index plunged to a record low of 44.8 in May 2026, revised down from a preliminary 48.2.\n- The University of Michigan’s Consumer Sentiment Index dropped to a record low of 48.2 in early May 2026, missing market",
+            "title": "United States Michigan Consumer Sentiment",
+            "url": "https://tradingeconomics.com/united-states/consumer-confidence"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- Consumer sentiment declined to a level of 52.9 in December [2025], near a record low, despite continued spending and a stable economy.",
+            "title": "University of Michigan Consumer Sentiment Survey near Record Low Cattle Range",
+            "url": "https://www.cattlerange.com/articles/2025/12/university-of-michigan-consumer-sentiment-survey-near-record-low/"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- On 6th Feb 2026, the Index of Consumer Sentiment was 57.3 (Expectations 56.4).\n- On 9th Jan 2026, the Index of Consumer Sentiment was 60.5 (Expectations 53.5).\n- On 16th May 2025, the Index of Consumer Sentiment was 55.5 (Expectations 55.0).",
+            "title": "Michigan Consumer Sentiment Index &#8211; The Credit Balance",
+            "url": "https://thecreditbalance.com/macro_updates/michigan-consumer-sentiment-index/"
+          },
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- Consumers are worried that inflation will increase and spread beyond fuel prices, even in the long run.\n- Year-ahead inflation expectations increased from 4.7% last month to 4.8% this month.\n- The current year-ahead inflation expectation reading substantiall",
+            "title": "Surveys of Consumers",
+            "url": "https://www.sca.isr.umich.edu/"
+          },
+          {
+            "date": "",
+            "quality": "Low",
+            "snippet": "- The document provides an index of the results of the University of Michigan's monthly Survey of Consumers.\n- This index is used to estimate future spending and saving.\n- The data series is named UMCSENT.\n- Historical data prior to January 1978 is available u",
+            "title": "University of Michigan: Consumer Sentiment (UMCSENT) | FRED | St. Louis Fed",
+            "url": "https://fred.stlouisfed.org/series/UMCSENT"
+          },
+          {
+            "date": "",
+            "quality": "Low",
+            "snippet": "- The Michigan Consumer Sentiment Index is released monthly by the University of Michigan.\n- The index is a survey gauging sentiment among consumers.",
+            "title": "Michigan Consumer Sentiment Index - United States - 2026 Calendar Forecast",
+            "url": "https://www.fxstreet.com/economic-calendar/event/608ffc81-99e8-4b1c-b673-633100761034"
+          },
+          {
+            "date": "",
+            "quality": "Low",
+            "snippet": "- The Michigan Consumer Sentiment Index (MCSI) is a monthly survey published by the University of Michigan.\n- The MCSI measures US consumer attitudes towards personal finances, business conditions, and economic activity.\n- The MCSI was created in 1946 by Dr. G",
+            "title": "Understanding the Michigan Consumer Sentiment Index | StoneX",
+            "url": "https://www.stonex.com/en/financial-glossary/us-gdp-growth/"
+          },
+          {
+            "date": "",
+            "quality": "Low",
+            "snippet": "- The University of Michigan data wrongly represents the state of U.S. consumer sentiment.\n- The University of Michigan ICS released on January 23rd claims that US Consumer Sentiment reached a five-month high.\n- From December 16 to January 19, Michigan conduct",
+            "title": "Why Michigan is Wrong, Consumer Sentiment Declined in January",
+            "url": "https://morningconsult.com/articles/why-michigan-is-wrong-consumer-sentiment-declined-in-january"
+          }
+        ],
+        "token_usage": {
+          "completion": 1661,
+          "prompt": 3135,
+          "total": 4796
+        },
+        "warnings": []
+      }
+    }
+  ],
+  "informativeness": "weak_view",
+  "metaculus_post_error": null,
+  "mode": "lean_ensemble",
+  "numeric_bounds": {
+    "lower_bound": null,
+    "unit": "",
+    "upper_bound": null
+  },
+  "options": [],
+  "outcome": {
+    "actual_close_time": null,
+    "actual_resolve_time": null,
+    "computed_brier": null,
+    "metaculus_score_data": {},
+    "my_latest_forecast": {},
+    "options": null,
+    "post_id": "43704",
+    "post_status": "open",
+    "question_id": 43733,
+    "question_type": "binary",
+    "raw_post_subset": {
+      "forecasts_count": 96,
+      "nr_forecasters": 5,
+      "projects": {
+        "category": [
+          {
+            "description": "Economy & Business",
+            "emoji": "💼",
+            "id": 3698,
+            "name": "Economy & Business",
+            "slug": "economy-business",
+            "type": "category"
+          },
+          {
+            "description": "Social Sciences",
+            "emoji": "🧑‍🤝‍🧑",
+            "id": 3700,
+            "name": "Social Sciences",
+            "slug": "social-sciences",
+            "type": "category"
+          }
+        ],
+        "default_project": {
+          "bot_leaderboard_status": "exclude_and_show",
+          "close_date": null,
+          "created_at": "2025-07-29T21:17:26.402860Z",
+          "default_permission": "forecaster",
+          "description_preview": "<img src=\"https://cdn.metaculus.com/Metaculus_Learning_Academy_Logo_K6rKhv7.png\" alt=\"Metaculus Learning Academy logo\">\r\n<div align=\"right\">",
+          "edited_at": "2026-06-06T11:58:03.529678Z",
+          "forecasting_end_date": null,
+          "header_image": "https://cdn.metaculus.com/owl_only.png",
+          "html_metadata_json": null,
+          "id": 32812,
+          "is_current_content_translated": false,
+          "is_ongoing": true,
+          "name": "Metaculus Learning Academy",
+          "order": 2,
+          "prize_pool": null,
+          "score_type": "comment_insight",
+          "show_on_homepage": false,
+          "slug": "learning",
+          "start_date": "2025-07-30T06:00:00Z",
+          "type": "question_series",
+          "user_permission": null,
+          "visibility": "normal"
+        },
+        "question_series": [
+          {
+            "bot_leaderboard_status": "exclude_and_show",
+            "close_date": null,
+            "created_at": "2025-07-29T21:17:26.402860Z",
+            "default_permission": "forecaster",
+            "description_preview": "<img src=\"https://cdn.metaculus.com/Metaculus_Learning_Academy_Logo_K6rKhv7.png\" alt=\"Metaculus Learning Academy logo\">\r\n<div align=\"right\">",
+            "edited_at": "2026-06-06T11:58:03.529678Z",
+            "forecasting_end_date": null,
+            "header_image": "https://cdn.metaculus.com/owl_only.png",
+            "html_metadata_json": null,
+            "id": 32812,
+            "is_current_content_translated": false,
+            "is_ongoing": true,
+            "name": "Metaculus Learning Academy",
+            "order": 2,
+            "prize_pool": null,
+            "score_type": "comment_insight",
+            "show_on_homepage": false,
+            "slug": "learning",
+            "start_date": "2025-07-30T06:00:00Z",
+            "type": "question_series",
+            "user_permission": null,
+            "visibility": "normal"
+          }
+        ]
+      }
+    },
+    "resolution": null,
+    "resolved": false,
+    "scheduled_close_time": "2026-06-11T23:00:00Z",
+    "scheduled_resolve_time": "2026-06-12T18:00:00Z",
+    "source": "metaculus_api",
+    "title": "Will the June 2026 University of Michigan Consumer Sentiment number be greater than it was for May 2026?"
+  },
+  "outside_view_probability": 0.4375,
+  "parsing_failure_rate": 0.0,
+  "planned_queries": [
+    "University of Michigan Consumer Sentiment June 2026 forecast",
+    "University of Michigan Consumer Sentiment May 2026 actual",
+    "University of Michigan Consumer Sentiment historical data 2020-2026",
+    "factors influencing consumer sentiment June 2026",
+    "economic indicators affecting consumer confidence June 2026",
+    "expert predictions US economy June 2026",
+    "inflation outlook June 2026 impact on consumer sentiment",
+    "interest rate expectations June 2026 consumer sentiment",
+    "University of Michigan Consumer Sentiment methodology",
+    "consumer spending trends June 2026"
+  ],
+  "planner_text": "SEARCH(\"University of Michigan Consumer Sentiment June 2026 forecast\")\nSEARCH(\"University of Michigan Consumer Sentiment May 2026 actual\")\nSEARCH(\"University of Michigan Consumer Sentiment historical data 2020-2026\")\nSEARCH(\"factors influencing consumer sentiment June 2026\")\nSEARCH(\"economic indicators affecting consumer confidence June 2026\")\nSEARCH(\"expert predictions US economy June 2026\")\nSEARCH(\"inflation outlook June 2026 impact on consumer sentiment\")\nSEARCH(\"interest rate expectations June 2026 consumer sentiment\")\nSEARCH(\"University of Michigan Consumer Sentiment methodology\")\nSEARCH(\"consumer spending trends June 2026\")",
+  "platform": "metaculus",
+  "posted_to_metaculus_by_ensemble": false,
+  "publish_action": "publish",
+  "publish_to_metaculus_requested": false,
+  "question": "https://www.metaculus.com/questions/43704",
+  "question_title": "Will the June 2026 University of Michigan Consumer Sentiment number be greater than it was for May 2026?",
+  "question_type": "binary",
+  "question_url": "https://www.metaculus.com/questions/43704",
+  "record_file": "forecast_records\\metaculus\\20260606-124500_metaculus_oneoff_Will_the_June_2026_University_of_Michigan_Consumer_Sentiment_b1327537.json",
+  "red_team_artifact": "Here's an adversarial review of the forecast:\n\n**1. TIMELINE CONFUSION**\n*   **Critique:** The reasoning states, \"The June 2026 reading should resolve when the University of Michigan posts the June 2026 consumer sentiment figure... the first likely resolution point is the preliminary June release in mid-June 2026; if that were unavailable, the final late-June release would control.\" This is correct for the *June 2026* number. However, the resolution criteria explicitly states \"greater than 44.8 for June 2026.\" The 44.8 is identified in the reasoning as the *final May reading*. The question asks if June 2026 will be greater than *it was for May 2026*. The resolution criteria *replaces* \"it was for May 2026\" with the specific number 44.8. This is a potential point of confusion or misinterpretation. While the forecaster correctly identifies 44.8 as the final May reading, the phrasing of the resolution criteria could lead someone to think 44.8 is a *target* rather than the *May 2026 value*. This isn't a timeline confusion *per se*, but a clarity issue related to the reference point.\n*   **Verdict:** Minor clarity issue, but the forecaster seems to understand it. No significant timeline confusion.\n\n**2. BASE RATE NEGLECT**\n*   **Critique:** The forecaster explicitly states, \"I don’t have a reliable exact historical base rate for 'June UMich sentiment > May UMich sentiment,' so I’m not asserting a precise historical frequency here.\" This is a direct acknowledgment of the lack of a specific base rate for the *directional change* between consecutive months. However, the forecaster *does* provide an \"OUTSIDE_VIEW: 50%,\" which is a reasonable default for a binary outcome when no specific directional bias is known. The forecaster also notes that \"Extreme lows often see some rebound,\" which is a form of base rate thinking (regression to the mean) applied to the *level* of the sentiment, rather than the month-over-month change.\n*   **Verdict:** Acknowledged and partially addressed. Not a strong case of neglect, as the 50% outside view acts as a proxy.\n\n**3. SINGLE-SOURCE FRAGILITY**\n*   **Critique:** The resolution criteria relies solely on \"the University of Michigan's reported Index of Consumer Sentiment, expected to be located [here](http://www.sca.isr.umich.edu/).\" This is inherently a single-source question. If the University of Michigan stopped publishing the index, or if the website became permanently unavailable, the question would be unresolvable.\n*   **Verdict:** This is a clear case of single-source fragility. While the source is highly reputable and unlikely to disappear, the forecast *is* entirely dependent on it. This is an inherent characteristic of the question design, not necessarily a flaw in the *forecasting process* itself, but it's a risk factor for resolution.\n\n**4. RESOLUTION MISREAD**\n*   **Critique:** The forecaster explicitly addresses potential misreads: \"The question is **not** whether June beats the **preliminary May reading of 48.2**. It only needs to be **greater than the final May reading of 44.8**. Also, **preliminary June data is enough** to resolve the question.\" This demonstrates a clear understanding of the resolution criteria and potential pitfalls. The criteria itself is very specific (\"greater than 44.8 for June 2026. Less than or equal to that amount resolves the question as No.\").\n*   **Verdict:** No resolution misread. The forecaster has clearly understood and articulated the criteria.\n\n**5. MISSING PATHWAYS**\n*   **Critique:**\n    *   **YES scenario:** \"Gasoline prices ease, the Iran/Hormuz-related supply shock calms, and consumers feel slightly less pressure on everyday costs.\" This is a plausible pathway.\n    *   **NO scenario:** \"Gas prices stay elevated or rise further, inflation worries persist, and consumers remain pessimistic about personal finances and the broader economy.\" This is also a plausible pathway.\n    *   **Missing:** The reasoning heavily focuses on gasoline prices and geopolitical events. While these are significant, other factors can influence consumer sentiment. For example:\n        *   **Stock market performance:** A significant rally or crash could impact sentiment, especially among wealthier consumers.\n        *   **Interest rate changes/Fed policy:** Expectations or actual changes in interest rates could affect borrowing costs and economic outlook.\n        *   **Employment data:** Unexpectedly strong or weak jobs reports could shift sentiment.\n        *   **Political events/election cycle:** Major domestic political developments could influence consumer confidence.\n        *   **Other inflation components:** While gas is highlighted, food prices, housing costs, etc., also play a role.\n        *   **Consumer debt levels:** Rising debt or defaults could dampen sentiment.\n        *   **Psychological factors/media narrative:** Sometimes sentiment shifts due to a general mood or media focus, even without a direct economic trigger.\n    *   The forecast acknowledges that \"May was a record low,\" and \"Extreme lows often see some rebound.\" This is a strong argument for YES, but the *mechanisms* for that rebound beyond just gas prices easing are not fully explored.\n*   **Verdict:** There are several plausible economic and psychological pathways that",
+  "resolved": false,
+  "run_config": {
+    "aggregation": {
+      "extremize_k": 1.0,
+      "trim_fraction": 0.2
+    },
+    "as_of_utc": "2026-06-06T12:45:00.568779+00:00",
+    "models": [
+      "deepseek/deepseek-v4-pro",
+      "openai/gpt-5.4-mini",
+      "moonshotai/kimi-k2.6",
+      "google/gemini-3-flash-preview",
+      "anthropic/claude-haiku-4.5"
+    ],
+    "pipeline_version": "lean-ensemble/v2-2026.06",
+    "run_max_tokens_cap": 0,
+    "search": {
+      "linkup_queries": 8,
+      "max_evidence_docs": 16,
+      "max_search_queries": 8,
+      "provider": "serper+linkup"
+    },
+    "shrink_to_crowd": false
+  },
+  "run_type": "oneoff",
+  "schema_version": "forecast-record/v1",
+  "search_provider": "serper+linkup",
+  "signal_strength": 0.050000000000000044,
+  "signpost_report": {
+    "raw": "SIGNPOST: A significant de-escalation of geopolitical tensions in the Middle East (e.g., a lasting ceasefire in a major conflict, a diplomatic resolution to a regional dispute) leading to a sustained drop in crude oil prices.\nDIRECTION: up\nMAGNITUDE: +20pp\n\nSIGNPOST: US national average gasoline prices fall by more than $0.50 per gallon between May and mid-June 2026, as reported by AAA or EIA.\nDIRECTION: up\nMAGNITUDE: +15pp\n\nSIGNPOST: The US Consumer Price Index (CPI) report for May 2026 (released in June 2026) shows a month-over-month decline in core inflation (excluding food and energy) for the first time in over a year.\nDIRECTION: up\nMAGNITUDE: +15pp\n\nSIGNPOST: A major new conflict or significant escalation of existing conflicts in the Middle East, directly impacting oil production or shipping lanes, causing crude oil prices to surge by over 15% in a short period.\nDIRECTION: down\nMAGNITUDE: -20pp\n\nSIGNPOST: US national average gasoline prices rise by more than $0.50 per gallon between May and mid-June 2026, as reported by AAA or EIA.\nDIRECTION: down\nMAGNITUDE: -15pp",
+    "signposts": [
+      {
+        "direction": "up",
+        "event": "A significant de-escalation of geopolitical tensions in the Middle East (e.g., a lasting ceasefire in a major conflict, a diplomatic resolution to a regional dispute) leading to a sustained drop in crude oil prices.",
+        "magnitude": "+20pp"
+      },
+      {
+        "direction": "up",
+        "event": "US national average gasoline prices fall by more than $0.50 per gallon between May and mid-June 2026, as reported by AAA or EIA.",
+        "magnitude": "+15pp"
+      },
+      {
+        "direction": "up",
+        "event": "The US Consumer Price Index (CPI) report for May 2026 (released in June 2026) shows a month-over-month decline in core inflation (excluding food and energy) for the first time in over a year.",
+        "magnitude": "+15pp"
+      },
+      {
+        "direction": "down",
+        "event": "A major new conflict or significant escalation of existing conflicts in the Middle East, directly impacting oil production or shipping lanes, causing crude oil prices to surge by over 15% in a short period.",
+        "magnitude": "-20pp"
+      },
+      {
+        "direction": "down",
+        "event": "US national average gasoline prices rise by more than $0.50 per gallon between May and mid-June 2026, as reported by AAA or EIA.",
+        "magnitude": "-15pp"
+      }
+    ]
+  },
+  "signposts": [
+    {
+      "direction": "up",
+      "event": "A significant de-escalation of geopolitical tensions in the Middle East (e.g., a lasting ceasefire in a major conflict, a diplomatic resolution to a regional dispute) leading to a sustained drop in crude oil prices.",
+      "magnitude": "+19pp"
+    },
+    {
+      "direction": "up",
+      "event": "US national average gasoline prices fall by more than $0.50 per gallon between May and mid-June 2026, as reported by AAA or EIA.",
+      "magnitude": "+15pp"
+    },
+    {
+      "direction": "up",
+      "event": "The US Consumer Price Index (CPI) report for May 2026 (released in June 2026) shows a month-over-month decline in core inflation (excluding food and energy) for the first time in over a year.",
+      "magnitude": "+15pp"
+    },
+    {
+      "direction": "down",
+      "event": "A major new conflict or significant escalation of existing conflicts in the Middle East, directly impacting oil production or shipping lanes, causing crude oil prices to surge by over 15% in a short period.",
+      "magnitude": "-20pp"
+    },
+    {
+      "direction": "down",
+      "event": "US national average gasoline prices rise by more than $0.50 per gallon between May and mid-June 2026, as reported by AAA or EIA.",
+      "magnitude": "-15pp"
+    }
+  ],
+  "summary_text": "Question Type: binary\nFinal Prediction: 45.0%\nInformativeness: weak_view (|p-0.5|=0.050)\nRaw Trimmed Mean: 45.0%\nCalibrated Probability: 45.0%\nDispersion: 0.205\nConfidence Class: low\nPublish Gate: publish (score=0.74)\nParsing Failure Rate: 0.0%\nSearch Queries: planned=10 executed=8\nGate Components: spec=0.90, temporal=1.00, evidence=0.88, agreement=0.00\nGate Metrics: evidence_count=12, distinct_sources=11, primary_sources=1, mean_relevance=0.80, freshness_days=0.0\nRed Team: ran | no_change\nIndividual Runs:\n- DeepSeek V4 Pro: 35.0% (tokens=3,642, warnings=0)\n- GPT-5.4 Mini: 50.0% (tokens=5,501, warnings=0)\n- Kimi K2.6: 50.0% (tokens=12,353, warnings=0)\n- Gemini 3 Flash: 55.0% (tokens=3,802, warnings=0)\n- Claude Haiku 4.5: 4.8% (tokens=4,796, warnings=0)\nSignposts:\n- A significant de-escalation of geopolitical tensions in the Middle East (e.g., a lasting ceasefire in a major conflict, a diplomatic resolution to a regional dispute) leading to a sustained drop in crude oil prices. | direction=up | magnitude=+19pp\n- US national average gasoline prices fall by more than $0.50 per gallon between May and mid-June 2026, as reported by AAA or EIA. | direction=up | magnitude=+15pp\n- The US Consumer Price Index (CPI) report for May 2026 (released in June 2026) shows a month-over-month decline in core inflation (excluding food and energy) for the first time in over a year. | direction=up | magnitude=+15pp\n- A major new conflict or significant escalation of existing conflicts in the Middle East, directly impacting oil production or shipping lanes, causing crude oil prices to surge by over 15% in a short period. | direction=down | magnitude=-20pp\n- US national average gasoline prices rise by more than $0.50 per gallon between May and mid-June 2026, as reported by AAA or EIA. | direction=down | magnitude=-15pp",
+  "text_log_path": "forecasts/forecast_20260606_124027_Will_the_June_2026_University_of_Michigan_Consumer.txt",
+  "timestamp": "20260606_124027",
+  "token_usage": {
+    "claim_audit_hinges": {
+      "completion": 299,
+      "prompt": 689,
+      "total": 988
+    },
+    "evidence_extraction": {
+      "completion": 20567,
+      "prompt": 55404,
+      "total": 75971
+    },
+    "forecast_run:20260606_124027:claude_haiku_4.5:1": {
+      "completion": 1661,
+      "prompt": 3135,
+      "total": 4796
+    },
+    "forecast_run:20260606_124027:deepseek_v4_pro:1": {
+      "completion": 865,
+      "prompt": 2777,
+      "total": 3642
+    },
+    "forecast_run:20260606_124027:gemini_3_flash:1": {
+      "completion": 645,
+      "prompt": 3157,
+      "total": 3802
+    },
+    "forecast_run:20260606_124027:gpt-5.4_mini:1": {
+      "completion": 2768,
+      "prompt": 2733,
+      "total": 5501
+    },
+    "forecast_run:20260606_124027:kimi_k2.6:1": {
+      "completion": 9618,
+      "prompt": 2735,
+      "total": 12353
+    },
+    "forecast_run:20260606_124029:claude_haiku_4.5:1": {
+      "completion": 1498,
+      "prompt": 3701,
+      "total": 5199
+    },
+    "forecast_run:20260606_124029:gemini_3_flash:1": {
+      "completion": 561,
+      "prompt": 3755,
+      "total": 4316
+    },
+    "forecast_run:20260606_124029:gpt-5.4_mini:1": {
+      "completion": 2214,
+      "prompt": 3207,
+      "total": 5421
+    },
+    "forecast_run:20260606_124032:claude_haiku_4.5:1": {
+      "completion": 1361,
+      "prompt": 3316,
+      "total": 4677
+    },
+    "forecast_run:20260606_124032:gemini_3_flash:1": {
+      "completion": 567,
+      "prompt": 3252,
+      "total": 3819
+    },
+    "forecast_run:20260606_124032:gpt-5.4_mini:1": {
+      "completion": 2462,
+      "prompt": 2861,
+      "total": 5323
+    },
+    "forecast_run:20260606_124034:claude_haiku_4.5:1": {
+      "completion": 1247,
+      "prompt": 4489,
+      "total": 5736
+    },
+    "forecast_run:20260606_124034:deepseek_v4_pro:1": {
+      "completion": 3204,
+      "prompt": 3916,
+      "total": 7120
+    },
+    "forecast_run:20260606_124034:gemini_3_flash:1": {
+      "completion": 625,
+      "prompt": 4337,
+      "total": 4962
+    },
+    "forecast_run:20260606_124034:gpt-5.4_mini:1": {
+      "completion": 3074,
+      "prompt": 3917,
+      "total": 6991
+    },
+    "forecast_run:20260606_124037:claude_haiku_4.5:1": {
+      "completion": 1289,
+      "prompt": 3543,
+      "total": 4832
+    },
+    "forecast_run:20260606_124037:deepseek_v4_pro:1": {
+      "completion": 793,
+      "prompt": 3135,
+      "total": 3928
+    },
+    "forecast_run:20260606_124037:gemini_3_flash:1": {
+      "completion": 831,
+      "prompt": 3423,
+      "total": 4254
+    },
+    "forecast_run:20260606_124037:gpt-5.4_mini:1": {
+      "completion": 5223,
+      "prompt": 3069,
+      "total": 8292
+    },
+    "red_team_critique": {
+      "completion": 1397,
+      "prompt": 768,
+      "total": 2165
+    },
+    "search_strategy": {
+      "completion": 758,
+      "prompt": 1092,
+      "total": 1850
+    },
+    "signpost_extract": {
+      "completion": 482,
+      "prompt": 720,
+      "total": 1202
+    },
+    "spec_check": {
+      "completion": 1116,
+      "prompt": 18986,
+      "total": 20102
+    },
+    "spec_extract": {
+      "completion": 1022,
+      "prompt": 1333,
+      "total": 2355
+    }
+  },
+  "top_evidence": [
+    {
+      "bearing": "High-directness status signal",
+      "evidence_id": "E1",
+      "primary": false,
+      "relevance": 1.0,
+      "retrieved_at": "2026-06-06",
+      "snippet": "- The University of Michigan’s Consumer Sentiment Index decreased to 44.80 points in May 2026.\n- The May 2026 Consumer Sentiment Index was r",
+      "snippet_hash": "157ed29178c7aa4e",
+      "source": "tradingeconomics.com",
+      "url": "https://tradingeconomics.com/united-states/consumer-confidence"
+    },
+    {
+      "bearing": "High-directness status signal",
+      "evidence_id": "E2",
+      "primary": false,
+      "relevance": 1.0,
+      "retrieved_at": "2026-06-06",
+      "snippet": "- The final May reading for the University of Michigan Consumer Sentiment Index came in at 44.8.\n- The May 2026 reading marks a 5-point drop",
+      "snippet_hash": "a42ac0e8cd276818",
+      "source": "www.advisorperspectives.com",
+      "url": "https://www.advisorperspectives.com/dshort/updates/2026/05/22/consumer-sentiment-sinks-to-record-low-as-cost-of-living-concerns-intensify"
+    },
+    {
+      "bearing": "High-directness status signal",
+      "evidence_id": "E3",
+      "primary": false,
+      "relevance": 1.0,
+      "retrieved_at": "2026-06-06",
+      "snippet": "- The University of Michigan’s Consumer Sentiment Index plunged to 44.8 in its final May 2026 reading.\n- The final May figure was revised sh",
+      "snippet_hash": "bc8b9f399f3d24ae",
+      "source": "cryptobriefing.com",
+      "url": "https://cryptobriefing.com/michigan-consumer-sentiment-all-time-low/"
+    },
+    {
+      "bearing": "High-directness status signal",
+      "evidence_id": "E4",
+      "primary": false,
+      "relevance": 1.0,
+      "retrieved_at": "2026-06-06",
+      "snippet": "- The Michigan Consumer Sentiment Index is released monthly by the University of Michigan.\n- The survey publishes a preliminary, mid-month r",
+      "snippet_hash": "166d06ba1e5de827",
+      "source": "www.fxblue.com",
+      "url": "https://www.fxblue.com/calendar/item/608ffc81-99e8-4b1c-b673-633100761034/6f365940-a166-4c71-96a7-0d89437438af"
+    },
+    {
+      "bearing": "High-directness status signal",
+      "evidence_id": "E5",
+      "primary": false,
+      "relevance": 1.0,
+      "retrieved_at": "2026-06-06",
+      "snippet": "- The University of Michigan’s Consumer Sentiment Index plunged to a record low of 44.8 in May 2026, revised down from a preliminary 48.2.\n-",
+      "snippet_hash": "2c73d0c896d2b7db",
+      "source": "tradingeconomics.com",
+      "url": "https://tradingeconomics.com/united-states/consumer-confidence"
+    },
+    {
+      "bearing": "High-directness status signal",
+      "evidence_id": "E6",
+      "primary": false,
+      "relevance": 0.8,
+      "retrieved_at": "2026-06-06",
+      "snippet": "- Consumer sentiment declined to a level of 52.9 in December [2025], near a record low, despite continued spending and a stable economy.",
+      "snippet_hash": "acff690e52573812",
+      "source": "www.cattlerange.com",
+      "url": "https://www.cattlerange.com/articles/2025/12/university-of-michigan-consumer-sentiment-survey-near-record-low/"
+    },
+    {
+      "bearing": "High-directness status signal",
+      "evidence_id": "E7",
+      "primary": false,
+      "relevance": 0.8,
+      "retrieved_at": "2026-06-06",
+      "snippet": "- On 6th Feb 2026, the Index of Consumer Sentiment was 57.3 (Expectations 56.4).\n- On 9th Jan 2026, the Index of Consumer Sentiment was 60.5",
+      "snippet_hash": "d42aaa6258163f12",
+      "source": "thecreditbalance.com",
+      "url": "https://thecreditbalance.com/macro_updates/michigan-consumer-sentiment-index/"
+    },
+    {
+      "bearing": "Direct resolution source/mechanics",
+      "evidence_id": "E8",
+      "primary": true,
+      "relevance": 0.6,
+      "retrieved_at": "2026-06-06",
+      "snippet": "- Consumers are worried that inflation will increase and spread beyond fuel prices, even in the long run.\n- Year-ahead inflation expectation",
+      "snippet_hash": "9dbbd23b464c32d6",
+      "source": "www.sca.isr.umich.edu",
+      "url": "https://www.sca.isr.umich.edu/"
+    }
+  ],
+  "written_at_utc": "2026-06-06T12:45:00.591493+00:00"
+}

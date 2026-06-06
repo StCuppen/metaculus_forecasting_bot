@@ -1,0 +1,1267 @@
+{
+  "aggregated_forecast": {
+    "confidence_class": "medium",
+    "dispersion": 0.12660963628413122,
+    "n_runs": 5,
+    "n_trimmed": 2,
+    "p_calibrated": 0.020000000000000004,
+    "p_raw": 0.02
+  },
+  "base_rate_texts": [
+    "Historically, only the 2014–2016 West Africa Ebola outbreak led to a case first confirmed in the US, giving a rate of ~3% across all outbreaks and ~25% across large (>100 case) outbreaks, with zero precedent for Bundibugyo specifically.",
+    "Prior Bundibugyo Ebola outbreaks to date (Uganda 2007, DRC 2012) produced 0 first-confirmed US cases out of 2 outbreaks.",
+    "In the two previous Bundibugyo virus disease outbreaks (Uganda 2007 and DRC 2012), which together involved roughly 164 confirmed cases, zero cases were exported to or first confirmed in the United States.",
+    "Out of approximately 40 known Ebola outbreaks since 1976, only one (2.5%) has resulted in cases first confirmed in the United States.",
+    "Bundibugyo virus has occurred in two prior outbreaks (Uganda 2007, DRC 2012) with zero cases outside Africa; Zaire ebolavirus reached the US 4 times during the 2014-2016 outbreak (~0.036% of ~11,000 cases), but with enhanced screening in place, importation rates are substantially reduced."
+  ],
+  "brier": null,
+  "claim_audit": {
+    "assumption": 2,
+    "assumptions_note": "",
+    "evidence_backed": 13,
+    "hinge_claims": [
+      {
+        "claim": "Today is June 6, 2026.",
+        "status": "evidence_backed",
+        "type": "hinge"
+      },
+      {
+        "claim": "The Bundibugyo outbreak is largely confined to remote Ituri Province and has limited cases in Kampala.",
+        "status": "evidence_backed",
+        "type": "hinge"
+      },
+      {
+        "claim": "There are no licensed BVD-specific countermeasures available.",
+        "status": "assumption",
+        "type": "hinge"
+      },
+      {
+        "claim": "Enhanced US entry screening and travel restrictions are currently in effect.",
+        "status": "evidence_backed",
+        "type": "hinge"
+      },
+      {
+        "claim": "The CDC has explicitly reported zero confirmed US cases of Bundibugyo Ebola.",
+        "status": "evidence_backed",
+        "type": "hinge"
+      },
+      {
+        "claim": "The Bundibugyo outbreak grew rapidly to 82 confirmed cases by late May.",
+        "status": "evidence_backed",
+        "type": "hinge"
+      },
+      {
+        "claim": "The outbreak has already reached Kampala, an international air-travel hub.",
+        "status": "evidence_backed",
+        "type": "hinge"
+      },
+      {
+        "claim": "At least one US national has already tested positive for Bundibugyo Ebola.",
+        "status": "evidence_backed",
+        "type": "hinge"
+      }
+    ],
+    "items": [
+      {
+        "claim": "That leaves roughly 6 months and 25 days—about 208 days—for a case to be first confirmed in a US state or DC.",
+        "status": "evidence_backed",
+        "type": "numeric"
+      },
+      {
+        "claim": "(c) **Concrete YES scenario:** A US citizen or exempt traveler (e.g., an aid worker) is exposed in the DRC or Uganda and returns to a US state during the 2–21 day incubation period, passing airport screening while asymptomatic.",
+        "status": "evidence_backed",
+        "type": "numeric"
+      },
+      {
+        "claim": "(e) **Base rate:** In the two previous Bundibugyo virus disease outbreaks (Uganda 2007 with ~149 confirmed cases and DRC 2012 with ~15), zero cases were exported to or first confirmed in the United States.",
+        "status": "evidence_backed",
+        "type": "numeric"
+      },
+      {
+        "claim": "Across multiple other small-to-mid-sized African Ebola outbreaks, US importation has been nearly nonexistent, occurring only during the 2014–16 West Africa Zaire ebolavirus epidemic that involved roughly 28,000 cases.",
+        "status": "evidence_backed",
+        "type": "numeric"
+      },
+      {
+        "claim": "(f) **Strongest evidence:** - **Toward YES:** The outbreak grew rapidly to 82 confirmed cases by late May, has already reached Kampala (an international air-travel hub), and at least one US national has already tested positive—demonstrating that US-bound trave",
+        "status": "evidence_backed",
+        "type": "numeric"
+      },
+      {
+        "claim": "BASE_RATE: In the two previous Bundibugyo virus disease outbreaks (Uganda 2007 and DRC 2012), which together involved roughly 164 confirmed cases, zero cases were exported to or first confirmed in the United States.",
+        "status": "evidence_backed",
+        "type": "numeric"
+      },
+      {
+        "claim": "OUTSIDE_VIEW: 2% Probability: 5%",
+        "status": "assumption",
+        "type": "numeric"
+      },
+      {
+        "claim": "Today is June 6, 2026.",
+        "status": "evidence_backed",
+        "type": "hinge"
+      },
+      {
+        "claim": "The Bundibugyo outbreak is largely confined to remote Ituri Province and has limited cases in Kampala.",
+        "status": "evidence_backed",
+        "type": "hinge"
+      },
+      {
+        "claim": "There are no licensed BVD-specific countermeasures available.",
+        "status": "assumption",
+        "type": "hinge"
+      },
+      {
+        "claim": "Enhanced US entry screening and travel restrictions are currently in effect.",
+        "status": "evidence_backed",
+        "type": "hinge"
+      },
+      {
+        "claim": "The CDC has explicitly reported zero confirmed US cases of Bundibugyo Ebola.",
+        "status": "evidence_backed",
+        "type": "hinge"
+      },
+      {
+        "claim": "The Bundibugyo outbreak grew rapidly to 82 confirmed cases by late May.",
+        "status": "evidence_backed",
+        "type": "hinge"
+      },
+      {
+        "claim": "The outbreak has already reached Kampala, an international air-travel hub.",
+        "status": "evidence_backed",
+        "type": "hinge"
+      },
+      {
+        "claim": "At least one US national has already tested positive for Bundibugyo Ebola.",
+        "status": "evidence_backed",
+        "type": "hinge"
+      }
+    ],
+    "total_claims": 15
+  },
+  "community_prior": null,
+  "crowd_benchmark": {
+    "captured_at_forecast_utc": "2026-06-06T12:46:02.720571+00:00",
+    "metaculus_community_prediction": null,
+    "note": "Benchmark only; the forecast is independent of the crowd unless used_by_gate_shrink.",
+    "used_by_forecasters": false,
+    "used_by_gate_shrink": false
+  },
+  "evidence_bundle_text": "[1] www.who.int | https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON605 | retrieved=2026-06-06 | primary=True | relevance=1.00 | datapoint=True\n- A medical doctor from the United States of America who was exposed as part of their work caring for patients in the Democratic Republic of the Congo tested positive on 17 May [2026] and was transported to Germany for treatment and care.\n\n[2] www.cdc.gov | https://www.cdc.gov/ebola/situation-summary/index.html | retrieved=2026-06-06 | primary=True | relevance=1.00 | datapoint=True\n- CDC is responding to an outbreak of Ebola disease in remote areas of the Democratic Republic of the Congo (DRC) and Uganda.\n- To date, no cases of Ebola disease have been confirmed in the United States because of this outbreak.\n- The overall risk to the American public and travelers remains low.\n- On May 18, CDC and DHS announced enhanced travel screening, entry restrictions, and public health measures to prevent Ebola disease from entering the United States amid outbreaks in East and Central Africa.\n- Affected air passengers from DRC, South Sudan, and Uganda will have their air travel re-ro\n\n[3] polymarket.com | https://polymarket.com/event/ebola-case-in-the-us-by-june-30 | retrieved=2026-06-06 | primary=False | relevance=0.90 | datapoint=True\n- US public health measures, including enhanced airport screening and entry restrictions for travelers from the Democratic Republic of the Congo and Uganda, are effective May 18, 2026.\n- An ongoing Bundibugyo virus outbreak was declared a public health emergency of international concern on May 17.\n- The Bundibugyo outbreak has produced hundreds of suspected cases and dozens of confirmations primarily in Ituri Province.\n- The Bundibugyo outbreak has shown limited spread to Uganda.\n- There have been zero detections of Bundibugyo virus in the United States per CDC surveillance through May 24.\n- E\n\n[4] polymarket.com | https://polymarket.com/event/ebola-case-in-the-us-by-june-30?outcomeIndex=1 | retrieved=2026-06-06 | primary=False | relevance=0.90 | datapoint=True\n- US public health measures, including enhanced airport screening and entry restrictions for travelers from the Democratic Republic of the Congo and Uganda, are effective May 18, 2026.\n- An ongoing Bundibugyo virus outbreak was declared a public health emergency of international concern on May 17.\n- The Bundibugyo virus outbreak has produced hundreds of suspected cases and dozens of confirmations primarily in Ituri Province.\n- The Bundibugyo virus outbreak has shown limited spread to Uganda.\n- As of May 24, there have been zero detections of Bundibugyo virus in the United States per CDC survei\n\n[5] www.cdc.gov | https://www.cdc.gov/han/php/notices/han00530.html | retrieved=2026-06-06 | primary=True | relevance=0.80 | datapoint=True\n- The CDC is issuing a Health Advisory about a new outbreak of Ebola disease in the Democratic Republic of the Congo (DRC) and Uganda caused by the Bundibugyo virus.\n- The risk of spread to the United States is considered low at this time.\n- On May 15, 2026, the Ministry of Health of the Democratic Republic of the Congo (DRC) confirmed an outbreak of Ebola disease in Ituri Province in northeastern DRC.\n- As of May 16, 2026, a total of 246 suspected cases and 80 deaths have been reported in the DRC outbreak.\n- Laboratory analysis confirmed Bundibugyo virus infection in 8 of 13 samples collected\n\n[6] www.cdc.gov | https://www.cdc.gov/ebola/outbreaks/index.html | retrieved=2026-06-06 | primary=True | relevance=0.80 | datapoint=True\n- The Bundibugyo virus is the most recently discovered type of orthoebolavirus.\n- The Bundibugyo virus was discovered in 2007.\n- The Bundibugyo virus causes death in about 30% of people who contract it.\n- The Bundibugyo virus was associated with two large outbreaks, one in DRC and the other on the border of DRC and Uganda.\n- There is an outbreak of Ebola disease caused by Bundibugyo virus affecting DRC and Uganda first reported in May 2026.\n- The species of the May 2026 outbreak is Orthoebolavirus bundibugyoense.\n\n[7] www.who.int | https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON602 | retrieved=2026-06-06 | primary=True | relevance=0.80 | datapoint=True\n- On 5 May 2026, WHO received an alert regarding an unknown illness with high mortality reported in Mongbwalu Health Zone, Ituri Province.\n- The outbreak was subsequently confirmed as Bundibugyo virus disease (BVD) on 15 May 2026.\n- On 15 May 2026, the Ministry of Public Health, Hygiene and Social Welfare officially declared the 17th Ebola Disease outbreak in the DRC, occurring in Rwampara, Mongwalu and Bunia HZ.\n- The first currently known suspected case, a health worker, reported onset of symptoms on 24 April 2026 and died at a medical centre in Bunia.\n- As of 15 May, a total of 246 suspecte\n\n[8] id-ea.org | https://id-ea.org/current-ebola-outbreak-update-2026-05-18/ | retrieved=2026-06-06 | primary=False | relevance=0.80 | datapoint=True\n- On 5 May 2026, WHO received an alert about an unusually high-mortality cluster of unknown illness in Mongbwalu Health Zone, Ituri Province, eastern Democratic Republic of the Congo (DRC).\n- The first known suspected case, a health worker, developed symptoms on 24 April 2026 and died at a medical centre in Bunia.\n- On 14 May 2026, 13 of 20 samples tested positive for a non-Zaire ebolavirus.\n- Sequencing confirmed Bundibugyo virus (BDBV) within 24 hours of the 14 May 2026 testing.\n- The DRC Ministry of Health officially declared the outbreak on 15 May 2026.\n- The outbreak is occurring in a rem\n\n[9] www.devdiscourse.com | https://www.devdiscourse.com/article/business/3919536-us-adds-atlanta-area-airport-for-ebola-screening-cdc-says | retrieved=2026-06-06 | primary=False | relevance=0.80 | datapoint=True\n- The CDC has expanded enhanced Ebola screening to include Hartsfield-Jackson Atlanta International Airport for Americans returning from the Democratic Republic of the Congo, Uganda, or South Sudan.\n- Hartsfield-Jackson has established operational procedures for screening passengers.\n- Washington's Dulles International Airport was designated this week to screen returning citizens for the Ebola virus.\n- Enhanced public health entry screening is part of the CDC's Ebola approach, which also includes overseas exit screening, airline illness reporting, and post-arrival public health monitoring.\n- T\n\n[10] www.aol.com | https://www.aol.com/articles/us-adds-atlanta-area-airport-154229000.html | retrieved=2026-06-06 | primary=False | relevance=0.80 | datapoint=True\n- The US CDC expanded enhanced Ebola screening to include Hartsfield-Jackson Atlanta International Airport for Americans returning from the Democratic Republic of the Congo, Uganda, or South Sudan.\n- Washington's Dulles International Airport was designated this week to screen returning citizens for the Ebola virus.\n- Enhanced public health entry screening is one component of CDC's Ebola approach, which also includes overseas exit screening, airline illness reporting, and post-arrival public health monitoring.\n- The World Health Organization reports 82 confirmed cases, 7 confirmed deaths, 177 s\n\n[11] padhai.ai | https://padhai.ai/current-affairs/ebola-virus-outbreak-2026 | retrieved=2026-06-06 | primary=False | relevance=0.80 | datapoint=True\n- The May 2026 Ebola outbreak is spreading rapidly in the Democratic Republic of Congo.\n- There is a high risk of cross-border contamination from the May 2026 Ebola outbreak as per WHO.\n- The May 2026 outbreak is a medical emergency globally.\n- Africa CDC and WHO have officially confirmed the Ituri Province Ebola outbreak 2026 originating from Democratic Republic of Congo.\n- Bundibugyo virus (BDBV) causes Bundibugyo virus disease (BVD).\n- As of now, the ecology of BDBV is currently unclear and no reservoir host has yet been identified.\n- Bats are suspected to harbor BDBV, but this is unconfirm\n\n[12] pmc.ncbi.nlm.nih.gov | https://pmc.ncbi.nlm.nih.gov/articles/PMC5175058/ | retrieved=2026-06-06 | primary=True | relevance=0.60 | datapoint=True\n- Ebola virus disease (EVD) is a severe, often fatal illness in humans.\n- Ebola virus (EBOV) is transmitted through contact with blood or body fluids of a person who contracted or died from EVD, contaminated objects like needles and infected animals or bush meat.\n- EVD has an incubation period of 2 to 21 days.\n- There are 5 species of Ebolavirus: Zaire, Bundibugyo, Sudan, Reston and Tai Forest.\n- Zaire, Bundibugyo, and Sudan ebolaviruses have been associated with large outbreaks in Africa.\n- The virus causing the 2014 West African outbreak belongs to the Zaire species.\n- Fruit bats of the fami",
+  "executed_queries": [
+    "Bundibugyo Ebola US CDC confirmed case 2026",
+    "Ebola virus disease outbreaks 2026 Bundibugyo strain",
+    "US public health preparedness Bundibugyo Ebola",
+    "CDC guidelines Bundibugyo Ebola diagnosis US",
+    "likelihood of Bundibugyo Ebola import to US",
+    "history of Ebola cases in US by strain",
+    "expert opinion Bundibugyo Ebola US risk 2026",
+    "Bundibugyo Ebola vaccine development status"
+  ],
+  "feature_flags": {},
+  "final_mc_probabilities": null,
+  "final_numeric_percentiles": null,
+  "final_probability": 0.020000000000000004,
+  "full_log": "# Forecast Report -- 20260606_124032\n\n| Field | Value |\n|-------|-------|\n| Question | Will a case of Bundibugyo Ebola disease be first confirmed in the US before 2027? |\n| Type | binary |\n| Date | 2026-06-06 |\n| Final Prediction | 2.0% |\n| Informativeness | strong_view (signal=0.480) |\n| Confidence | medium |\n| Gate Action | publish (score=0.853) |\n\n**Canonical Spec:**\n- One-line: Will the US CDC report at least one laboratory-confirmed case of Ebola disease caused by Bundibugyo virus in a patient whose infection is first confirmed in any of the 50 US states or the District of Columbia before January 1, 2027?\n- YES: the US CDC reports at least one laboratory-confirmed case of Ebola disease caused by Bundibugyo virus in a patient whose infection is first confirmed in any of the 50 US states or the District of Columbia.\n- NO: The US CDC does not report any laboratory-confirmed case of Ebola disease caused by Bundibugyo virus in a patient whose infection is first confirmed in any of the 50 US states or the District of Columbia before January 1, 2027.\n- Window: before January 1, 2027\n- Threshold: None\n- Metric: number of laboratory-confirmed cases of Bundibugyo Ebola disease\n\n---\n\n## Search Process\n\n**Strategy Output:**\n```\nSEARCH(\"Bundibugyo Ebola US CDC confirmed case 2026\")\nSEARCH(\"Ebola virus disease outbreaks 2026 Bundibugyo strain\")\nSEARCH(\"US public health preparedness Bundibugyo Ebola\")\nSEARCH(\"CDC guidelines Bundibugyo Ebola diagnosis US\")\nSEARCH(\"likelihood of Bundibugyo Ebola import to US\")\nSEARCH(\"history of Ebola cases in US by strain\")\nSEARCH(\"expert opinion Bundibugyo Ebola US risk 2026\")\nSEARCH(\"Bundibugyo Ebola vaccine development status\")\nSEARCH(\"travel restrictions Bundibugyo Ebola affected areas\")\nSEARCH(\"US biosurveillance for emerging infectious diseases 2026\")\n```\n\n**Planned Queries (10):**\n- Bundibugyo Ebola US CDC confirmed case 2026\n- Ebola virus disease outbreaks 2026 Bundibugyo strain\n- US public health preparedness Bundibugyo Ebola\n- CDC guidelines Bundibugyo Ebola diagnosis US\n- likelihood of Bundibugyo Ebola import to US\n- history of Ebola cases in US by strain\n- expert opinion Bundibugyo Ebola US risk 2026\n- Bundibugyo Ebola vaccine development status\n- travel restrictions Bundibugyo Ebola affected areas\n- US biosurveillance for emerging infectious diseases 2026\n\n**Executed Queries (8):**\n- Bundibugyo Ebola US CDC confirmed case 2026\n- Ebola virus disease outbreaks 2026 Bundibugyo strain\n- US public health preparedness Bundibugyo Ebola\n- CDC guidelines Bundibugyo Ebola diagnosis US\n- likelihood of Bundibugyo Ebola import to US\n- history of Ebola cases in US by strain\n- expert opinion Bundibugyo Ebola US risk 2026\n- Bundibugyo Ebola vaccine development status\n\n---\n\n## Evidence Summary\n\nItems: 12 | Distinct sources: 8 | Primary: 6 | Mean relevance: 0.833 | Freshness: 0.0 days\n\n| # | Source | Primary | Relevance | Bearing | Snippet |\n|---|--------|---------|-----------|---------|---------|\n| E1 | www.who.int | Yes | 1.00 | Direct resolution source/mechanics | - A medical doctor from the United States of America who was exposed as part of ... |\n| E2 | www.cdc.gov | Yes | 1.00 | Direct resolution source/mechanics | - CDC is responding to an outbreak of Ebola disease in remote areas of the Democ... |\n| E3 | polymarket.com | No | 0.90 | High-directness status signal | - US public health measures, including enhanced airport screening and entry rest... |\n| E4 | polymarket.com | No | 0.90 | High-directness status signal | - US public health measures, including enhanced airport screening and entry rest... |\n| E5 | www.cdc.gov | Yes | 0.80 | Direct resolution source/mechanics | - The CDC is issuing a Health Advisory about a new outbreak of Ebola disease in ... |\n| E6 | www.cdc.gov | Yes | 0.80 | Direct resolution source/mechanics | - The Bundibugyo virus is the most recently discovered type of orthoebolavirus.\n... |\n| E7 | www.who.int | Yes | 0.80 | Direct resolution source/mechanics | - On 5 May 2026, WHO received an alert regarding an unknown illness with high mo... |\n| E8 | id-ea.org | No | 0.80 | High-directness status signal | - On 5 May 2026, WHO received an alert about an unusually high-mortality cluster... |\n\n---\n\n## Model Runs\n\nParsing failure rate: 0.0%\n\n| Model | Probability | Tokens | Warnings |\n|-------|-------------|--------|----------|\n| DeepSeek V4 Pro | 3.0% | 6,949 | 0 |\n| GPT-5.4 Mini | 1.0% | 5,323 | 0 |\n| Kimi K2.6 | 2.0% | 16,028 | 0 |\n| Gemini 3 Flash | 30.0% | 3,819 | 0 |\n| Claude Haiku 4.5 | 1.0% | 4,677 | 0 |\n\n---\n\n### DeepSeek V4 Pro (3.0%)\n\n<details><summary>Full reasoning (281 chars)</summary>\n\nBASE_RATE: Historically, only the 2014–2016 West Africa Ebola outbreak led to a case first confirmed in the US, giving a rate of ~3% across all outbreaks and ~25% across large (>100 case) outbreaks, with zero precedent for Bundibugyo specifically.\nOUTSIDE_VIEW: 10%\nProbability: 5%\n\n</details>\n\n---\n\n### GPT-5.4 Mini (1.0%)\n\n<details><summary>Full reasoning (1,629 chars)</summary>\n\n(a) Time remaining: about 7 months until resolution. The deadline is the moment before January 1, 2027 begins, i.e. end of Dec. 31, 2026.\n\n(b) Status quo: no Bundibugyo Ebola case has been first confirmed in the US so far; if nothing changes, the answer is No.\n\n(c) YES scenario: an infected traveler or returning healthcare worker from the DRC/Uganda reaches a US state or DC before diagnosis, is tested in the US, and CDC reports a lab-confirmed Bundibugyo case first confirmed on US soil.\n\n(d) NO scenario: the outbreak stays contained in Africa, or any infected American is diagnosed abroad or only after transfer to the US from elsewhere, so no case is first confirmed in a US state/DC before 2027.\n\n(e) Base rate: very low. Bundibugyo outbreaks have historically not produced US-confirmed cases, and imported Ebola cases in the US are rare overall.\n\n(f) Strongest evidence toward YES: there is an active Bundibugyo outbreak with international exposure risk, including at least one reported infected US national, so importation is not impossible. Strongest evidence toward NO: CDC says the risk to the US is low, screening/restrictions are already in place, and prior Bundibugyo outbreaks never produced US cases.\n\n(g) Easy-to-misread point: the event is narrowly Bundibugyo virus only, and the case must be first confirmed in the 50 states or DC. A case first confirmed abroad and later moved to the US does not count, and other Ebola species do not count.\n\nBASE_RATE: Prior Bundibugyo Ebola outbreaks to date (Uganda 2007, DRC 2012) produced 0 first-confirmed US cases out of 2 outbreaks.\nOUTSIDE_VIEW: 1%\n\nProbability: 3%\n\n</details>\n\n---\n\n### Kimi K2.6 (2.0%)\n\n<details><summary>Full reasoning (2,975 chars)</summary>\n\n(a) **Time remaining:** Today is June 6, 2026. The exact deadline is January 1, 2027. That leaves roughly 6 months and 25 days—about 208 days—for a case to be first confirmed in a US state or DC.\n\n(b) **Status quo outcome:** If conditions remain as they are—with the outbreak largely confined to remote Ituri Province and limited Kampala cases, no licensed BVD-specific countermeasures, enhanced US entry screening and travel restrictions in effect, and the CDC explicitly reporting zero confirmed US cases—the question resolves **NO**.\n\n(c) **Concrete YES scenario:** A US citizen or exempt traveler (e.g., an aid worker) is exposed in the DRC or Uganda and returns to a US state during the 2–21 day incubation period, passing airport screening while asymptomatic. They develop fever and other symptoms in the US, seek care at a domestic hospital, and are laboratory-confirmed by CDC as having Bundibugyo virus before any diagnosis abroad.\n\n(d) **Concrete NO scenario:** Enhanced screening blocks or detects any infected travelers before or upon arrival; infected American nationals are diagnosed overseas and evacuated to non-US facilities (as happened with the US doctor sent to Germany); the outbreak remains contained in Africa; and CDC continues to report zero confirmed US cases through December 31, 2026.\n\n(e) **Base rate:** In the two previous Bundibugyo virus disease outbreaks (Uganda 2007 with ~149 confirmed cases and DRC 2012 with ~15), zero cases were exported to or first confirmed in the United States. Across multiple other small-to-mid-sized African Ebola outbreaks, US importation has been nearly nonexistent, occurring only during the 2014–16 West Africa Zaire ebolavirus epidemic that involved roughly 28,000 cases.\n\n(f) **Strongest evidence:**  \n- **Toward YES:** The outbreak grew rapidly to 82 confirmed cases by late May, has already reached Kampala (an international air-travel hub), and at least one US national has already tested positive—demonstrating that US-bound travelers are being exposed.  \n- **Toward NO:** CDC has stated outright that zero cases have been confirmed in the US, the risk to Americans remains low, and multi-layered controls (enhanced entry screening, travel restrictions, re-routing to designated airports, and post-arrival monitoring) are actively operating to prevent importation.\n\n(g) **Resolution nuance:** The requirement that the infection be **“first confirmed”** in a US state or DC excludes any patient diagnosed abroad and later medically evacuated to the US. Because infected Americans are likely to be identified overseas and treated there (as the known US doctor was sent to Germany), this criterion narrows the question significantly from naive expectations.\n\nBASE_RATE: In the two previous Bundibugyo virus disease outbreaks (Uganda 2007 and DRC 2012), which together involved roughly 164 confirmed cases, zero cases were exported to or first confirmed in the United States.\nOUTSIDE_VIEW: 2%\nProbability: 5%\n\n</details>\n\n---\n\n### Gemini 3 Flash (30.0%)\n\n<details><summary>Full reasoning (2,456 chars)</summary>\n\n(a) Time remaining: Approximately 6 months and 25 days (from June 6, 2026, to January 1, 2027).\n(b) Status quo: No cases have been confirmed in the US. Enhanced screening and travel restrictions are in place.\n(c) Scenario for YES: An American aid worker or a traveler from the Ituri region bypasses or passes screening while asymptomatic (incubation up to 21 days), develops symptoms in the US, and is laboratory-confirmed by the CDC before Jan 1, 2027.\n(d) Scenario for NO: The outbreak is contained within East/Central Africa, or any infected individuals traveling to the US are identified and confirmed before arrival, or they are medically evacuated after being confirmed abroad (which does not count toward resolution).\n(e) Base rate: Extremely low. Only one Ebola outbreak (Zaire 2014-16) has ever resulted in cases first confirmed on US soil (4 cases). Bundibugyo has never been detected outside Africa.\n(f) Strongest evidence for YES: The outbreak is large enough to be a PHEIC, has reached a major city (Kampala), and at least one American has already been infected. Strongest evidence for NO: Strict US entry restrictions/screening are already active, and the Bundibugyo virus historically has lower transmissibility and lower case fatality rates (~30%) than the Zaire strain, potentially reducing the \"momentum\" of the epidemic.\n(g) Resolution nuances: The case must be **first confirmed** in the US. Medical evacuations of patients already confirmed positive in Africa (like the doctor sent to Germany) do not count.\n\nBASE_RATE: Out of approximately 40 known Ebola outbreaks since 1976, only one (2.5%) has resulted in cases first confirmed in the United States.\nOUTSIDE_VIEW: 5%\n\nThe current situation is more dangerous than the historical average because a PHEIC has already been declared and an American has been infected, but the window for resolution is short (less than 7 months). The US has significantly improved its \"detect and respond\" capabilities since 2014. Enhanced screening at Dulles and Atlanta, combined with the remote nature of the primary outbreak site in Ituri, makes a \"stealth\" entry difficult. However, the presence of cases in Kampala increases the risk of international travel by infected individuals. Given the 21-day incubation period, there is a non-negligible chance of an asymptomatic carrier arriving and being tested first in the US, but the most likely outcome remains no US-confirmed cases.\n\nProbability: 12%\n\n</details>\n\n---\n\n### Claude Haiku 4.5 (1.0%)\n\n<details><summary>Full reasoning (5,474 chars)</summary>\n\n# Forecasting Analysis: Bundibugyo Ebola in the US by 2027\n\n## (a) Time Remaining and Deadline\n- **Today's date:** June 6, 2026\n- **Resolution deadline:** January 1, 2027\n- **Time remaining:** ~7 months\n\n## (b) Status Quo Outcome\nIf nothing changes, the most likely scenario is that:\n- The outbreak remains contained primarily in remote areas of DRC and Uganda\n- Enhanced US screening and entry restrictions continue to function effectively\n- No cases are confirmed in the US by the deadline\n- This aligns with CDC's current assessment that \"risk to the American public remains low\"\n\n## (c) Concrete YES Scenario\n- An infected individual (healthcare worker, researcher, or family member) from the affected region travels to the US despite screening\n- They either evade detection at entry screening or develop symptoms after arrival\n- Symptoms are recognized and tested, confirming Bundibugyo virus\n- Case is confirmed in a US state/DC before January 1, 2027\n- Example: A healthcare worker with atypical presentation passes through screening, develops symptoms 5-10 days after arrival, and tests positive in early December 2026\n\n## (d) Concrete NO Scenario\n- Entry restrictions and enhanced screening remain effective throughout the 7-month period\n- The outbreak is contained in DRC/Uganda through public health interventions\n- No infected individuals successfully reach US territory\n- Any Americans in affected areas are either evacuated before infection or treated abroad (as with the doctor transported to Germany)\n- This is the most probable path given current controls\n\n## (e) Base Rate Analysis\n\n**Reference class 1: Ebola species reaching US soil**\n- 2014-2016 Zaire ebolavirus epidemic: 4 cases confirmed in US (out of ~11,000 total cases in West Africa)\n- Rate: ~0.036% of outbreak cases reached US\n- However, this was the largest Ebola outbreak on record with extensive international travel from affected regions\n\n**Reference class 2: Bundibugyo-specific history**\n- 2007 Uganda outbreak: 0 cases outside Africa\n- 2012 DRC outbreak: 0 cases outside Africa\n- Historical rate for Bundibugyo reaching US: 0%\n\n**Reference class 3: Rare disease importation to US with active screening**\n- With enhanced screening in place, importation of rare tropical diseases is substantially reduced\n- Base rate for containment: typically 95%+ when active screening is implemented\n\n## (f) Strongest Evidence\n\n**Toward YES:**\n- An American national in DRC already tested positive (though transported to Germany, not US)\n- Americans are present in the affected region as healthcare workers/researchers\n- The 2014-2016 precedent shows Ebola *can* reach the US (4 cases)\n- 7 months is a meaningful window for potential transmission chains\n\n**Toward NO:**\n- **Strongest:** Enhanced entry screening and restrictions were implemented May 18, 2026 (before today's date of June 6)\n- **Strongest:** Bundibugyo has never left Africa in two previous outbreaks despite occurring in accessible regions\n- **Strongest:** The c\n\n... [2474 chars truncated]\n\n</details>\n\n---\n\n## Aggregation\n\n| Metric | Value |\n|--------|-------|\n| Raw trimmed mean | 0.0200 (2.0%) |\n| Calibrated (extremized) | 0.0200 (2.0%) |\n| Final probability | 0.0200 (2.0%) |\n| Dispersion | 0.1266 |\n| N runs | 5 (trimmed: 2) |\n\n---\n\n## Gate Decision\n\n| Component | Score |\n|-----------|-------|\n| Spec confidence | 0.900 |\n| Temporal relevance | 1.000 |\n| Evidence sufficiency | 1.000 |\n| Model agreement | 0.367 |\n| **Weighted gate score** | **0.853** |\n\n**Action:** publish\n\n**Reasons:**\n- Model disagreement is high.\n- Gate action: publish.\n\n\n---\n\n## Red Team\n\nStatus: no change\n\n<details><summary>Critique</summary>\n\nHere's an adversarial review of the forecast:\n\n**1. TIMELINE CONFUSION**\n*   **Critique:** The reasoning states, \"Today is June 6, 2026. The exact deadline is January 1, 2027. That leaves roughly 6 months and 25 days—about 208 days—for a case to be first confirmed in a US state or DC.\" This is a precise calculation and seems correct given the stated \"Today\" date. However, the prompt itself does not provide a \"Today\" date, implying this is a hypothetical scenario *within* the forecast's reasoning. Assuming the forecast *itself* was written on June 6, 2026, the timeline calculation is accurate. If the forecast was written at a different time, this would be a significant error. For the purpose of reviewing the *provided text*, the internal consistency is fine.\n*   **Verdict:** No significant timeline confusion *within the provided text's internal logic*.\n\n**2. BASE RATE NEGLECT**\n*   **Critique:** The forecast explicitly mentions base rates: \"In the two previous Bundibugyo virus disease outbreaks (Uganda 2007 with ~149 confirmed cases and DRC 2012 with ~15), zero cases were exported to or first confirmed in the United States.\" It also notes, \"Across multiple other small-to-mid-sized African Ebola outbreaks, US importation has been nearly nonexistent, occurring only during the 2014–16 West Africa Zaire ebolavirus epidemic that involved roughly 28,000 cases.\" This is good. However, the \"Strongest evidence: Toward YES\" section highlights that \"The outbreak grew rapidly to 82 confirmed cases by late May, has already reached Kampala (an international air-travel hub), and at least one US national has already tested positive—demonstrating that US-bound travelers are being exposed.\" This *feels* like it's giving too much weight to the current outbreak's specifics (which are still relatively small compared to the 2014-16 Zaire outbreak) and potentially underplaying the very strong historical base rate of *zero* US importations for Bundibugyo, especially given the \"first confirmed in US\" criterion. The jump from a 0% historical base rate for Bundibugyo to a 2% draft probability (and then 5% final) seems to be driven more by the \"current outbreak specifics\" than a robust adjustment from the base rate. The base rate for *any* Ebola importation (excluding the massive 2014-16 Zaire outbreak) is also extremely low. The forecast acknowledges the base rate but then seems to deviate from it quite significantly based on relatively weak \"toward YES\" evidence.\n*   **Verdict:** Potential for base rate neglect, or at least an insufficient justification for deviating so far from a very strong base rate of zero for this specific virus. The \"one US national has already tested positive\" is a strong piece of evidence for *exposure*, but not necessarily for *first confirmation in the US*, especially given the resolution nuance.\n\n**3. SINGLE-SOURCE FRAGILITY**\n*   **Critique:** The forecast relies on \"CDC reports\" for confirmation and \"CDC has stated outright\" for risk assessment and controls. While the CDC is the definitive source for resolution, relying heavily on their *current statements* about risk and controls could be fragile. If the CDC's assessment changes, or if their controls prove less effective than stated, the forecast's \"NO\" arguments weaken. The \"Strongest evidence: Toward NO\" section is almost entirely based on CDC statements.\n*   **Verdict:** Moderate single-source fragility, particularly for the \"NO\" arguments.\n\n**4. RESOLUTION MISREAD**\n*   **Critique:** The forecast explicitly addresses the \"first confirmed\" nuance in section (g) and correctly interprets it as excluding cases diagnosed abroad and then evacuated. This is a critical and well-understood point.\n*   **Verdict:** No resolution misread.\n\n**5. MISSING PATHWAYS**\n*   **Critique:**\n    *   **YES pathways:** The forecast focuses on a US citizen/exempt traveler exposed abroad, returning while asymptomatic, and then being diagnosed in the US. This is the most obvious pathway. However, it doesn't explicitly consider a scenario where a non-exempt traveler (e.g., someone who lied on forms, or a refugee/asylum seeker) might enter the US and evade initial screening, then develop symptoms. While less likely, it's a pathway. It also doesn't explicitly consider a scenario where the outbreak in Africa escalates dramatically beyond current expectations, overwhelming existing controls, or leading to a more widespread global spread that increases the probability of US importation.\n    *   **NO pathways:** The forecast covers enhanced screening, diagnosis overseas, and containment in Africa. It could also mention the possibility of the current outbreak being quickly contained and extinguished, reducing the overall risk pool.\n    *   **General:** The forecast doesn't explicitly consider the possibility of a *false positive* or a *misdiagnosis* that is later corrected, which could temporarily trigger a \"YES\" but then be retracted. While the resolution criteria specify \"laboratory-confirmed,\" the initial reporting could be messy.\n*   **Verdict:** Minor missing pathways. The core pathways are covered, but some edge cases or more extreme escalations/de-escalations of the African outbreak could\n\n</details>\n\n---\n\n## Claim Audit\n\nTotal claims: 15 | Evidence-backed: 13 | Assumptions: 2\n\n**Hinge Claims:**\n- [evidence] Today is June 6, 2026.\n- [evidence] The Bundibugyo outbreak is largely confined to remote Ituri Province and has limited cases in Kampala.\n- [ASSUMPTION] There are no licensed BVD-specific countermeasures available.\n- [evidence] Enhanced US entry screening and travel restrictions are currently in effect.\n- [evidence] The CDC has explicitly reported zero confirmed US cases of Bundibugyo Ebola.\n- [evidence] The Bundibugyo outbreak grew rapidly to 82 confirmed cases by late May.\n- [evidence] The outbreak has already reached Kampala, an international air-travel hub.\n- [evidence] At least one US national has already tested positive for Bundibugyo Ebola.\n\n\n---\n\n## Signposts\n\n| Event | Direction | Magnitude |\n|-------|-----------|----------|\n| The current Bundibugyo outbreak in Africa spreads significantly beyond Ituri Province and Kampala, with confirmed cases appearing in a major international travel hub outside of Uganda (e.g., Nairobi, Addis Ababa, or a European city). | up | +20pp |\n| The US CDC announces a significant reduction or cessation of enhanced entry screening, travel restrictions, or post-arrival monitoring protocols for travelers from affected regions, citing reduced risk or resource reallocation. | up | +14pp |\n| A US national who was exposed to Bundibugyo virus in Africa is medically evacuated to the US for treatment, and the CDC explicitly states that their infection was *first confirmed* in the US. | up | +30pp |\n| The current Bundibugyo outbreak in Africa is officially declared over by the WHO or relevant national health authorities, with no new cases reported for at least 42 days. | down | -1pp |\n| A licensed vaccine or highly effective therapeutic specifically for Bundibugyo virus disease becomes widely available and is deployed in affected regions, significantly reducing transmission and severity. | down | -1pp |\n\n---\n\n## Final Summary\n\n**Prediction:** 2.0%\n**Confidence class:** medium\n**Informativeness:** strong_view\n**Gate action:** publish\n",
+  "full_reasoning": "# Ensemble Forecast (2.0%)\n\n---\n\n## Search Strategy Output\n\n---\n\nSEARCH(\"Bundibugyo Ebola US CDC confirmed case 2026\")\nSEARCH(\"Ebola virus disease outbreaks 2026 Bundibugyo strain\")\nSEARCH(\"US public health preparedness Bundibugyo Ebola\")\nSEARCH(\"CDC guidelines Bundibugyo Ebola diagnosis US\")\nSEARCH(\"likelihood of Bundibugyo Ebola import to US\")\nSEARCH(\"history of Ebola cases in US by strain\")\nSEARCH(\"expert opinion Bundibugyo Ebola US risk 2026\")\nSEARCH(\"Bundibugyo Ebola vaccine development status\")\nSEARCH(\"travel restrictions Bundibugyo Ebola affected areas\")\nSEARCH(\"US biosurveillance for emerging infectious diseases 2026\")\n\n---\n\n## Planned Queries\n\n---\n\n- Bundibugyo Ebola US CDC confirmed case 2026\n- Ebola virus disease outbreaks 2026 Bundibugyo strain\n- US public health preparedness Bundibugyo Ebola\n- CDC guidelines Bundibugyo Ebola diagnosis US\n- likelihood of Bundibugyo Ebola import to US\n- history of Ebola cases in US by strain\n- expert opinion Bundibugyo Ebola US risk 2026\n- Bundibugyo Ebola vaccine development status\n- travel restrictions Bundibugyo Ebola affected areas\n- US biosurveillance for emerging infectious diseases 2026\n\n---\n\n## Executed Queries\n\n---\n\n- Bundibugyo Ebola US CDC confirmed case 2026\n- Ebola virus disease outbreaks 2026 Bundibugyo strain\n- US public health preparedness Bundibugyo Ebola\n- CDC guidelines Bundibugyo Ebola diagnosis US\n- likelihood of Bundibugyo Ebola import to US\n- history of Ebola cases in US by strain\n- expert opinion Bundibugyo Ebola US risk 2026\n- Bundibugyo Ebola vaccine development status\n\n---\n\n## Evidence Bundle\n\n---\n\n[1] www.who.int | https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON605 | retrieved=2026-06-06 | primary=True | relevance=1.00 | datapoint=True\n- A medical doctor from the United States of America who was exposed as part of their work caring for patients in the Democratic Republic of the Congo tested positive on 17 May [2026] and was transported to Germany for treatment and care.\n\n[2] www.cdc.gov | https://www.cdc.gov/ebola/situation-summary/index.html | retrieved=2026-06-06 | primary=True | relevance=1.00 | datapoint=True\n- CDC is responding to an outbreak of Ebola disease in remote areas of the Democratic Republic of the Congo (DRC) and Uganda.\n- To date, no cases of Ebola disease have been confirmed in the United States because of this outbreak.\n- The overall risk to the American public and travelers remains low.\n- On May 18, CDC and DHS announced enhanced travel screening, entry restrictions, and public health measures to prevent Ebola disease from entering the United States amid outbreaks in East and Central Africa.\n- Affected air passengers from DRC, South Sudan, and Uganda will have their air travel re-ro\n\n[3] polymarket.com | https://polymarket.com/event/ebola-case-in-the-us-by-june-30 | retrieved=2026-06-06 | primary=False | relevance=0.90 | datapoint=True\n- US public health measures, including enhanced airport screening and entry restrictions for travelers from the Democratic Republic of the Congo and Uganda, are effective May 18, 2026.\n- An ongoing Bundibugyo virus outbreak was declared a public health emergency of international concern on May 17.\n- The Bundibugyo outbreak has produced hundreds of suspected cases and dozens of confirmations primarily in Ituri Province.\n- The Bundibugyo outbreak has shown limited spread to Uganda.\n- There have been zero detections of Bundibugyo virus in the United States per CDC surveillance through May 24.\n- E\n\n[4] polymarket.com | https://polymarket.com/event/ebola-case-in-the-us-by-june-30?outcomeIndex=1 | retrieved=2026-06-06 | primary=False | relevance=0.90 | datapoint=True\n- US public health measures, including enhanced airport screening and entry restrictions for travelers from the Democratic Republic of the Congo and Uganda, are effective May 18, 2026.\n- An ongoing Bundibugyo virus outbreak was declared a public health emergency of international concern on May 17.\n- The Bundibugyo virus outbreak has produced hundreds of suspected cases and dozens of confirmations primarily in Ituri Province.\n- The Bundibugyo virus outbreak has shown limited spread to Uganda.\n- As of May 24, there have been zero detections of Bundibugyo virus in the United States per CDC survei\n\n[5] www.cdc.gov | https://www.cdc.gov/han/php/notices/han00530.html | retrieved=2026-06-06 | primary=True | relevance=0.80 | datapoint=True\n- The CDC is issuing a Health Advisory about a new outbreak of Ebola disease in the Democratic Republic of the Congo (DRC) and Uganda caused by the Bundibugyo virus.\n- The risk of spread to the United States is considered low at this time.\n- On May 15, 2026, the Ministry of Health of the Democratic Republic of the Congo (DRC) confirmed an outbreak of Ebola disease in Ituri Province in northeastern DRC.\n- As of May 16, 2026, a total of 246 suspected cases and 80 deaths have been reported in the DRC outbreak.\n- Laboratory analysis confirmed Bundibugyo virus infection in 8 of 13 samples collected\n\n[6] www.cdc.gov | https://www.cdc.gov/ebola/outbreaks/index.html | retrieved=2026-06-06 | primary=True | relevance=0.80 | datapoint=True\n- The Bundibugyo virus is the most recently discovered type of orthoebolavirus.\n- The Bundibugyo virus was discovered in 2007.\n- The Bundibugyo virus causes death in about 30% of people who contract it.\n- The Bundibugyo virus was associated with two large outbreaks, one in DRC and the other on the border of DRC and Uganda.\n- There is an outbreak of Ebola disease caused by Bundibugyo virus affecting DRC and Uganda first reported in May 2026.\n- The species of the May 2026 outbreak is Orthoebolavirus bundibugyoense.\n\n[7] www.who.int | https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON602 | retrieved=2026-06-06 | primary=True | relevance=0.80 | datapoint=True\n- On 5 May 2026, WHO received an alert regarding an unknown illness with high mortality reported in Mongbwalu Health Zone, Ituri Province.\n- The outbreak was subsequently confirmed as Bundibugyo virus disease (BVD) on 15 May 2026.\n- On 15 May 2026, the Ministry of Public Health, Hygiene and Social Welfare officially declared the 17th Ebola Disease outbreak in the DRC, occurring in Rwampara, Mongwalu and Bunia HZ.\n- The first currently known suspected case, a health worker, reported onset of symptoms on 24 April 2026 and died at a medical centre in Bunia.\n- As of 15 May, a total of 246 suspecte\n\n[8] id-ea.org | https://id-ea.org/current-ebola-outbreak-update-2026-05-18/ | retrieved=2026-06-06 | primary=False | relevance=0.80 | datapoint=True\n- On 5 May 2026, WHO received an alert about an unusually high-mortality cluster of unknown illness in Mongbwalu Health Zone, Ituri Province, eastern Democratic Republic of the Congo (DRC).\n- The first known suspected case, a health worker, developed symptoms on 24 April 2026 and died at a medical centre in Bunia.\n- On 14 May 2026, 13 of 20 samples tested positive for a non-Zaire ebolavirus.\n- Sequencing confirmed Bundibugyo virus (BDBV) within 24 hours of the 14 May 2026 testing.\n- The DRC Ministry of Health officially declared the outbreak on 15 May 2026.\n- The outbreak is occurring in a rem\n\n[9] www.devdiscourse.com | https://www.devdiscourse.com/article/business/3919536-us-adds-atlanta-area-airport-for-ebola-screening-cdc-says | retrieved=2026-06-06 | primary=False | relevance=0.80 | datapoint=True\n- The CDC has expanded enhanced Ebola screening to include Hartsfield-Jackson Atlanta International Airport for Americans returning from the Democratic Republic of the Congo, Uganda, or South Sudan.\n- Hartsfield-Jackson has established operational procedures for screening passengers.\n- Washington's Dulles International Airport was designated this week to screen returning citizens for the Ebola virus.\n- Enhanced public health entry screening is part of the CDC's Ebola approach, which also includes overseas exit screening, airline illness reporting, and post-arrival public health monitoring.\n- T\n\n[10] www.aol.com | https://www.aol.com/articles/us-adds-atlanta-area-airport-154229000.html | retrieved=2026-06-06 | primary=False | relevance=0.80 | datapoint=True\n- The US CDC expanded enhanced Ebola screening to include Hartsfield-Jackson Atlanta International Airport for Americans returning from the Democratic Republic of the Congo, Uganda, or South Sudan.\n- Washington's Dulles International Airport was designated this week to screen returning citizens for the Ebola virus.\n- Enhanced public health entry screening is one component of CDC's Ebola approach, which also includes overseas exit screening, airline illness reporting, and post-arrival public health monitoring.\n- The World Health Organization reports 82 confirmed cases, 7 confirmed deaths, 177 s\n\n[11] padhai.ai | https://padhai.ai/current-affairs/ebola-virus-outbreak-2026 | retrieved=2026-06-06 | primary=False | relevance=0.80 | datapoint=True\n- The May 2026 Ebola outbreak is spreading rapidly in the Democratic Republic of Congo.\n- There is a high risk of cross-border contamination from the May 2026 Ebola outbreak as per WHO.\n- The May 2026 outbreak is a medical emergency globally.\n- Africa CDC and WHO have officially confirmed the Ituri Province Ebola outbreak 2026 originating from Democratic Republic of Congo.\n- Bundibugyo virus (BDBV) causes Bundibugyo virus disease (BVD).\n- As of now, the ecology of BDBV is currently unclear and no reservoir host has yet been identified.\n- Bats are suspected to harbor BDBV, but this is unconfirm\n\n[12] pmc.ncbi.nlm.nih.gov | https://pmc.ncbi.nlm.nih.gov/articles/PMC5175058/ | retrieved=2026-06-06 | primary=True | relevance=0.60 | datapoint=True\n- Ebola virus disease (EVD) is a severe, often fatal illness in humans.\n- Ebola virus (EBOV) is transmitted through contact with blood or body fluids of a person who contracted or died from EVD, contaminated objects like needles and infected animals or bush meat.\n- EVD has an incubation period of 2 to 21 days.\n- There are 5 species of Ebolavirus: Zaire, Bundibugyo, Sudan, Reston and Tai Forest.\n- Zaire, Bundibugyo, and Sudan ebolaviruses have been associated with large outbreaks in Africa.\n- The virus causing the 2014 West African outbreak belongs to the Zaire species.\n- Fruit bats of the fami\n\n---\n\n## Top Evidence\n\n---\n\n- E1 | www.who.int | 2026-06-06 | primary=True | relevance=1.0 | bearing=Direct resolution source/mechanics | snippet_hash=93263ba2d6a54e35 | - A medical doctor from the United States of America who was exposed as part of their work caring for patients in the Democratic Republic of\n- E2 | www.cdc.gov | 2026-06-06 | primary=True | relevance=1.0 | bearing=Direct resolution source/mechanics | snippet_hash=313509d752521946 | - CDC is responding to an outbreak of Ebola disease in remote areas of the Democratic Republic of the Congo (DRC) and Uganda.\n- To date, no \n- E3 | polymarket.com | 2026-06-06 | primary=False | relevance=0.9 | bearing=High-directness status signal | snippet_hash=13ac9ef6a91cc13d | - US public health measures, including enhanced airport screening and entry restrictions for travelers from the Democratic Republic of the C\n- E4 | polymarket.com | 2026-06-06 | primary=False | relevance=0.9 | bearing=High-directness status signal | snippet_hash=13ac9ef6a91cc13d | - US public health measures, including enhanced airport screening and entry restrictions for travelers from the Democratic Republic of the C\n- E5 | www.cdc.gov | 2026-06-06 | primary=True | relevance=0.8 | bearing=Direct resolution source/mechanics | snippet_hash=4868878482b5f506 | - The CDC is issuing a Health Advisory about a new outbreak of Ebola disease in the Democratic Republic of the Congo (DRC) and Uganda caused\n- E6 | www.cdc.gov | 2026-06-06 | primary=True | relevance=0.8 | bearing=Direct resolution source/mechanics | snippet_hash=3913d746274d69d7 | - The Bundibugyo virus is the most recently discovered type of orthoebolavirus.\n- The Bundibugyo virus was discovered in 2007.\n- The Bundibu\n- E7 | www.who.int | 2026-06-06 | primary=True | relevance=0.8 | bearing=Direct resolution source/mechanics | snippet_hash=7afe287ec7c40c46 | - On 5 May 2026, WHO received an alert regarding an unknown illness with high mortality reported in Mongbwalu Health Zone, Ituri Province.\n-\n- E8 | id-ea.org | 2026-06-06 | primary=False | relevance=0.8 | bearing=High-directness status signal | snippet_hash=a9d62c6eff85ca59 | - On 5 May 2026, WHO received an alert about an unusually high-mortality cluster of unknown illness in Mongbwalu Health Zone, Ituri Province\n\n---\n\n## Aggregate\n\n---\n\n- p_raw=0.0200\n- p_calibrated=0.0200\n- dispersion=0.1266\n- confidence=medium\n- gate_action=publish\n- gate_components: spec=0.900, temporal=1.000, evidence=1.000, agreement=0.367\n- parsing_failure_rate=0.000\n\n\n---\n\n## Red-Team Critique\n\n---\n\nHere's an adversarial review of the forecast:\n\n**1. TIMELINE CONFUSION**\n*   **Critique:** The reasoning states, \"Today is June 6, 2026. The exact deadline is January 1, 2027. That leaves roughly 6 months and 25 days—about 208 days—for a case to be first confirmed in a US state or DC.\" This is a precise calculation and seems correct given the stated \"Today\" date. However, the prompt itself does not provide a \"Today\" date, implying this is a hypothetical scenario *within* the forecast's reasoning. Assuming the forecast *itself* was written on June 6, 2026, the timeline calculation is accurate. If the forecast was written at a different time, this would be a significant error. For the purpose of reviewing the *provided text*, the internal consistency is fine.\n*   **Verdict:** No significant timeline confusion *within the provided text's internal logic*.\n\n**2. BASE RATE NEGLECT**\n*   **Critique:** The forecast explicitly mentions base rates: \"In the two previous Bundibugyo virus disease outbreaks (Uganda 2007 with ~149 confirmed cases and DRC 2012 with ~15), zero cases were exported to or first confirmed in the United States.\" It also notes, \"Across multiple other small-to-mid-sized African Ebola outbreaks, US importation has been nearly nonexistent, occurring only during the 2014–16 West Africa Zaire ebolavirus epidemic that involved roughly 28,000 cases.\" This is good. However, the \"Strongest evidence: Toward YES\" section highlights that \"The outbreak grew rapidly to 82 confirmed cases by late May, has already reached Kampala (an international air-travel hub), and at least one US national has already tested positive—demonstrating that US-bound travelers are being exposed.\" This *feels* like it's giving too much weight to the current outbreak's specifics (which are still relatively small compared to the 2014-16 Zaire outbreak) and potentially underplaying the very strong historical base rate of *zero* US importations for Bundibugyo, especially given the \"first confirmed in US\" criterion. The jump from a 0% historical base rate for Bundibugyo to a 2% draft probability (and then 5% final) seems to be driven more by the \"current outbreak specifics\" than a robust adjustment from the base rate. The base rate for *any* Ebola importation (excluding the massive 2014-16 Zaire outbreak) is also extremely low. The forecast acknowledges the base rate but then seems to deviate from it quite significantly based on relatively weak \"toward YES\" evidence.\n*   **Verdict:** Potential for base rate neglect, or at least an insufficient justification for deviating so far from a very strong base rate of zero for this specific virus. The \"one US national has already tested positive\" is a strong piece of evidence for *exposure*, but not necessarily for *first confirmation in the US*, especially given the resolution nuance.\n\n**3. SINGLE-SOURCE FRAGILITY**\n*   **Critique:** The forecast relies on \"CDC reports\" for confirmation and \"CDC has stated outright\" for risk assessment and controls. While the CDC is the definitive source for resolution, relying heavily on their *current statements* about risk and controls could be fragile. If the CDC's assessment changes, or if their controls prove less effective than stated, the forecast's \"NO\" arguments weaken. The \"Strongest evidence: Toward NO\" section is almost entirely based on CDC statements.\n*   **Verdict:** Moderate single-source fragility, particularly for the \"NO\" arguments.\n\n**4. RESOLUTION MISREAD**\n*   **Critique:** The forecast explicitly addresses the \"first confirmed\" nuance in section (g) and correctly interprets it as excluding cases diagnosed abroad and then evacuated. This is a critical and well-understood point.\n*   **Verdict:** No resolution misread.\n\n**5. MISSING PATHWAYS**\n*   **Critique:**\n    *   **YES pathways:** The forecast focuses on a US citizen/exempt traveler exposed abroad, returning while asymptomatic, and then being diagnosed in the US. This is the most obvious pathway. However, it doesn't explicitly consider a scenario where a non-exempt traveler (e.g., someone who lied on forms, or a refugee/asylum seeker) might enter the US and evade initial screening, then develop symptoms. While less likely, it's a pathway. It also doesn't explicitly consider a scenario where the outbreak in Africa escalates dramatically beyond current expectations, overwhelming existing controls, or leading to a more widespread global spread that increases the probability of US importation.\n    *   **NO pathways:** The forecast covers enhanced screening, diagnosis overseas, and containment in Africa. It could also mention the possibility of the current outbreak being quickly contained and extinguished, reducing the overall risk pool.\n    *   **General:** The forecast doesn't explicitly consider the possibility of a *false positive* or a *misdiagnosis* that is later corrected, which could temporarily trigger a \"YES\" but then be retracted. While the resolution criteria specify \"laboratory-confirmed,\" the initial reporting could be messy.\n*   **Verdict:** Minor missing pathways. The core pathways are covered, but some edge cases or more extreme escalations/de-escalations of the African outbreak could\n\n---\n\n## Claim Audit\n\n---\n\n{'total_claims': 15, 'evidence_backed': 13, 'assumption': 2, 'hinge_claims': [{'claim': 'Today is June 6, 2026.', 'status': 'evidence_backed', 'type': 'hinge'}, {'claim': 'The Bundibugyo outbreak is largely confined to remote Ituri Province and has limited cases in Kampala.', 'status': 'evidence_backed', 'type': 'hinge'}, {'claim': 'There are no licensed BVD-specific countermeasures available.', 'status': 'assumption', 'type': 'hinge'}, {'claim': 'Enhanced US entry screening and travel restrictions are currently in effect.', 'status': 'evidence_backed', 'type': 'hinge'}, {'claim': 'The CDC has explicitly reported zero confirmed US cases of Bundibugyo Ebola.', 'status': 'evidence_backed', 'type': 'hinge'}, {'claim': 'The Bundibugyo outbreak grew rapidly to 82 confirmed cases by late May.', 'status': 'evidence_backed', 'type': 'hinge'}, {'claim': 'The outbreak has already reached Kampala, an international air-travel hub.', 'status': 'evidence_backed', 'type': 'hinge'}, {'claim': 'At least one US national has already tested positive for Bundibugyo Ebola.', 'status': 'evidence_backed', 'type': 'hinge'}], 'assumptions_note': '', 'items': [{'claim': 'That leaves roughly 6 months and 25 days—about 208 days—for a case to be first confirmed in a US state or DC.', 'status': 'evidence_backed', 'type': 'numeric'}, {'claim': '(c) **Concrete YES scenario:** A US citizen or exempt traveler (e.g., an aid worker) is exposed in the DRC or Uganda and returns to a US state during the 2–21 day incubation period, passing airport screening while asymptomatic.', 'status': 'evidence_backed', 'type': 'numeric'}, {'claim': '(e) **Base rate:** In the two previous Bundibugyo virus disease outbreaks (Uganda 2007 with ~149 confirmed cases and DRC 2012 with ~15), zero cases were exported to or first confirmed in the United States.', 'status': 'evidence_backed', 'type': 'numeric'}, {'claim': 'Across multiple other small-to-mid-sized African Ebola outbreaks, US importation has been nearly nonexistent, occurring only during the 2014–16 West Africa Zaire ebolavirus epidemic that involved roughly 28,000 cases.', 'status': 'evidence_backed', 'type': 'numeric'}, {'claim': '(f) **Strongest evidence:** - **Toward YES:** The outbreak grew rapidly to 82 confirmed cases by late May, has already reached Kampala (an international air-travel hub), and at least one US national has already tested positive—demonstrating that US-bound trave', 'status': 'evidence_backed', 'type': 'numeric'}, {'claim': 'BASE_RATE: In the two previous Bundibugyo virus disease outbreaks (Uganda 2007 and DRC 2012), which together involved roughly 164 confirmed cases, zero cases were exported to or first confirmed in the United States.', 'status': 'evidence_backed', 'type': 'numeric'}, {'claim': 'OUTSIDE_VIEW: 2% Probability: 5%', 'status': 'assumption', 'type': 'numeric'}, {'claim': 'Today is June 6, 2026.', 'status': 'evidence_backed', 'type': 'hinge'}, {'claim': 'The Bundibugyo outbreak is largely confined to remote Ituri Province and has limited cases in Kampala.', 'status': 'evidence_backed', 'type': 'hinge'}, {'claim': 'There are no licensed BVD-specific countermeasures available.', 'status': 'assumption', 'type': 'hinge'}, {'claim': 'Enhanced US entry screening and travel restrictions are currently in effect.', 'status': 'evidence_backed', 'type': 'hinge'}, {'claim': 'The CDC has explicitly reported zero confirmed US cases of Bundibugyo Ebola.', 'status': 'evidence_backed', 'type': 'hinge'}, {'claim': 'The Bundibugyo outbreak grew rapidly to 82 confirmed cases by late May.', 'status': 'evidence_backed', 'type': 'hinge'}, {'claim': 'The outbreak has already reached Kampala, an international air-travel hub.', 'status': 'evidence_backed', 'type': 'hinge'}, {'claim': 'At least one US national has already tested positive for Bundibugyo Ebola.', 'status': 'evidence_backed', 'type': 'hinge'}]}\n\n---\n\n## Signposts\n\n---\n\n{'raw': 'SIGNPOST: The current Bundibugyo outbreak in Africa spreads significantly beyond Ituri Province and Kampala, with confirmed cases appearing in a major international travel hub outside of Uganda (e.g., Nairobi, Addis Ababa, or a European city).\\nDIRECTION: up\\nMAGNITUDE: +20pp\\n\\nSIGNPOST: The US CDC announces a significant reduction or cessation of enhanced entry screening, travel restrictions, or post-arrival monitoring protocols for travelers from affected regions, citing reduced risk or resource reallocation.\\nDIRECTION: up\\nMAGNITUDE: +15pp\\n\\nSIGNPOST: A US national who was exposed to Bundibugyo virus in Africa is medically evacuated to the US for treatment, and the CDC explicitly states that their infection was *first confirmed* in the US.\\nDIRECTION: up\\nMAGNITUDE: +30pp\\n\\nSIGNPOST: The current Bundibugyo outbreak in Africa is officially declared over by the WHO or relevant national health authorities, with no new cases reported for at least 42 days.\\nDIRECTION: down\\nMAGNITUDE: -15pp\\n\\nSIGNPOST: A licensed vaccine or highly effective therapeutic specifically for Bundibugyo virus disease becomes widely available and is deployed in affected regions, significantly reducing transmission and severity.\\nDIRECTION: down\\nMAGNITUDE: -10pp', 'signposts': [{'event': 'The current Bundibugyo outbreak in Africa spreads significantly beyond Ituri Province and Kampala, with confirmed cases appearing in a major international travel hub outside of Uganda (e.g., Nairobi, Addis Ababa, or a European city).', 'direction': 'up', 'magnitude': '+20pp'}, {'event': 'The US CDC announces a significant reduction or cessation of enhanced entry screening, travel restrictions, or post-arrival monitoring protocols for travelers from affected regions, citing reduced risk or resource reallocation.', 'direction': 'up', 'magnitude': '+15pp'}, {'event': 'A US national who was exposed to Bundibugyo virus in Africa is medically evacuated to the US for treatment, and the CDC explicitly states that their infection was *first confirmed* in the US.', 'direction': 'up', 'magnitude': '+30pp'}, {'event': 'The current Bundibugyo outbreak in Africa is officially declared over by the WHO or relevant national health authorities, with no new cases reported for at least 42 days.', 'direction': 'down', 'magnitude': '-15pp'}, {'event': 'A licensed vaccine or highly effective therapeutic specifically for Bundibugyo virus disease becomes widely available and is deployed in affected regions, significantly reducing transmission and severity.', 'direction': 'down', 'magnitude': '-10pp'}]}\n\n---\n\n## DeepSeek V4 Pro (3.0%)\n\nBASE_RATE: Historically, only the 2014–2016 West Africa Ebola outbreak led to a case first confirmed in the US, giving a rate of ~3% across all outbreaks and ~25% across large (>100 case) outbreaks, with zero precedent for Bundibugyo specifically.\nOUTSIDE_VIEW: 10%\nProbability: 5%\n\n---\n\n## GPT-5.4 Mini (1.0%)\n\n(a) Time remaining: about 7 months until resolution. The deadline is the moment before January 1, 2027 begins, i.e. end of Dec. 31, 2026.\n\n(b) Status quo: no Bundibugyo Ebola case has been first confirmed in the US so far; if nothing changes, the answer is No.\n\n(c) YES scenario: an infected traveler or returning healthcare worker from the DRC/Uganda reaches a US state or DC before diagnosis, is tested in the US, and CDC reports a lab-confirmed Bundibugyo case first confirmed on US soil.\n\n(d) NO scenario: the outbreak stays contained in Africa, or any infected American is diagnosed abroad or only after transfer to the US from elsewhere, so no case is first confirmed in a US state/DC before 2027.\n\n(e) Base rate: very low. Bundibugyo outbreaks have historically not produced US-confirmed cases, and imported Ebola cases in the US are rare overall.\n\n(f) Strongest evidence toward YES: there is an active Bundibugyo outbreak with international exposure risk, including at least one reported infected US national, so importation is not impossible. Strongest evidence toward NO: CDC says the risk to the US is low, screening/restrictions are already in place, and prior Bundibugyo outbreaks never produced US cases.\n\n(g) Easy-to-misread point: the event is narrowly Bundibugyo virus only, and the case must be first confirmed in the 50 states or DC. A case first confirmed abroad and later moved to the US does not count, and other Ebola species do not count.\n\nBASE_RATE: Prior Bundibugyo Ebola outbreaks to date (Uganda 2007, DRC 2012) produced 0 first-confirmed US cases out of 2 outbreaks.\nOUTSIDE_VIEW: 1%\n\nProbability: 3%\n\n---\n\n## Kimi K2.6 (2.0%)\n\n(a) **Time remaining:** Today is June 6, 2026. The exact deadline is January 1, 2027. That leaves roughly 6 months and 25 days—about 208 days—for a case to be first confirmed in a US state or DC.\n\n(b) **Status quo outcome:** If conditions remain as they are—with the outbreak largely confined to remote Ituri Province and limited Kampala cases, no licensed BVD-specific countermeasures, enhanced US entry screening and travel restrictions in effect, and the CDC explicitly reporting zero confirmed US cases—the question resolves **NO**.\n\n(c) **Concrete YES scenario:** A US citizen or exempt traveler (e.g., an aid worker) is exposed in the DRC or Uganda and returns to a US state during the 2–21 day incubation period, passing airport screening while asymptomatic. They develop fever and other symptoms in the US, seek care at a domestic hospital, and are laboratory-confirmed by CDC as having Bundibugyo virus before any diagnosis abroad.\n\n(d) **Concrete NO scenario:** Enhanced screening blocks or detects any infected travelers before or upon arrival; infected American nationals are diagnosed overseas and evacuated to non-US facilities (as happened with the US doctor sent to Germany); the outbreak remains contained in Africa; and CDC continues to report zero confirmed US cases through December 31, 2026.\n\n(e) **Base rate:** In the two previous Bundibugyo virus disease outbreaks (Uganda 2007 with ~149 confirmed cases and DRC 2012 with ~15), zero cases were exported to or first confirmed in the United States. Across multiple other small-to-mid-sized African Ebola outbreaks, US importation has been nearly nonexistent, occurring only during the 2014–16 West Africa Zaire ebolavirus epidemic that involved roughly 28,000 cases.\n\n(f) **Strongest evidence:**  \n- **Toward YES:** The outbreak grew rapidly to 82 confirmed cases by late May, has already reached Kampala (an international air-travel hub), and at least one US national has already tested positive—demonstrating that US-bound travelers are being exposed.  \n- **Toward NO:** CDC has stated outright that zero cases have been confirmed in the US, the risk to Americans remains low, and multi-layered controls (enhanced entry screening, travel restrictions, re-routing to designated airports, and post-arrival monitoring) are actively operating to prevent importation.\n\n(g) **Resolution nuance:** The requirement that the infection be **“first confirmed”** in a US state or DC excludes any patient diagnosed abroad and later medically evacuated to the US. Because infected Americans are likely to be identified overseas and treated there (as the known US doctor was sent to Germany), this criterion narrows the question significantly from naive expectations.\n\nBASE_RATE: In the two previous Bundibugyo virus disease outbreaks (Uganda 2007 and DRC 2012), which together involved roughly 164 confirmed cases, zero cases were exported to or first confirmed in the United States.\nOUTSIDE_VIEW: 2%\nProbability: 5%\n\n---\n\n## Gemini 3 Flash (30.0%)\n\n(a) Time remaining: Approximately 6 months and 25 days (from June 6, 2026, to January 1, 2027).\n(b) Status quo: No cases have been confirmed in the US. Enhanced screening and travel restrictions are in place.\n(c) Scenario for YES: An American aid worker or a traveler from the Ituri region bypasses or passes screening while asymptomatic (incubation up to 21 days), develops symptoms in the US, and is laboratory-confirmed by the CDC before Jan 1, 2027.\n(d) Scenario for NO: The outbreak is contained within East/Central Africa, or any infected individuals traveling to the US are identified and confirmed before arrival, or they are medically evacuated after being confirmed abroad (which does not count toward resolution).\n(e) Base rate: Extremely low. Only one Ebola outbreak (Zaire 2014-16) has ever resulted in cases first confirmed on US soil (4 cases). Bundibugyo has never been detected outside Africa.\n(f) Strongest evidence for YES: The outbreak is large enough to be a PHEIC, has reached a major city (Kampala), and at least one American has already been infected. Strongest evidence for NO: Strict US entry restrictions/screening are already active, and the Bundibugyo virus historically has lower transmissibility and lower case fatality rates (~30%) than the Zaire strain, potentially reducing the \"momentum\" of the epidemic.\n(g) Resolution nuances: The case must be **first confirmed** in the US. Medical evacuations of patients already confirmed positive in Africa (like the doctor sent to Germany) do not count.\n\nBASE_RATE: Out of approximately 40 known Ebola outbreaks since 1976, only one (2.5%) has resulted in cases first confirmed in the United States.\nOUTSIDE_VIEW: 5%\n\nThe current situation is more dangerous than the historical average because a PHEIC has already been declared and an American has been infected, but the window for resolution is short (less than 7 months). The US has significantly improved its \"detect and respond\" capabilities since 2014. Enhanced screening at Dulles and Atlanta, combined with the remote nature of the primary outbreak site in Ituri, makes a \"stealth\" entry difficult. However, the presence of cases in Kampala increases the risk of international travel by infected individuals. Given the 21-day incubation period, there is a non-negligible chance of an asymptomatic carrier arriving and being tested first in the US, but the most likely outcome remains no US-confirmed cases.\n\nProbability: 12%\n\n---\n\n## Claude Haiku 4.5 (1.0%)\n\n# Forecasting Analysis: Bundibugyo Ebola in the US by 2027\n\n## (a) Time Remaining and Deadline\n- **Today's date:** June 6, 2026\n- **Resolution deadline:** January 1, 2027\n- **Time remaining:** ~7 months\n\n## (b) Status Quo Outcome\nIf nothing changes, the most likely scenario is that:\n- The outbreak remains contained primarily in remote areas of DRC and Uganda\n- Enhanced US screening and entry restrictions continue to function effectively\n- No cases are confirmed in the US by the deadline\n- This aligns with CDC's current assessment that \"risk to the American public remains low\"\n\n## (c) Concrete YES Scenario\n- An infected individual (healthcare worker, researcher, or family member) from the affected region travels to the US despite screening\n- They either evade detection at entry screening or develop symptoms after arrival\n- Symptoms are recognized and tested, confirming Bundibugyo virus\n- Case is confirmed in a US state/DC before January 1, 2027\n- Example: A healthcare worker with atypical presentation passes through screening, develops symptoms 5-10 days after arrival, and tests positive in early December 2026\n\n## (d) Concrete NO Scenario\n- Entry restrictions and enhanced screening remain effective throughout the 7-month period\n- The outbreak is contained in DRC/Uganda through public health interventions\n- No infected individuals successfully reach US territory\n- Any Americans in affected areas are either evacuated before infection or treated abroad (as with the doctor transported to Germany)\n- This is the most probable path given current controls\n\n## (e) Base Rate Analysis\n\n**Reference class 1: Ebola species reaching US soil**\n- 2014-2016 Zaire ebolavirus epidemic: 4 cases confirmed in US (out of ~11,000 total cases in West Africa)\n- Rate: ~0.036% of outbreak cases reached US\n- However, this was the largest Ebola outbreak on record with extensive international travel from affected regions\n\n**Reference class 2: Bundibugyo-specific history**\n- 2007 Uganda outbreak: 0 cases outside Africa\n- 2012 DRC outbreak: 0 cases outside Africa\n- Historical rate for Bundibugyo reaching US: 0%\n\n**Reference class 3: Rare disease importation to US with active screening**\n- With enhanced screening in place, importation of rare tropical diseases is substantially reduced\n- Base rate for containment: typically 95%+ when active screening is implemented\n\n## (f) Strongest Evidence\n\n**Toward YES:**\n- An American national in DRC already tested positive (though transported to Germany, not US)\n- Americans are present in the affected region as healthcare workers/researchers\n- The 2014-2016 precedent shows Ebola *can* reach the US (4 cases)\n- 7 months is a meaningful window for potential transmission chains\n\n**Toward NO:**\n- **Strongest:** Enhanced entry screening and restrictions were implemented May 18, 2026 (before today's date of June 6)\n- **Strongest:** Bundibugyo has never left Africa in two previous outbreaks despite occurring in accessible regions\n- **Strongest:** The case fatality rate (~30%) and symptoms mean infected individuals are likely too ill to travel or are detected during screening\n- CDC explicitly states \"risk to American public remains low\"\n- The American doctor was immediately evacuated to Germany, not the US, showing protocol is working\n- Remote location of outbreak (Ituri Province) limits exposure pool\n\n## (g) Resolution Criteria Nuances\n\n**Critical narrowing:** The resolution requires cases \"first confirmed\" in the US. This explicitly excludes:\n- Cases confirmed outside the US and then transferred (like the doctor in Germany)\n- Cases of other Ebola species\n- This is a high bar—requires both infection acquisition AND first confirmation within US territory\n\nThis is narrower than \"will an infected person reach the US\" and substantially reduces probability.\n\n---\n\n## Probability Calculation\n\n**Outside view (base rate only):**\n- Bundibugyo historical rate of US importation: 0/2 outbreaks = 0%\n- Zaire rate during largest outbreak: ~0.036%\n- With active screening: reduce by ~80-90%\n- Outside view estimate: **1-2%**\n\n**Inside view adjustments:**\n- Enhanced screening in place: -0.5%\n- Remote outbreak location: -0.3%\n- Short timeframe (7 months, not years): -0.2%\n- American presence in region: +0.3%\n- Recent precedent (2014-2016): +0.4%\n- Bundibugyo's historical containment: -0.3%\n\n**Synthesis:**\nThe strongest factors are:\n1. Enhanced screening is already operational (major protective factor)\n2. Bundibugyo has never escaped Africa despite two prior outbreaks\n3. The resolution criteria requires first confirmation in US (excludes evacuated cases)\n4. Only 7 months remain\n5. The outbreak is in a remote region with limited international connectivity\n\nHowever, there is non-negligible risk because:\n- Americans are present in the affected region\n- The 2014-2016 precedent shows importation is possible\n- Healthcare workers face occupational exposure\n\n**Final estimate:** The combination of active screening, Bundibugyo's historical containment, the remote outbreak location, and the narrow resolution criteria (first confirmation must be in US) strongly favors NO.\n\n---\n\nBASE_RATE: Bundibugyo virus has occurred in two prior outbreaks (Uganda 2007, DRC 2012) with zero cases outside Africa; Zaire ebolavirus reached the US 4 times during the 2014-2016 outbreak (~0.036% of ~11,000 cases), but with enhanced screening in place, importation rates are substantially reduced.\n\nOUTSIDE_VIEW: 2%\n\n**Probability: 3%**",
+  "gate_report": {
+    "action": "publish",
+    "confidence_class": "medium",
+    "distinct_sources": 8,
+    "evidence_count": 12,
+    "evidence_sufficiency": 1.0,
+    "freshness_days": 0.0018408760416666668,
+    "gate_score": 0.8533842274929522,
+    "mean_relevance": 0.8333333333333334,
+    "model_agreement": 0.3669518185793439,
+    "primary_sources": 6,
+    "publishable": true,
+    "reasons": [
+      "Model disagreement is high.",
+      "Gate action: publish."
+    ],
+    "spec_confidence": 0.9,
+    "temporal_relevance": 0.9999795459236112
+  },
+  "generated_at_utc": "2026-06-06T12:46:13.975263+00:00",
+  "individual_results": [
+    {
+      "config": {
+        "label": "DeepSeek V4 Pro",
+        "max_tokens": 10000,
+        "name": "deepseek/deepseek-v4-pro"
+      },
+      "forecast_run": {
+        "model": "deepseek/deepseek-v4-pro",
+        "probability": 0.03,
+        "reasoning": "BASE_RATE: Historically, only the 2014–2016 West Africa Ebola outbreak led to a case first confirmed in the US, giving a rate of ~3% across all outbreaks and ~25% across large (>100 case) outbreaks, with zero precedent for Bundibugyo specifically.\nOUTSIDE_VIEW: 10%\nProbability: 5%",
+        "token_usage": 6949
+      },
+      "result": {
+        "diagnostics": {
+          "base_rate_text": "Historically, only the 2014–2016 West Africa Ebola outbreak led to a case first confirmed in the US, giving a rate of ~3% across all outbreaks and ~25% across large (>100 case) outbreaks, with zero precedent for Bundibugyo specifically.",
+          "mode": "lean_forecast_prompt",
+          "numeric_unit_expected": "",
+          "outside_view_probability": 0.1,
+          "parse_success": true,
+          "parsed_mc_probabilities": null,
+          "parsed_numeric_percentiles": null,
+          "question_type": "binary",
+          "spec_reason": "The model answer directly addresses the core question of the canonical spec regarding a Bundibugyo virus case in the US before the specified date.",
+          "spec_status": "OK",
+          "usage_label": "forecast_run:20260606_124032:deepseek_v4_pro:1"
+        },
+        "explanation": "BASE_RATE: Historically, only the 2014–2016 West Africa Ebola outbreak led to a case first confirmed in the US, giving a rate of ~3% across all outbreaks and ~25% across large (>100 case) outbreaks, with zero precedent for Bundibugyo specifically.\nOUTSIDE_VIEW: 10%\nProbability: 5%",
+        "probability": 0.03,
+        "risk_flags": [],
+        "search_count": 8,
+        "sources": [
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- A medical doctor from the United States of America who was exposed as part of their work caring for patients in the Democratic Republic of the Congo tested positive on 17 May [2026] and was transported to Germany for treatment and care.",
+            "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of ...",
+            "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON605"
+          },
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- CDC is responding to an outbreak of Ebola disease in remote areas of the Democratic Republic of the Congo (DRC) and Uganda.\n- To date, no cases of Ebola disease have been confirmed in the United States because of this outbreak.\n- The overall risk to the Amer",
+            "title": "Ebola Outbreak: Current Situation - CDC",
+            "url": "https://www.cdc.gov/ebola/situation-summary/index.html"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- US public health measures, including enhanced airport screening and entry restrictions for travelers from the Democratic Republic of the Congo and Uganda, are effective May 18, 2026.\n- An ongoing Bundibugyo virus outbreak was declared a public health emergen",
+            "title": "Ebola case in the US by June 30? Predictions &amp; Odds 2026 | Polymarket",
+            "url": "https://polymarket.com/event/ebola-case-in-the-us-by-june-30"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- US public health measures, including enhanced airport screening and entry restrictions for travelers from the Democratic Republic of the Congo and Uganda, are effective May 18, 2026.\n- An ongoing Bundibugyo virus outbreak was declared a public health emergen",
+            "title": "Ebola case in the US by June 30? Predictions &amp; Odds 2026 | Polymarket",
+            "url": "https://polymarket.com/event/ebola-case-in-the-us-by-june-30?outcomeIndex=1"
+          },
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- The CDC is issuing a Health Advisory about a new outbreak of Ebola disease in the Democratic Republic of the Congo (DRC) and Uganda caused by the Bundibugyo virus.\n- The risk of spread to the United States is considered low at this time.\n- On May 15, 2026, t",
+            "title": "Ebola Disease Outbreak in the Democratic Republic of the ... - CDC",
+            "url": "https://www.cdc.gov/han/php/notices/han00530.html"
+          },
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- The Bundibugyo virus is the most recently discovered type of orthoebolavirus.\n- The Bundibugyo virus was discovered in 2007.\n- The Bundibugyo virus causes death in about 30% of people who contract it.\n- The Bundibugyo virus was associated with two large outb",
+            "title": "History of Ebola Outbreaks - CDC",
+            "url": "https://www.cdc.gov/ebola/outbreaks/index.html"
+          },
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- On 5 May 2026, WHO received an alert regarding an unknown illness with high mortality reported in Mongbwalu Health Zone, Ituri Province.\n- The outbreak was subsequently confirmed as Bundibugyo virus disease (BVD) on 15 May 2026.\n- On 15 May 2026, the Ministr",
+            "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of ...",
+            "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON602"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- On 5 May 2026, WHO received an alert about an unusually high-mortality cluster of unknown illness in Mongbwalu Health Zone, Ituri Province, eastern Democratic Republic of the Congo (DRC).\n- The first known suspected case, a health worker, developed symptoms ",
+            "title": "Current Ebola outbreak (update 2026-05-18) &#8211; Global Health Press",
+            "url": "https://id-ea.org/current-ebola-outbreak-update-2026-05-18/"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The CDC has expanded enhanced Ebola screening to include Hartsfield-Jackson Atlanta International Airport for Americans returning from the Democratic Republic of the Congo, Uganda, or South Sudan.\n- Hartsfield-Jackson has established operational procedures f",
+            "title": "US adds Atlanta area airport for Ebola screening, CDC says | Business",
+            "url": "https://www.devdiscourse.com/article/business/3919536-us-adds-atlanta-area-airport-for-ebola-screening-cdc-says"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The US CDC expanded enhanced Ebola screening to include Hartsfield-Jackson Atlanta International Airport for Americans returning from the Democratic Republic of the Congo, Uganda, or South Sudan.\n- Washington's Dulles International Airport was designated thi",
+            "title": "US adds Atlanta area airport for Ebola screening, CDC says - AOL",
+            "url": "https://www.aol.com/articles/us-adds-atlanta-area-airport-154229000.html"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The May 2026 Ebola outbreak is spreading rapidly in the Democratic Republic of Congo.\n- There is a high risk of cross-border contamination from the May 2026 Ebola outbreak as per WHO.\n- The May 2026 outbreak is a medical emergency globally.\n- Africa CDC and ",
+            "title": "Ebola Virus Outbreak 2026 - Causes and Timeline",
+            "url": "https://padhai.ai/current-affairs/ebola-virus-outbreak-2026"
+          },
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- Ebola virus disease (EVD) is a severe, often fatal illness in humans.\n- Ebola virus (EBOV) is transmitted through contact with blood or body fluids of a person who contracted or died from EVD, contaminated objects like needles and infected animals or bush me",
+            "title": "An overview of Ebola virus disease - PMC - NIH",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5175058/"
+          }
+        ],
+        "token_usage": {
+          "completion": 4055,
+          "prompt": 2894,
+          "total": 6949
+        },
+        "warnings": []
+      }
+    },
+    {
+      "config": {
+        "label": "GPT-5.4 Mini",
+        "max_tokens": 9000,
+        "name": "openai/gpt-5.4-mini"
+      },
+      "forecast_run": {
+        "model": "openai/gpt-5.4-mini",
+        "probability": 0.01,
+        "reasoning": "(a) Time remaining: about 7 months until resolution. The deadline is the moment before January 1, 2027 begins, i.e. end of Dec. 31, 2026.\n\n(b) Status quo: no Bundibugyo Ebola case has been first confirmed in the US so far; if nothing changes, the answer is No.\n\n(c) YES scenario: an infected traveler or returning healthcare worker from the DRC/Uganda reaches a US state or DC before diagnosis, is tested in the US, and CDC reports a lab-confirmed Bundibugyo case first confirmed on US soil.\n\n(d) NO scenario: the outbreak stays contained in Africa, or any infected American is diagnosed abroad or only after transfer to the US from elsewhere, so no case is first confirmed in a US state/DC before 2027.\n\n(e) Base rate: very low. Bundibugyo outbreaks have historically not produced US-confirmed cases, and imported Ebola cases in the US are rare overall.\n\n(f) Strongest evidence toward YES: there is an active Bundibugyo outbreak with international exposure risk, including at least one reported infected US national, so importation is not impossible. Strongest evidence toward NO: CDC says the risk to the US is low, screening/restrictions are already in place, and prior Bundibugyo outbreaks never produced US cases.\n\n(g) Easy-to-misread point: the event is narrowly Bundibugyo virus only, and the case must be first confirmed in the 50 states or DC. A case first confirmed abroad and later moved to the US does not count, and other Ebola species do not count.\n\nBASE_RATE: Prior Bundibugyo Ebola outbreaks to date (Uganda 2007, DRC 2012) produced 0 first-confirmed US cases out of 2 outbreaks.\nOUTSIDE_VIEW: 1%\n\nProbability: 3%",
+        "token_usage": 5323
+      },
+      "result": {
+        "diagnostics": {
+          "base_rate_text": "Prior Bundibugyo Ebola outbreaks to date (Uganda 2007, DRC 2012) produced 0 first-confirmed US cases out of 2 outbreaks.",
+          "mode": "lean_forecast_prompt",
+          "numeric_unit_expected": "",
+          "outside_view_probability": 0.01,
+          "parse_success": true,
+          "parsed_mc_probabilities": null,
+          "parsed_numeric_percentiles": null,
+          "question_type": "binary",
+          "spec_reason": "The model answer accurately reflects all aspects of the canonical spec, including the YES/NO conditions, window, threshold, and metric.",
+          "spec_status": "OK",
+          "usage_label": "forecast_run:20260606_124032:gpt-5.4_mini:1"
+        },
+        "explanation": "(a) Time remaining: about 7 months until resolution. The deadline is the moment before January 1, 2027 begins, i.e. end of Dec. 31, 2026.\n\n(b) Status quo: no Bundibugyo Ebola case has been first confirmed in the US so far; if nothing changes, the answer is No.\n\n(c) YES scenario: an infected traveler or returning healthcare worker from the DRC/Uganda reaches a US state or DC before diagnosis, is tested in the US, and CDC reports a lab-confirmed Bundibugyo case first confirmed on US soil.\n\n(d) NO scenario: the outbreak stays contained in Africa, or any infected American is diagnosed abroad or only after transfer to the US from elsewhere, so no case is first confirmed in a US state/DC before 2027.\n\n(e) Base rate: very low. Bundibugyo outbreaks have historically not produced US-confirmed cases, and imported Ebola cases in the US are rare overall.\n\n(f) Strongest evidence toward YES: there is an active Bundibugyo outbreak with international exposure risk, including at least one reported infected US national, so importation is not impossible. Strongest evidence toward NO: CDC says the risk to the US is low, screening/restrictions are already in place, and prior Bundibugyo outbreaks never produced US cases.\n\n(g) Easy-to-misread point: the event is narrowly Bundibugyo virus only, and the case must be first confirmed in the 50 states or DC. A case first confirmed abroad and later moved to the US does not count, and other Ebola species do not count.\n\nBASE_RATE: Prior Bundibugyo Ebola outbreaks to date (Uganda 2007, DRC 2012) produced 0 first-confirmed US cases out of 2 outbreaks.\nOUTSIDE_VIEW: 1%\n\nProbability: 3%",
+        "probability": 0.01,
+        "risk_flags": [],
+        "search_count": 8,
+        "sources": [
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- A medical doctor from the United States of America who was exposed as part of their work caring for patients in the Democratic Republic of the Congo tested positive on 17 May [2026] and was transported to Germany for treatment and care.",
+            "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of ...",
+            "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON605"
+          },
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- CDC is responding to an outbreak of Ebola disease in remote areas of the Democratic Republic of the Congo (DRC) and Uganda.\n- To date, no cases of Ebola disease have been confirmed in the United States because of this outbreak.\n- The overall risk to the Amer",
+            "title": "Ebola Outbreak: Current Situation - CDC",
+            "url": "https://www.cdc.gov/ebola/situation-summary/index.html"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- US public health measures, including enhanced airport screening and entry restrictions for travelers from the Democratic Republic of the Congo and Uganda, are effective May 18, 2026.\n- An ongoing Bundibugyo virus outbreak was declared a public health emergen",
+            "title": "Ebola case in the US by June 30? Predictions &amp; Odds 2026 | Polymarket",
+            "url": "https://polymarket.com/event/ebola-case-in-the-us-by-june-30"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- US public health measures, including enhanced airport screening and entry restrictions for travelers from the Democratic Republic of the Congo and Uganda, are effective May 18, 2026.\n- An ongoing Bundibugyo virus outbreak was declared a public health emergen",
+            "title": "Ebola case in the US by June 30? Predictions &amp; Odds 2026 | Polymarket",
+            "url": "https://polymarket.com/event/ebola-case-in-the-us-by-june-30?outcomeIndex=1"
+          },
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- The CDC is issuing a Health Advisory about a new outbreak of Ebola disease in the Democratic Republic of the Congo (DRC) and Uganda caused by the Bundibugyo virus.\n- The risk of spread to the United States is considered low at this time.\n- On May 15, 2026, t",
+            "title": "Ebola Disease Outbreak in the Democratic Republic of the ... - CDC",
+            "url": "https://www.cdc.gov/han/php/notices/han00530.html"
+          },
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- The Bundibugyo virus is the most recently discovered type of orthoebolavirus.\n- The Bundibugyo virus was discovered in 2007.\n- The Bundibugyo virus causes death in about 30% of people who contract it.\n- The Bundibugyo virus was associated with two large outb",
+            "title": "History of Ebola Outbreaks - CDC",
+            "url": "https://www.cdc.gov/ebola/outbreaks/index.html"
+          },
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- On 5 May 2026, WHO received an alert regarding an unknown illness with high mortality reported in Mongbwalu Health Zone, Ituri Province.\n- The outbreak was subsequently confirmed as Bundibugyo virus disease (BVD) on 15 May 2026.\n- On 15 May 2026, the Ministr",
+            "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of ...",
+            "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON602"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- On 5 May 2026, WHO received an alert about an unusually high-mortality cluster of unknown illness in Mongbwalu Health Zone, Ituri Province, eastern Democratic Republic of the Congo (DRC).\n- The first known suspected case, a health worker, developed symptoms ",
+            "title": "Current Ebola outbreak (update 2026-05-18) &#8211; Global Health Press",
+            "url": "https://id-ea.org/current-ebola-outbreak-update-2026-05-18/"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The CDC has expanded enhanced Ebola screening to include Hartsfield-Jackson Atlanta International Airport for Americans returning from the Democratic Republic of the Congo, Uganda, or South Sudan.\n- Hartsfield-Jackson has established operational procedures f",
+            "title": "US adds Atlanta area airport for Ebola screening, CDC says | Business",
+            "url": "https://www.devdiscourse.com/article/business/3919536-us-adds-atlanta-area-airport-for-ebola-screening-cdc-says"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The US CDC expanded enhanced Ebola screening to include Hartsfield-Jackson Atlanta International Airport for Americans returning from the Democratic Republic of the Congo, Uganda, or South Sudan.\n- Washington's Dulles International Airport was designated thi",
+            "title": "US adds Atlanta area airport for Ebola screening, CDC says - AOL",
+            "url": "https://www.aol.com/articles/us-adds-atlanta-area-airport-154229000.html"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The May 2026 Ebola outbreak is spreading rapidly in the Democratic Republic of Congo.\n- There is a high risk of cross-border contamination from the May 2026 Ebola outbreak as per WHO.\n- The May 2026 outbreak is a medical emergency globally.\n- Africa CDC and ",
+            "title": "Ebola Virus Outbreak 2026 - Causes and Timeline",
+            "url": "https://padhai.ai/current-affairs/ebola-virus-outbreak-2026"
+          },
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- Ebola virus disease (EVD) is a severe, often fatal illness in humans.\n- Ebola virus (EBOV) is transmitted through contact with blood or body fluids of a person who contracted or died from EVD, contaminated objects like needles and infected animals or bush me",
+            "title": "An overview of Ebola virus disease - PMC - NIH",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5175058/"
+          }
+        ],
+        "token_usage": {
+          "completion": 2462,
+          "prompt": 2861,
+          "total": 5323
+        },
+        "warnings": []
+      }
+    },
+    {
+      "config": {
+        "label": "Kimi K2.6",
+        "max_tokens": 10000,
+        "name": "moonshotai/kimi-k2.6"
+      },
+      "forecast_run": {
+        "model": "moonshotai/kimi-k2.6",
+        "probability": 0.02,
+        "reasoning": "(a) **Time remaining:** Today is June 6, 2026. The exact deadline is January 1, 2027. That leaves roughly 6 months and 25 days—about 208 days—for a case to be first confirmed in a US state or DC.\n\n(b) **Status quo outcome:** If conditions remain as they are—with the outbreak largely confined to remote Ituri Province and limited Kampala cases, no licensed BVD-specific countermeasures, enhanced US entry screening and travel restrictions in effect, and the CDC explicitly reporting zero confirmed US cases—the question resolves **NO**.\n\n(c) **Concrete YES scenario:** A US citizen or exempt traveler (e.g., an aid worker) is exposed in the DRC or Uganda and returns to a US state during the 2–21 day incubation period, passing airport screening while asymptomatic. They develop fever and other symptoms in the US, seek care at a domestic hospital, and are laboratory-confirmed by CDC as having Bundibugyo virus before any diagnosis abroad.\n\n(d) **Concrete NO scenario:** Enhanced screening blocks or detects any infected travelers before or upon arrival; infected American nationals are diagnosed overseas and evacuated to non-US facilities (as happened with the US doctor sent to Germany); the outbreak remains contained in Africa; and CDC continues to report zero confirmed US cases through December 31, 2026.\n\n(e) **Base rate:** In the two previous Bundibugyo virus disease outbreaks (Uganda 2007 with ~149 confirmed cases and DRC 2012 with ~15), zero cases were exported to or first confirmed in the United States. Across multiple other small-to-mid-sized African Ebola outbreaks, US importation has been nearly nonexistent, occurring only during the 2014–16 West Africa Zaire ebolavirus epidemic that involved roughly 28,000 cases.\n\n(f) **Strongest evidence:**  \n- **Toward YES:** The outbreak grew rapidly to 82 confirmed cases by late May, has already reached Kampala (an international air-travel hub), and at least one US national has already tested positive—demonstrating that US-bound travelers are being exposed.  \n- **Toward NO:** CDC has stated outright that zero cases have been confirmed in the US, the risk to Americans remains low, and multi-layered controls (enhanced entry screening, travel restrictions, re-routing to designated airports, and post-arrival monitoring) are actively operating to prevent importation.\n\n(g) **Resolution nuance:** The requirement that the infection be **“first confirmed”** in a US state or DC excludes any patient diagnosed abroad and later medically evacuated to the US. Because infected Americans are likely to be identified overseas and treated there (as the known US doctor was sent to Germany), this criterion narrows the question significantly from naive expectations.\n\nBASE_RATE: In the two previous Bundibugyo virus disease outbreaks (Uganda 2007 and DRC 2012), which together involved roughly 164 confirmed cases, zero cases were exported to or first confirmed in the United States.\nOUTSIDE_VIEW: 2%\nProbability: 5%",
+        "token_usage": 16028
+      },
+      "result": {
+        "diagnostics": {
+          "base_rate_text": "In the two previous Bundibugyo virus disease outbreaks (Uganda 2007 and DRC 2012), which together involved roughly 164 confirmed cases, zero cases were exported to or first confirmed in the United States.",
+          "mode": "lean_forecast_prompt",
+          "numeric_unit_expected": "",
+          "outside_view_probability": 0.02,
+          "parse_success": true,
+          "parsed_mc_probabilities": null,
+          "parsed_numeric_percentiles": null,
+          "question_type": "binary",
+          "spec_reason": "The model answer accurately reflects all aspects of the canonical spec, including the one-line question, YES/NO conditions, window, threshold, and metric. The provided scenarios and evidence align with the question's scope.",
+          "spec_status": "OK",
+          "usage_label": "forecast_run:20260606_124032:kimi_k2.6:1"
+        },
+        "explanation": "(a) **Time remaining:** Today is June 6, 2026. The exact deadline is January 1, 2027. That leaves roughly 6 months and 25 days—about 208 days—for a case to be first confirmed in a US state or DC.\n\n(b) **Status quo outcome:** If conditions remain as they are—with the outbreak largely confined to remote Ituri Province and limited Kampala cases, no licensed BVD-specific countermeasures, enhanced US entry screening and travel restrictions in effect, and the CDC explicitly reporting zero confirmed US cases—the question resolves **NO**.\n\n(c) **Concrete YES scenario:** A US citizen or exempt traveler (e.g., an aid worker) is exposed in the DRC or Uganda and returns to a US state during the 2–21 day incubation period, passing airport screening while asymptomatic. They develop fever and other symptoms in the US, seek care at a domestic hospital, and are laboratory-confirmed by CDC as having Bundibugyo virus before any diagnosis abroad.\n\n(d) **Concrete NO scenario:** Enhanced screening blocks or detects any infected travelers before or upon arrival; infected American nationals are diagnosed overseas and evacuated to non-US facilities (as happened with the US doctor sent to Germany); the outbreak remains contained in Africa; and CDC continues to report zero confirmed US cases through December 31, 2026.\n\n(e) **Base rate:** In the two previous Bundibugyo virus disease outbreaks (Uganda 2007 with ~149 confirmed cases and DRC 2012 with ~15), zero cases were exported to or first confirmed in the United States. Across multiple other small-to-mid-sized African Ebola outbreaks, US importation has been nearly nonexistent, occurring only during the 2014–16 West Africa Zaire ebolavirus epidemic that involved roughly 28,000 cases.\n\n(f) **Strongest evidence:**  \n- **Toward YES:** The outbreak grew rapidly to 82 confirmed cases by late May, has already reached Kampala (an international air-travel hub), and at least one US national has already tested positive—demonstrating that US-bound travelers are being exposed.  \n- **Toward NO:** CDC has stated outright that zero cases have been confirmed in the US, the risk to Americans remains low, and multi-layered controls (enhanced entry screening, travel restrictions, re-routing to designated airports, and post-arrival monitoring) are actively operating to prevent importation.\n\n(g) **Resolution nuance:** The requirement that the infection be **“first confirmed”** in a US state or DC excludes any patient diagnosed abroad and later medically evacuated to the US. Because infected Americans are likely to be identified overseas and treated there (as the known US doctor was sent to Germany), this criterion narrows the question significantly from naive expectations.\n\nBASE_RATE: In the two previous Bundibugyo virus disease outbreaks (Uganda 2007 and DRC 2012), which together involved roughly 164 confirmed cases, zero cases were exported to or first confirmed in the United States.\nOUTSIDE_VIEW: 2%\nProbability: 5%",
+        "probability": 0.02,
+        "risk_flags": [],
+        "search_count": 8,
+        "sources": [
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- A medical doctor from the United States of America who was exposed as part of their work caring for patients in the Democratic Republic of the Congo tested positive on 17 May [2026] and was transported to Germany for treatment and care.",
+            "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of ...",
+            "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON605"
+          },
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- CDC is responding to an outbreak of Ebola disease in remote areas of the Democratic Republic of the Congo (DRC) and Uganda.\n- To date, no cases of Ebola disease have been confirmed in the United States because of this outbreak.\n- The overall risk to the Amer",
+            "title": "Ebola Outbreak: Current Situation - CDC",
+            "url": "https://www.cdc.gov/ebola/situation-summary/index.html"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- US public health measures, including enhanced airport screening and entry restrictions for travelers from the Democratic Republic of the Congo and Uganda, are effective May 18, 2026.\n- An ongoing Bundibugyo virus outbreak was declared a public health emergen",
+            "title": "Ebola case in the US by June 30? Predictions &amp; Odds 2026 | Polymarket",
+            "url": "https://polymarket.com/event/ebola-case-in-the-us-by-june-30"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- US public health measures, including enhanced airport screening and entry restrictions for travelers from the Democratic Republic of the Congo and Uganda, are effective May 18, 2026.\n- An ongoing Bundibugyo virus outbreak was declared a public health emergen",
+            "title": "Ebola case in the US by June 30? Predictions &amp; Odds 2026 | Polymarket",
+            "url": "https://polymarket.com/event/ebola-case-in-the-us-by-june-30?outcomeIndex=1"
+          },
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- The CDC is issuing a Health Advisory about a new outbreak of Ebola disease in the Democratic Republic of the Congo (DRC) and Uganda caused by the Bundibugyo virus.\n- The risk of spread to the United States is considered low at this time.\n- On May 15, 2026, t",
+            "title": "Ebola Disease Outbreak in the Democratic Republic of the ... - CDC",
+            "url": "https://www.cdc.gov/han/php/notices/han00530.html"
+          },
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- The Bundibugyo virus is the most recently discovered type of orthoebolavirus.\n- The Bundibugyo virus was discovered in 2007.\n- The Bundibugyo virus causes death in about 30% of people who contract it.\n- The Bundibugyo virus was associated with two large outb",
+            "title": "History of Ebola Outbreaks - CDC",
+            "url": "https://www.cdc.gov/ebola/outbreaks/index.html"
+          },
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- On 5 May 2026, WHO received an alert regarding an unknown illness with high mortality reported in Mongbwalu Health Zone, Ituri Province.\n- The outbreak was subsequently confirmed as Bundibugyo virus disease (BVD) on 15 May 2026.\n- On 15 May 2026, the Ministr",
+            "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of ...",
+            "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON602"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- On 5 May 2026, WHO received an alert about an unusually high-mortality cluster of unknown illness in Mongbwalu Health Zone, Ituri Province, eastern Democratic Republic of the Congo (DRC).\n- The first known suspected case, a health worker, developed symptoms ",
+            "title": "Current Ebola outbreak (update 2026-05-18) &#8211; Global Health Press",
+            "url": "https://id-ea.org/current-ebola-outbreak-update-2026-05-18/"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The CDC has expanded enhanced Ebola screening to include Hartsfield-Jackson Atlanta International Airport for Americans returning from the Democratic Republic of the Congo, Uganda, or South Sudan.\n- Hartsfield-Jackson has established operational procedures f",
+            "title": "US adds Atlanta area airport for Ebola screening, CDC says | Business",
+            "url": "https://www.devdiscourse.com/article/business/3919536-us-adds-atlanta-area-airport-for-ebola-screening-cdc-says"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The US CDC expanded enhanced Ebola screening to include Hartsfield-Jackson Atlanta International Airport for Americans returning from the Democratic Republic of the Congo, Uganda, or South Sudan.\n- Washington's Dulles International Airport was designated thi",
+            "title": "US adds Atlanta area airport for Ebola screening, CDC says - AOL",
+            "url": "https://www.aol.com/articles/us-adds-atlanta-area-airport-154229000.html"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The May 2026 Ebola outbreak is spreading rapidly in the Democratic Republic of Congo.\n- There is a high risk of cross-border contamination from the May 2026 Ebola outbreak as per WHO.\n- The May 2026 outbreak is a medical emergency globally.\n- Africa CDC and ",
+            "title": "Ebola Virus Outbreak 2026 - Causes and Timeline",
+            "url": "https://padhai.ai/current-affairs/ebola-virus-outbreak-2026"
+          },
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- Ebola virus disease (EVD) is a severe, often fatal illness in humans.\n- Ebola virus (EBOV) is transmitted through contact with blood or body fluids of a person who contracted or died from EVD, contaminated objects like needles and infected animals or bush me",
+            "title": "An overview of Ebola virus disease - PMC - NIH",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5175058/"
+          }
+        ],
+        "token_usage": {
+          "completion": 13148,
+          "prompt": 2880,
+          "total": 16028
+        },
+        "warnings": []
+      }
+    },
+    {
+      "config": {
+        "label": "Gemini 3 Flash",
+        "max_tokens": 9000,
+        "name": "google/gemini-3-flash-preview"
+      },
+      "forecast_run": {
+        "model": "google/gemini-3-flash-preview",
+        "probability": 0.3,
+        "reasoning": "(a) Time remaining: Approximately 6 months and 25 days (from June 6, 2026, to January 1, 2027).\n(b) Status quo: No cases have been confirmed in the US. Enhanced screening and travel restrictions are in place.\n(c) Scenario for YES: An American aid worker or a traveler from the Ituri region bypasses or passes screening while asymptomatic (incubation up to 21 days), develops symptoms in the US, and is laboratory-confirmed by the CDC before Jan 1, 2027.\n(d) Scenario for NO: The outbreak is contained within East/Central Africa, or any infected individuals traveling to the US are identified and confirmed before arrival, or they are medically evacuated after being confirmed abroad (which does not count toward resolution).\n(e) Base rate: Extremely low. Only one Ebola outbreak (Zaire 2014-16) has ever resulted in cases first confirmed on US soil (4 cases). Bundibugyo has never been detected outside Africa.\n(f) Strongest evidence for YES: The outbreak is large enough to be a PHEIC, has reached a major city (Kampala), and at least one American has already been infected. Strongest evidence for NO: Strict US entry restrictions/screening are already active, and the Bundibugyo virus historically has lower transmissibility and lower case fatality rates (~30%) than the Zaire strain, potentially reducing the \"momentum\" of the epidemic.\n(g) Resolution nuances: The case must be **first confirmed** in the US. Medical evacuations of patients already confirmed positive in Africa (like the doctor sent to Germany) do not count.\n\nBASE_RATE: Out of approximately 40 known Ebola outbreaks since 1976, only one (2.5%) has resulted in cases first confirmed in the United States.\nOUTSIDE_VIEW: 5%\n\nThe current situation is more dangerous than the historical average because a PHEIC has already been declared and an American has been infected, but the window for resolution is short (less than 7 months). The US has significantly improved its \"detect and respond\" capabilities since 2014. Enhanced screening at Dulles and Atlanta, combined with the remote nature of the primary outbreak site in Ituri, makes a \"stealth\" entry difficult. However, the presence of cases in Kampala increases the risk of international travel by infected individuals. Given the 21-day incubation period, there is a non-negligible chance of an asymptomatic carrier arriving and being tested first in the US, but the most likely outcome remains no US-confirmed cases.\n\nProbability: 12%",
+        "token_usage": 3819
+      },
+      "result": {
+        "diagnostics": {
+          "base_rate_text": "Out of approximately 40 known Ebola outbreaks since 1976, only one (2.5%) has resulted in cases first confirmed in the United States.",
+          "mode": "lean_forecast_prompt",
+          "numeric_unit_expected": "",
+          "outside_view_probability": 0.05,
+          "parse_success": true,
+          "parsed_mc_probabilities": null,
+          "parsed_numeric_percentiles": null,
+          "question_type": "binary",
+          "spec_reason": "The model answer aligns well with the canonical spec, covering all required elements and providing a clear resolution condition.",
+          "spec_status": "OK",
+          "usage_label": "forecast_run:20260606_124032:gemini_3_flash:1"
+        },
+        "explanation": "(a) Time remaining: Approximately 6 months and 25 days (from June 6, 2026, to January 1, 2027).\n(b) Status quo: No cases have been confirmed in the US. Enhanced screening and travel restrictions are in place.\n(c) Scenario for YES: An American aid worker or a traveler from the Ituri region bypasses or passes screening while asymptomatic (incubation up to 21 days), develops symptoms in the US, and is laboratory-confirmed by the CDC before Jan 1, 2027.\n(d) Scenario for NO: The outbreak is contained within East/Central Africa, or any infected individuals traveling to the US are identified and confirmed before arrival, or they are medically evacuated after being confirmed abroad (which does not count toward resolution).\n(e) Base rate: Extremely low. Only one Ebola outbreak (Zaire 2014-16) has ever resulted in cases first confirmed on US soil (4 cases). Bundibugyo has never been detected outside Africa.\n(f) Strongest evidence for YES: The outbreak is large enough to be a PHEIC, has reached a major city (Kampala), and at least one American has already been infected. Strongest evidence for NO: Strict US entry restrictions/screening are already active, and the Bundibugyo virus historically has lower transmissibility and lower case fatality rates (~30%) than the Zaire strain, potentially reducing the \"momentum\" of the epidemic.\n(g) Resolution nuances: The case must be **first confirmed** in the US. Medical evacuations of patients already confirmed positive in Africa (like the doctor sent to Germany) do not count.\n\nBASE_RATE: Out of approximately 40 known Ebola outbreaks since 1976, only one (2.5%) has resulted in cases first confirmed in the United States.\nOUTSIDE_VIEW: 5%\n\nThe current situation is more dangerous than the historical average because a PHEIC has already been declared and an American has been infected, but the window for resolution is short (less than 7 months). The US has significantly improved its \"detect and respond\" capabilities since 2014. Enhanced screening at Dulles and Atlanta, combined with the remote nature of the primary outbreak site in Ituri, makes a \"stealth\" entry difficult. However, the presence of cases in Kampala increases the risk of international travel by infected individuals. Given the 21-day incubation period, there is a non-negligible chance of an asymptomatic carrier arriving and being tested first in the US, but the most likely outcome remains no US-confirmed cases.\n\nProbability: 12%",
+        "probability": 0.3,
+        "risk_flags": [],
+        "search_count": 8,
+        "sources": [
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- A medical doctor from the United States of America who was exposed as part of their work caring for patients in the Democratic Republic of the Congo tested positive on 17 May [2026] and was transported to Germany for treatment and care.",
+            "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of ...",
+            "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON605"
+          },
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- CDC is responding to an outbreak of Ebola disease in remote areas of the Democratic Republic of the Congo (DRC) and Uganda.\n- To date, no cases of Ebola disease have been confirmed in the United States because of this outbreak.\n- The overall risk to the Amer",
+            "title": "Ebola Outbreak: Current Situation - CDC",
+            "url": "https://www.cdc.gov/ebola/situation-summary/index.html"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- US public health measures, including enhanced airport screening and entry restrictions for travelers from the Democratic Republic of the Congo and Uganda, are effective May 18, 2026.\n- An ongoing Bundibugyo virus outbreak was declared a public health emergen",
+            "title": "Ebola case in the US by June 30? Predictions &amp; Odds 2026 | Polymarket",
+            "url": "https://polymarket.com/event/ebola-case-in-the-us-by-june-30"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- US public health measures, including enhanced airport screening and entry restrictions for travelers from the Democratic Republic of the Congo and Uganda, are effective May 18, 2026.\n- An ongoing Bundibugyo virus outbreak was declared a public health emergen",
+            "title": "Ebola case in the US by June 30? Predictions &amp; Odds 2026 | Polymarket",
+            "url": "https://polymarket.com/event/ebola-case-in-the-us-by-june-30?outcomeIndex=1"
+          },
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- The CDC is issuing a Health Advisory about a new outbreak of Ebola disease in the Democratic Republic of the Congo (DRC) and Uganda caused by the Bundibugyo virus.\n- The risk of spread to the United States is considered low at this time.\n- On May 15, 2026, t",
+            "title": "Ebola Disease Outbreak in the Democratic Republic of the ... - CDC",
+            "url": "https://www.cdc.gov/han/php/notices/han00530.html"
+          },
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- The Bundibugyo virus is the most recently discovered type of orthoebolavirus.\n- The Bundibugyo virus was discovered in 2007.\n- The Bundibugyo virus causes death in about 30% of people who contract it.\n- The Bundibugyo virus was associated with two large outb",
+            "title": "History of Ebola Outbreaks - CDC",
+            "url": "https://www.cdc.gov/ebola/outbreaks/index.html"
+          },
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- On 5 May 2026, WHO received an alert regarding an unknown illness with high mortality reported in Mongbwalu Health Zone, Ituri Province.\n- The outbreak was subsequently confirmed as Bundibugyo virus disease (BVD) on 15 May 2026.\n- On 15 May 2026, the Ministr",
+            "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of ...",
+            "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON602"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- On 5 May 2026, WHO received an alert about an unusually high-mortality cluster of unknown illness in Mongbwalu Health Zone, Ituri Province, eastern Democratic Republic of the Congo (DRC).\n- The first known suspected case, a health worker, developed symptoms ",
+            "title": "Current Ebola outbreak (update 2026-05-18) &#8211; Global Health Press",
+            "url": "https://id-ea.org/current-ebola-outbreak-update-2026-05-18/"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The CDC has expanded enhanced Ebola screening to include Hartsfield-Jackson Atlanta International Airport for Americans returning from the Democratic Republic of the Congo, Uganda, or South Sudan.\n- Hartsfield-Jackson has established operational procedures f",
+            "title": "US adds Atlanta area airport for Ebola screening, CDC says | Business",
+            "url": "https://www.devdiscourse.com/article/business/3919536-us-adds-atlanta-area-airport-for-ebola-screening-cdc-says"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The US CDC expanded enhanced Ebola screening to include Hartsfield-Jackson Atlanta International Airport for Americans returning from the Democratic Republic of the Congo, Uganda, or South Sudan.\n- Washington's Dulles International Airport was designated thi",
+            "title": "US adds Atlanta area airport for Ebola screening, CDC says - AOL",
+            "url": "https://www.aol.com/articles/us-adds-atlanta-area-airport-154229000.html"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The May 2026 Ebola outbreak is spreading rapidly in the Democratic Republic of Congo.\n- There is a high risk of cross-border contamination from the May 2026 Ebola outbreak as per WHO.\n- The May 2026 outbreak is a medical emergency globally.\n- Africa CDC and ",
+            "title": "Ebola Virus Outbreak 2026 - Causes and Timeline",
+            "url": "https://padhai.ai/current-affairs/ebola-virus-outbreak-2026"
+          },
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- Ebola virus disease (EVD) is a severe, often fatal illness in humans.\n- Ebola virus (EBOV) is transmitted through contact with blood or body fluids of a person who contracted or died from EVD, contaminated objects like needles and infected animals or bush me",
+            "title": "An overview of Ebola virus disease - PMC - NIH",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5175058/"
+          }
+        ],
+        "token_usage": {
+          "completion": 567,
+          "prompt": 3252,
+          "total": 3819
+        },
+        "warnings": []
+      }
+    },
+    {
+      "config": {
+        "label": "Claude Haiku 4.5",
+        "max_tokens": 9000,
+        "name": "anthropic/claude-haiku-4.5"
+      },
+      "forecast_run": {
+        "model": "anthropic/claude-haiku-4.5",
+        "probability": 0.01,
+        "reasoning": "# Forecasting Analysis: Bundibugyo Ebola in the US by 2027\n\n## (a) Time Remaining and Deadline\n- **Today's date:** June 6, 2026\n- **Resolution deadline:** January 1, 2027\n- **Time remaining:** ~7 months\n\n## (b) Status Quo Outcome\nIf nothing changes, the most likely scenario is that:\n- The outbreak remains contained primarily in remote areas of DRC and Uganda\n- Enhanced US screening and entry restrictions continue to function effectively\n- No cases are confirmed in the US by the deadline\n- This aligns with CDC's current assessment that \"risk to the American public remains low\"\n\n## (c) Concrete YES Scenario\n- An infected individual (healthcare worker, researcher, or family member) from the affected region travels to the US despite screening\n- They either evade detection at entry screening or develop symptoms after arrival\n- Symptoms are recognized and tested, confirming Bundibugyo virus\n- Case is confirmed in a US state/DC before January 1, 2027\n- Example: A healthcare worker with atypical presentation passes through screening, develops symptoms 5-10 days after arrival, and tests positive in early December 2026\n\n## (d) Concrete NO Scenario\n- Entry restrictions and enhanced screening remain effective throughout the 7-month period\n- The outbreak is contained in DRC/Uganda through public health interventions\n- No infected individuals successfully reach US territory\n- Any Americans in affected areas are either evacuated before infection or treated abroad (as with the doctor transported to Germany)\n- This is the most probable path given current controls\n\n## (e) Base Rate Analysis\n\n**Reference class 1: Ebola species reaching US soil**\n- 2014-2016 Zaire ebolavirus epidemic: 4 cases confirmed in US (out of ~11,000 total cases in West Africa)\n- Rate: ~0.036% of outbreak cases reached US\n- However, this was the largest Ebola outbreak on record with extensive international travel from affected regions\n\n**Reference class 2: Bundibugyo-specific history**\n- 2007 Uganda outbreak: 0 cases outside Africa\n- 2012 DRC outbreak: 0 cases outside Africa\n- Historical rate for Bundibugyo reaching US: 0%\n\n**Reference class 3: Rare disease importation to US with active screening**\n- With enhanced screening in place, importation of rare tropical diseases is substantially reduced\n- Base rate for containment: typically 95%+ when active screening is implemented\n\n## (f) Strongest Evidence\n\n**Toward YES:**\n- An American national in DRC already tested positive (though transported to Germany, not US)\n- Americans are present in the affected region as healthcare workers/researchers\n- The 2014-2016 precedent shows Ebola *can* reach the US (4 cases)\n- 7 months is a meaningful window for potential transmission chains\n\n**Toward NO:**\n- **Strongest:** Enhanced entry screening and restrictions were implemented May 18, 2026 (before today's date of June 6)\n- **Strongest:** Bundibugyo has never left Africa in two previous outbreaks despite occurring in accessible regions\n- **Strongest:** The case fatality rate (~30%) and symptoms mean infected individuals are likely too ill to travel or are detected during screening\n- CDC explicitly states \"risk to American public remains low\"\n- The American doctor was immediately evacuated to Germany, not the US, showing protocol is working\n- Remote location of outbreak (Ituri Province) limits exposure pool\n\n## (g) Resolution Criteria Nuances\n\n**Critical narrowing:** The resolution requires cases \"first confirmed\" in the US. This explicitly excludes:\n- Cases confirmed outside the US and then transferred (like the doctor in Germany)\n- Cases of other Ebola species\n- This is a high bar—requires both infection acquisition AND first confirmation within US territory\n\nThis is narrower than \"will an infected person reach the US\" and substantially reduces probability.\n\n---\n\n## Probability Calculation\n\n**Outside view (base rate only):**\n- Bundibugyo historical rate of US importation: 0/2 outbreaks = 0%\n- Zaire rate during largest outbreak: ~0.036%\n- With active screening: reduce by ~80-90%\n- Outside view estimate: **1-2%**\n\n**Inside view adjustments:**\n- Enhanced screening in place: -0.5%\n- Remote outbreak location: -0.3%\n- Short timeframe (7 months, not years): -0.2%\n- American presence in region: +0.3%\n- Recent precedent (2014-2016): +0.4%\n- Bundibugyo's historical containment: -0.3%\n\n**Synthesis:**\nThe strongest factors are:\n1. Enhanced screening is already operational (major protective factor)\n2. Bundibugyo has never escaped Africa despite two prior outbreaks\n3. The resolution criteria requires first confirmation in US (excludes evacuated cases)\n4. Only 7 months remain\n5. The outbreak is in a remote region with limited international connectivity\n\nHowever, there is non-negligible risk because:\n- Americans are present in the affected region\n- The 2014-2016 precedent shows importation is possible\n- Healthcare workers face occupational exposure\n\n**Final estimate:** The combination of active screening, Bundibugyo's historical containment, the remote outbreak location, and the narrow resolution criteria (first confirmation must be in US) strongly favors NO.\n\n---\n\nBASE_RATE: Bundibugyo virus has occurred in two prior outbreaks (Uganda 2007, DRC 2012) with zero cases outside Africa; Zaire ebolavirus reached the US 4 times during the 2014-2016 outbreak (~0.036% of ~11,000 cases), but with enhanced screening in place, importation rates are substantially reduced.\n\nOUTSIDE_VIEW: 2%\n\n**Probability: 3%**",
+        "token_usage": 4677
+      },
+      "result": {
+        "diagnostics": {
+          "base_rate_text": "Bundibugyo virus has occurred in two prior outbreaks (Uganda 2007, DRC 2012) with zero cases outside Africa; Zaire ebolavirus reached the US 4 times during the 2014-2016 outbreak (~0.036% of ~11,000 cases), but with enhanced screening in place, importation rates are substantially reduced.",
+          "mode": "lean_forecast_prompt",
+          "numeric_unit_expected": "",
+          "outside_view_probability": 0.02,
+          "parse_success": true,
+          "parsed_mc_probabilities": null,
+          "parsed_numeric_percentiles": null,
+          "question_type": "binary",
+          "spec_reason": "The model answer directly addresses all components of the canonical spec, including the one-line question, YES/NO criteria, window, threshold, and metric. It provides a comprehensive analysis that aligns with the spec's requirements.",
+          "spec_status": "OK",
+          "usage_label": "forecast_run:20260606_124032:claude_haiku_4.5:1"
+        },
+        "explanation": "# Forecasting Analysis: Bundibugyo Ebola in the US by 2027\n\n## (a) Time Remaining and Deadline\n- **Today's date:** June 6, 2026\n- **Resolution deadline:** January 1, 2027\n- **Time remaining:** ~7 months\n\n## (b) Status Quo Outcome\nIf nothing changes, the most likely scenario is that:\n- The outbreak remains contained primarily in remote areas of DRC and Uganda\n- Enhanced US screening and entry restrictions continue to function effectively\n- No cases are confirmed in the US by the deadline\n- This aligns with CDC's current assessment that \"risk to the American public remains low\"\n\n## (c) Concrete YES Scenario\n- An infected individual (healthcare worker, researcher, or family member) from the affected region travels to the US despite screening\n- They either evade detection at entry screening or develop symptoms after arrival\n- Symptoms are recognized and tested, confirming Bundibugyo virus\n- Case is confirmed in a US state/DC before January 1, 2027\n- Example: A healthcare worker with atypical presentation passes through screening, develops symptoms 5-10 days after arrival, and tests positive in early December 2026\n\n## (d) Concrete NO Scenario\n- Entry restrictions and enhanced screening remain effective throughout the 7-month period\n- The outbreak is contained in DRC/Uganda through public health interventions\n- No infected individuals successfully reach US territory\n- Any Americans in affected areas are either evacuated before infection or treated abroad (as with the doctor transported to Germany)\n- This is the most probable path given current controls\n\n## (e) Base Rate Analysis\n\n**Reference class 1: Ebola species reaching US soil**\n- 2014-2016 Zaire ebolavirus epidemic: 4 cases confirmed in US (out of ~11,000 total cases in West Africa)\n- Rate: ~0.036% of outbreak cases reached US\n- However, this was the largest Ebola outbreak on record with extensive international travel from affected regions\n\n**Reference class 2: Bundibugyo-specific history**\n- 2007 Uganda outbreak: 0 cases outside Africa\n- 2012 DRC outbreak: 0 cases outside Africa\n- Historical rate for Bundibugyo reaching US: 0%\n\n**Reference class 3: Rare disease importation to US with active screening**\n- With enhanced screening in place, importation of rare tropical diseases is substantially reduced\n- Base rate for containment: typically 95%+ when active screening is implemented\n\n## (f) Strongest Evidence\n\n**Toward YES:**\n- An American national in DRC already tested positive (though transported to Germany, not US)\n- Americans are present in the affected region as healthcare workers/researchers\n- The 2014-2016 precedent shows Ebola *can* reach the US (4 cases)\n- 7 months is a meaningful window for potential transmission chains\n\n**Toward NO:**\n- **Strongest:** Enhanced entry screening and restrictions were implemented May 18, 2026 (before today's date of June 6)\n- **Strongest:** Bundibugyo has never left Africa in two previous outbreaks despite occurring in accessible regions\n- **Strongest:** The case fatality rate (~30%) and symptoms mean infected individuals are likely too ill to travel or are detected during screening\n- CDC explicitly states \"risk to American public remains low\"\n- The American doctor was immediately evacuated to Germany, not the US, showing protocol is working\n- Remote location of outbreak (Ituri Province) limits exposure pool\n\n## (g) Resolution Criteria Nuances\n\n**Critical narrowing:** The resolution requires cases \"first confirmed\" in the US. This explicitly excludes:\n- Cases confirmed outside the US and then transferred (like the doctor in Germany)\n- Cases of other Ebola species\n- This is a high bar—requires both infection acquisition AND first confirmation within US territory\n\nThis is narrower than \"will an infected person reach the US\" and substantially reduces probability.\n\n---\n\n## Probability Calculation\n\n**Outside view (base rate only):**\n- Bundibugyo historical rate of US importation: 0/2 outbreaks = 0%\n- Zaire rate during largest outbreak: ~0.036%\n- With active screening: reduce by ~80-90%\n- Outside view estimate: **1-2%**\n\n**Inside view adjustments:**\n- Enhanced screening in place: -0.5%\n- Remote outbreak location: -0.3%\n- Short timeframe (7 months, not years): -0.2%\n- American presence in region: +0.3%\n- Recent precedent (2014-2016): +0.4%\n- Bundibugyo's historical containment: -0.3%\n\n**Synthesis:**\nThe strongest factors are:\n1. Enhanced screening is already operational (major protective factor)\n2. Bundibugyo has never escaped Africa despite two prior outbreaks\n3. The resolution criteria requires first confirmation in US (excludes evacuated cases)\n4. Only 7 months remain\n5. The outbreak is in a remote region with limited international connectivity\n\nHowever, there is non-negligible risk because:\n- Americans are present in the affected region\n- The 2014-2016 precedent shows importation is possible\n- Healthcare workers face occupational exposure\n\n**Final estimate:** The combination of active screening, Bundibugyo's historical containment, the remote outbreak location, and the narrow resolution criteria (first confirmation must be in US) strongly favors NO.\n\n---\n\nBASE_RATE: Bundibugyo virus has occurred in two prior outbreaks (Uganda 2007, DRC 2012) with zero cases outside Africa; Zaire ebolavirus reached the US 4 times during the 2014-2016 outbreak (~0.036% of ~11,000 cases), but with enhanced screening in place, importation rates are substantially reduced.\n\nOUTSIDE_VIEW: 2%\n\n**Probability: 3%**",
+        "probability": 0.01,
+        "risk_flags": [],
+        "search_count": 8,
+        "sources": [
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- A medical doctor from the United States of America who was exposed as part of their work caring for patients in the Democratic Republic of the Congo tested positive on 17 May [2026] and was transported to Germany for treatment and care.",
+            "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of ...",
+            "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON605"
+          },
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- CDC is responding to an outbreak of Ebola disease in remote areas of the Democratic Republic of the Congo (DRC) and Uganda.\n- To date, no cases of Ebola disease have been confirmed in the United States because of this outbreak.\n- The overall risk to the Amer",
+            "title": "Ebola Outbreak: Current Situation - CDC",
+            "url": "https://www.cdc.gov/ebola/situation-summary/index.html"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- US public health measures, including enhanced airport screening and entry restrictions for travelers from the Democratic Republic of the Congo and Uganda, are effective May 18, 2026.\n- An ongoing Bundibugyo virus outbreak was declared a public health emergen",
+            "title": "Ebola case in the US by June 30? Predictions &amp; Odds 2026 | Polymarket",
+            "url": "https://polymarket.com/event/ebola-case-in-the-us-by-june-30"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- US public health measures, including enhanced airport screening and entry restrictions for travelers from the Democratic Republic of the Congo and Uganda, are effective May 18, 2026.\n- An ongoing Bundibugyo virus outbreak was declared a public health emergen",
+            "title": "Ebola case in the US by June 30? Predictions &amp; Odds 2026 | Polymarket",
+            "url": "https://polymarket.com/event/ebola-case-in-the-us-by-june-30?outcomeIndex=1"
+          },
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- The CDC is issuing a Health Advisory about a new outbreak of Ebola disease in the Democratic Republic of the Congo (DRC) and Uganda caused by the Bundibugyo virus.\n- The risk of spread to the United States is considered low at this time.\n- On May 15, 2026, t",
+            "title": "Ebola Disease Outbreak in the Democratic Republic of the ... - CDC",
+            "url": "https://www.cdc.gov/han/php/notices/han00530.html"
+          },
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- The Bundibugyo virus is the most recently discovered type of orthoebolavirus.\n- The Bundibugyo virus was discovered in 2007.\n- The Bundibugyo virus causes death in about 30% of people who contract it.\n- The Bundibugyo virus was associated with two large outb",
+            "title": "History of Ebola Outbreaks - CDC",
+            "url": "https://www.cdc.gov/ebola/outbreaks/index.html"
+          },
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- On 5 May 2026, WHO received an alert regarding an unknown illness with high mortality reported in Mongbwalu Health Zone, Ituri Province.\n- The outbreak was subsequently confirmed as Bundibugyo virus disease (BVD) on 15 May 2026.\n- On 15 May 2026, the Ministr",
+            "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of ...",
+            "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON602"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- On 5 May 2026, WHO received an alert about an unusually high-mortality cluster of unknown illness in Mongbwalu Health Zone, Ituri Province, eastern Democratic Republic of the Congo (DRC).\n- The first known suspected case, a health worker, developed symptoms ",
+            "title": "Current Ebola outbreak (update 2026-05-18) &#8211; Global Health Press",
+            "url": "https://id-ea.org/current-ebola-outbreak-update-2026-05-18/"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The CDC has expanded enhanced Ebola screening to include Hartsfield-Jackson Atlanta International Airport for Americans returning from the Democratic Republic of the Congo, Uganda, or South Sudan.\n- Hartsfield-Jackson has established operational procedures f",
+            "title": "US adds Atlanta area airport for Ebola screening, CDC says | Business",
+            "url": "https://www.devdiscourse.com/article/business/3919536-us-adds-atlanta-area-airport-for-ebola-screening-cdc-says"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The US CDC expanded enhanced Ebola screening to include Hartsfield-Jackson Atlanta International Airport for Americans returning from the Democratic Republic of the Congo, Uganda, or South Sudan.\n- Washington's Dulles International Airport was designated thi",
+            "title": "US adds Atlanta area airport for Ebola screening, CDC says - AOL",
+            "url": "https://www.aol.com/articles/us-adds-atlanta-area-airport-154229000.html"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- The May 2026 Ebola outbreak is spreading rapidly in the Democratic Republic of Congo.\n- There is a high risk of cross-border contamination from the May 2026 Ebola outbreak as per WHO.\n- The May 2026 outbreak is a medical emergency globally.\n- Africa CDC and ",
+            "title": "Ebola Virus Outbreak 2026 - Causes and Timeline",
+            "url": "https://padhai.ai/current-affairs/ebola-virus-outbreak-2026"
+          },
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- Ebola virus disease (EVD) is a severe, often fatal illness in humans.\n- Ebola virus (EBOV) is transmitted through contact with blood or body fluids of a person who contracted or died from EVD, contaminated objects like needles and infected animals or bush me",
+            "title": "An overview of Ebola virus disease - PMC - NIH",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5175058/"
+          }
+        ],
+        "token_usage": {
+          "completion": 1361,
+          "prompt": 3316,
+          "total": 4677
+        },
+        "warnings": []
+      }
+    }
+  ],
+  "informativeness": "strong_view",
+  "metaculus_post_error": null,
+  "mode": "lean_ensemble",
+  "numeric_bounds": {
+    "lower_bound": null,
+    "unit": "",
+    "upper_bound": null
+  },
+  "options": [],
+  "outcome": {
+    "actual_close_time": null,
+    "actual_resolve_time": null,
+    "computed_brier": null,
+    "metaculus_score_data": {},
+    "my_latest_forecast": {},
+    "options": null,
+    "post_id": "43606",
+    "post_status": "open",
+    "question_id": 43603,
+    "question_type": "binary",
+    "raw_post_subset": {
+      "forecasts_count": 293,
+      "nr_forecasters": 60,
+      "projects": {
+        "category": [
+          {
+            "description": "Health & Pandemics",
+            "emoji": "🦠",
+            "id": 3691,
+            "name": "Health & Pandemics",
+            "slug": "health-pandemics",
+            "type": "category"
+          }
+        ],
+        "default_project": {
+          "bot_leaderboard_status": "exclude_and_show",
+          "close_date": "2027-07-01T12:00:00Z",
+          "created_at": "2025-06-24T20:18:49.802400Z",
+          "default_permission": "forecaster",
+          "description_preview": "<p>The Respiratory Outlook 2025/26 is a collaboration between the Centers for Disease Control and Prevention (CDC) and Metaculus. Metaculus",
+          "edited_at": "2026-06-06T12:20:39.428694Z",
+          "forecasting_end_date": "2027-04-01T00:00:00Z",
+          "header_image": "https://cdn.metaculus.com/cdc-cover-final_1_62hhj9W.webp",
+          "html_metadata_json": null,
+          "id": 32775,
+          "is_current_content_translated": false,
+          "is_ongoing": true,
+          "name": "Respiratory Outlook 2025/26",
+          "order": 2,
+          "prize_pool": null,
+          "score_type": "peer_tournament",
+          "show_on_homepage": false,
+          "slug": "respiratory-outlook-25-26",
+          "start_date": "2025-06-24T06:00:00Z",
+          "type": "tournament",
+          "user_permission": null,
+          "visibility": "normal"
+        },
+        "leaderboard_tag": [
+          {
+            "id": 32925,
+            "name": "2026 Leaderboard",
+            "slug": "2026_leaderboard",
+            "type": "leaderboard_tag"
+          }
+        ],
+        "tournament": [
+          {
+            "bot_leaderboard_status": "exclude_and_show",
+            "close_date": "2027-07-01T12:00:00Z",
+            "created_at": "2025-06-24T20:18:49.802400Z",
+            "default_permission": "forecaster",
+            "description_preview": "<p>The Respiratory Outlook 2025/26 is a collaboration between the Centers for Disease Control and Prevention (CDC) and Metaculus. Metaculus",
+            "edited_at": "2026-06-06T12:20:39.428694Z",
+            "forecasting_end_date": "2027-04-01T00:00:00Z",
+            "header_image": "https://cdn.metaculus.com/cdc-cover-final_1_62hhj9W.webp",
+            "html_metadata_json": null,
+            "id": 32775,
+            "is_current_content_translated": false,
+            "is_ongoing": true,
+            "name": "Respiratory Outlook 2025/26",
+            "order": 2,
+            "prize_pool": null,
+            "score_type": "peer_tournament",
+            "show_on_homepage": false,
+            "slug": "respiratory-outlook-25-26",
+            "start_date": "2025-06-24T06:00:00Z",
+            "type": "tournament",
+            "user_permission": null,
+            "visibility": "normal"
+          }
+        ]
+      }
+    },
+    "resolution": null,
+    "resolved": false,
+    "scheduled_close_time": "2026-06-18T14:59:19Z",
+    "scheduled_resolve_time": "2026-06-18T14:59:19Z",
+    "source": "metaculus_api",
+    "title": "Will a case of Bundibugyo Ebola disease be first confirmed in the US before 2027?"
+  },
+  "outside_view_probability": 0.04,
+  "parsing_failure_rate": 0.0,
+  "planned_queries": [
+    "Bundibugyo Ebola US CDC confirmed case 2026",
+    "Ebola virus disease outbreaks 2026 Bundibugyo strain",
+    "US public health preparedness Bundibugyo Ebola",
+    "CDC guidelines Bundibugyo Ebola diagnosis US",
+    "likelihood of Bundibugyo Ebola import to US",
+    "history of Ebola cases in US by strain",
+    "expert opinion Bundibugyo Ebola US risk 2026",
+    "Bundibugyo Ebola vaccine development status",
+    "travel restrictions Bundibugyo Ebola affected areas",
+    "US biosurveillance for emerging infectious diseases 2026"
+  ],
+  "planner_text": "SEARCH(\"Bundibugyo Ebola US CDC confirmed case 2026\")\nSEARCH(\"Ebola virus disease outbreaks 2026 Bundibugyo strain\")\nSEARCH(\"US public health preparedness Bundibugyo Ebola\")\nSEARCH(\"CDC guidelines Bundibugyo Ebola diagnosis US\")\nSEARCH(\"likelihood of Bundibugyo Ebola import to US\")\nSEARCH(\"history of Ebola cases in US by strain\")\nSEARCH(\"expert opinion Bundibugyo Ebola US risk 2026\")\nSEARCH(\"Bundibugyo Ebola vaccine development status\")\nSEARCH(\"travel restrictions Bundibugyo Ebola affected areas\")\nSEARCH(\"US biosurveillance for emerging infectious diseases 2026\")",
+  "platform": "metaculus",
+  "posted_to_metaculus_by_ensemble": false,
+  "publish_action": "publish",
+  "publish_to_metaculus_requested": false,
+  "question": "https://www.metaculus.com/questions/43606",
+  "question_title": "Will a case of Bundibugyo Ebola disease be first confirmed in the US before 2027?",
+  "question_type": "binary",
+  "question_url": "https://www.metaculus.com/questions/43606",
+  "record_file": "forecast_records\\metaculus\\20260606-124613_metaculus_oneoff_Will_a_case_of_Bundibugyo_Ebola_disease_be_first_confirmed_i_658f19a4.json",
+  "red_team_artifact": "Here's an adversarial review of the forecast:\n\n**1. TIMELINE CONFUSION**\n*   **Critique:** The reasoning states, \"Today is June 6, 2026. The exact deadline is January 1, 2027. That leaves roughly 6 months and 25 days—about 208 days—for a case to be first confirmed in a US state or DC.\" This is a precise calculation and seems correct given the stated \"Today\" date. However, the prompt itself does not provide a \"Today\" date, implying this is a hypothetical scenario *within* the forecast's reasoning. Assuming the forecast *itself* was written on June 6, 2026, the timeline calculation is accurate. If the forecast was written at a different time, this would be a significant error. For the purpose of reviewing the *provided text*, the internal consistency is fine.\n*   **Verdict:** No significant timeline confusion *within the provided text's internal logic*.\n\n**2. BASE RATE NEGLECT**\n*   **Critique:** The forecast explicitly mentions base rates: \"In the two previous Bundibugyo virus disease outbreaks (Uganda 2007 with ~149 confirmed cases and DRC 2012 with ~15), zero cases were exported to or first confirmed in the United States.\" It also notes, \"Across multiple other small-to-mid-sized African Ebola outbreaks, US importation has been nearly nonexistent, occurring only during the 2014–16 West Africa Zaire ebolavirus epidemic that involved roughly 28,000 cases.\" This is good. However, the \"Strongest evidence: Toward YES\" section highlights that \"The outbreak grew rapidly to 82 confirmed cases by late May, has already reached Kampala (an international air-travel hub), and at least one US national has already tested positive—demonstrating that US-bound travelers are being exposed.\" This *feels* like it's giving too much weight to the current outbreak's specifics (which are still relatively small compared to the 2014-16 Zaire outbreak) and potentially underplaying the very strong historical base rate of *zero* US importations for Bundibugyo, especially given the \"first confirmed in US\" criterion. The jump from a 0% historical base rate for Bundibugyo to a 2% draft probability (and then 5% final) seems to be driven more by the \"current outbreak specifics\" than a robust adjustment from the base rate. The base rate for *any* Ebola importation (excluding the massive 2014-16 Zaire outbreak) is also extremely low. The forecast acknowledges the base rate but then seems to deviate from it quite significantly based on relatively weak \"toward YES\" evidence.\n*   **Verdict:** Potential for base rate neglect, or at least an insufficient justification for deviating so far from a very strong base rate of zero for this specific virus. The \"one US national has already tested positive\" is a strong piece of evidence for *exposure*, but not necessarily for *first confirmation in the US*, especially given the resolution nuance.\n\n**3. SINGLE-SOURCE FRAGILITY**\n*   **Critique:** The forecast relies on \"CDC reports\" for confirmation and \"CDC has stated outright\" for risk assessment and controls. While the CDC is the definitive source for resolution, relying heavily on their *current statements* about risk and controls could be fragile. If the CDC's assessment changes, or if their controls prove less effective than stated, the forecast's \"NO\" arguments weaken. The \"Strongest evidence: Toward NO\" section is almost entirely based on CDC statements.\n*   **Verdict:** Moderate single-source fragility, particularly for the \"NO\" arguments.\n\n**4. RESOLUTION MISREAD**\n*   **Critique:** The forecast explicitly addresses the \"first confirmed\" nuance in section (g) and correctly interprets it as excluding cases diagnosed abroad and then evacuated. This is a critical and well-understood point.\n*   **Verdict:** No resolution misread.\n\n**5. MISSING PATHWAYS**\n*   **Critique:**\n    *   **YES pathways:** The forecast focuses on a US citizen/exempt traveler exposed abroad, returning while asymptomatic, and then being diagnosed in the US. This is the most obvious pathway. However, it doesn't explicitly consider a scenario where a non-exempt traveler (e.g., someone who lied on forms, or a refugee/asylum seeker) might enter the US and evade initial screening, then develop symptoms. While less likely, it's a pathway. It also doesn't explicitly consider a scenario where the outbreak in Africa escalates dramatically beyond current expectations, overwhelming existing controls, or leading to a more widespread global spread that increases the probability of US importation.\n    *   **NO pathways:** The forecast covers enhanced screening, diagnosis overseas, and containment in Africa. It could also mention the possibility of the current outbreak being quickly contained and extinguished, reducing the overall risk pool.\n    *   **General:** The forecast doesn't explicitly consider the possibility of a *false positive* or a *misdiagnosis* that is later corrected, which could temporarily trigger a \"YES\" but then be retracted. While the resolution criteria specify \"laboratory-confirmed,\" the initial reporting could be messy.\n*   **Verdict:** Minor missing pathways. The core pathways are covered, but some edge cases or more extreme escalations/de-escalations of the African outbreak could",
+  "resolved": false,
+  "run_config": {
+    "aggregation": {
+      "extremize_k": 1.0,
+      "trim_fraction": 0.2
+    },
+    "as_of_utc": "2026-06-06T12:46:13.975358+00:00",
+    "models": [
+      "deepseek/deepseek-v4-pro",
+      "openai/gpt-5.4-mini",
+      "moonshotai/kimi-k2.6",
+      "google/gemini-3-flash-preview",
+      "anthropic/claude-haiku-4.5"
+    ],
+    "pipeline_version": "lean-ensemble/v2-2026.06",
+    "run_max_tokens_cap": 0,
+    "search": {
+      "linkup_queries": 8,
+      "max_evidence_docs": 16,
+      "max_search_queries": 8,
+      "provider": "serper+linkup"
+    },
+    "shrink_to_crowd": false
+  },
+  "run_type": "oneoff",
+  "schema_version": "forecast-record/v1",
+  "search_provider": "serper+linkup",
+  "signal_strength": 0.48,
+  "signpost_report": {
+    "raw": "SIGNPOST: The current Bundibugyo outbreak in Africa spreads significantly beyond Ituri Province and Kampala, with confirmed cases appearing in a major international travel hub outside of Uganda (e.g., Nairobi, Addis Ababa, or a European city).\nDIRECTION: up\nMAGNITUDE: +20pp\n\nSIGNPOST: The US CDC announces a significant reduction or cessation of enhanced entry screening, travel restrictions, or post-arrival monitoring protocols for travelers from affected regions, citing reduced risk or resource reallocation.\nDIRECTION: up\nMAGNITUDE: +15pp\n\nSIGNPOST: A US national who was exposed to Bundibugyo virus in Africa is medically evacuated to the US for treatment, and the CDC explicitly states that their infection was *first confirmed* in the US.\nDIRECTION: up\nMAGNITUDE: +30pp\n\nSIGNPOST: The current Bundibugyo outbreak in Africa is officially declared over by the WHO or relevant national health authorities, with no new cases reported for at least 42 days.\nDIRECTION: down\nMAGNITUDE: -15pp\n\nSIGNPOST: A licensed vaccine or highly effective therapeutic specifically for Bundibugyo virus disease becomes widely available and is deployed in affected regions, significantly reducing transmission and severity.\nDIRECTION: down\nMAGNITUDE: -10pp",
+    "signposts": [
+      {
+        "direction": "up",
+        "event": "The current Bundibugyo outbreak in Africa spreads significantly beyond Ituri Province and Kampala, with confirmed cases appearing in a major international travel hub outside of Uganda (e.g., Nairobi, Addis Ababa, or a European city).",
+        "magnitude": "+20pp"
+      },
+      {
+        "direction": "up",
+        "event": "The US CDC announces a significant reduction or cessation of enhanced entry screening, travel restrictions, or post-arrival monitoring protocols for travelers from affected regions, citing reduced risk or resource reallocation.",
+        "magnitude": "+15pp"
+      },
+      {
+        "direction": "up",
+        "event": "A US national who was exposed to Bundibugyo virus in Africa is medically evacuated to the US for treatment, and the CDC explicitly states that their infection was *first confirmed* in the US.",
+        "magnitude": "+30pp"
+      },
+      {
+        "direction": "down",
+        "event": "The current Bundibugyo outbreak in Africa is officially declared over by the WHO or relevant national health authorities, with no new cases reported for at least 42 days.",
+        "magnitude": "-15pp"
+      },
+      {
+        "direction": "down",
+        "event": "A licensed vaccine or highly effective therapeutic specifically for Bundibugyo virus disease becomes widely available and is deployed in affected regions, significantly reducing transmission and severity.",
+        "magnitude": "-10pp"
+      }
+    ]
+  },
+  "signposts": [
+    {
+      "direction": "up",
+      "event": "The current Bundibugyo outbreak in Africa spreads significantly beyond Ituri Province and Kampala, with confirmed cases appearing in a major international travel hub outside of Uganda (e.g., Nairobi, Addis Ababa, or a European city).",
+      "magnitude": "+20pp"
+    },
+    {
+      "direction": "up",
+      "event": "The US CDC announces a significant reduction or cessation of enhanced entry screening, travel restrictions, or post-arrival monitoring protocols for travelers from affected regions, citing reduced risk or resource reallocation.",
+      "magnitude": "+14pp"
+    },
+    {
+      "direction": "up",
+      "event": "A US national who was exposed to Bundibugyo virus in Africa is medically evacuated to the US for treatment, and the CDC explicitly states that their infection was *first confirmed* in the US.",
+      "magnitude": "+30pp"
+    },
+    {
+      "direction": "down",
+      "event": "The current Bundibugyo outbreak in Africa is officially declared over by the WHO or relevant national health authorities, with no new cases reported for at least 42 days.",
+      "magnitude": "-1pp"
+    },
+    {
+      "direction": "down",
+      "event": "A licensed vaccine or highly effective therapeutic specifically for Bundibugyo virus disease becomes widely available and is deployed in affected regions, significantly reducing transmission and severity.",
+      "magnitude": "-1pp"
+    }
+  ],
+  "summary_text": "Question Type: binary\nFinal Prediction: 2.0%\nInformativeness: strong_view (|p-0.5|=0.480)\nRaw Trimmed Mean: 2.0%\nCalibrated Probability: 2.0%\nDispersion: 0.127\nConfidence Class: medium\nPublish Gate: publish (score=0.85)\nParsing Failure Rate: 0.0%\nSearch Queries: planned=10 executed=8\nGate Components: spec=0.90, temporal=1.00, evidence=1.00, agreement=0.37\nGate Metrics: evidence_count=12, distinct_sources=8, primary_sources=6, mean_relevance=0.83, freshness_days=0.0\nRed Team: ran | no_change\nIndividual Runs:\n- DeepSeek V4 Pro: 3.0% (tokens=6,949, warnings=0)\n- GPT-5.4 Mini: 1.0% (tokens=5,323, warnings=0)\n- Kimi K2.6: 2.0% (tokens=16,028, warnings=0)\n- Gemini 3 Flash: 30.0% (tokens=3,819, warnings=0)\n- Claude Haiku 4.5: 1.0% (tokens=4,677, warnings=0)\nSignposts:\n- The current Bundibugyo outbreak in Africa spreads significantly beyond Ituri Province and Kampala, with confirmed cases appearing in a major international travel hub outside of Uganda (e.g., Nairobi, Addis Ababa, or a European city). | direction=up | magnitude=+20pp\n- The US CDC announces a significant reduction or cessation of enhanced entry screening, travel restrictions, or post-arrival monitoring protocols for travelers from affected regions, citing reduced risk or resource reallocation. | direction=up | magnitude=+14pp\n- A US national who was exposed to Bundibugyo virus in Africa is medically evacuated to the US for treatment, and the CDC explicitly states that their infection was *first confirmed* in the US. | direction=up | magnitude=+30pp\n- The current Bundibugyo outbreak in Africa is officially declared over by the WHO or relevant national health authorities, with no new cases reported for at least 42 days. | direction=down | magnitude=-1pp\n- A licensed vaccine or highly effective therapeutic specifically for Bundibugyo virus disease becomes widely available and is deployed in affected regions, significantly reducing transmission and severity. | direction=down | magnitude=-1pp",
+  "text_log_path": "forecasts/forecast_20260606_124032_Will_a_case_of_Bundibugyo_Ebola_disease_be_first_c.txt",
+  "timestamp": "20260606_124032",
+  "token_usage": {
+    "claim_audit_hinges": {
+      "completion": 922,
+      "prompt": 2533,
+      "total": 3455
+    },
+    "evidence_extraction": {
+      "completion": 20567,
+      "prompt": 55404,
+      "total": 75971
+    },
+    "forecast_run:20260606_124027:claude_haiku_4.5:1": {
+      "completion": 1661,
+      "prompt": 3135,
+      "total": 4796
+    },
+    "forecast_run:20260606_124027:deepseek_v4_pro:1": {
+      "completion": 865,
+      "prompt": 2777,
+      "total": 3642
+    },
+    "forecast_run:20260606_124027:gemini_3_flash:1": {
+      "completion": 645,
+      "prompt": 3157,
+      "total": 3802
+    },
+    "forecast_run:20260606_124027:gpt-5.4_mini:1": {
+      "completion": 2768,
+      "prompt": 2733,
+      "total": 5501
+    },
+    "forecast_run:20260606_124027:kimi_k2.6:1": {
+      "completion": 9618,
+      "prompt": 2735,
+      "total": 12353
+    },
+    "forecast_run:20260606_124029:claude_haiku_4.5:1": {
+      "completion": 1498,
+      "prompt": 3701,
+      "total": 5199
+    },
+    "forecast_run:20260606_124029:deepseek_v4_pro:1": {
+      "completion": 2889,
+      "prompt": 3283,
+      "total": 6172
+    },
+    "forecast_run:20260606_124029:gemini_3_flash:1": {
+      "completion": 561,
+      "prompt": 3755,
+      "total": 4316
+    },
+    "forecast_run:20260606_124029:gpt-5.4_mini:1": {
+      "completion": 2214,
+      "prompt": 3207,
+      "total": 5421
+    },
+    "forecast_run:20260606_124032:claude_haiku_4.5:1": {
+      "completion": 1361,
+      "prompt": 3316,
+      "total": 4677
+    },
+    "forecast_run:20260606_124032:deepseek_v4_pro:1": {
+      "completion": 4055,
+      "prompt": 2894,
+      "total": 6949
+    },
+    "forecast_run:20260606_124032:gemini_3_flash:1": {
+      "completion": 567,
+      "prompt": 3252,
+      "total": 3819
+    },
+    "forecast_run:20260606_124032:gpt-5.4_mini:1": {
+      "completion": 2462,
+      "prompt": 2861,
+      "total": 5323
+    },
+    "forecast_run:20260606_124032:kimi_k2.6:1": {
+      "completion": 13148,
+      "prompt": 2880,
+      "total": 16028
+    },
+    "forecast_run:20260606_124034:claude_haiku_4.5:1": {
+      "completion": 1247,
+      "prompt": 4489,
+      "total": 5736
+    },
+    "forecast_run:20260606_124034:deepseek_v4_pro:1": {
+      "completion": 3204,
+      "prompt": 3916,
+      "total": 7120
+    },
+    "forecast_run:20260606_124034:gemini_3_flash:1": {
+      "completion": 625,
+      "prompt": 4337,
+      "total": 4962
+    },
+    "forecast_run:20260606_124034:gpt-5.4_mini:1": {
+      "completion": 3074,
+      "prompt": 3917,
+      "total": 6991
+    },
+    "forecast_run:20260606_124037:claude_haiku_4.5:1": {
+      "completion": 1289,
+      "prompt": 3543,
+      "total": 4832
+    },
+    "forecast_run:20260606_124037:deepseek_v4_pro:1": {
+      "completion": 793,
+      "prompt": 3135,
+      "total": 3928
+    },
+    "forecast_run:20260606_124037:gemini_3_flash:1": {
+      "completion": 831,
+      "prompt": 3423,
+      "total": 4254
+    },
+    "forecast_run:20260606_124037:gpt-5.4_mini:1": {
+      "completion": 5223,
+      "prompt": 3069,
+      "total": 8292
+    },
+    "forecast_run:20260606_124037:kimi_k2.6:1": {
+      "completion": 10000,
+      "prompt": 3121,
+      "total": 13121
+    },
+    "red_team_critique": {
+      "completion": 2793,
+      "prompt": 1682,
+      "total": 4475
+    },
+    "search_strategy": {
+      "completion": 758,
+      "prompt": 1092,
+      "total": 1850
+    },
+    "signpost_extract": {
+      "completion": 1458,
+      "prompt": 2625,
+      "total": 4083
+    },
+    "spec_check": {
+      "completion": 1403,
+      "prompt": 23041,
+      "total": 24444
+    },
+    "spec_extract": {
+      "completion": 1022,
+      "prompt": 1333,
+      "total": 2355
+    }
+  },
+  "top_evidence": [
+    {
+      "bearing": "Direct resolution source/mechanics",
+      "evidence_id": "E1",
+      "primary": true,
+      "relevance": 1.0,
+      "retrieved_at": "2026-06-06",
+      "snippet": "- A medical doctor from the United States of America who was exposed as part of their work caring for patients in the Democratic Republic of",
+      "snippet_hash": "93263ba2d6a54e35",
+      "source": "www.who.int",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON605"
+    },
+    {
+      "bearing": "Direct resolution source/mechanics",
+      "evidence_id": "E2",
+      "primary": true,
+      "relevance": 1.0,
+      "retrieved_at": "2026-06-06",
+      "snippet": "- CDC is responding to an outbreak of Ebola disease in remote areas of the Democratic Republic of the Congo (DRC) and Uganda.\n- To date, no ",
+      "snippet_hash": "313509d752521946",
+      "source": "www.cdc.gov",
+      "url": "https://www.cdc.gov/ebola/situation-summary/index.html"
+    },
+    {
+      "bearing": "High-directness status signal",
+      "evidence_id": "E3",
+      "primary": false,
+      "relevance": 0.9,
+      "retrieved_at": "2026-06-06",
+      "snippet": "- US public health measures, including enhanced airport screening and entry restrictions for travelers from the Democratic Republic of the C",
+      "snippet_hash": "13ac9ef6a91cc13d",
+      "source": "polymarket.com",
+      "url": "https://polymarket.com/event/ebola-case-in-the-us-by-june-30"
+    },
+    {
+      "bearing": "High-directness status signal",
+      "evidence_id": "E4",
+      "primary": false,
+      "relevance": 0.9,
+      "retrieved_at": "2026-06-06",
+      "snippet": "- US public health measures, including enhanced airport screening and entry restrictions for travelers from the Democratic Republic of the C",
+      "snippet_hash": "13ac9ef6a91cc13d",
+      "source": "polymarket.com",
+      "url": "https://polymarket.com/event/ebola-case-in-the-us-by-june-30?outcomeIndex=1"
+    },
+    {
+      "bearing": "Direct resolution source/mechanics",
+      "evidence_id": "E5",
+      "primary": true,
+      "relevance": 0.8,
+      "retrieved_at": "2026-06-06",
+      "snippet": "- The CDC is issuing a Health Advisory about a new outbreak of Ebola disease in the Democratic Republic of the Congo (DRC) and Uganda caused",
+      "snippet_hash": "4868878482b5f506",
+      "source": "www.cdc.gov",
+      "url": "https://www.cdc.gov/han/php/notices/han00530.html"
+    },
+    {
+      "bearing": "Direct resolution source/mechanics",
+      "evidence_id": "E6",
+      "primary": true,
+      "relevance": 0.8,
+      "retrieved_at": "2026-06-06",
+      "snippet": "- The Bundibugyo virus is the most recently discovered type of orthoebolavirus.\n- The Bundibugyo virus was discovered in 2007.\n- The Bundibu",
+      "snippet_hash": "3913d746274d69d7",
+      "source": "www.cdc.gov",
+      "url": "https://www.cdc.gov/ebola/outbreaks/index.html"
+    },
+    {
+      "bearing": "Direct resolution source/mechanics",
+      "evidence_id": "E7",
+      "primary": true,
+      "relevance": 0.8,
+      "retrieved_at": "2026-06-06",
+      "snippet": "- On 5 May 2026, WHO received an alert regarding an unknown illness with high mortality reported in Mongbwalu Health Zone, Ituri Province.\n-",
+      "snippet_hash": "7afe287ec7c40c46",
+      "source": "www.who.int",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON602"
+    },
+    {
+      "bearing": "High-directness status signal",
+      "evidence_id": "E8",
+      "primary": false,
+      "relevance": 0.8,
+      "retrieved_at": "2026-06-06",
+      "snippet": "- On 5 May 2026, WHO received an alert about an unusually high-mortality cluster of unknown illness in Mongbwalu Health Zone, Ituri Province",
+      "snippet_hash": "a9d62c6eff85ca59",
+      "source": "id-ea.org",
+      "url": "https://id-ea.org/current-ebola-outbreak-update-2026-05-18/"
+    }
+  ],
+  "written_at_utc": "2026-06-06T12:46:13.990844+00:00"
+}
