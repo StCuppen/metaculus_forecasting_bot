@@ -1,0 +1,614 @@
+# Which party's candidate will win the 2026 Makerfield by-election?
+
+- **Platform / run type:** metaculus / oneoff
+- **Question type:** multiple_choice
+- **URL:** https://www.metaculus.com/questions/43521
+- **Forecast date (UTC):** 2026-06-06T12:47:41.668193+00:00
+- **Pipeline:** lean-ensemble/v2-2026.06 · models: deepseek/deepseek-v4-pro, openai/gpt-5.4-mini, moonshotai/kimi-k2.6, google/gemini-3-flash-preview, anthropic/claude-haiku-4.5
+
+## Final forecast
+
+| Option | Probability |
+|---|---|
+| Labour Party | 67.8% |
+| Reform UK | 24.3% |
+| Conservative Party | 3.4% |
+| Green Party | 2.4% |
+| Liberal Democrats | 1.0% |
+| Other party or candidate | 0.5% |
+| Restore Britain | 0.5% |
+- Action: **publish** · Confidence: medium · Informativeness: strong_view
+
+## Outcome / benchmark
+- Resolved: no (pending)
+- Community prediction: not available (hidden for this question while open)
+
+## Publish gate
+- evidence=12 · primary_sources=2 · distinct=8 · mean_relevance=0.7333333333333334 · freshness_days=0.003038205625
+- gate_score=0.8078562036723034 · dispersion=0.17213366899011942 · n_runs=5
+  - Model disagreement is high.
+  - Gate action: publish.
+
+## Search
+- Provider: `serper+linkup`
+- Planned queries:
+  - Makerfield by-election 2026 candidates
+  - Makerfield by-election 2026 date
+  - Makerfield constituency political history by-election results
+  - UK by-election prediction markets 2026
+  - Makerfield current MP political party
+  - Recent UK by-election results 2025-2026
+  - Makerfield local council election results 2025
+  - Opinion polls Makerfield constituency 2026
+  - UK general election forecast 2026 impact on by-elections
+  - Makerfield by-election official results source
+- Executed queries:
+  - Makerfield by-election 2026 candidates
+  - Makerfield by-election 2026 date
+  - Makerfield constituency political history by-election results
+  - UK by-election prediction markets 2026
+  - Makerfield current MP political party
+  - Recent UK by-election results 2025-2026
+  - Makerfield local council election results 2025
+  - Opinion polls Makerfield constituency 2026
+  - site:fec.gov Which party's candidate will win the 2026 Makerfield by-election?
+
+## Retrieved evidence (8 items)
+- **[0.8]** (primary) www.wigan.gov.uk — <!DOCTYPE html> <html lang="en-GB"> <head><meta charset="utf-8"><title> Makerfield parliamentary by-election - 18th June 2026 </title> <meta
+  <https://www.wigan.gov.uk/Council/Voting-and-Elections/Makerfield/index.aspx>
+- **[0.8]** (secondary) en.wikipedia.org — 2026 Makerfield by-election 18 June 2026 | ||| Makerfield constituency | ||| |---|---|---|---| | | ||| Boundary of the Makerfield constituen
+  <https://en.wikipedia.org/wiki/2026_Makerfield_by-election>
+- **[0.8]** (primary) www.wigan.gov.uk — Information for voters in the Makerfield Parliamentary Constituency A by-election will be held for the Makerfield Parliamentary constituency
+  <https://www.wigan.gov.uk/Council/Voting-and-Elections/Makerfield/Makerfield-Parliamentary-By-election-Voter-information.aspx>
+- **[0.8]** (secondary) polymarket.com — UK Elections Frequently Asked Questions Polymarket is the world's largest prediction market, where users trade on the real-world outcomes of
+  <https://polymarket.com/politics/uk-elections>
+- **[0.8]** (secondary) www.electoralcalculus.co.uk — <HTML> <HEAD> <meta http-equiv="Refresh" content="1; url=homepage.html";> <TITLE>Electoral Calculus</TITLE> <META name="elcalc:shorttitle" c
+  <https://www.electoralcalculus.co.uk/>
+- **[0.8]** (secondary) polymarket.com — <!DOCTYPE html><html id="__pm_html" lang="en" data-dpl-id="dpl_FcB5Nyfqe4RzVq97jDN2TkQK7yJQ"><head><meta charSet="utf-8" data-next-head=""/>
+  <https://polymarket.com/elections>
+- **[0.8]** (secondary) www.theguardian.com — Voters in Makerfield rank the cost of living, declining high streets and public services as among the most important issues locally, with ma
+  <https://www.theguardian.com/politics/2026/jun/03/cost-of-living-and-high-streets-among-top-priorities-for-makerfield-voters-poll-shows>
+- **[0.8]** (secondary) theweekinpolls.substack.com — Burnham, Makerfield and Labour: the latest polls Welcome to the 214th edition of The Week in Polls (TWIP), a polling newsletter that always
+  <https://theweekinpolls.substack.com/p/burham-makerfield-and-labour-the>
+
+## Model reasoning
+### DeepSeek V4 Pro — p=75.0%
+
+The by-election is in 12 days (June 18, 2026). Labour’s candidate, Andy Burnham, is a uniquely high‑profile figure—the popular mayor of Greater Manchester, which includes the constituency—and is running explicitly to mount a leadership challenge to an unpopular Prime Minister. This gives him a personal vote that insulates him from the national anti‑Labour swing. The historical precedent of the 1965 Leyton by‑election is a caution, and Reform UK’s strong local election performance plus national polling make a Reform gain plausible. However, the Reform candidate carries significant far‑right baggage, and Polymarket’s recent illustrative price of 83% for Burnham suggests the market views Labour as a strong favorite. Even accounting for a tight race, Burnham’s local brand and the unique strategic context likely put Labour ahead, while Reform remains the only serious challenger. I leave a modest tail for other parties.
+
+- **Labour Party**: 75%  
+- **Reform UK**: 20%  
+- **Conservative Party**: 2%  
+- **Green Party**: 1%  
+- **Liberal Democrats**: 1%  
+- **Restore Britain**: 0.5%  
+- **Other party or candidate**: 0.5%
+
+### GPT-5.4 Mini — p=48.0%
+
+Here’s my forecast, treating this as the party of the officially declared winning candidate in the Makerfield by-election.
+
+### (a) Time remaining / deadline
+- **Polling day is 18 June 2026**, and the result will almost certainly be declared that night or early the next morning.
+- So there are **about 12 days** left from today (2026-06-06) until voting, with the **practical resolution deadline around 18–19 June 2026**.
+- Per the prompt, if it somehow isn’t held or no winner is declared by **September 2026**, the question would be annulled.
+
+### (b) Status quo outcome
+- If nothing major changes, **Labour is still the status quo favorite** because Makerfield is historically a safe Labour seat and Andy Burnham is the expected Labour candidate.
+- The main reason it’s not a lock is that **Reform UK has shown strength locally**, and Curtice has warned this is not a routine Labour hold.
+
+### (c) Concrete YES scenario
+- **Labour wins** because Burnham gets selected, runs a high-profile campaign, turns the contest into a popularity test of his local/regional brand, and Labour voters turn out enough to keep Reform from overtaking them.
+
+### (d) Concrete NO scenario
+- **Labour loses to Reform UK** if the election becomes a protest vote against Labour/national government, Burnham underperforms as a “parachute” candidate, and Reform’s local momentum carries Robert Kenyon over the line.
+
+### (e) Base rate
+- There isn’t a clean exact base rate for this exact setup.
+- In general, **safe Labour seats are usually retained by Labour**, but by-elections can be volatile, especially amid a national political shock and a strong insurgent challenger.
+
+### (f) Strongest evidence
+- **Toward Labour:** Burnham is not a generic candidate; he’s a very prominent local political figure, and Curtice’s “<5%” warning was specifically about a **generic Labour candidate**, not Burnham. Also, the seat’s long-term Labour lean matters.
+- **Toward Reform / against Labour:** Reform’s strong performance in May 2026 local elections and Curtice’s comment that this is “much tougher” than the Gorton and Denton by-election, where Labour finished third.
+
+### (g) Important resolution nuance
+- This resolves to the **party of the officially declared winner**, not to the eventual aftermath or any legal challenge.
+- It also matters that this is about the **candidate’s party**, so if Burnham wins as Labour, it counts as **Labour** even though the seat is being used to facilitate his leadership ambitions.
+- A subtle point: as of now, Burnham has been allowed to put his name forward, but selection is not the same as victory; that adds some uncertainty.
+
+## Forecast
+Labour remains the most likely winner, but Reform is a live threat.
+
+- **Conservative Party: 6%**
+- **Labour Party: 48%**
+- **Green Party: 4%**
+- **Reform UK: 33%**
+- **Liberal Democrats: 2%**
+- **Restore Britain: 2%**
+- **Other party or candidate: 5%**
+
+### Kimi K2.6 — p=44.0%
+
+We need to produce a forecast for the 2026 Makerfield by-election. The question: "Which party's candidate will win the 2026 Makerfield by-election?" Options: Conservative Party, Labour Party, Green Party, Reform UK, Liberal Democrats, Restore Britain, Other party or candidate.
+
+We need to work through the steps (a)-(g) before giving probabilities.
+
+First, let's parse the background. The by-election is scheduled for June 18, 2026. Today's date is June 6, 2026. So there are 12 days remaining until the election. The resolution criteria: resolves as the party whose candidate is officially declared winner. If not held before Sept 2026 or no winner announced before that date, annulled. So deadline for resolution is Sept 2026, but the election is June 18, 2026. So result will be known June 18 night or June 19.
+
+Status quo: The seat is historically safe Labour. However, current context: Labour is in crisis, PM Keir Starmer beleaguered. Andy Burnham, popular Greater Manchester mayor, is running as Labour candidate. But Professor Sir John Curtice estimated a generic Labour candidate would have <5% chance of winning, and it would be much tougher than Gorton and Denton by-election where Labour finished third. In Gorton and Denton, Labour lost to Green and Reform UK. So status quo might be that Labour is in deep trouble in this by-election, but Burnham is not generic; he's a high-profile figure. The question is whether Burnham can win despite the national Labour slump and strong Reform UK.
+
+The scenario leading to YES (Labour win): Burnham's personal popularity, name recognition, and "King of the North" image galvanizes Labour voters, turnout is decent, and enough voters stick with Labour despite national disillusionment. Reform UK candidate Robert Kenyon is discredited by scandal (sexist/homophobic messages, far-right connections), causing some Reform voters to stay home or switch. Burnham wins narrowly.
+
+Scenario leading to NO (Labour loses, i.e., another party wins): Reform UK wins because of strong anti-establishment sentiment, cost-of-living issues, disillusionment with Labour nationally. Burnham is seen as part of the Labour establishment or fails to differentiate enough. Low turnout among Labour base. Reform UK candidate's scandals don't matter to voters. Or Green Party wins if progressive vote coalesces and Reform and Labour split the rest? But given Curtice says tougher than Gorton and Denton, where Labour came third behind Green and Reform, maybe Reform UK is favorite, or perhaps Green could win? But Makerfield is a working-class constituency in Wigan area, Leave-voting, historically Labour but trending right. The 2024 general election: Labour won, Reform UK (then maybe still Brexit Party? Actually Reform UK existed) came second. So it's a Labour vs Reform contest. The question mentions the first Westminster seat contested by new party Restore Britain (Rupert Lowe's party). But likely they get minimal votes.
+
+Base rate: For UK by-elections in safe seats where a high-profile figure is parachuted in, the party usually holds the seat (e.g., 1965 Leyton by-election? Actually that was a Labour hold despite some issues? Let's recall: The 1965 Leyton by-election was triggered to allow Patrick Gordon Walker to return to Parliament after losing his seat; he lost the by-election to the Conservatives. Wait: In 1965, Patrick Gordon Walker, former Foreign Secretary, lost his Smethwick seat in 1964 general election. He was then appointed Foreign Secretary anyway and needed a seat. A by-election was arranged in Leyton, a safe Labour seat, where the incumbent Labour MP, Reg Sorensen, was given a peerage to make way. But in the by-election, Gordon Walker lost to the Conservative candidate Ronald Buxton. Yes! So the precedent is actually bad for Labour. The description in evidence says "The 1965 Leyton by-election precedent not good for Labour." So base rate: when a by-election is triggered specifically to provide a seat for a figure not currently in parliament, the party can lose. In that case, the safe seat was lost. Another case: 1982 Beaconsfield by-election? Not exactly. The base rate is not strong, but the precedent suggests vulnerability.
+
+Single strongest piece of evidence pushing toward YES (Labour): Andy Burnham's personal popularity as Mayor of Greater Manchester; he has won mayoral elections with big mandates; he may have cross-party appeal and high name ID. Also, the seat is historically Labour and the party machinery is behind him.
+
+Single strongest piece of evidence pushing toward NO: The national Labour government's unpopularity, the recent May 2026 local elections showing Reform UK performing strongly in the area, and the Gorton and Denton by-election result where Labour came third in a nearby seat. Also Curtice's estimate that generic Labour <5% chance implies the environment is terrible for Labour.
+
+Resolution criteria: Resolves as the party of the officially declared winning candidate. Annulled if not held before Sept 2026 or no winner announced before that date. We must assign probabilities to each option. They must sum to 100%. We need to leave moderate probability on most options for unexpected outcomes.
+
+Let's think about the candidates and parties.
+
+Labour: Andy Burnham.
+Reform UK: Robert Kenyon (local plumber, councillor, scandal).
+Conservative: Kemi Badenoch confirmed they will field a candidate, but not named in evidence. In many northern working-class seats, Conservatives have been squeezed by Reform UK. They might get some votes but unlikely to win.
+Green: They have a candidate (not named). In Gorton and Denton, Green won (or came first?). Actually Gorton and Denton: Green Party won, Labour third. That suggests Green could be competitive in Greater Manchester seats. Makerfield might be similar? But Makerfield is more working-class/Leave than Gorton and Denton (which is more urban Manchester). However, there is a Green candidate.
+Liberal Democrats: Usually not strong in this type of seat; probably minimal.
+Restore Britain: New party, Rupert Lowe, first contest. Probably minimal.
+Other: e.g., independent, Workers Party of Britain, etc.
+
+Given the evidence, the main contenders are Labour and Reform UK. But we should not ignore the possibility of a Green win given the Gorton and Denton precedent, though the evidence says Makerfield is "much tougher" to win than Gorton and Denton for Labour, but doesn't say Green will win. Actually Gorton and Denton was won by Green. If Makerfield is tougher for Labour, maybe Reform wins, or maybe Green again? But Curtice estimated generic Labour <5% chance. What about Reform? He didn't estimate their chance. The Polymarket share price for Andy Burnham is mentioned: e.g., 83% on Andy Burnham? Wait, evidence [4] says: "The current share price, for example, 83% on 'Andy Burnham', reflects the market's implied probability for that outcome at any given moment." But is that current? The evidence says "for example, 83% on 'Andy Burnham'". It might be an example from a screenshot, but we don't know if that's the current price. Actually evidence [4] is a general FAQ about Polymarket, using "Andy Burnham" as an example. It might not reflect the actual current price. We cannot rely on it as a current market price unless it says so. The text: "A UK Elections prediction market lets users trade Yes or No shares on a specific question tied to UK Elections-related events, such as 'Makerfield by-election Winner'. Each share pays out $1 if the outcome resolves in its favor, and $0 if it does not. The current share price, for example, 83% on 'Andy Burnham', reflects the market's implied probability for that outcome at any given moment." This seems to be saying that the current share price on Andy Burnham is 83% as of retrieval? But it's ambiguous. It could be a hypothetical example. However, if Polymarket is trading Burnham at 83%, that seems extremely high given Curtice's analysis. But maybe the market believes Burnham is personally popular enough. But we need to be careful: is this a real price or just an example in the FAQ? The snippet says "The current share price, for example, 83% on 'Andy Burnham', reflects the market's implied probability for that outcome at any given moment." The phrase "for example" suggests it's an example, but it might be the actual current price at time of retrieval. If it is real, that's strong evidence for Labour. But the retrieval date is 2026-06-06, which is 12 days before election. If Burnham is at 83% on Polymarket, that would be very strong. But I'm not sure we should treat it as ground truth because it could be a hypothetical example in an FAQ page. The evidence [4] is from polymarket.com/politics/uk-elections, which is a general page. It might not show live prices but explain how markets work. The example might be stale or illustrative. I think we should treat it cautiously.
+
+Other evidence: A Guardian article about a focus group (evidence [7]) says voters rank cost of living, declining high streets, public services as important, many disillusioned by political system. This was commissioned by 38 Degrees and carried out by JL Partners. 112 residents. More than a third across party preference, age, gender spontaneously... (cut off). This suggests widespread disillusionment, which could favor Reform or low turnout.
+
+The Reform candidate has scandals: sexist, violent, homophobic messages; COVID conspiracies; Facebook connections with neo-fascist campaigners. Reform UK stated they "fully back" him. This is a double-edged sword: might put off moderate voters, but might also energize the anti-establishment base. However, in a by-election where turnout is low and candidate quality matters, scandals could hurt.
+
+What is the base rate for events like this? We have the 1965 Leyton by-election: safe Labour seat, arranged for a high-profile minister, but the Conservatives won. That suggests a non-negligible chance of an upset. Also, the 2024 general election saw Labour win Makerfield, but Reform UK came second. In the May 2026 local elections, Reform performed strongly. In the 2026 Gorton and Denton by-election, Labour came third. So the base rate for Labour holding a seat in this region under current conditions is low.
+
+But Burnham is not generic. He is a well-known figure, potentially able to draw personal votes. However, UK parliamentary by-elections are often heavily influenced by national mood. The national mood seems terrible for Labour.
+
+Let's consider the options and assign probabilities.
+
+The most likely winners: Labour or Reform UK. Less likely: Green, Conservative, Lib Dem, Restore Britain, Other.
+
+Let's estimate:
+
+Labour: Burnham's personal popularity is the main factor. But national environment is bad. Let's say 35-45% chance.
+
+Reform UK: They are polling well locally, candidate is local (born there, councillor), but has scandals. However, in many by-elections, Reform has done well. In Gorton and Denton they came second? Actually we need to check: In Gorton and Denton, Green won, Reform came second, Labour third. So Reform is strong. In Makerfield, Reform came second in 2024. They likely are the main challenger. Let's say 40-50% chance.
+
+Green: They won Gorton and Denton. Could they win Makerfield? Makerfield is less urban, more suburban/working-class. Greens sometimes do well in by-elections where main parties are unpopular. But in Makerfield, the main challenger to Labour seems to be Reform, not Green. However, if Burnham draws left-leaning voters and Reform draws right-leaning, the Green might squeeze through the middle? That seems less likely here than in Gorton and Denton. Let's say 5-10%.
+
+Conservative: They have been squeezed by Reform in the North. Badenoch is leader but not popular. They might get 15-20% of votes, but unlikely to win. Let's say 2-5%.
+
+Liberal Democrats: Usually irrelevant in this seat. <1% chance.
+
+Restore Britain: New party, first contest, probably minimal. <1%.
+
+Other: Could be an independent or Workers Party. There's always a chance of a shock independent. But low. Let's say 1-2%.
+
+We need to allocate exactly 100%.
+
+Let's do a more structured analysis.
+
+First, what does the "status quo" mean? If nothing changes between now and June 18, what happens? The status quo is that Labour is nominally the incumbent party, but the political environment is hostile. The status quo outcome in terms of electoral dynamics might be a Reform UK win, because current trends (local elections, Gorton and Denton) point that way. However, "status quo" also means the seat stays with the party that holds it if no major shift occurs. But the evidence suggests a major shift has already occurred. Good forecasters put extra weight on status quo meaning the world changes slowly. But here the world has already changed: the local elections already happened. The status quo is the current political environment as of June 6. In that environment, Reform UK is leading or tied.
+
+Let's think about the specific mechanics. Turnout in by-elections is typically low. Burnham needs to mobilize Labour voters. The focus group evidence suggests disillusionment. The scandal around Kenyon might suppress Reform turnout or sway undecideds. How much does candidate scandal matter? In the UK, it can matter, but Reform's base is very loyal. The "Hope not Hate" and "Searchlight" reports might be dismissed by Reform voters as smears. However, in a low-turnout by-election, motivated voters matter. Labour activists might be more motivated if they think Burnham can save the seat and challenge Starmer.
+
+Also, the timing: the by-election is in 12 days. Little time for big changes. Polls might exist but aren't in the evidence. We have a focus group, not a full poll. Curtice's estimate is for a generic candidate. Burnham is not generic. How much does that matter? Historically, high-profile candidates can outperform the national swing. For example, in the 2023 Uxbridge by-election, the Conservatives held the seat partly due to local factors (ULEZ). In the 2021 Batley and Spen by-election, Labour held the seat due to local factors and a strong campaign. So local factors can override national trends.
+
+Makerfield is in Greater Manchester. Burnham is the "King of the North", Mayor of Greater Manchester. This is his home turf. He has won two mayoral elections (2017, 2021) with large majorities. The mayoralty covers Makerfield. So he is extremely well-known locally. This is a huge asset.
+
+However, parliamentary by-elections can be different. Voters might see him as using the seat as a stepping stone to become PM, which could be viewed cynically. The evidence mentions it's the first time since 1965 Leyton that a by-election is triggered specifically to provide a seat for a figure not in Parliament. That precedent ended in a loss for Labour. But Burnham might be more popular than Patrick Gordon Walker was.
+
+What are the probabilities on prediction markets? The evidence [4] mentions 83% for Andy Burnham, but we are uncertain if that is real. If we ignore that as illustrative, we need to form our own view. If we treat it as real, we should weight it heavily. Let's examine the text again: "A UK Elections prediction market lets users trade Yes or No shares on a specific question tied to UK Elections-related events, such as 'Makerfield by-election Winner'. Each share pays out $1 if the outcome resolves in its favor, and $0 if it does not. The current share price, for example, 83% on 'Andy Burnham', reflects the market's implied probability for that outcome at any given moment." The phrase "the current share price, for example, 83% on 'Andy Burnham'" could be read as: there is a market on "Makerfield by-election Winner", and one of the options is "Andy Burnham", currently trading at 83%. This seems like a concrete example. It might be accurate as of retrieval. If so, the market is extremely confident in Burnham. Why would the market be so confident? Perhaps because of Burnham's personal popularity, or because internal polling shows him ahead. But Curtice said a generic Labour candidate <5%. Burnham is far from generic. The market might be pricing in that he is a heavy favorite. But is that rational? By-elections are volatile. 83% seems high. But prediction markets can be thin or manipulated. However, Polymarket is often reasonably efficient.
+
+As a professional forecaster, I should consider the market price but not blindly follow it. If the market truly is at 83% for Burnham, that implies Labour probability ~83% (since Burnham is the Labour candidate). But the question asks for the party, not the candidate. If Burnham wins, Labour wins. So Labour ~83% if we trust the market. That would leave only 17% for all other parties combined. That seems inconsistent with the expert analysis from Curtice. Could Curtice be analyzing a scenario without Burnham? Yes, he said "a generic Labour candidate other than Burnham would have less than a five percent chance". So with Burnham, the chance is higher. But how much higher? The market says 83%. Curtice says "much tougher to win than Gorton and Denton". In Gorton and Denton, Labour came third. Does that mean Burnham's chance is, say, 40%? Or 60%? Hard to say.
+
+Let's search my internal knowledge. As of June 2025 (in real world), there is no such by-election. This appears to be a hypothetical scenario set in the future (June 2026). The user has constructed a fictional but plausible future scenario. The evidence includes links to Wikipedia, BBC, etc., that are presumably fabricated for the sake of the exercise. I need to treat the evidence as given, not question its reality. The date is 2026-06-06.
+
+Given the evidence, we need to make a forecast. Let's weigh the factors:
+
+Factors for Labour:
+- Historically safe seat.
+- Andy Burnham is the candidate: high-profile, popular local mayor.
+- Labour NEC approved his candidacy; party backing.
+- Reform candidate has scandals (Hope not Hate, Searchlight reports).
+- The seat is in Greater Manchester; Burnham's home turf.
+
+Factors against Labour:
+- National Labour government is beleaguered, PM Starmer is unpopular.
+- May 2026 local elections: Reform UK performed strongly in the area.
+- Gorton and Denton by-election: Labour finished third; Makerfield is tougher.
+- Curtice estimate: generic Labour <5%; "much tougher" than Gorton and Denton.
+- Cost of living, declining high streets, public services top issues; voters disillusioned and distrustful of politicians.
+- By-election triggered specifically for Burnham's ambition; may be seen as cynical.
+- Precedent of 1965 Leyton by-election: safe seat lost when arranged for a non-MP figure.
+
+Factors for Reform UK:
+- Strong performance in May 2026 locals.
+- Second place in 2024 general election.
+- Local candidate (born in constituency, councillor).
+- Anti-establishment sentiment, disillusionment with Labour.
+- National trend favoring Reform in working-class northern seats.
+
+Factors against Reform UK:
+- Candidate scandals may put off some voters.
+- Burnham's personal popularity may blunt Reform's appeal.
+- By-election turnout is variable; Reform's base may not turn out as well as Labour's activist base.
+
+Factors for Green:
+- Won Gorton and Denton (nearby).
+- Could benefit from progressive voters abandoning Labour due to Starmer's unpopularity, but not willing to vote Reform.
+- However, Makerfield is less urban and less traditionally Green-friendly.
+
+Factors for Conservative:
+- Kemi Badenoch confirmed candidate.
+- But Conservatives being squeezed by Reform in the North; unlikely to win.
+
+Restore Britain: negligible.
+
+Liberal Democrats: negligible.
+
+Other: low.
+
+So the race is essentially Labour vs Reform UK.
+
+Given that Burnham is a very strong candidate and the seat is historically Labour, but the environment is terrible, I'd put Labour and Reform UK as roughly evenly matched, or perhaps Labour slightly ahead because of Burnham's star power and the Reform candidate's scandals.
+
+Let's try to quantify.
+
+Suppose we start with a prior based on the generic candidate: Labour <5%. Burnham adds a huge premium. How much? Let's say Burnham adds 30-40 percentage points to Labour's win probability. That would put Labour at 35-45%. That seems plausible.
+
+Alternatively, if we think Burnham is exceptionally popular, maybe he adds 50 points, making it 55%. But is that realistic? In the Batley and Spen by-election (2021), Labour held a seat that was trending Conservative due to local factors and a strong campaign, but the candidate (Kim Leadbeater) was not a national figure like Burnham. Burnham is bigger. However, the national environment in 2021 was not as bad for Labour as this scenario suggests. Here, Labour is in government and unpopular. That is a massive headwind.
+
+In by-elections, governing parties almost always lose support. The question is whether they lose enough to lose the seat. In safe seats, they often hold on but with reduced majorities. But the evidence says this is now competitive.
+
+Let's consider the 1965 Leyton precedent. The swing against Labour was about 8.5%. The Conservatives won. That was with a very high-profile candidate (Foreign Secretary). The constituency was safe (Labour majority ~8,000). The by-election was seen as a referendum on the new Labour government. Here, the Labour government is beleaguered, but Burnham is positioning himself as a challenger to Starmer from within Labour. That might confuse the referendum nature: voters who dislike Starmer might vote for Burnham to oust Starmer. Indeed, that's the explicit strategy: Burnham gets in, then challenges Starmer for leadership. So some anti-Starmer voters might back Burnham to trigger a leadership change. That is a unique dynamic.
+
+On the other hand, Reform voters might see Burnham as just another Labour politician. The candidate Robert Kenyon is a local plumber, which fits Reform's "man of the people" image. The scandal might not hurt him much because Reform voters are anti-mainstream media.
+
+Let's think about the distribution:
+
+Labour: 45%
+Reform UK: 40%
+Green: 8%
+Conservative: 5%
+Lib Dem: 1%
+Restore Britain: 0.5%
+Other: 0.5%
+
+Sum = 100%.
+
+But is 45% for Labour too high or too low? Let's examine the evidence again.
+
+The Wikipedia article (evidence [2]) says: "It is the first time that a by-election has been triggered specifically to provide a seat for a figure not currently in parliament since the 1965 Leyton by-election." This framing suggests it's unusual and potentially risky.
+
+The focus group (evidence [7]) says: "voters rank cost of living, declining high streets and public services as among the most important issues locally, with many also disillusioned by the political system and distrustful of politicians". This suggests a poor environment for any established politician, including Burnham. However, Burnham might be seen as less "Westminster" because he's a mayor.
+
+The candidate scandal (evidence [11], [12]) is significant. Hope not Hate published "sexist, violent and homophobic" messages; Searchlight reported connections to neo-fascists. Reform UK "fully back[s]" him. In a normal election, this would be disqualifying. But Reform's brand is about being anti-woke. Still, "neo-fascist" links might be too much for some. The X account was suspended. This could be the single strongest piece of evidence pushing toward Labour, because it makes Reform's candidate toxic to moderate voters.
+
+But does it push toward Labour or toward other parties? In a two-way fight, it helps Labour. If Reform voters abandon him, they might go Conservative or not vote. But the seat is a contest between Labour and Reform. Conservative and Green are also there. The scandal might push some Reform-leaning voters to Conservative or to stay home. It might also motivate Labour voters to turn out to stop him.
+
+The single strongest piece of evidence pushing toward NO (i.e., non-Labour, specifically Reform) is the local election performance and the Gorton and Denton result, plus Curtice's analysis that it's a very tough seat for Labour under current conditions.
+
+Let's consider the possibility that the Green Party wins. In Gorton and Denton, the Green Party won. That seat is in Greater Manchester (Denton). Makerfield is nearby. Could the Green vote surge? The focus group mentions cost of living, high streets, public services. These are issues Greens campaign on, but Reform campaigns on immigration and anti-establishment. In a working-class northern seat, Reform is more likely to capitalize than Greens. However, if Burnham and Kenyon split the vote, and Green picks up progressive votes, maybe? But historically, Greens have low support in Makerfield. In 2024 general election, they probably got under 5%. A by-election surge is possible but less likely than Reform.
+
+What about the Conservative Party? Under Kemi Badenoch, they might be trying to win back voters from Reform. But in the North, they are struggling. They might come third or fourth. Unlikely to win.
+
+Restore Britain: Rupert Lowe's party. He lost the Reform whip. This is their first contest. They might take some votes from Reform, helping Labour. But they are a new party with minimal infrastructure. Probability of winning is negligible.
+
+Liberal Democrats: They win by-elections in suburban southern seats, not northern working-class seats. Negligible.
+
+So the main uncertainty is between Labour and Reform UK.
+
+I need to produce probabilities that sum to 100%. Let's try to be well-calibrated.
+
+If I think Labour has a slight edge because of Burnham but it's close, I might say:
+Labour: 48%
+Reform UK: 38%
+Green: 7%
+Conservative: 5%
+Liberal Democrats: 1%
+Restore Britain: 0.5%
+Other: 0.5%
+
+This sums to 100%. It leaves moderate probability on most options. But is 48% too high for Labour? Let's think about the Curtice estimate again. He said a generic Labour candidate other than Burnham would have less than a 5% chance of winning, and that it would be "much tougher" to win than Gorton and Denton, where Labour finished third. If a generic candidate is <5%, and Burnham is the only thing changing that, how much can one candidate add? A candidate can add maybe 10-20 points in a by-election? In the 2023 Selby and Ainsty by-election, the Labour candidate was relatively unknown and won a huge swing. Candidate quality mattered less than national swing. In Uxbridge 2023, the Conservative candidate was relatively unknown but local factors (ULEZ) mattered. In Tamworth 2023, Labour won with a huge swing; candidate wasn't a star. So in by-elections, national mood often swamps candidate quality. But Burnham is not just any candidate; he's a regional celebrity. Could he add 20-30 points? Maybe.
+
+But if the seat is "much tougher" than Gorton and Denton (where Labour got ~20% maybe?), then even with Burnham, Labour might be at 30-35% of the vote. Reform might be at 35-40%, Green at 15%, Conservative at 10%. In a first-past-the-post system, the winner is whoever gets the most votes. If Labour gets 35% and Reform 33%, Labour wins. So the probability of winning depends on the vote share distribution.
+
+In Gorton and Denton, Labour came third. That means the Labour vote collapsed and split to Green and Reform? Or Green won with ~30%, Reform second with ~28%, Labour third with ~25%. If Makerfield is "much tougher" for Labour, maybe Labour would get only 20-25% even with Burnham? That seems too low for a popular mayor. But if national mood is terrible, maybe.
+
+Let's try to find the actual 2024 result for Makerfield. In real life, the 2024 general election (in our real timeline) was held on July 4, 2024. Makerfield was won by Josh Simons for Labour. I can recall that in 2024, Labour won Makerfield with a reduced majority. The Brexit Party/Reform UK candidate came second. Let me think: In 2019, Labour's Yvonne Fovargue held Makerfield with a majority of about 1,600 over the Conservatives? Wait, Makerfield: In 2019, Yvonne Fovargue (Labour) had 18,722 votes (43.1%), Conservative 17,663 (40.7%), Brexit Party 4,000 something. Actually, I think in 2019, Labour held Makerfield with a slim majority. In 2024, Josh Simons won for Labour. Reform UK came second. The majority was maybe around 5,000? Let's estimate. If Labour got ~45%, Reform ~25%, Conservative ~20%. So it's a safe-ish seat but not rock solid.
+
+Now, in this fictional 2026 scenario, the political landscape has shifted: Labour is in government and unpopular; Reform has grown. So the 2024 result is outdated.
+
+If we look at the May 2026 local elections, Reform performed strongly in the area. That suggests Reform is now the main challenger.
+
+Given that there are 12 days left, and assuming no major new scandals or events, the race is set.
+
+Let's consider the "status quo" more carefully. The status quo outcome is what would happen if current conditions persist. Current conditions as of June 6, 2026: Burnham is the Labour candidate, Kenyon is Reform candidate with scandals, local elections showed Reform strength, national Labour unpopular, Burnham is popular locally. What does the equilibrium of these forces produce?
+
+I think the most likely outcome is a narrow Labour win or narrow Reform win. It's genuinely too close to call. If forced to assign probabilities, I'd give Labour a slight edge (maybe 45-55%) because incumbency (in terms of party label) and candidate quality usually matter, and the Reform candidate's scandals are a real liability in a low-turnout by-election where marginal voters are decisive.
+
+However, Curtice's analysis is very bearish for Labour. He is a top expert. If he says it's "much tougher" than Gorton and Denton, where Labour came third, then even with Burnham, Labour might be underdogs. Curtice didn't give a probability for Burnham specifically, but the implication is that Labour is in deep trouble. Perhaps Burnham's chances are around 25-30%? That would make Reform the favorite at maybe 50-60%.
+
+But wait: Curtice said "a generic Labour candidate other than Burnham would have less than a five percent chance of winning". This implies that Burnham changes the calculus significantly. If Burnham only brought it up to 25%, Curtice might have said "Burnham has a tough fight, maybe 1 in 4 chance." But the article says "a generic Labour candidate... less than a five percent chance... and that it would be 'much tougher' to win than the recent Gorton and Denton by-election." He doesn't estimate Burnham's chance. The fact that he distinguishes generic vs Burnham suggests Burnham is a major upgrade. How major? Let's think about Burnham's favorability. As Mayor of Greater Manchester, he won re-election in 2021 with 67% of the vote (first round). He is one of the most popular politicians in the UK. In a region where he is literally the mayor, that counts for a lot. By-election turnout might be ~30-40%. Mobilizing Labour supporters is key. Burnham can do that.
+
+On the other hand, the "pmness" of the situation: voters might be voting on Starmer's government, not on Burnham. But Burnham is explicitly running as a challenger to Starmer. This could create a unique dynamic where anti-Starmer voters back Burnham to trigger a leadership contest. Some Labour voters who are disillusioned with Starmer might turn out for Burnham because they see him as a way to get rid of Starmer. Some Conservatives might tactically vote for Burnham to cause Labour chaos? Unlikely.
+
+What about Reform voters? They are mostly anti-Labour and anti-Conservative. They won't vote for Burnham.
+
+Let's try to construct a more rigorous model.
+
+Let P(Labour win) = ?
+
+We can think in terms of vote share. Suppose the vote shares are uncertain. Let's estimate mean vote shares and standard deviations.
+
+Mean vote share estimates (rough):
+- Labour: 35%
+- Reform: 33%
+- Conservative: 14%
+- Green: 12%
+- Lib Dem: 3%
+- Others: 3%
+
+But these are highly uncertain. The standard deviation for Labour and Reform might be ±8%. If Labour mean is 35% and Reform mean is 33%, Labour wins more often than not. But if Labour mean is 30% and Reform mean is 38%, Reform wins more often.
+
+What is the mean? Let's base it on the evidence.
+
+Evidence: "In the May 2026 local elections, Reform UK performed strongly in the area." That suggests Reform is polling well. But local elections use different boundaries and turnout.
+
+Evidence: Curtice says generic Labour <5% chance. That implies the seat is now a Reform/Green/Con marginal, with Labour far behind. If generic Labour would get ~15% vote share, then Burnham might get 30-35%. Reform might be at 30-35% too. So it's a toss-up.
+
+Let's look at the Gorton and Denton result. In that by-election (2026), Labour finished third behind Green and Reform. If Makerfield is "much tougher" for Labour, does that mean Labour would finish fourth? Or that the margin is smaller? "Tougher to win" means the probability of winning is lower. If in Gorton and Denton Labour had a 10% chance of winning (coming third), then in Makerfield it's <5% for a generic candidate. So the baseline is terrible.
+
+Burnham needs to outperform generic by a huge margin. How much did high-profile candidates outperform in the past? In the 1965 Leyton by-election, Patrick Gordon Walker (former Foreign Secretary) lost. He didn't outperform enough. In the 2008 Glasgow East by-election, Labour lost a safe seat despite a known candidate? Not sure. In the 2022 Wakefield by-election, Labour won back a seat with a candidate who wasn't a star, but national swing was with them. In the 2021 Hartlepool by-election, the Conservative candidate (Jill Mortimer) wasn't a star but won a safe Labour seat due to national swing and Brexit realignment.
+
+In Hartlepool 2021, Labour was the incumbent party (in opposition) but lost to Conservatives. Here, Labour is the incumbent party (in government) in a seat they hold. Historically, governing parties very rarely gain seats in by-elections, but they sometimes hold them. However, the trend in "Red Wall" seats has been away from Labour.
+
+Given all this, I think the probability should be roughly:
+Labour: 40%
+Reform UK: 42%
+Green: 10%
+Conservative: 6%
+Lib Dem: 1%
+Restore Britain: 0.5%
+Other: 0.5%
+
+This makes Reform UK a slight favorite, but not by much. It reflects that Burnham is a strong candidate but the headwinds are severe.
+
+However, we need to consider the "status quo" rule: good forecasters put extra weight on the status quo. What is the status quo? The seat is currently held by Labour. The status quo party holding the seat is Labour. But the status quo political environment is Reform surging. In forecasting, "status quo" usually means the current state persists. The current state is that Labour is the incumbent MP party, but the MP resigned. The seat is vacant. There is no incumbent. So there is no incumbency advantage. The "status quo" outcome might be that the party which previously held the seat retains it, because voters often default to historical patterns. But in by-elections, that is less true.
+
+Alternatively, the "status quo" is the current expectation as of June 6. What is the expectation? The evidence does not show a clear favorite. The market (if real) shows Burnham at 83%. But expert analysis suggests Labour is an underdog. The expectation is uncertain.
+
+I think we should weight the expert analysis heavily. Curtice is the UK's top psephologist. His view that a generic Labour candidate is <5% and it's much tougher than Gorton and Denton is a very strong signal. Even with Burnham, Labour is probably not a strong favorite. If Burnham added 30 points, that would be 35% chance. If he added 40 points, 45%. Let's assume he adds 35 points. Then Labour is at 40%. Reform UK might be at 45%. That seems plausible.
+
+But we also need to consider the scandals around Kenyon. This could reduce Reform's vote share by a few points. If Reform drops from 40% to 35%, and Labour is at 38%, Labour wins. So the scandals are important.
+
+How much do scandals matter in UK by-elections? In the 2019 Peterborough by-election, the Labour candidate had scandals (anti-Semitism allegations) but still won narrowly. In the 2021 Batley and Spen by-election, the Labour candidate faced controversies but won. In the 2023 Uxbridge by-election, the Conservative candidate had some issues but won. Scandals often don't sink candidates if the national mood is strong enough. However, Reform's brand is about being "not politically correct", so Kenyon's scandals might actually help him with some voters. The "sexist, violent and homophobic" messages might be seen as "telling it like it is" by some. The neo-fascist links might be too far, but if they're only Facebook friends, maybe not decisive.
+
+Given all this, I think the scandals are a modest negative for Reform, maybe -2% to -3% in vote share, but not fatal.
+
+Let's try to compute probabilities using a simple model.
+
+Assume vote shares (mean, std):
+Labour: 34% (±7%)
+Reform: 33% (±7%)
+Conservative: 15% (±4%)
+Green: 13% (±4%)
+Lib Dem: 3% (±1.5%)
+Restore Britain: 1% (±0.5%)
+Other: 1% (±0.5%)
+
+These are correlated, but let's approximate. If we sample from these distributions, Labour and Reform are close. Labour mean 34, Reform 33. The probability that Labour > Reform is maybe around 55% (given small margin). But Labour also needs to beat Green and Con. If Labour is 34 and Reform 33, they are both ahead of Green (13) and Con (15). So the winner is almost always Labour or Reform.
+
+But are these means realistic? Let's adjust based on evidence. If generic Labour is <5% chance, their mean might be 20%. Burnham adds 12 points? That seems low. Let's think: generic Labour candidate in a safe seat would normally be expected to win >95% of the time. If generic is <5%, that's a collapse of maybe 15-20 percentage points in vote share. So generic Labour vote share might be ~25% (down from ~45%). Burnham might get back 10-15 points, putting him at 35-40%. Reform might be at 30-35%. So Labour mean ~38%, Reform ~32%, Green ~12%, Con ~12%, others ~6%. Then Labour would be favorite.
+
+But Curtice says "much tougher to win than Gorton and Denton". In Gorton and Denton, Labour came third. That means Labour got maybe ~20-25% there? Actually, in the 2026 Gorton and Denton by-election (fictional), Labour finished third. If the winner got ~30%, second ~28%, Labour third ~25%. So Labour was only 5 points behind. If Makerfield is "much tougher", maybe Labour would be at 20% generic, 10 points behind. Burnham adding 15 points would put him at 35%, maybe first or second.
+
+Let's try to infer from the 2024 result. In real life 2024, Labour won Makerfield with, say, 45%, Reform 25%, Con 18%, Green 5%. Now in 2026, national swing away from Labour is huge. Suppose national swing is -15% for Labour, +10% for Reform, +2% for Green, -5% for Con. That would give: Labour 30%, Reform 35%, Con 13%, Green 7%. But Burnham adds, say, 8% local bonus. So Labour 38%, Reform 35%. Then Labour wins. But if national swing is -20% for Labour, +15% for Reform: Labour 25%, Reform 40%. Burnham +8% => 33%, still behind Reform. Which is more likely?
+
+The local elections in May 2026 showed Reform performing strongly. That suggests a large swing. But local elections often overstate opposition strength.
+
+Given that Burnham is explicitly challenging Starmer, some anti-government voters might support Burnham to get rid of Starmer. But how many? It's a risky assumption.
+
+Let's consider the "single strongest piece of evidence".
+
+For Labour (YES): The fact that Andy Burnham is a well-known, popular mayor running in his own region. This is a unique advantage that generic candidates don't have. It could override national trends.
+
+For NO (non-Labour): Curtice's analysis that the seat is extremely tough for Labour, even more so than Gorton and Denton where Labour came third. This anchors us to a very bearish baseline.
+
+We need to synthesize these.
+
+I think a good calibrated probability is:
+
+Labour: 42%
+Reform UK: 44%
+Green: 8%
+Conservative: 4%
+Liberal Democrats: 1%
+Restore Britain: 0.5%
+Other: 0.5%
+
+Sum = 100%. This reflects that Reform is slightly favored due to the environment, but Burnham's candidacy and Reform's scandals keep it close. However, is 44% for Reform too high? Let's think.
+
+If we look at the actual prediction market evidence. The snippet says "83% on Andy Burnham". If that is real, my forecast of 42% is massively off. But I suspect it's an example. Let's examine the text: "A UK Elections prediction market lets users trade Yes or No shares on a specific question tied to UK Elections-related events, such as 'Makerfield by-election Winner'. Each share pays out $1 if the outcome resolves in its favor, and $0 if it does not. The current share price, for example, 83% on 'Andy Burnham', reflects the market's implied probability for that outcome at any given moment." This is from a generic FAQ page. It uses Andy Burnham as an example. But note: the URL is polymarket.com/politics/uk-elections. The retrieval date is 2026-06-06. It says "the current share price, for example, 83%". If this is an FAQ page, they might use a realistic example. But would they use a live price? Maybe. But if the live price is 83%, that's a huge signal. Why would the market be so confident? Perhaps because there is a poll showing Burnham ahead. The evidence does not include any poll. But the market might have inside info.
+
+As a forecaster, I should consider that if a liquid market prices something at 83%, I should be very hesitant to go against it unless I have strong reason. However, the market might be illiquid for a niche UK by-election on Polymarket, which is a US-based crypto platform. UK by-election markets on Polymarket might have low volume and be dominated by a few traders with limited info. Also, the 83% figure might be outdated or wrong.
+
+Given the conflict between expert analysis (Curtice) and market price (possibly 83%), which do we trust more? Expert analysis is based on fundamentals; market price might be noise. But 83% is extreme. If it were 55%, I'd trust it more. 83% seems to ignore the national environment.
+
+Also, the focus group evidence suggests disillusionment. That doesn't support 83% for Burnham.
+
+I think the safest approach is to discount the 83% as an illustrative example and rely on the structural analysis.
+
+Another factor: The question asks about the party, not the candidate. Even if Burnham wins, it's Labour. If Burnham loses, which party wins? Most likely Reform. Could the Conservatives win? Unlikely, but possible if Reform and Labour split and Conservatives sneak through. In a four-way race with Con, Lab, Ref, Green, the winner might need only 30-35%. If Labour and Reform are tied at 30%, a strong Conservative campaign could get 25% and win? But the Conservatives are not strong here. In 2024, they were third. With Reform rising, Conservatives are squeezed. So Con win is very unlikely.
+
+Green win? In Gorton and Denton, Green won because the seat is younger, more urban, more environmentally conscious? Makerfield includes Ashton-in-Makerfield and other towns; it's more working-class. Green win is possible but less likely than in Gorton and Denton. Let's say 5-8%.
+
+Let's refine the numbers.
+
+I want to give Labour a probability in the 35-45% range. Let's settle on 40%. Reform 42%. Green 10%. Conservative 6%. Lib Dem 1%. Restore Britain 0.5%. Other 0.5%.
+
+But 42% for Reform and 40% for Labour sums to 82%. The rest 18% goes to others. Is that too much for others? In a by-election where the main two are close, third parties often get squeezed. But in Gorton and Denton, three parties were competitive. Let's think: if Labour is at 35%
+
+### Gemini 3 Flash — p=81.0%
+
+The 2026 Makerfield by-election is a high-stakes contest triggered by the resignation of Josh Simons to facilitate Andy Burnham’s return to Westminster. While Makerfield is historically a safe Labour seat, the current political climate—characterized by a "beleaguered" Prime Minister Keir Starmer and a significant surge in support for Reform UK—makes this a competitive race.
+
+(a) **Time remaining:** The election is scheduled for June 18, 2026. Today is June 6, 2026, leaving 12 days until the vote.
+(b) **Status quo:** Labour is the incumbent party and Andy Burnham is a high-profile, popular local figure (Mayor of Greater Manchester). However, Reform UK is polling strongly in the region following the May 2026 local elections.
+(c) **Scenario for Labour win:** Andy Burnham’s personal popularity and "favorite son" status in Greater Manchester overcome national dissatisfaction with the Starmer government, allowing him to hold the seat with a reduced majority.
+(d) **Scenario for Reform UK win:** Robert Kenyon capitalizes on anti-incumbency sentiment and local disillusionment, successfully painting Burnham as a "career politician" parachuted in to save a failing leadership, leading to a historic upset.
+(e) **Base rate:** By-elections in the UK frequently see large swings against the governing party. However, a "safe" seat with a high-profile candidate like Burnham usually holds, though majorities often collapse.
+(f) **Strongest evidence:** For Labour: Polymarket odds (83%) and Burnham’s personal brand. For Reform UK: Strong local election performance in May 2026 and Sir John Curtice’s warning that a generic Labour candidate would have less than a 5% chance.
+(g) **Resolution criteria:** The question resolves based on the officially declared winner.
+
+**Analysis:**
+Andy Burnham is a significantly stronger candidate than a "generic" Labour politician, which mitigates the risk of a total collapse. While Reform UK is the primary challenger, the controversy surrounding their candidate, Robert Kenyon (suspended X account and links to far-right figures), may cap their ceiling among moderate voters. The presence of "Restore Britain" and the Conservatives will likely split the right-wing vote to some degree. Despite the national "leadership crisis," Burnham’s local appeal makes him the heavy favorite.
+
+Conservative Party: 2%
+Labour Party: 81%
+Green Party: 1%
+Reform UK: 14%
+Liberal Democrats: 1%
+Restore Britain: 0.5%
+Other party or candidate: 0.5%
+
+Probability:
+Conservative Party: 2%
+Labour Party: 81%
+Green Party: 1%
+Reform UK: 14%
+Liberal Democrats: 1%
+Restore Britain: 0.5%
+Other party or candidate: 0.5%
+
+### Claude Haiku 4.5 — p=75.0%
+
+# Analysis of 2026 Makerfield By-election
+
+## (a) Time Remaining and Deadline
+- **Today's date:** June 6, 2026
+- **Election date:** June 18, 2026
+- **Time remaining:** 12 days
+- **Resolution deadline:** September 2026 (question annulled if no winner announced by then)
+- The election is scheduled well before the annulment deadline, so resolution is highly likely to occur on time.
+
+## (b) Status Quo Outcome
+The by-election will proceed as scheduled on June 18, 2026. Andy Burnham (Labour) is the frontrunner and is expected to win based on:
+- Makerfield's historical status as a safe Labour seat
+- Burnham's prominence as Greater Manchester mayor
+- Polymarket pricing showing ~83% for Burnham/Labour
+- Expert analysis from John Curtice suggesting a generic Labour candidate would have <5% chance, implying Burnham has substantially higher odds
+
+## (c) Concrete YES Scenario (Labour Wins)
+Andy Burnham leverages his profile and local standing to mobilize Labour voters despite Reform UK's strong local performance in May 2026 local elections. Labour's traditional base holds firm, and Burnham's mayoral credentials provide additional appeal. He wins with a plurality or majority.
+
+## (d) Concrete NO Scenario (Labour Loses)
+Reform UK capitalizes on strong local election performance and anti-establishment sentiment. Despite candidate Robert Kenyon's controversy (sexist/homophobic messages, far-right connections), Reform consolidates protest votes. Labour's national unpopularity under Keir Starmer depresses turnout among traditional supporters. Reform finishes first.
+
+## (e) Base Rate
+- **Safe seat retention in by-elections:** Historically very high (~90%+) when the governing party's candidate is well-known and motivated
+- **By-elections as anti-government protests:** Increasingly common in recent UK politics, but typically require the governing party to be deeply unpopular nationally
+- The 1965 Leyton by-election precedent (mentioned in sources) is cited as concerning for Labour, but that was a different era
+
+## (f) Strongest Evidence
+
+**Toward YES (Labour):**
+- Polymarket prediction market at ~83% for Burnham
+- John Curtice's expert assessment that Burnham would be favored vs. generic Labour candidate
+- Makerfield's historical safe Labour status
+- Burnham's high profile and local legitimacy
+- Only 12 days remain; no major new developments likely to shift dynamics
+
+**Toward NO (Reform UK):**
+- Reform UK's strong performance in May 2026 local elections in the area
+- Gorton and Denton by-election (2026) showed Labour finishing third behind Green and Reform
+- National Labour unpopularity under Keir Starmer
+- Anti-establishment sentiment in the constituency (per Guardian focus group)
+- Curtice noted it would be "much tougher" than Gorton/Denton
+
+## (g) Resolution Criteria Notes
+- The question asks specifically about which **party's candidate** wins, not which individual
+- Any later challenges to the result are immaterial
+- The annulment clause (no winner by September 2026) is unlikely to trigger given the June 18 date
+- This is straightforward: whoever is officially declared winner determines the party
+
+---
+
+## Probability Assessment
+
+**Key considerations:**
+1. **Prediction market signal:** 83% for Burnham/Labour is substantial and reflects real-money consensus
+2. **Expert opinion:** Curtice's assessment favors Burnham but acknowledges it's competitive
+3. **Recent precedent:** Gorton/Denton showing Labour in third place is concerning but that was a different seat with different dynamics
+4. **Time factor:** Only 12 days remain; the race dynamics are largely set
+5. **Base rate:** Safe seats typically hold, but this is explicitly described as competitive
+
+**Adjustments:**
+- The Gorton/Denton precedent is the strongest counter-signal, but Burnham is a much higher-profile candidate than whoever ran there
+- Reform's local strength is real but may not translate to Westminster election dynamics
+- Labour's national unpopularity is real but Burnham's personal brand may insulate him somewhat
+- The prediction market at 83% seems reasonable but perhaps slightly overconfident given recent precedent
+
+**My assessment:**
+- Labour (Burnham): 75% - Strong frontrunner with expert backing and market consensus, but genuine competitive threat from Reform
+- Reform UK: 18% - Real local strength and national anti-establishment sentiment, but Burnham's profile and Labour's structural advantage matter
+- Conservative Party: 4% - Historically weak in this seat, unlikely to be competitive
+- Green Party: 2% - Possible spoiler role but unlikely to win
+- Liberal Democrats: 0.5% - Negligible presence
+- Restore Britain: 0.3% - New party, first Westminster contest, no realistic path to victory
+- Other: 0.2% - Residual uncertainty
+
+Probability: 
+- **Labour Party: 75%**
+- **Reform UK: 18%**
+- **Conservative Party: 4%**
+- **Green Party: 2%**
+- **Liberal Democrats: 0.5%**
+- **Restore Britain: 0.3%**
+- **Other party or candidate: 0.2%**
+
+## Red-team critique
+Red-team critique skipped for non-binary question type.
+
+## Summary
+Question Type: multiple_choice
+Final Prediction: 67.8%
+Informativeness: strong_view (|p-0.5|=0.178)
+Raw Trimmed Mean: 66.0%
+Calibrated Probability: 66.0%
+Dispersion: 0.172
+Confidence Class: medium
+Publish Gate: publish (score=0.81)
+Parsing Failure Rate: 0.0%
+Search Queries: planned=10 executed=9
+Gate Components: spec=0.90, temporal=1.00, evidence=1.00, agreement=0.14
+Gate Metrics: evidence_count=12, distinct_sources=8, primary_sources=2, mean_relevance=0.73, freshness_days=0.0
+Red Team: ran | no_change
+Individual Runs:
+- DeepSeek V4 Pro: 75.0% (tokens=7,120, warnings=1)
+- GPT-5.4 Mini: 48.0% (tokens=6,991, warnings=0)
+- Kimi K2.6: 44.0% (tokens=13,924, warnings=1)
+- Gemini 3 Flash: 81.0% (tokens=4,962, warnings=1)
+- Claude Haiku 4.5: 75.0% (tokens=5,736, warnings=0)
+MC Probabilities:
+- Conservative Party: 3.4%
+- Green Party: 2.4%
+- Labour Party: 67.8%
+- Liberal Democrats: 1.0%
+- Other party or candidate: 0.5%
+- Reform UK: 24.3%
+- Restore Britain: 0.5%
+Signposts:
+- A major national scandal breaks involving Andy Burnham, directly impacting his public image and trust. | direction=down | magnitude=-20pp
+- A highly respected, non-partisan local poll is released showing Reform UK within 5 percentage points of Labour. | direction=down | magnitude=-15pp
+- The Prime Minister resigns or calls a snap general election, fundamentally altering the political landscape and the by-election's strategic importance. | direction=up | magnitude=+12pp
+- Reform UK's candidate is revealed to have made additional, widely condemned far-right comments or actions that gain significant media attention. | direction=up | magnitude=+9pp
+
+## Tokens
+- Total tokens across 31 calls: 281,134
