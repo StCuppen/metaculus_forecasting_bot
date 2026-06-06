@@ -26,10 +26,22 @@ from .prompts import (
     LEAN_NUMERIC_APPEND_PROMPT,
 )
 from .retrieval import multi_provider_search
-from .utils import ExaClient, SonarClient, call_openrouter_llm, clean_indents, get_token_usage, reset_token_usage
+from .utils import ExaClient, SonarClient, SerperClient, LinkupClient, call_openrouter_llm, clean_indents, get_token_usage, reset_token_usage
 from .forecast_records import write_forecast_record
 
 logger = logging.getLogger(__name__)
+
+# Values left over from .env.template that must NOT count as a configured key.
+_PLACEHOLDER_KEYS = {"", "1234567890", "your_key_here", "your_brave_key_here"}
+
+
+def _real_key(*names: str) -> str | None:
+    """Return the first env var value that is a real key (ignoring template placeholders)."""
+    for name in names:
+        value = (os.getenv(name) or "").strip()
+        if value and value not in _PLACEHOLDER_KEYS and not value.lower().startswith("your_"):
+            return value
+    return None
 
 
 @dataclass
@@ -1448,60 +1460,91 @@ async def run_lean_ensemble_forecast(
             search_queries.append(targeted_q)
             seen.add(targeted_q.lower())
 
+    # Combine search providers by capability, each active only when its key is present:
+    #   Linkup  -> factual + fresh full-text (primary workhorse)
+    #   Exa     -> semantic/full-text discovery (base-rate / reference-class)
+    #   Serper  -> free Google breadth + news + site: queries (market/odds)
+    #   Sonar   -> free OpenRouter synthesis, used only as fallback/top-up when evidence is thin
+    import types as _types
+
     docs: list[Any] = []
-    exa_key = os.getenv("EXA_API_KEY")
+    providers_used: list[str] = []
     search_provider: str | None = None
-    if exa_key:
-        exa_client = ExaClient(api_key=exa_key)
-        docs, _ = await multi_provider_search(
+
+    exa_key = _real_key("EXA_API_KEY")
+    linkup_key = _real_key("LINKUP_API_KEY", "LINKEUP_API_KEY")
+    serper_key = _real_key("SERPER_API_KEY")
+
+    # 1) Full-text providers via the shared multi-provider path (Exa primary, Serper secondary).
+    exa_client = ExaClient(api_key=exa_key) if exa_key else None
+    serper_client = SerperClient() if serper_key else None
+    if exa_client is not None or serper_client is not None:
+        mp_docs, _ = await multi_provider_search(
             queries=search_queries,
             exa_client=exa_client,
+            serper_client=serper_client,
             use_sonar=False,
         )
-        search_provider = "exa"
-    elif os.getenv("OPENROUTER_API_KEY"):
-        # No dedicated search key: fall back to Perplexity Sonar via OpenRouter
-        # (web-grounded answers + citations) so runs still receive real evidence.
-        # Sonar evidence is provisional; a dedicated search key is the upgrade path.
-        sonar_client = SonarClient()
-        docs, _ = await multi_provider_search(
-            queries=search_queries,
-            sonar_client=sonar_client,
-            use_sonar=True,
-        )
-        # Sonar inside multi_provider_search is basket-gated and frequently does not fire,
-        # leaving zero evidence. As the SOLE provider we query Sonar directly on the top
-        # queries so each yields a synthesis doc and we reliably clear the evidence floor.
-        import types as _types
+        docs.extend(mp_docs)
+        if exa_client is not None:
+            providers_used.append("exa")
+        if serper_client is not None:
+            providers_used.append("serper")
 
-        sonar_n = int(os.getenv("FORECAST_SONAR_DIRECT_QUERIES", "5"))
-        direct = await asyncio.gather(
-            *[sonar_client.answer_with_citations(q, max_tokens=600) for q in search_queries[:sonar_n]],
-            return_exceptions=True,
-        )
-        for idx, (q, ans) in enumerate(zip(search_queries[:sonar_n], direct)):
-            if isinstance(ans, Exception) or not isinstance(ans, dict):
-                continue
-            answer_text = (ans.get("answer") or "").strip()
-            if len(answer_text) < 50:
-                continue
-            docs.append(
-                _types.SimpleNamespace(
+    # 2) Linkup: direct full-text search on the top queries (factuality + recency leader).
+    if linkup_key:
+        try:
+            linkup_client = LinkupClient(api_key=linkup_key)
+            linkup_n = int(os.getenv("FORECAST_LINKUP_QUERIES", "4"))
+            linkup_hits = await linkup_client.search_multiple(search_queries[:linkup_n])
+            for hit in linkup_hits:
+                text = (hit.get("content") or "").strip()
+                if len(text) < 50:
+                    continue
+                docs.append(_types.SimpleNamespace(
+                    url=hit.get("url") or "https://linkup.so",
+                    title=hit.get("title") or "Linkup result",
+                    text=text,
+                    snippet=None,
+                ))
+            providers_used.append("linkup")
+        except Exception as exc:
+            logger.warning(f"Linkup search failed: {exc}")
+
+    # 3) Sonar fallback/top-up (free via OpenRouter) only when evidence is still thin.
+    if os.getenv("OPENROUTER_API_KEY") and (len(docs) < 3 or not providers_used):
+        try:
+            sonar_client = SonarClient()
+            sonar_n = int(os.getenv("FORECAST_SONAR_DIRECT_QUERIES", "5"))
+            direct = await asyncio.gather(
+                *[sonar_client.answer_with_citations(q, max_tokens=600) for q in search_queries[:sonar_n]],
+                return_exceptions=True,
+            )
+            for idx, (q, ans) in enumerate(zip(search_queries[:sonar_n], direct)):
+                if isinstance(ans, Exception) or not isinstance(ans, dict):
+                    continue
+                answer_text = (ans.get("answer") or "").strip()
+                if len(answer_text) < 50:
+                    continue
+                docs.append(_types.SimpleNamespace(
                     url=f"sonar://direct/{idx}",
                     title=f"Sonar synthesis: {q[:70]}",
                     text=answer_text,
                     snippet=None,
-                )
-            )
-        search_provider = "sonar_openrouter"
+                ))
+            providers_used.append("sonar")
+        except Exception as exc:
+            logger.warning(f"Sonar fallback failed: {exc}")
+
+    search_provider = "+".join(providers_used) if providers_used else None
+    if not providers_used:
         logger.warning(
-            "No EXA_API_KEY set; using Perplexity Sonar via OpenRouter for search "
-            "(provisional evidence quality). Set EXA_API_KEY/SERPER/BRAVE for richer retrieval."
+            "NO SEARCH PROVIDER AVAILABLE: forecast will run EVIDENCE-STARVED and likely abstain."
         )
-    else:
+    elif not ({"linkup", "exa"} & set(providers_used)):
         logger.warning(
-            "NO SEARCH PROVIDER AVAILABLE (no EXA_API_KEY and no OPENROUTER_API_KEY): "
-            "forecast will run EVIDENCE-STARVED and the publish gate will likely abstain."
+            f"Only provisional/secondary search providers active ({search_provider}); "
+            "evidence may be weak. Set LINKUP_API_KEY/EXA_API_KEY for stronger retrieval."
         )
 
     # LLM evidence extraction and scoring

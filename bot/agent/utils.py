@@ -491,6 +491,69 @@ class SonarClient:
         return {"answer": answer, "citations": citations}
 
 
+class LinkupClient:
+    """Client for the Linkup search API (https://api.linkup.so/v1/search).
+
+    Linkup leads the SimpleQA factuality benchmark and returns fresh, full-text
+    results, which is exactly what forecasting needs. We use outputType=searchResults
+    so each hit carries extracted page text we can score as evidence.
+    """
+
+    def __init__(self, api_key: str | None = None, depth: str | None = None, max_results: int = 6):
+        self.api_key = api_key or os.getenv("LINKUP_API_KEY") or os.getenv("LINKEUP_API_KEY")
+        if not self.api_key:
+            raise ValueError("LINKUP_API_KEY not set")
+        # "standard" balances cost/quality; "deep" is pricier multi-hop, "fast" cheapest.
+        self.depth = depth or os.getenv("LINKUP_DEPTH", "standard")
+        self.max_results = max_results
+
+    async def search(self, query: str, num_results: int | None = None) -> list[dict]:
+        """Execute a Linkup search and return normalized results."""
+        n = num_results or self.max_results
+        payload = {
+            "q": query,
+            "depth": self.depth,
+            "outputType": "searchResults",
+            "maxResults": n,
+        }
+        async with httpx.AsyncClient(timeout=30) as client:
+            resp = await client.post(
+                "https://api.linkup.so/v1/search",
+                headers={
+                    "Authorization": f"Bearer {self.api_key}",
+                    "Content-Type": "application/json",
+                },
+                json=payload,
+            )
+            resp.raise_for_status()
+            data = resp.json()
+
+        results = []
+        for rank, item in enumerate((data.get("results") or [])[:n]):
+            if item.get("type") not in (None, "text"):
+                continue  # skip image results
+            results.append({
+                "title": item.get("name", ""),
+                "url": item.get("url", ""),
+                "content": item.get("content", ""),
+                "score": 1.0 / (rank + 1),
+            })
+        return results
+
+    async def search_multiple(self, queries: list[str]) -> list[dict]:
+        """Run several queries concurrently and flatten the normalized results."""
+        settled = await asyncio.gather(
+            *[self.search(q) for q in queries], return_exceptions=True
+        )
+        out: list[dict] = []
+        for res in settled:
+            if isinstance(res, Exception):
+                logger.error(f"Linkup search failed: {res}")
+                continue
+            out.extend(res)
+        return out
+
+
 class TavilyClient:
     """Client for Tavily AI-optimized search API."""
 
