@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import asyncio
+import json
 from dataclasses import dataclass
 from datetime import datetime, timezone
 import hashlib
@@ -85,6 +86,84 @@ def _parse_outside_view(text: str) -> tuple[str | None, float | None]:
         except ValueError:
             outside_view = None
     return base_rate_text, outside_view
+
+
+def _extract_last_json(text: str) -> dict[str, Any] | None:
+    """Tolerantly pull the last JSON object from model output (the structured final answer).
+
+    Tries fenced ```json blocks, then brace-balanced objects scanning from the end. Returns the
+    last one that parses to a dict, else None so callers fall back to regex parsing.
+    """
+    if not text:
+        return None
+    # Collect only TOP-LEVEL brace-balanced spans (so a nested inner object isn't returned
+    # instead of the outer final-answer object), then prefer the LAST one that parses to a dict.
+    spans: list[str] = []
+    depth = 0
+    start: int | None = None
+    for i, c in enumerate(text):
+        if c == "{":
+            if depth == 0:
+                start = i
+            depth += 1
+        elif c == "}" and depth > 0:
+            depth -= 1
+            if depth == 0 and start is not None:
+                spans.append(text[start : i + 1])
+                start = None
+    for cand in reversed(spans):
+        try:
+            obj = json.loads(cand)
+        except (json.JSONDecodeError, ValueError):
+            continue
+        if isinstance(obj, dict):
+            return obj
+    return None
+
+
+def _as_prob(value: Any) -> float | None:
+    """Coerce a JSON value to a clamped 0-1 probability (accepts 0-1, percent, or string)."""
+    try:
+        f = float(str(value).strip().rstrip("%"))
+    except (TypeError, ValueError):
+        return None
+    if f > 1.0:
+        f = f / 100.0
+    return max(0.01, min(0.99, f))
+
+
+def _mc_from_json(obj: dict[str, Any] | None, options: list[str]) -> dict[str, float] | None:
+    """Build a normalized per-option distribution from a {'probabilities': {...}} JSON object."""
+    if not isinstance(obj, dict):
+        return None
+    probs = obj.get("probabilities")
+    if not isinstance(probs, dict):
+        return None
+    lower = {str(k).strip().lower(): v for k, v in probs.items()}
+    out: dict[str, float] = {}
+    for opt in options:
+        raw = probs.get(opt)
+        if raw is None:
+            raw = lower.get(str(opt).strip().lower())
+        p = _as_prob(raw) if raw is not None else None
+        if p is None:
+            return None  # incomplete -> fall back to regex parser
+        out[opt] = p
+    total = sum(out.values())
+    if total <= 0:
+        return None
+    return {k: v / total for k, v in out.items()}
+
+
+def _numeric_from_json(obj: dict[str, Any] | None) -> dict[int, float] | None:
+    """Extract {10,25,50,75,90: value} from a {'percentiles': {...}} JSON object."""
+    if not isinstance(obj, dict) or not isinstance(obj.get("percentiles"), dict):
+        return None
+    try:
+        parsed = {int(k): float(str(v).replace(",", "").strip()) for k, v in obj["percentiles"].items()}
+    except (TypeError, ValueError):
+        return None
+    return parsed or None
 
 
 @dataclass
@@ -1679,23 +1758,18 @@ async def run_lean_ensemble_forecast(
         evidence_bundle=evidence_bundle_text,
         today=today_str,
     )
-    if q_type == "binary":
-        # Force an explicit, recorded outside-view (base rate) separate from the inside-view number.
-        prompt = prompt + "\n\n" + (
-            "Before your final 'Probability:' line, also output these two lines exactly:\n"
-            "BASE_RATE: <one sentence naming a concrete reference class and its historical rate, "
-            "or 'none found'>\n"
-            "OUTSIDE_VIEW: <your outside-view-only probability as a percentage, e.g. 30%, based on "
-            "the base rate BEFORE adjusting for case-specific news>"
-        )
     if q_type == "multiple_choice":
         if not mc_options:
             mc_options = ["Option A", "Option B"]
         options_list = "\n".join([f"- {opt}" for opt in mc_options])
+        keys = ", ".join(f'"{opt}": <0-1>' for opt in mc_options)
         prompt = (
             prompt
             + "\n\n"
             + LEAN_MC_APPEND_PROMPT.format(options_list=options_list)
+            + "\n\nThen, as the LAST line, output your FINAL ANSWER as one JSON object (no code "
+            "fences, nothing after it), using EXACTLY these option labels and probabilities (0-1) "
+            f"summing to ~1:\n{{\"probabilities\": {{{keys}}}}}"
         )
     elif q_type == "numeric":
         prompt = (
@@ -1708,6 +1782,18 @@ async def run_lean_ensemble_forecast(
         )
         if numeric_unit:
             prompt += f"\n\nRequired unit: {numeric_unit}\n"
+        prompt += (
+            "\n\nThen, as the LAST line, output your FINAL ANSWER as one JSON object (no code "
+            'fences, nothing after it):\n'
+            '{"percentiles": {"10": <value>, "25": <value>, "50": <value>, "75": <value>, "90": <value>}}'
+        )
+    else:  # binary
+        prompt += (
+            "\n\nThen, as the LAST line, output your FINAL ANSWER as one JSON object (no code "
+            'fences, nothing after it):\n'
+            '{"probability": <0-1>, "outside_view": <0-1, base-rate-only probability>, '
+            "\"base_rate\": \"<one sentence: reference class + historical rate, or 'none found'>\"}"
+        )
 
     async def _run_one(config: dict[str, Any]) -> dict[str, Any]:
         usage_label = (
@@ -1731,18 +1817,28 @@ async def run_lean_ensemble_forecast(
             base_rate_text: str | None = None
             outside_view_probability: float | None = None
             parse_success = True
+            final_json = _extract_last_json(response)
             if q_type == "binary":
-                probability = max(0.01, min(0.99, extract_probability_fn(response)))
-                base_rate_text, outside_view_probability = _parse_outside_view(response)
+                p_json = _as_prob(final_json.get("probability")) if isinstance(final_json, dict) else None
+                if p_json is not None:
+                    probability = p_json
+                    if final_json.get("base_rate"):
+                        base_rate_text = str(final_json.get("base_rate"))[:300]
+                    if final_json.get("outside_view") is not None:
+                        outside_view_probability = _as_prob(final_json.get("outside_view"))
+                else:
+                    # Fallback: free-text regex parse (last "Probability:" line) + outside-view lines.
+                    probability = max(0.01, min(0.99, extract_probability_fn(response)))
+                    base_rate_text, outside_view_probability = _parse_outside_view(response)
             elif q_type == "multiple_choice":
-                mc_probs = _extract_mc_probabilities(response, mc_options)
+                mc_probs = _mc_from_json(final_json, mc_options) or _extract_mc_probabilities(response, mc_options)
                 if mc_probs is None:
                     parse_success = False
                     probability = 0.5
                 else:
                     probability = max(mc_probs.values()) if mc_probs else 0.5
             else:
-                numeric_pct = _extract_numeric_percentiles(response)
+                numeric_pct = _numeric_from_json(final_json) or _extract_numeric_percentiles(response)
                 if numeric_pct is None:
                     parse_success = False
                     probability = 0.5

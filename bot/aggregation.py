@@ -29,9 +29,11 @@ def trimmed_mean(probabilities: List[float], trim_fraction: float = 0.2) -> floa
         raise ValueError("trimmed_mean requires at least one probability")
     sorted_p = sorted(probabilities)
     n = len(sorted_p)
-    trim_count = max(1, int(n * trim_fraction))
-    if n < 4:
-        trim_count = 0
+    # Only trim when there are enough points. For a small, diverse ensemble (e.g. 5 different
+    # models) the old `max(1, ...)` floor always dropped the highest and lowest, discarding the
+    # informative tail — the one model that weighted a live outbreak would be thrown away. Below
+    # the threshold we use the plain mean; trimming for robustness only kicks in at larger n.
+    trim_count = int(n * trim_fraction) if n >= 8 else 0
     trimmed = sorted_p[trim_count : n - trim_count] if trim_count > 0 else sorted_p
     return sum(trimmed) / len(trimmed)
 
@@ -85,7 +87,7 @@ def aggregate_forecasts(
         signal_strength=abs(p_raw - 0.5),
     )
     p_calibrated = max(0.01, min(0.99, p_calibrated))
-    n_trimmed = max(1, int(len(runs) * trim_fraction)) * 2 if len(runs) >= 4 else 0
+    n_trimmed = (int(len(runs) * trim_fraction) if len(runs) >= 8 else 0) * 2
     return AggregatedForecast(
         p_raw=p_raw,
         p_calibrated=p_calibrated,

@@ -8,10 +8,18 @@ from bot.aggregation import (
 )
 
 
-def test_trimmed_mean_with_five_values() -> None:
+def test_trimmed_mean_small_n_is_plain_mean() -> None:
+    # Small, diverse ensembles must NOT be trimmed (don't discard the informative tail):
+    # n=5 -> plain mean of all five values.
     probs = [0.1, 0.2, 0.6, 0.8, 0.9]
-    # Drop 0.1 and 0.9 -> mean([0.2, 0.6, 0.8]) = 0.5333...
-    assert abs(trimmed_mean(probs, 0.2) - (1.6 / 3.0)) < 1e-9
+    assert abs(trimmed_mean(probs, 0.2) - (2.6 / 5.0)) < 1e-9
+
+
+def test_trimmed_mean_trims_only_at_large_n() -> None:
+    # At n=10 with 0.2, trim one from each end.
+    probs = [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 1.0]
+    expected = sum(probs[1:-1]) / 8
+    assert abs(trimmed_mean(probs, 0.2) - expected) < 1e-9
 
 
 def test_extremize_moves_away_from_half() -> None:
@@ -35,7 +43,8 @@ def test_aggregate_forecasts_clamps_probability() -> None:
     out = aggregate_forecasts(runs=runs)
     assert 0.01 <= out.p_calibrated <= 0.99
     assert out.n_runs == 5
-    assert out.n_trimmed == 2
+    # n=5 is below the trim threshold, so nothing is trimmed (plain mean).
+    assert out.n_trimmed == 0
 
 
 def test_confidence_requires_signal_strength_for_high() -> None:
