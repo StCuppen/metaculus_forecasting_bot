@@ -40,6 +40,15 @@
 - `RuntimeError: Package name not found` came from `forecasting_tools` report saver; use `folder_to_save_reports_to=None`.
 - Workflow summary checks must treat skip-only runs as valid outcomes when no new open questions require posting.
 - Verify outcomes from artifacts/logs, not only CI green status.
+- The durable-record write dict and the function's return dict must stay in sync on `GateReport`
+  fields. `GateReport` has `reasons` + component scores, NOT `rationale`/`warnings`; a mismatch
+  crashes *after* a full ensemble run, so it wastes a complete forecast before failing. Smoke-test any
+  record-schema change end-to-end, not just by import.
+- Sonar (Perplexity via OpenRouter) gotchas when used as the sole search provider: (1) its synthesis
+  "doc" has a `sonar://` pseudo-URL, so any `url.startswith("http")` filter silently drops all its
+  content; (2) inside `multi_provider_search` Sonar only fires for DIRECT_STATUS/MARKETS_NEWS baskets,
+  so it frequently never runs. As sole provider, query Sonar directly on the top queries. Sonar yields
+  0 primary sources (soft-caps gate sufficiency) — fine for a provisional start, not for quality.
 
 ## Validation and Regression
 - Keep a tight regression map: evidence pipeline, gate floors, and aggregation calibration each need dedicated tests.

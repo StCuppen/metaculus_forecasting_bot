@@ -18,8 +18,18 @@ Rolling log of recent sessions. Keep only the last ~5 sessions. Durable lessons 
 - **Feedback/storage hardening**: enrichment made idempotent + numeric Brier + top-level `resolved`/
   `brier`; added read-only `scripts/forecast_scoreboard.py`.
 - **Cost controls**: per-run token + search/evidence limits made env-tunable.
-- **Parked**: the 10-question near-term forecast batch — pending model selection (frontier light
-  models) and explicit user go-ahead. Workflow-review doc in progress.
+- **Roster** updated to user-chosen frontier light models (DeepSeek V4 Pro, GPT-5.4 Mini, Kimi K2.6,
+  Gemini 3 Flash, Claude Haiku 4.5), IDs verified live on OpenRouter; see `current_state.md`.
+- **Critical bug fixed**: record-write referenced `GateReport.rationale`/`.warnings` (nonexistent) →
+  every ensemble run crashed after gating and **never wrote a v1 record** (the "0 rich records"
+  finding). Now uses real fields.
+- **Sonar fallback made usable**: synthesis docs (sonar:// URLs) were dropped by the http-only filter
+  in `_extract_and_score_single`, and Sonar inside `multi_provider_search` is basket-gated and often
+  never fires. Fixed both; sole-provider runs now query Sonar directly on top queries. Smoke forecast
+  went from forced-abstain (1 synthetic item) to `publish` with 6 evidence items @ mean_rel 0.95.
+- **Smoke-test status**: 1 question (US/Iran, id 43259) forecast end-to-end on Sonar-only; enrich +
+  scoreboard verified. Full 10-question batch still pending user go-ahead (Sonar provisional; only
+  4 Metaculus questions resolve within 7 days — supply constraint to resolve with user).
 
 ## 2026-02-12 - Memory Sync + New Test Forecast (Codex GPT-5)
 
