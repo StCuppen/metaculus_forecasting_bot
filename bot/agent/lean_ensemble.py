@@ -8,6 +8,7 @@ import hashlib
 import logging
 import os
 import re
+import subprocess
 from typing import Any, Awaitable, Callable, Optional
 from urllib.parse import urlparse
 
@@ -54,22 +55,106 @@ def _run_config_snapshot(
     model_names: list[str],
     extremize_k: float,
     trim_fraction: float,
+    forecast_prompt: str | None = None,
+    question_type: str | None = None,
+    second_pass_enabled: bool | None = None,
+    red_team_adjustment_enabled: bool | None = None,
+    revision_pass_enabled: bool = False,
 ) -> dict[str, Any]:
     """Provenance/version stamp so every record is attributable and comparable across changes."""
+    providers = [p for p in str(search_provider or "").split("+") if p]
     return {
         "pipeline_version": LEAN_PIPELINE_VERSION,
         "as_of_utc": datetime.now(timezone.utc).isoformat(),
+        "git_commit": _git_commit(),
         "models": model_names,
-        "aggregation": {"extremize_k": extremize_k, "trim_fraction": trim_fraction},
+        "question_type": question_type,
+        "aggregation": {
+            "method": "trimmed_mean_plus_evidence_dampened_extremization",
+            "extremize_k": extremize_k,
+            "trim_fraction": trim_fraction,
+        },
         "search": {
             "provider": search_provider,
+            "providers": providers,
             "max_search_queries": int(os.getenv("FORECAST_MAX_SEARCH_QUERIES", "8")),
             "linkup_queries": int(os.getenv("FORECAST_LINKUP_QUERIES", "8")),
             "max_evidence_docs": int(os.getenv("FORECAST_MAX_EVIDENCE_DOCS", "10")),
+            "second_pass_enabled": (
+                os.getenv("FORECAST_SECOND_PASS", "1") == "1"
+                if second_pass_enabled is None
+                else bool(second_pass_enabled)
+            ),
         },
+        "red_team": {
+            "enabled_for_binary": True,
+            "model": os.getenv("RED_TEAM_MODEL", "google/gemini-2.5-flash"),
+            "can_adjust_probability": (
+                bool(red_team_adjustment_enabled)
+                if red_team_adjustment_enabled is not None
+                else True
+            ),
+            "adjustment_threshold_pp": 5,
+            "adjustment_multiplier": 0.5,
+        },
+        "revision_pass": {"enabled": bool(revision_pass_enabled)},
+        "prompt_hashes": _prompt_hashes(forecast_prompt),
         "run_max_tokens_cap": int(os.getenv("FORECAST_RUN_MAX_TOKENS", "0")),
         "shrink_to_crowd": os.getenv("FORECAST_SHRINK_TO_CROWD", "0") == "1",
     }
+
+
+def _sha256_text(text: str | None) -> str | None:
+    if text is None:
+        return None
+    return hashlib.sha256(text.encode("utf-8")).hexdigest()
+
+
+def _prompt_hashes(forecast_prompt: str | None) -> dict[str, str | None]:
+    return {
+        "actual_forecast_prompt": _sha256_text(forecast_prompt),
+        "binary_forecast_template": _sha256_text(LEAN_BINARY_FORECAST_PROMPT),
+        "multiple_choice_append_template": _sha256_text(LEAN_MC_APPEND_PROMPT),
+        "numeric_append_template": _sha256_text(LEAN_NUMERIC_APPEND_PROMPT),
+    }
+
+
+def _git_commit() -> str | None:
+    try:
+        result = subprocess.run(
+            ["git", "rev-parse", "--short", "HEAD"],
+            check=True,
+            capture_output=True,
+            text=True,
+            timeout=2,
+        )
+        return result.stdout.strip() or None
+    except Exception:
+        return None
+
+
+def _per_model_probability_snapshot(
+    settled: list[dict[str, Any]],
+    revision_pass_enabled: bool = False,
+) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
+    for row in settled:
+        cfg = row.get("config") or {}
+        result = row.get("result")
+        diagnostics = getattr(result, "diagnostics", {}) if result is not None else {}
+        probability = getattr(result, "probability", None)
+        rows.append(
+            {
+                "model": cfg.get("name"),
+                "label": cfg.get("label"),
+                "initial_probability": probability,
+                "revised_probability": None,
+                "revision_delta_pp": None,
+                "revision_pass_enabled": revision_pass_enabled,
+                "parse_success": diagnostics.get("parse_success") if isinstance(diagnostics, dict) else None,
+            }
+        )
+    return rows
 
 
 def _parse_outside_view(text: str) -> tuple[str | None, float | None]:
@@ -1974,6 +2059,24 @@ async def run_lean_ensemble_forecast(
         text_log_path = f"{logs_dir}/forecast_{timestamp}_{safe_q}.txt"
         with open(text_log_path, "w", encoding="utf-8") as f:
             f.write(full_log)
+        pipeline_snapshot = _run_config_snapshot(
+            search_provider=search_provider,
+            model_names=model_names,
+            extremize_k=float(os.getenv("FORECAST_EXTREMIZE_K", "1.0")),
+            trim_fraction=float(os.getenv("FORECAST_TRIM_FRACTION", "0.2")),
+            forecast_prompt=prompt,
+            question_type=q_type,
+            red_team_adjustment_enabled=False,
+            revision_pass_enabled=False,
+        )
+        forecast_lineage = {
+            "pre_red_team_probability": fallback_prob,
+            "post_red_team_probability": fallback_prob,
+            "final_probability": fallback_prob,
+            "red_team_adjusted": False,
+            "gate_shrink_applied": False,
+            "per_model_probabilities": _per_model_probability_snapshot(settled),
+        }
         record_path = write_forecast_record(
             {
                 "generated_at_utc": datetime.now(timezone.utc).isoformat(),
@@ -1998,11 +2101,9 @@ async def run_lean_ensemble_forecast(
                 "planned_queries": planned_queries,
                 "executed_queries": search_queries,
                 "search_provider": search_provider,
-                "run_config": _run_config_snapshot(
-                    search_provider, model_names,
-                    float(os.getenv("FORECAST_EXTREMIZE_K", "1.0")),
-                    float(os.getenv("FORECAST_TRIM_FRACTION", "0.2")),
-                ),
+                "run_config": pipeline_snapshot,
+                "pipeline_snapshot": pipeline_snapshot,
+                "forecast_lineage": forecast_lineage,
                 "crowd_benchmark": crowd_benchmark,
                 "outside_view_probability": outside_view_probability,
                 "base_rate_texts": base_rate_texts,
@@ -2078,11 +2179,13 @@ async def run_lean_ensemble_forecast(
         question_deadline=question_deadline,
     )
     final_probability = aggregated_for_gate.p_calibrated
+    gate_shrink_applied = False
     # By default shrink low-confidence forecasts toward 0.5 (neutral), NOT toward the crowd, so the
     # forecast stays independent of the community prediction and we can measure skill vs the crowd
     # cleanly. Set FORECAST_SHRINK_TO_CROWD=1 to anchor to the community prior instead.
     shrink_to_crowd = os.getenv("FORECAST_SHRINK_TO_CROWD", "0") == "1"
     if gate_report.action in {"publish_low_confidence", "abstain"}:
+        gate_shrink_applied = True
         final_probability = shrink_probability(
             p=final_probability,
             gate_score=gate_report.gate_score,
@@ -2212,7 +2315,11 @@ async def run_lean_ensemble_forecast(
             f"mean_relevance={gate_report.mean_relevance:.2f}, "
             f"freshness_days={gate_report.freshness_days:.1f}"
         ),
-        f"Red Team: ran | {'adjusted' if red_team_changed else 'no_change'}",
+        (
+            f"Red Team: ran | {'adjusted' if red_team_changed else 'no_change'}"
+            if q_type == "binary"
+            else "Red Team: skipped_non_binary"
+        ),
         "Individual Runs:",
     ]
     assumptions_note = str(claim_audit.get("assumptions_note", "")).strip()
@@ -2362,6 +2469,25 @@ async def run_lean_ensemble_forecast(
                 metaculus_post_error = str(post_exc)
                 logger.error(f"Failed to post to Metaculus: {post_exc}")
 
+    pipeline_snapshot = _run_config_snapshot(
+        search_provider=search_provider,
+        model_names=model_names,
+        extremize_k=extremize_k,
+        trim_fraction=trim_fraction,
+        forecast_prompt=prompt,
+        question_type=q_type,
+        red_team_adjustment_enabled=(q_type == "binary"),
+        revision_pass_enabled=False,
+    )
+    forecast_lineage = {
+        "pre_red_team_probability": aggregated.p_calibrated,
+        "post_red_team_probability": p_after_critique,
+        "final_probability": final_probability,
+        "red_team_adjusted": red_team_changed,
+        "gate_shrink_applied": gate_shrink_applied,
+        "per_model_probabilities": _per_model_probability_snapshot(settled),
+    }
+
     record_path = write_forecast_record(
         {
             "generated_at_utc": datetime.now(timezone.utc).isoformat(),
@@ -2397,7 +2523,9 @@ async def run_lean_ensemble_forecast(
             "planned_queries": planned_queries,
             "executed_queries": search_queries,
             "search_provider": search_provider,
-            "run_config": _run_config_snapshot(search_provider, model_names, extremize_k, trim_fraction),
+            "run_config": pipeline_snapshot,
+            "pipeline_snapshot": pipeline_snapshot,
+            "forecast_lineage": forecast_lineage,
             "crowd_benchmark": crowd_benchmark,
             "outside_view_probability": outside_view_probability,
             "base_rate_texts": base_rate_texts,
