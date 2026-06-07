@@ -2245,6 +2245,8 @@ async def run_lean_ensemble_forecast(
                 0.01,
                 min(0.99, (final_numeric_percentiles[50] - lower_bound) / (upper_bound - lower_bound)),
             )
+    if q_type != "binary":
+        gate_shrink_applied = False
 
     # Ticket 6A/6B: async post-hoc claim audit + signpost extraction (non-blocking to publish decision).
     claim_audit_task = _claim_audit(
