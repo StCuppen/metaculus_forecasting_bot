@@ -133,6 +133,22 @@ def render_record_markdown(record: dict[str, Any]) -> str:
         L.append(f"- Outside-view (base rate) probability: {_fmt_pct(record.get('outside_view_probability'))}")
     L.append("")
 
+    if isinstance(record.get("prior_packet"), dict) and record.get("prior_packet"):
+        pp = record["prior_packet"]
+        L.append("## Prior / base-rate packet")
+        L.append(f"- Status: {pp.get('status') or pp.get('canonical_prior_status') or 'unknown'}")
+        if pp.get("canonical_prior") is not None:
+            L.append(f"- Canonical prior: {_fmt_pct(pp.get('canonical_prior'))}")
+        if pp.get("canonical_prior_type") or pp.get("prior_type"):
+            L.append(f"- Prior type: {pp.get('canonical_prior_type') or pp.get('prior_type')}")
+        if pp.get("confidence") or pp.get("prior_confidence"):
+            L.append(f"- Confidence: {pp.get('confidence') or pp.get('prior_confidence')}")
+        if pp.get("plausible_range"):
+            L.append(f"- Plausible range: {pp.get('plausible_range')}")
+        if pp.get("synthesis_rationale"):
+            L.append(f"- Rationale: {str(pp.get('synthesis_rationale')).strip()[:500]}")
+        L.append("")
+
     rows = [row for row in (record.get("individual_results") or []) if isinstance(row, dict)]
     if rows:
         L.append("## Model forecasts")

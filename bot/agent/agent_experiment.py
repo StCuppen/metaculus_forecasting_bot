@@ -1713,6 +1713,7 @@ async def run_ensemble_forecast(
     lower_bound: Optional[float] = None,
     upper_bound: Optional[float] = None,
     unit: Optional[str] = None,
+    prior_packet: Optional[dict[str, Any]] = None,
 ) -> dict:
     """
     Run an ensemble of forecasting agents on a question.
@@ -1748,6 +1749,7 @@ async def run_ensemble_forecast(
         lower_bound=lower_bound,
         upper_bound=upper_bound,
         unit=unit,
+        prior_packet=prior_packet,
         extract_probability_fn=extract_probability_from_forecast,
         canonical_spec_extractor=extract_canonical_spec,
         canonical_spec_formatter=_format_canonical_spec_text,

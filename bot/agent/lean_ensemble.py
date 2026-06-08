@@ -22,6 +22,7 @@ from bot.publish_gate import (
     shrink_probability,
 )
 from bot.coherence import enforce_sum_to_one
+from .base_rates import format_prior_packet_for_prompt
 from .prompts import (
     LEAN_BINARY_FORECAST_PROMPT,
     LEAN_MC_APPEND_PROMPT,
@@ -1546,6 +1547,7 @@ async def run_lean_ensemble_forecast(
     lower_bound: float | None = None,
     upper_bound: float | None = None,
     unit: str | None = None,
+    prior_packet: dict[str, Any] | None = None,
     extract_probability_fn: Callable[[str], float] | None = None,
     canonical_spec_extractor: Callable[[str], Awaitable[Any]] | None = None,
     canonical_spec_formatter: Callable[[Any, str], str] | None = None,
@@ -1834,13 +1836,17 @@ async def run_lean_ensemble_forecast(
         sum(ev.relevance_score for ev in gate_evidence) / len(gate_evidence)
         if gate_evidence else 0.0
     )
+    prior_packet_text = format_prior_packet_for_prompt(prior_packet)
+    prompt_evidence_bundle = evidence_bundle_text
+    if prior_packet_text:
+        prompt_evidence_bundle = f"{evidence_bundle_text}\n\n---\n\n{prior_packet_text}"
 
     prompt = LEAN_BINARY_FORECAST_PROMPT.format(
         question_title=question_title,
         background_info=(background_info or "No additional background provided."),
         resolution_criteria=(resolution_criteria or canonical_spec_text),
         fine_print=fine_print or "",
-        evidence_bundle=evidence_bundle_text,
+        evidence_bundle=prompt_evidence_bundle,
         today=today_str,
     )
     if q_type == "multiple_choice":
@@ -2107,6 +2113,8 @@ async def run_lean_ensemble_forecast(
                 "crowd_benchmark": crowd_benchmark,
                 "outside_view_probability": outside_view_probability,
                 "base_rate_texts": base_rate_texts,
+                "prior_packet": prior_packet,
+                "prior_packet_text": prior_packet_text,
                 "individual_results": settled,
                 "feature_flags": feature_flags or {},
                 "token_usage": get_token_usage(),
@@ -2531,6 +2539,8 @@ async def run_lean_ensemble_forecast(
             "crowd_benchmark": crowd_benchmark,
             "outside_view_probability": outside_view_probability,
             "base_rate_texts": base_rate_texts,
+            "prior_packet": prior_packet,
+            "prior_packet_text": prior_packet_text,
             "top_evidence": top_evidence_rows,
             "evidence_bundle_text": evidence_bundle_text,
             "individual_results": settled,

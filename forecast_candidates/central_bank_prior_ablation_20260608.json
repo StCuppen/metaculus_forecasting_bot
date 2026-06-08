@@ -1,0 +1,53 @@
+{
+  "description": "Prior/base-rate ablation for central-bank decision questions. Fed is the primary test case; ECB is a replication case with opposite market direction.",
+  "arms": [
+    {
+      "name": "baseline_no_prior_packet",
+      "prior_packet": null
+    },
+    {
+      "name": "empirical_prior_packet",
+      "skip": true,
+      "prior_packet": {
+        "status": "to_fill",
+        "canonical_prior": null,
+        "canonical_prior_type": "empirical_base_rate",
+        "confidence": "unknown",
+        "should_anchor_strongly": false,
+        "plausible_range": null,
+        "empirical_base_rates": [],
+        "heuristic_priors": [],
+        "market_social_prior": null,
+        "synthesis_rationale": "Fill with sourced numerator/denominator before enabling this arm.",
+        "main_uncertainties": []
+      }
+    },
+    {
+      "name": "empirical_plus_heuristic_prior_packet",
+      "skip": true,
+      "prior_packet": {
+        "status": "to_fill",
+        "canonical_prior": null,
+        "canonical_prior_type": "empirical_plus_heuristic",
+        "confidence": "unknown",
+        "should_anchor_strongly": false,
+        "plausible_range": null,
+        "empirical_base_rates": [],
+        "heuristic_priors": [],
+        "market_social_prior": null,
+        "synthesis_rationale": "Fill with empirical candidates plus explicitly labeled heuristic priors before enabling this arm.",
+        "main_uncertainties": []
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "fed_decision_june_2026",
+      "record_path": "forecast_records/polymarket/20260606-204549_polymarket_polymarket_Fed_Decision_in_June_POLYMARKET_URL_https_polymarket_com_eve_bc620548.json"
+    },
+    {
+      "id": "ecb_interest_rates_june_2026",
+      "record_path": "forecast_records/polymarket/20260606-210246_polymarket_polymarket_ECB_Interest_Rates_June_2026_POLYMARKET_URL_https_polymarket_70d97a34.json"
+    }
+  ]
+}
