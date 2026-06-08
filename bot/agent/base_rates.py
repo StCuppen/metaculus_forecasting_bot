@@ -37,6 +37,14 @@ def format_prior_packet_for_prompt(packet: dict[str, Any] | None) -> str:
             lines.append(f"- Plausible range: {float(lo):.1%} to {float(hi):.1%}")
         except Exception:
             lines.append(f"- Plausible range: {packet.get('plausible_range')}")
+    option_priors = packet.get("option_prior_probabilities")
+    if isinstance(option_priors, dict) and option_priors:
+        lines.append("- Option prior probabilities:")
+        for option, probability in option_priors.items():
+            try:
+                lines.append(f"  - {option}: {float(probability):.1%}")
+            except Exception:
+                lines.append(f"  - {option}: {probability}")
 
     def _append_candidates(title: str, rows: Any) -> None:
         if not isinstance(rows, list) or not rows:

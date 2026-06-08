@@ -1,53 +1,239 @@
 {
-  "description": "Prior/base-rate ablation for central-bank decision questions. Fed is the primary test case; ECB is a replication case with opposite market direction.",
-  "arms": [
-    {
-      "name": "baseline_no_prior_packet",
-      "prior_packet": null
-    },
-    {
-      "name": "empirical_prior_packet",
-      "skip": true,
-      "prior_packet": {
-        "status": "to_fill",
-        "canonical_prior": null,
-        "canonical_prior_type": "empirical_base_rate",
-        "confidence": "unknown",
-        "should_anchor_strongly": false,
-        "plausible_range": null,
-        "empirical_base_rates": [],
-        "heuristic_priors": [],
-        "market_social_prior": null,
-        "synthesis_rationale": "Fill with sourced numerator/denominator before enabling this arm.",
-        "main_uncertainties": []
-      }
-    },
-    {
-      "name": "empirical_plus_heuristic_prior_packet",
-      "skip": true,
-      "prior_packet": {
-        "status": "to_fill",
-        "canonical_prior": null,
-        "canonical_prior_type": "empirical_plus_heuristic",
-        "confidence": "unknown",
-        "should_anchor_strongly": false,
-        "plausible_range": null,
-        "empirical_base_rates": [],
-        "heuristic_priors": [],
-        "market_social_prior": null,
-        "synthesis_rationale": "Fill with empirical candidates plus explicitly labeled heuristic priors before enabling this arm.",
-        "main_uncertainties": []
-      }
-    }
-  ],
+  "description": "Prior/base-rate ablation for central-bank decision questions. Fed is the primary test case; ECB is a replication case with opposite market direction. Priors are deliberately labeled by type so historical base rates are not conflated with market/social priors.",
   "questions": [
     {
       "id": "fed_decision_june_2026",
-      "record_path": "forecast_records/polymarket/20260606-204549_polymarket_polymarket_Fed_Decision_in_June_POLYMARKET_URL_https_polymarket_com_eve_bc620548.json"
+      "record_path": "forecast_records/polymarket/20260606-204549_polymarket_polymarket_Fed_Decision_in_June_POLYMARKET_URL_https_polymarket_com_eve_bc620548.json",
+      "arms": [
+        {
+          "name": "baseline_no_prior_packet",
+          "prior_packet": null
+        },
+        {
+          "name": "empirical_history_prior_packet",
+          "prior_packet": {
+            "status": "weak",
+            "canonical_prior_type": "empirical_base_rate",
+            "confidence": "low",
+            "should_anchor_strongly": false,
+            "option_prior_probabilities": {
+              "25 bps decrease": 0.18,
+              "25 bps increase": 0.12,
+              "50+ bps decrease": 0.03,
+              "No change": 0.64,
+              "50+ bps increase": 0.03
+            },
+            "empirical_base_rates": [
+              {
+                "name": "Recent FOMC target-rate action frequency",
+                "width": "medium",
+                "rationale": "The Federal Reserve's official open-market page lists target-rate changes by date and basis points. In normal scheduled-meeting years since liftoff, many meetings are holds, but active hiking/cutting cycles generate repeated 25bp moves.",
+                "probability": 0.36,
+                "sources": [
+                  {
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "supports": "Official list of FOMC target federal funds rate/range changes, including 2025, 2024, 2023, 2022, 2019, 2018, 2017, 2016 and 2015 entries."
+                  }
+                ],
+                "mismatch_notes": [
+                  "The source lists changes, not all scheduled no-change meetings; denominator is inferred from scheduled FOMC cadence.",
+                  "Historical action frequency is not a same-week forecast and does not encode current macro data or market pricing.",
+                  "Direction split is regime-dependent."
+                ],
+                "reliability": "low"
+              }
+            ],
+            "heuristic_priors": [],
+            "market_social_prior": null,
+            "synthesis_rationale": "Empirical-only arm: use a weak historical-meeting prior. No-change is common at scheduled FOMC meetings, but 25bp moves are not rare in active cycles. Do not use Polymarket prices in this arm.",
+            "main_uncertainties": [
+              "The correct denominator is scheduled meetings, while the official page directly enumerates only changes.",
+              "The June 2026 meeting is close in time and current communications/market pricing may dominate historical cadence."
+            ]
+          }
+        },
+        {
+          "name": "empirical_plus_heuristic_social_prior_packet",
+          "prior_packet": {
+            "status": "found",
+            "canonical_prior_type": "empirical_plus_heuristic_plus_social",
+            "confidence": "medium",
+            "should_anchor_strongly": false,
+            "option_prior_probabilities": {
+              "25 bps decrease": 0.02,
+              "25 bps increase": 0.02,
+              "50+ bps decrease": 0.005,
+              "No change": 0.95,
+              "50+ bps increase": 0.005
+            },
+            "empirical_base_rates": [
+              {
+                "name": "Recent FOMC target-rate action frequency",
+                "width": "medium",
+                "probability": 0.36,
+                "rationale": "Historical scheduled-meeting prior says holds are common but not overwhelming. This is weaker than live market/social evidence.",
+                "sources": [
+                  {
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "supports": "Official FOMC target federal funds rate/range changes by date and basis points."
+                  }
+                ],
+                "mismatch_notes": [
+                  "Historical cadence is not a live-meeting forecast.",
+                  "Denominator and regime selection are contestable."
+                ],
+                "reliability": "low"
+              }
+            ],
+            "heuristic_priors": [
+              {
+                "name": "Close-to-meeting central-bank hold heuristic",
+                "prior": 0.9,
+                "rationale": "Absent a clear pre-committed surprise, central-bank meetings close to decision time tend to follow communicated expectations; large surprises are uncommon.",
+                "drivers": [
+                  "Resolution is tied to a scheduled FOMC statement.",
+                  "Question text includes a contemporaneous Polymarket market with no-change near 99%.",
+                  "Tails require a 50bp move, which is historically less common outside crisis or strongly signaled conditions."
+                ],
+                "reliability": "medium"
+              }
+            ],
+            "market_social_prior": {
+              "source": "Polymarket prices embedded in the question record",
+              "option_prices": {
+                "25 bps decrease": 0.0045,
+                "25 bps increase": 0.0035,
+                "50+ bps decrease": 0.0025,
+                "No change": 0.9905,
+                "50+ bps increase": 0.0005
+              },
+              "note": "Social prior, not historical base rate; may already encode public news and liquidity/microstructure effects."
+            },
+            "synthesis_rationale": "This arm combines weak historical cadence with a heuristic close-to-meeting hold prior and the embedded Polymarket social prior. The canonical option prior is less extreme than the raw market price to avoid mechanical market copying.",
+            "main_uncertainties": [
+              "Market prices can be stale, thin, or affected by fees/liquidity.",
+              "The appropriate amount of shrinkage from market/social prior toward historical prior is an experimental choice."
+            ]
+          }
+        }
+      ]
     },
     {
       "id": "ecb_interest_rates_june_2026",
-      "record_path": "forecast_records/polymarket/20260606-210246_polymarket_polymarket_ECB_Interest_Rates_June_2026_POLYMARKET_URL_https_polymarket_70d97a34.json"
+      "record_path": "forecast_records/polymarket/20260606-210246_polymarket_polymarket_ECB_Interest_Rates_June_2026_POLYMARKET_URL_https_polymarket_70d97a34.json",
+      "arms": [
+        {
+          "name": "baseline_no_prior_packet",
+          "prior_packet": null
+        },
+        {
+          "name": "empirical_history_prior_packet",
+          "prior_packet": {
+            "status": "weak",
+            "canonical_prior_type": "empirical_base_rate",
+            "confidence": "low",
+            "should_anchor_strongly": false,
+            "option_prior_probabilities": {
+              "25 bps decrease": 0.18,
+              "25 bps Increase": 0.24,
+              "50+ bps decrease": 0.03,
+              "No change": 0.5,
+              "50+ bps increase": 0.05
+            },
+            "empirical_base_rates": [
+              {
+                "name": "ECB key-rate change cadence in recent policy cycle",
+                "width": "medium",
+                "rationale": "The official ECB key-rates page lists many deposit-facility-rate changes during the 2022-2025 hiking/cutting cycle, showing that 25bp changes are common in active regimes, but holds are also common between listed changes.",
+                "probability": 0.5,
+                "sources": [
+                  {
+                    "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html",
+                    "supports": "Official ECB table of key interest-rate levels by effective date."
+                  }
+                ],
+                "mismatch_notes": [
+                  "The ECB table lists effective rate changes, not all no-change Governing Council meetings.",
+                  "Recent cycle frequency may overstate action probability if policy is near neutral.",
+                  "Historical cadence alone does not encode inflation shock/current guidance."
+                ],
+                "reliability": "low"
+              }
+            ],
+            "heuristic_priors": [],
+            "market_social_prior": null,
+            "synthesis_rationale": "Empirical-only arm: use a weak historical-meeting prior. The ECB often moves in 25bp steps during active cycles, but the official rate-history table alone is not enough for a strong prior.",
+            "main_uncertainties": [
+              "No-change denominator is inferred.",
+              "Current inflation/growth context may dominate historical cadence."
+            ]
+          }
+        },
+        {
+          "name": "empirical_plus_heuristic_social_prior_packet",
+          "prior_packet": {
+            "status": "found",
+            "canonical_prior_type": "empirical_plus_heuristic_plus_social",
+            "confidence": "medium",
+            "should_anchor_strongly": false,
+            "option_prior_probabilities": {
+              "25 bps decrease": 0.005,
+              "25 bps Increase": 0.88,
+              "50+ bps decrease": 0.002,
+              "No change": 0.1,
+              "50+ bps increase": 0.013
+            },
+            "empirical_base_rates": [
+              {
+                "name": "ECB key-rate change cadence in recent policy cycle",
+                "width": "medium",
+                "probability": 0.5,
+                "rationale": "Historical cadence gives a mixed prior: rate changes are common in active ECB cycles, but not enough to justify very high confidence without current evidence.",
+                "sources": [
+                  {
+                    "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html",
+                    "supports": "Official ECB key interest-rate levels and effective dates."
+                  }
+                ],
+                "mismatch_notes": [
+                  "Historical cadence is not a live-meeting forecast.",
+                  "Regime selection is contestable."
+                ],
+                "reliability": "low"
+              }
+            ],
+            "heuristic_priors": [
+              {
+                "name": "Close-to-meeting market-guidance heuristic",
+                "prior": 0.85,
+                "rationale": "When close-to-meeting market pricing is overwhelmingly on a single 25bp central-bank outcome and the move is within normal increment size, surprises are possible but uncommon.",
+                "drivers": [
+                  "Resolution is tied to a scheduled ECB decision.",
+                  "Embedded market prices put 25 bps Increase near 98%.",
+                  "25bp is the normal meeting increment, while 50bp tails require stronger shock evidence."
+                ],
+                "reliability": "medium"
+              }
+            ],
+            "market_social_prior": {
+              "source": "Polymarket prices embedded in the question record",
+              "option_prices": {
+                "25 bps decrease": 0.0005,
+                "25 bps Increase": 0.9795,
+                "50+ bps decrease": 0.0005,
+                "No change": 0.018,
+                "50+ bps increase": 0.0025
+              },
+              "note": "Social prior, not historical base rate; may already encode public news and liquidity/microstructure effects."
+            },
+            "synthesis_rationale": "This arm combines weak historical cadence with a heuristic close-to-meeting move prior and the embedded Polymarket social prior. The canonical option prior is less extreme than raw market price.",
+            "main_uncertainties": [
+              "A live market can be wrong if liquidity is thin or source data are stale.",
+              "The historical prior has low reliability because no-change meetings are not directly enumerated by the rate-change table."
+            ]
+          }
+        }
+      ]
     }
   ]
 }

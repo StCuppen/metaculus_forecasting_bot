@@ -145,6 +145,10 @@ def render_record_markdown(record: dict[str, Any]) -> str:
             L.append(f"- Confidence: {pp.get('confidence') or pp.get('prior_confidence')}")
         if pp.get("plausible_range"):
             L.append(f"- Plausible range: {pp.get('plausible_range')}")
+        if isinstance(pp.get("option_prior_probabilities"), dict):
+            L.append("- Option priors:")
+            for opt, p in pp["option_prior_probabilities"].items():
+                L.append(f"  - {opt}: {_fmt_pct(p)}")
         if pp.get("synthesis_rationale"):
             L.append(f"- Rationale: {str(pp.get('synthesis_rationale')).strip()[:500]}")
         L.append("")
