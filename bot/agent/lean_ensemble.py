@@ -2135,6 +2135,7 @@ async def run_lean_ensemble_forecast(
                 "market_snapshot": _flag("market_snapshot", True),
                 "outlier_xexam": _flag("outlier_xexam", True),
             },
+            "token_usage": get_token_usage(),
         }
 
     parse_failures = sum(
@@ -2632,4 +2633,5 @@ async def run_lean_ensemble_forecast(
             "market_snapshot": _flag("market_snapshot", True),
             "outlier_xexam": _flag("outlier_xexam", True),
         },
+        "token_usage": get_token_usage(),
     }

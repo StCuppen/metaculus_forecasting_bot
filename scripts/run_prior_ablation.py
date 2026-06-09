@@ -46,12 +46,14 @@ def _load_spec(path: Path) -> dict[str, Any]:
     return spec
 
 
-def _token_total(result: dict[str, Any]) -> int:
-    total = 0
+def _token_totals(result: dict[str, Any]) -> dict[str, int]:
+    """Aggregate prompt/completion/total tokens across all usage labels."""
+    totals = {"prompt": 0, "completion": 0, "total": 0}
     for usage in (result.get("token_usage") or {}).values():
         if isinstance(usage, dict):
-            total += int(usage.get("total", 0) or 0)
-    return total
+            for key in totals:
+                totals[key] += int(usage.get(key, 0) or 0)
+    return totals
 
 
 async def _run_arm(question: dict[str, Any], arm: dict[str, Any]) -> dict[str, Any]:
@@ -75,6 +77,7 @@ async def _run_arm(question: dict[str, Any], arm: dict[str, Any]) -> dict[str, A
         else:
             os.environ["FORECAST_RUN_TYPE"] = old_run_type
 
+    token_totals = _token_totals(result)
     return {
         "arm": arm["name"],
         "question_id": question.get("id"),
@@ -84,7 +87,10 @@ async def _run_arm(question: dict[str, Any], arm: dict[str, Any]) -> dict[str, A
         "numeric_percentiles": result.get("numeric_percentiles"),
         "publish_action": result.get("publish_action"),
         "forecast_record_path": result.get("forecast_record_path"),
-        "token_total": _token_total(result),
+        "token_total": token_totals["total"],
+        "token_prompt": token_totals["prompt"],
+        "token_completion": token_totals["completion"],
+        "token_usage_by_label": result.get("token_usage") or {},
         "summary_text": result.get("summary_text"),
     }
 

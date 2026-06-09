@@ -115,6 +115,100 @@
               "The appropriate amount of shrinkage from market/social prior toward historical prior is an experimental choice."
             ]
           }
+        },
+        {
+          "name": "empirical_heuristic_social_plus_dissent_prior_packet",
+          "prior_packet": {
+            "status": "found",
+            "canonical_prior_type": "empirical_plus_heuristic_plus_social_with_dissent",
+            "confidence": "medium",
+            "should_anchor_strongly": false,
+            "option_prior_probabilities": {
+              "25 bps decrease": 0.02,
+              "25 bps increase": 0.02,
+              "50+ bps decrease": 0.005,
+              "No change": 0.95,
+              "50+ bps increase": 0.005
+            },
+            "empirical_base_rates": [
+              {
+                "name": "Recent FOMC target-rate action frequency",
+                "width": "medium",
+                "probability": 0.36,
+                "rationale": "Historical scheduled-meeting prior says holds are common but not overwhelming. This is weaker than live market/social evidence.",
+                "sources": [
+                  {
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "supports": "Official FOMC target federal funds rate/range changes by date and basis points."
+                  }
+                ],
+                "mismatch_notes": [
+                  "Historical cadence is not a live-meeting forecast.",
+                  "Denominator and regime selection are contestable."
+                ],
+                "reliability": "low"
+              }
+            ],
+            "heuristic_priors": [
+              {
+                "name": "Close-to-meeting central-bank hold heuristic",
+                "prior": 0.9,
+                "rationale": "Absent a clear pre-committed surprise, central-bank meetings close to decision time tend to follow communicated expectations; large surprises are uncommon.",
+                "drivers": [
+                  "Resolution is tied to a scheduled FOMC statement.",
+                  "Question text includes a contemporaneous Polymarket market with no-change near 99%.",
+                  "Tails require a 50bp move, which is historically less common outside crisis or strongly signaled conditions."
+                ],
+                "reliability": "medium"
+              }
+            ],
+            "dissent_reference_classes": [
+              {
+                "name": "Active easing-cycle cut cadence",
+                "width": "narrow",
+                "probability": 0.4,
+                "rationale": "If the June 2026 meeting falls inside an active Fed easing cycle, consecutive 25bp cuts are the norm, not the exception. In 2024 H2 and in 2019 the FOMC cut at back-to-back meetings, so within a cutting regime the per-meeting probability of 'No change' is far below the all-meetings average. The hold consensus only holds if we are NOT currently in a cutting cycle.",
+                "sources": [
+                  {
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "supports": "Consecutive 25bp cuts in 2019 and 2024 easing sequences."
+                  }
+                ],
+                "mismatch_notes": [
+                  "Only bites if June 2026 is inside an active easing regime; verify current regime before weighting.",
+                  "Conditions on a regime fact the forecaster must establish from current evidence."
+                ],
+                "reliability": "medium"
+              },
+              {
+                "name": "Data-surprise-driven pivot",
+                "width": "medium",
+                "probability": 0.2,
+                "rationale": "The hold prior ignores the ~10-day window of macro releases (CPI, NFP) immediately before the meeting. Sharp labor-market deterioration or an inflation surprise has repeatedly forced faster moves than markets priced a few weeks out. A near-99% market price is brittle to a single bad print.",
+                "mismatch_notes": [
+                  "Requires a specific data shock; not a standing base rate.",
+                  "Most meetings see no such shock, so this is a tail-weighting argument, not a central case."
+                ],
+                "reliability": "low"
+              }
+            ],
+            "market_social_prior": {
+              "source": "Polymarket prices embedded in the question record",
+              "option_prices": {
+                "25 bps decrease": 0.0045,
+                "25 bps increase": 0.0035,
+                "50+ bps decrease": 0.0025,
+                "No change": 0.9905,
+                "50+ bps increase": 0.0005
+              },
+              "note": "Social prior, not historical base rate; may already encode public news and liquidity/microstructure effects."
+            },
+            "synthesis_rationale": "Identical empirical+heuristic+social packet as the prior arm, plus an explicit adversarial dissent: a steelman of the case AGAINST the hold consensus. The dissent classes are conditional (they bite only in an active easing regime or under a data shock), so the test is whether the forecaster engages them on the merits, establishes the regime fact, and adjusts proportionately rather than either ignoring them or over-reacting.",
+            "main_uncertainties": [
+              "Whether June 2026 sits inside an active Fed easing cycle (the dissent's load-bearing fact).",
+              "How much to widen the tails given a near-certain market price."
+            ]
+          }
         }
       ]
     },
@@ -230,6 +324,100 @@
             "main_uncertainties": [
               "A live market can be wrong if liquidity is thin or source data are stale.",
               "The historical prior has low reliability because no-change meetings are not directly enumerated by the rate-change table."
+            ]
+          }
+        },
+        {
+          "name": "empirical_heuristic_social_plus_dissent_prior_packet",
+          "prior_packet": {
+            "status": "found",
+            "canonical_prior_type": "empirical_plus_heuristic_plus_social_with_dissent",
+            "confidence": "medium",
+            "should_anchor_strongly": false,
+            "option_prior_probabilities": {
+              "25 bps decrease": 0.005,
+              "25 bps Increase": 0.88,
+              "50+ bps decrease": 0.002,
+              "No change": 0.1,
+              "50+ bps increase": 0.013
+            },
+            "empirical_base_rates": [
+              {
+                "name": "ECB key-rate change cadence in recent policy cycle",
+                "width": "medium",
+                "probability": 0.5,
+                "rationale": "Historical cadence gives a mixed prior: rate changes are common in active ECB cycles, but not enough to justify very high confidence without current evidence.",
+                "sources": [
+                  {
+                    "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html",
+                    "supports": "Official ECB key interest-rate levels and effective dates."
+                  }
+                ],
+                "mismatch_notes": [
+                  "Historical cadence is not a live-meeting forecast.",
+                  "Regime selection is contestable."
+                ],
+                "reliability": "low"
+              }
+            ],
+            "heuristic_priors": [
+              {
+                "name": "Close-to-meeting market-guidance heuristic",
+                "prior": 0.85,
+                "rationale": "When close-to-meeting market pricing is overwhelmingly on a single 25bp central-bank outcome and the move is within normal increment size, surprises are possible but uncommon.",
+                "drivers": [
+                  "Resolution is tied to a scheduled ECB decision.",
+                  "Embedded market prices put 25 bps Increase near 98%.",
+                  "25bp is the normal meeting increment, while 50bp tails require stronger shock evidence."
+                ],
+                "reliability": "medium"
+              }
+            ],
+            "dissent_reference_classes": [
+              {
+                "name": "Resuming hikes immediately after an easing/neutral phase is rare",
+                "width": "narrow",
+                "probability": 0.35,
+                "rationale": "A 25bp HIKE is the consensus here, which is a directional regime change if the ECB has recently been cutting or holding near neutral. Central banks rarely pivot straight from easing/neutral back to hiking at a single meeting without a clear inflation re-acceleration; the more common outcome at the first contested meeting is a hold. If the ECB is not already mid-hiking-cycle, 'No change' has a materially higher base rate than the market implies.",
+                "sources": [
+                  {
+                    "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html",
+                    "supports": "ECB rate-path history showing infrequent immediate easing-to-hiking reversals."
+                  }
+                ],
+                "mismatch_notes": [
+                  "Only bites if the ECB is NOT already in an active hiking cycle as of June 2026; verify the current regime first.",
+                  "If inflation has genuinely re-accelerated, the reversal-is-rare prior is overridden by current data."
+                ],
+                "reliability": "medium"
+              },
+              {
+                "name": "Thin-source market reliance",
+                "width": "medium",
+                "probability": 0.15,
+                "rationale": "The near-98% hike price may rest heavily on a single Reuters report (cited in the baseline run's signposts). Reference class of meetings where a confident pre-meeting consensus built on one source reversed after official guidance or projections is non-trivial. A market this concentrated on a regime-changing move is brittle.",
+                "mismatch_notes": [
+                  "Argues for wider tails / lower confidence, not necessarily a different modal outcome.",
+                  "If the hike is corroborated by ECB projections or multiple Council members, this dissent weakens sharply."
+                ],
+                "reliability": "low"
+              }
+            ],
+            "market_social_prior": {
+              "source": "Polymarket prices embedded in the question record",
+              "option_prices": {
+                "25 bps decrease": 0.0005,
+                "25 bps Increase": 0.9795,
+                "50+ bps decrease": 0.0005,
+                "No change": 0.018,
+                "50+ bps increase": 0.0025
+              },
+              "note": "Social prior, not historical base rate; may already encode public news and liquidity/microstructure effects."
+            },
+            "synthesis_rationale": "Identical empirical+heuristic+social packet as the prior arm, plus an explicit adversarial dissent: a steelman of the case AGAINST the 25bp-hike consensus. The dissent is conditional on the current ECB regime and on how much of the market price rests on a single source. The test is whether the forecaster establishes the regime fact, weighs source concentration, and adjusts confidence/tails proportionately rather than mechanically copying the market.",
+            "main_uncertainties": [
+              "Whether the ECB is already in an active hiking cycle as of June 2026 (the dissent's load-bearing fact).",
+              "How much of the market's hike confidence is corroborated beyond a single report."
             ]
           }
         }

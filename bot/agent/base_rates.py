@@ -79,6 +79,18 @@ def format_prior_packet_for_prompt(packet: dict[str, Any] | None) -> str:
     _append_candidates("Empirical base-rate candidates", packet.get("empirical_base_rates") or packet.get("reference_classes"))
     _append_candidates("Heuristic priors", packet.get("heuristic_priors"))
 
+    dissent = packet.get("dissent_reference_classes") or packet.get("challenge_reference_classes")
+    if isinstance(dissent, list) and dissent:
+        lines.append(
+            "\nDISSENT / REFERENCE-CLASS CHALLENGE (adversarial outside view):"
+        )
+        lines.append(
+            "The following reference classes argue AGAINST the consensus/canonical prior. "
+            "Treat them as a steelman of the opposing case. State explicitly whether each one "
+            "should move your forecast and why; do not dismiss without reason."
+        )
+        _append_candidates("Challenge classes", dissent)
+
     social = packet.get("market_social_prior") or packet.get("social_prior")
     if isinstance(social, dict):
         lines.append("\nSocial prior (not a historical base rate):")
