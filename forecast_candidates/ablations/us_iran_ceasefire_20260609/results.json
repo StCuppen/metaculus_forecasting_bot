@@ -1,0 +1,234 @@
+﻿{
+    "spec":  {
+                 "description":  "Prior/base-rate ablation for the Polymarket question: US announces new Iran agreement/ceasefire extension by June 30? This run keeps market prices out of the base question text and only includes them in the market/social prior arm.",
+                 "market_snapshot":  {
+                                         "source":  "polymarket_gamma_api",
+                                         "captured_at_utc":  "2026-06-09T17:22:57Z",
+                                         "url":  "https://polymarket.com/event/us-announces-new-iran-agreementceasefire-extension-by",
+                                         "market_id":  "2354003",
+                                         "slug":  "us-announces-new-iran-agreementceasefire-extension-by-june-30-848-925-757-129-337",
+                                         "outcomes":  [
+                                                          "Yes",
+                                                          "No"
+                                                      ],
+                                         "outcome_prices":  {
+                                                                "Yes":  0.445,
+                                                                "No":  0.555
+                                                            },
+                                         "volume":  1765770.1660380026,
+                                         "volume_24h":  288817.07565699995,
+                                         "liquidity":  61794.1027
+                                     },
+                 "questions":  [
+                                   {
+                                       "id":  "us_iran_ceasefire_extension_by_june_30_2026",
+                                       "question_type":  "binary",
+                                       "question":  "Will the U.S. officially announce an extension of the ceasefire agreement between the U.S. and Iran, or announce a new peace agreement, ceasefire framework, or diplomatic agreement under which the ceasefire will continue, by June 30, 2026 at 11:59 PM ET?\n\nResolution criteria: This resolves YES if, before the deadline, there is clear public confirmation from the U.S. government that the U.S. has either (1) extended its commitment to the ceasefire, either as a dated/time-based extension or through an explicit statement that the ceasefire has been extended, or (2) renewed the existing ceasefire as part of a broader peace agreement, ceasefire framework, or diplomatic agreement under which the ceasefire will continue. A qualifying announcement resolves YES regardless of whether the extension later takes effect. Statements that merely say the ceasefire remains in effect, continues to hold, talks are ongoing, the parties are closer to a deal, or de-escalation measures are being discussed do not qualify unless they announce a new extension, renewal, or successor framework. An overwhelming consensus of credible reporting that a qualifying extension or successor agreement has been definitively established also suffices. Confirmation from Iran is not required. Otherwise resolves NO.",
+                                       "arms":  [
+                                                    {
+                                                        "name":  "baseline_no_prior_packet",
+                                                        "prior_packet":  null
+                                                    },
+                                                    {
+                                                        "name":  "empirical_history_prior_packet",
+                                                        "prior_packet":  {
+                                                                             "status":  "weak",
+                                                                             "canonical_prior":  0.3,
+                                                                             "canonical_prior_type":  "empirical_base_rate",
+                                                                             "confidence":  "low",
+                                                                             "should_anchor_strongly":  false,
+                                                                             "plausible_range":  [
+                                                                                                     0.15,
+                                                                                                     0.45
+                                                                                                 ],
+                                                                             "empirical_base_rates":  [
+                                                                                                          {
+                                                                                                              "name":  "Temporary ceasefire follow-up agreement within a short deadline",
+                                                                                                              "width":  "wide",
+                                                                                                              "probability":  0.3,
+                                                                                                              "rationale":  "Reference class: public follow-up extensions or successor frameworks after an already-announced temporary ceasefire in a high-salience interstate or proxy conflict, within roughly three weeks. The class is small and heterogeneous: some temporary truces get renewed or rolled into frameworks, but many simply persist informally, lapse, or continue while negotiations are described as ongoing without a new qualifying announcement.",
+                                                                                                              "sources":  [
+                                                                                                                              {
+                                                                                                                                  "url":  "https://polymarket.com/event/us-announces-new-iran-agreementceasefire-extension-by",
+                                                                                                                                  "supports":  "The target market\u0027s rules define a narrow official-announcement threshold and a June 30 deadline."
+                                                                                                                              }
+                                                                                                                          ],
+                                                                                                              "mismatch_notes":  [
+                                                                                                                                     "This is not a clean countable reference class; conflict context, mediator incentives, and domestic politics dominate.",
+                                                                                                                                     "The target only needs a U.S. announcement, not reciprocal Iranian confirmation, which raises probability relative to a fully implemented agreement.",
+                                                                                                                                     "The target excludes statements that the existing ceasefire merely continues, which lowers probability relative to generic de-escalation."
+                                                                                                                                 ],
+                                                                                                              "reliability":  "low"
+                                                                                                          }
+                                                                                                      ],
+                                                                             "heuristic_priors":  [
+
+                                                                                                  ],
+                                                                             "market_social_prior":  null,
+                                                                             "synthesis_rationale":  "Empirical-only arm. Use a weak historical/reference-class prior around 30%, with a wide range, and do not treat it as a strong anchor because the reference class is heterogeneous and partly subjective.",
+                                                                             "main_uncertainties":  [
+                                                                                                        "Whether the current ceasefire requires another explicit extension before June 30.",
+                                                                                                        "Whether a public U.S. statement would be worded strongly enough to satisfy the market rules.",
+                                                                                                        "Whether credible reporting can establish a successor agreement absent a clean official statement."
+                                                                                                    ]
+                                                                         }
+                                                    },
+                                                    {
+                                                        "name":  "structured_heuristic_prior_packet",
+                                                        "prior_packet":  {
+                                                                             "status":  "found",
+                                                                             "canonical_prior":  0.42,
+                                                                             "canonical_prior_type":  "structured_heuristic",
+                                                                             "confidence":  "medium_low",
+                                                                             "should_anchor_strongly":  false,
+                                                                             "plausible_range":  [
+                                                                                                     0.25,
+                                                                                                     0.6
+                                                                                                 ],
+                                                                             "empirical_base_rates":  [
+
+                                                                                                      ],
+                                                                             "heuristic_priors":  [
+                                                                                                      {
+                                                                                                          "name":  "Resolution-threshold decomposition",
+                                                                                                          "prior":  0.42,
+                                                                                                          "rationale":  "The question does not require peace or implementation; it requires a public U.S. announcement of extension, renewal, or successor framework. That broadens YES relative to an actual peace deal. But the rule excludes vague continuation language and ongoing-talks language, making the threshold narrower than generic diplomatic progress.",
+                                                                                                          "drivers":  [
+                                                                                                                          "There are roughly three weeks until the June 30 deadline.",
+                                                                                                                          "A ceasefire already exists, so a renewal/extension announcement is a plausible diplomatic maintenance action.",
+                                                                                                                          "U.S.-only confirmation suffices, which lowers the evidentiary bar.",
+                                                                                                                          "The wording is narrow: mere claims that the ceasefire remains in effect or talks are progressing do not count.",
+                                                                                                                          "If negotiations are fragile, the U.S. may avoid a formally worded extension announcement even if fighting does not resume."
+                                                                                                                      ],
+                                                                                                          "reliability":  "medium_low"
+                                                                                                      }
+                                                                                                  ],
+                                                                             "market_social_prior":  null,
+                                                                             "synthesis_rationale":  "Structured-heuristic arm. Make the inside-view threshold logic explicit without using Polymarket prices as an input.",
+                                                                             "main_uncertainties":  [
+                                                                                                        "Exact diplomatic status and whether another extension is politically useful.",
+                                                                                                        "Ambiguity in future U.S. wording.",
+                                                                                                        "Risk that credible reporting describes a deal in terms that are not resolution-clean."
+                                                                                                    ]
+                                                                         }
+                                                    },
+                                                    {
+                                                        "name":  "empirical_heuristic_market_social_prior_packet",
+                                                        "prior_packet":  {
+                                                                             "status":  "found",
+                                                                             "canonical_prior":  0.445,
+                                                                             "canonical_prior_type":  "empirical_plus_heuristic_plus_social",
+                                                                             "confidence":  "medium",
+                                                                             "should_anchor_strongly":  false,
+                                                                             "plausible_range":  [
+                                                                                                     0.3,
+                                                                                                     0.6
+                                                                                                 ],
+                                                                             "empirical_base_rates":  [
+                                                                                                          {
+                                                                                                              "name":  "Temporary ceasefire follow-up agreement within a short deadline",
+                                                                                                              "width":  "wide",
+                                                                                                              "probability":  0.3,
+                                                                                                              "rationale":  "Weak historical prior: short-deadline official extensions or successor frameworks after temporary ceasefires are common enough to be live but too context-dependent for a strong anchor.",
+                                                                                                              "sources":  [
+                                                                                                                              {
+                                                                                                                                  "url":  "https://polymarket.com/event/us-announces-new-iran-agreementceasefire-extension-by",
+                                                                                                                                  "supports":  "Target-market rules and deadline."
+                                                                                                                              }
+                                                                                                                          ],
+                                                                                                              "mismatch_notes":  [
+                                                                                                                                     "Not a precise denominator.",
+                                                                                                                                     "Does not encode current diplomatic news."
+                                                                                                                                 ],
+                                                                                                              "reliability":  "low"
+                                                                                                          }
+                                                                                                      ],
+                                                                             "heuristic_priors":  [
+                                                                                                      {
+                                                                                                          "name":  "Current-context threshold heuristic",
+                                                                                                          "prior":  0.42,
+                                                                                                          "rationale":  "The rule\u0027s U.S.-announcement-only threshold raises YES probability relative to a full bilateral deal, while narrow wording and fragile diplomacy pull it below a simple \u0027ceasefire continues\u0027 probability.",
+                                                                                                          "drivers":  [
+                                                                                                                          "Existing ceasefire creates a natural pathway to extension language.",
+                                                                                                                          "Deadline is close enough that news flow should matter heavily.",
+                                                                                                                          "Resolution requires more than generic progress or non-violation."
+                                                                                                                      ],
+                                                                                                          "reliability":  "medium_low"
+                                                                                                      }
+                                                                                                  ],
+                                                                             "market_social_prior":  {
+                                                                                                         "source":  "Polymarket Gamma API snapshot",
+                                                                                                         "captured_at_utc":  "2026-06-09T17:22:57Z",
+                                                                                                         "url":  "https://polymarket.com/event/us-announces-new-iran-agreementceasefire-extension-by",
+                                                                                                         "option_prices":  {
+                                                                                                                               "Yes":  0.445,
+                                                                                                                               "No":  0.555
+                                                                                                                           },
+                                                                                                         "volume":  1765770.1660380026,
+                                                                                                         "volume_24h":  288817.07565699995,
+                                                                                                         "liquidity":  61794.1027,
+                                                                                                         "note":  "Social/market prior, not a historical base rate. It may include current information and liquidity effects."
+                                                                                                     },
+                                                                             "synthesis_rationale":  "Combined arm. Start from the weak empirical and structured heuristic priors, then include the current market price as a social prior without forcing exact market copying.",
+                                                                             "main_uncertainties":  [
+                                                                                                        "How much independent information the market contains beyond public news retrieval.",
+                                                                                                        "Whether the market is pricing resolution-lawyering rather than diplomacy.",
+                                                                                                        "Whether late insider or quasi-insider information is present in market price movement."
+                                                                                                    ]
+                                                                         }
+                                                    }
+                                                ]
+                                   }
+                               ]
+             },
+    "results":  [
+                    {
+                        "arm":  "baseline_no_prior_packet",
+                        "question_id":  "us_iran_ceasefire_extension_by_june_30_2026",
+                        "runtime_s":  335.416316986084,
+                        "final_probability":  0.8679999999999999,
+                        "mc_probabilities":  null,
+                        "numeric_percentiles":  null,
+                        "publish_action":  "publish",
+                        "forecast_record_path":  "forecast_candidates\\ablations\\us_iran_ceasefire_20260609\\records\\other\\baseline.json",
+                        "token_total":  0,
+                        "summary_text":  "Question Type: binary\nFinal Prediction: 86.8%\nInformativeness: strong_view (|p-0.5|=0.368)\nRaw Trimmed Mean: 86.8%\nCalibrated Probability: 86.8%\nDispersion: 0.127\nConfidence Class: medium\nPublish Gate: publish (score=0.73)\nParsing Failure Rate: 0.0%\nSearch Queries: planned=10 executed=8\nGate Components: spec=0.90, temporal=1.00, evidence=0.60, agreement=0.37\nGate Metrics: evidence_count=10, distinct_sources=8, primary_sources=2, mean_relevance=0.67, freshness_days=0.0\nRed Team: ran | no_change\nIndividual Runs:\n- DeepSeek V4 Pro: 90.0% (tokens=5,739, warnings=0)\n- GPT-5.4 Mini: 98.0% (tokens=3,471, warnings=0)\n- Kimi K2.6: 99.0% (tokens=11,835, warnings=0)\n- Gemini 3 Flash: 75.0% (tokens=3,212, warnings=1)\n- Claude Haiku 4.5: 72.0% (tokens=4,070, warnings=1)\nSignposts:\n- President Trump or a senior U.S. official explicitly states that negotiations have stalled or broken down, or that the \"largely negotiated\" agreement is no longer expected to be announced. | direction=down | magnitude=-30pp\n- Iran\u0027s Supreme Leader or President issues a strong public statement rejecting the terms of the reported agreement or withdrawing from ongoing negotiations. | direction=down | magnitude=-25pp\n- A major military incident occurs between U.S. and Iranian forces or proxies, leading to significant casualties or a direct confrontation. | direction=down | magnitude=-19pp\n- The U.S. State Department or White House officially announces a specific date and time for a press conference or joint statement regarding the U.S.-Iran ceasefire or a new diplomatic agreement. | direction=up | magnitude=+12pp\n- A highly credible, top-tier news organization (e.g., AP, Reuters, NYT, WSJ) reports with high confidence, citing multiple senior U.S. government sources, that a qualifying announcement is confirmed for a specific date within the resolution window. | direction=up | magnitude=+12pp"
+                    },
+                    {
+                        "arm":  "empirical_history_prior_packet",
+                        "question_id":  "us_iran_ceasefire_extension_by_june_30_2026",
+                        "runtime_s":  265.75127482414246,
+                        "final_probability":  0.6,
+                        "mc_probabilities":  null,
+                        "numeric_percentiles":  null,
+                        "publish_action":  "publish",
+                        "forecast_record_path":  "forecast_candidates\\ablations\\us_iran_ceasefire_20260609\\records\\other\\empirical_history.json",
+                        "token_total":  0,
+                        "summary_text":  "Question Type: binary\nFinal Prediction: 60.0%\nInformativeness: weak_view (|p-0.5|=0.100)\nRaw Trimmed Mean: 60.0%\nCalibrated Probability: 60.0%\nDispersion: 0.364\nConfidence Class: low\nPublish Gate: publish (score=0.78)\nParsing Failure Rate: 0.0%\nSearch Queries: planned=10 executed=8\nGate Components: spec=0.90, temporal=1.00, evidence=1.00, agreement=0.00\nGate Metrics: evidence_count=10, distinct_sources=7, primary_sources=2, mean_relevance=0.73, freshness_days=0.0\nRed Team: ran | no_change\nIndividual Runs:\n- DeepSeek V4 Pro: 25.0% (tokens=3,594, warnings=0)\n- GPT-5.4 Mini: 96.0% (tokens=4,594, warnings=0)\n- Kimi K2.6: 99.0% (tokens=12,626, warnings=0)\n- Gemini 3 Flash: 55.0% (tokens=3,502, warnings=0)\n- Claude Haiku 4.5: 25.0% (tokens=4,645, warnings=0)\nSignposts:\n- The U.S. and Iran hold direct, high-level diplomatic talks (e.g., Secretary of State or National Security Advisor level) specifically focused on a long-term de-escalation framework or peace agreement. | direction=up | magnitude=+20pp\n- Iran publicly announces a significant, verifiable reduction in its uranium enrichment activities or allows expanded IAEA inspections beyond current agreements. | direction=up | magnitude=+15pp\n- The U.S. imposes new, significant sanctions on Iran targeting its oil exports or financial sector, explicitly stating it\u0027s due to continued regional destabilization or nuclear program advancements. | direction=down | magnitude=-20pp\n- A major military confrontation occurs between the U.S. and Iranian-backed forces in the Middle East, resulting in significant casualties or damage to U.S. assets. | direction=down | magnitude=-25pp\n- A third-party mediator (e.g., Oman, Qatar, EU) publicly announces a breakthrough in indirect negotiations between the U.S. and Iran, leading to a draft agreement for a ceasefire extension or broader framework. | direction=up | magnitude=+18pp"
+                    },
+                    {
+                        "arm":  "structured_heuristic_prior_packet",
+                        "question_id":  "us_iran_ceasefire_extension_by_june_30_2026",
+                        "runtime_s":  387.12824153900146,
+                        "final_probability":  0.576,
+                        "mc_probabilities":  null,
+                        "numeric_percentiles":  null,
+                        "publish_action":  "publish",
+                        "forecast_record_path":  "forecast_candidates\\ablations\\us_iran_ceasefire_20260609\\records\\other\\structured_heuristic.json",
+                        "token_total":  0,
+                        "summary_text":  "Question Type: binary\nFinal Prediction: 57.6%\nInformativeness: weak_view (|p-0.5|=0.076)\nRaw Trimmed Mean: 57.6%\nCalibrated Probability: 57.6%\nDispersion: 0.255\nConfidence Class: medium\nPublish Gate: publish (score=0.78)\nParsing Failure Rate: 0.0%\nSearch Queries: planned=10 executed=8\nGate Components: spec=0.90, temporal=1.00, evidence=1.00, agreement=0.00\nGate Metrics: evidence_count=10, distinct_sources=8, primary_sources=2, mean_relevance=0.78, freshness_days=0.0\nRed Team: ran | no_change\nIndividual Runs:\n- DeepSeek V4 Pro: 35.0% (tokens=5,145, warnings=1)\n- GPT-5.4 Mini: 58.0% (tokens=5,801, warnings=0)\n- Kimi K2.6: 99.0% (tokens=12,568, warnings=1)\n- Gemini 3 Flash: 58.0% (tokens=3,560, warnings=0)\n- Claude Haiku 4.5: 38.0% (tokens=4,725, warnings=0)\nSignposts:\n- A senior U.S. official (e.g., Secretary of State, National Security Advisor) publicly states that negotiations with Iran for a ceasefire extension or broader agreement are in their final stages and an announcement is expected soon. | direction=up | magnitude=+15pp\n- Iran\u0027s Foreign Minister or Supreme Leader publicly states that a comprehensive agreement with the U.S. regarding a ceasefire extension or broader diplomatic framework has been reached and is awaiting formal announcement. | direction=up | magnitude=+20pp\n- The U.S. or Iran announces a significant, unprovoked military escalation or direct confrontation (e.g., a major attack on U.S. forces in the region, or a U.S. strike on Iranian assets), leading to a breakdown of existing de-escalation efforts. | direction=down | magnitude=-25pp\n- A credible news organization (e.g., NYT, WSJ, Reuters, AP) reports, citing multiple high-level U.S. and/or Iranian sources, that negotiations for a ceasefire extension or new agreement have completely stalled or been formally suspended indefinitely. | direction=down | magnitude=-15pp\n- The U.S. President or Secretary of State makes an official visit to a regional ally (e.g., Saudi Arabia, UAE) and publicly states that the U.S. is actively pursuing a new, comprehensive regional security framework that includes Iran, and that discussions are progressing well. | direction=up | magnitude=+12pp"
+                    },
+                    {
+                        "arm":  "empirical_heuristic_market_social_prior_packet",
+                        "question_id":  "us_iran_ceasefire_extension_by_june_30_2026",
+                        "runtime_s":  415.11126685142517,
+                        "final_probability":  0.5,
+                        "mc_probabilities":  null,
+                        "numeric_percentiles":  null,
+                        "publish_action":  "publish",
+                        "forecast_record_path":  "forecast_candidates\\ablations\\us_iran_ceasefire_20260609\\records\\other\\market_social.json",
+                        "token_total":  0,
+                        "summary_text":  "Question Type: binary\nFinal Prediction: 50.0%\nInformativeness: weak_view (|p-0.5|=0.000)\nRaw Trimmed Mean: 50.0%\nCalibrated Probability: 50.0%\nDispersion: 0.135\nConfidence Class: medium\nPublish Gate: publish (score=0.73)\nParsing Failure Rate: 0.0%\nSearch Queries: planned=10 executed=8\nGate Components: spec=0.90, temporal=1.00, evidence=0.60, agreement=0.33\nGate Metrics: evidence_count=10, distinct_sources=8, primary_sources=1, mean_relevance=0.67, freshness_days=0.0\nRed Team: ran | no_change\nIndividual Runs:\n- DeepSeek V4 Pro: 40.0% (tokens=8,651, warnings=0)\n- GPT-5.4 Mini: 58.0% (tokens=5,474, warnings=0)\n- Kimi K2.6: 40.0% (tokens=22,391, warnings=0)\n- Gemini 3 Flash: 42.0% (tokens=3,553, warnings=1)\n- Claude Haiku 4.5: 70.0% (tokens=5,017, warnings=1)\nSignposts:\n- The U.S. State Department or White House officially announces a new round of high-level, direct negotiations with Iran specifically focused on de-escalation and a long-term security framework, with a stated goal of formalizing existing understandings. | direction=up | magnitude=+15pp\n- A senior U.S. official (e.g., Secretary of State, National Security Advisor) publicly states that the U.S. and Iran have reached a preliminary understanding or are in the final stages of negotiating a formal agreement to maintain regional stability, explicitly mentioning the continuation of de-escalation efforts. | direction=up | magnitude=+19pp\n- Iran\u0027s Supreme Leader or President publicly rejects any further direct negotiations with the U.S. regarding a ceasefire or broader diplomatic framework, citing U.S. untrustworthiness or a fundamental policy shift. | direction=down | magnitude=-25pp\n- The U.S. imposes significant new sanctions on Iran, or Iran conducts a major military exercise or action that directly targets U.S. interests or allies, leading to a sharp escalation of tensions and a public statement from the U.S. that diplomatic efforts are paused or terminated. | direction=down | magnitude=-20pp\n- A credible, high-profile leak from within the U.S. government (e.g., to a major newspaper like NYT or Washington Post) details an internal U.S. policy decision *against* formalizing or extending the current ceasefire, opting instead for a strategy of \"strategic ambiguity\" or \"managed de-escalation\" without a formal agreement. | direction=down | magnitude=-15pp"
+                    }
+                ]
+}

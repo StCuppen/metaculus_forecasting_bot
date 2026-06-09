@@ -1,0 +1,1111 @@
+{
+  "aggregated_forecast": {
+    "confidence_class": "medium",
+    "dispersion": 0.1267675037223657,
+    "n_runs": 5,
+    "n_trimmed": 0,
+    "p_calibrated": 0.8679999999999999,
+    "p_raw": 0.868
+  },
+  "background_info": "",
+  "base_rate_texts": [
+    "When a U.S. President says a major international deal is 'largely negotiated' and details are coming 'soon', the historical rate of an official announcement materializing within ~3 weeks is roughly 70-80% across comparable diplomatic engagements.",
+    "Rare U.S.-Iran ceasefire-extension announcements; historical rate is effectively very low, but no precise reference class found.",
+    "Reference class: ceasefires in modern interstate wars extended or superseded by a formal agreement within three months; estimated historical rate is roughly 50-60%.",
+    "Diplomatic negotiations involving major conflict de-escalation frameworks typically have a moderate success rate within a 30-day window once 'largely negotiated' status is claimed.",
+    "No clear historical precedent for U.S.-Iran ceasefire extension announcements; base rate unknown"
+  ],
+  "canonical_spec": "- One-line: Will the U.S. officially announce an extension of the ceasefire agreement between the U.S. and Iran, or announce a new peace agreement, ceasefire framework, or diplomatic agreement under which the ceasefire will continue, by June 30, 2026 at 11:59 PM ET?\n- YES: Clear public confirmation from the U.S. government that the U.S. has either (1) extended its commitment to the ceasefire (dated/time-based or explicit statement) or (2) renewed the existing ceasefire as part of a broader peace agreement, ceasefire framework, or diplomatic agreement under which the ceasefire will continue. An overwhelming consensus of credible reporting that a qualifying extension or successor agreement has been definitively established also suffices.\n- NO: No such announcement or confirmation by the deadline, or only statements that the ceasefire remains in effect, continues to hold, talks are ongoing, parties are closer to a deal, or de-escalation measures are being discussed without announcing a new extension, renewal, or successor framework.\n- Window: by June 30, 2026 at 11:59 PM ET\n- Threshold: None\n- Metric: None",
+  "claim_audit": {
+    "assumption": 1,
+    "assumptions_note": "",
+    "evidence_backed": 9,
+    "hinge_claims": [
+      {
+        "claim": "A ceasefire between the U.S. and Iran has been in place since April 8.",
+        "status": "evidence_backed",
+        "type": "hinge"
+      },
+      {
+        "claim": "The ceasefire was already extended \"indefinitely\" by President Trump on April 21.",
+        "status": "evidence_backed",
+        "type": "hinge"
+      },
+      {
+        "claim": "President Trump stated on June 9 that an agreement has been \"largely negotiated\" and details will be announced soon.",
+        "status": "evidence_backed",
+        "type": "hinge"
+      },
+      {
+        "claim": "Reuters reported on May 28 a pending 60-day truce extension and the reopening of the Strait of Hormuz.",
+        "status": "evidence_backed",
+        "type": "hinge"
+      },
+      {
+        "claim": "Multiple other sources confirm a deal is imminent.",
+        "status": "evidence_backed",
+        "type": "hinge"
+      }
+    ],
+    "items": [
+      {
+        "claim": "and Iran has been in place since April 8 and was already extended \"indefinitely\" by President Trump on April 21.",
+        "status": "evidence_backed",
+        "type": "numeric"
+      },
+      {
+        "claim": "Trump stated on June 9 that an agreement has been \"largely negotiated\" and details will be announced soon, with Reuters (May 28) reporting a pending 60-day truce extension and the reopening of the Strait of Hormuz.",
+        "status": "evidence_backed",
+        "type": "numeric"
+      },
+      {
+        "claim": "The resolution window is only 21 days.",
+        "status": "evidence_backed",
+        "type": "numeric"
+      },
+      {
+        "claim": "Probability: 90% {\"probability\": 0.90, \"outside_view\": 0.75, \"base_rate\": \"When a U.S.",
+        "status": "assumption",
+        "type": "numeric"
+      },
+      {
+        "claim": "President says a major international deal is 'largely negotiated' and details are coming 'soon', the historical rate of an official announcement materializing within ~3 weeks is roughly 70-80% across comparable diplomatic engagements.\"}",
+        "status": "evidence_backed",
+        "type": "numeric"
+      },
+      {
+        "claim": "A ceasefire between the U.S. and Iran has been in place since April 8.",
+        "status": "evidence_backed",
+        "type": "hinge"
+      },
+      {
+        "claim": "The ceasefire was already extended \"indefinitely\" by President Trump on April 21.",
+        "status": "evidence_backed",
+        "type": "hinge"
+      },
+      {
+        "claim": "President Trump stated on June 9 that an agreement has been \"largely negotiated\" and details will be announced soon.",
+        "status": "evidence_backed",
+        "type": "hinge"
+      },
+      {
+        "claim": "Reuters reported on May 28 a pending 60-day truce extension and the reopening of the Strait of Hormuz.",
+        "status": "evidence_backed",
+        "type": "hinge"
+      },
+      {
+        "claim": "Multiple other sources confirm a deal is imminent.",
+        "status": "evidence_backed",
+        "type": "hinge"
+      }
+    ],
+    "total_claims": 10
+  },
+  "community_prior": null,
+  "crowd_benchmark": {
+    "captured_at_forecast_utc": "2026-06-09T17:40:20.030027+00:00",
+    "metaculus_community_prediction": null,
+    "note": "Benchmark only; the forecast is independent of the crowd unless used_by_gate_shrink.",
+    "used_by_forecasters": false,
+    "used_by_gate_shrink": false
+  },
+  "evidence_bundle_text": "[1] en.wikipedia.org | https://en.wikipedia.org/wiki/2026_Iran_war_ceasefire | retrieved=2026-06-09 | primary=False | relevance=1.00 | datapoint=True\n- On 8 April 2026, the United States and Iran agreed to a two-week ceasefire in the 2026 Iran war, mediated by Pakistan.\n- Iran had rejected a draft proposal for a 45-day two-phased ceasefire framework introduced on 5 April by Pakistan, instead proposing its own 10-point plan for a peace agreement.\n- On 21 April, President Trump extended the cease-fire indefinitely.\n- The ceasefire has been violated by both sides since its declaration.\n- On 25 March, Pakistani officials delivered a \"15-point proposal\" from the US to Iran, detailing a ceasefire plan.\n- The US proposal included an end to Iran's \n\n[2] www.reuters.com | https://www.reuters.com/world/middle-east/iran-us-trade-air-strikes-after-trump-dismisses-report-hormuz-deal-2026-05-28/ | retrieved=2026-06-09 | primary=False | relevance=1.00 | datapoint=True\n- An agreement, according to four sources familiar with the matter, would extend the truce for another 60 days.\n- The agreement would allow traffic to flow through [unspecified location, likely related to the truce context].\n\n[3] en.wikipedia.org | https://en.wikipedia.org/wiki/2025%E2%80%932026_Iran%E2%80%93United_States_negotiations | retrieved=2026-06-09 | primary=False | relevance=1.00 | datapoint=True\n- On April 12, 2025, Iran and the United States began a series of negotiations aimed at reaching a nuclear peace agreement.\n- US president Donald Trump sent a letter to Iranian supreme leader Ali Khamenei.\n- Trump set a 60-day deadline for Iran to reach an agreement.\n- The deadline passed without an agreement.\n- The first round of high-level meetings was held in Oman on April 12, 2025, led by US Special Envoy Steve Witkoff and Iranian Foreign Minister Abbas Araghchi.\n- Both the White House and the Iranian Foreign Ministry said that the discussions held were constructive.\n- A second round of Om\n\n[4] www.bbc.com | https://www.bbc.com/news/articles/crmp121z3z8o | retrieved=2026-06-09 | primary=False | relevance=1.00 | datapoint=True\n- US President Donald Trump says an agreement with Iran has been \"largely negotiated\" and details will be announced soon.\n- The deal would include the reopening of the Strait of Hormuz.\n- An Iranian foreign ministry spokesman stated that US and Iranian positions had been converging in the last week, but warned that did not mean agreements would be reached on key issues.\n- Washington and Tehran have engaged in talks over a long-term peace deal since a ceasefire was agreed early in April.\n- Trump wrote on social media about a \"Memorandum of Understanding pertaining to PEACE\" with the US, Iran, a\n\n[5] www.youtube.com | https://www.youtube.com/watch?v=ISenjuD5vcY | retrieved=2026-06-09 | primary=False | relevance=0.80 | datapoint=False\n- A deal to extend the ceasefire between the US and Iran is pending.\n- This pending deal would reopen the Strait of Hormuz.\n\n[6] www.pbs.org | https://www.pbs.org/newshour/show/former-u-s-officials-analyze-chances-fragile-iran-ceasefire-can-hold | retrieved=2026-06-09 | primary=False | relevance=0.80 | datapoint=False\n- Barbara Leaf and Michael Doran are former U.S. officials with experience in Near Eastern Affairs and the Middle East on the National Security Council, respectively.\n- Barbara Leaf is \"very worried\" about the ceasefire holding, as are \"a lot of people,\" especially in the Gulf.\n- Senior Gulf officials termed the arrangements as \"fragile,\" with one calling it \"less a cease-fire than it was a fragile truce.\"\n- The prospect of escalation is \"clearly there.\"\n- The dispute over whether Lebanon was included in the agreement is a \"point of volatility.\"\n- Michael Doran believes the prospects for the U\n\n[7] x.com | https://x.com/StateDept?lang=en | retrieved=2026-06-09 | primary=False | relevance=0.80 | datapoint=True\n- President Trump is committed to making the FIFA World Cup 2026™ the greatest sporting event in world history.\n- President Donald J. Trump stated: \"Both sides, Israel and Iran, are looking to do an immediate CEASEFIRE! Final negotiations on “Peace” are proceeding, subject to ignorance or stupidity getting in its way…\"\n- [Unidentified speaker from @RapidResponse47] speaks with [unidentified recipient]: \"What I would suggest to Iran: You've shot your missiles. That's enough — get back to the table and make a deal.\"\n- [Unidentified speaker from @RapidResponse47] stated: \"I don't like these endle\n\n[8] www.youtube.com | https://www.youtube.com/watch?v=oWWmeXiS1n8 | retrieved=2026-06-09 | primary=False | relevance=0.30 | datapoint=True\n- The video is titled \"US-Iran peace talks: Is a deal realistic or a diplomatic illusion?\".\n- The video was uploaded by \"Al Jazeera English\".\n- The video has 77,641 views.\n- The video was uploaded \"5 days ago\" (relative to when the text was generated/accessed).\n- The video's duration is 0:00 (this is likely a placeholder or error in the provided text, as it also shows \"0:00 / 0:00 Live\").\n\n[9] www.congress.gov | https://www.congress.gov/crs-product/R47321 | retrieved=2026-06-09 | primary=True | relevance=0.00 | datapoint=True\n- The document is titled \"Iran: Background and U.S. Policy\".\n- The document was published on June 09, 2026, at 17:25:51 GMT.\n- Iran is described as playing an assertive and destabilizing role in the region.\n- Iran has the world's fourth-largest oil reserves.\n- Iran is the world's most populous Shia Muslim country.\n\n[10] www.state.gov | https://www.state.gov/releases/office-of-the-spokesperson/2026/06/joint-statement-of-the-united-states-of-america-republic-of-lebanon-and-state-of-israel-on-the-latest-high-level-trilateral-meeting | retrieved=2026-06-09 | primary=True | relevance=0.00 | datapoint=True\n- The document is a \"Joint Statement of the United States of America, Republic of Lebanon, and State of Israel on the Latest High-Level Trilateral Meeting\".\n- The document was released by the U.S. Department of State.\n- The document's URL indicates a release date in June 2026.",
+  "executed_queries": [
+    "US Iran ceasefire extension announcement June 2026",
+    "US Iran peace agreement negotiations status June 2026",
+    "Biden administration Iran policy updates ceasefire",
+    "US State Department statements Iran ceasefire",
+    "White House press briefings Iran diplomatic efforts",
+    "Iran nuclear deal JCPOA revival status 2026",
+    "Congressional statements US Iran relations ceasefire",
+    "UN Security Council resolutions Iran sanctions ceasefire"
+  ],
+  "feature_flags": {},
+  "final_mc_probabilities": null,
+  "final_numeric_percentiles": null,
+  "final_probability": 0.8679999999999999,
+  "fine_print": "",
+  "forecast_lineage": {
+    "final_probability": 0.8679999999999999,
+    "gate_shrink_applied": false,
+    "per_model_probabilities": [
+      {
+        "initial_probability": 0.9,
+        "label": "DeepSeek V4 Pro",
+        "model": "deepseek/deepseek-v4-pro",
+        "parse_success": true,
+        "revised_probability": null,
+        "revision_delta_pp": null,
+        "revision_pass_enabled": false
+      },
+      {
+        "initial_probability": 0.98,
+        "label": "GPT-5.4 Mini",
+        "model": "openai/gpt-5.4-mini",
+        "parse_success": true,
+        "revised_probability": null,
+        "revision_delta_pp": null,
+        "revision_pass_enabled": false
+      },
+      {
+        "initial_probability": 0.99,
+        "label": "Kimi K2.6",
+        "model": "moonshotai/kimi-k2.6",
+        "parse_success": true,
+        "revised_probability": null,
+        "revision_delta_pp": null,
+        "revision_pass_enabled": false
+      },
+      {
+        "initial_probability": 0.75,
+        "label": "Gemini 3 Flash",
+        "model": "google/gemini-3-flash-preview",
+        "parse_success": true,
+        "revised_probability": null,
+        "revision_delta_pp": null,
+        "revision_pass_enabled": false
+      },
+      {
+        "initial_probability": 0.72,
+        "label": "Claude Haiku 4.5",
+        "model": "anthropic/claude-haiku-4.5",
+        "parse_success": true,
+        "revised_probability": null,
+        "revision_delta_pp": null,
+        "revision_pass_enabled": false
+      }
+    ],
+    "post_red_team_probability": 0.8679999999999999,
+    "pre_red_team_probability": 0.8679999999999999,
+    "red_team_adjusted": false
+  },
+  "full_log": "# Forecast Report -- 20260609_173459\n\n| Field | Value |\n|-------|-------|\n| Question | Will the U.S. officially announce an extension of the ceasefire agreement between the U.S. and Iran, or announce a new peace agreement, ceasefire framework, or diplomatic agreement under which the ceasefire will continue, by June 30, 2026 at 11:59 PM ET?\n\nResolution criteria: This resolves YES if, before the deadline, there is clear public confirmation from the U.S. government that the U.S. has either (1) extended its commitment to the ceasefire, either as a dated/time-based extension or through an explicit statement that the ceasefire has been extended, or (2) renewed the existing ceasefire as part of a broader peace agreement, ceasefire framework, or diplomatic agreement under which the ceasefire will continue. A qualifying announcement resolves YES regardless of whether the extension later takes effect. Statements that merely say the ceasefire remains in effect, continues to hold, talks are ongoing, the parties are closer to a deal, or de-escalation measures are being discussed do not qualify unless they announce a new extension, renewal, or successor framework. An overwhelming consensus of credible reporting that a qualifying extension or successor agreement has been definitively established also suffices. Confirmation from Iran is not required. Otherwise resolves NO. |\n| Type | binary |\n| Date | 2026-06-09 |\n| Final Prediction | 86.8% |\n| Informativeness | strong_view (signal=0.368) |\n| Confidence | medium |\n| Gate Action | publish (score=0.733) |\n\n**Canonical Spec:**\n- One-line: Will the U.S. officially announce an extension of the ceasefire agreement between the U.S. and Iran, or announce a new peace agreement, ceasefire framework, or diplomatic agreement under which the ceasefire will continue, by June 30, 2026 at 11:59 PM ET?\n- YES: Clear public confirmation from the U.S. government that the U.S. has either (1) extended its commitment to the ceasefire (dated/time-based or explicit statement) or (2) renewed the existing ceasefire as part of a broader peace agreement, ceasefire framework, or diplomatic agreement under which the ceasefire will continue. An overwhelming consensus of credible reporting that a qualifying extension or successor agreement has been definitively established also suffices.\n- NO: No such announcement or confirmation by the deadline, or only statements that the ceasefire remains in effect, continues to hold, talks are ongoing, parties are closer to a deal, or de-escalation measures are being discussed without announcing a new extension, renewal, or successor framework.\n- Window: by June 30, 2026 at 11:59 PM ET\n- Threshold: None\n- Metric: None\n\n---\n\n## Search Process\n\n**Strategy Output:**\n```\nSEARCH(\"US Iran ceasefire extension announcement June 2026\")\nSEARCH(\"US Iran peace agreement negotiations status June 2026\")\nSEARCH(\"Biden administration Iran policy updates ceasefire\")\nSEARCH(\"US State Department statements Iran ceasefire\")\nSEARCH(\"White House press briefings Iran diplomatic efforts\")\nSEARCH(\"Iran nuclear deal JCPOA revival status 2026\")\nSEARCH(\"Congressional statements US Iran relations ceasefire\")\nSEARCH(\"UN Security Council resolutions Iran sanctions ceasefire\")\nSEARCH(\"Think tank analysis US Iran diplomacy 2026\")\nSEARCH(\"Expert predictions US Iran agreement 2026\")\n```\n\n**Planned Queries (10):**\n- US Iran ceasefire extension announcement June 2026\n- US Iran peace agreement negotiations status June 2026\n- Biden administration Iran policy updates ceasefire\n- US State Department statements Iran ceasefire\n- White House press briefings Iran diplomatic efforts\n- Iran nuclear deal JCPOA revival status 2026\n- Congressional statements US Iran relations ceasefire\n- UN Security Council resolutions Iran sanctions ceasefire\n- Think tank analysis US Iran diplomacy 2026\n- Expert predictions US Iran agreement 2026\n\n**Executed Queries (8):**\n- US Iran ceasefire extension announcement June 2026\n- US Iran peace agreement negotiations status June 2026\n- Biden administration Iran policy updates ceasefire\n- US State Department statements Iran ceasefire\n- White House press briefings Iran diplomatic efforts\n- Iran nuclear deal JCPOA revival status 2026\n- Congressional statements US Iran relations ceasefire\n- UN Security Council resolutions Iran sanctions ceasefire\n\n---\n\n## Evidence Summary\n\nItems: 10 | Distinct sources: 8 | Primary: 2 | Mean relevance: 0.670 | Freshness: 0.0 days\n\n| # | Source | Primary | Relevance | Bearing | Snippet |\n|---|--------|---------|-----------|---------|---------|\n| E1 | en.wikipedia.org | No | 1.00 | High-directness status signal | - On 8 April 2026, the United States and Iran agreed to a two-week ceasefire in ... |\n| E2 | www.reuters.com | No | 1.00 | High-directness status signal | - An agreement, according to four sources familiar with the matter, would extend... |\n| E3 | en.wikipedia.org | No | 1.00 | High-directness status signal | - On April 12, 2025, Iran and the United States began a series of negotiations a... |\n| E4 | www.bbc.com | No | 1.00 | High-directness status signal | - US President Donald Trump says an agreement with Iran has been \"largely negoti... |\n| E5 | www.youtube.com | No | 0.80 | High-directness status signal | - A deal to extend the ceasefire between the US and Iran is pending.\n- This pend... |\n| E6 | www.pbs.org | No | 0.80 | High-directness status signal | - Barbara Leaf and Michael Doran are former U.S. officials with experience in Ne... |\n| E7 | x.com | No | 0.80 | High-directness status signal | - President Trump is committed to making the FIFA World Cup 2026™ the greatest s... |\n| E8 | www.youtube.com | No | 0.30 | Proxy/context evidence | - The video is titled \"US-Iran peace talks: Is a deal realistic or a diplomatic ... |\n\n---\n\n## Model Runs\n\nParsing failure rate: 0.0%\n\n| Model | Probability | Tokens | Warnings |\n|-------|-------------|--------|----------|\n| DeepSeek V4 Pro | 90.0% | 5,739 | 0 |\n| GPT-5.4 Mini | 98.0% | 3,471 | 0 |\n| Kimi K2.6 | 99.0% | 11,835 | 0 |\n| Gemini 3 Flash | 75.0% | 3,212 | 1 |\n| Claude Haiku 4.5 | 72.0% | 4,070 | 1 |\n\n---\n\n### DeepSeek V4 Pro (90.0%)\n\n<details><summary>Full reasoning (1,494 chars)</summary>\n\nBased on the evidence as of June 9, 2026, a ceasefire between the U.S. and Iran has been in place since April 8 and was already extended \"indefinitely\" by President Trump on April 21. The question asks about a further official U.S. announcement by June 30, 2026, either extending the ceasefire or announcing a new peace agreement/framework under which the ceasefire continues. Trump stated on June 9 that an agreement has been \"largely negotiated\" and details will be announced soon, with Reuters (May 28) reporting a pending 60-day truce extension and the reopening of the Strait of Hormuz. Multiple other sources confirm a deal is imminent.\n\nThe resolution window is only 21 days. Trump's public statements create strong pressure for a quick official announcement, consistent with his typical style. While the ceasefire is fragile and could still collapse, the overall trajectory heavily favors an official announcement before the deadline. An announcement of a peace deal or a formal extension would satisfy the criteria; mere \"talks ongoing\" or \"ceasefire holds\" statements would not. The imminent nature of the reported agreement makes the YES outcome very likely.\n\nProbability: 90%\n{\"probability\": 0.90, \"outside_view\": 0.75, \"base_rate\": \"When a U.S. President says a major international deal is 'largely negotiated' and details are coming 'soon', the historical rate of an official announcement materializing within ~3 weeks is roughly 70-80% across comparable diplomatic engagements.\"}\n\n</details>\n\n---\n\n### GPT-5.4 Mini (98.0%)\n\n<details><summary>Full reasoning (2,120 chars)</summary>\n\n(a) Time remaining: about 21 days. Exact deadline is June 30, 2026 at 11:59 PM ET.\n\n(b) Status quo: if nothing changes, the event is already leaning to YES, because the supplied evidence says the U.S. already officially extended the ceasefire on April 21, 2026 (“extended the cease-fire indefinitely”). If that is correct, the criterion has already been met before the deadline.\n\n(c) Concrete YES scenario: the U.S. State Department, White House, or President formally announces that the U.S.-Iran ceasefire is extended again, or that a broader peace/ceasefire framework has been adopted that keeps the ceasefire in force.\n\n(d) Concrete NO scenario: no qualifying U.S. announcement ever occurs; officials only say the ceasefire is holding, talks are ongoing, or de-escalation continues, without any explicit extension/renewal/framework announcement.\n\n(e) Base rate: I don’t know a clean historical base rate for “U.S. officially announces extension of a ceasefire with Iran,” because this is a very rare and context-specific event. In general, formal ceasefire-extension announcements in U.S.-Iran crises are uncommon.\n\n(f) Strongest evidence toward YES: the provided research note stating that on April 21, President Trump “extended the cease-fire indefinitely.” If accurate, that is already a qualifying public announcement. Strongest evidence toward NO: the lack of a primary-source U.S. government citation in the evidence set, plus Reuters language on May 28 describing an agreement that “would extend” the truce, which sounds reported-but-not-yet-official.\n\n(g) Easy-to-misread issue: the question is not asking whether the ceasefire continues in practice, nor whether talks are promising. It specifically requires an official U.S. announcement of an extension/renewal or a successor agreement/framework. Also, the announcement can count even if it happened before today, as long as it occurred by the deadline.\n\nProbability: 98%\n\n{\"probability\":0.98,\"outside_view\":0.15,\"base_rate\":\"Rare U.S.-Iran ceasefire-extension announcements; historical rate is effectively very low, but no precise reference class found.\"}\n\n</details>\n\n---\n\n### Kimi K2.6 (99.0%)\n\n<details><summary>Full reasoning (2,256 chars)</summary>\n\n(a) **Time remaining:** Today is June 9, 2026. The exact deadline is June 30, 2026 at 11:59 PM ET, so roughly 21 days remain.\n\n(b) **Status quo outcome:** The U.S. already announced an indefinite extension of the ceasefire with Iran on April 21, 2026. Because the resolution criteria count any clear public U.S. confirmation of an extension announced *before* the deadline—and do not require Iranian concurrence—the status quo already satisfies the YES condition.\n\n(c) **Concrete YES scenario:** The scenario has already occurred: on April 21, 2026, President Trump publicly stated that the U.S. was extending the ceasefire indefinitely, which qualifies under criterion (1).\n\n(d) **Concrete NO scenario:** The U.S. government would have to retroactively disavow the April 21 extension as non-official, and then fail to issue any new extension, renewal, or successor framework by June 30. This is highly implausible given the record.\n\n(e) **Base rate:** Reference class: ceasefires in modern interstate wars that are extended or replaced by a formal diplomatic framework within three months; precise historical rates are uncertain but estimated in the 50–60% range. Here, however, the specific evidence overrides the base rate because the event has already taken place.\n\n(f) **Strongest evidence:**\n- **Toward YES:** Evidence [1] explicitly states that on April 21, 2026, President Trump extended the U.S.-Iran ceasefire indefinitely.\n- **Toward NO:** Evidence [1] and [6] note repeated violations and describe the truce as “fragile,” which could raise doubts about durability, though the criteria explicitly ignore subsequent violations for resolution purposes.\n\n(g) **Easy misreading:** The criteria broaden the question by accepting a unilateral U.S. announcement and do not require Iranian confirmation. One might naively assume a new mutual agreement is needed, or that only statements made *after* the present date count, but the resolution window includes any qualifying announcement prior to the deadline.\n\nProbability: 99%\n\n{\"probability\": 0.99, \"outside_view\": 0.55, \"base_rate\": \"Reference class: ceasefires in modern interstate wars extended or superseded by a formal agreement within three months; estimated historical rate is roughly 50-60%.\"}\n\n</details>\n\n---\n\n### Gemini 3 Flash (75.0%)\n\n<details><summary>Full reasoning (2,658 chars)</summary>\n\nAs a professional forecaster, I have analyzed the current geopolitical situation between the United States and Iran based on the provided evidence.\n\n(a) **Time remaining:** 21 days remain until the deadline of June 30, 2026, at 11:59 PM ET.\n(b) **Status quo:** There is currently a fragile, indefinite ceasefire in place (extended by President Trump on April 21, 2026). Negotiations for a \"Memorandum of Understanding pertaining to PEACE\" or a formal successor framework are actively ongoing but have not been finalized or officially announced as a new agreement.\n(c) **YES scenario:** Before June 30, the U.S. and Iran finalize the \"largely negotiated\" deal mentioned by President Trump. The White House releases a statement announcing a \"New Peace Framework\" or a \"60-day extension of the truce\" to facilitate the reopening of the Strait of Hormuz.\n(d) **NO scenario:** Negotiations continue past the deadline without a formal announcement of a *new* extension or framework. The parties simply continue under the existing \"indefinite\" ceasefire, or the ceasefire collapses into renewed hostilities before a new agreement is signed.\n(e) **Base rate:** Diplomatic negotiations of this magnitude often take longer than expected; however, when a \"largely negotiated\" deal is publicly touted by a U.S. President, the probability of a formal announcement within a month is relatively high.\n(f) **Strongest Evidence:** For YES: President Trump's social media posts and public statements that a deal is \"largely negotiated\" and \"details will be announced soon,\" combined with reports of a pending 60-day extension. For NO: Historical volatility in U.S.-Iran relations and reports of ongoing ceasefire violations and \"fragility\" that could derail a final announcement.\n(g) **Resolution Nuance:** The criteria specifically exclude statements that the ceasefire \"remains in effect\" or \"talks are ongoing.\" It requires a *new* extension, renewal, or successor framework. Since the current ceasefire is already \"indefinite,\" a simple continuation doesn't count; there must be a new formal step or a broader peace agreement announced.\n\nThe evidence suggests that a deal is imminent and being actively messaged by the U.S. executive branch. With 21 days left and the \"largely negotiated\" status, there is a high likelihood of a formal announcement to capitalize on the diplomatic momentum before the end of June.\n\nProbability: 75%\n\n{\"probability\": 0.75, \"outside_view\": 0.4, \"base_rate\": \"Diplomatic negotiations involving major conflict de-escalation frameworks typically have a moderate success rate within a 30-day window once 'largely negotiated' status is claimed.\"}\n\n</details>\n\n---\n\n### Claude Haiku 4.5 (72.0%)\n\n<details><summary>Full reasoning (5,975 chars)</summary>\n\n# Forecasting Analysis\n\n## (a) Time Remaining and Deadline\n- **Today's date:** June 9, 2026\n- **Deadline:** June 30, 2026 at 11:59 PM ET\n- **Time remaining:** 21 days\n\n## (b) Status Quo Outcome\nIf nothing changes, the resolution would be **NO**. The ceasefire remains in effect but no formal extension or new agreement framework has been officially announced by the U.S. government as of the research date (June 9, 2026).\n\n## (c) Concrete YES Scenario\nThe U.S. State Department issues an official statement or press release within the next 21 days formally announcing:\n- An extension of the ceasefire agreement with Iran (with or without a specific duration), OR\n- A new peace agreement/ceasefire framework that explicitly renews the ceasefire commitment\n\nThis could occur as part of ongoing negotiations that appear to be \"largely negotiated\" according to Trump's recent statements.\n\n## (d) Concrete NO Scenario\nThe ceasefire continues to hold informally, but no formal U.S. government announcement of an extension or new framework is made by June 30, 2026. Negotiations continue without reaching a formal announcement threshold, or the ceasefire collapses without a successor agreement being announced.\n\n## (e) Base Rate\n**Explicitly unknown.** There is no clear historical precedent for U.S.-Iran ceasefire extensions in this specific context. The 2015 JCPOA was a nuclear agreement, not a ceasefire framework. This appears to be a novel situation (2026 Iran war ceasefire).\n\n## (f) Strongest Evidence\n\n**Toward YES:**\n- **Evidence [1]:** President Trump extended the ceasefire \"indefinitely\" on April 21, 2026—this is a formal extension already announced, though the question asks about extensions *by* June 30, 2026. The fact that an indefinite extension was already announced suggests the U.S. is willing to make formal announcements about ceasefire status.\n- **Evidence [4]:** Trump states an agreement has been \"largely negotiated\" with details to be announced \"soon\" (as of the BBC report date). This suggests an announcement may be imminent within the 21-day window.\n- **Evidence [2]:** Reuters reports an agreement to extend the truce for another 60 days, citing four sources familiar with the matter.\n\n**Toward NO:**\n- **Evidence [6]:** Former U.S. officials express serious concerns about the ceasefire's fragility, suggesting it may not hold long enough for a formal extension to be negotiated and announced.\n- **Time constraint:** Only 21 days remain. While negotiations appear active, formal announcements require bureaucratic processes and may not materialize this quickly.\n- **Violation history:** Evidence [1] notes the ceasefire \"has been violated by both sides since its declaration,\" raising questions about whether formal extensions are even feasible.\n\n## (g) Resolution Criteria Nuances\n\n**Key narrowing elements:**\n- The criteria explicitly exclude statements that merely say the ceasefire \"remains in effect\" or \"continues to hold\"—it must be a formal **extension** or **new\n\n... [2975 chars truncated]\n\n</details>\n\n---\n\n## Aggregation\n\n| Metric | Value |\n|--------|-------|\n| Raw trimmed mean | 0.8680 (86.8%) |\n| Calibrated (extremized) | 0.8680 (86.8%) |\n| Final probability | 0.8680 (86.8%) |\n| Dispersion | 0.1268 |\n| N runs | 5 (trimmed: 0) |\n\n---\n\n## Gate Decision\n\n| Component | Score |\n|-----------|-------|\n| Spec confidence | 0.900 |\n| Temporal relevance | 1.000 |\n| Evidence sufficiency | 0.600 |\n| Model agreement | 0.366 |\n| **Weighted gate score** | **0.733** |\n\n**Action:** publish\n\n**Reasons:**\n- HARD FLOOR: Mean relevance 0.67 < 0.70. Evidence sufficiency capped at 0.6.\n- Model disagreement is high.\n- Gate action: publish.\n\n\n---\n\n## Red Team\n\nStatus: no change\n\n<details><summary>Critique</summary>\n\nHere's an adversarial review of the forecast:\n\n**1. TIMELINE CONFUSION:**\n*   **Analysis:** The forecast correctly identifies the current date (June 9, 2026) and the deadline (June 30, 2026), noting the 21-day window. It also correctly references past events (April 8 ceasefire, April 21 \"indefinite\" extension) within the context of the question's future deadline. There is no apparent timeline confusion.\n*   **Verdict:** No error.\n\n**2. BASE RATE NEGLECT:**\n*   **Analysis:** The forecast provides a specific base rate: \"When a U.S. President says a major international deal is 'largely negotiated' and details are coming 'soon', the historical rate of an official announcement materializing within ~3 weeks is roughly 70-80% across comparable diplomatic engagements.\"\n*   **Critique:** While a base rate is provided, its applicability and robustness are questionable.\n    *   **Specificity:** \"Comparable diplomatic engagements\" is vague. What specific historical instances are being referenced? Are they truly comparable in terms of geopolitical context (US-Iran relations), the nature of the deal (ceasefire extension vs. broader peace agreement), and the specific President (Trump's unique communication style and follow-through)?\n    *   **\"Largely negotiated\" vs. \"soon\":** These are subjective terms. A President's definition of \"largely negotiated\" might differ significantly from the reality of ongoing complex diplomatic talks. \"Soon\" can mean anything from days to months.\n    *   **Trump's history:** While Trump often announces things \"soon,\" his track record also includes deals that were \"imminent\" but never materialized or took much longer than anticipated (e.g., North Korea denuclearization, various trade deals). This specific base rate might be overly optimistic given the source and the inherent difficulty of US-Iran diplomacy.\n    *   **\"Indefinite\" extension:** The forecast notes a prior \"indefinite\" extension. If an extension is already \"indefinite,\" what does a *further* extension or \"renewal\" mean in practical terms, and how does that affect the base rate for *new* announcements? The base rate doesn't account for this specific nuance.\n*   **Verdict:** Potential error. The base rate provided is too generic and doesn't adequately account for the specific context of US-Iran relations, President Trump's communication patterns, or the nature of an \"indefinite\" ceasefire. It might be an optimistic interpretation of \"comparable diplomatic engagements.\"\n\n**3. SINGLE-SOURCE FRAGILITY:**\n*   **Analysis:** The forecast heavily relies on President Trump's statement from June 9 (\"largely negotiated,\" \"details will be announced soon\") as the primary driver for the high probability. It also cites Reuters (May 28) reporting a \"pending 60-day truce extension and the reopening of the Strait of Hormuz\" and \"Multiple other sources confirm a deal is imminent.\"\n*   **Critique:**\n    *   **Trump's statements:** While Trump's statements are significant, they are not always reliable indicators of immediate, concrete action. He has a history of making grand pronouncements that either don't materialize as quickly as suggested or are subject to significant changes. Relying on his statement as the *primary* driver for a 90% probability within 21 days introduces fragility.\n    *   **\"Multiple other sources\":** This is vague. Are these independent, highly credible sources with direct knowledge, or are they echoing Trump's statements or general diplomatic optimism? Without specific examples or an assessment of their credibility, this claim doesn't sufficiently diversify the evidence base.\n    *   **Reuters report:** The Reuters report is from May 28, nearly two weeks before Trump's June 9 statement. While it suggests a *pending* deal, the details (60-day truce, Strait of Hormuz) might not align perfectly with what Trump is now calling \"largely negotiated\" or what the final agreement might entail. The forecast treats these as reinforcing, but they could be distinct or evolving.\n    *   **Lack of Iranian confirmation/perspective:** While the resolution criteria state \"Confirmation from Iran is not required,\" the *likelihood* of a US announcement is significantly influenced by the state of negotiations with Iran. If Iran is not on board or has different expectations, the US announcement might be delayed or not happen at all, regardless of Trump's optimism. The forecast doesn't consider this external factor that could derail the US announcement.\n*   **Verdict:** Significant error. The forecast exhibits single-source fragility by over-relying on President Trump's statement and insufficiently diversifying or critically evaluating other sources, especially given the short timeframe and the complexity of the parties involved.\n\n**4. RESOLUTION MISREAD:**\n*   **Analysis:**\n    *   **Question:** \"Will the U.S. officially announce an extension... or announce a new peace agreement, ceasefire framework, or diplomatic agreement under which the ceasefire will continue...\"\n    *   **YES criteria:** \"Clear public confirmation from the U.S. government that the U.S. has either (1) extended its commitment to the ceasefire... or (2) renewed the existing ceasefire as part of a broader peace agreement, ceasefire framework, or diplomatic agreement under which the ceasefire will continue.\" Also, \"An\n\n</details>\n\n---\n\n## Claim Audit\n\nTotal claims: 10 | Evidence-backed: 9 | Assumptions: 1\n\n**Hinge Claims:**\n- [evidence] A ceasefire between the U.S. and Iran has been in place since April 8.\n- [evidence] The ceasefire was already extended \"indefinitely\" by President Trump on April 21.\n- [evidence] President Trump stated on June 9 that an agreement has been \"largely negotiated\" and details will be announced soon.\n- [evidence] Reuters reported on May 28 a pending 60-day truce extension and the reopening of the Strait of Hormuz.\n- [evidence] Multiple other sources confirm a deal is imminent.\n\n\n---\n\n## Signposts\n\n| Event | Direction | Magnitude |\n|-------|-----------|----------|\n| President Trump or a senior U.S. official explicitly states that negotiations have stalled or broken down, or that the \"largely negotiated\" agreement is no longer expected to be announced. | down | -30pp |\n| Iran's Supreme Leader or President issues a strong public statement rejecting the terms of the reported agreement or withdrawing from ongoing negotiations. | down | -25pp |\n| A major military incident occurs between U.S. and Iranian forces or proxies, leading to significant casualties or a direct confrontation. | down | -19pp |\n| The U.S. State Department or White House officially announces a specific date and time for a press conference or joint statement regarding the U.S.-Iran ceasefire or a new diplomatic agreement. | up | +12pp |\n| A highly credible, top-tier news organization (e.g., AP, Reuters, NYT, WSJ) reports with high confidence, citing multiple senior U.S. government sources, that a qualifying announcement is confirmed for a specific date within the resolution window. | up | +12pp |\n\n---\n\n## Final Summary\n\n**Prediction:** 86.8%\n**Confidence class:** medium\n**Informativeness:** strong_view\n**Gate action:** publish\n",
+  "full_reasoning": "# Ensemble Forecast (86.8%)\n\n---\n\n## Search Strategy Output\n\n---\n\nSEARCH(\"US Iran ceasefire extension announcement June 2026\")\nSEARCH(\"US Iran peace agreement negotiations status June 2026\")\nSEARCH(\"Biden administration Iran policy updates ceasefire\")\nSEARCH(\"US State Department statements Iran ceasefire\")\nSEARCH(\"White House press briefings Iran diplomatic efforts\")\nSEARCH(\"Iran nuclear deal JCPOA revival status 2026\")\nSEARCH(\"Congressional statements US Iran relations ceasefire\")\nSEARCH(\"UN Security Council resolutions Iran sanctions ceasefire\")\nSEARCH(\"Think tank analysis US Iran diplomacy 2026\")\nSEARCH(\"Expert predictions US Iran agreement 2026\")\n\n---\n\n## Planned Queries\n\n---\n\n- US Iran ceasefire extension announcement June 2026\n- US Iran peace agreement negotiations status June 2026\n- Biden administration Iran policy updates ceasefire\n- US State Department statements Iran ceasefire\n- White House press briefings Iran diplomatic efforts\n- Iran nuclear deal JCPOA revival status 2026\n- Congressional statements US Iran relations ceasefire\n- UN Security Council resolutions Iran sanctions ceasefire\n- Think tank analysis US Iran diplomacy 2026\n- Expert predictions US Iran agreement 2026\n\n---\n\n## Executed Queries\n\n---\n\n- US Iran ceasefire extension announcement June 2026\n- US Iran peace agreement negotiations status June 2026\n- Biden administration Iran policy updates ceasefire\n- US State Department statements Iran ceasefire\n- White House press briefings Iran diplomatic efforts\n- Iran nuclear deal JCPOA revival status 2026\n- Congressional statements US Iran relations ceasefire\n- UN Security Council resolutions Iran sanctions ceasefire\n\n---\n\n## Evidence Bundle\n\n---\n\n[1] en.wikipedia.org | https://en.wikipedia.org/wiki/2026_Iran_war_ceasefire | retrieved=2026-06-09 | primary=False | relevance=1.00 | datapoint=True\n- On 8 April 2026, the United States and Iran agreed to a two-week ceasefire in the 2026 Iran war, mediated by Pakistan.\n- Iran had rejected a draft proposal for a 45-day two-phased ceasefire framework introduced on 5 April by Pakistan, instead proposing its own 10-point plan for a peace agreement.\n- On 21 April, President Trump extended the cease-fire indefinitely.\n- The ceasefire has been violated by both sides since its declaration.\n- On 25 March, Pakistani officials delivered a \"15-point proposal\" from the US to Iran, detailing a ceasefire plan.\n- The US proposal included an end to Iran's \n\n[2] www.reuters.com | https://www.reuters.com/world/middle-east/iran-us-trade-air-strikes-after-trump-dismisses-report-hormuz-deal-2026-05-28/ | retrieved=2026-06-09 | primary=False | relevance=1.00 | datapoint=True\n- An agreement, according to four sources familiar with the matter, would extend the truce for another 60 days.\n- The agreement would allow traffic to flow through [unspecified location, likely related to the truce context].\n\n[3] en.wikipedia.org | https://en.wikipedia.org/wiki/2025%E2%80%932026_Iran%E2%80%93United_States_negotiations | retrieved=2026-06-09 | primary=False | relevance=1.00 | datapoint=True\n- On April 12, 2025, Iran and the United States began a series of negotiations aimed at reaching a nuclear peace agreement.\n- US president Donald Trump sent a letter to Iranian supreme leader Ali Khamenei.\n- Trump set a 60-day deadline for Iran to reach an agreement.\n- The deadline passed without an agreement.\n- The first round of high-level meetings was held in Oman on April 12, 2025, led by US Special Envoy Steve Witkoff and Iranian Foreign Minister Abbas Araghchi.\n- Both the White House and the Iranian Foreign Ministry said that the discussions held were constructive.\n- A second round of Om\n\n[4] www.bbc.com | https://www.bbc.com/news/articles/crmp121z3z8o | retrieved=2026-06-09 | primary=False | relevance=1.00 | datapoint=True\n- US President Donald Trump says an agreement with Iran has been \"largely negotiated\" and details will be announced soon.\n- The deal would include the reopening of the Strait of Hormuz.\n- An Iranian foreign ministry spokesman stated that US and Iranian positions had been converging in the last week, but warned that did not mean agreements would be reached on key issues.\n- Washington and Tehran have engaged in talks over a long-term peace deal since a ceasefire was agreed early in April.\n- Trump wrote on social media about a \"Memorandum of Understanding pertaining to PEACE\" with the US, Iran, a\n\n[5] www.youtube.com | https://www.youtube.com/watch?v=ISenjuD5vcY | retrieved=2026-06-09 | primary=False | relevance=0.80 | datapoint=False\n- A deal to extend the ceasefire between the US and Iran is pending.\n- This pending deal would reopen the Strait of Hormuz.\n\n[6] www.pbs.org | https://www.pbs.org/newshour/show/former-u-s-officials-analyze-chances-fragile-iran-ceasefire-can-hold | retrieved=2026-06-09 | primary=False | relevance=0.80 | datapoint=False\n- Barbara Leaf and Michael Doran are former U.S. officials with experience in Near Eastern Affairs and the Middle East on the National Security Council, respectively.\n- Barbara Leaf is \"very worried\" about the ceasefire holding, as are \"a lot of people,\" especially in the Gulf.\n- Senior Gulf officials termed the arrangements as \"fragile,\" with one calling it \"less a cease-fire than it was a fragile truce.\"\n- The prospect of escalation is \"clearly there.\"\n- The dispute over whether Lebanon was included in the agreement is a \"point of volatility.\"\n- Michael Doran believes the prospects for the U\n\n[7] x.com | https://x.com/StateDept?lang=en | retrieved=2026-06-09 | primary=False | relevance=0.80 | datapoint=True\n- President Trump is committed to making the FIFA World Cup 2026™ the greatest sporting event in world history.\n- President Donald J. Trump stated: \"Both sides, Israel and Iran, are looking to do an immediate CEASEFIRE! Final negotiations on “Peace” are proceeding, subject to ignorance or stupidity getting in its way…\"\n- [Unidentified speaker from @RapidResponse47] speaks with [unidentified recipient]: \"What I would suggest to Iran: You've shot your missiles. That's enough — get back to the table and make a deal.\"\n- [Unidentified speaker from @RapidResponse47] stated: \"I don't like these endle\n\n[8] www.youtube.com | https://www.youtube.com/watch?v=oWWmeXiS1n8 | retrieved=2026-06-09 | primary=False | relevance=0.30 | datapoint=True\n- The video is titled \"US-Iran peace talks: Is a deal realistic or a diplomatic illusion?\".\n- The video was uploaded by \"Al Jazeera English\".\n- The video has 77,641 views.\n- The video was uploaded \"5 days ago\" (relative to when the text was generated/accessed).\n- The video's duration is 0:00 (this is likely a placeholder or error in the provided text, as it also shows \"0:00 / 0:00 Live\").\n\n[9] www.congress.gov | https://www.congress.gov/crs-product/R47321 | retrieved=2026-06-09 | primary=True | relevance=0.00 | datapoint=True\n- The document is titled \"Iran: Background and U.S. Policy\".\n- The document was published on June 09, 2026, at 17:25:51 GMT.\n- Iran is described as playing an assertive and destabilizing role in the region.\n- Iran has the world's fourth-largest oil reserves.\n- Iran is the world's most populous Shia Muslim country.\n\n[10] www.state.gov | https://www.state.gov/releases/office-of-the-spokesperson/2026/06/joint-statement-of-the-united-states-of-america-republic-of-lebanon-and-state-of-israel-on-the-latest-high-level-trilateral-meeting | retrieved=2026-06-09 | primary=True | relevance=0.00 | datapoint=True\n- The document is a \"Joint Statement of the United States of America, Republic of Lebanon, and State of Israel on the Latest High-Level Trilateral Meeting\".\n- The document was released by the U.S. Department of State.\n- The document's URL indicates a release date in June 2026.\n\n---\n\n## Top Evidence\n\n---\n\n- E1 | en.wikipedia.org | 2026-06-09 | primary=False | relevance=1.0 | bearing=High-directness status signal | snippet_hash=935b6ce8684b5ec7 | - On 8 April 2026, the United States and Iran agreed to a two-week ceasefire in the 2026 Iran war, mediated by Pakistan.\n- Iran had rejected\n- E2 | www.reuters.com | 2026-06-09 | primary=False | relevance=1.0 | bearing=High-directness status signal | snippet_hash=1e9ffd4c6fe9018f | - An agreement, according to four sources familiar with the matter, would extend the truce for another 60 days.\n- The agreement would allow \n- E3 | en.wikipedia.org | 2026-06-09 | primary=False | relevance=1.0 | bearing=High-directness status signal | snippet_hash=3c54c093117e78aa | - On April 12, 2025, Iran and the United States began a series of negotiations aimed at reaching a nuclear peace agreement.\n- US president D\n- E4 | www.bbc.com | 2026-06-09 | primary=False | relevance=1.0 | bearing=High-directness status signal | snippet_hash=037913b710511f23 | - US President Donald Trump says an agreement with Iran has been \"largely negotiated\" and details will be announced soon.\n- The deal would i\n- E5 | www.youtube.com | 2026-06-09 | primary=False | relevance=0.8 | bearing=High-directness status signal | snippet_hash=dad66512a92be73a | - A deal to extend the ceasefire between the US and Iran is pending.\n- This pending deal would reopen the Strait of Hormuz.\n- E6 | www.pbs.org | 2026-06-09 | primary=False | relevance=0.8 | bearing=High-directness status signal | snippet_hash=408376d5d0dc1807 | - Barbara Leaf and Michael Doran are former U.S. officials with experience in Near Eastern Affairs and the Middle East on the National Secur\n- E7 | x.com | 2026-06-09 | primary=False | relevance=0.8 | bearing=High-directness status signal | snippet_hash=8d503b84554a65cf | - President Trump is committed to making the FIFA World Cup 2026™ the greatest sporting event in world history.\n- President Donald J. Trump \n- E8 | www.youtube.com | 2026-06-09 | primary=False | relevance=0.3 | bearing=Proxy/context evidence | snippet_hash=241de0a4a3ef7ac5 | - The video is titled \"US-Iran peace talks: Is a deal realistic or a diplomatic illusion?\".\n- The video was uploaded by \"Al Jazeera English\"\n\n---\n\n## Aggregate\n\n---\n\n- p_raw=0.8680\n- p_calibrated=0.8680\n- dispersion=0.1268\n- confidence=medium\n- gate_action=publish\n- gate_components: spec=0.900, temporal=1.000, evidence=0.600, agreement=0.366\n- parsing_failure_rate=0.000\n\n\n---\n\n## Red-Team Critique\n\n---\n\nHere's an adversarial review of the forecast:\n\n**1. TIMELINE CONFUSION:**\n*   **Analysis:** The forecast correctly identifies the current date (June 9, 2026) and the deadline (June 30, 2026), noting the 21-day window. It also correctly references past events (April 8 ceasefire, April 21 \"indefinite\" extension) within the context of the question's future deadline. There is no apparent timeline confusion.\n*   **Verdict:** No error.\n\n**2. BASE RATE NEGLECT:**\n*   **Analysis:** The forecast provides a specific base rate: \"When a U.S. President says a major international deal is 'largely negotiated' and details are coming 'soon', the historical rate of an official announcement materializing within ~3 weeks is roughly 70-80% across comparable diplomatic engagements.\"\n*   **Critique:** While a base rate is provided, its applicability and robustness are questionable.\n    *   **Specificity:** \"Comparable diplomatic engagements\" is vague. What specific historical instances are being referenced? Are they truly comparable in terms of geopolitical context (US-Iran relations), the nature of the deal (ceasefire extension vs. broader peace agreement), and the specific President (Trump's unique communication style and follow-through)?\n    *   **\"Largely negotiated\" vs. \"soon\":** These are subjective terms. A President's definition of \"largely negotiated\" might differ significantly from the reality of ongoing complex diplomatic talks. \"Soon\" can mean anything from days to months.\n    *   **Trump's history:** While Trump often announces things \"soon,\" his track record also includes deals that were \"imminent\" but never materialized or took much longer than anticipated (e.g., North Korea denuclearization, various trade deals). This specific base rate might be overly optimistic given the source and the inherent difficulty of US-Iran diplomacy.\n    *   **\"Indefinite\" extension:** The forecast notes a prior \"indefinite\" extension. If an extension is already \"indefinite,\" what does a *further* extension or \"renewal\" mean in practical terms, and how does that affect the base rate for *new* announcements? The base rate doesn't account for this specific nuance.\n*   **Verdict:** Potential error. The base rate provided is too generic and doesn't adequately account for the specific context of US-Iran relations, President Trump's communication patterns, or the nature of an \"indefinite\" ceasefire. It might be an optimistic interpretation of \"comparable diplomatic engagements.\"\n\n**3. SINGLE-SOURCE FRAGILITY:**\n*   **Analysis:** The forecast heavily relies on President Trump's statement from June 9 (\"largely negotiated,\" \"details will be announced soon\") as the primary driver for the high probability. It also cites Reuters (May 28) reporting a \"pending 60-day truce extension and the reopening of the Strait of Hormuz\" and \"Multiple other sources confirm a deal is imminent.\"\n*   **Critique:**\n    *   **Trump's statements:** While Trump's statements are significant, they are not always reliable indicators of immediate, concrete action. He has a history of making grand pronouncements that either don't materialize as quickly as suggested or are subject to significant changes. Relying on his statement as the *primary* driver for a 90% probability within 21 days introduces fragility.\n    *   **\"Multiple other sources\":** This is vague. Are these independent, highly credible sources with direct knowledge, or are they echoing Trump's statements or general diplomatic optimism? Without specific examples or an assessment of their credibility, this claim doesn't sufficiently diversify the evidence base.\n    *   **Reuters report:** The Reuters report is from May 28, nearly two weeks before Trump's June 9 statement. While it suggests a *pending* deal, the details (60-day truce, Strait of Hormuz) might not align perfectly with what Trump is now calling \"largely negotiated\" or what the final agreement might entail. The forecast treats these as reinforcing, but they could be distinct or evolving.\n    *   **Lack of Iranian confirmation/perspective:** While the resolution criteria state \"Confirmation from Iran is not required,\" the *likelihood* of a US announcement is significantly influenced by the state of negotiations with Iran. If Iran is not on board or has different expectations, the US announcement might be delayed or not happen at all, regardless of Trump's optimism. The forecast doesn't consider this external factor that could derail the US announcement.\n*   **Verdict:** Significant error. The forecast exhibits single-source fragility by over-relying on President Trump's statement and insufficiently diversifying or critically evaluating other sources, especially given the short timeframe and the complexity of the parties involved.\n\n**4. RESOLUTION MISREAD:**\n*   **Analysis:**\n    *   **Question:** \"Will the U.S. officially announce an extension... or announce a new peace agreement, ceasefire framework, or diplomatic agreement under which the ceasefire will continue...\"\n    *   **YES criteria:** \"Clear public confirmation from the U.S. government that the U.S. has either (1) extended its commitment to the ceasefire... or (2) renewed the existing ceasefire as part of a broader peace agreement, ceasefire framework, or diplomatic agreement under which the ceasefire will continue.\" Also, \"An\n\n---\n\n## Claim Audit\n\n---\n\n{'total_claims': 10, 'evidence_backed': 9, 'assumption': 1, 'hinge_claims': [{'claim': 'A ceasefire between the U.S. and Iran has been in place since April 8.', 'status': 'evidence_backed', 'type': 'hinge'}, {'claim': 'The ceasefire was already extended \"indefinitely\" by President Trump on April 21.', 'status': 'evidence_backed', 'type': 'hinge'}, {'claim': 'President Trump stated on June 9 that an agreement has been \"largely negotiated\" and details will be announced soon.', 'status': 'evidence_backed', 'type': 'hinge'}, {'claim': 'Reuters reported on May 28 a pending 60-day truce extension and the reopening of the Strait of Hormuz.', 'status': 'evidence_backed', 'type': 'hinge'}, {'claim': 'Multiple other sources confirm a deal is imminent.', 'status': 'evidence_backed', 'type': 'hinge'}], 'assumptions_note': '', 'items': [{'claim': 'and Iran has been in place since April 8 and was already extended \"indefinitely\" by President Trump on April 21.', 'status': 'evidence_backed', 'type': 'numeric'}, {'claim': 'Trump stated on June 9 that an agreement has been \"largely negotiated\" and details will be announced soon, with Reuters (May 28) reporting a pending 60-day truce extension and the reopening of the Strait of Hormuz.', 'status': 'evidence_backed', 'type': 'numeric'}, {'claim': 'The resolution window is only 21 days.', 'status': 'evidence_backed', 'type': 'numeric'}, {'claim': 'Probability: 90% {\"probability\": 0.90, \"outside_view\": 0.75, \"base_rate\": \"When a U.S.', 'status': 'assumption', 'type': 'numeric'}, {'claim': 'President says a major international deal is \\'largely negotiated\\' and details are coming \\'soon\\', the historical rate of an official announcement materializing within ~3 weeks is roughly 70-80% across comparable diplomatic engagements.\"}', 'status': 'evidence_backed', 'type': 'numeric'}, {'claim': 'A ceasefire between the U.S. and Iran has been in place since April 8.', 'status': 'evidence_backed', 'type': 'hinge'}, {'claim': 'The ceasefire was already extended \"indefinitely\" by President Trump on April 21.', 'status': 'evidence_backed', 'type': 'hinge'}, {'claim': 'President Trump stated on June 9 that an agreement has been \"largely negotiated\" and details will be announced soon.', 'status': 'evidence_backed', 'type': 'hinge'}, {'claim': 'Reuters reported on May 28 a pending 60-day truce extension and the reopening of the Strait of Hormuz.', 'status': 'evidence_backed', 'type': 'hinge'}, {'claim': 'Multiple other sources confirm a deal is imminent.', 'status': 'evidence_backed', 'type': 'hinge'}]}\n\n---\n\n## Signposts\n\n---\n\n{'raw': 'SIGNPOST: President Trump or a senior U.S. official explicitly states that negotiations have stalled or broken down, or that the \"largely negotiated\" agreement is no longer expected to be announced.\\nDIRECTION: down\\nMAGNITUDE: -30pp\\n\\nSIGNPOST: Iran\\'s Supreme Leader or President issues a strong public statement rejecting the terms of the reported agreement or withdrawing from ongoing negotiations.\\nDIRECTION: down\\nMAGNITUDE: -25pp\\n\\nSIGNPOST: A major military incident occurs between U.S. and Iranian forces or proxies, leading to significant casualties or a direct confrontation.\\nDIRECTION: down\\nMAGNITUDE: -20pp\\n\\nSIGNPOST: The U.S. State Department or White House officially announces a specific date and time for a press conference or joint statement regarding the U.S.-Iran ceasefire or a new diplomatic agreement.\\nDIRECTION: up\\nMAGNITUDE: +15pp\\n\\nSIGNPOST: A highly credible, top-tier news organization (e.g., AP, Reuters, NYT, WSJ) reports with high confidence, citing multiple senior U.S. government sources, that a qualifying announcement is confirmed for a specific date within the resolution window.\\nDIRECTION: up\\nMAGNITUDE: +15pp', 'signposts': [{'event': 'President Trump or a senior U.S. official explicitly states that negotiations have stalled or broken down, or that the \"largely negotiated\" agreement is no longer expected to be announced.', 'direction': 'down', 'magnitude': '-30pp'}, {'event': \"Iran's Supreme Leader or President issues a strong public statement rejecting the terms of the reported agreement or withdrawing from ongoing negotiations.\", 'direction': 'down', 'magnitude': '-25pp'}, {'event': 'A major military incident occurs between U.S. and Iranian forces or proxies, leading to significant casualties or a direct confrontation.', 'direction': 'down', 'magnitude': '-20pp'}, {'event': 'The U.S. State Department or White House officially announces a specific date and time for a press conference or joint statement regarding the U.S.-Iran ceasefire or a new diplomatic agreement.', 'direction': 'up', 'magnitude': '+15pp'}, {'event': 'A highly credible, top-tier news organization (e.g., AP, Reuters, NYT, WSJ) reports with high confidence, citing multiple senior U.S. government sources, that a qualifying announcement is confirmed for a specific date within the resolution window.', 'direction': 'up', 'magnitude': '+15pp'}]}\n\n---\n\n## DeepSeek V4 Pro (90.0%)\n\nBased on the evidence as of June 9, 2026, a ceasefire between the U.S. and Iran has been in place since April 8 and was already extended \"indefinitely\" by President Trump on April 21. The question asks about a further official U.S. announcement by June 30, 2026, either extending the ceasefire or announcing a new peace agreement/framework under which the ceasefire continues. Trump stated on June 9 that an agreement has been \"largely negotiated\" and details will be announced soon, with Reuters (May 28) reporting a pending 60-day truce extension and the reopening of the Strait of Hormuz. Multiple other sources confirm a deal is imminent.\n\nThe resolution window is only 21 days. Trump's public statements create strong pressure for a quick official announcement, consistent with his typical style. While the ceasefire is fragile and could still collapse, the overall trajectory heavily favors an official announcement before the deadline. An announcement of a peace deal or a formal extension would satisfy the criteria; mere \"talks ongoing\" or \"ceasefire holds\" statements would not. The imminent nature of the reported agreement makes the YES outcome very likely.\n\nProbability: 90%\n{\"probability\": 0.90, \"outside_view\": 0.75, \"base_rate\": \"When a U.S. President says a major international deal is 'largely negotiated' and details are coming 'soon', the historical rate of an official announcement materializing within ~3 weeks is roughly 70-80% across comparable diplomatic engagements.\"}\n\n---\n\n## GPT-5.4 Mini (98.0%)\n\n(a) Time remaining: about 21 days. Exact deadline is June 30, 2026 at 11:59 PM ET.\n\n(b) Status quo: if nothing changes, the event is already leaning to YES, because the supplied evidence says the U.S. already officially extended the ceasefire on April 21, 2026 (“extended the cease-fire indefinitely”). If that is correct, the criterion has already been met before the deadline.\n\n(c) Concrete YES scenario: the U.S. State Department, White House, or President formally announces that the U.S.-Iran ceasefire is extended again, or that a broader peace/ceasefire framework has been adopted that keeps the ceasefire in force.\n\n(d) Concrete NO scenario: no qualifying U.S. announcement ever occurs; officials only say the ceasefire is holding, talks are ongoing, or de-escalation continues, without any explicit extension/renewal/framework announcement.\n\n(e) Base rate: I don’t know a clean historical base rate for “U.S. officially announces extension of a ceasefire with Iran,” because this is a very rare and context-specific event. In general, formal ceasefire-extension announcements in U.S.-Iran crises are uncommon.\n\n(f) Strongest evidence toward YES: the provided research note stating that on April 21, President Trump “extended the cease-fire indefinitely.” If accurate, that is already a qualifying public announcement. Strongest evidence toward NO: the lack of a primary-source U.S. government citation in the evidence set, plus Reuters language on May 28 describing an agreement that “would extend” the truce, which sounds reported-but-not-yet-official.\n\n(g) Easy-to-misread issue: the question is not asking whether the ceasefire continues in practice, nor whether talks are promising. It specifically requires an official U.S. announcement of an extension/renewal or a successor agreement/framework. Also, the announcement can count even if it happened before today, as long as it occurred by the deadline.\n\nProbability: 98%\n\n{\"probability\":0.98,\"outside_view\":0.15,\"base_rate\":\"Rare U.S.-Iran ceasefire-extension announcements; historical rate is effectively very low, but no precise reference class found.\"}\n\n---\n\n## Kimi K2.6 (99.0%)\n\n(a) **Time remaining:** Today is June 9, 2026. The exact deadline is June 30, 2026 at 11:59 PM ET, so roughly 21 days remain.\n\n(b) **Status quo outcome:** The U.S. already announced an indefinite extension of the ceasefire with Iran on April 21, 2026. Because the resolution criteria count any clear public U.S. confirmation of an extension announced *before* the deadline—and do not require Iranian concurrence—the status quo already satisfies the YES condition.\n\n(c) **Concrete YES scenario:** The scenario has already occurred: on April 21, 2026, President Trump publicly stated that the U.S. was extending the ceasefire indefinitely, which qualifies under criterion (1).\n\n(d) **Concrete NO scenario:** The U.S. government would have to retroactively disavow the April 21 extension as non-official, and then fail to issue any new extension, renewal, or successor framework by June 30. This is highly implausible given the record.\n\n(e) **Base rate:** Reference class: ceasefires in modern interstate wars that are extended or replaced by a formal diplomatic framework within three months; precise historical rates are uncertain but estimated in the 50–60% range. Here, however, the specific evidence overrides the base rate because the event has already taken place.\n\n(f) **Strongest evidence:**\n- **Toward YES:** Evidence [1] explicitly states that on April 21, 2026, President Trump extended the U.S.-Iran ceasefire indefinitely.\n- **Toward NO:** Evidence [1] and [6] note repeated violations and describe the truce as “fragile,” which could raise doubts about durability, though the criteria explicitly ignore subsequent violations for resolution purposes.\n\n(g) **Easy misreading:** The criteria broaden the question by accepting a unilateral U.S. announcement and do not require Iranian confirmation. One might naively assume a new mutual agreement is needed, or that only statements made *after* the present date count, but the resolution window includes any qualifying announcement prior to the deadline.\n\nProbability: 99%\n\n{\"probability\": 0.99, \"outside_view\": 0.55, \"base_rate\": \"Reference class: ceasefires in modern interstate wars extended or superseded by a formal agreement within three months; estimated historical rate is roughly 50-60%.\"}\n\n---\n\n## Gemini 3 Flash (75.0%)\n\nAs a professional forecaster, I have analyzed the current geopolitical situation between the United States and Iran based on the provided evidence.\n\n(a) **Time remaining:** 21 days remain until the deadline of June 30, 2026, at 11:59 PM ET.\n(b) **Status quo:** There is currently a fragile, indefinite ceasefire in place (extended by President Trump on April 21, 2026). Negotiations for a \"Memorandum of Understanding pertaining to PEACE\" or a formal successor framework are actively ongoing but have not been finalized or officially announced as a new agreement.\n(c) **YES scenario:** Before June 30, the U.S. and Iran finalize the \"largely negotiated\" deal mentioned by President Trump. The White House releases a statement announcing a \"New Peace Framework\" or a \"60-day extension of the truce\" to facilitate the reopening of the Strait of Hormuz.\n(d) **NO scenario:** Negotiations continue past the deadline without a formal announcement of a *new* extension or framework. The parties simply continue under the existing \"indefinite\" ceasefire, or the ceasefire collapses into renewed hostilities before a new agreement is signed.\n(e) **Base rate:** Diplomatic negotiations of this magnitude often take longer than expected; however, when a \"largely negotiated\" deal is publicly touted by a U.S. President, the probability of a formal announcement within a month is relatively high.\n(f) **Strongest Evidence:** For YES: President Trump's social media posts and public statements that a deal is \"largely negotiated\" and \"details will be announced soon,\" combined with reports of a pending 60-day extension. For NO: Historical volatility in U.S.-Iran relations and reports of ongoing ceasefire violations and \"fragility\" that could derail a final announcement.\n(g) **Resolution Nuance:** The criteria specifically exclude statements that the ceasefire \"remains in effect\" or \"talks are ongoing.\" It requires a *new* extension, renewal, or successor framework. Since the current ceasefire is already \"indefinite,\" a simple continuation doesn't count; there must be a new formal step or a broader peace agreement announced.\n\nThe evidence suggests that a deal is imminent and being actively messaged by the U.S. executive branch. With 21 days left and the \"largely negotiated\" status, there is a high likelihood of a formal announcement to capitalize on the diplomatic momentum before the end of June.\n\nProbability: 75%\n\n{\"probability\": 0.75, \"outside_view\": 0.4, \"base_rate\": \"Diplomatic negotiations involving major conflict de-escalation frameworks typically have a moderate success rate within a 30-day window once 'largely negotiated' status is claimed.\"}\n\n---\n\n## Claude Haiku 4.5 (72.0%)\n\n# Forecasting Analysis\n\n## (a) Time Remaining and Deadline\n- **Today's date:** June 9, 2026\n- **Deadline:** June 30, 2026 at 11:59 PM ET\n- **Time remaining:** 21 days\n\n## (b) Status Quo Outcome\nIf nothing changes, the resolution would be **NO**. The ceasefire remains in effect but no formal extension or new agreement framework has been officially announced by the U.S. government as of the research date (June 9, 2026).\n\n## (c) Concrete YES Scenario\nThe U.S. State Department issues an official statement or press release within the next 21 days formally announcing:\n- An extension of the ceasefire agreement with Iran (with or without a specific duration), OR\n- A new peace agreement/ceasefire framework that explicitly renews the ceasefire commitment\n\nThis could occur as part of ongoing negotiations that appear to be \"largely negotiated\" according to Trump's recent statements.\n\n## (d) Concrete NO Scenario\nThe ceasefire continues to hold informally, but no formal U.S. government announcement of an extension or new framework is made by June 30, 2026. Negotiations continue without reaching a formal announcement threshold, or the ceasefire collapses without a successor agreement being announced.\n\n## (e) Base Rate\n**Explicitly unknown.** There is no clear historical precedent for U.S.-Iran ceasefire extensions in this specific context. The 2015 JCPOA was a nuclear agreement, not a ceasefire framework. This appears to be a novel situation (2026 Iran war ceasefire).\n\n## (f) Strongest Evidence\n\n**Toward YES:**\n- **Evidence [1]:** President Trump extended the ceasefire \"indefinitely\" on April 21, 2026—this is a formal extension already announced, though the question asks about extensions *by* June 30, 2026. The fact that an indefinite extension was already announced suggests the U.S. is willing to make formal announcements about ceasefire status.\n- **Evidence [4]:** Trump states an agreement has been \"largely negotiated\" with details to be announced \"soon\" (as of the BBC report date). This suggests an announcement may be imminent within the 21-day window.\n- **Evidence [2]:** Reuters reports an agreement to extend the truce for another 60 days, citing four sources familiar with the matter.\n\n**Toward NO:**\n- **Evidence [6]:** Former U.S. officials express serious concerns about the ceasefire's fragility, suggesting it may not hold long enough for a formal extension to be negotiated and announced.\n- **Time constraint:** Only 21 days remain. While negotiations appear active, formal announcements require bureaucratic processes and may not materialize this quickly.\n- **Violation history:** Evidence [1] notes the ceasefire \"has been violated by both sides since its declaration,\" raising questions about whether formal extensions are even feasible.\n\n## (g) Resolution Criteria Nuances\n\n**Key narrowing elements:**\n- The criteria explicitly exclude statements that merely say the ceasefire \"remains in effect\" or \"continues to hold\"—it must be a formal **extension** or **new framework**\n- An \"overwhelming consensus of credible reporting\" can also trigger YES, not just official U.S. government statements\n- The extension must be announced by the deadline; it doesn't need to take effect by then\n\n**Potential ambiguity:**\n- Trump's April 21 indefinite extension (Evidence [1]) may already satisfy the criteria if it counts as a formal extension announcement. However, the question asks about announcements \"by June 30, 2026,\" which could mean additional announcements beyond April 21, or it could mean the April 21 announcement already resolves this YES. The phrasing suggests we're looking for announcements within the specified window, but April 21 is before June 9 (today), so it's unclear if this counts as a qualifying event.\n\n---\n\n## Probability Assessment\n\n**Factors supporting YES (21 days remaining):**\n1. Trump has already made one formal extension announcement (April 21), demonstrating willingness to make such announcements\n2. Trump's recent statement that a deal is \"largely negotiated\" suggests an announcement may come soon\n3. Reuters reports (Evidence [2]) cite sources saying a 60-day extension agreement exists\n4. The resolution criteria allow for \"overwhelming consensus of credible reporting,\" not just official statements\n5. Active negotiations are ongoing with apparent progress\n\n**Factors supporting NO:**\n1. Only 21 days remain—a short window for formal diplomatic announcements\n2. The ceasefire has been violated by both sides, creating uncertainty about whether extensions will be pursued\n3. The April 21 indefinite extension may already be the qualifying announcement, meaning no *new* extension is needed\n4. \"Largely negotiated\" doesn't mean announced; Trump's timeline for announcements is vague\n5. Status quo bias: most diplomatic processes move slowly\n\n**Critical ambiguity:**\nThe April 21 indefinite extension is crucial. If this already counts as a qualifying announcement under the resolution criteria, the answer is already YES. If the question is asking for *additional* announcements beyond April 21, the probability is lower.\n\nGiven the evidence that Trump has already announced an indefinite extension on April 21, and the resolution criteria state \"A qualifying announcement resolves YES regardless of whether the extension later takes effect,\" I interpret this as the April 21 announcement likely already satisfying the criteria. However, if that announcement doesn't count (e.g., if \"indefinite\" isn't considered a proper extension), then the 21-day window becomes critical, and the probability drops significantly.\n\n**Weighted assessment:**\n- If April 21 counts: ~95% (already resolved YES)\n- If April 21 doesn't count: ~35% (21 days, active negotiations but no guarantee)\n- Blended probability accounting for ambiguity: ~70%\n\nProbability: **72%**\n\n{\"probability\": 0.72, \"outside_view\": 0.25, \"base_rate\": \"No clear historical precedent for U.S.-Iran ceasefire extension announcements; base rate unknown\"}",
+  "gate_report": {
+    "action": "publish",
+    "confidence_class": "medium",
+    "distinct_sources": 8,
+    "evidence_count": 10,
+    "evidence_sufficiency": 0.6,
+    "freshness_days": 0.0029631269791666665,
+    "gate_score": 0.7332226192440694,
+    "mean_relevance": 0.67,
+    "model_agreement": 0.36616248138817153,
+    "primary_sources": 2,
+    "publishable": true,
+    "reasons": [
+      "HARD FLOOR: Mean relevance 0.67 < 0.70. Evidence sufficiency capped at 0.6.",
+      "Model disagreement is high.",
+      "Gate action: publish."
+    ],
+    "spec_confidence": 0.9,
+    "temporal_relevance": 0.9999670765547839
+  },
+  "generated_at_utc": "2026-06-09T17:40:34.628734+00:00",
+  "individual_results": [
+    {
+      "config": {
+        "label": "DeepSeek V4 Pro",
+        "max_tokens": 10000,
+        "name": "deepseek/deepseek-v4-pro"
+      },
+      "forecast_run": {
+        "model": "deepseek/deepseek-v4-pro",
+        "probability": 0.9,
+        "reasoning": "Based on the evidence as of June 9, 2026, a ceasefire between the U.S. and Iran has been in place since April 8 and was already extended \"indefinitely\" by President Trump on April 21. The question asks about a further official U.S. announcement by June 30, 2026, either extending the ceasefire or announcing a new peace agreement/framework under which the ceasefire continues. Trump stated on June 9 that an agreement has been \"largely negotiated\" and details will be announced soon, with Reuters (May 28) reporting a pending 60-day truce extension and the reopening of the Strait of Hormuz. Multiple other sources confirm a deal is imminent.\n\nThe resolution window is only 21 days. Trump's public statements create strong pressure for a quick official announcement, consistent with his typical style. While the ceasefire is fragile and could still collapse, the overall trajectory heavily favors an official announcement before the deadline. An announcement of a peace deal or a formal extension would satisfy the criteria; mere \"talks ongoing\" or \"ceasefire holds\" statements would not. The imminent nature of the reported agreement makes the YES outcome very likely.\n\nProbability: 90%\n{\"probability\": 0.90, \"outside_view\": 0.75, \"base_rate\": \"When a U.S. President says a major international deal is 'largely negotiated' and details are coming 'soon', the historical rate of an official announcement materializing within ~3 weeks is roughly 70-80% across comparable diplomatic engagements.\"}",
+        "token_usage": 5739
+      },
+      "result": {
+        "diagnostics": {
+          "base_rate_text": "When a U.S. President says a major international deal is 'largely negotiated' and details are coming 'soon', the historical rate of an official announcement materializing within ~3 weeks is roughly 70-80% across comparable diplomatic engagements.",
+          "mode": "lean_forecast_prompt",
+          "numeric_unit_expected": "",
+          "outside_view_probability": 0.75,
+          "parse_success": true,
+          "parsed_mc_probabilities": null,
+          "parsed_numeric_percentiles": null,
+          "question_type": "binary",
+          "spec_reason": "The model answer directly addresses the core conditions for YES/NO resolution, the timeframe, and provides a clear probability with supporting rationale, aligning well with the canonical spec.",
+          "spec_status": "OK",
+          "usage_label": "forecast_run:20260609_173459:deepseek_v4_pro:1"
+        },
+        "explanation": "Based on the evidence as of June 9, 2026, a ceasefire between the U.S. and Iran has been in place since April 8 and was already extended \"indefinitely\" by President Trump on April 21. The question asks about a further official U.S. announcement by June 30, 2026, either extending the ceasefire or announcing a new peace agreement/framework under which the ceasefire continues. Trump stated on June 9 that an agreement has been \"largely negotiated\" and details will be announced soon, with Reuters (May 28) reporting a pending 60-day truce extension and the reopening of the Strait of Hormuz. Multiple other sources confirm a deal is imminent.\n\nThe resolution window is only 21 days. Trump's public statements create strong pressure for a quick official announcement, consistent with his typical style. While the ceasefire is fragile and could still collapse, the overall trajectory heavily favors an official announcement before the deadline. An announcement of a peace deal or a formal extension would satisfy the criteria; mere \"talks ongoing\" or \"ceasefire holds\" statements would not. The imminent nature of the reported agreement makes the YES outcome very likely.\n\nProbability: 90%\n{\"probability\": 0.90, \"outside_view\": 0.75, \"base_rate\": \"When a U.S. President says a major international deal is 'largely negotiated' and details are coming 'soon', the historical rate of an official announcement materializing within ~3 weeks is roughly 70-80% across comparable diplomatic engagements.\"}",
+        "probability": 0.9,
+        "risk_flags": [],
+        "search_count": 8,
+        "sources": [
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- On 8 April 2026, the United States and Iran agreed to a two-week ceasefire in the 2026 Iran war, mediated by Pakistan.\n- Iran had rejected a draft proposal for a 45-day two-phased ceasefire framework introduced on 5 April by Pakistan, instead proposing its o",
+            "title": "2026 Iran war ceasefire - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2026_Iran_war_ceasefire"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- An agreement, according to four sources familiar with the matter, would extend the truce for another 60 days.\n- The agreement would allow traffic to flow through [unspecified location, likely related to the truce context].",
+            "title": "Iran, US reach deal to extend ceasefire, pending Trump's approval",
+            "url": "https://www.reuters.com/world/middle-east/iran-us-trade-air-strikes-after-trump-dismisses-report-hormuz-deal-2026-05-28/"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- On April 12, 2025, Iran and the United States began a series of negotiations aimed at reaching a nuclear peace agreement.\n- US president Donald Trump sent a letter to Iranian supreme leader Ali Khamenei.\n- Trump set a 60-day deadline for Iran to reach an agr",
+            "title": "2025–2026 Iran–United States negotiations - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2025%E2%80%932026_Iran%E2%80%93United_States_negotiations"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- US President Donald Trump says an agreement with Iran has been \"largely negotiated\" and details will be announced soon.\n- The deal would include the reopening of the Strait of Hormuz.\n- An Iranian foreign ministry spokesman stated that US and Iranian positio",
+            "title": "Trump says Iran deal 'largely negotiated' including reopening Strait ...",
+            "url": "https://www.bbc.com/news/articles/crmp121z3z8o"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- A deal to extend the ceasefire between the US and Iran is pending.\n- This pending deal would reopen the Strait of Hormuz.",
+            "title": "Deal to extend ceasefire between US and Iran that would ... - YouTube",
+            "url": "https://www.youtube.com/watch?v=ISenjuD5vcY"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- Barbara Leaf and Michael Doran are former U.S. officials with experience in Near Eastern Affairs and the Middle East on the National Security Council, respectively.\n- Barbara Leaf is \"very worried\" about the ceasefire holding, as are \"a lot of people,\" espec",
+            "title": "Former U.S. officials analyze chances fragile Iran ceasefire can hold",
+            "url": "https://www.pbs.org/newshour/show/former-u-s-officials-analyze-chances-fragile-iran-ceasefire-can-hold"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- President Trump is committed to making the FIFA World Cup 2026™ the greatest sporting event in world history.\n- President Donald J. Trump stated: \"Both sides, Israel and Iran, are looking to do an immediate CEASEFIRE! Final negotiations on “Peace” are procee",
+            "title": "Department of State (@StateDept) / Posts / X - Twitter",
+            "url": "https://x.com/StateDept?lang=en"
+          },
+          {
+            "date": "",
+            "quality": "Low",
+            "snippet": "- The video is titled \"US-Iran peace talks: Is a deal realistic or a diplomatic illusion?\".\n- The video was uploaded by \"Al Jazeera English\".\n- The video has 77,641 views.\n- The video was uploaded \"5 days ago\" (relative to when the text was generated/accessed)",
+            "title": "US-Iran peace talks: Is a deal realistic or a diplomatic illusion?",
+            "url": "https://www.youtube.com/watch?v=oWWmeXiS1n8"
+          },
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- The document is titled \"Iran: Background and U.S. Policy\".\n- The document was published on June 09, 2026, at 17:25:51 GMT.\n- Iran is described as playing an assertive and destabilizing role in the region.\n- Iran has the world's fourth-largest oil reserves.\n-",
+            "title": "Iran: Background and U.S. Policy - Congress.gov",
+            "url": "https://www.congress.gov/crs-product/R47321"
+          },
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- The document is a \"Joint Statement of the United States of America, Republic of Lebanon, and State of Israel on the Latest High-Level Trilateral Meeting\".\n- The document was released by the U.S. Department of State.\n- The document's URL indicates a release d",
+            "title": "Joint Statement of the United States of America, Republic of ...",
+            "url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/06/joint-statement-of-the-united-states-of-america-republic-of-lebanon-and-state-of-israel-on-the-latest-high-level-trilateral-meeting"
+          }
+        ],
+        "token_usage": {
+          "completion": 3408,
+          "prompt": 2331,
+          "total": 5739
+        },
+        "warnings": []
+      }
+    },
+    {
+      "config": {
+        "label": "GPT-5.4 Mini",
+        "max_tokens": 9000,
+        "name": "openai/gpt-5.4-mini"
+      },
+      "forecast_run": {
+        "model": "openai/gpt-5.4-mini",
+        "probability": 0.98,
+        "reasoning": "(a) Time remaining: about 21 days. Exact deadline is June 30, 2026 at 11:59 PM ET.\n\n(b) Status quo: if nothing changes, the event is already leaning to YES, because the supplied evidence says the U.S. already officially extended the ceasefire on April 21, 2026 (“extended the cease-fire indefinitely”). If that is correct, the criterion has already been met before the deadline.\n\n(c) Concrete YES scenario: the U.S. State Department, White House, or President formally announces that the U.S.-Iran ceasefire is extended again, or that a broader peace/ceasefire framework has been adopted that keeps the ceasefire in force.\n\n(d) Concrete NO scenario: no qualifying U.S. announcement ever occurs; officials only say the ceasefire is holding, talks are ongoing, or de-escalation continues, without any explicit extension/renewal/framework announcement.\n\n(e) Base rate: I don’t know a clean historical base rate for “U.S. officially announces extension of a ceasefire with Iran,” because this is a very rare and context-specific event. In general, formal ceasefire-extension announcements in U.S.-Iran crises are uncommon.\n\n(f) Strongest evidence toward YES: the provided research note stating that on April 21, President Trump “extended the cease-fire indefinitely.” If accurate, that is already a qualifying public announcement. Strongest evidence toward NO: the lack of a primary-source U.S. government citation in the evidence set, plus Reuters language on May 28 describing an agreement that “would extend” the truce, which sounds reported-but-not-yet-official.\n\n(g) Easy-to-misread issue: the question is not asking whether the ceasefire continues in practice, nor whether talks are promising. It specifically requires an official U.S. announcement of an extension/renewal or a successor agreement/framework. Also, the announcement can count even if it happened before today, as long as it occurred by the deadline.\n\nProbability: 98%\n\n{\"probability\":0.98,\"outside_view\":0.15,\"base_rate\":\"Rare U.S.-Iran ceasefire-extension announcements; historical rate is effectively very low, but no precise reference class found.\"}",
+        "token_usage": 3471
+      },
+      "result": {
+        "diagnostics": {
+          "base_rate_text": "Rare U.S.-Iran ceasefire-extension announcements; historical rate is effectively very low, but no precise reference class found.",
+          "mode": "lean_forecast_prompt",
+          "numeric_unit_expected": "",
+          "outside_view_probability": 0.15,
+          "parse_success": true,
+          "parsed_mc_probabilities": null,
+          "parsed_numeric_percentiles": null,
+          "question_type": "binary",
+          "spec_reason": "No reason provided",
+          "spec_status": "OK",
+          "usage_label": "forecast_run:20260609_173459:gpt-5.4_mini:1"
+        },
+        "explanation": "(a) Time remaining: about 21 days. Exact deadline is June 30, 2026 at 11:59 PM ET.\n\n(b) Status quo: if nothing changes, the event is already leaning to YES, because the supplied evidence says the U.S. already officially extended the ceasefire on April 21, 2026 (“extended the cease-fire indefinitely”). If that is correct, the criterion has already been met before the deadline.\n\n(c) Concrete YES scenario: the U.S. State Department, White House, or President formally announces that the U.S.-Iran ceasefire is extended again, or that a broader peace/ceasefire framework has been adopted that keeps the ceasefire in force.\n\n(d) Concrete NO scenario: no qualifying U.S. announcement ever occurs; officials only say the ceasefire is holding, talks are ongoing, or de-escalation continues, without any explicit extension/renewal/framework announcement.\n\n(e) Base rate: I don’t know a clean historical base rate for “U.S. officially announces extension of a ceasefire with Iran,” because this is a very rare and context-specific event. In general, formal ceasefire-extension announcements in U.S.-Iran crises are uncommon.\n\n(f) Strongest evidence toward YES: the provided research note stating that on April 21, President Trump “extended the cease-fire indefinitely.” If accurate, that is already a qualifying public announcement. Strongest evidence toward NO: the lack of a primary-source U.S. government citation in the evidence set, plus Reuters language on May 28 describing an agreement that “would extend” the truce, which sounds reported-but-not-yet-official.\n\n(g) Easy-to-misread issue: the question is not asking whether the ceasefire continues in practice, nor whether talks are promising. It specifically requires an official U.S. announcement of an extension/renewal or a successor agreement/framework. Also, the announcement can count even if it happened before today, as long as it occurred by the deadline.\n\nProbability: 98%\n\n{\"probability\":0.98,\"outside_view\":0.15,\"base_rate\":\"Rare U.S.-Iran ceasefire-extension announcements; historical rate is effectively very low, but no precise reference class found.\"}",
+        "probability": 0.98,
+        "risk_flags": [],
+        "search_count": 8,
+        "sources": [
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- On 8 April 2026, the United States and Iran agreed to a two-week ceasefire in the 2026 Iran war, mediated by Pakistan.\n- Iran had rejected a draft proposal for a 45-day two-phased ceasefire framework introduced on 5 April by Pakistan, instead proposing its o",
+            "title": "2026 Iran war ceasefire - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2026_Iran_war_ceasefire"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- An agreement, according to four sources familiar with the matter, would extend the truce for another 60 days.\n- The agreement would allow traffic to flow through [unspecified location, likely related to the truce context].",
+            "title": "Iran, US reach deal to extend ceasefire, pending Trump's approval",
+            "url": "https://www.reuters.com/world/middle-east/iran-us-trade-air-strikes-after-trump-dismisses-report-hormuz-deal-2026-05-28/"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- On April 12, 2025, Iran and the United States began a series of negotiations aimed at reaching a nuclear peace agreement.\n- US president Donald Trump sent a letter to Iranian supreme leader Ali Khamenei.\n- Trump set a 60-day deadline for Iran to reach an agr",
+            "title": "2025–2026 Iran–United States negotiations - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2025%E2%80%932026_Iran%E2%80%93United_States_negotiations"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- US President Donald Trump says an agreement with Iran has been \"largely negotiated\" and details will be announced soon.\n- The deal would include the reopening of the Strait of Hormuz.\n- An Iranian foreign ministry spokesman stated that US and Iranian positio",
+            "title": "Trump says Iran deal 'largely negotiated' including reopening Strait ...",
+            "url": "https://www.bbc.com/news/articles/crmp121z3z8o"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- A deal to extend the ceasefire between the US and Iran is pending.\n- This pending deal would reopen the Strait of Hormuz.",
+            "title": "Deal to extend ceasefire between US and Iran that would ... - YouTube",
+            "url": "https://www.youtube.com/watch?v=ISenjuD5vcY"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- Barbara Leaf and Michael Doran are former U.S. officials with experience in Near Eastern Affairs and the Middle East on the National Security Council, respectively.\n- Barbara Leaf is \"very worried\" about the ceasefire holding, as are \"a lot of people,\" espec",
+            "title": "Former U.S. officials analyze chances fragile Iran ceasefire can hold",
+            "url": "https://www.pbs.org/newshour/show/former-u-s-officials-analyze-chances-fragile-iran-ceasefire-can-hold"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- President Trump is committed to making the FIFA World Cup 2026™ the greatest sporting event in world history.\n- President Donald J. Trump stated: \"Both sides, Israel and Iran, are looking to do an immediate CEASEFIRE! Final negotiations on “Peace” are procee",
+            "title": "Department of State (@StateDept) / Posts / X - Twitter",
+            "url": "https://x.com/StateDept?lang=en"
+          },
+          {
+            "date": "",
+            "quality": "Low",
+            "snippet": "- The video is titled \"US-Iran peace talks: Is a deal realistic or a diplomatic illusion?\".\n- The video was uploaded by \"Al Jazeera English\".\n- The video has 77,641 views.\n- The video was uploaded \"5 days ago\" (relative to when the text was generated/accessed)",
+            "title": "US-Iran peace talks: Is a deal realistic or a diplomatic illusion?",
+            "url": "https://www.youtube.com/watch?v=oWWmeXiS1n8"
+          },
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- The document is titled \"Iran: Background and U.S. Policy\".\n- The document was published on June 09, 2026, at 17:25:51 GMT.\n- Iran is described as playing an assertive and destabilizing role in the region.\n- Iran has the world's fourth-largest oil reserves.\n-",
+            "title": "Iran: Background and U.S. Policy - Congress.gov",
+            "url": "https://www.congress.gov/crs-product/R47321"
+          },
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- The document is a \"Joint Statement of the United States of America, Republic of Lebanon, and State of Israel on the Latest High-Level Trilateral Meeting\".\n- The document was released by the U.S. Department of State.\n- The document's URL indicates a release d",
+            "title": "Joint Statement of the United States of America, Republic of ...",
+            "url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/06/joint-statement-of-the-united-states-of-america-republic-of-lebanon-and-state-of-israel-on-the-latest-high-level-trilateral-meeting"
+          }
+        ],
+        "token_usage": {
+          "completion": 1146,
+          "prompt": 2325,
+          "total": 3471
+        },
+        "warnings": []
+      }
+    },
+    {
+      "config": {
+        "label": "Kimi K2.6",
+        "max_tokens": 10000,
+        "name": "moonshotai/kimi-k2.6"
+      },
+      "forecast_run": {
+        "model": "moonshotai/kimi-k2.6",
+        "probability": 0.99,
+        "reasoning": "(a) **Time remaining:** Today is June 9, 2026. The exact deadline is June 30, 2026 at 11:59 PM ET, so roughly 21 days remain.\n\n(b) **Status quo outcome:** The U.S. already announced an indefinite extension of the ceasefire with Iran on April 21, 2026. Because the resolution criteria count any clear public U.S. confirmation of an extension announced *before* the deadline—and do not require Iranian concurrence—the status quo already satisfies the YES condition.\n\n(c) **Concrete YES scenario:** The scenario has already occurred: on April 21, 2026, President Trump publicly stated that the U.S. was extending the ceasefire indefinitely, which qualifies under criterion (1).\n\n(d) **Concrete NO scenario:** The U.S. government would have to retroactively disavow the April 21 extension as non-official, and then fail to issue any new extension, renewal, or successor framework by June 30. This is highly implausible given the record.\n\n(e) **Base rate:** Reference class: ceasefires in modern interstate wars that are extended or replaced by a formal diplomatic framework within three months; precise historical rates are uncertain but estimated in the 50–60% range. Here, however, the specific evidence overrides the base rate because the event has already taken place.\n\n(f) **Strongest evidence:**\n- **Toward YES:** Evidence [1] explicitly states that on April 21, 2026, President Trump extended the U.S.-Iran ceasefire indefinitely.\n- **Toward NO:** Evidence [1] and [6] note repeated violations and describe the truce as “fragile,” which could raise doubts about durability, though the criteria explicitly ignore subsequent violations for resolution purposes.\n\n(g) **Easy misreading:** The criteria broaden the question by accepting a unilateral U.S. announcement and do not require Iranian confirmation. One might naively assume a new mutual agreement is needed, or that only statements made *after* the present date count, but the resolution window includes any qualifying announcement prior to the deadline.\n\nProbability: 99%\n\n{\"probability\": 0.99, \"outside_view\": 0.55, \"base_rate\": \"Reference class: ceasefires in modern interstate wars extended or superseded by a formal agreement within three months; estimated historical rate is roughly 50-60%.\"}",
+        "token_usage": 11835
+      },
+      "result": {
+        "diagnostics": {
+          "base_rate_text": "Reference class: ceasefires in modern interstate wars extended or superseded by a formal agreement within three months; estimated historical rate is roughly 50-60%.",
+          "mode": "lean_forecast_prompt",
+          "numeric_unit_expected": "",
+          "outside_view_probability": 0.55,
+          "parse_success": true,
+          "parsed_mc_probabilities": null,
+          "parsed_numeric_percentiles": null,
+          "question_type": "binary",
+          "spec_reason": "The model answer accurately interprets and applies the canonical spec, including the definition of YES/NO conditions and the resolution window.",
+          "spec_status": "OK",
+          "usage_label": "forecast_run:20260609_173459:kimi_k2.6:1"
+        },
+        "explanation": "(a) **Time remaining:** Today is June 9, 2026. The exact deadline is June 30, 2026 at 11:59 PM ET, so roughly 21 days remain.\n\n(b) **Status quo outcome:** The U.S. already announced an indefinite extension of the ceasefire with Iran on April 21, 2026. Because the resolution criteria count any clear public U.S. confirmation of an extension announced *before* the deadline—and do not require Iranian concurrence—the status quo already satisfies the YES condition.\n\n(c) **Concrete YES scenario:** The scenario has already occurred: on April 21, 2026, President Trump publicly stated that the U.S. was extending the ceasefire indefinitely, which qualifies under criterion (1).\n\n(d) **Concrete NO scenario:** The U.S. government would have to retroactively disavow the April 21 extension as non-official, and then fail to issue any new extension, renewal, or successor framework by June 30. This is highly implausible given the record.\n\n(e) **Base rate:** Reference class: ceasefires in modern interstate wars that are extended or replaced by a formal diplomatic framework within three months; precise historical rates are uncertain but estimated in the 50–60% range. Here, however, the specific evidence overrides the base rate because the event has already taken place.\n\n(f) **Strongest evidence:**\n- **Toward YES:** Evidence [1] explicitly states that on April 21, 2026, President Trump extended the U.S.-Iran ceasefire indefinitely.\n- **Toward NO:** Evidence [1] and [6] note repeated violations and describe the truce as “fragile,” which could raise doubts about durability, though the criteria explicitly ignore subsequent violations for resolution purposes.\n\n(g) **Easy misreading:** The criteria broaden the question by accepting a unilateral U.S. announcement and do not require Iranian confirmation. One might naively assume a new mutual agreement is needed, or that only statements made *after* the present date count, but the resolution window includes any qualifying announcement prior to the deadline.\n\nProbability: 99%\n\n{\"probability\": 0.99, \"outside_view\": 0.55, \"base_rate\": \"Reference class: ceasefires in modern interstate wars extended or superseded by a formal agreement within three months; estimated historical rate is roughly 50-60%.\"}",
+        "probability": 0.99,
+        "risk_flags": [],
+        "search_count": 8,
+        "sources": [
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- On 8 April 2026, the United States and Iran agreed to a two-week ceasefire in the 2026 Iran war, mediated by Pakistan.\n- Iran had rejected a draft proposal for a 45-day two-phased ceasefire framework introduced on 5 April by Pakistan, instead proposing its o",
+            "title": "2026 Iran war ceasefire - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2026_Iran_war_ceasefire"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- An agreement, according to four sources familiar with the matter, would extend the truce for another 60 days.\n- The agreement would allow traffic to flow through [unspecified location, likely related to the truce context].",
+            "title": "Iran, US reach deal to extend ceasefire, pending Trump's approval",
+            "url": "https://www.reuters.com/world/middle-east/iran-us-trade-air-strikes-after-trump-dismisses-report-hormuz-deal-2026-05-28/"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- On April 12, 2025, Iran and the United States began a series of negotiations aimed at reaching a nuclear peace agreement.\n- US president Donald Trump sent a letter to Iranian supreme leader Ali Khamenei.\n- Trump set a 60-day deadline for Iran to reach an agr",
+            "title": "2025–2026 Iran–United States negotiations - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2025%E2%80%932026_Iran%E2%80%93United_States_negotiations"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- US President Donald Trump says an agreement with Iran has been \"largely negotiated\" and details will be announced soon.\n- The deal would include the reopening of the Strait of Hormuz.\n- An Iranian foreign ministry spokesman stated that US and Iranian positio",
+            "title": "Trump says Iran deal 'largely negotiated' including reopening Strait ...",
+            "url": "https://www.bbc.com/news/articles/crmp121z3z8o"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- A deal to extend the ceasefire between the US and Iran is pending.\n- This pending deal would reopen the Strait of Hormuz.",
+            "title": "Deal to extend ceasefire between US and Iran that would ... - YouTube",
+            "url": "https://www.youtube.com/watch?v=ISenjuD5vcY"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- Barbara Leaf and Michael Doran are former U.S. officials with experience in Near Eastern Affairs and the Middle East on the National Security Council, respectively.\n- Barbara Leaf is \"very worried\" about the ceasefire holding, as are \"a lot of people,\" espec",
+            "title": "Former U.S. officials analyze chances fragile Iran ceasefire can hold",
+            "url": "https://www.pbs.org/newshour/show/former-u-s-officials-analyze-chances-fragile-iran-ceasefire-can-hold"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- President Trump is committed to making the FIFA World Cup 2026™ the greatest sporting event in world history.\n- President Donald J. Trump stated: \"Both sides, Israel and Iran, are looking to do an immediate CEASEFIRE! Final negotiations on “Peace” are procee",
+            "title": "Department of State (@StateDept) / Posts / X - Twitter",
+            "url": "https://x.com/StateDept?lang=en"
+          },
+          {
+            "date": "",
+            "quality": "Low",
+            "snippet": "- The video is titled \"US-Iran peace talks: Is a deal realistic or a diplomatic illusion?\".\n- The video was uploaded by \"Al Jazeera English\".\n- The video has 77,641 views.\n- The video was uploaded \"5 days ago\" (relative to when the text was generated/accessed)",
+            "title": "US-Iran peace talks: Is a deal realistic or a diplomatic illusion?",
+            "url": "https://www.youtube.com/watch?v=oWWmeXiS1n8"
+          },
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- The document is titled \"Iran: Background and U.S. Policy\".\n- The document was published on June 09, 2026, at 17:25:51 GMT.\n- Iran is described as playing an assertive and destabilizing role in the region.\n- Iran has the world's fourth-largest oil reserves.\n-",
+            "title": "Iran: Background and U.S. Policy - Congress.gov",
+            "url": "https://www.congress.gov/crs-product/R47321"
+          },
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- The document is a \"Joint Statement of the United States of America, Republic of Lebanon, and State of Israel on the Latest High-Level Trilateral Meeting\".\n- The document was released by the U.S. Department of State.\n- The document's URL indicates a release d",
+            "title": "Joint Statement of the United States of America, Republic of ...",
+            "url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/06/joint-statement-of-the-united-states-of-america-republic-of-lebanon-and-state-of-israel-on-the-latest-high-level-trilateral-meeting"
+          }
+        ],
+        "token_usage": {
+          "completion": 9495,
+          "prompt": 2340,
+          "total": 11835
+        },
+        "warnings": []
+      }
+    },
+    {
+      "config": {
+        "label": "Gemini 3 Flash",
+        "max_tokens": 9000,
+        "name": "google/gemini-3-flash-preview"
+      },
+      "forecast_run": {
+        "model": "google/gemini-3-flash-preview",
+        "probability": 0.75,
+        "reasoning": "As a professional forecaster, I have analyzed the current geopolitical situation between the United States and Iran based on the provided evidence.\n\n(a) **Time remaining:** 21 days remain until the deadline of June 30, 2026, at 11:59 PM ET.\n(b) **Status quo:** There is currently a fragile, indefinite ceasefire in place (extended by President Trump on April 21, 2026). Negotiations for a \"Memorandum of Understanding pertaining to PEACE\" or a formal successor framework are actively ongoing but have not been finalized or officially announced as a new agreement.\n(c) **YES scenario:** Before June 30, the U.S. and Iran finalize the \"largely negotiated\" deal mentioned by President Trump. The White House releases a statement announcing a \"New Peace Framework\" or a \"60-day extension of the truce\" to facilitate the reopening of the Strait of Hormuz.\n(d) **NO scenario:** Negotiations continue past the deadline without a formal announcement of a *new* extension or framework. The parties simply continue under the existing \"indefinite\" ceasefire, or the ceasefire collapses into renewed hostilities before a new agreement is signed.\n(e) **Base rate:** Diplomatic negotiations of this magnitude often take longer than expected; however, when a \"largely negotiated\" deal is publicly touted by a U.S. President, the probability of a formal announcement within a month is relatively high.\n(f) **Strongest Evidence:** For YES: President Trump's social media posts and public statements that a deal is \"largely negotiated\" and \"details will be announced soon,\" combined with reports of a pending 60-day extension. For NO: Historical volatility in U.S.-Iran relations and reports of ongoing ceasefire violations and \"fragility\" that could derail a final announcement.\n(g) **Resolution Nuance:** The criteria specifically exclude statements that the ceasefire \"remains in effect\" or \"talks are ongoing.\" It requires a *new* extension, renewal, or successor framework. Since the current ceasefire is already \"indefinite,\" a simple continuation doesn't count; there must be a new formal step or a broader peace agreement announced.\n\nThe evidence suggests that a deal is imminent and being actively messaged by the U.S. executive branch. With 21 days left and the \"largely negotiated\" status, there is a high likelihood of a formal announcement to capitalize on the diplomatic momentum before the end of June.\n\nProbability: 75%\n\n{\"probability\": 0.75, \"outside_view\": 0.4, \"base_rate\": \"Diplomatic negotiations involving major conflict de-escalation frameworks typically have a moderate success rate within a 30-day window once 'largely negotiated' status is claimed.\"}",
+        "token_usage": 3212
+      },
+      "result": {
+        "diagnostics": {
+          "base_rate_text": "Diplomatic negotiations involving major conflict de-escalation frameworks typically have a moderate success rate within a 30-day window once 'largely negotiated' status is claimed.",
+          "mode": "lean_forecast_prompt",
+          "numeric_unit_expected": "",
+          "outside_view_probability": 0.4,
+          "parse_success": true,
+          "parsed_mc_probabilities": null,
+          "parsed_numeric_percentiles": null,
+          "question_type": "binary",
+          "spec_reason": "The model answer introduces a specific event (President Trump's extension of a ceasefire on April 21, 2026) and a 'largely negotiated' deal that are not present in the canonical spec. The canonical spec is a general question about a future event, not tied to specific past events or ongoing negotiations mentioned in the model answer.",
+          "spec_status": "MAJOR_DRIFT",
+          "usage_label": "forecast_run:20260609_173459:gemini_3_flash:1"
+        },
+        "explanation": "As a professional forecaster, I have analyzed the current geopolitical situation between the United States and Iran based on the provided evidence.\n\n(a) **Time remaining:** 21 days remain until the deadline of June 30, 2026, at 11:59 PM ET.\n(b) **Status quo:** There is currently a fragile, indefinite ceasefire in place (extended by President Trump on April 21, 2026). Negotiations for a \"Memorandum of Understanding pertaining to PEACE\" or a formal successor framework are actively ongoing but have not been finalized or officially announced as a new agreement.\n(c) **YES scenario:** Before June 30, the U.S. and Iran finalize the \"largely negotiated\" deal mentioned by President Trump. The White House releases a statement announcing a \"New Peace Framework\" or a \"60-day extension of the truce\" to facilitate the reopening of the Strait of Hormuz.\n(d) **NO scenario:** Negotiations continue past the deadline without a formal announcement of a *new* extension or framework. The parties simply continue under the existing \"indefinite\" ceasefire, or the ceasefire collapses into renewed hostilities before a new agreement is signed.\n(e) **Base rate:** Diplomatic negotiations of this magnitude often take longer than expected; however, when a \"largely negotiated\" deal is publicly touted by a U.S. President, the probability of a formal announcement within a month is relatively high.\n(f) **Strongest Evidence:** For YES: President Trump's social media posts and public statements that a deal is \"largely negotiated\" and \"details will be announced soon,\" combined with reports of a pending 60-day extension. For NO: Historical volatility in U.S.-Iran relations and reports of ongoing ceasefire violations and \"fragility\" that could derail a final announcement.\n(g) **Resolution Nuance:** The criteria specifically exclude statements that the ceasefire \"remains in effect\" or \"talks are ongoing.\" It requires a *new* extension, renewal, or successor framework. Since the current ceasefire is already \"indefinite,\" a simple continuation doesn't count; there must be a new formal step or a broader peace agreement announced.\n\nThe evidence suggests that a deal is imminent and being actively messaged by the U.S. executive branch. With 21 days left and the \"largely negotiated\" status, there is a high likelihood of a formal announcement to capitalize on the diplomatic momentum before the end of June.\n\nProbability: 75%\n\n{\"probability\": 0.75, \"outside_view\": 0.4, \"base_rate\": \"Diplomatic negotiations involving major conflict de-escalation frameworks typically have a moderate success rate within a 30-day window once 'largely negotiated' status is claimed.\"}",
+        "probability": 0.75,
+        "risk_flags": [
+          "SPEC_MAJORDRIFT"
+        ],
+        "search_count": 8,
+        "sources": [
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- On 8 April 2026, the United States and Iran agreed to a two-week ceasefire in the 2026 Iran war, mediated by Pakistan.\n- Iran had rejected a draft proposal for a 45-day two-phased ceasefire framework introduced on 5 April by Pakistan, instead proposing its o",
+            "title": "2026 Iran war ceasefire - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2026_Iran_war_ceasefire"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- An agreement, according to four sources familiar with the matter, would extend the truce for another 60 days.\n- The agreement would allow traffic to flow through [unspecified location, likely related to the truce context].",
+            "title": "Iran, US reach deal to extend ceasefire, pending Trump's approval",
+            "url": "https://www.reuters.com/world/middle-east/iran-us-trade-air-strikes-after-trump-dismisses-report-hormuz-deal-2026-05-28/"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- On April 12, 2025, Iran and the United States began a series of negotiations aimed at reaching a nuclear peace agreement.\n- US president Donald Trump sent a letter to Iranian supreme leader Ali Khamenei.\n- Trump set a 60-day deadline for Iran to reach an agr",
+            "title": "2025–2026 Iran–United States negotiations - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2025%E2%80%932026_Iran%E2%80%93United_States_negotiations"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- US President Donald Trump says an agreement with Iran has been \"largely negotiated\" and details will be announced soon.\n- The deal would include the reopening of the Strait of Hormuz.\n- An Iranian foreign ministry spokesman stated that US and Iranian positio",
+            "title": "Trump says Iran deal 'largely negotiated' including reopening Strait ...",
+            "url": "https://www.bbc.com/news/articles/crmp121z3z8o"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- A deal to extend the ceasefire between the US and Iran is pending.\n- This pending deal would reopen the Strait of Hormuz.",
+            "title": "Deal to extend ceasefire between US and Iran that would ... - YouTube",
+            "url": "https://www.youtube.com/watch?v=ISenjuD5vcY"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- Barbara Leaf and Michael Doran are former U.S. officials with experience in Near Eastern Affairs and the Middle East on the National Security Council, respectively.\n- Barbara Leaf is \"very worried\" about the ceasefire holding, as are \"a lot of people,\" espec",
+            "title": "Former U.S. officials analyze chances fragile Iran ceasefire can hold",
+            "url": "https://www.pbs.org/newshour/show/former-u-s-officials-analyze-chances-fragile-iran-ceasefire-can-hold"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- President Trump is committed to making the FIFA World Cup 2026™ the greatest sporting event in world history.\n- President Donald J. Trump stated: \"Both sides, Israel and Iran, are looking to do an immediate CEASEFIRE! Final negotiations on “Peace” are procee",
+            "title": "Department of State (@StateDept) / Posts / X - Twitter",
+            "url": "https://x.com/StateDept?lang=en"
+          },
+          {
+            "date": "",
+            "quality": "Low",
+            "snippet": "- The video is titled \"US-Iran peace talks: Is a deal realistic or a diplomatic illusion?\".\n- The video was uploaded by \"Al Jazeera English\".\n- The video has 77,641 views.\n- The video was uploaded \"5 days ago\" (relative to when the text was generated/accessed)",
+            "title": "US-Iran peace talks: Is a deal realistic or a diplomatic illusion?",
+            "url": "https://www.youtube.com/watch?v=oWWmeXiS1n8"
+          },
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- The document is titled \"Iran: Background and U.S. Policy\".\n- The document was published on June 09, 2026, at 17:25:51 GMT.\n- Iran is described as playing an assertive and destabilizing role in the region.\n- Iran has the world's fourth-largest oil reserves.\n-",
+            "title": "Iran: Background and U.S. Policy - Congress.gov",
+            "url": "https://www.congress.gov/crs-product/R47321"
+          },
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- The document is a \"Joint Statement of the United States of America, Republic of Lebanon, and State of Israel on the Latest High-Level Trilateral Meeting\".\n- The document was released by the U.S. Department of State.\n- The document's URL indicates a release d",
+            "title": "Joint Statement of the United States of America, Republic of ...",
+            "url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/06/joint-statement-of-the-united-states-of-america-republic-of-lebanon-and-state-of-israel-on-the-latest-high-level-trilateral-meeting"
+          }
+        ],
+        "token_usage": {
+          "completion": 596,
+          "prompt": 2616,
+          "total": 3212
+        },
+        "warnings": [
+          "Spec consistency MAJOR_DRIFT: The model answer introduces a specific event (President Trump's extension of a ceasefire on April 21, 2026) and a 'largely negotiated' deal that are not present in the canonical spec. The canonical spec is a general question about a future event, not tied to specific past events or ongoing negotiations mentioned in the model answer."
+        ]
+      }
+    },
+    {
+      "config": {
+        "label": "Claude Haiku 4.5",
+        "max_tokens": 9000,
+        "name": "anthropic/claude-haiku-4.5"
+      },
+      "forecast_run": {
+        "model": "anthropic/claude-haiku-4.5",
+        "probability": 0.72,
+        "reasoning": "# Forecasting Analysis\n\n## (a) Time Remaining and Deadline\n- **Today's date:** June 9, 2026\n- **Deadline:** June 30, 2026 at 11:59 PM ET\n- **Time remaining:** 21 days\n\n## (b) Status Quo Outcome\nIf nothing changes, the resolution would be **NO**. The ceasefire remains in effect but no formal extension or new agreement framework has been officially announced by the U.S. government as of the research date (June 9, 2026).\n\n## (c) Concrete YES Scenario\nThe U.S. State Department issues an official statement or press release within the next 21 days formally announcing:\n- An extension of the ceasefire agreement with Iran (with or without a specific duration), OR\n- A new peace agreement/ceasefire framework that explicitly renews the ceasefire commitment\n\nThis could occur as part of ongoing negotiations that appear to be \"largely negotiated\" according to Trump's recent statements.\n\n## (d) Concrete NO Scenario\nThe ceasefire continues to hold informally, but no formal U.S. government announcement of an extension or new framework is made by June 30, 2026. Negotiations continue without reaching a formal announcement threshold, or the ceasefire collapses without a successor agreement being announced.\n\n## (e) Base Rate\n**Explicitly unknown.** There is no clear historical precedent for U.S.-Iran ceasefire extensions in this specific context. The 2015 JCPOA was a nuclear agreement, not a ceasefire framework. This appears to be a novel situation (2026 Iran war ceasefire).\n\n## (f) Strongest Evidence\n\n**Toward YES:**\n- **Evidence [1]:** President Trump extended the ceasefire \"indefinitely\" on April 21, 2026—this is a formal extension already announced, though the question asks about extensions *by* June 30, 2026. The fact that an indefinite extension was already announced suggests the U.S. is willing to make formal announcements about ceasefire status.\n- **Evidence [4]:** Trump states an agreement has been \"largely negotiated\" with details to be announced \"soon\" (as of the BBC report date). This suggests an announcement may be imminent within the 21-day window.\n- **Evidence [2]:** Reuters reports an agreement to extend the truce for another 60 days, citing four sources familiar with the matter.\n\n**Toward NO:**\n- **Evidence [6]:** Former U.S. officials express serious concerns about the ceasefire's fragility, suggesting it may not hold long enough for a formal extension to be negotiated and announced.\n- **Time constraint:** Only 21 days remain. While negotiations appear active, formal announcements require bureaucratic processes and may not materialize this quickly.\n- **Violation history:** Evidence [1] notes the ceasefire \"has been violated by both sides since its declaration,\" raising questions about whether formal extensions are even feasible.\n\n## (g) Resolution Criteria Nuances\n\n**Key narrowing elements:**\n- The criteria explicitly exclude statements that merely say the ceasefire \"remains in effect\" or \"continues to hold\"—it must be a formal **extension** or **new framework**\n- An \"overwhelming consensus of credible reporting\" can also trigger YES, not just official U.S. government statements\n- The extension must be announced by the deadline; it doesn't need to take effect by then\n\n**Potential ambiguity:**\n- Trump's April 21 indefinite extension (Evidence [1]) may already satisfy the criteria if it counts as a formal extension announcement. However, the question asks about announcements \"by June 30, 2026,\" which could mean additional announcements beyond April 21, or it could mean the April 21 announcement already resolves this YES. The phrasing suggests we're looking for announcements within the specified window, but April 21 is before June 9 (today), so it's unclear if this counts as a qualifying event.\n\n---\n\n## Probability Assessment\n\n**Factors supporting YES (21 days remaining):**\n1. Trump has already made one formal extension announcement (April 21), demonstrating willingness to make such announcements\n2. Trump's recent statement that a deal is \"largely negotiated\" suggests an announcement may come soon\n3. Reuters reports (Evidence [2]) cite sources saying a 60-day extension agreement exists\n4. The resolution criteria allow for \"overwhelming consensus of credible reporting,\" not just official statements\n5. Active negotiations are ongoing with apparent progress\n\n**Factors supporting NO:**\n1. Only 21 days remain—a short window for formal diplomatic announcements\n2. The ceasefire has been violated by both sides, creating uncertainty about whether extensions will be pursued\n3. The April 21 indefinite extension may already be the qualifying announcement, meaning no *new* extension is needed\n4. \"Largely negotiated\" doesn't mean announced; Trump's timeline for announcements is vague\n5. Status quo bias: most diplomatic processes move slowly\n\n**Critical ambiguity:**\nThe April 21 indefinite extension is crucial. If this already counts as a qualifying announcement under the resolution criteria, the answer is already YES. If the question is asking for *additional* announcements beyond April 21, the probability is lower.\n\nGiven the evidence that Trump has already announced an indefinite extension on April 21, and the resolution criteria state \"A qualifying announcement resolves YES regardless of whether the extension later takes effect,\" I interpret this as the April 21 announcement likely already satisfying the criteria. However, if that announcement doesn't count (e.g., if \"indefinite\" isn't considered a proper extension), then the 21-day window becomes critical, and the probability drops significantly.\n\n**Weighted assessment:**\n- If April 21 counts: ~95% (already resolved YES)\n- If April 21 doesn't count: ~35% (21 days, active negotiations but no guarantee)\n- Blended probability accounting for ambiguity: ~70%\n\nProbability: **72%**\n\n{\"probability\": 0.72, \"outside_view\": 0.25, \"base_rate\": \"No clear historical precedent for U.S.-Iran ceasefire extension announcements; base rate unknown\"}",
+        "token_usage": 4070
+      },
+      "result": {
+        "diagnostics": {
+          "base_rate_text": "No clear historical precedent for U.S.-Iran ceasefire extension announcements; base rate unknown",
+          "mode": "lean_forecast_prompt",
+          "numeric_unit_expected": "",
+          "outside_view_probability": 0.25,
+          "parse_success": true,
+          "parsed_mc_probabilities": null,
+          "parsed_numeric_percentiles": null,
+          "question_type": "binary",
+          "spec_reason": "The model's interpretation of the April 21st 'indefinite extension' as potentially resolving the question already is a significant deviation from the canonical spec's implicit forward-looking nature. The question asks 'Will the U.S. officially announce... by June 30, 2026', implying an announcement *within* the specified window, not one that occurred prior to the question's effective start date (which is typically when the question is posed, not the deadline). While the model acknowledges this ambiguity, its 'weighted assessment' heavily leans on the pre-existing announcement, which might not be valid under a strict interpretation of 'by June 30, 2026' meaning an announcement *during* the question's active period.",
+          "spec_status": "MINOR_DRIFT",
+          "usage_label": "forecast_run:20260609_173459:claude_haiku_4.5:1"
+        },
+        "explanation": "# Forecasting Analysis\n\n## (a) Time Remaining and Deadline\n- **Today's date:** June 9, 2026\n- **Deadline:** June 30, 2026 at 11:59 PM ET\n- **Time remaining:** 21 days\n\n## (b) Status Quo Outcome\nIf nothing changes, the resolution would be **NO**. The ceasefire remains in effect but no formal extension or new agreement framework has been officially announced by the U.S. government as of the research date (June 9, 2026).\n\n## (c) Concrete YES Scenario\nThe U.S. State Department issues an official statement or press release within the next 21 days formally announcing:\n- An extension of the ceasefire agreement with Iran (with or without a specific duration), OR\n- A new peace agreement/ceasefire framework that explicitly renews the ceasefire commitment\n\nThis could occur as part of ongoing negotiations that appear to be \"largely negotiated\" according to Trump's recent statements.\n\n## (d) Concrete NO Scenario\nThe ceasefire continues to hold informally, but no formal U.S. government announcement of an extension or new framework is made by June 30, 2026. Negotiations continue without reaching a formal announcement threshold, or the ceasefire collapses without a successor agreement being announced.\n\n## (e) Base Rate\n**Explicitly unknown.** There is no clear historical precedent for U.S.-Iran ceasefire extensions in this specific context. The 2015 JCPOA was a nuclear agreement, not a ceasefire framework. This appears to be a novel situation (2026 Iran war ceasefire).\n\n## (f) Strongest Evidence\n\n**Toward YES:**\n- **Evidence [1]:** President Trump extended the ceasefire \"indefinitely\" on April 21, 2026—this is a formal extension already announced, though the question asks about extensions *by* June 30, 2026. The fact that an indefinite extension was already announced suggests the U.S. is willing to make formal announcements about ceasefire status.\n- **Evidence [4]:** Trump states an agreement has been \"largely negotiated\" with details to be announced \"soon\" (as of the BBC report date). This suggests an announcement may be imminent within the 21-day window.\n- **Evidence [2]:** Reuters reports an agreement to extend the truce for another 60 days, citing four sources familiar with the matter.\n\n**Toward NO:**\n- **Evidence [6]:** Former U.S. officials express serious concerns about the ceasefire's fragility, suggesting it may not hold long enough for a formal extension to be negotiated and announced.\n- **Time constraint:** Only 21 days remain. While negotiations appear active, formal announcements require bureaucratic processes and may not materialize this quickly.\n- **Violation history:** Evidence [1] notes the ceasefire \"has been violated by both sides since its declaration,\" raising questions about whether formal extensions are even feasible.\n\n## (g) Resolution Criteria Nuances\n\n**Key narrowing elements:**\n- The criteria explicitly exclude statements that merely say the ceasefire \"remains in effect\" or \"continues to hold\"—it must be a formal **extension** or **new framework**\n- An \"overwhelming consensus of credible reporting\" can also trigger YES, not just official U.S. government statements\n- The extension must be announced by the deadline; it doesn't need to take effect by then\n\n**Potential ambiguity:**\n- Trump's April 21 indefinite extension (Evidence [1]) may already satisfy the criteria if it counts as a formal extension announcement. However, the question asks about announcements \"by June 30, 2026,\" which could mean additional announcements beyond April 21, or it could mean the April 21 announcement already resolves this YES. The phrasing suggests we're looking for announcements within the specified window, but April 21 is before June 9 (today), so it's unclear if this counts as a qualifying event.\n\n---\n\n## Probability Assessment\n\n**Factors supporting YES (21 days remaining):**\n1. Trump has already made one formal extension announcement (April 21), demonstrating willingness to make such announcements\n2. Trump's recent statement that a deal is \"largely negotiated\" suggests an announcement may come soon\n3. Reuters reports (Evidence [2]) cite sources saying a 60-day extension agreement exists\n4. The resolution criteria allow for \"overwhelming consensus of credible reporting,\" not just official statements\n5. Active negotiations are ongoing with apparent progress\n\n**Factors supporting NO:**\n1. Only 21 days remain—a short window for formal diplomatic announcements\n2. The ceasefire has been violated by both sides, creating uncertainty about whether extensions will be pursued\n3. The April 21 indefinite extension may already be the qualifying announcement, meaning no *new* extension is needed\n4. \"Largely negotiated\" doesn't mean announced; Trump's timeline for announcements is vague\n5. Status quo bias: most diplomatic processes move slowly\n\n**Critical ambiguity:**\nThe April 21 indefinite extension is crucial. If this already counts as a qualifying announcement under the resolution criteria, the answer is already YES. If the question is asking for *additional* announcements beyond April 21, the probability is lower.\n\nGiven the evidence that Trump has already announced an indefinite extension on April 21, and the resolution criteria state \"A qualifying announcement resolves YES regardless of whether the extension later takes effect,\" I interpret this as the April 21 announcement likely already satisfying the criteria. However, if that announcement doesn't count (e.g., if \"indefinite\" isn't considered a proper extension), then the 21-day window becomes critical, and the probability drops significantly.\n\n**Weighted assessment:**\n- If April 21 counts: ~95% (already resolved YES)\n- If April 21 doesn't count: ~35% (21 days, active negotiations but no guarantee)\n- Blended probability accounting for ambiguity: ~70%\n\nProbability: **72%**\n\n{\"probability\": 0.72, \"outside_view\": 0.25, \"base_rate\": \"No clear historical precedent for U.S.-Iran ceasefire extension announcements; base rate unknown\"}",
+        "probability": 0.72,
+        "risk_flags": [],
+        "search_count": 8,
+        "sources": [
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- On 8 April 2026, the United States and Iran agreed to a two-week ceasefire in the 2026 Iran war, mediated by Pakistan.\n- Iran had rejected a draft proposal for a 45-day two-phased ceasefire framework introduced on 5 April by Pakistan, instead proposing its o",
+            "title": "2026 Iran war ceasefire - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2026_Iran_war_ceasefire"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- An agreement, according to four sources familiar with the matter, would extend the truce for another 60 days.\n- The agreement would allow traffic to flow through [unspecified location, likely related to the truce context].",
+            "title": "Iran, US reach deal to extend ceasefire, pending Trump's approval",
+            "url": "https://www.reuters.com/world/middle-east/iran-us-trade-air-strikes-after-trump-dismisses-report-hormuz-deal-2026-05-28/"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- On April 12, 2025, Iran and the United States began a series of negotiations aimed at reaching a nuclear peace agreement.\n- US president Donald Trump sent a letter to Iranian supreme leader Ali Khamenei.\n- Trump set a 60-day deadline for Iran to reach an agr",
+            "title": "2025–2026 Iran–United States negotiations - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2025%E2%80%932026_Iran%E2%80%93United_States_negotiations"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- US President Donald Trump says an agreement with Iran has been \"largely negotiated\" and details will be announced soon.\n- The deal would include the reopening of the Strait of Hormuz.\n- An Iranian foreign ministry spokesman stated that US and Iranian positio",
+            "title": "Trump says Iran deal 'largely negotiated' including reopening Strait ...",
+            "url": "https://www.bbc.com/news/articles/crmp121z3z8o"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- A deal to extend the ceasefire between the US and Iran is pending.\n- This pending deal would reopen the Strait of Hormuz.",
+            "title": "Deal to extend ceasefire between US and Iran that would ... - YouTube",
+            "url": "https://www.youtube.com/watch?v=ISenjuD5vcY"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- Barbara Leaf and Michael Doran are former U.S. officials with experience in Near Eastern Affairs and the Middle East on the National Security Council, respectively.\n- Barbara Leaf is \"very worried\" about the ceasefire holding, as are \"a lot of people,\" espec",
+            "title": "Former U.S. officials analyze chances fragile Iran ceasefire can hold",
+            "url": "https://www.pbs.org/newshour/show/former-u-s-officials-analyze-chances-fragile-iran-ceasefire-can-hold"
+          },
+          {
+            "date": "",
+            "quality": "Medium",
+            "snippet": "- President Trump is committed to making the FIFA World Cup 2026™ the greatest sporting event in world history.\n- President Donald J. Trump stated: \"Both sides, Israel and Iran, are looking to do an immediate CEASEFIRE! Final negotiations on “Peace” are procee",
+            "title": "Department of State (@StateDept) / Posts / X - Twitter",
+            "url": "https://x.com/StateDept?lang=en"
+          },
+          {
+            "date": "",
+            "quality": "Low",
+            "snippet": "- The video is titled \"US-Iran peace talks: Is a deal realistic or a diplomatic illusion?\".\n- The video was uploaded by \"Al Jazeera English\".\n- The video has 77,641 views.\n- The video was uploaded \"5 days ago\" (relative to when the text was generated/accessed)",
+            "title": "US-Iran peace talks: Is a deal realistic or a diplomatic illusion?",
+            "url": "https://www.youtube.com/watch?v=oWWmeXiS1n8"
+          },
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- The document is titled \"Iran: Background and U.S. Policy\".\n- The document was published on June 09, 2026, at 17:25:51 GMT.\n- Iran is described as playing an assertive and destabilizing role in the region.\n- Iran has the world's fourth-largest oil reserves.\n-",
+            "title": "Iran: Background and U.S. Policy - Congress.gov",
+            "url": "https://www.congress.gov/crs-product/R47321"
+          },
+          {
+            "date": "",
+            "quality": "High",
+            "snippet": "- The document is a \"Joint Statement of the United States of America, Republic of Lebanon, and State of Israel on the Latest High-Level Trilateral Meeting\".\n- The document was released by the U.S. Department of State.\n- The document's URL indicates a release d",
+            "title": "Joint Statement of the United States of America, Republic of ...",
+            "url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/06/joint-statement-of-the-united-states-of-america-republic-of-lebanon-and-state-of-israel-on-the-latest-high-level-trilateral-meeting"
+          }
+        ],
+        "token_usage": {
+          "completion": 1403,
+          "prompt": 2667,
+          "total": 4070
+        },
+        "warnings": [
+          "Spec consistency MINOR_DRIFT: The model's interpretation of the April 21st 'indefinite extension' as potentially resolving the question already is a significant deviation from the canonical spec's implicit forward-looking nature. The question asks 'Will the U.S. officially announce... by June 30, 2026', implying an announcement *within* the specified window, not one that occurred prior to the question's effective start date (which is typically when the question is posed, not the deadline). While the model acknowledges this ambiguity, its 'weighted assessment' heavily leans on the pre-existing announcement, which might not be valid under a strict interpretation of 'by June 30, 2026' meaning an announcement *during* the question's active period."
+        ]
+      }
+    }
+  ],
+  "informativeness": "strong_view",
+  "metaculus_post_error": null,
+  "mode": "lean_ensemble",
+  "numeric_bounds": {
+    "lower_bound": null,
+    "unit": "",
+    "upper_bound": null
+  },
+  "options": [],
+  "outside_view_probability": 0.42000000000000004,
+  "parsing_failure_rate": 0.0,
+  "pipeline_snapshot": {
+    "aggregation": {
+      "extremize_k": 1.0,
+      "method": "trimmed_mean_plus_evidence_dampened_extremization",
+      "trim_fraction": 0.2
+    },
+    "as_of_utc": "2026-06-09T17:40:34.570953+00:00",
+    "git_commit": "d810724",
+    "models": [
+      "deepseek/deepseek-v4-pro",
+      "openai/gpt-5.4-mini",
+      "moonshotai/kimi-k2.6",
+      "google/gemini-3-flash-preview",
+      "anthropic/claude-haiku-4.5"
+    ],
+    "pipeline_version": "lean-ensemble/v2-2026.06",
+    "prompt_hashes": {
+      "actual_forecast_prompt": "8d80102b134fd8d69db351265336494c770e84a0072387c1bd097b2a1bd8b6c3",
+      "binary_forecast_template": "5dce0e916cf7ce6894e84ae00debf7f5b4f1670c3cbf9c8e8e7fa2076b8b6ce9",
+      "multiple_choice_append_template": "755b9c19a05f4f7e0bc156ebd7950da2c09a8994e8ae1a445f2cd379224084dc",
+      "numeric_append_template": "235b9229843726d4050c9e21b311da8ffc8b7bc81b4882304f2dd831e5187eef"
+    },
+    "question_type": "binary",
+    "red_team": {
+      "adjustment_multiplier": 0.5,
+      "adjustment_threshold_pp": 5,
+      "can_adjust_probability": true,
+      "enabled_for_binary": true,
+      "model": "google/gemini-2.5-flash"
+    },
+    "revision_pass": {
+      "enabled": false
+    },
+    "run_max_tokens_cap": 0,
+    "search": {
+      "linkup_queries": 8,
+      "max_evidence_docs": 10,
+      "max_search_queries": 8,
+      "provider": "serper+linkup",
+      "providers": [
+        "serper",
+        "linkup"
+      ],
+      "second_pass_enabled": true
+    },
+    "shrink_to_crowd": false
+  },
+  "planned_queries": [
+    "US Iran ceasefire extension announcement June 2026",
+    "US Iran peace agreement negotiations status June 2026",
+    "Biden administration Iran policy updates ceasefire",
+    "US State Department statements Iran ceasefire",
+    "White House press briefings Iran diplomatic efforts",
+    "Iran nuclear deal JCPOA revival status 2026",
+    "Congressional statements US Iran relations ceasefire",
+    "UN Security Council resolutions Iran sanctions ceasefire",
+    "Think tank analysis US Iran diplomacy 2026",
+    "Expert predictions US Iran agreement 2026"
+  ],
+  "planner_text": "SEARCH(\"US Iran ceasefire extension announcement June 2026\")\nSEARCH(\"US Iran peace agreement negotiations status June 2026\")\nSEARCH(\"Biden administration Iran policy updates ceasefire\")\nSEARCH(\"US State Department statements Iran ceasefire\")\nSEARCH(\"White House press briefings Iran diplomatic efforts\")\nSEARCH(\"Iran nuclear deal JCPOA revival status 2026\")\nSEARCH(\"Congressional statements US Iran relations ceasefire\")\nSEARCH(\"UN Security Council resolutions Iran sanctions ceasefire\")\nSEARCH(\"Think tank analysis US Iran diplomacy 2026\")\nSEARCH(\"Expert predictions US Iran agreement 2026\")",
+  "platform": "other",
+  "posted_to_metaculus_by_ensemble": false,
+  "prior_packet": null,
+  "prior_packet_text": "",
+  "publish_action": "publish",
+  "publish_to_metaculus_requested": false,
+  "question": "Will the U.S. officially announce an extension of the ceasefire agreement between the U.S. and Iran, or announce a new peace agreement, ceasefire framework, or diplomatic agreement under which the ceasefire will continue, by June 30, 2026 at 11:59 PM ET?\n\nResolution criteria: This resolves YES if, before the deadline, there is clear public confirmation from the U.S. government that the U.S. has either (1) extended its commitment to the ceasefire, either as a dated/time-based extension or through an explicit statement that the ceasefire has been extended, or (2) renewed the existing ceasefire as part of a broader peace agreement, ceasefire framework, or diplomatic agreement under which the ceasefire will continue. A qualifying announcement resolves YES regardless of whether the extension later takes effect. Statements that merely say the ceasefire remains in effect, continues to hold, talks are ongoing, the parties are closer to a deal, or de-escalation measures are being discussed do not qualify unless they announce a new extension, renewal, or successor framework. An overwhelming consensus of credible reporting that a qualifying extension or successor agreement has been definitively established also suffices. Confirmation from Iran is not required. Otherwise resolves NO.",
+  "question_title": "Will the U.S. officially announce an extension of the ceasefire agreement between the U.S. and Iran, or announce a new peace agreement, ceasefire framework, or diplomatic agreement under which the ceasefire will continue, by June 30, 2026 at 11:59 PM ET?\n\nResolution criteria: This resolves YES if, before the deadline, there is clear public confirmation from the U.S. government that the U.S. has either (1) extended its commitment to the ceasefire, either as a dated/time-based extension or through an explicit statement that the ceasefire has been extended, or (2) renewed the existing ceasefire as part of a broader peace agreement, ceasefire framework, or diplomatic agreement under which the ceasefire will continue. A qualifying announcement resolves YES regardless of whether the extension later takes effect. Statements that merely say the ceasefire remains in effect, continues to hold, talks are ongoing, the parties are closer to a deal, or de-escalation measures are being discussed do not qualify unless they announce a new extension, renewal, or successor framework. An overwhelming consensus of credible reporting that a qualifying extension or successor agreement has been definitively established also suffices. Confirmation from Iran is not required. Otherwise resolves NO.",
+  "question_type": "binary",
+  "question_url": null,
+  "record_file": "forecast_candidates\\ablations\\us_iran_ceasefire_20260609\\records\\other\\20260609-174034_other_prior_ablation_baseline__Will_the_U_S_officially_announce_an_extension_of_the_ceasefi_a4533885.json",
+  "red_team_artifact": "Here's an adversarial review of the forecast:\n\n**1. TIMELINE CONFUSION:**\n*   **Analysis:** The forecast correctly identifies the current date (June 9, 2026) and the deadline (June 30, 2026), noting the 21-day window. It also correctly references past events (April 8 ceasefire, April 21 \"indefinite\" extension) within the context of the question's future deadline. There is no apparent timeline confusion.\n*   **Verdict:** No error.\n\n**2. BASE RATE NEGLECT:**\n*   **Analysis:** The forecast provides a specific base rate: \"When a U.S. President says a major international deal is 'largely negotiated' and details are coming 'soon', the historical rate of an official announcement materializing within ~3 weeks is roughly 70-80% across comparable diplomatic engagements.\"\n*   **Critique:** While a base rate is provided, its applicability and robustness are questionable.\n    *   **Specificity:** \"Comparable diplomatic engagements\" is vague. What specific historical instances are being referenced? Are they truly comparable in terms of geopolitical context (US-Iran relations), the nature of the deal (ceasefire extension vs. broader peace agreement), and the specific President (Trump's unique communication style and follow-through)?\n    *   **\"Largely negotiated\" vs. \"soon\":** These are subjective terms. A President's definition of \"largely negotiated\" might differ significantly from the reality of ongoing complex diplomatic talks. \"Soon\" can mean anything from days to months.\n    *   **Trump's history:** While Trump often announces things \"soon,\" his track record also includes deals that were \"imminent\" but never materialized or took much longer than anticipated (e.g., North Korea denuclearization, various trade deals). This specific base rate might be overly optimistic given the source and the inherent difficulty of US-Iran diplomacy.\n    *   **\"Indefinite\" extension:** The forecast notes a prior \"indefinite\" extension. If an extension is already \"indefinite,\" what does a *further* extension or \"renewal\" mean in practical terms, and how does that affect the base rate for *new* announcements? The base rate doesn't account for this specific nuance.\n*   **Verdict:** Potential error. The base rate provided is too generic and doesn't adequately account for the specific context of US-Iran relations, President Trump's communication patterns, or the nature of an \"indefinite\" ceasefire. It might be an optimistic interpretation of \"comparable diplomatic engagements.\"\n\n**3. SINGLE-SOURCE FRAGILITY:**\n*   **Analysis:** The forecast heavily relies on President Trump's statement from June 9 (\"largely negotiated,\" \"details will be announced soon\") as the primary driver for the high probability. It also cites Reuters (May 28) reporting a \"pending 60-day truce extension and the reopening of the Strait of Hormuz\" and \"Multiple other sources confirm a deal is imminent.\"\n*   **Critique:**\n    *   **Trump's statements:** While Trump's statements are significant, they are not always reliable indicators of immediate, concrete action. He has a history of making grand pronouncements that either don't materialize as quickly as suggested or are subject to significant changes. Relying on his statement as the *primary* driver for a 90% probability within 21 days introduces fragility.\n    *   **\"Multiple other sources\":** This is vague. Are these independent, highly credible sources with direct knowledge, or are they echoing Trump's statements or general diplomatic optimism? Without specific examples or an assessment of their credibility, this claim doesn't sufficiently diversify the evidence base.\n    *   **Reuters report:** The Reuters report is from May 28, nearly two weeks before Trump's June 9 statement. While it suggests a *pending* deal, the details (60-day truce, Strait of Hormuz) might not align perfectly with what Trump is now calling \"largely negotiated\" or what the final agreement might entail. The forecast treats these as reinforcing, but they could be distinct or evolving.\n    *   **Lack of Iranian confirmation/perspective:** While the resolution criteria state \"Confirmation from Iran is not required,\" the *likelihood* of a US announcement is significantly influenced by the state of negotiations with Iran. If Iran is not on board or has different expectations, the US announcement might be delayed or not happen at all, regardless of Trump's optimism. The forecast doesn't consider this external factor that could derail the US announcement.\n*   **Verdict:** Significant error. The forecast exhibits single-source fragility by over-relying on President Trump's statement and insufficiently diversifying or critically evaluating other sources, especially given the short timeframe and the complexity of the parties involved.\n\n**4. RESOLUTION MISREAD:**\n*   **Analysis:**\n    *   **Question:** \"Will the U.S. officially announce an extension... or announce a new peace agreement, ceasefire framework, or diplomatic agreement under which the ceasefire will continue...\"\n    *   **YES criteria:** \"Clear public confirmation from the U.S. government that the U.S. has either (1) extended its commitment to the ceasefire... or (2) renewed the existing ceasefire as part of a broader peace agreement, ceasefire framework, or diplomatic agreement under which the ceasefire will continue.\" Also, \"An",
+  "resolution_criteria": "",
+  "run_config": {
+    "aggregation": {
+      "extremize_k": 1.0,
+      "method": "trimmed_mean_plus_evidence_dampened_extremization",
+      "trim_fraction": 0.2
+    },
+    "as_of_utc": "2026-06-09T17:40:34.570953+00:00",
+    "git_commit": "d810724",
+    "models": [
+      "deepseek/deepseek-v4-pro",
+      "openai/gpt-5.4-mini",
+      "moonshotai/kimi-k2.6",
+      "google/gemini-3-flash-preview",
+      "anthropic/claude-haiku-4.5"
+    ],
+    "pipeline_version": "lean-ensemble/v2-2026.06",
+    "prompt_hashes": {
+      "actual_forecast_prompt": "8d80102b134fd8d69db351265336494c770e84a0072387c1bd097b2a1bd8b6c3",
+      "binary_forecast_template": "5dce0e916cf7ce6894e84ae00debf7f5b4f1670c3cbf9c8e8e7fa2076b8b6ce9",
+      "multiple_choice_append_template": "755b9c19a05f4f7e0bc156ebd7950da2c09a8994e8ae1a445f2cd379224084dc",
+      "numeric_append_template": "235b9229843726d4050c9e21b311da8ffc8b7bc81b4882304f2dd831e5187eef"
+    },
+    "question_type": "binary",
+    "red_team": {
+      "adjustment_multiplier": 0.5,
+      "adjustment_threshold_pp": 5,
+      "can_adjust_probability": true,
+      "enabled_for_binary": true,
+      "model": "google/gemini-2.5-flash"
+    },
+    "revision_pass": {
+      "enabled": false
+    },
+    "run_max_tokens_cap": 0,
+    "search": {
+      "linkup_queries": 8,
+      "max_evidence_docs": 10,
+      "max_search_queries": 8,
+      "provider": "serper+linkup",
+      "providers": [
+        "serper",
+        "linkup"
+      ],
+      "second_pass_enabled": true
+    },
+    "shrink_to_crowd": false
+  },
+  "run_type": "prior_ablation_baseline_",
+  "schema_version": "forecast-record/v1",
+  "search_provider": "serper+linkup",
+  "signal_strength": 0.3679999999999999,
+  "signpost_report": {
+    "raw": "SIGNPOST: President Trump or a senior U.S. official explicitly states that negotiations have stalled or broken down, or that the \"largely negotiated\" agreement is no longer expected to be announced.\nDIRECTION: down\nMAGNITUDE: -30pp\n\nSIGNPOST: Iran's Supreme Leader or President issues a strong public statement rejecting the terms of the reported agreement or withdrawing from ongoing negotiations.\nDIRECTION: down\nMAGNITUDE: -25pp\n\nSIGNPOST: A major military incident occurs between U.S. and Iranian forces or proxies, leading to significant casualties or a direct confrontation.\nDIRECTION: down\nMAGNITUDE: -20pp\n\nSIGNPOST: The U.S. State Department or White House officially announces a specific date and time for a press conference or joint statement regarding the U.S.-Iran ceasefire or a new diplomatic agreement.\nDIRECTION: up\nMAGNITUDE: +15pp\n\nSIGNPOST: A highly credible, top-tier news organization (e.g., AP, Reuters, NYT, WSJ) reports with high confidence, citing multiple senior U.S. government sources, that a qualifying announcement is confirmed for a specific date within the resolution window.\nDIRECTION: up\nMAGNITUDE: +15pp",
+    "signposts": [
+      {
+        "direction": "down",
+        "event": "President Trump or a senior U.S. official explicitly states that negotiations have stalled or broken down, or that the \"largely negotiated\" agreement is no longer expected to be announced.",
+        "magnitude": "-30pp"
+      },
+      {
+        "direction": "down",
+        "event": "Iran's Supreme Leader or President issues a strong public statement rejecting the terms of the reported agreement or withdrawing from ongoing negotiations.",
+        "magnitude": "-25pp"
+      },
+      {
+        "direction": "down",
+        "event": "A major military incident occurs between U.S. and Iranian forces or proxies, leading to significant casualties or a direct confrontation.",
+        "magnitude": "-20pp"
+      },
+      {
+        "direction": "up",
+        "event": "The U.S. State Department or White House officially announces a specific date and time for a press conference or joint statement regarding the U.S.-Iran ceasefire or a new diplomatic agreement.",
+        "magnitude": "+15pp"
+      },
+      {
+        "direction": "up",
+        "event": "A highly credible, top-tier news organization (e.g., AP, Reuters, NYT, WSJ) reports with high confidence, citing multiple senior U.S. government sources, that a qualifying announcement is confirmed for a specific date within the resolution window.",
+        "magnitude": "+15pp"
+      }
+    ]
+  },
+  "signposts": [
+    {
+      "direction": "down",
+      "event": "President Trump or a senior U.S. official explicitly states that negotiations have stalled or broken down, or that the \"largely negotiated\" agreement is no longer expected to be announced.",
+      "magnitude": "-30pp"
+    },
+    {
+      "direction": "down",
+      "event": "Iran's Supreme Leader or President issues a strong public statement rejecting the terms of the reported agreement or withdrawing from ongoing negotiations.",
+      "magnitude": "-25pp"
+    },
+    {
+      "direction": "down",
+      "event": "A major military incident occurs between U.S. and Iranian forces or proxies, leading to significant casualties or a direct confrontation.",
+      "magnitude": "-19pp"
+    },
+    {
+      "direction": "up",
+      "event": "The U.S. State Department or White House officially announces a specific date and time for a press conference or joint statement regarding the U.S.-Iran ceasefire or a new diplomatic agreement.",
+      "magnitude": "+12pp"
+    },
+    {
+      "direction": "up",
+      "event": "A highly credible, top-tier news organization (e.g., AP, Reuters, NYT, WSJ) reports with high confidence, citing multiple senior U.S. government sources, that a qualifying announcement is confirmed for a specific date within the resolution window.",
+      "magnitude": "+12pp"
+    }
+  ],
+  "summary_text": "Question Type: binary\nFinal Prediction: 86.8%\nInformativeness: strong_view (|p-0.5|=0.368)\nRaw Trimmed Mean: 86.8%\nCalibrated Probability: 86.8%\nDispersion: 0.127\nConfidence Class: medium\nPublish Gate: publish (score=0.73)\nParsing Failure Rate: 0.0%\nSearch Queries: planned=10 executed=8\nGate Components: spec=0.90, temporal=1.00, evidence=0.60, agreement=0.37\nGate Metrics: evidence_count=10, distinct_sources=8, primary_sources=2, mean_relevance=0.67, freshness_days=0.0\nRed Team: ran | no_change\nIndividual Runs:\n- DeepSeek V4 Pro: 90.0% (tokens=5,739, warnings=0)\n- GPT-5.4 Mini: 98.0% (tokens=3,471, warnings=0)\n- Kimi K2.6: 99.0% (tokens=11,835, warnings=0)\n- Gemini 3 Flash: 75.0% (tokens=3,212, warnings=1)\n- Claude Haiku 4.5: 72.0% (tokens=4,070, warnings=1)\nSignposts:\n- President Trump or a senior U.S. official explicitly states that negotiations have stalled or broken down, or that the \"largely negotiated\" agreement is no longer expected to be announced. | direction=down | magnitude=-30pp\n- Iran's Supreme Leader or President issues a strong public statement rejecting the terms of the reported agreement or withdrawing from ongoing negotiations. | direction=down | magnitude=-25pp\n- A major military incident occurs between U.S. and Iranian forces or proxies, leading to significant casualties or a direct confrontation. | direction=down | magnitude=-19pp\n- The U.S. State Department or White House officially announces a specific date and time for a press conference or joint statement regarding the U.S.-Iran ceasefire or a new diplomatic agreement. | direction=up | magnitude=+12pp\n- A highly credible, top-tier news organization (e.g., AP, Reuters, NYT, WSJ) reports with high confidence, citing multiple senior U.S. government sources, that a qualifying announcement is confirmed for a specific date within the resolution window. | direction=up | magnitude=+12pp",
+  "text_log_path": "forecasts/forecast_20260609_173459_Will_the_US_officially_announce_an_extension_of.txt",
+  "timestamp": "20260609_173459",
+  "token_usage": {
+    "claim_audit_hinges": {
+      "completion": 289,
+      "prompt": 917,
+      "total": 1206
+    },
+    "evidence_extraction": {
+      "completion": 3113,
+      "prompt": 15172,
+      "total": 18285
+    },
+    "forecast_run:20260609_173459:claude_haiku_4.5:1": {
+      "completion": 1403,
+      "prompt": 2667,
+      "total": 4070
+    },
+    "forecast_run:20260609_173459:deepseek_v4_pro:1": {
+      "completion": 3408,
+      "prompt": 2331,
+      "total": 5739
+    },
+    "forecast_run:20260609_173459:gemini_3_flash:1": {
+      "completion": 596,
+      "prompt": 2616,
+      "total": 3212
+    },
+    "forecast_run:20260609_173459:gpt-5.4_mini:1": {
+      "completion": 1146,
+      "prompt": 2325,
+      "total": 3471
+    },
+    "forecast_run:20260609_173459:kimi_k2.6:1": {
+      "completion": 9495,
+      "prompt": 2340,
+      "total": 11835
+    },
+    "red_team_critique": {
+      "completion": 1396,
+      "prompt": 996,
+      "total": 2392
+    },
+    "search_strategy": {
+      "completion": 127,
+      "prompt": 635,
+      "total": 762
+    },
+    "signpost_extract": {
+      "completion": 457,
+      "prompt": 948,
+      "total": 1405
+    },
+    "spec_check": {
+      "completion": 398,
+      "prompt": 4855,
+      "total": 5253
+    },
+    "spec_extract": {
+      "completion": 299,
+      "prompt": 368,
+      "total": 667
+    }
+  },
+  "top_evidence": [
+    {
+      "bearing": "High-directness status signal",
+      "evidence_id": "E1",
+      "primary": false,
+      "relevance": 1.0,
+      "retrieved_at": "2026-06-09",
+      "snippet": "- On 8 April 2026, the United States and Iran agreed to a two-week ceasefire in the 2026 Iran war, mediated by Pakistan.\n- Iran had rejected",
+      "snippet_hash": "935b6ce8684b5ec7",
+      "source": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/2026_Iran_war_ceasefire"
+    },
+    {
+      "bearing": "High-directness status signal",
+      "evidence_id": "E2",
+      "primary": false,
+      "relevance": 1.0,
+      "retrieved_at": "2026-06-09",
+      "snippet": "- An agreement, according to four sources familiar with the matter, would extend the truce for another 60 days.\n- The agreement would allow ",
+      "snippet_hash": "1e9ffd4c6fe9018f",
+      "source": "www.reuters.com",
+      "url": "https://www.reuters.com/world/middle-east/iran-us-trade-air-strikes-after-trump-dismisses-report-hormuz-deal-2026-05-28/"
+    },
+    {
+      "bearing": "High-directness status signal",
+      "evidence_id": "E3",
+      "primary": false,
+      "relevance": 1.0,
+      "retrieved_at": "2026-06-09",
+      "snippet": "- On April 12, 2025, Iran and the United States began a series of negotiations aimed at reaching a nuclear peace agreement.\n- US president D",
+      "snippet_hash": "3c54c093117e78aa",
+      "source": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/2025%E2%80%932026_Iran%E2%80%93United_States_negotiations"
+    },
+    {
+      "bearing": "High-directness status signal",
+      "evidence_id": "E4",
+      "primary": false,
+      "relevance": 1.0,
+      "retrieved_at": "2026-06-09",
+      "snippet": "- US President Donald Trump says an agreement with Iran has been \"largely negotiated\" and details will be announced soon.\n- The deal would i",
+      "snippet_hash": "037913b710511f23",
+      "source": "www.bbc.com",
+      "url": "https://www.bbc.com/news/articles/crmp121z3z8o"
+    },
+    {
+      "bearing": "High-directness status signal",
+      "evidence_id": "E5",
+      "primary": false,
+      "relevance": 0.8,
+      "retrieved_at": "2026-06-09",
+      "snippet": "- A deal to extend the ceasefire between the US and Iran is pending.\n- This pending deal would reopen the Strait of Hormuz.",
+      "snippet_hash": "dad66512a92be73a",
+      "source": "www.youtube.com",
+      "url": "https://www.youtube.com/watch?v=ISenjuD5vcY"
+    },
+    {
+      "bearing": "High-directness status signal",
+      "evidence_id": "E6",
+      "primary": false,
+      "relevance": 0.8,
+      "retrieved_at": "2026-06-09",
+      "snippet": "- Barbara Leaf and Michael Doran are former U.S. officials with experience in Near Eastern Affairs and the Middle East on the National Secur",
+      "snippet_hash": "408376d5d0dc1807",
+      "source": "www.pbs.org",
+      "url": "https://www.pbs.org/newshour/show/former-u-s-officials-analyze-chances-fragile-iran-ceasefire-can-hold"
+    },
+    {
+      "bearing": "High-directness status signal",
+      "evidence_id": "E7",
+      "primary": false,
+      "relevance": 0.8,
+      "retrieved_at": "2026-06-09",
+      "snippet": "- President Trump is committed to making the FIFA World Cup 2026™ the greatest sporting event in world history.\n- President Donald J. Trump ",
+      "snippet_hash": "8d503b84554a65cf",
+      "source": "x.com",
+      "url": "https://x.com/StateDept?lang=en"
+    },
+    {
+      "bearing": "Proxy/context evidence",
+      "evidence_id": "E8",
+      "primary": false,
+      "relevance": 0.3,
+      "retrieved_at": "2026-06-09",
+      "snippet": "- The video is titled \"US-Iran peace talks: Is a deal realistic or a diplomatic illusion?\".\n- The video was uploaded by \"Al Jazeera English\"",
+      "snippet_hash": "241de0a4a3ef7ac5",
+      "source": "www.youtube.com",
+      "url": "https://www.youtube.com/watch?v=oWWmeXiS1n8"
+    }
+  ],
+  "written_at_utc": "2026-06-09T17:40:34.632616+00:00"
+}
