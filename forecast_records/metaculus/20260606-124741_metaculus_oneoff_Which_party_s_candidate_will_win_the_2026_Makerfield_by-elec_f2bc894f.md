@@ -19,8 +19,19 @@
 | Restore Britain | 0.5% |
 - Action: **publish** · Confidence: medium · Informativeness: strong_view
 
+## Model forecasts
+
+| Model | Forecast | Outside view | Tokens | Base rate / short rationale |
+|---|---:|---:|---:|---|
+| DeepSeek V4 Pro | 75.0% | n/a | 7120 | The by-election is in 12 days (June 18, 2026). Labour’s candidate, Andy Burnham, is a uniquely high‑profile figure—the popular mayor of Greater Manchester, which includes the constituency—and is running explicitly to mou |
+| GPT-5.4 Mini | 48.0% | n/a | 6991 | Here’s my forecast, treating this as the party of the officially declared winning candidate in the Makerfield by-election. |
+| Kimi K2.6 | 44.0% | n/a | 13924 | We need to produce a forecast for the 2026 Makerfield by-election. The question: "Which party's candidate will win the 2026 Makerfield by-election?" Options: Conservative Party, Labour Party, Green Party, Reform UK, Libe |
+| Gemini 3 Flash | 81.0% | n/a | 4962 | The 2026 Makerfield by-election is a high-stakes contest triggered by the resignation of Josh Simons to facilitate Andy Burnham’s return to Westminster. While Makerfield is historically a safe Labour seat, the current po |
+| Claude Haiku 4.5 | 75.0% | n/a | 5736 | # Analysis of 2026 Makerfield By-election |
+
 ## Outcome / benchmark
 - Resolved: no (pending)
+- Outcome source: `metaculus_api`
 - Community prediction: not available (hidden for this question while open)
 
 ## Publish gate
@@ -573,7 +584,7 @@ Probability:
 - **Restore Britain: 0.3%**
 - **Other party or candidate: 0.2%**
 
-## Red-team critique
+## LLM audit / red-team critique
 Red-team critique skipped for non-binary question type.
 
 ## Summary

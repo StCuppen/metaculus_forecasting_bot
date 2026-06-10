@@ -11,8 +11,19 @@
 - Action: **publish** · Confidence: medium · Informativeness: weak_view
 - Outside-view (base rate) probability: 17.0%
 
+## Model forecasts
+
+| Model | Forecast | Outside view | Tokens | Base rate / short rationale |
+|---|---:|---:|---:|---|
+| DeepSeek V4 Pro | 51.0% | 10.0% | 6172 | Swiss popular initiatives overall have a historical pass rate of approximately 10% since 1891. |
+| GPT-5.4 Mini | 79.0% | 15.0% | 5421 | Swiss federal popular initiatives requiring a double majority have historically passed at roughly 10–15% of the time. |
+| Kimi K2.6 | 48.0% | 10.0% | 13264 | <one sentence naming a concrete reference class and its historical rate, or 'none found'>". So we should name a concrete reference class and give its historical rate. Let's choose "federal popular initiatives in Switzerl |
+| Gemini 3 Flash | 10.0% | 15.0% | 4316 | Approximately 10% of Swiss popular initiatives pass, though immigration-specific ones have historically performed better. |
+| Claude Haiku 4.5 | 6.0% | 35.0% | 5199 | Swiss federal popular initiatives requiring double majority (popular + cantonal) have historically passed at roughly 40-50% (2014 SVP immigration initiative passed; 2020 SVP similar initiative failed). |
+
 ## Outcome / benchmark
 - Resolved: no (pending)
+- Outcome source: `metaculus_api`
 - Community prediction: not available (hidden for this question while open)
 
 ## Publish gate
@@ -453,7 +464,7 @@ OUTSIDE_VIEW: 35% (applying base rate of ~40-50% downward due to recent polling 
 
 The initiative faces a clear polling deficit (-8 points in the most recent survey), declining support trend over the final months, and the additional hurdle of needing a cantonal majority in addition to a national majority. While the 2014 precedent shows such initiatives can pass narrowly, the current trajectory and structural requirements make passage unlikely.
 
-## Red-team critique
+## LLM audit / red-team critique
 Here's a review of your forecast, checking for the specified failure modes:
 
 ---

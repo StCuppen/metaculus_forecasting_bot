@@ -11,8 +11,19 @@
 - Action: **publish** · Confidence: medium · Informativeness: strong_view
 - Outside-view (base rate) probability: 4.0%
 
+## Model forecasts
+
+| Model | Forecast | Outside view | Tokens | Base rate / short rationale |
+|---|---:|---:|---:|---|
+| DeepSeek V4 Pro | 3.0% | 10.0% | 6949 | Historically, only the 2014–2016 West Africa Ebola outbreak led to a case first confirmed in the US, giving a rate of ~3% across all outbreaks and ~25% across large (>100 case) outbreaks, with zero precedent for Bundibug |
+| GPT-5.4 Mini | 1.0% | 1.0% | 5323 | Prior Bundibugyo Ebola outbreaks to date (Uganda 2007, DRC 2012) produced 0 first-confirmed US cases out of 2 outbreaks. |
+| Kimi K2.6 | 2.0% | 2.0% | 16028 | In the two previous Bundibugyo virus disease outbreaks (Uganda 2007 and DRC 2012), which together involved roughly 164 confirmed cases, zero cases were exported to or first confirmed in the United States. |
+| Gemini 3 Flash | 30.0% | 5.0% | 3819 | Out of approximately 40 known Ebola outbreaks since 1976, only one (2.5%) has resulted in cases first confirmed in the United States. |
+| Claude Haiku 4.5 | 1.0% | 2.0% | 4677 | Bundibugyo virus has occurred in two prior outbreaks (Uganda 2007, DRC 2012) with zero cases outside Africa; Zaire ebolavirus reached the US 4 times during the 2014-2016 outbreak (~0.036% of ~11,000 cases), but with enha |
+
 ## Outcome / benchmark
 - Resolved: no (pending)
+- Outcome source: `metaculus_api`
 - Community prediction: not available (hidden for this question while open)
 
 ## Publish gate
@@ -253,7 +264,7 @@ OUTSIDE_VIEW: 2%
 
 **Probability: 3%**
 
-## Red-team critique
+## LLM audit / red-team critique
 Here's an adversarial review of the forecast:
 
 **1. TIMELINE CONFUSION**
@@ -308,80 +319,3 @@ Signposts:
 
 ## Tokens
 - Total tokens across 30 calls: 263,867
-
-
-
-### for comparison, i asked chatgpt5.5 and gemini 3.1 pro to forecast the questions. 
-
-# gpt5.5
-**Forecast: 11%**
-**Confidence: moderate.** Plausible range: **6–18%**.
-
-I interpret the question as: at least one laboratory-confirmed Bundibugyo virus disease case is confirmed **on US soil** by **31 Dec 2026**.
-
-The market benchmark is close: Metaculus is showing about **10%** at the moment, with 60 forecasters visible on the public page. ([metaculus.com][1]) I would be slightly above but basically in line.
-
-The strongest reason for **yes** is that this outbreak is already unusually large. As of June 4–5, CDC reports **452 confirmed cases and 82 confirmed deaths in DRC**, plus **19 confirmed cases and 2 confirmed deaths in Uganda**. CDC also says one American healthcare worker was infected while caring for patients in DRC, though that person was transported to Germany rather than the US. ([CDC][2]) CDC modeling says that under poor isolation assumptions, the outbreak could exceed **20,000 cases within 3 months** with substantial probability; even with better isolation, large outbreaks remain plausible. ([CDC][3]) More cases means more aid workers, travelers, cross-border spread, missed contacts, and tail-risk importations.
-
-The strongest reason for **no** is that US importation is still a thin tail. CDC currently says no cases from this outbreak have been confirmed in the US and assesses the US public risk as low. ([CDC][2]) A CDC risk assessment rates the likelihood of infection for the US population as “extremely low”; the mobility-model relative risk assigns the US only about **1.3%** of conditional international importation risk, and enhanced screening / entry restrictions were established on May 18. ([CDC][4]) Also, Ebola is not efficiently spread before symptoms, symptoms tend to become severe, and US systems are good at identifying and isolating suspected cases. CDC notes that only **11 people infected with Ebola disease have ever been treated in the US**, all linked to the 2014–2016 West Africa outbreak, and there was no US community spread. ([CDC][4])
-
-My rough decomposition:
-
-If the outbreak is largely controlled below a few thousand confirmed cases, I’d put the chance of a US-confirmed BVD case around **2–4%**. If it reaches something like **5,000–10,000** cases, more like **8–15%**. If it becomes a 2014-style regional crisis, **25–50%** becomes plausible. Current evidence puts meaningful weight on the middle and upper scenarios, but not enough to make US importation likely.
-
-So I would post **11%**, not because US spread is likely, but because “one imported/evacuated case confirmed in the US” is a much easier threshold than “US outbreak.” Key update triggers: rapid growth outside Ituri/North Kivu/South Kivu, sustained Kampala transmission, infections among additional US/Western healthcare workers, or any sign that the US starts accepting medical evacuations rather than routing them to Europe.
-
-[1]: https://www.metaculus.com/questions/43606/ebola-bundibugyo-case-first-confirmed-on-us-soil-before-2027/ "Ebola bundibugyo case first confirmed on US soil before 2027?"
-[2]: https://www.cdc.gov/ebola/situation-summary/index.html "Ebola Outbreak: Current Situation | Ebola | CDC"
-[3]: https://www.cdc.gov/mmwr/volumes/75/wr/mm7522e1.htm?s_cid=OS_mm7522e1_w "Modeled Scenario Projections for the Ebola Disease Outbreak Caused by Bundibugyo Virus, 2026  | MMWR"
-[4]: https://www.cdc.gov/mmwr/volumes/75/wr/mm7522e2.htm "Assessment of Risk to the U.S. Population from the Ebola Disease Outbreak Caused by Bundibugyo Virus, 2026  | MMWR"
-
-# gemini 3.1 pro
-Forecasting an ongoing public health emergency requires balancing real-time epidemiological data with dispassionate historical base rates. Here is a rigorous, superforecaster-style analysis of the likelihood that a case of Bundibugyo virus disease (BVD) will be confirmed in the US before 2027.
-
-### **Topline Forecast: 15%**
-
-**Resolution Criteria:** The US CDC or WHO officially confirms at least one human case of *Orthoebolavirus bundibugyoense* (Bundibugyo ebolavirus) geographically located within the United States (including medical evacuations) between June 6, 2026, and December 31, 2026 at 11:59 PM.
-
----
-
-### **1. The Outside View (Base Rates & History)**
-
-Superforecasting starts by looking at the broader historical context before examining the current event.
-
-* **US Importation Base Rate:** Since the discovery of Ebola in 1976, there have been over 30 distinct outbreaks globally. Only *one* outbreak—the 2014–2016 West Africa Zaire ebolavirus epidemic—resulted in confirmed human cases on US soil (11 total patients treated, mostly medical evacuees, with a few commercial travelers).
-* **Geographic Precedent:** The epicenter of the current outbreak is the Democratic Republic of the Congo (DRC) and Uganda. The 2018–2020 Kivu Ebola outbreak occurred in this exact same geographical region. Despite being the second-largest Ebola outbreak in history (over 3,400 cases), it resulted in **zero** cases imported to the United States.
-* **Bundibugyo Precedent:** There has never been a confirmed human case of BVD in the United States. Previous Bundibugyo outbreaks (Uganda in 2007, DRC in 2012) were small and geographically contained.
-
-**Base Rate Conclusion:** The historical baseline probability of any specific Ebola outbreak reaching the US from Central/East Africa is extremely low (<5%).
-
-### **2. The Inside View (Current 2026 Situation)**
-
-We must update the base rate by analyzing the specific dynamics of the current outbreak as of early June 2026.
-
-* **Current Scale:** The outbreak is currently active, expanding, and was declared a Public Health Emergency of International Concern (PHEIC) by the WHO on May 17, 2026. As of early June, there are over 450 confirmed cases and roughly 80 deaths.
-* **Lack of Countermeasures:** Unlike recent outbreaks of the Zaire strain, there are currently no licensed vaccines or targeted therapeutics for the Bundibugyo strain. If the basic reproduction number ($R_0$) remains elevated due to poor isolation and community resistance, recent CDC modeling suggests the outbreak could easily scale into the tens of thousands of cases by late 2026.
-* **American Involvement:** US healthcare and NGO workers are actively on the ground responding to the crisis, representing a highly exposed population.
-
-**Inside View Conclusion:** The active, relatively unmitigated nature of the 2026 outbreak significantly elevates the risk above the historical baseline.
-
-### **3. Causal Pathways to a "Yes" Resolution**
-
-For a case to be confirmed in the US before 2027, the virus must travel via one of two primary pathways.
-
-**Pathway A: Commercial Air Travel (Probability: Very Low)**
-For a traveler to bring the virus to the US undetected, they must be infected in the remote Ituri province, travel by land to a major transit hub (like Kampala or Kinshasa), board a flight to Europe or the Middle East, and connect to the US—all while asymptomatic but incubating the virus—and successfully evade exit and entry screenings. The lack of direct flights from the affected regions to the US creates natural epidemiological friction. The Kivu outbreak proved this friction is highly effective at preventing transatlantic spread from Central Africa.
-
-**Pathway B: Medical Evacuation (Probability: Moderate, but geographically constrained)**
-If a US citizen or aid worker is infected, they are often medevacked to high-level biocontainment units. **However, a crucial precedent was set on May 17, 2026:** an American healthcare worker who tested positive for BVD in the DRC was evacuated to *Germany* for treatment, not the US.
-
-* *The Logistics Factor:* Flight time is critical for hemorrhagic fever patients. A flight from the DRC to Frankfurt is roughly 4,000 miles; a flight to Atlanta (Emory) or Nebraska is over 7,000 miles. European biocontainment units are the logistical first choice for Central African evacuations.
-
-### **Synthesis & Final Assessment**
-
-To reach a "Yes" before 2027, the outbreak must not only continue to grow but must specifically breach the logistical barrier of European medical facilities for evacuees, or slip through the multi-leg commercial travel net.
-
-While the current BVD outbreak is severe and lacks the medical countermeasures that helped blunt recent Zaire outbreaks, the geographical isolation of the epicenter and the explicit preference for European medical evacuations severely cap the likelihood of a US-soil confirmation.
-
-Therefore, I forecast a **15%** probability that a case of Bundibugyo Ebola will be first confirmed in the US before 2027. It is a statistically elevated risk compared to peacetime, but still highly unlikely.
-

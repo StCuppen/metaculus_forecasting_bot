@@ -11,8 +11,19 @@
 - Action: **publish** · Confidence: low · Informativeness: weak_view
 - Outside-view (base rate) probability: 43.8%
 
+## Model forecasts
+
+| Model | Forecast | Outside view | Tokens | Base rate / short rationale |
+|---|---:|---:|---:|---|
+| DeepSeek V4 Pro | 35.0% | n/a | 3642 | ** At extreme sentiment troughs (e.g., 2008, 2022), the index has sometimes rebounded the next month but not always; no clear single base rate exists given the rarity of sub-45 readings. |
+| GPT-5.4 Mini | 50.0% | 50.0% | 5501 | none found |
+| Kimi K2.6 | 50.0% | 40.0% | 12353 | None found for the exact reference class of record-low readings during an ongoing geopolitical oil supply shock; unconditional month-over-month increases in the University of Michigan Consumer Sentiment Index occur rough |
+| Gemini 3 Flash | 55.0% | 52.0% | 3802 | In the history of the UMCSENT index, month-over-month increases occur approximately 50-55% of the time, but this drops significantly during active energy price shocks. |
+| Claude Haiku 4.5 | 4.8% | 33.0% | 4796 | Month-over-month improvement in the University of Michigan Consumer Sentiment Index after three consecutive declines to a record low: approximately 30-35% (based on the pattern of mean reversion being slower than immedia |
+
 ## Outcome / benchmark
 - Resolved: no (pending)
+- Outcome source: `metaculus_api`
 - Community prediction: not available (hidden for this question while open)
 
 ## Publish gate
@@ -280,7 +291,7 @@ OUTSIDE_VIEW: 33% (assuming the current downtrend and underlying drivers persist
 
 **Probability: 36%**
 
-## Red-team critique
+## LLM audit / red-team critique
 Here's an adversarial review of the forecast:
 
 **1. TIMELINE CONFUSION**

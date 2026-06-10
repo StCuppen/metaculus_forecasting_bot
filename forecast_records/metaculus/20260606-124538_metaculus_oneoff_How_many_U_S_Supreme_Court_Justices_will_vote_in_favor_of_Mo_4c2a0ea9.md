@@ -22,8 +22,19 @@
 | 0 | 1.0% |
 - Action: **publish** · Confidence: medium · Informativeness: weak_view
 
+## Model forecasts
+
+| Model | Forecast | Outside view | Tokens | Base rate / short rationale |
+|---|---:|---:|---:|---|
+| DeepSeek V4 Pro | 35.0% | n/a | 3928 | (a) **Time remaining and deadline:**   Today is June 6, 2026. The deadline for a merits decision is August 1, 2026. That leaves about 8 weeks. The Court typically finishes its term by late June, so a decision is likely b |
+| GPT-5.4 Mini | 38.0% | n/a | 8292 | (a) Time remaining and deadline   - About 56 days remain.   - Exact deadline: **before August 1, 2026**. If no merits decision is issued by then, the question is **annulled**. |
+| Kimi K2.6 | 37.9% | n/a | 13121 | We need to forecast: How many U.S. Supreme Court Justices will vote in favor of Monsanto in Monsanto Company v. John L. Durnell? |
+| Gemini 3 Flash | 35.0% | n/a | 4254 | The case *Monsanto Company v. John L. Durnell* (No. 24-1068) centers on whether the Federal Insecticide, Fungicide, and Rodenticide Act (FIFRA) preempts state-law failure-to-warn claims regarding Roundup’s potential carc |
+| Claude Haiku 4.5 | 35.0% | n/a | 4832 | # Analysis of Monsanto Company v. Durnell |
+
 ## Outcome / benchmark
 - Resolved: no (pending)
+- Outcome source: `metaculus_api`
 - Community prediction: not available (hidden for this question while open)
 
 ## Publish gate
@@ -669,7 +680,7 @@ Option 7: 15%
 Option 8: 2%
 Option 9: 1%
 
-## Red-team critique
+## LLM audit / red-team critique
 Red-team critique skipped for non-binary question type.
 
 ## Summary
