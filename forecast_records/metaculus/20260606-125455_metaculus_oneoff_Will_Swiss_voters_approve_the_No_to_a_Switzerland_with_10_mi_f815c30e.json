@@ -889,7 +889,7 @@
   },
   "options": [],
   "outcome": {
-    "actual_close_time": null,
+    "actual_close_time": "2026-06-13T21:00:00Z",
     "actual_resolve_time": null,
     "community_prediction_at_resolution": null,
     "computed_brier": null,
@@ -897,12 +897,12 @@
     "my_latest_forecast": {},
     "options": null,
     "post_id": "43795",
-    "post_status": "open",
+    "post_status": "closed",
     "question_id": 43825,
     "question_type": "binary",
     "raw_post_subset": {
-      "forecasts_count": 169,
-      "nr_forecasters": 12,
+      "forecasts_count": 177,
+      "nr_forecasters": 14,
       "projects": {
         "category": [
           {
@@ -920,7 +920,7 @@
           "created_at": "2025-07-29T21:17:26.402860Z",
           "default_permission": "forecaster",
           "description_preview": "<img src=\"https://cdn.metaculus.com/Metaculus_Learning_Academy_Logo_K6rKhv7.png\" alt=\"Metaculus Learning Academy logo\">\r\n<div align=\"right\">",
-          "edited_at": "2026-06-13T08:33:45.781804Z",
+          "edited_at": "2026-06-14T09:04:11.780697Z",
           "forecasting_end_date": null,
           "header_image": "https://cdn.metaculus.com/owl_only.png",
           "html_metadata_json": null,
@@ -953,7 +953,7 @@
             "created_at": "2025-07-29T21:17:26.402860Z",
             "default_permission": "forecaster",
             "description_preview": "<img src=\"https://cdn.metaculus.com/Metaculus_Learning_Academy_Logo_K6rKhv7.png\" alt=\"Metaculus Learning Academy logo\">\r\n<div align=\"right\">",
-            "edited_at": "2026-06-13T08:33:45.781804Z",
+            "edited_at": "2026-06-14T09:04:11.780697Z",
             "forecasting_end_date": null,
             "header_image": "https://cdn.metaculus.com/owl_only.png",
             "html_metadata_json": null,
