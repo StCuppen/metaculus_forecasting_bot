@@ -754,8 +754,8 @@
     "question_id": 43603,
     "question_type": "binary",
     "raw_post_subset": {
-      "forecasts_count": 445,
-      "nr_forecasters": 65,
+      "forecasts_count": 448,
+      "nr_forecasters": 60,
       "projects": {
         "category": [
           {
@@ -773,7 +773,7 @@
           "created_at": "2025-06-24T20:18:49.802400Z",
           "default_permission": "forecaster",
           "description_preview": "<p>The Respiratory Outlook 2025/26 is a collaboration between the Centers for Disease Control and Prevention (CDC) and Metaculus. Metaculus",
-          "edited_at": "2026-06-18T07:34:38.477446Z",
+          "edited_at": "2026-06-19T10:08:53.662648Z",
           "forecasting_end_date": "2027-04-01T00:00:00Z",
           "header_image": "https://cdn.metaculus.com/cdc-cover-final_1_62hhj9W.webp",
           "html_metadata_json": null,
@@ -806,7 +806,7 @@
             "created_at": "2025-06-24T20:18:49.802400Z",
             "default_permission": "forecaster",
             "description_preview": "<p>The Respiratory Outlook 2025/26 is a collaboration between the Centers for Disease Control and Prevention (CDC) and Metaculus. Metaculus",
-            "edited_at": "2026-06-18T07:34:38.477446Z",
+            "edited_at": "2026-06-19T10:08:53.662648Z",
             "forecasting_end_date": "2027-04-01T00:00:00Z",
             "header_image": "https://cdn.metaculus.com/cdc-cover-final_1_62hhj9W.webp",
             "html_metadata_json": null,
@@ -829,8 +829,8 @@
     },
     "resolution": null,
     "resolved": false,
-    "scheduled_close_time": "2026-06-18T14:59:19Z",
-    "scheduled_resolve_time": "2026-06-18T14:59:19Z",
+    "scheduled_close_time": "2027-01-01T01:00:00Z",
+    "scheduled_resolve_time": "2027-01-01T01:00:00Z",
     "source": "metaculus_api",
     "title": "Will a case of Bundibugyo Ebola disease be first confirmed in the US before 2027?"
   },
