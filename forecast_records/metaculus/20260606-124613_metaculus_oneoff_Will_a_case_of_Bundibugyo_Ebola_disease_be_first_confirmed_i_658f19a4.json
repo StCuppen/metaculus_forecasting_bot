@@ -830,7 +830,7 @@
     "question_id": 43603,
     "question_type": "binary",
     "raw_post_subset": {
-      "forecasts_count": 511,
+      "forecasts_count": 512,
       "nr_forecasters": 63,
       "projects": {
         "category": [
@@ -849,7 +849,7 @@
           "created_at": "2025-06-24T20:18:49.802400Z",
           "default_permission": "forecaster",
           "description_preview": "<p>The Respiratory Outlook 2025/26 is a collaboration between the Centers for Disease Control and Prevention (CDC) and Metaculus. Metaculus",
-          "edited_at": "2026-07-16T04:40:16.520617Z",
+          "edited_at": "2026-07-17T07:57:54.395087Z",
           "forecasting_end_date": "2027-04-01T00:00:00Z",
           "header_image": "https://cdn.metaculus.com/cdc-cover-final_1_62hhj9W.webp",
           "html_metadata_json": null,
@@ -882,7 +882,7 @@
             "created_at": "2025-06-24T20:18:49.802400Z",
             "default_permission": "forecaster",
             "description_preview": "<p>The Respiratory Outlook 2025/26 is a collaboration between the Centers for Disease Control and Prevention (CDC) and Metaculus. Metaculus",
-            "edited_at": "2026-07-16T04:40:16.520617Z",
+            "edited_at": "2026-07-17T07:57:54.395087Z",
             "forecasting_end_date": "2027-04-01T00:00:00Z",
             "header_image": "https://cdn.metaculus.com/cdc-cover-final_1_62hhj9W.webp",
             "html_metadata_json": null,
