@@ -592,7 +592,7 @@
     "question_type": "binary",
     "raw_post_subset": {
       "forecasts_count": 533,
-      "nr_forecasters": 123,
+      "nr_forecasters": 44,
       "projects": {
         "category": [
           {
@@ -651,7 +651,7 @@
             "created_at": "2026-03-16T13:28:50.153193Z",
             "default_permission": "forecaster",
             "description_preview": "This project holds questions for purposes of forecasting bot benchmarking. If you want access please get in touch using the form at the bott",
-            "edited_at": "2026-07-20T08:41:04.075043Z",
+            "edited_at": "2026-07-21T08:12:04.937468Z",
             "forecasting_end_date": null,
             "header_image": null,
             "html_metadata_json": null,
